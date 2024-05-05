@@ -177,7 +177,7 @@
                       <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Visualization</div>
                       <ul class="pcoded-item pcoded-left-item">
                           <li class="active pcoded-hasmenu">
-                              <a href="javascript:void(0);">
+                              <a href="{% url 'graph' %}">
                                   <span class="pcoded-micon"><i class="ti-sharethis"></i><b>FC</b></span>
                                   <span class="pcoded-mtext" data-i18n="nav.form-components.main">Graph based</span>
                                   <span class="pcoded-mcaret"></span>
@@ -185,7 +185,7 @@
                               <ul class="pcoded-submenu">
                                   {%for course in courseTitles %}
                                   <li class=" " >
-                                      <a href="{% url 'graph' %}" onclick="selectGraph('{{ course }}')">
+                                      <a href="#" onclick="selectGraph('{{ course }}')">
                                           <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                           <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">
                                               {{ course }}
@@ -213,7 +213,7 @@
                           <li class="">
                             <a href="{% url 'allcourses' %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
-                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Curriculum Similarity</span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Curricula Similarity</span>
                                 <span class="pcoded-mcaret"></span>
                             </a>
                         </li>
@@ -274,20 +274,22 @@
 
 <script>
 
+//   var dataset_nodes={{ dataset_nodes|safe }};
+//   var dataset_edges={{ dataset_edges|safe }};
+//   var courseTitles={{ courseTitles|safe}}
+// //---------------------------------------------------------------------
+
+// function selectGraph(courseTitle){
+//     // Construct URLSearchParams object instance from current URL querystring.
+//     var queryParams = new URLSearchParams(window.location.search);
+//     // Set new or modify existing parameter value.
+//     queryParams.set("courseTitle", courseTitle);
+//     // Replace current querystring with the new one.
+//     history.replaceState(null, null, "?"+queryParams.toString());
+//     location.reload();
+// }
 
 //---------------------------------------------------------------------
-
-function selectGraph(courseTitle){
-    // Construct URLSearchParams object instance from current URL querystring.
-    var queryParams = new URLSearchParams(window.location.search);
-    // Set new or modify existing parameter value.
-    queryParams.set("courseTitle", courseTitle);
-    // Replace current querystring with the new one.
-    history.replaceState(null, null, "?"+queryParams.toString());
-    location.reload();
-}
-
-
 function search(searchBoxNum){
     var searchValue =""
     if (searchBoxNum==1){

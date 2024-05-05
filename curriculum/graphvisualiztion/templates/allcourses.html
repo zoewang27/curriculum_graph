@@ -125,6 +125,10 @@ $(document).ready(function() {
             color: {
               border: "#406897",
               background: "white",
+              highlight: {
+                border: '#FF6347',
+                background: '#F5DEB3'
+            }
             },
             font: { color: "black" },
             shapeProperties: {
@@ -132,6 +136,14 @@ $(document).ready(function() {
             },
             },
             physics:false,
+
+            edges:{
+              color:{
+                color:"#406897",
+                highlight: '#FF6347', // 突出显示时的颜色
+              }
+              
+            },
 
             interaction: {
               navigationButtons: true,
@@ -141,11 +153,11 @@ $(document).ready(function() {
       network = new vis.Network(container, data, options);
 
 
-
-
-
-
+      
   }
+
+
+
 
 
 </script>
