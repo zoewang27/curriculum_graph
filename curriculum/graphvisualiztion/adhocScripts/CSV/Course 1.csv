@@ -1,0 +1,152 @@
+curriculumid,courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+1,1,,,,,-,Architecture and computer organization,-,Course,-,,-,,-
+1,1,0,,,,-,Objective,-,Course objective,-,,-,,-
+1,1,0,1,,,-,Obj1,-,Course objective,-,,-,,-
+1,1,0,2,,,-,Obj2,-,Course objective,-,,-,,-
+1,1,0,3,,,-,Obj3,-,Course objective,-,,-,,-
+1,1,0,4,,,-,Obj4,-,Course objective,-,,-,,-
+1,1,0,5,,,-,Obj5,-,Course objective,-,,-,,-
+1,1,1,,,,-,Computer abstraction and technology,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,1,1,,,-,Computer abstraction,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,1,2,,,-,Computer evolution,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,1,3,,,-,Instruction set architecture,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,1,4,,,-,High level language,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,1,5,,,-,Performance,-,Computer abstraction and technology,-,Understanding,-,,-
+1,1,2,,,,-,Instructions: Language of the Computer,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,1,2,1,,,-,Binary number,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,1,2,2,,,-,Logic design,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,1,2,2,1,,-,Logic operation,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,1,2,2,2,,-,Logic gates,-,Instructions: Language of the Computer,-,Understanding,-,,-
+1,1,3,,,,-,Arithmetic for Computers,-,Arithmetic for Computers,-,Understanding,-,,-
+1,1,3,1,,,-,Operation on integer,-,Arithmetic for Computers,-,Understanding,-,,-
+1,1,3,1,1,,-,Addition and subtraction,-,Arithmetic for Computers,-,Understanding,-,,-
+1,1,3,1,2,,-,Multiplication and division,-,Arithmetic for Computers,-,Understanding,-,,-
+1,1,3,1,3,,-,Dealing with overflow,-,Arithmetic for Computers,-,Understanding,-,"concepts include thread, block and Grid",-
+1,1,3,2,,,-,Floating-point real number,-,Arithmetic for Computers,-,Understanding,-,,-
+1,1,4,,,,-,The Processor,-,Processor,-,Understanding,-,,-
+1,1,4,1,,,-,CPU performance factors,-,Processor,-,Understanding,-,,-
+1,1,4,1,1,,-,Instruction count,-,Processor,-,Understanding,-,,-
+1,1,4,1,2,,-,CPI and cycle time,-,Processor,-,Understanding,-,,-
+1,1,4,2,,,-,MIPS,-,Processor,-,Understanding,-,,-
+1,1,4,3,,,-,Hazards,-,Processor,-,Understanding,-,,-
+1,1,4,3,1,,-,Structure hazards,-,Processor,-,Understanding,-,,-
+1,1,4,3,2,,-,Data hazards,-,Processor,-,Understanding,-,,-
+1,1,4,3,3,,-,Control hazards,-,Processor,-,Understanding,-,,-
+1,1,5,,,,-,Memory Hierarchy,-,Memory Hierarchy,-,Understanding,-,,-
+1,1,5,1,,,-,Memory wall,-,Memory Hierarchy,-,Understanding,-,,-
+1,1,5,1,1,,-,Principle of locality,-,Memory Hierarchy,-,Understanding,-,,-
+1,1,5,1,1,1,-,Temporal locality,-,Memory Hierarchy,-,Understanding,-,,-
+1,1,5,1,1,2,-,Spatial locality,-,Memory Hierarchy,-,Understanding,-,,-
+1,1,5,1,2,,-,DRAM organization,-,Memory Hierarchy,-,Understanding,-,,-
+1,1,6,,,,-,Multiprocessors,-,Multiprocessors,-,Understanding,-,,-
+1,1,6,1,,,-,Flynn taxonomy,-,Multiprocessors,-,Understanding,-,,-
+1,1,6,2,,,-,Amdahl's law,-,Multiprocessors,-,Understanding,-,,-
+1,1,6,3,,,-,Scaling,-,Multiprocessors,-,Understanding,-,,-
+1,13,,,,,-,Distributed and parallel programming,-,Course,-,,-,,-
+1,13,0,,,,-,Objective,-,Course objective,-,,-,,-
+1,13,0,1,,,-,Obj1,-,Course objective,-,Understand,-,,-
+1,13,0,2,,,-,Obj2,-,Course objective,-,Applying,-,,-
+1,13,0,3,,,-,Obj3,-,Course objective,-,Applying,-,,-
+1,13,0,4,,,-,Obj4,-,Course objective,-,Analysis,-,,-
+1,13,0,5,,,-,Obj5,-,Course objective,-,Applying,-,,-
+1,13,1,,,,-,Parallel and distributed system introduction,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,1,,,-,Computing_system_terminology,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,2,,,-,Why_parallel_computing?,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,2,1,,-,Moore's_law,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,2,2,,-,Power_wall,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,2,3,,-,Dennard_Scaling,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,3,,,-,Performance_and_speedup,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,3,1,,-,Hardware_metrics,-,Parallel and concurrency introduction,-,Understanding,-,"Metrics, e.g., latency, throughput, speed up, scaling",-
+1,13,1,3,2,,-,Scaling_and_scaling_law,-,Parallel and concurrency introduction,-,Applying,-,,-
+1,13,1,3,2,1,-,Amdahl's_law,-,Parallel and concurrency introduction,-,Applying,-,,-
+1,13,1,3,2,2,-,Gustafson’s_law,-,Parallel and concurrency introduction,-,Applying,-,,-
+1,13,1,3,3,,-,Efficiency,-,Parallel and concurrency introduction,-,Applying,-,,-
+1,13,1,4,,,-,Parallel_Architecture,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,4,1,,-,Michael_Flynn_Texonomy,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,4,2,,-,Parallelism options,-,Parallel and concurrency introduction,-,Understanding,-,"options include CPU level, e.g., multi core, many core, machine level, e.g., shared memory, distributed memory.",-
+1,13,1,5,,,-,Parallel_Application,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,1,5,1,,-,Terminology,-,Parallel and concurrency introduction,-,Understanding,-,"e.g., amount of work, span, speed of concurrency, average degree of concurrency, computational, communication, synchronization, granularity, locality.",-
+1,13,1,5,2,,-,Design_method,-,Parallel and concurrency introduction,-,Understanding,-,,-
+1,13,2,,,,-,Multi_threading,-,Multi-thread programming,-,Understanding,-,,-
+1,13,2,1,,,-,Programming model,-,Multi-thread programming,-,Understanding,-,,-
+1,13,2,1,1,,-,POSIX_threads ,-,Multi-thread programming,-,Applying,-,,-
+1,13,2,1,2,,-,OpenMP,-,Multi-thread programming,-,Applying,-,,-
+1,13,2,2,,,-,Race condition,-,Multi-thread programming,-,Analysis,-,,-
+1,13,2,3,,,-,Parallelism options,-,Multi-thread programming,-,Applying,-,,-
+1,13,3,,,,-,GPU,-,GPU programming,-,Understanding,-,,-
+1,13,3,1,,,-,GPU introduction,-,GPU programming,-,Understanding,-,,-
+1,13,3,1,1,,-,GPU programming model,-,GPU programming,-,Understanding,-,,-
+1,13,3,2,,,-,CUDA,-,GPU programming,-,Applying,-,,-
+1,13,3,2,1,,-,Concepts,-,GPU programming,-,Understanding,-,"concepts include thread, block and Grid",-
+1,13,3,2,2,,-,Programming model,-,GPU programming,-,Applying,-,,-
+1,13,3,2,2,,-,Optimization,-,GPU programming,-,Applying,-,"e.g., using streaming, acynchronious copy, increase occupancy, avoid divergency, smart synchronization, memory coalescing",-
+1,13,3,2,3,,-,Performance reasoning,-,GPU programming,-,Analysis,-,,-
+1,13,4,,,,-,MPI,-,MPI programming,-,Applying,-,,-
+1,13,4,1,,,-,MPI introduction,-,MPI programming,-,Understanding,-,,-
+1,13,4,2,,,-,MPI programming  model,-,MPI programming,-,Understanding,-,,-
+1,13,4,3,,,-,MPI communication,-,MPI programming,-,Understanding,-,,-
+1,13,4,4,,,-,MPI Data Model,-,MPI programming,-,Understanding,-,,-
+1,13,4,5,,,-,Derived data type,-,MPI programming,-,Understanding,-,,-
+1,13,5,,,,-,Cloud_DApp_Application,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,1,,,-,Cloud,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,1,1,,-,Virtualization,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,1,2,,-,Service,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,,,-,DApp,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,1,,-,Decentralization,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,2,,-,Blockchain,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,2,1,-,Hash,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,2,2,-,Address,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,2,3,-,Consensus,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,2,4,-,Incentive,-,Cloud and decentralized computing,-,Understanding,-,,-
+1,13,5,2,2,5,-,Smart contract,-,Cloud and decentralized computing,-,Applying,-,,-
+1,13,5,2,2,6,-,DApp,-,Cloud and decentralized computing,-,Applying,-,,-
+1,2,,,,,-,Inleiding Programmeren,-,Course,-,,-,5062INPR6Y,-
+1,2,0,,,,-,Objective,-,Course objective,-,,-,,-
+1,2,0,1,,,-,Obj1,-,Course objective,-,Analyzing,-,Een computationeel probleem analyseren en in handelbare stukjes opdelen,-
+1,2,0,2,,,-,Obj2,-,Course objective,-,Creating,-,Oplossingen implementeren in de programmeertaal C,-
+1,2,0,3,,,-,Obj3,-,Course objective,-,Applying,-,Leesbare C-code schrijven,-
+1,2,0,4,,,-,Obj5,-,Course objective,-,Applying,-,Kunnen werken met pointers; begrip van stack en heap,-
+1,2,0,5,,,-,Obj7,-,Course objective,-,Applying,-,Fouten in programma's opsporen en verbeteren,-
+1,2,0,6,,,-,Obj8,-,Course objective,-,Understanding,-,Specificaties voor code lezen en precies implementeren,-
+1,2,0,7,,,-,Obj9,-,Course objective,-,Applying,-,Gebruik maken van online en offline referentiemateriaal,-
+1,2,0,8,,,-,Obj11,-,Course objective,-,Analyzing,-,Design principes kennen en kunnen toepassen,-
+1,2,1,,,,-,C,-,C introduction,-,Understanding,-,,-
+1,2,1,1,,,-,gcc,-,C introduction,-,Understanding,-,,-
+1,2,1,2,,,-,Types,-,C introduction,-,Understanding,-,,-
+1,2,1,3,,,-,Variable,-,C introduction,-,Understanding,-,,-
+1,2,1,4,,,-,Branch,-,C introduction,-,Understanding,-,,-
+1,2,1,5,,,-,Loop,-,C introduction,-,Understanding,-,,-
+1,2,2,,,,-,Basic ingridient,-,C introduction,-,Understanding,-,,-
+1,2,2,1,,,-,Type conversion,-,C introduction,-,Understanding,-,,-
+1,2,2,2,,,-,Expression,-,C introduction,-,Understanding,-,,-
+1,2,2,3,,,-,Numerical operation,-,C introduction,-,Understanding,-,,-
+1,2,3,,,,-,Function,-,CFunction,-,Understanding,-,,-
+1,2,3,1,,,-,scope,-,CFunction,-,Understanding,-,,-
+1,2,3,2,,,-,lifecycle,-,CFunction,-,Understanding,-,,-
+1,2,3,3,,,-,Control-flow,-,Control flow,-,Understanding,-,,-
+1,2,4,,,,-,Pointer,-,Point and arrary,-,Understanding,-,,-
+1,2,5,,,,-,String,-,Point and arrary,-,Understanding,-,,-
+1,2,5,1,,,-,Arrary,-,Point and arrary,-,Understanding,-,,-
+1,2,5,2,,,-,Array copy,-,Point and arrary,-,Understanding,-,,-
+1,2,5,3,,,-,Multi dimension array,-,Point and arrary,-,Understanding,-,,-
+1,2,6,,,,-,I/O,-,Input and output,-,Understanding,-,,-
+1,2,6,1,,,-,Stream,-,Input and output,-,Understanding,-,,-
+1,2,6,2,,,-,Error handling,-,Input and output,-,Understanding,-,,-
+1,2,7,,,,-,Self-defined types,-,Self-defined type,-,Understanding,-,,-
+1,2,7,1,,,-,Enum,-,Self-defined type,-,Understanding,-,,-
+1,2,7,2,,,-,Union,-,Self-defined type,-,Understanding,-,,-
+1,2,7,3,,,-,Struct,-,Self-defined type,-,Understanding,-,,-
+1,2,8,,,,-,Memory,-,Memory,-,Understanding,-,,-
+1,2,8,1,,,-,Static,-,Memory,-,Understanding,-,,-
+1,2,8,2,,,-,Global,-,Memory,-,Understanding,-,,-
+1,2,9,,,,-,Modulization,-,Program module,-,Understanding,-,,-
+1,2,9,1,,,-,Link,-,Program module,-,Understanding,-,,-
+1,2,9,2,,,-,Library,-,Program module,-,Understanding,-,,-
+1,2,10,,,,-,C++,-,C++ introduction,-,Understanding,-,,-
+1,2,10,1,,,-,Object oriented,-,C++ introduction,-,Understanding,-,,-
+1,2,10,2,,,-,Constructor,-,C++ introduction,-,Understanding,-,,-
+1,2,10,3,,,-,Type hierarhy,-,C++ introduction,-,Understanding,-,,-
+1,2,10,4,,,-,Tempalte,-,C++ introduction,-,Understanding,-,,-
+1,2,11,,,,-,Debug,-,Debug,-,Understanding,-,,-
+1,2,11,1,,,-,Principles,-,Debug,-,Understanding,-,,-
+1,2,11,2,,,-,Tools,-,Debug,-,Understanding,-,,-

@@ -1,0 +1,153 @@
+{% extends "./layout.html" %}
+{% load static %}
+{% block content %}
+
+<style type="text/css">
+#mynetwork {
+        width: 100%;
+        height: 100%;
+        border: 0px solid lightgray;
+      }
+    
+</style>
+
+
+<main>
+  <div style="display: flex; align-items: center; justify-content: center;">
+    <button type="button" class="btn btn-primary detect-button" id = "show-acm-courses">
+      ACM curricula
+    </button>
+    <button type="button" class="btn btn-primary detect-button" style="margin-left: 20px;" id = "show-uva-courses">
+      UvA curricula
+    </button>
+    </div>
+    
+  <div id="mynetwork"></div>
+
+
+</main>
+
+<script>
+
+$(document).ready(function() {
+  $(".detect-button").click(function() {
+    const buttonText = $(this).text().trim();
+    var source;
+    if (buttonText === "ACM curricula") {
+        source = "ACM";
+    } else if (buttonText === "UvA curricula") {
+        source = "UVA";
+    }
+
+      console.log("source:",source);
+
+      $.ajax({
+  
+          url: '{% url "all-courses-similarity" %}', 
+          type: "POST",
+          data:{
+  
+            curriculumSource: source,
+            csrfmiddlewaretoken: "{{csrf_token}}",
+  
+          },
+          success: function(response) {
+              console.log(response);
+              if (response.nodes.length > 0) {
+                showGraph(response);
+              } else {
+                  alert("Don't have the related files now!");
+              }
+          },
+          error: function(xhr, status, error) {
+          }
+      });
+
+    });
+  });
+
+
+
+
+  function showGraph(response) {
+  
+      var dataset_nodes = response.nodes; 
+      var dataset_edges = response.edges; 
+  
+      var nodes_raw = new vis.DataSet(dataset_nodes);
+      var edges = new vis.DataSet(dataset_edges);
+
+      const nodes = nodes_raw.map(node => {
+      const { group, ...rest } = node;
+      return { ...rest, shape: "box" }; // take out the "group", and change the "shape"
+      });
+
+      // Cut text and add ellipses
+      nodes.forEach(function(node) {
+          var maxLength = 20; 
+          if (node.label.length > maxLength) {
+              node.label = node.label.substring(0, maxLength) + '...';
+          }
+      });
+
+      // change the the position of nodes
+      nodes.map((node, index) => {
+          const angle = 2 * Math.PI * (index / nodes.length + 0.75);
+          node.x = 400 * Math.cos(angle);
+          node.y = 400 * Math.sin(angle);
+          if (index % 2 === 0) {
+            node.value = index + 1;
+          }
+          return node;
+        });
+
+      // set title
+      nodes.forEach(function(node) {
+          node.title = node.description; 
+      });
+      
+
+      // Instantiate our network object.
+      var container = document.getElementById("mynetwork");
+      var data = {
+        nodes: nodes,
+        edges: edges,
+      };
+
+      
+      var options = {
+
+        nodes: {
+          shape: "dot",
+            borderWidth: 2,
+            shadow: true,
+            size: 15,
+            color: {
+              border: "#406897",
+              background: "white",
+            },
+            font: { color: "black" },
+            shapeProperties: {
+              useBorderWithImage: true,
+            },
+            },
+            physics:false,
+
+            interaction: {
+              navigationButtons: true,
+              keyboard: true,
+            },
+      };
+      network = new vis.Network(container, data, options);
+
+
+
+
+
+
+  }
+
+
+</script>
+
+{% endblock %}

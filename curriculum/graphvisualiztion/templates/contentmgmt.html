@@ -1,0 +1,369 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <title>Content Management</title>
+    <!-- HTML5 Shim and Respond.js IE9 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content="Gradient Able Bootstrap admin template made using Bootstrap 4. The starter version of Gradient Able is completely free for personal project." />
+    <meta name="keywords" content="flat ui, admin , Flat ui, Admin , Responsive, Landing, Bootstrap, App, Template, Mobile, iOS, Android, apple, creative app">
+    <meta name="author" content="codedthemes">
+    <!-- Favicon icon -->
+    <link rel="icon" href="{% static '/images/uva_logo.png'%}" type="image/x-icon">
+    <!-- Google font--><link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/bootstrap/css/bootstrap.min.css'%}">
+    <!-- themify-icons line icon -->
+    <link rel="stylesheet" type="text/css" href="{% static '/icon/themify-icons/themify-icons.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '/icon/font-awesome/css/font-awesome.min.css'%}">
+
+    <!-- ico font -->
+    <link rel="stylesheet" type="text/css" href="{% static '/icon/icofont/css/icofont.css'%}">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/jquery.mCustomScrollbar.css'%}">
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-graph.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.8.0/js/anychart-data-adapter.min.js"></script>
+
+    <script type="text/javascript" src="{% static '/graphVisualization/vis-data.min.js'%}"></script>
+    <script type="text/javascript" src="{% static '/graphVisualization/vis-network.min.js'%}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static '/graphVisualization/vis-network.min.css'%}" />
+    <script type="text/javascript" src="{% static 'js/jquery/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/jquery-ui/jquery-ui.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/popper.js/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap/js/bootstrap.min.js' %}"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="{% static 'js/jquery-slimscroll/jquery.slimscroll.js' %}"></script>
+    <!-- modernizr js -->
+    <script type="text/javascript" src="{% static 'js/modernizr/modernizr.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/modernizr/css-scrollbars.js' %}"></script>
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/pcoded.min.js' %}"></script>
+    <script src="{% static 'js/vartical-demo.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <style type="text/css">
+      html,
+      body,
+      #mynetwork {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #mynetwork {
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+        min-height: 100vh;
+        border-right: 1px solid lightgray;
+        background: white;
+      }
+
+      #text {
+        position: absolute;
+        left: 50%;
+        padding: 1em;
+      }
+
+      #title {
+        margin-bottom: 5em;
+      }
+    </style>
+    <script
+            type="text/javascript"
+            src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"
+    ></script>
+    <style type="text/css">
+      #mynetwork {
+        width: 100%;
+        height: 100%;
+        border: 0px solid lightgray;
+      }
+        div.vis-network div.vis-navigation div.vis-button.vis-up,
+        div.vis-network div.vis-navigation div.vis-button.vis-down,
+        div.vis-network div.vis-navigation div.vis-button.vis-left,
+        div.vis-network div.vis-navigation div.vis-button.vis-right,
+        div.vis-network div.vis-navigation div.vis-button.vis-zoomIn,
+        div.vis-network div.vis-navigation div.vis-button.vis-zoomOut,
+        div.vis-network div.vis-navigation div.vis-button.vis-zoomExtends {
+          background-image: none !important;
+        }
+
+        div.vis-network div.vis-navigation div.vis-button:hover {
+          box-shadow: none !important;
+        }
+
+        .vis-button:after {
+          font-size: 1.5em;
+          color: #0080FF;
+        }
+
+        .vis-button:hover:after {
+          font-size: 1.5em;
+          color: blue;
+        }
+
+        .vis-button.vis-down:after {
+          content: "⯅";
+        }
+
+        .vis-button.vis-up:after {
+          content: "⯆";
+        }
+
+        .vis-button.vis-right:after {
+          content: "◀";
+        }
+
+        .vis-button.vis-left:after {
+          content: "▶";
+        }
+
+        .vis-button.vis-zoomIn:after {
+          content: "+";
+          font-weight: bold;
+        }
+
+        .vis-button.vis-zoomOut:after {
+          content: "−";
+          font-weight: bold;
+        }
+
+        .vis-button.vis-zoomExtends:after {
+          content: "⤧";
+        }
+    </style>
+
+    <style>
+        h5.titleTrimming {
+          white-space: nowrap;
+          width: 60%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .show-read-more .more-text{
+            display: none;
+        }
+
+        .LockOn {
+
+        position: fixed;
+        background-color:black;
+
+        display: block;
+        visibility: visible;
+        z-index: 9999;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color:white;
+        vertical-align:bottom;
+        padding-top: 20%;
+        filter: alpha(opacity=75);
+        font-size:large;
+        color:blue;
+        font-style:italic;
+        font-weight:400;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    </style>
+</head>
+
+<body style=" overflow: hidden; ">
+<script>
+    $(window).scrollTop(0);
+</script>
+
+
+<!-- Pre-loader start -->
+<div class="theme-loader">
+    <div class="loader-track">
+        <div class="loader-bar"></div>
+    </div>
+</div>
+<!-- Pre-loader end -->
+<div id="pcoded" class="pcoded">
+    <div class="pcoded-overlay-box"></div>
+    <div class="pcoded-container navbar-wrapper">
+
+        <nav class="navbar header-navbar pcoded-header">
+            <div class="navbar-wrapper">
+                <div class="navbar-logo">
+                    <a class="mobile-menu" id="mobile-collapse" href="#!">
+                        <i class="ti-menu"></i>
+                    </a>
+                    <div class="mobile-search">
+                        <div class="header-search">
+                            <div class="main-search morphsearch-search">
+                                <div class="input-group">
+                                    <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                    <input type="text" class="form-control" placeholder="Enter Keyword">
+                                    <span class="input-group-addon search-btn"><i class="ti-search" ></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../genericpages/genericpages?page=home">
+                        <img class="img-fluid" src="{% static 'images/uva_logo.webp' %}" style="width:250px; margin-left: -50px;  padding:6px;margin-top:-5px;padding-left: -150px;" alt="Theme-Logo" />
+                    </a>
+                    <a class="mobile-options">
+                        <i class="ti-more"></i>
+                    </a>
+                </div>
+
+                <div class="navbar-container container-fluid">
+                    <ul class="nav-left">
+                        <li>
+                            <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                        </li>
+                        <li class="header-search">
+                            <div class="main-search morphsearch-search">
+                                <div class="input-group">
+                                    <span class="input-group-addon search-close"><i class="ti-close"></i></span>
+                                    <input type="text" class="form-control" id="searchbox1" name="searchbox1" onchange="search(1);">
+                                    <span class="input-group-addon search-btn" ><i class="ti-search"></i></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#!" onclick="javascript:toggleFullScreen()">
+                                <i class="ti-fullscreen"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav-right">
+
+                        <li class="user-profile header-notification">
+                            <a href="#!">
+                                <img src="{% static 'images/GuestICON.png' %}" class="img-radius" alt="User-Profile-Image">
+                                <span>Guest</span>
+                                <i class="ti-angle-down"></i>
+                            </a>
+                            <ul class="show-notification profile-notification">
+                                <li><a href="../accountManagement/login"><i class="ti-layout-sidebar-left"></i> Login </a> </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="pcoded-main-container">
+            <div class="pcoded-wrapper">
+                <nav class="pcoded-navbar">
+                    <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
+                    <div class="pcoded-inner-navbar main-menu">
+
+                        <div class="pcoded-search">
+                            <span class="searchbar-toggle">  </span>
+                            <div class="pcoded-search-box ">
+                                <input type="text" placeholder="Search" id="searchbox2" name="searchbox2" onchange="search(2);">
+                                <span class="search-icon" ><i class="ti-search" aria-hidden="true" onclick="search(2);"></i></span>
+                            </div>
+                        </div>
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Visualization</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="">
+                                <a href="   ../graphvisualiztion/graph">
+                                    <span class="pcoded-micon"><i class="ti-sharethis"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Graph based</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+       
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Administration</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="active">
+                                <a href="javascript:void(0);">
+                                    <span class="pcoded-micon"><i class="ti-layout-list-thumb"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Content management</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Info</div>
+                        <ul class="pcoded-item pcoded-left-item">
+                            <li class="">
+                                <a href="javascript:void(0);">
+                                    <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Publications</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span class="pcoded-micon"><i class="ti-user"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">R&amp;D team</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);">
+                                    <span class="pcoded-micon"><i class="ti-comments"></i><b>FC</b></span>
+                                    <span class="pcoded-mtext" data-i18n="nav.form-components.main">Feedback</span>
+                                    <span class="pcoded-mcaret"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="pcoded-content">
+                    <div class="pcoded-inner-content">
+
+                        <div class="main-body">
+                            <div class="page-wrapper" id="MessageBox">
+
+                                <div id="mynetwork">
+                                    <div style="padding:40px;">
+                                        <h6>New course upload</h6>
+                                        <form method="post" enctype="multipart/form-data">
+                                          {% csrf_token %}
+                                          {{ form.as_p }}
+                                          <button type="submit">Submit</button>
+                                        </form><hr>
+                                        <ul>
+                                        {% for document in documents %}
+                                            <li>
+                                                <a href="{{ document.upload_file.url }}">{{ document.upload_file.name }}</a>
+                                                <small>({{ document.upload_file.size|filesizeformat }}) - {{document.upload_date}}</small>
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% csrf_token %}
+
+
+</body>
+</html>

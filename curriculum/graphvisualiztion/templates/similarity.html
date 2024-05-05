@@ -1,0 +1,203 @@
+{% extends "./layout.html" %}
+{% load static %}
+{% block content %}
+
+
+<style type="text/css">
+#mynetwork {
+        width: 100%;
+        height: 100%;
+        border: 0px solid lightgray;
+      }
+    
+</style>
+
+
+<main>
+
+
+
+<div style="display: flex; align-items: center; justify-content: center;">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLong" >
+  Select Two courses
+</button>
+<p style="margin-bottom: 0; margin-left: 20px;" id="selected-course">  </p>
+</div>
+
+
+<div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle">Select Two courses</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 500px; overflow-y: auto;">
+        <!-- get courses list -->
+        <div style="padding-left: 25px">
+          <h6>ACM courses:</h6>
+
+        {% for courese in acm_courses %}
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            {{ courese }}
+          </label>
+        </div>
+      {% endfor %}
+        </div>
+      </br>
+
+        <div style="padding-left: 25px">
+          <h6>UvA courses:</h6>
+
+        {% for courese in uva_courses %}
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+          <label class="form-check-label" for="defaultCheck1">
+            {{ courese }}
+          </label>
+        </div>
+         {% endfor %}
+        </div>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="add-button" >Detect similarity</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+
+<div id="mynetwork"></div>
+
+
+</main>
+
+
+
+<script>
+  $(document).ready(function() {
+    $("#add-button").click(function() {
+      var checkboxes = $(".form-check-input:checked");
+        if (checkboxes.length !== 2) {
+            alert("Please select 2 courses.");
+        } else {
+            var selectedCourses = [];
+            checkboxes.each(function() {
+                selectedCourses.push($(this).siblings('label').text().trim());
+            });
+            // send the selected courses to the backend
+            sendSelectedCourses(selectedCourses);
+
+            // close the modal
+            $("#ModalLong").modal("hide");
+
+            // update the text of id="selected-course" 
+            $("#selected-course").text("selected: " + selectedCourses.join(", "));
+        }
+    });
+  });
+  
+  
+  function sendSelectedCourses(courses) {
+  
+      console.log(courses)
+      $.ajax({
+  
+          url: '{% url "similarity-detect" %}', 
+          type: "POST",
+          data:{
+  
+            courselist: JSON.stringify(courses), 
+            csrfmiddlewaretoken: "{{csrf_token}}",
+  
+          },
+          success: function(response) {
+              console.log(response);
+
+              if (response.nodes.length > 0) {
+                displayGraph(response);
+              } else {
+                  alert("The selected courses don't have any similar nodes. Please select other courses!");
+              }
+          },
+          error: function(xhr, status, error) {
+          }
+      });
+  }
+
+  
+  function displayGraph(response) {
+  
+      var dataset_nodes = response.nodes; 
+      var dataset_edges = response.edges; 
+  
+      var nodes = new vis.DataSet(dataset_nodes);
+      var edges = new vis.DataSet(dataset_edges);
+
+      // Cut text and add ellipses
+      nodes.forEach(function(node) {
+          var maxLength = 20; 
+          if (node.label.length > maxLength) {
+              node.label = node.label.substring(0, maxLength) + '...';
+          }
+      });
+
+      // set title
+      nodes.forEach(function(node) {
+          node.title = node.description; 
+      });
+      
+
+      // Instantiate our network object.
+      var container = document.getElementById("mynetwork");
+      var data = {
+        nodes: nodes,
+        edges: edges,
+      };
+
+      
+      var options = {
+        nodes: {
+        shape: "dot",
+          borderWidth: 2,
+          shadow: true,
+          size: 15,
+          color: {
+            border: "#406897",
+            background: "#6AAFFF",
+          },
+          font: { color: "black" },
+          shapeProperties: {
+            useBorderWithImage: true,
+          },
+          },
+          edges: {
+            width: 2,
+            shadow: true,
+          },
+
+          interaction: {
+            navigationButtons: true,
+            keyboard: true,
+          },
+      };
+      network = new vis.Network(container, data, options);
+
+    }
+</script>
+
+
+
+
+
+
+{% endblock %}
