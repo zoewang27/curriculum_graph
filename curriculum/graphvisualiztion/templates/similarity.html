@@ -150,12 +150,12 @@
               node.label = node.label.substring(0, maxLength) + '...';
           }
       });
-
-      // set title
-      nodes.forEach(function(node) {
-          node.title = node.description; 
-      });
       
+
+      nodes.forEach(function(node) {
+        node.title = '(' + node.cog_level + ') ' + node.title;
+      });
+
 
       // Instantiate our network object.
       var container = document.getElementById("mynetwork");
@@ -192,8 +192,9 @@
 
           physics: {
             barnesHut: { gravitationalConstant: -8000 },
-            stabilization: { iterations: 8000 },
+            stabilization: { iterations: 6000 },
           },
+
       };
       network = new vis.Network(container, data, options);
 

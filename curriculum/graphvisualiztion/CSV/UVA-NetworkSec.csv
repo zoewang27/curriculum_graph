@@ -1,0 +1,91 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+12,,,,,-,Networks and Network Security,-,Course,-,,-,,-
+12,0,,,,-,Objective,-,Course objective,-,,-,,-
+12,0,1,,,-,Obj1,-,Course objective,-,Remember,-,The students can describe what the Internet is and how it works;,-
+12,0,2,,,-,Obj2,-,Course objective,-,Analyze,-,"The students can explain the operation of network protocols, in particular the ones operating at transport and network layer;",-
+12,0,3,,,-,Obj3,-,Course objective,-,Understand,-,"The students can explain the architecture of modern network architectures, both wired and wireless;",-
+12,0,4,,,-,Obj4,-,Course objective,-,Apply,-,The students can describe the security implications of data communication and the solutions adopted to guarantee the correct functioning of the Internet.,-
+12,1,,,,-,Computer Networks and the Internet,-,Computer Networks and the Internet,-,Understand,-,,-
+12,1,1,,,-,Internet introduction,-,Computer Networks and the Internet,-,Understand,-,,-
+12,1,1,1,,-,The Internet,-,Computer Networks and the Internet,-,Understand,-,"Internet Introduction: An overview of the Internet, a global network connecting billions of devices worldwide.",-
+12,1,1,2,,-,The birth of the Internet,-,Computer Networks and the Internet,-,Understand,-,The Birth of the Internet: A historical perspective on the development and evolution of the Internet from its inception to its current state.,-
+12,1,2,,,-,Current Internet structure,-,Computer Networks and the Internet,-,Understand,-,"Current Internet Structure: An examination of the modern Internet infrastructure, including its backbone networks, ISPs (Internet Service Providers), and interconnected networks.",-
+12,1,3,,,-,Network performance,-,Computer Networks and the Internet,-,Understand,-,"Network Performance: Measures of network performance including delay, loss, and throughput",-
+12,1,4,,,-,Protocols layers,-,Computer Networks and the Internet,-,Understand,-,"Protocol Layers: The hierarchical structure of network protocols organized into layers, such as the OSI (Open Systems Interconnection) model or the TCP/IP (Transmission Control Protocol/Internet Protocol) suite.",-
+12,1,5,,,-,Encapsulation,-,Computer Networks and the Internet,-,Understand,-,"Encapsulation: The process of adding protocol headers and trailers to data packets as they traverse the network, providing information for routing and delivery.",-
+12,1,6,,,-,Application layer protocols,-,Computer Networks and the Internet,-,Understand,-,"Application Layer Protocols: Protocols operating at the highest layer of the OSI model, facilitating communication between applications, such as HTTP (Hypertext Transfer Protocol) for web browsing and SMTP (Simple Mail Transfer Protocol) for email communication.",-
+12,1,7,,,-,Sockets,-,Computer Networks and the Internet,-,Understand,-,"Sockets: Communication endpoints used to establish connections between devices over a network, enabling data exchange between client and server applications.",-
+12,1,8,,,-,HTTP,-,Computer Networks and the Internet,-,Understand,-,"HTTP: The protocol used for transferring hypertext documents on the World Wide Web, defining how web browsers and servers communicate to retrieve and display web pages.",-
+12,1,9,,,-,SMTP,-,Computer Networks and the Internet,-,Understand,-,"SMTP: A protocol for sending and receiving email messages between servers, allowing users to exchange electronic mail over the Internet.",-
+12,2,,,,-,Application layer,-,Application layer,-,Understand,-,,-
+12,2,1,,,-,DNS,-,Application layer,-,Understand,-,,-
+12,2,1,1,,-,DNS introduction,-,Application layer,-,Understand,-,"DNS Introduction: An overview of the Domain Name System (DNS), a hierarchical naming system for translating domain names into IP addresses.",-
+12,2,1,2,,-,DNS records,-,Application layer,-,Understand,-,"DNS Records: Different types of DNS records, such as A records (address records), CNAME records (canonical name records), MX records (mail exchange records), and TXT records (text records), each serving a specific purpose within the DNS infrastructure.",-
+12,2,1,3,,-,DNS security,-,Application layer,-,Understand,-,"DNS Security: Measures and protocols implemented to enhance the security of the DNS, including DNSSEC (DNS Security Extensions) for data integrity and authentication, DNS filtering to prevent malicious activities, and DNS over HTTPS (DoH) or DNS over TLS (DoT) for encrypted DNS communications.",-
+12,3,,,,-,Transport layer,-,Transport layer,-,Understand,-,,-
+12,3,1,,,-,Transport layer protocols,-,Transport layer,-,Understand,-,"Transport Layer Protocols: Overview of UDP (User Datagram Protocol) and TCP (Transmission Control Protocol), the two primary transport layer protocols used for communication over the Internet.",-
+12,3,1,1,,-,UDP,-,Transport layer,-,Understand,-,UDP: A connectionless protocol that provides a lightweight and fast but unreliable delivery of data packets.,-
+12,3,1,2,,-,TCP,-,Transport layer,-,Understand,-,"TCP: A connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data packets.",-
+12,3,2,,,-,Flow control,-,Transport layer,-,Understand,-,Flow Control: Mechanisms employed to manage the rate of data transmission between sender and receiver to prevent overwhelming the receiver or network congestion.,-
+12,3,3,,,-,BDP,-,Transport layer,-,Understand,-,BDP (Bandwidth-Delay Product): A measure of the maximum amount of data that can be in transit between the sender and receiver.,-
+12,3,4,,,-,Error recovery,-,Transport layer,-,Understand,-,"Error Recovery: Techniques used to detect and recover from errors or lost packets during data transmission, such as TCP's acknowledgment and retransmission mechanism.",-
+12,3,5,,,-,Refinements through options,-,Transport layer,-,Understand,-,"Refinements through Options: Additional features or options within TCP to optimize performance or cater to specific requirements, including TCP window scaling, selective acknowledgment (SACK), and timestamp options.",-
+12,3,6,,,-,Congestion control,-,Transport layer,-,Understand,-,"Congestion Control: Algorithms and mechanisms employed to manage and prevent network congestion, ensuring fair allocation of network resources and stable operation of the network.",-
+12,3,7,,,-,TCP fairness,-,Transport layer,-,Understand,-,"TCP Fairness: Ensuring fair access to network bandwidth among competing TCP connections, achieved through various congestion control algorithms like TCP Reno or TCP Vegas.",-
+12,4,,,,-,Network Layer,-,Network Layer,-,Understand,-,,-
+12,4,1,,,-,Functions of the network layer,-,Network Layer,-,Understand,-,"Functions of the Network Layer: The network layer facilitates communication between devices on different networks by managing packet forwarding, routing, and addressing.",-
+12,4,1,1,,-,Forwarding,-,Network Layer,-,Understand,-,Forwarding: The process of passing packets from one network device to another based on the destination address.,-
+12,4,1,2,,-,Routing,-,Network Layer,-,Understand,-,Routing: Determining the optimal path for packet delivery from the source to the destination across multiple interconnected networks.,-
+12,4,2,,,-,Datagram networks,-,Network Layer,-,Understand,-,"Datagram Networks: Network architecture where data is transmitted in discrete packets called datagrams, independently routed across the network.",-
+12,4,3,,,-,IP protocol,-,Network Layer,-,Understand,-,"IP Protocol: Internet Protocol, the principal protocol used for addressing and routing packets across the Internet.",-
+12,4,3,1,,-,IPv4,-,Network Layer,-,Understand,-,"IPv4: The fourth version of the Internet Protocol, widely used for addressing devices on the Internet, employing a 32-bit address space.",-
+12,4,3,1,1,-,Fragmentation,-,Network Layer,-,Understand,-,Fragmentation: Process of breaking down large packets into smaller fragments to fit within the maximum transmission unit (MTU) size of the underlying network.,-
+12,4,3,2,,-,IPv6 protocol,-,Network Layer,-,Understand,-,"IPv6 Protocol: The sixth version of the Internet Protocol, designed to overcome the limitations of IPv4, offering a larger address space and improved security features.",-
+12,4,3,2,1,-,IPv6 addressing,-,Network Layer,-,Understand,-,"IPv6 Addressing: IPv6 addresses are 128 bits in length and expressed in hexadecimal notation, allowing for a significantly larger number of unique addresses compared to IPv4.",-
+12,4,4,,,-,ICMP,-,Network Layer,-,Understand,-,"ICMP (Internet Control Message Protocol): Protocol used for diagnostic and error-reporting functions in IP networks, including ping and traceroute.",-
+12,4,5,,,-,DHCP,-,Network Layer,-,Understand,-,DHCP (Dynamic Host Configuration Protocol): Network management protocol used for dynamically assigning IP addresses and other configuration parameters to devices on a network.,-
+12,4,6,,,-,NAT,-,Network Layer,-,Understand,-,"NAT (Network Address Translation): Technique used to map private IP addresses of devices within a local network to a single public IP address for communication over the Internet, enhancing network security and address space conservation.",-
+12,4,7,,,-,Basic features of the routing control plane,-,Network Layer,-,Understand,-,Routing Control Plane: Manages the exchange of routing information between routers to establish optimal paths for data packets.,-
+12,4,7,1,,-,Routing,-,Network Layer,-,Understand,-,Routing: The process of determining the best path for data packets to travel from a source to a destination across a network.,-
+12,4,7,2,,-,Subnets,-,Network Layer,-,Understand,-,"Subnets: Logical divisions of an IP network, created by partitioning a larger network into smaller segments to improve performance and management.",-
+12,4,7,3,,-,Addressing and routing,-,Network Layer,-,Understand,-,Addressing and Routing: Involves assigning unique IP addresses to devices and using routing protocols to direct packets to their destinations based on these addresses.,-
+12,4,7,4,,-,Intra-domain routing,-,Network Layer,-,Understand,-,"Intra-domain Routing: Routing within a single administrative domain or network, typically managed by interior gateway protocols (IGPs) such as OSPF or RIP.",-
+12,4,8,,,-,Routing algorithms,-,Network Layer,-,Understand,-,Routing Algorithms: Algorithms used by routers to calculate optimal paths for packet forwarding.,-
+12,4,8,1,,-,Link state algorithm,-,Network Layer,-,Understand,-,"Link State Algorithm: Also known as the Shortest Path First (SPF) algorithm, it calculates the shortest path to all destinations in the network based on information exchanged among routers regarding network topology and link costs.",-
+12,4,8,2,,-,Distance vector algorithm,-,Network Layer,-,Understand,-,"Distance Vector Algorithm: Also known as the Bellman-Ford algorithm, it iteratively calculates the shortest path to all destinations based on distance estimates obtained from neighboring routers.",-
+12,4,9,,,-,Graphs and trees,-,Network Layer,-,Understand,-,Graphs and Trees: Data structures used to represent network topologies and hierarchies in computer networks.,-
+12,4,10,,,-,interior gateway protocols (IGP),-,Network Layer,-,Understand,-,Interior Gateway Protocols (IGP): Routing protocols used within an autonomous system (AS) or network domain to exchange routing information.,-
+12,4,10,1,,-,RIP: Routing Information Protocol,-,Network Layer,-,Understand,-,RIP (Routing Information Protocol): A distance vector routing protocol used for routing within small to medium-sized networks.,-
+12,4,10,2,,-,OSPF: Open Shortest Path First,-,Network Layer,-,Understand,-,"OSPF (Open Shortest Path First): A link-state routing protocol used for routing within larger networks, providing faster convergence and greater scalability compared to RIP.",-
+12,4,10,3,,-,IS-IS,-,Network Layer,-,Understand,-,"IS-IS (Intermediate System to Intermediate System): Another link-state routing protocol similar to OSPF, commonly used in large service provider networks.",-
+12,4,10,4,,-,EIGRP: Interior Gateway Routing Protocol,-,Network Layer,-,Understand,-,"EIGRP (Enhanced Interior Gateway Routing Protocol): A hybrid routing protocol that combines aspects of both distance vector and link-state protocols, developed by Cisco.",-
+12,4,11,,,-,BGP(Border Gateway Protocol),-,Network Layer,-,Understand,-,BGP (Border Gateway Protocol): A path vector routing protocol used to exchange routing information between different autonomous systems (ASes) on the internet.,-
+12,4,11,1,,-,BGP introduction,-,Network Layer,-,Understand,-,"BGP Introduction: Overview of the Border Gateway Protocol, which is critical for internet routing and inter-domain communication.",-
+12,4,11,2,,-,BGP security,-,Network Layer,-,Understand,-,BGP Security: Concerns and measures related to securing the Border Gateway Protocol to prevent various attacks and ensure the stability and integrity of internet routing.,-
+12,4,12,,,-,What's inside a router?,-,Network Layer,-,Understand,-,"What's Inside a Router?: Components and functionalities found within a typical router, including processors, memory, interfaces, and routing engines.",-
+12,4,12,1,,,Router architectures,-,Network Layer,-,Understand,-,"Router Architectures: Various designs and configurations used in the construction of routers, such as modular, monolithic, and distributed architectures.",-
+12,4,12,2,,,Quality of Service principles,-,Network Layer,-,Understand,-,"Quality of Service (QoS) Principles: Techniques and mechanisms employed to manage and prioritize network traffic based on predefined criteria, ensuring better performance and resource allocation.",-
+12,4,12,3,,,Diffserv and IntServ,-,Network Layer,-,Understand,-,Diffserv and IntServ: Differentiated Services (Diffserv) and Integrated Services (IntServ) are two QoS models used to provide different levels of service in packet-switched networks.,-
+12,4,12,3,1,,Differentiated Services,-,Network Layer,-,Understand,-,Differentiated Services: A QoS model that classifies and prioritizes network traffic into different service levels based on packet markings or other attributes.,-
+12,4,12,3,2,,Integrated services,-,Network Layer,-,Understand,-,Integrated Services: A QoS model that establishes a dedicated path for each flow of traffic and reserves network resources end-to-end to guarantee certain levels of service.,-
+12,4,12,4,,,"Policing, shaping and scheduling",-,Network Layer,-,Understand,-,"Policing, Shaping, and Scheduling: Traffic management techniques used to control the rate and priority of packets entering and leaving a network interface.",-
+12,4,12,4,1,,Resource Reservation Protocol (RSVP),-,Network Layer,-,Understand,-,"Resource Reservation Protocol (RSVP): A signaling protocol used to establish and maintain reservations for network resources along a data path, particularly in IntServ-based networks.",-
+12,5,,,,-,Link layer,-,Link layer,-,Understand,-,,-
+12,5,1,,,-,Introduction to data link layer,-,Link layer,-,Understand,-,Introduction to Data Link Layer: The second layer of the OSI model responsible for the reliable transmission of data across a physical link.,-
+12,5,2,,,-,ARP(address resolution protocol),-,Link layer,-,Understand,-,ARP (Address Resolution Protocol): A protocol used to map IP addresses to MAC addresses in local area networks.,-
+12,5,3,,,-,Ethernet,-,Link layer,-,Understand,-,Ethernet: A widely-used wired networking technology that defines the physical and data link layers of the OSI model.,-
+12,5,3,1,,-,Ethernet Frame,-,Link layer,-,Understand,-,"Ethernet Frame: The structure of data transmitted over an Ethernet network, including destination and source MAC addresses, type/length field, and payload.",-
+12,5,4,,,-,Switches,-,Link layer,-,Understand,-,"Switches: Network devices that operate at the data link layer, forwarding data based on MAC addresses within Ethernet frames.",-
+12,5,5,,,-,Spanning tree protocol,-,Link layer,-,Understand,-,Spanning Tree Protocol (STP): A protocol used to prevent loops in Ethernet networks by selectively blocking redundant paths.,-
+12,5,6,,,-,Virtual LANs,-,Link layer,-,Understand,-,"Virtual LANs (VLANs): A method of partitioning a physical network into multiple logical networks, improving network efficiency and security.",-
+12,5,7,,,-,Wireless basics,-,Link layer,-,Understand,-,"Wireless Basics: Introduction to wireless communication principles, including radio signals, wireless links, and the wireless spectrum.",-
+12,5,8,,,-,Radio signals,-,Link layer,-,Understand,-,,-
+12,5,9,,,-,Wireless links,-,Link layer,-,Understand,-,,-
+12,5,10,,,-,Wireless spectrum,-,Link layer,-,Understand,-,,-
+12,5,11,,,-,Wireless networks,-,Link layer,-,Understand,-,,-
+12,5,12,,,-,Bluetooth,-,Link layer,-,Understand,-,"Bluetooth: A wireless technology used for short-range communication between devices, often for purposes like file sharing or audio streaming.",-
+12,5,13,,,-,WiFi,-,Link layer,-,Understand,-,"WiFi: A wireless networking technology based on IEEE 802.11 standards, commonly used for local area networking and internet access.",-
+12,5,13,1,,-,Media access,-,Link layer,-,Understand,-,"Media Access: Methods used in shared media networks (like Ethernet) to control access to the transmission medium, such as collision avoidance and contention-based protocols like DCF (Distributed Coordination Function).",-
+12,5,13,2,,-,Collision avoidance,-,Link layer,-,Understand,-,,-
+12,5,13,3,,-,DCF,-,Link layer,-,Understand,-,,-
+12,5,14,,,-,802.11 frames,-,Link layer,-,Understand,-,"802.11 Frames: The structure of data frames used in WiFi networks, including management frames, control frames, and data frames.",-

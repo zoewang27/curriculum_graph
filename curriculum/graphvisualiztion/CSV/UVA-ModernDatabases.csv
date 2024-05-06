@@ -1,96 +1,96 @@
 courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
 11,,,,,-,Modern Databases,-,Course,-,,-,,-
 11,0,,,,-,Objective,-,Course objective,-,,-,,-
-11,0,1,,,-,Obj1,-,Course objective,-,Remembering,-,Introduction to the fundamental principles for data management,-
-11,0,2,,,-,Obj2,-,Course objective,-,Analyzing,-,Apply basic concepts for database design and implementation,-
-11,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,"Introduction to different types of databases (relational, NoSQL, Graph)",-
-11,1,,,,-,Relational Model & Algebra,-,Relational Model & Algebra,-,Understanding,-,,-
-11,1,1,,,-,Relational Model,-,Relational Model & Algebra,-,Understanding,-,A database model based on the concept of relations (tables) consisting of rows (tuples) and columns (attributes),-
-11,1,1,1,,-,Schema,-,Relational Model & Algebra,-,Understanding,-,"The structure or blueprint of a database, defining the organization of data elements, their relationships, and constraints.",
-11,1,1,2,,-,NULL values,-,Relational Model & Algebra,-,Understanding,-,Placeholder values in a database representing missing or undefined data for a particular attribute in a tuple.,-
-11,1,2,,,-,Constraints,-,Relational Model & Algebra,-,Understanding,-,"Rules or conditions imposed on data to ensure its integrity and validity, including primary key, foreign key, unique, not null, and check constraints.",-
-11,1,2,1,,-,Key,-,Relational Model & Algebra,-,Understanding,-,"An attribute or combination of attributes that uniquely identifies each tuple in a relation, such as a primary key or candidate key.",-
-11,1,2,2,,-,Foreign Key,-,Relational Model & Algebra,-,Understanding,-,"An attribute or set of attributes in a relation that refers to the primary key of another relation, establishing a relationship between the two relations.",-
-11,1,3,,,-,Relational Algebra,-,Relational Model & Algebra,-,Understanding,-,"A formal language for querying and manipulating data in relational databases, consisting of a set of operators for performing operations like selection, projection, joins, and set operations.",
-11,1,3,1,,-,Selection,-,Relational Model & Algebra,-,Understanding,-,Operation that retrieves tuples from a relation based on a specified condition or predicate.,
-11,1,3,2,,-,Projection,-,Relational Model & Algebra,-,Understanding,-,Operation that retrieves specific attributes (columns) from a relation while discarding others.,
-11,1,3,3,,-,Joins,-,Relational Model & Algebra,-,Understanding,-,"Operation that combines tuples from two or more relations based on a common attribute or condition, such as inner join, outer join, and cross join.",-
-11,1,3,4,,-,Set Operations,-,Relational Model & Algebra,-,Understanding,-,"Operations such as union, intersection, and difference that manipulate sets of tuples to perform operations across relations.",
-11,2,,,,-,Entity/Relationship Models,-,Entity/Relationship Models,-,Understanding,-,,-
-11,2,1,,,-,E/R Model,-,Entity/Relationship Models,-,Understanding,-,"A conceptual modeling technique used to represent the entities, attributes, and relationships within a domain.",
-11,2,1,1,,-,Entities,-,Entity/Relationship Models,-,Understanding,-,"Objects or concepts in the real world that are represented in the database, each identified by a unique key. Examples include a person, place, event, or object.",
-11,2,1,2,,-,Attributes,-,Entity/Relationship Models,-,Understanding,-,Properties or characteristics of entities that describe them. Attributes have values associated with them.,
-11,2,1,3,,-,Relationships,-,Entity/Relationship Models,-,Understanding,-,Associations between entities that represent connections or interactions.,-
-11,2,1,3,1,-,Roles,-,Entity/Relationship Models,-,Understanding,-,Roles define the participation of an entity in a relationship.,
-11,2,1,3,2,-,Cardinalities,-,Entity/Relationship Models,-,Understanding,-,Cardinality constraints specify the number of instances of one entity that can be associated with the number of instances of another entity in a relationship.,
-11,2,1,3,3,-,Attributes,-,Entity/Relationship Models,-,Understanding,-,,
-11,2,1,4,,-,Weak Entities,-,Entity/Relationship Models,-,Understanding,-,Entities that do not have a primary key attribute and depend on the existence of another entity (owner entity) for identification.,
-11,2,1,5,,-,Inheritance,-,Entity/Relationship Models,-,Understanding,-,Inheritance allows entities to inherit attributes and relationships from another entity.,
-11,2,2,,,-,E/R To Relational,-,Entity/Relationship Models,-,Understanding,-,"The process of converting an entity/relationship model into a relational schema, where entities become tables, relationships become foreign keys, and attributes become columns.",
-11,2,3,,,-,UML Class Diagrams,-,Entity/Relationship Models,-,Understanding,-,"Unified Modeling Language diagrams used to represent the structure and relationships of classes (entities) in object-oriented systems.Class diagrams can include attributes, operations, associations, inheritance, and multiplicity.",
-11,3,,,,-,SQL,-,SQL,-,Understanding,-,A domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).,-
-11,3,1,,,-,Table Definition,-,SQL,-,Understanding,-,"SQL statements used to define the structure of database tables, including specifying column names, data types, constraints, and indexes.",-
-11,3,2,,,-,Basic SELECT Queries,-,SQL,-,Understanding,-,"SQL queries used to retrieve data from a single table using the SELECT statement, which can include filtering, sorting, and limiting results.",-
-11,3,3,,,-,Subqueries,-,SQL,-,Understanding,-,"SQL queries nested within another query, used to perform operations on the result set of the outer query.",
-11,3,4,,,-,Aggregations,-,SQL,-,Understanding,-,"SQL functions used to perform calculations on sets of values to return a single value. Common aggregation functions include SUM, AVG, COUNT, MIN, and MAX.",
-11,3,5,,,-,Join Variants,-,SQL,-,Understanding,-,SQL clauses used to combine rows from two or more tables based on a related column between them.,
-11,3,6,,,-,Set Operators,-,SQL,-,Understanding,-,"SQL operators used to combine the results of two or more SELECT queries. Set operators include UNION, INTERSECT, and EXCEPT (or MINUS in some databases).",
-11,3,7,,,-,Data Modification & Triggers,-,SQL,-,Understanding,-,"SQL statements used to modify data in database tables, including INSERT, UPDATE, DELETE, and MERGE. Triggers are special stored procedures that are automatically executed in response to certain database events, such as INSERT, UPDATE, or DELETE operations on a table.",
-11,4,,,,-,Normalization,-,Normalization,-,Understanding,-,Normalization: A database design technique used to organize tables and reduce data redundancy.,-
-11,4,1,,,-,Introduction,-,Normalization,-,Understanding,-,Introduction: The process of organizing data in a database to minimize redundancy and dependency.,-
-11,4,2,,,-,Normal Forms,-,Normalization,-,Understanding,-,Normal Forms: A set of rules that determine the degree of normalization achieved in a database schema.,-
-11,4,2,1,,-,First Normal Form,-,Normalization,-,Understanding,-,First Normal Form (1NF): Ensures that each column in a table contains atomic values and there are no repeating groups of columns.,-
-11,4,2,2,,-,Relational Normal Forms,-,Normalization,-,Understanding,-,Relational Normal Forms: A series of progressively stricter rules for database normalization.,
-11,4,2,2,1,-,Introduction,-,Normalization,-,Understanding,-,,
-11,4,2,2,2,-,Functional Dependencies,-,Normalization,-,Understanding,-,"Functional Dependencies: Relationships between attributes in a relation, where the value of one attribute uniquely determines the value of another.",-
-11,4,2,2,3,-,Boyce-Codd Normal Form (BCNF),-,Normalization,-,Understanding,-,"Boyce-Codd Normal Form (BCNF): A higher level of normalization than Third Normal Form (3NF), where every determinant is a candidate key.",-
-11,4,2,2,4,-,Achieving Normalisation,-,Normalization,-,Understanding,-,Achieving Normalization: The process of transforming a database schema into higher normal forms by eliminating data redundancy and dependency through decomposition and restructuring.,-
-11,5,,,,-,Alternative Databases,-,Alternative Databases,-,Understanding,-,Alternative Databases: Databases that diverge from traditional relational databases in terms of data models and storage mechanisms.,-
-11,5,1,,,-,NoSQL,-,Alternative Databases,-,Understanding,-,"NoSQL: A category of databases that use non-relational data models, designed for scalability, flexibility, and high performance.",-
-11,5,1,1,,-,Key-value stores,-,Alternative Databases,-,Understanding,-,"Key-value Stores: Database systems that store data as a collection of key-value pairs, offering fast retrieval based on keys.",-
-11,5,1,1,1,-,DynamoDB,-,Alternative Databases,-,Understanding,-,"DynamoDB: A fully managed NoSQL database service provided by Amazon Web Services (AWS), known for its scalability and low latency.",-
-11,5,1,1,2,-,Cassandra,-,Alternative Databases,-,Understanding,-,Cassandra: A distributed and highly scalable NoSQL database designed to handle large amounts of data across multiple nodes.,
-11,5,1,1,3,-,memcached,-,Alternative Databases,-,Understanding,-,Memcached: A distributed memory caching system often used to speed up dynamic database-driven websites.,
-11,5,1,1,4,-,redis,-,Alternative Databases,-,Understanding,-,"Redis: An open-source, in-memory data structure store used as a database, cache, and message broker.",
-11,5,1,2,,-,Document stores,-,Alternative Databases,-,Understanding,-,"Document Stores: Databases that store and query data in the form of documents, typically using JSON or BSON formats.",-
-11,5,1,2,1,-,CouchDB,-,Alternative Databases,-,Understanding,-,"CouchDB: A document-oriented NoSQL database that uses JSON to store data, providing a RESTful HTTP API for document access.",
-11,5,1,2,2,-,MongoDB,-,Alternative Databases,-,Understanding,-,"MongoDB: A widely-used NoSQL document database known for its flexibility, scalability, and ease of use.",
-11,5,1,3,,-,Graph databases,-,Alternative Databases,-,Understanding,-,"Graph Databases: Database systems designed for storing and querying graph data structures, consisting of nodes, edges, and properties.",
-11,5,1,3,1,-,Neo4J,-,Alternative Databases,-,Understanding,-,Neo4J: A graph database management system known for its expressive query language (Cypher) and efficient handling of graph data.,
-11,5,1,3,2,-,Triple Stores,-,Alternative Databases,-,Understanding,-,"Triple Stores: Databases designed to store and query RDF data in the form of subject-predicate-object triples, adhering to the Resource Description Framework (RDF) standards.",
-11,5,1,4,,-,Text Indices,-,Alternative Databases,-,Understanding,-,Text Indices: Database systems that specialize in indexing and searching textual data efficiently.,
-11,5,1,4,1,-,Elasticsearch,-,Alternative Databases,-,Understanding,-,"Elasticsearch: A distributed, RESTful search and analytics engine designed for horizontal scalability and real-time search capabilities.",
-11,6,,,,-,Indexing,-,Indexing,-,Understanding,-,A technique used to improve the speed of data retrieval operations by creating a data structure that allows for efficient lookup based on specific attributes or columns.,-
-11,6,1,,,-,Introduction,-,Indexing,-,Understanding,-,,-
-11,6,2,,,-,Kinds of Indices,-,Indexing,-,Understanding,-,,-
-11,6,2,1,,-,Ordered,-,Indexing,-,Understanding,-,"Ordered: Index structure that maintains the keys in sorted order, facilitating binary search for efficient lookup.",
-11,6,2,2,,-,Hash,-,Indexing,-,Understanding,-,"Hash: Index structure that uses a hash function to map keys to buckets, providing fast access to data based on the hash value.",
-11,6,2,3,,-,B-Tree,-,Indexing,-,Understanding,-,"B-Tree: Balanced tree structure that maintains sorted data and allows for efficient insertion, deletion, and search operations.",
-11,6,2,4,,-,Inverted,-,Indexing,-,Understanding,-,"Inverted: Index structure commonly used in full-text search engines, where the index maps terms to the documents in which they occur.",
-11,6,3,,,-,Query Processing & Multi-Key,-,Indexing,-,Understanding,-,Techniques and algorithms used by database systems to leverage indices for query optimization and processing. Multi-key indexing refers to the creation of indices on multiple columns or attributes to support more complex query conditions efficiently.,
-11,7,,,,-,Database APIs,-,Database APIs,-,Understanding,-,Application Programming Interfaces provided by database management systems (DBMS) to interact with databases.,
-11,7,1,,,-,Database Client APIs,-,Database APIs,-,Understanding,-,"APIs specifically designed for database clients to establish connections, execute queries, and retrieve results from a database server.",
-11,7,2,,,-,ORM & Query Construction,-,Database APIs,-,Understanding,-,Object-Relational Mapping (ORM) frameworks facilitate database interaction by abstracting the database schema into object-oriented models.,
-11,7,3,,,-,UDFs,-,Database APIs,-,Understanding,-,Functions defined by users within a database system that extend its functionality.,
-11,8,,,,-,OLAP & Warehousing,-,OLAP & Warehousing,-,Understanding,-,,
-11,8,1,,,-,OLAP,-,OLAP & Warehousing,-,Understanding,-,Technology used for analyzing multidimensional data from multiple perspectives.,
-11,8,1,1,,-,Data Warenouse,-,OLAP & Warehousing,-,Understanding,-,A centralized repository that stores data from multiple sources in a structured format for analysis and reporting.,
-11,8,1,2,,-,Star Schema,-,OLAP & Warehousing,-,Understanding,-,A data warehouse schema design consisting of a central fact table surrounded by dimension tables.,
-11,8,1,3,,-,ETL,-,OLAP & Warehousing,-,Understanding,-,"The process of extracting data from various sources, transforming it into a consistent format, and loading it into a data warehouse.",
-11,8,2,,,-,Data Cubes,-,OLAP & Warehousing,-,Understanding,-,Multidimensional arrays or structures used in OLAP systems to represent summarized data.,
-11,8,2,1,,-,Cubes in SQL,-,OLAP & Warehousing,-,Understanding,-,SQL-based implementations or extensions that support multidimensional analysis similar to OLAP cubes.,
-11,9,,,,-,Transactions,-,Transactions,-,Understanding,-,"Transactions: Units of work performed within a database management system that must be executed atomically, consistently, isolated, and durably (ACID properties).",
-11,9,1,,,-,Anomalies,-,Transactions,-,Understanding,-,Anomalies: Inconsistencies that can occur in a database when transactions are executed concurrently and not properly managed.,
-11,9,1,1,,-,Lost Update,-,Transactions,-,Understanding,-,"Lost Update: An anomaly where the value of data is overwritten by a concurrent transaction, resulting in one of the updates being lost.",
-11,9,1,2,,-,Dirty Read,-,Transactions,-,Understanding,-,"Dirty Read: An anomaly where a transaction reads data that has been modified by another uncommitted transaction, leading to potentially incorrect results if the modifying transaction is rolled back.",
-11,9,2,,,-,Conflicts/Scheduling,-,Transactions,-,Understanding,-,"Conflicts/Scheduling: Situations where multiple transactions attempt to access or modify the same data concurrently, leading to contention and potential blocking.",
-11,9,3,,,-,Serialization Strategies,-,Transactions,-,Understanding,-,Serialization Strategies: Techniques for managing concurrency and ensuring the serializability of transactions.,
-11,9,3,1,,-,Pessimistic,-,Transactions,-,Understanding,-,Pessimistic: Approach where locks are acquired on data items before performing operations to prevent concurrent access. It assumes that conflicts are likely to occur.,
-11,9,3,2,,-,Optimistic,-,Transactions,-,Understanding,-,"Optimistic: Approach where transactions proceed without acquiring locks initially, and conflicts are detected and resolved later during transaction commit. It assumes conflicts are less likely.",
-11,9,3,3,,-,Multi-Version,-,Transactions,-,Understanding,-,Multi-Version: Approach where multiple versions of data items are maintained to allow concurrent transactions to access consistent snapshots of the database. It is commonly used in systems employing snapshot isolation.,
-11,10,,,,-,Database System Architectures,-,Database System Architectures,-,Understanding,-,,
-11,10,1,,,-,Centralized Database Systems,-,Database System Architectures,-,Understanding,-,Centralized Database Systems: Database systems where all data and processing are centralized on a single server or node.,
-11,10,2,,,-,Server System Architectures,-,Database System Architectures,-,Understanding,-,"Server System Architectures: Database systems where data and processing are distributed across multiple servers, with one server acting as the primary node coordinating operations.",
-11,10,3,,,-,Parallel Systems,-,Database System Architectures,-,Understanding,-,"Parallel Systems: Database systems designed to execute operations concurrently across multiple processors or cores, improving performance through parallelism.",
-11,10,4,,,-,Distributed Systems,-,Database System Architectures,-,Understanding,-,"Distributed Systems: Database systems where data is distributed across multiple nodes connected over a network, enabling scalability, fault tolerance, and geographic distribution.",
-11,10,5,,,-,Network Types,-,Database System Architectures,-,Understanding,-,"Network Types: The types of networks used to connect nodes in distributed systems, including LANs (Local Area Networks), WANs (Wide Area Networks), and MANs (Metropolitan Area Networks).",
+11,0,1,,,-,Obj1,-,Course objective,-,Remember,-,Introduction to the fundamental principles for data management,-
+11,0,2,,,-,Obj2,-,Course objective,-,Analyze,-,Apply basic concepts for database design and implementation,-
+11,0,3,,,-,Obj3,-,Course objective,-,Understand,-,"Introduction to different types of databases (relational, NoSQL, Graph)",-
+11,1,,,,-,Relational Model & Algebra,-,Relational Model & Algebra,-,Understand,-,,-
+11,1,1,,,-,Relational Model,-,Relational Model & Algebra,-,Understand,-,A database model based on the concept of relations (tables) consisting of rows (tuples) and columns (attributes),-
+11,1,1,1,,-,Schema,-,Relational Model & Algebra,-,Understand,-,"The structure or blueprint of a database, defining the organization of data elements, their relationships, and constraints.",
+11,1,1,2,,-,NULL values,-,Relational Model & Algebra,-,Understand,-,Placeholder values in a database representing missing or undefined data for a particular attribute in a tuple.,-
+11,1,2,,,-,Constraints,-,Relational Model & Algebra,-,Understand,-,"Rules or conditions imposed on data to ensure its integrity and validity, including primary key, foreign key, unique, not null, and check constraints.",-
+11,1,2,1,,-,Key,-,Relational Model & Algebra,-,Understand,-,"An attribute or combination of attributes that uniquely identifies each tuple in a relation, such as a primary key or candidate key.",-
+11,1,2,2,,-,Foreign Key,-,Relational Model & Algebra,-,Understand,-,"An attribute or set of attributes in a relation that refers to the primary key of another relation, establishing a relationship between the two relations.",-
+11,1,3,,,-,Relational Algebra,-,Relational Model & Algebra,-,Understand,-,"A formal language for querying and manipulating data in relational databases, consisting of a set of operators for performing operations like selection, projection, joins, and set operations.",
+11,1,3,1,,-,Selection,-,Relational Model & Algebra,-,Understand,-,Operation that retrieves tuples from a relation based on a specified condition or predicate.,
+11,1,3,2,,-,Projection,-,Relational Model & Algebra,-,Understand,-,Operation that retrieves specific attributes (columns) from a relation while discarding others.,
+11,1,3,3,,-,Joins,-,Relational Model & Algebra,-,Understand,-,"Operation that combines tuples from two or more relations based on a common attribute or condition, such as inner join, outer join, and cross join.",-
+11,1,3,4,,-,Set Operations,-,Relational Model & Algebra,-,Understand,-,"Operations such as union, intersection, and difference that manipulate sets of tuples to perform operations across relations.",
+11,2,,,,-,Entity/Relationship Models,-,Entity/Relationship Models,-,Understand,-,,-
+11,2,1,,,-,E/R Model,-,Entity/Relationship Models,-,Understand,-,"A conceptual modeling technique used to represent the entities, attributes, and relationships within a domain.",
+11,2,1,1,,-,Entities,-,Entity/Relationship Models,-,Understand,-,"Objects or concepts in the real world that are represented in the database, each identified by a unique key. Examples include a person, place, event, or object.",
+11,2,1,2,,-,Attributes,-,Entity/Relationship Models,-,Understand,-,Properties or characteristics of entities that describe them. Attributes have values associated with them.,
+11,2,1,3,,-,Relationships,-,Entity/Relationship Models,-,Understand,-,Associations between entities that represent connections or interactions.,-
+11,2,1,3,1,-,Roles,-,Entity/Relationship Models,-,Understand,-,Roles define the participation of an entity in a relationship.,
+11,2,1,3,2,-,Cardinalities,-,Entity/Relationship Models,-,Understand,-,Cardinality constraints specify the number of instances of one entity that can be associated with the number of instances of another entity in a relationship.,
+11,2,1,3,3,-,Attributes,-,Entity/Relationship Models,-,Understand,-,,
+11,2,1,4,,-,Weak Entities,-,Entity/Relationship Models,-,Understand,-,Entities that do not have a primary key attribute and depend on the existence of another entity (owner entity) for identification.,
+11,2,1,5,,-,Inheritance,-,Entity/Relationship Models,-,Understand,-,Inheritance allows entities to inherit attributes and relationships from another entity.,
+11,2,2,,,-,E/R To Relational,-,Entity/Relationship Models,-,Understand,-,"The process of converting an entity/relationship model into a relational schema, where entities become tables, relationships become foreign keys, and attributes become columns.",
+11,2,3,,,-,UML Class Diagrams,-,Entity/Relationship Models,-,Understand,-,"Unified Modeling Language diagrams used to represent the structure and relationships of classes (entities) in object-oriented systems.Class diagrams can include attributes, operations, associations, inheritance, and multiplicity.",
+11,3,,,,-,SQL,-,SQL,-,Understand,-,A domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).,-
+11,3,1,,,-,Table Definition,-,SQL,-,Understand,-,"SQL statements used to define the structure of database tables, including specifying column names, data types, constraints, and indexes.",-
+11,3,2,,,-,Basic SELECT Queries,-,SQL,-,Understand,-,"SQL queries used to retrieve data from a single table using the SELECT statement, which can include filtering, sorting, and limiting results.",-
+11,3,3,,,-,Subqueries,-,SQL,-,Understand,-,"SQL queries nested within another query, used to perform operations on the result set of the outer query.",
+11,3,4,,,-,Aggregations,-,SQL,-,Understand,-,"SQL functions used to perform calculations on sets of values to return a single value. Common aggregation functions include SUM, AVG, COUNT, MIN, and MAX.",
+11,3,5,,,-,Join Variants,-,SQL,-,Understand,-,SQL clauses used to combine rows from two or more tables based on a related column between them.,
+11,3,6,,,-,Set Operators,-,SQL,-,Understand,-,"SQL operators used to combine the results of two or more SELECT queries. Set operators include UNION, INTERSECT, and EXCEPT (or MINUS in some databases).",
+11,3,7,,,-,Data Modification & Triggers,-,SQL,-,Understand,-,"SQL statements used to modify data in database tables, including INSERT, UPDATE, DELETE, and MERGE. Triggers are special stored procedures that are automatically executed in response to certain database events, such as INSERT, UPDATE, or DELETE operations on a table.",
+11,4,,,,-,Normalization,-,Normalization,-,Understand,-,Normalization: A database design technique used to organize tables and reduce data redundancy.,-
+11,4,1,,,-,Introduction,-,Normalization,-,Understand,-,Introduction: The process of organizing data in a database to minimize redundancy and dependency.,-
+11,4,2,,,-,Normal Forms,-,Normalization,-,Understand,-,Normal Forms: A set of rules that determine the degree of normalization achieved in a database schema.,-
+11,4,2,1,,-,First Normal Form,-,Normalization,-,Understand,-,First Normal Form (1NF): Ensures that each column in a table contains atomic values and there are no repeating groups of columns.,-
+11,4,2,2,,-,Relational Normal Forms,-,Normalization,-,Understand,-,Relational Normal Forms: A series of progressively stricter rules for database normalization.,
+11,4,2,2,1,-,Introduction,-,Normalization,-,Understand,-,,
+11,4,2,2,2,-,Functional Dependencies,-,Normalization,-,Understand,-,"Functional Dependencies: Relationships between attributes in a relation, where the value of one attribute uniquely determines the value of another.",-
+11,4,2,2,3,-,Boyce-Codd Normal Form (BCNF),-,Normalization,-,Understand,-,"Boyce-Codd Normal Form (BCNF): A higher level of normalization than Third Normal Form (3NF), where every determinant is a candidate key.",-
+11,4,2,2,4,-,Achieving Normalisation,-,Normalization,-,Understand,-,Achieving Normalization: The process of transforming a database schema into higher normal forms by eliminating data redundancy and dependency through decomposition and restructuring.,-
+11,5,,,,-,Alternative Databases,-,Alternative Databases,-,Understand,-,Alternative Databases: Databases that diverge from traditional relational databases in terms of data models and storage mechanisms.,-
+11,5,1,,,-,NoSQL,-,Alternative Databases,-,Understand,-,"NoSQL: A category of databases that use non-relational data models, designed for scalability, flexibility, and high performance.",-
+11,5,1,1,,-,Key-value stores,-,Alternative Databases,-,Understand,-,"Key-value Stores: Database systems that store data as a collection of key-value pairs, offering fast retrieval based on keys.",-
+11,5,1,1,1,-,DynamoDB,-,Alternative Databases,-,Understand,-,"DynamoDB: A fully managed NoSQL database service provided by Amazon Web Services (AWS), known for its scalability and low latency.",-
+11,5,1,1,2,-,Cassandra,-,Alternative Databases,-,Understand,-,Cassandra: A distributed and highly scalable NoSQL database designed to handle large amounts of data across multiple nodes.,
+11,5,1,1,3,-,memcached,-,Alternative Databases,-,Understand,-,Memcached: A distributed memory caching system often used to speed up dynamic database-driven websites.,
+11,5,1,1,4,-,redis,-,Alternative Databases,-,Understand,-,"Redis: An open-source, in-memory data structure store used as a database, cache, and message broker.",
+11,5,1,2,,-,Document stores,-,Alternative Databases,-,Understand,-,"Document Stores: Databases that store and query data in the form of documents, typically using JSON or BSON formats.",-
+11,5,1,2,1,-,CouchDB,-,Alternative Databases,-,Understand,-,"CouchDB: A document-oriented NoSQL database that uses JSON to store data, providing a RESTful HTTP API for document access.",
+11,5,1,2,2,-,MongoDB,-,Alternative Databases,-,Understand,-,"MongoDB: A widely-used NoSQL document database known for its flexibility, scalability, and ease of use.",
+11,5,1,3,,-,Graph databases,-,Alternative Databases,-,Understand,-,"Graph Databases: Database systems designed for storing and querying graph data structures, consisting of nodes, edges, and properties.",
+11,5,1,3,1,-,Neo4J,-,Alternative Databases,-,Understand,-,Neo4J: A graph database management system known for its expressive query language (Cypher) and efficient handling of graph data.,
+11,5,1,3,2,-,Triple Stores,-,Alternative Databases,-,Understand,-,"Triple Stores: Databases designed to store and query RDF data in the form of subject-predicate-object triples, adhering to the Resource Description Framework (RDF) standards.",
+11,5,1,4,,-,Text Indices,-,Alternative Databases,-,Understand,-,Text Indices: Database systems that specialize in indexing and searching textual data efficiently.,
+11,5,1,4,1,-,Elasticsearch,-,Alternative Databases,-,Understand,-,"Elasticsearch: A distributed, RESTful search and analytics engine designed for horizontal scalability and real-time search capabilities.",
+11,6,,,,-,Indexing,-,Indexing,-,Understand,-,A technique used to improve the speed of data retrieval operations by creating a data structure that allows for efficient lookup based on specific attributes or columns.,-
+11,6,1,,,-,Introduction,-,Indexing,-,Understand,-,,-
+11,6,2,,,-,Kinds of Indices,-,Indexing,-,Understand,-,,-
+11,6,2,1,,-,Ordered,-,Indexing,-,Understand,-,"Ordered: Index structure that maintains the keys in sorted order, facilitating binary search for efficient lookup.",
+11,6,2,2,,-,Hash,-,Indexing,-,Understand,-,"Hash: Index structure that uses a hash function to map keys to buckets, providing fast access to data based on the hash value.",
+11,6,2,3,,-,B-Tree,-,Indexing,-,Understand,-,"B-Tree: Balanced tree structure that maintains sorted data and allows for efficient insertion, deletion, and search operations.",
+11,6,2,4,,-,Inverted,-,Indexing,-,Understand,-,"Inverted: Index structure commonly used in full-text search engines, where the index maps terms to the documents in which they occur.",
+11,6,3,,,-,Query Processing & Multi-Key,-,Indexing,-,Understand,-,Techniques and algorithms used by database systems to leverage indices for query optimization and processing. Multi-key indexing refers to the creation of indices on multiple columns or attributes to support more complex query conditions efficiently.,
+11,7,,,,-,Database APIs,-,Database APIs,-,Understand,-,Application Programming Interfaces provided by database management systems (DBMS) to interact with databases.,
+11,7,1,,,-,Database Client APIs,-,Database APIs,-,Understand,-,"APIs specifically designed for database clients to establish connections, execute queries, and retrieve results from a database server.",
+11,7,2,,,-,ORM & Query Construction,-,Database APIs,-,Understand,-,Object-Relational Mapping (ORM) frameworks facilitate database interaction by abstracting the database schema into object-oriented models.,
+11,7,3,,,-,UDFs,-,Database APIs,-,Understand,-,Functions defined by users within a database system that extend its functionality.,
+11,8,,,,-,OLAP & Warehousing,-,OLAP & Warehousing,-,Understand,-,,
+11,8,1,,,-,OLAP,-,OLAP & Warehousing,-,Understand,-,Technology used for analyzing multidimensional data from multiple perspectives.,
+11,8,1,1,,-,Data Warenouse,-,OLAP & Warehousing,-,Understand,-,A centralized repository that stores data from multiple sources in a structured format for analysis and reporting.,
+11,8,1,2,,-,Star Schema,-,OLAP & Warehousing,-,Understand,-,A data warehouse schema design consisting of a central fact table surrounded by dimension tables.,
+11,8,1,3,,-,ETL,-,OLAP & Warehousing,-,Understand,-,"The process of extracting data from various sources, transforming it into a consistent format, and loading it into a data warehouse.",
+11,8,2,,,-,Data Cubes,-,OLAP & Warehousing,-,Understand,-,Multidimensional arrays or structures used in OLAP systems to represent summarized data.,
+11,8,2,1,,-,Cubes in SQL,-,OLAP & Warehousing,-,Understand,-,SQL-based implementations or extensions that support multidimensional analysis similar to OLAP cubes.,
+11,9,,,,-,Transactions,-,Transactions,-,Understand,-,"Transactions: Units of work performed within a database management system that must be executed atomically, consistently, isolated, and durably (ACID properties).",
+11,9,1,,,-,Anomalies,-,Transactions,-,Understand,-,Anomalies: Inconsistencies that can occur in a database when transactions are executed concurrently and not properly managed.,
+11,9,1,1,,-,Lost Update,-,Transactions,-,Understand,-,"Lost Update: An anomaly where the value of data is overwritten by a concurrent transaction, resulting in one of the updates being lost.",
+11,9,1,2,,-,Dirty Read,-,Transactions,-,Understand,-,"Dirty Read: An anomaly where a transaction reads data that has been modified by another uncommitted transaction, leading to potentially incorrect results if the modifying transaction is rolled back.",
+11,9,2,,,-,Conflicts/Scheduling,-,Transactions,-,Understand,-,"Conflicts/Scheduling: Situations where multiple transactions attempt to access or modify the same data concurrently, leading to contention and potential blocking.",
+11,9,3,,,-,Serialization Strategies,-,Transactions,-,Understand,-,Serialization Strategies: Techniques for managing concurrency and ensuring the serializability of transactions.,
+11,9,3,1,,-,Pessimistic,-,Transactions,-,Understand,-,Pessimistic: Approach where locks are acquired on data items before performing operations to prevent concurrent access. It assumes that conflicts are likely to occur.,
+11,9,3,2,,-,Optimistic,-,Transactions,-,Understand,-,"Optimistic: Approach where transactions proceed without acquiring locks initially, and conflicts are detected and resolved later during transaction commit. It assumes conflicts are less likely.",
+11,9,3,3,,-,Multi-Version,-,Transactions,-,Understand,-,Multi-Version: Approach where multiple versions of data items are maintained to allow concurrent transactions to access consistent snapshots of the database. It is commonly used in systems employing snapshot isolation.,
+11,10,,,,-,Database System Architectures,-,Database System Architectures,-,Understand,-,,
+11,10,1,,,-,Centralized Database Systems,-,Database System Architectures,-,Understand,-,Centralized Database Systems: Database systems where all data and processing are centralized on a single server or node.,
+11,10,2,,,-,Server System Architectures,-,Database System Architectures,-,Understand,-,"Server System Architectures: Database systems where data and processing are distributed across multiple servers, with one server acting as the primary node coordinating operations.",
+11,10,3,,,-,Parallel Systems,-,Database System Architectures,-,Understand,-,"Parallel Systems: Database systems designed to execute operations concurrently across multiple processors or cores, improving performance through parallelism.",
+11,10,4,,,-,Distributed Systems,-,Database System Architectures,-,Understand,-,"Distributed Systems: Database systems where data is distributed across multiple nodes connected over a network, enabling scalability, fault tolerance, and geographic distribution.",
+11,10,5,,,-,Network Types,-,Database System Architectures,-,Understand,-,"Network Types: The types of networks used to connect nodes in distributed systems, including LANs (Local Area Networks), WANs (Wide Area Networks), and MANs (Metropolitan Area Networks).",

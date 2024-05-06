@@ -126,6 +126,12 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
 
+
+      nodes.forEach(function(node) {
+        node.title = '(' + node.cog_level + ') ' + node.title;
+      });
+
+      
       // Cut text and add ellipses
       nodes.forEach(function(node) {
           var maxLength = 20; 
@@ -134,11 +140,6 @@ document.addEventListener("DOMContentLoaded", function() {
           }
       });
 
-      // set title
-      nodes.forEach(function(node) {
-          node.title = node.description; 
-      });
-      
 
       // Instantiate our network object.
       var container = document.getElementById("mynetwork");
@@ -174,9 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
           },
           layout: {
             improvedLayout: false
-          }
-
-    
+          },
 
       };
       network = new vis.Network(container, data, options);

@@ -1,0 +1,45 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+15,,,,,-,Numerical Receipt,-,Course,-,Understand,-,,-
+15,0,,,,-,Objective,-,Course objective,-,Understand,-,,-
+15,0,1,,,-,Obj1,-,Course objective,-,Understand,-,read basic-level mathematics texts and understand the meaning of most formulas in the literature;,-
+15,0,2,,,-,Obj2,-,Course objective,-,Understand,-,The student can apply basic mathematics knowledge and skills from continuous mathematics in both bare mathematics form and in situations that will be discussed later in the study,-
+15,0,3,,,-,Obj3,-,Course objective,-,Understand,-,correctly formulate and write down mathematical calculations and answers to questions;,-
+15,0,4,,,-,Obj4,-,Course objective,-,Understand,-,apply standard methods from numerical mathematics;,-
+15,0,5,,,-,Obj5,-,Course objective,-,Understand,-,setting up and implementing structured computer programs for numerical algorithms;,-
+15,0,6,,,-,Obj6,-,Course objective,-,Understand,-,dealing systematically with errors in measurements and calculations,-
+15,1,,,,-,Introduction,-,Introduction,-,Understand,-,,-
+15,1,1,,,-,Numerical mathematics,-,Introduction,-,Understand,-,"Numerical Mathematics: A branch of mathematics concerned with the development, analysis, and implementation of algorithms for solving mathematical problems using numerical approximation techniques.",-
+15,1,2,,,-,Lagrange interpolatie,-,Introduction,-,Understand,-,Lagrange Interpolation: A method of constructing a polynomial that passes through a given set of points in the Cartesian plane.,-
+15,2,,,,-,Differentiation and derivative,-,Differentiation and derivative,-,Understand,-,,-
+15,2,1,,,-,Derivative: the basics,-,Differentiation and derivative,-,Understand,-,"Derivative: The Basics: Introduces the concept of derivatives, which represent the rate of change of a function at a particular point.",-
+15,2,2,,,-,Calculation rules for differentiation,-,Differentiation and derivative,-,Understand,-,"Calculation Rules for Differentiation: Explains various rules and techniques for calculating derivatives, including the power rule, product rule, quotient rule, and chain rule.",-
+15,2,3,,,-,Derivative: moistened,-,Differentiation and derivative,-,Understand,-,"Derivative: Moistened: Likely a typo, but possibly refers to the extension of basic derivative concepts to more complex functions or scenarios.",-
+15,2,4,,,-,Application,-,Differentiation and derivative,-,Understand,-,"Application: Discusses real-world applications of derivatives, such as optimization, finding extrema, and solving related rates problems.",-
+15,2,5,,,-,Numerical derivative,-,Differentiation and derivative,-,Understand,-,"Numerical Derivative: Describes methods for approximating derivatives numerically when analytical methods are impractical or unavailable, such as finite difference methods.",-
+15,3,,,,-,Taylor approximations and limits,-,Taylor approximations and limits,-,Understand,-,"Taylor Approximations: Discusses Taylor series, which are used to approximate functions as infinite sums of polynomial terms centered around a specific point.",-
+15,3,1,,,-,Taylor approaches,-,Taylor approximations and limits,-,Understand,-,"Taylor Approaches: Likely a variant of Taylor series, referring to the process of using Taylor expansions to approximate functions.",-
+15,3,2,,,-,Limits of rows,-,Taylor approximations and limits,-,Understand,-,"Limits of Rows: Possibly refers to the convergence or divergence of infinite series, including Taylor series, as the number of terms (rows) approaches infinity.",-
+15,3,3,,,-,Limits of functions,-,Taylor approximations and limits,-,Understand,-,Limits of Functions: Examines the behavior of functions as they approach certain values or as the independent variable approaches certain limits,-
+15,4,,,,-,Differentials and integrals,-,Differentials and integrals,-,Understand,-,,-
+15,4,1,,,-,Differentials,-,Differentials and integrals,-,Understand,-,"Differentials: Examines the concept of differentials, which are small changes in a function or variable.",-
+15,4,2,,,-,Primitive,-,Differentials and integrals,-,Understand,-,Primitive: Refers to the antiderivative or indefinite integral of a function.,-
+15,4,3,,,-,Surface and integrate,-,Differentials and integrals,-,Understand,-,Surface and Integrate: Likely refers to the process of finding the surface area of a three-dimensional shape and integrating functions over surfaces.,-
+15,4,4,,,-,Integration techniques,-,Differentials and integrals,-,Understand,-,"Integration Techniques: Covers various methods for finding integrals, including substitution, integration by parts, and trigonometric substitutions.",-
+15,4,4,1,,-,inverse chain rule and partial integrate,-,Differentials and integrals,-,Understand,-,Inverse Chain Rule and Partial Integrate: Could refer to the reverse process of the chain rule for derivatives and techniques for integrating functions involving partial derivatives.,-
+15,4,4,2,,-,Repeated partial integration and substitution rule,-,Differentials and integrals,-,Understand,-,Repeated Partial Integration and Substitution Rule: Involves techniques for repeatedly applying integration by parts or substitution to evaluate integrals.,-
+15,5,,,,-,Functions of more variables,-,Functions of more variables,-,Understand,-,,-
+15,5,1,,,-,Functions of 2 or more variables,-,Functions of more variables,-,Understand,-,Functions of 2 or more variables: Introduction to functions that depend on multiple variables.,-
+15,5,2,,,-,Differentiating functions of 2 or more variables,-,Functions of more variables,-,Understand,-,Differentiating functions of 2 or more variables: Discusses the process of finding derivatives of functions with respect to multiple variables.,-
+15,5,2,1,,-,Partial derivatives,-,Functions of more variables,-,Understand,-,"Partial derivatives: Examines the concept of partial derivatives, which represent how a function changes with respect to each of its variables, holding the others constant.",-
+15,5,2,2,,-,gradient,-,Functions of more variables,-,Understand,-,"Gradient: Introduces the gradient vector, which is a vector that points in the direction of the greatest rate of increase of a function.",-
+15,5,2,2,1,-,Chain rules,-,Functions of more variables,-,Understand,-,Chain rules: Covers rules for finding derivatives of composite functions involving multiple variables.,-
+15,5,3,,,-,Tangent vectors and tangent plane,-,Functions of more variables,-,Understand,-,"Tangent vectors and tangent plane: Explores tangent vectors and planes, which represent local linear approximations to surfaces defined by functions of multiple variables.",-
+15,5,4,,,-,Stationary points,-,Functions of more variables,-,Understand,-,"Stationary points: Points where the partial derivatives of a function are all zero, indicating potential maxima, minima, or saddle points.",-
+15,6,,,,-,Differential equations,-,Differential equations,-,Understand,-,,-
+15,6,1,,,-,Introduction,-,Differential equations,-,Understand,-,"Introduction: Provides an overview of differential equations, which describe how quantities change over time or space.",-
+15,6,2,,,-,Terminologle,-,Differential equations,-,Understand,-,"Terminology: Covers essential terms used in differential equations, such as order, degree, solution, and initial conditions.",-
+15,6,3,,,-,Separating variables,-,Differential equations,-,Understand,-,Separating variables: Describes a method for solving first-order ordinary differential equations by isolating variables on opposite sides of the equation.,-
+15,6,4,,,-,Line element field and solution curves,-,Differential equations,-,Understand,-,Line element field and solution curves: Introduces the concept of a line element field and how solution curves can be constructed based on this field.,-
+15,6,5,,,-,Asymptotics and stability,-,Differential equations,-,Understand,-,Asymptotics and stability: Explores the behavior of solutions to differential equations as time or space approaches infinity and stability analysis of equilibrium points.,-
+15,6,6,,,-,linear 2nd order GDVs with constant coefficients,-,Differential equations,-,Understand,-,"Linear 2nd order ODEs with constant coefficients: Focuses on second-order ordinary differential equations with constant coefficients, which have applications in various fields of science and engineering.",-
+15,6,7,,,-,Bifurcations,-,Differential equations,-,Understand,-,"Bifurcations: Discusses bifurcation theory, which studies qualitative changes in the solutions of differential equations as parameters vary.",-

@@ -1,0 +1,57 @@
+courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
+2,,,,,-,Introduction to Programming,-,Course,-,,-,,-
+2,0,,,,-,Objective,-,Course objective,-,,-,,-
+2,0,1,,,-,Obj1,-,Course objective,-,Analyze,-,Analyze a computational problem and divide it into manageable pieces,-
+2,0,2,,,-,Obj2,-,Course objective,-,Create,-,Implement solutions in the C programming language,-
+2,0,3,,,-,Obj3,-,Course objective,-,Apply,-,Write readable C code,-
+2,0,4,,,-,Obj5,-,Course objective,-,Apply,-,Being able to work with pointers; understanding of stack and heap,-
+2,0,5,,,-,Obj7,-,Course objective,-,Apply,-,Detect and correct errors in programs,-
+2,0,6,,,-,Obj8,-,Course objective,-,Understand,-,Read code specifications and implement them precisely,-
+2,0,7,,,-,Obj9,-,Course objective,-,Apply,-,Using online and offline reference material,-
+2,0,8,,,-,Obj11,-,Course objective,-,Analyze,-,Knowing and being able to apply design principles,-
+2,1,,,,-,C introduction,-,C introduction,-,Understand,-,"C introduction: C is a general-purpose, procedural programming language developed by Dennis Ritchie at Bell Labs in the early 1970s.",-
+2,1,1,,,-,gcc,-,C introduction,-,Understand,-,"gcc: GNU Compiler Collection (gcc) is a suite of compilers for various programming languages, including C, C++, and Fortran.",-
+2,1,2,,,-,Types,-,C introduction,-,Understand,-,"Types: C supports various data types, including integers, floating-point numbers, characters, and pointers, among others.",-
+2,1,3,,,-,Variable,-,C introduction,-,Understand,-,"Variable: In C, variables are used to store data values.",-
+2,1,4,,,-,Branch,-,C introduction,-,Understand,-,"Branch: Branching statements in C, such as if-else and switch-case, allow programmers to control the flow of execution based on certain conditions or values.",-
+2,1,5,,,-,Loop,-,C introduction,-,Understand,-,"Loop: Loops in C, such as for, while, and do-while, enable repeated execution of a block of code until a specified condition is met. ",-
+2,2,,,,-,Basic ingredients,-,Basic ingredients,-,Understand,-,"Basic ingredients: In C programming, the basic ingredients include variables, data types, operators, control structures, and functions, which are used to create programs.",-
+2,2,1,,,-,Type conversion,-,Basic ingredients,-,Understand,-,Type conversion: Type conversion in C refers to the process of converting one data type into another.,-
+2,2,2,,,-,Expression,-,Basic ingredients,-,Understand,-,"Expression: An expression in C is a combination of variables, constants, operators, and function calls that evaluates to a single value. ",-
+2,2,3,,,-,Numerical operation,-,Basic ingredients,-,Understand,-,"Numerical operation: Numerical operations in C include arithmetic operations (addition, subtraction, multiplication, division), bitwise operations (AND, OR, XOR), and relational operations (equal to, not equal to, greater than, less than), among others. ",-
+2,3,,,,-,CFunction,-,CFunction,-,Understand,-,"Function: In C, a function is a block of code that performs a specific task. It has a name, a return type, parameters (optional), and a body.",-
+2,3,1,,,-,scope,-,CFunction,-,Understand,-,Scope: Scope refers to the visibility and accessibility of variables within a program. ,-
+2,3,2,,,-,lifecycle,-,CFunction,-,Understand,-,"Lifecycle: The lifecycle of a function in C includes its declaration, definition, invocation (calling), execution, and termination. ",-
+2,3,3,,,-,Control-flow,-,CFunction,-,Understand,-,"Control-flow: Control-flow refers to the order in which statements are executed in a program. In C, control-flow is managed using control structures such as if-else statements, loops (for, while, do-while), switch statements, and function calls. ",-
+2,4,,,,-,Pointer,-,Pointer,-,Understand,-,Pointer: A pointer is a variable that stores the memory address of another variable. It allows indirect access to the value stored at that memory address.,-
+2,4,1,,,-,Pointer variables,-,Pointer,-,Understand,-,"Pointer variables: Pointer variables are variables that store memory addresses. They are declared using the * operator, followed by the data type of the variable they are pointing to.",
+2,4,2,,,-,Arrays and pointers,-,Pointer,-,Understand,-,"Arrays and pointers: In C, arrays and pointers are closely related. When an array name is used in an expression, it decays into a pointer to its first element. This allows arrays to be manipulated using pointer arithmetic.",
+2,4,3,,,-,Pointers to functions,-,Pointer,-,Understand,-,Pointers to functions: Pointers can also point to functions. They enable dynamic function invocation and can be used to implement callbacks and function tables.,
+2,4,4,,,-,Pointers to pointers,-,Pointer,-,Understand,-,"Pointers to pointers: Pointers can also point to other pointers. This allows for the creation of multi-level data structures such as linked lists and trees, where each node contains a pointer to another node.",
+2,5,,,,-,Strings and arrays,-,Strings and arrays,-,Understand,-,,-
+2,5,1,,,-,String,-,Strings and arrays,-,Understand,-,"String: In C, a string is represented as an array of characters terminated by a null character ('\0'). ",
+2,5,2,,,-,Arrary,-,Strings and arrays,-,Understand,-,Array: An array in C is a collection of elements of the same data type stored in contiguous memory locations. Arrays can be one-dimensional or multi-dimensional.,-
+2,5,2,1,,-,Array copy,-,Strings and arrays,-,Understand,-,"Array copy: In C, arrays cannot be directly copied using the assignment operator.",-
+2,5,2,2,,-,Multi dimension array,-,Strings and arrays,-,Understand,-,A multi-dimensional array in C is an array with more than one dimension.,-
+2,6,,,,-,Input and output(I/O),-,Input and output(I/O),-,Understand,-,"Input and output (I/O): In C, input and output operations are typically performed using the stdio.h library, which provides functions like printf for output and scanf for input.",-
+2,6,1,,,-,Stream,-,Input and output(I/O),-,Understand,-,"Stream: In C, a stream is an abstraction that represents a source or destination of data, such as a file or the standard input/output (stdin, stdout, stderr).",-
+2,6,2,,,-,Error handling,-,Input and output(I/O),-,Understand,-,"Error handling: C provides mechanisms for error handling, including return values from functions, setting errno (error number), and using perror and fprintf(stderr, ...) to output error messages.",-
+2,7,,,,-,Self-defined types,-,Self-defined type,-,Understand,-,,-
+2,7,1,,,-,Enum,-,Self-defined type,-,Understand,-,"Enum: Enums in C allow you to define a set of named integer constants, providing a way to create symbolic names for integral values.",-
+2,7,2,,,-,Union,-,Self-defined type,-,Understand,-,Union: Unions in C allow you to define a data type that can hold values of different types in the same memory location. Only one member of the union can be used at a time.,-
+2,7,3,,,-,Struct,-,Self-defined type,-,Understand,-,Struct: Structs in C allow you to create composite data types by grouping together variables of different types under a single name. ,-
+2,8,,,,-,Memory,-,Memory,-,Understand,-,,-
+2,8,1,,,-,Static,-,Memory,-,Understand,-,Static Memory: Static memory refers to a region of memory where variables are allocated for the entire duration of the program execution. Variables declared as static within functions retain their values between function calls.,-
+2,8,2,,,-,Global,-,Memory,-,Understand,-,Global Memory: Global memory refers to a region of memory where variables are allocated for the entire duration of the program execution and can be accessed from any part of the program.,-
+2,9,,,,-,Program module,-,Program module,-,Understand,-,Program Module: A program module is a discrete unit of software that performs a specific function or task within a larger software system.,
+2,9,1,,,-,Modulization,-,Program module,-,Understand,-,"Modularization: Modularization is the process of breaking down a software system into smaller, manageable modules or components.",-
+2,9,2,,,-,Link,-,Program module,-,Understand,-,Link: Linking is the process of combining multiple object files generated by the compiler into a single executable program.,-
+2,9,3,,,-,Library,-,Program module,-,Understand,-,"Library: A library is a collection of precompiled routines, functions, and procedures that can be used by a software program.",-
+2,10,,,,-,C++ introduction,-,C++ introduction,-,Understand,-,C++ Introduction: C++ is a general-purpose programming language developed as an extension of the C programming language.,-
+2,10,1,,,-,Object oriented,-,C++ introduction,-,Understand,-,"Object-Oriented: C++ is an object-oriented programming language, meaning it allows for the creation of classes and objects, encapsulation, inheritance, and polymorphism.",-
+2,10,2,,,-,Constructor,-,C++ introduction,-,Understand,-,Constructor: Constructors are special member functions in a class that are automatically called when an object of that class is created. ,-
+2,10,3,,,-,Type hierarhy,-,C++ introduction,-,Understand,-,"Type Hierarchy: In C++, the type hierarchy refers to the relationship between different types, including base classes and derived classes in inheritance hierarchies.",-
+2,10,4,,,-,Tempalte,-,C++ introduction,-,Understand,-,Template: Templates in C++ allow for generic programming by enabling the creation of functions and classes that operate on data types that are not specified until the template is instantiated. ,-
+2,11,,,,-,Debug,-,Debug,-,Understand,-,,-
+2,11,1,,,-,Principles,-,Debug,-,Understand,-,"Debug Principles: Debugging involves identifying and fixing errors, or bugs, in software. Principles include understanding the problem, isolating the cause, making changes systematically, and testing thoroughly.",-
+2,11,2,,,-,Tools,-,Debug,-,Understand,-,Debug Tools: Debugging tools help developers identify and fix errors in code. ,-

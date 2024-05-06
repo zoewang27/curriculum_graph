@@ -323,8 +323,6 @@ def getAllcourses():
     
 
 
-
-
 '''
 return singlecourse.html
 '''
@@ -341,7 +339,6 @@ return Similarity.html
 def SimilarityPage(request):
     acm_courses,uva_courses = getAllcourses()
     return render(request,'similarity.html', {'acm_courses': acm_courses, 'uva_courses': uva_courses}) 
-
 
 
 
@@ -390,7 +387,8 @@ def buildNodeEdges(csv_data):
             "label": row["topic"],
             "group": courseid,
             "shape": shape,
-            "description": row["topic"] + ": " + row["description_of_topic"],
+            "cog_level": row["Cognitive level"],
+            "title": row["topic"] + ": " + row["description_of_topic"],
         }
         nodes.append(node)
 
@@ -409,17 +407,17 @@ def buildNodeEdges(csv_data):
 
 '''
 Show single course graph
+comment: No need to save to a file now
 '''
 def showCourseGraph(request):
     if request.method == 'POST':
         selectedCourse = request.POST.get('course') 
         csv_file = selectedCourse + ".csv"
 
-        # build the path
+        
         # file_name = selectedCourse + '.json'
         # file_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data', file_name)
 
-        # # check if the file is exist
         # if os.path.exists(file_path):
         #     with open(file_path, 'r') as json_file:
         #         response_data = json.load(json_file)
@@ -429,7 +427,6 @@ def showCourseGraph(request):
         nodes,edges,courseID = buildNodeEdges(csv_data)
         response = {"nodes": nodes, "edges": edges, "courseId": courseID}
 
-            # save the result to the json file
             # folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data')      
             # if not os.path.exists(folder_path):
             #     os.makedirs(folder_path)
@@ -449,8 +446,8 @@ def bertModel(first_nodes, second_nodes):
     # use the fastest model
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
-    first_nodes_dict =  {node['description']: node['id'] for node in first_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
-    second_nodes_dict =  {node['description']: node['id'] for node in second_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
+    first_nodes_dict =  {node['title']: node['id'] for node in first_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
+    second_nodes_dict =  {node['title']: node['id'] for node in second_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
 
     first_labels = list(first_nodes_dict.keys())
     second_labels = list(second_nodes_dict.keys())
@@ -505,7 +502,7 @@ def buildEdgesForParentNode(NodeIds):
         id_parts = NodeId.split('.')
         for i in range(len(id_parts)):
             parent_id = '.'.join(id_parts[:i + 1])
-            if parent_id not in AllNodeIds:  # Check if edge already exists
+            if parent_id not in AllNodeIds:  # Check if nodeid already exists
                 AllNodeIds.append(parent_id)
 
     return edges, sorted(AllNodeIds)
@@ -605,9 +602,6 @@ def detectAllcourses(request):
             folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'CSV')  
             # get all CSV files with start with "UVA" or "ACM"
             matching_files = [file for file in os.listdir(folder_path) if file.startswith(curriculum)]
-
-            if matching_files:
-                matched = 1
 
             file_list = []  
             for file in matching_files:

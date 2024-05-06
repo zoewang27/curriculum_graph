@@ -1,61 +1,61 @@
 courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
-5,,,,,-,Web Technology,-,Course,-,Understanding,-,,-
-5,0,,,,-,Objective,-,Course objective,-,Understanding,-,,-
-5,0,1,,,-,Obj1,-,Course objective,-,Understanding,-,"Can construct a non-trivial interactive website based on HTML/CSS, PHP, Javascript and a relational database",-
-5,0,2,,,-,Obj2,-,Course objective,-,Understanding,-,Can create a relational database and design SQL queries collect and annotate external ones data or information through the use of web APl and web scraping,-
-5,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,Secure website and control user access to website and services build a user-oriented and community-oriented website,-
-5,0,4,,,-,Obj4,-,Course objective,-,Understanding,-,The student knows how project groups function and can reflect on their own performance within a project group,-
-5,0,5,,,-,Obj5,-,Course objective,-,Understanding,-,,-
-5,1,,,,-,World Wide Web basics,-,World Wide Web basics,-,Understanding,-,,-
-5,1,1,,,-,"URL, URI,URN",-,World Wide Web basics,-,Understanding,-,,-
-5,1,2,,,-,HTTP and other protocols,-,World Wide Web basics,-,Understanding,-,"HTTP, HTTPS, FTP, SMTP",-
-5,1,3,,,-,DNS and domain names,-,World Wide Web basics,-,Understanding,-,"DNS (Domain Name System): A hierarchical decentralized naming system for computers, services, or any resource connected to the internet or a private network. Domain names: Human-readable names used to identify websites and other resources on the internet, typically consisting of a series of labels separated by dots.",-
-5,1,4,,,-,IP addresses and network devices,-,World Wide Web basics,-,Understanding,-,"IP addresses: Numeric labels assigned to devices connected to a computer network that uses the Internet Protocol for communication. Network devices: Hardware devices such as routers, switches, and modems that facilitate communication between devices on a computer network.",-
-5,2,,,,-,"HTML, CSS, JavaScript,Relational Data Model",-,"HTML, CSS, JavaScript,Relational Data Model",-,Understanding,-,,-
-5,2,1,,,-,HTML and Document Object Mece （DOM）,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understanding,-,HTML (Hypertext Markup Language): A markup language used for creating the structure and content of web pages. DOM (Document Object Model): A programming interface for web documents that represents the structure of HTML and XML documents as a tree-like structure,-
-5,2,2,,,-,Cascaded Style Sheets （CSS）,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understanding,-,"CSS (Cascading Style Sheets): A style sheet language used for describing the presentation of HTML and XML documents, including colors, layouts, and fonts.",-
-5,2,3,,,-,Javascript: Introduction,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understanding,-,"JavaScript: A high-level programming language used for creating interactive and dynamic content on web pages, such as animations, interactive forms, and responsive behavior.",-
-5,2,4,,,-,Website data model and Relational data model,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understanding,-,,-
-5,3,,,,-,"SQL,DBdesign",-,"SQL,DBdesign",-,Understanding,-,,-
-5,3,1,,,-,"Data Model: 1NF, 2NF, 3NF",-,"SQL,DBdesign",-,Understanding,-,"1NF (First Normal Form), 2NF (Second Normal Form), 3NF (Third Normal Form)",-
-5,3,2,,,-,"Database: Building and using, MySQL",-,"SQL,DBdesign",-,Understanding,-,MySQL: A popular open-source relational database management system (RDBMS) that uses SQL for database management.,-
-5,3,3,,,-,Basic SQL commands and scripting,-,"SQL,DBdesign",-,Understanding,-,,-
-5,4,,,,-,"Server-side scripting, PHP",-,"Server-side scripting, PHP",-,Understanding,-,,-
-5,4,1,,,-,Introduction to PHP,-,"Server-side scripting, PHP",-,Understanding,-,PHP (Hypertext Preprocessor) is a server-side scripting language used for web development.,-
-5,4,2,,,-,PHP Data Object （PDO）,-,"Server-side scripting, PHP",-,Understanding,-,PDO is a PHP extension providing a uniform interface for accessing databases.,-
-5,4,2,1,,-,Querying databases from web applications,-,"Server-side scripting, PHP",-,Understanding,-,"PHP can interact with databases like MySQL, PostgreSQL, SQLite, etc., to fetch, insert, update, and delete data.",-
-5,4,3,,,-,PHP forms and security issues,-,"Server-side scripting, PHP",-,Understanding,-,,-
-5,4,3,1,,-,Markup injection,-,"Server-side scripting, PHP",-,Understanding,-,"Occurs when user input is not properly sanitized, leading to the injection of HTML markup into the webpage.",-
-5,4,3,2,,-,SQL injection,-,"Server-side scripting, PHP",-,Understanding,-,A common attack where malicious SQL code is inserted into input fields to manipulate the database.,-
-5,4,3,3,,-,PHP injection,-,"Server-side scripting, PHP",-,Understanding,-,A common attack where malicious SQL code is inserted into input fields to manipulate the database.,-
-5,4,4,,,-,Site structuring with PHP,-,"Server-side scripting, PHP",-,Understanding,-,PHP is often used to create dynamic web pages by embedding PHP code within HTML templates.,-
-5,4,5,,,-,Cookies,-,"Server-side scripting, PHP",-,Understanding,-,Small pieces of data stored on the client-side to track user activity or preferences.,-
-5,4,5,1,,-,Cookie regulation in GDPR,-,"Server-side scripting, PHP",-,Understanding,-,"The General Data Protection Regulation (GDPR) imposes regulations on how websites handle user data, including the use of cookies.",-
-5,5,,,,-,"Client-side scripting, web UX design",-,"Client-side scripting, web UX design",-,Understanding,-,,-
-5,5,1,,,-,Javascript basics and main functions,-,"Client-side scripting, web UX design",-,Understanding,-,Javascript basics and main functions: JavaScript is a scripting language used for client-side web development. It enables interactive web elements and dynamic content.,-
-5,5,2,,,-,Input validation in forms,-,"Client-side scripting, web UX design",-,Understanding,-,Input validation in forms: JavaScript can validate user input in forms to ensure data integrity and security before submitting it to the server.,-
-5,5,2,1,,-,Regular expressions,-,"Client-side scripting, web UX design",-,Understanding,-,Regular expressions: Regular expressions are patterns used to match character combinations in strings. They are often used in JavaScript for text search and manipulation.,-
-5,5,3,,,-,AJAX （Asynchronous Java and XML） method for asynchronous communication,-,"Client-side scripting, web UX design",-,Understanding,-,AJAX (Asynchronous JavaScript and XML): AJAX allows web pages to request and load data from a server asynchronously without reloading the entire page.,-
-5,5,4,,,-,Website design for User Experience （UX）,-,"Client-side scripting, web UX design",-,Understanding,-,,-
-5,5,4,1,,-,Personas,-,"Client-side scripting, web UX design",-,Understanding,-,Personas: Fictional characters representing different user types or demographics.,-
-5,5,4,2,,-,Optimising website elements for best UX,-,"Client-side scripting, web UX design",-,Understanding,-,"Optimizing website elements for best UX: This involves designing intuitive navigation, clear calls-to-action, responsive layouts, fast loading times, accessible content, and visually appealing designs to enhance user satisfaction and engagement.",-
-5,6,,,,-,WebAPI and Web Scraping,-,WebAPI and Web Scraping,-,Understanding,-,,-
-5,6,1,,,-,Harvesting data from the web,-,WebAPI and Web Scraping,-,Understanding,-,"Harvesting data from the web: Extracting data from websites for various purposes such as analysis, research, or integration into other applications.",-
-5,6,2,,,-,Web APIs,-,WebAPI and Web Scraping,-,Understanding,-,Web APIs: Application Programming Interfaces provided by web services to allow communication and interaction between different software systems over the internet.,-
-5,6,2,1,,-,REST Services,-,WebAPI and Web Scraping,-,Understanding,-,Representational State Transfer (REST) is a software architectural style for building distributed systems based on stateless communication over HTTP.,-
-5,6,2,2,,-,Examples popular Web APIs,-,WebAPI and Web Scraping,-,Understanding,-,"Examples of popular Web APIs: Examples include social media APIs (e.g., Twitter API, Facebook Graph API), mapping APIs (e.g., Google Maps API, Mapbox API), weather APIs, payment gateway APIs, and more.",-
-5,6,3,,,-,Data dumps and Open Data,-,WebAPI and Web Scraping,-,Understanding,-,Data dumps and Open Data: Some websites provide data dumps or openly accessible datasets for public use and analysis.,-
-5,6,4,,,-,Web Scraping,-,WebAPI and Web Scraping,-,Understanding,-,,-
-5,6,4,1,,-,Restrictions,-,WebAPI and Web Scraping,-,Understanding,-,Restrictions: Some websites have terms of service or use legal mechanisms to prevent automated access or scraping of their data.,-
-5,6,4,2,,-,Scraping data,-,WebAPI and Web Scraping,-,Understanding,-,Scraping data: Extracting specific information or content from web pages programmatically using web scraping techniques.,-
-5,6,5,,,-,Web scraping with PHP,-,WebAPI and Web Scraping,-,Understanding,-,PHP libraries and frameworks such as Guzzle and Symfony HttpClient can be used for web scraping tasks in PHP-based projects.,-
-5,6,6,,,-,Web scraping/Web sourcing with Python BeautifuISoup package,-,WebAPI and Web Scraping,-,Understanding,-,BeautifulSoup is a Python library for parsing HTML and XML documents,-
-5,7,,,,-,Web Application Security,-,Web Application Security,-,Understanding,-,,-
-5,7,1,,,-,"Securing your website, login, authentication",-,Web Application Security,-,Understanding,-,"Implementing robust authentication mechanisms, such as password hashing, multi-factor authentication, and session management, to protect user accounts and prevent unauthorized access.",-
-5,7,2,,,-,Different aspects of Security as technology and service domain,-,Web Application Security,-,Understanding,-,"Security encompasses various aspects, including network security, application security, data security, and physical security.",-
-5,7,3,,,-,Security foundations and Internet security,-,Web Application Security,-,Understanding,-,"Understanding foundational security principles, such as confidentiality, integrity, and availability (CIA triad), and applying security measures to protect against threats on the Internet.",-
-5,7,3,1,,-,"VPN,DNS security",-,Web Application Security,-,Understanding,-,"Using Virtual Private Networks (VPNs) to establish secure, encrypted connections over untrusted networks, and implementing DNS security measures, such as DNSSEC (Domain Name System Security Extensions)",-
-5,7,3,2,,-,Access control and Single Sign On （SSO）,-,Web Application Security,-,Understanding,-,"Managing user access to resources based on permissions and roles, and enabling Single Sign-On solutions to allow users to authenticate once and access multiple systems or applications securely.",-
-5,7,4,,,-,Standards and best practices: CVE and OWASP,-,Web Application Security,-,Understanding,-,,-
-5,7,5,,,-,DNS attacks,-,Web Application Security,-,Understanding,-,"Understanding common DNS attacks such as DNS spoofing, DNS amplification attacks, and DNS tunneling, and implementing countermeasures to protect DNS infrastructure and ensure the integrity of DNS resolution.",-
-5,7,6,,,-,Mobile devices and smartphones security architecture,-,Web Application Security,-,Understanding,-,"Implementing security measures on mobile devices and smartphones, including secure boot, encrypted storage, application sandboxing, and mobile device management (MDM) solutions",-
+5,,,,,-,Web Technology,-,Course,-,Understand,-,,-
+5,0,,,,-,Objective,-,Course objective,-,Understand,-,,-
+5,0,1,,,-,Obj1,-,Course objective,-,Understand,-,"Can construct a non-trivial interactive website based on HTML/CSS, PHP, Javascript and a relational database",-
+5,0,2,,,-,Obj2,-,Course objective,-,Understand,-,Can create a relational database and design SQL queries collect and annotate external ones data or information through the use of web APl and web scraping,-
+5,0,3,,,-,Obj3,-,Course objective,-,Understand,-,Secure website and control user access to website and services build a user-oriented and community-oriented website,-
+5,0,4,,,-,Obj4,-,Course objective,-,Understand,-,The student knows how project groups function and can reflect on their own performance within a project group,-
+5,0,5,,,-,Obj5,-,Course objective,-,Understand,-,,-
+5,1,,,,-,World Wide Web basics,-,World Wide Web basics,-,Understand,-,,-
+5,1,1,,,-,"URL, URI,URN",-,World Wide Web basics,-,Understand,-,,-
+5,1,2,,,-,HTTP and other protocols,-,World Wide Web basics,-,Understand,-,"HTTP, HTTPS, FTP, SMTP",-
+5,1,3,,,-,DNS and domain names,-,World Wide Web basics,-,Understand,-,"DNS (Domain Name System): A hierarchical decentralized naming system for computers, services, or any resource connected to the internet or a private network. Domain names: Human-readable names used to identify websites and other resources on the internet, typically consisting of a series of labels separated by dots.",-
+5,1,4,,,-,IP addresses and network devices,-,World Wide Web basics,-,Understand,-,"IP addresses: Numeric labels assigned to devices connected to a computer network that uses the Internet Protocol for communication. Network devices: Hardware devices such as routers, switches, and modems that facilitate communication between devices on a computer network.",-
+5,2,,,,-,"HTML, CSS, JavaScript,Relational Data Model",-,"HTML, CSS, JavaScript,Relational Data Model",-,Understand,-,,-
+5,2,1,,,-,HTML and Document Object Mece （DOM）,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understand,-,HTML (Hypertext Markup Language): A markup language used for creating the structure and content of web pages. DOM (Document Object Model): A programming interface for web documents that represents the structure of HTML and XML documents as a tree-like structure,-
+5,2,2,,,-,Cascaded Style Sheets （CSS）,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understand,-,"CSS (Cascading Style Sheets): A style sheet language used for describing the presentation of HTML and XML documents, including colors, layouts, and fonts.",-
+5,2,3,,,-,Javascript: Introduction,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understand,-,"JavaScript: A high-level programming language used for creating interactive and dynamic content on web pages, such as animations, interactive forms, and responsive behavior.",-
+5,2,4,,,-,Website data model and Relational data model,-,"HTML, CSS, JavaScript,Relational Data Model",-,Understand,-,,-
+5,3,,,,-,"SQL,DBdesign",-,"SQL,DBdesign",-,Understand,-,,-
+5,3,1,,,-,"Data Model: 1NF, 2NF, 3NF",-,"SQL,DBdesign",-,Understand,-,"1NF (First Normal Form), 2NF (Second Normal Form), 3NF (Third Normal Form)",-
+5,3,2,,,-,"Database: Building and using, MySQL",-,"SQL,DBdesign",-,Understand,-,MySQL: A popular open-source relational database management system (RDBMS) that uses SQL for database management.,-
+5,3,3,,,-,Basic SQL commands and scripting,-,"SQL,DBdesign",-,Understand,-,,-
+5,4,,,,-,"Server-side scripting, PHP",-,"Server-side scripting, PHP",-,Understand,-,,-
+5,4,1,,,-,Introduction to PHP,-,"Server-side scripting, PHP",-,Understand,-,PHP (Hypertext Preprocessor) is a server-side scripting language used for web development.,-
+5,4,2,,,-,PHP Data Object （PDO）,-,"Server-side scripting, PHP",-,Understand,-,PDO is a PHP extension providing a uniform interface for accessing databases.,-
+5,4,2,1,,-,Querying databases from web applications,-,"Server-side scripting, PHP",-,Understand,-,"PHP can interact with databases like MySQL, PostgreSQL, SQLite, etc., to fetch, insert, update, and delete data.",-
+5,4,3,,,-,PHP forms and security issues,-,"Server-side scripting, PHP",-,Understand,-,,-
+5,4,3,1,,-,Markup injection,-,"Server-side scripting, PHP",-,Understand,-,"Occurs when user input is not properly sanitized, leading to the injection of HTML markup into the webpage.",-
+5,4,3,2,,-,SQL injection,-,"Server-side scripting, PHP",-,Understand,-,A common attack where malicious SQL code is inserted into input fields to manipulate the database.,-
+5,4,3,3,,-,PHP injection,-,"Server-side scripting, PHP",-,Understand,-,A common attack where malicious SQL code is inserted into input fields to manipulate the database.,-
+5,4,4,,,-,Site structuring with PHP,-,"Server-side scripting, PHP",-,Understand,-,PHP is often used to create dynamic web pages by embedding PHP code within HTML templates.,-
+5,4,5,,,-,Cookies,-,"Server-side scripting, PHP",-,Understand,-,Small pieces of data stored on the client-side to track user activity or preferences.,-
+5,4,5,1,,-,Cookie regulation in GDPR,-,"Server-side scripting, PHP",-,Understand,-,"The General Data Protection Regulation (GDPR) imposes regulations on how websites handle user data, including the use of cookies.",-
+5,5,,,,-,"Client-side scripting, web UX design",-,"Client-side scripting, web UX design",-,Understand,-,,-
+5,5,1,,,-,Javascript basics and main functions,-,"Client-side scripting, web UX design",-,Understand,-,Javascript basics and main functions: JavaScript is a scripting language used for client-side web development. It enables interactive web elements and dynamic content.,-
+5,5,2,,,-,Input validation in forms,-,"Client-side scripting, web UX design",-,Understand,-,Input validation in forms: JavaScript can validate user input in forms to ensure data integrity and security before submitting it to the server.,-
+5,5,2,1,,-,Regular expressions,-,"Client-side scripting, web UX design",-,Understand,-,Regular expressions: Regular expressions are patterns used to match character combinations in strings. They are often used in JavaScript for text search and manipulation.,-
+5,5,3,,,-,AJAX （Asynchronous Java and XML） method for asynchronous communication,-,"Client-side scripting, web UX design",-,Understand,-,AJAX (Asynchronous JavaScript and XML): AJAX allows web pages to request and load data from a server asynchronously without reloading the entire page.,-
+5,5,4,,,-,Website design for User Experience （UX）,-,"Client-side scripting, web UX design",-,Understand,-,,-
+5,5,4,1,,-,Personas,-,"Client-side scripting, web UX design",-,Understand,-,Personas: Fictional characters representing different user types or demographics.,-
+5,5,4,2,,-,Optimising website elements for best UX,-,"Client-side scripting, web UX design",-,Understand,-,"Optimizing website elements for best UX: This involves designing intuitive navigation, clear calls-to-action, responsive layouts, fast loading times, accessible content, and visually appealing designs to enhance user satisfaction and engagement.",-
+5,6,,,,-,WebAPI and Web Scraping,-,WebAPI and Web Scraping,-,Understand,-,,-
+5,6,1,,,-,Harvesting data from the web,-,WebAPI and Web Scraping,-,Understand,-,"Harvesting data from the web: Extracting data from websites for various purposes such as analysis, research, or integration into other applications.",-
+5,6,2,,,-,Web APIs,-,WebAPI and Web Scraping,-,Understand,-,Web APIs: Application Programming Interfaces provided by web services to allow communication and interaction between different software systems over the internet.,-
+5,6,2,1,,-,REST Services,-,WebAPI and Web Scraping,-,Understand,-,Representational State Transfer (REST) is a software architectural style for building distributed systems based on stateless communication over HTTP.,-
+5,6,2,2,,-,Examples popular Web APIs,-,WebAPI and Web Scraping,-,Understand,-,"Examples of popular Web APIs: Examples include social media APIs (e.g., Twitter API, Facebook Graph API), mapping APIs (e.g., Google Maps API, Mapbox API), weather APIs, payment gateway APIs, and more.",-
+5,6,3,,,-,Data dumps and Open Data,-,WebAPI and Web Scraping,-,Understand,-,Data dumps and Open Data: Some websites provide data dumps or openly accessible datasets for public use and analysis.,-
+5,6,4,,,-,Web Scraping,-,WebAPI and Web Scraping,-,Understand,-,,-
+5,6,4,1,,-,Restrictions,-,WebAPI and Web Scraping,-,Understand,-,Restrictions: Some websites have terms of service or use legal mechanisms to prevent automated access or scraping of their data.,-
+5,6,4,2,,-,Scraping data,-,WebAPI and Web Scraping,-,Understand,-,Scraping data: Extracting specific information or content from web pages programmatically using web scraping techniques.,-
+5,6,5,,,-,Web scraping with PHP,-,WebAPI and Web Scraping,-,Understand,-,PHP libraries and frameworks such as Guzzle and Symfony HttpClient can be used for web scraping tasks in PHP-based projects.,-
+5,6,6,,,-,Web scraping/Web sourcing with Python BeautifuISoup package,-,WebAPI and Web Scraping,-,Understand,-,BeautifulSoup is a Python library for parsing HTML and XML documents,-
+5,7,,,,-,Web Application Security,-,Web Application Security,-,Understand,-,,-
+5,7,1,,,-,"Securing your website, login, authentication",-,Web Application Security,-,Understand,-,"Implementing robust authentication mechanisms, such as password hashing, multi-factor authentication, and session management, to protect user accounts and prevent unauthorized access.",-
+5,7,2,,,-,Different aspects of Security as technology and service domain,-,Web Application Security,-,Understand,-,"Security encompasses various aspects, including network security, application security, data security, and physical security.",-
+5,7,3,,,-,Security foundations and Internet security,-,Web Application Security,-,Understand,-,"Understanding foundational security principles, such as confidentiality, integrity, and availability (CIA triad), and applying security measures to protect against threats on the Internet.",-
+5,7,3,1,,-,"VPN,DNS security",-,Web Application Security,-,Understand,-,"Using Virtual Private Networks (VPNs) to establish secure, encrypted connections over untrusted networks, and implementing DNS security measures, such as DNSSEC (Domain Name System Security Extensions)",-
+5,7,3,2,,-,Access control and Single Sign On （SSO）,-,Web Application Security,-,Understand,-,"Managing user access to resources based on permissions and roles, and enabling Single Sign-On solutions to allow users to authenticate once and access multiple systems or applications securely.",-
+5,7,4,,,-,Standards and best practices: CVE and OWASP,-,Web Application Security,-,Understand,-,,-
+5,7,5,,,-,DNS attacks,-,Web Application Security,-,Understand,-,"Understanding common DNS attacks such as DNS spoofing, DNS amplification attacks, and DNS tunneling, and implementing countermeasures to protect DNS infrastructure and ensure the integrity of DNS resolution.",-
+5,7,6,,,-,Mobile devices and smartphones security architecture,-,Web Application Security,-,Understand,-,"Implementing security measures on mobile devices and smartphones, including secure boot, encrypted storage, application sandboxing, and mobile device management (MDM) solutions",-

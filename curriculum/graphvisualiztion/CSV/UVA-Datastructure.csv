@@ -1,47 +1,47 @@
 courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
-4,,,,,-,Data Structures,-,Course,-,Understanding,-,,-
-4,0,,,,-,Objective,-,Course objective,-,Understanding,-,,-
-4,0,1,,,-,Obj1,-,Course objective,-,Understanding,-,Implementing fundamental data structures and algorithms in C,-
-4,0,2,,,-,Obj2,-,Course objective,-,Understanding,-,Analyzing the resource usage of an algorithm with big O notation,-
-4,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,"Know the difference between worst case, best case, upper bound and lower bound",-
-4,0,4,,,-,Obj4,-,Course objective,-,Understanding,-,Explain how a data structure is stored in memory,-
-4,1,,,,,Data Structures Introduction,-,Data Structures Introduction,-,Understanding,-,Data Structures Introduction: Fundamentals of organizing and storing data efficiently.,-
-4,1,1,,,,ADT: STACK,-,Data Structures Introduction,-,Understanding,-,"ADT: STACK: Abstract Data Type representing a collection of elements with Last In, First Out (LIFO) access.",-
-4,1,2,,,,ADT: QUEUE,-,Data Structures Introduction,-,Understanding,-,"ADT: QUEUE: Abstract Data Type representing a collection of elements with First In, First Out (FIFO) access.",-
-4,1,3,,,,DS: ARRAY,-,Data Structures Introduction,-,Understanding,-,DS: ARRAY: Data Structure storing elements in contiguous memory locations with constant-time access to elements using indices.,-
-4,2,,,,,Searching And Lists,-,Searching And Lists,-,Understanding,-,Searching And Lists: Techniques for searching data efficiently and organizing data in lists.,-
-4,2,1,,,,ALG: Search algorithms,-,Searching And Lists,-,Understanding,-,"ALG: Search algorithms: Various algorithms for searching data including linear search, binary search, and more.",-
-4,2,2,,,,DS: Dynamic array,,Searching And Lists,,Understanding,,DS: Dynamic array: Data Structure similar to an array but with the ability to resize dynamically as needed.,
-4,2,3,,,,Searching And Lists,,Searching And Lists,,Understanding,,"DS: Linked list: Data Structure where elements are stored in nodes, each containing a reference to the next node in the sequence.",
-4,2,4,,,,Measuring performance,-,Searching And Lists,-,Understanding,-,Measuring performance: Methods for evaluating the efficiency and effectiveness of algorithms and data structures.,-
-4,3,,,,,Analysing Performance,,Analysing Performance,,Understanding,,Analysing Performance: Techniques for analyzing the performance of algorithms and data structures under various conditions.,
-4,3,1,,,,Simplifying With Bounds,,Analysing Performance,,Understanding,,Simplifying With Bounds: Using upper and lower bounds to simplify the analysis of algorithms and data structures.,
-4,3,2,,,,Sets And Maps,,Analysing Performance,,Understanding,,Sets And Maps: Fundamental data structures for storing unique elements (sets) and key-value pairs (maps).,
-4,3,3,,,,A Naive Set Implementation,-,Analysing Performance,-,Understanding,-,A Naive Set Implementation: Basic implementation of a set data structure without optimization or sophisticated features.,-
-4,4,,,,,Efficient Sets,-,Efficient Sets,-,Understanding,-,Efficient Sets: Data structures optimized for efficient storage and retrieval of unique elements.,-
-4,4,1,,,,ALG: BINARY SEARCH,,Efficient Sets,,Understanding,,ALG: BINARY SEARCH: Algorithm for searching sorted data by repeatedly dividing the search interval in half.,
-4,4,2,,,,Better Sets And Maps With Hash Tables,,Efficient Sets,,Understanding,,"Better Sets And Maps With Hash Tables: Data structures utilizing hash tables to achieve efficient insertion, deletion, and retrieval operations for sets and maps.",
-4,5,,,,,Algorithmic Bounds and Tree,,Algorithmic Bounds and Tree,,Understanding,,,
-4,5,1,,,,Algorithmic Bounds,,Algorithmic Bounds and Tree,,Understanding,,,
-4,5,1,1,,,Upper Bound: Big O,-,Algorithmic Bounds and Tree,-,Understanding,-,Upper Bound: Big O: Represents the worst-case time complexity of an algorithm.,-
-4,5,1,2,,,Lower Bound: Omega,,Algorithmic Bounds and Tree,,Understanding,,Lower Bound: Omega: Represents the best-case time complexity of an algorithm.,
-4,5,1,3,,,Sharp Bounds: Theta,-,Algorithmic Bounds and Tree,-,Understanding,-,"Sharp Bounds: Theta: Represents both upper and lower bounds, indicating tight asymptotic behavior.",-
-4,5,2,,,,Data Structure: Tree,,Algorithmic Bounds and Tree,,Understanding,,,
-4,5,2,1,,,tree,,Algorithmic Bounds and Tree,,Understanding,,"Tree: A hierarchical data structure consisting of nodes connected by edges, typically with one designated as the root.",
-4,5,2,2,,,Trie,-,Algorithmic Bounds and Tree,-,Understanding,-,"Trie: A tree data structure used for efficient retrieval of strings, particularly in dictionary implementations.",-
-4,5,2,3,,,Suffix tree,,Algorithmic Bounds and Tree,,Understanding,,"Suffix Tree: A tree data structure used for pattern matching in strings, particularly for finding all occurrences of a substring in a larger string.",
-4,6,,,,,Data Structure: Binary Tree,,Data Structure: Binary Tree,,Understanding,,,
-4,6,1,,,,Binary Tree,-,Data Structure: Binary Tree,-,Understanding,-,"Binary Tree: A tree data structure in which each node has at most two children, commonly referred to as the left child and the right child.",-
-4,6,2,,,,ADT: Priority Queue,-,Data Structure: Binary Tree,-,Understanding,-,A data structure that supports efficient retrieval of the highest (or lowest) priority element.,-
-4,6,3,,,,DS: Binary Heap,-,Data Structure: Binary Tree,-,Understanding,-,A complete binary tree with a special property where the value of each node is greater than or equal to (or less than or equal to) the values of its children.,-
-4,6,4,,,,Algorithm: Heapsort,-,Data Structure: Binary Tree,-,Understanding,-,A comparison-based sorting algorithm that uses a binary heap data structure to sort elements in-place.,-
-4,7,,,,,DS: Binary Search Tree,-,Data Structure: Binary Tree,-,Understanding,-,A binary tree data structure in which each node has a key greater than all keys in its left subtree and less than all keys in its right subtree.,-
-4,8,,,,,Balancing A Bst,,Balancing A Bst,,Understanding,,"Process of ensuring that the height of a binary search tree remains balanced to maintain efficient search, insertion, and deletion operations.",
-4,8,1,,,,Rebalancing A Bst,-,Balancing A Bst,-,Understanding,-,The process of restoring balance in a binary search tree after an insertion or deletion operation that may have caused it to become unbalanced.,-
-4,8,2,,,,Limitations,-,Balancing A Bst,-,Understanding,-,"Constraints or drawbacks associated with binary search trees, such as the potential for degeneration into a linear data structure.",-
-4,8,3,,,,Self-Balancing Trees: AVL Trees,-,Balancing A Bst,-,Understanding,-,A type of binary search tree that automatically maintains balance by performing rotations after insertions and deletions to ensure a maximum height difference of 1 between subtrees.,-
-4,9,,,,,Amortized Analysis,,Balancing A Bst,,Understanding,,"A method of analyzing the time complexity of algorithms over a sequence of operations, considering both expensive and inexpensive operations to provide an average performance guarantee.",
-4,10,,,,,Graph,-,Graph,-,Understanding,-,A data structure composed of a set of vertices and a set of edges connecting pairs of vertices.,-
-4,10,1,,,,Graph Representations,-,Graph,-,Understanding,-,"Various ways to represent graphs, such as adjacency matrix, adjacency list, and edge list.",-
-4,10,2,,,,Graph Search,-,Graph,-,Understanding,-,Algorithms for traversing or searching a graph to visit all vertices or find specific paths or patterns within the graph.,-
-4,10,3,,,,Disjoint Set And Minimum Spanning Tree,-,Graph,-,Understanding,-,Techniques and algorithms related to disjoint set data structures and the construction of minimum spanning trees in graphs.,-
+4,,,,,-,Data Structures,-,Course,-,Understand,-,,-
+4,0,,,,-,Objective,-,Course objective,-,Understand,-,,-
+4,0,1,,,-,Obj1,-,Course objective,-,Understand,-,Implementing fundamental data structures and algorithms in C,-
+4,0,2,,,-,Obj2,-,Course objective,-,Understand,-,Analyzing the resource usage of an algorithm with big O notation,-
+4,0,3,,,-,Obj3,-,Course objective,-,Understand,-,"Know the difference between worst case, best case, upper bound and lower bound",-
+4,0,4,,,-,Obj4,-,Course objective,-,Understand,-,Explain how a data structure is stored in memory,-
+4,1,,,,,Data Structures Introduction,-,Data Structures Introduction,-,Understand,-,Data Structures Introduction: Fundamentals of organizing and storing data efficiently.,-
+4,1,1,,,,ADT: STACK,-,Data Structures Introduction,-,Understand,-,"ADT: STACK: Abstract Data Type representing a collection of elements with Last In, First Out (LIFO) access.",-
+4,1,2,,,,ADT: QUEUE,-,Data Structures Introduction,-,Understand,-,"ADT: QUEUE: Abstract Data Type representing a collection of elements with First In, First Out (FIFO) access.",-
+4,1,3,,,,DS: ARRAY,-,Data Structures Introduction,-,Understand,-,DS: ARRAY: Data Structure storing elements in contiguous memory locations with constant-time access to elements using indices.,-
+4,2,,,,,Searching And Lists,-,Searching And Lists,-,Understand,-,Searching And Lists: Techniques for searching data efficiently and organizing data in lists.,-
+4,2,1,,,,ALG: Search algorithms,-,Searching And Lists,-,Understand,-,"ALG: Search algorithms: Various algorithms for searching data including linear search, binary search, and more.",-
+4,2,2,,,,DS: Dynamic array,,Searching And Lists,,Understand,,DS: Dynamic array: Data Structure similar to an array but with the ability to resize dynamically as needed.,
+4,2,3,,,,Searching And Lists,,Searching And Lists,,Understand,,"DS: Linked list: Data Structure where elements are stored in nodes, each containing a reference to the next node in the sequence.",
+4,2,4,,,,Measuring performance,-,Searching And Lists,-,Understand,-,Measuring performance: Methods for evaluating the efficiency and effectiveness of algorithms and data structures.,-
+4,3,,,,,Analysing Performance,,Analysing Performance,,Understand,,Analysing Performance: Techniques for analyzing the performance of algorithms and data structures under various conditions.,
+4,3,1,,,,Simplifying With Bounds,,Analysing Performance,,Understand,,Simplifying With Bounds: Using upper and lower bounds to simplify the analysis of algorithms and data structures.,
+4,3,2,,,,Sets And Maps,,Analysing Performance,,Understand,,Sets And Maps: Fundamental data structures for storing unique elements (sets) and key-value pairs (maps).,
+4,3,3,,,,A Naive Set Implementation,-,Analysing Performance,-,Understand,-,A Naive Set Implementation: Basic implementation of a set data structure without optimization or sophisticated features.,-
+4,4,,,,,Efficient Sets,-,Efficient Sets,-,Understand,-,Efficient Sets: Data structures optimized for efficient storage and retrieval of unique elements.,-
+4,4,1,,,,ALG: BINARY SEARCH,,Efficient Sets,,Understand,,ALG: BINARY SEARCH: Algorithm for searching sorted data by repeatedly dividing the search interval in half.,
+4,4,2,,,,Better Sets And Maps With Hash Tables,,Efficient Sets,,Understand,,"Better Sets And Maps With Hash Tables: Data structures utilizing hash tables to achieve efficient insertion, deletion, and retrieval operations for sets and maps.",
+4,5,,,,,Algorithmic Bounds and Tree,,Algorithmic Bounds and Tree,,Understand,,,
+4,5,1,,,,Algorithmic Bounds,,Algorithmic Bounds and Tree,,Understand,,,
+4,5,1,1,,,Upper Bound: Big O,-,Algorithmic Bounds and Tree,-,Understand,-,Upper Bound: Big O: Represents the worst-case time complexity of an algorithm.,-
+4,5,1,2,,,Lower Bound: Omega,,Algorithmic Bounds and Tree,,Understand,,Lower Bound: Omega: Represents the best-case time complexity of an algorithm.,
+4,5,1,3,,,Sharp Bounds: Theta,-,Algorithmic Bounds and Tree,-,Understand,-,"Sharp Bounds: Theta: Represents both upper and lower bounds, indicating tight asymptotic behavior.",-
+4,5,2,,,,Data Structure: Tree,,Algorithmic Bounds and Tree,,Understand,,,
+4,5,2,1,,,tree,,Algorithmic Bounds and Tree,,Understand,,"Tree: A hierarchical data structure consisting of nodes connected by edges, typically with one designated as the root.",
+4,5,2,2,,,Trie,-,Algorithmic Bounds and Tree,-,Understand,-,"Trie: A tree data structure used for efficient retrieval of strings, particularly in dictionary implementations.",-
+4,5,2,3,,,Suffix tree,,Algorithmic Bounds and Tree,,Understand,,"Suffix Tree: A tree data structure used for pattern matching in strings, particularly for finding all occurrences of a substring in a larger string.",
+4,6,,,,,Data Structure: Binary Tree,,Data Structure: Binary Tree,,Understand,,,
+4,6,1,,,,Binary Tree,-,Data Structure: Binary Tree,-,Understand,-,"Binary Tree: A tree data structure in which each node has at most two children, commonly referred to as the left child and the right child.",-
+4,6,2,,,,ADT: Priority Queue,-,Data Structure: Binary Tree,-,Understand,-,A data structure that supports efficient retrieval of the highest (or lowest) priority element.,-
+4,6,3,,,,DS: Binary Heap,-,Data Structure: Binary Tree,-,Understand,-,A complete binary tree with a special property where the value of each node is greater than or equal to (or less than or equal to) the values of its children.,-
+4,6,4,,,,Algorithm: Heapsort,-,Data Structure: Binary Tree,-,Understand,-,A comparison-based sorting algorithm that uses a binary heap data structure to sort elements in-place.,-
+4,7,,,,,DS: Binary Search Tree,-,Data Structure: Binary Tree,-,Understand,-,A binary tree data structure in which each node has a key greater than all keys in its left subtree and less than all keys in its right subtree.,-
+4,8,,,,,Balancing A Bst,,Balancing A Bst,,Understand,,"Process of ensuring that the height of a binary search tree remains balanced to maintain efficient search, insertion, and deletion operations.",
+4,8,1,,,,Rebalancing A Bst,-,Balancing A Bst,-,Understand,-,The process of restoring balance in a binary search tree after an insertion or deletion operation that may have caused it to become unbalanced.,-
+4,8,2,,,,Limitations,-,Balancing A Bst,-,Understand,-,"Constraints or drawbacks associated with binary search trees, such as the potential for degeneration into a linear data structure.",-
+4,8,3,,,,Self-Balancing Trees: AVL Trees,-,Balancing A Bst,-,Understand,-,A type of binary search tree that automatically maintains balance by performing rotations after insertions and deletions to ensure a maximum height difference of 1 between subtrees.,-
+4,9,,,,,Amortized Analysis,,Balancing A Bst,,Understand,,"A method of analyzing the time complexity of algorithms over a sequence of operations, considering both expensive and inexpensive operations to provide an average performance guarantee.",
+4,10,,,,,Graph,-,Graph,-,Understand,-,A data structure composed of a set of vertices and a set of edges connecting pairs of vertices.,-
+4,10,1,,,,Graph Representations,-,Graph,-,Understand,-,"Various ways to represent graphs, such as adjacency matrix, adjacency list, and edge list.",-
+4,10,2,,,,Graph Search,-,Graph,-,Understand,-,Algorithms for traversing or searching a graph to visit all vertices or find specific paths or patterns within the graph.,-
+4,10,3,,,,Disjoint Set And Minimum Spanning Tree,-,Graph,-,Understand,-,Techniques and algorithms related to disjoint set data structures and the construction of minimum spanning trees in graphs.,-

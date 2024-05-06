@@ -1,59 +1,59 @@
 courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive level,-,description_of_topic,-
-17,,,,,-,Algorithm and Complexity,-,Course,-,Understanding,-,,-
-17,0,,,,-,Objective,-,Course objective,-,Understanding,-,,-
-17,0,1,,,-,Obj1,-,Course objective,-,Understanding,-,"Student can explain the following concepts: complexity measures, complexity classes, optimization algorithms, dynamic programming, greedy algorithms, reductions, complex problems.",-
-17,0,2,,,-,Obj2,-,Course objective,-,Understanding,-,The student can determine the time complexity of a given algorithm.,-
-17,0,3,,,-,Obj3,-,Course objective,-,Understanding,-,The student can design an algorithm with a predetermined upper bound for a given problem.,-
-17,0,4,,,-,Obj4,-,Course objective,-,Understanding,-,The student can design an algorithm in one of the three optimization strategies discussed.,-
-17,0,5,,,-,Obj5,-,Course objective,-,Understanding,-,The student can analyze a network problem and translate it from a given problem into a network problem.,-
-17,0,6,,,,Obj6,,Course objective,,Understanding,,The student can apply Discrete Fourier Transform to practical examples.,-
-17,0,7,,,,Obj7,,Course objective,,Understanding,,The student can translate a problem into another problem through time-bounded reduction.,-
-17,0,8,,,,Obj8,,Course objective,,Understanding,,"The student can analyze algorithmic properties of a problem (for example: requires exhaustive search over a large domain, or is bounded by constant space) on the basis of which predictions can be made about the (im)possibility of designing efficient algorithms.",-
-17,1,,,,-,Algorithmic Techniques,-,Algorithmic Techniques,-,Understanding,-,,-
-17,1,1,,,-,Recursion,-,Algorithmic Techniques,-,Understanding,-,A technique where a function calls itself in order to solve smaller instances of the same problem.,-
-17,1,1,1,,-,Divide and Conquer,-,Algorithmic Techniques,-,Understanding,-,"Divides a problem into smaller subproblems, solves each subproblem independently, and then combines the solutions.",-
-17,1,1,1,1,-,Binary search,-,Algorithmic Techniques,-,Understanding,-,An efficient search algorithm for finding a target value within a sorted array by repeatedly dividing the search interval in half.,-
-17,1,1,1,2,-,Mergesort,-,Algorithmic Techniques,-,Understanding,-,"A sorting algorithm that follows the divide and conquer strategy by recursively dividing the array into halves, sorting each half, and then merging the sorted halves.",-
-17,1,1,1,3,-,Quicksort,-,Algorithmic Techniques,-,Understanding,-,A sorting algorithm that uses the divide and conquer strategy by partitioning the array into smaller subarrays based on a pivot element and recursively sorting each subarray.,-
-17,1,1,1,4,-,Matrix multiplication,-,Algorithmic Techniques,-,Understanding,-,A mathematical operation that computes the product of two matrices.,-
-17,1,1,1,5,-,Karatsuba Multiplication,-,Algorithmic Techniques,-,Understanding,-,An algorithm for fast multiplication of large numbers using a divide and conquer approach.,-
-17,1,1,1,6,-,Fast Fourier Transform,-,Algorithmic Techniques,-,Understanding,-,An efficient algorithm for computing the discrete Fourier transform and its inverse.,-
-17,1,1,2,,-,Backtracking,-,Algorithmic Techniques,-,Understanding,-,"A technique for systematically searching through all possible solutions to find the optimal one, often used in constraint satisfaction problems.",-
-17,1,1,2,1,-,Gauss’ algorithm,-,Algorithmic Techniques,-,Understanding,-,"Various algorithms attributed to Carl Friedrich Gauss, often used for solving linear equations and finding determinants.",-
-17,1,1,2,2,-,Recursive algorithm,-,Algorithmic Techniques,-,Understanding,-,An algorithm that solves a problem by solving smaller instances of the same problem.,-
-17,1,1,2,3,-,Game-playing algorithm,-,Algorithmic Techniques,-,Understanding,-,"Algorithms used in artificial intelligence for making decisions in games, such as minimax algorithm with alpha-beta pruning.",-
-17,1,1,2,4,-,subset sum,-,Algorithmic Techniques,-,Understanding,-,A problem in combinatorial optimization that asks whether there exists a subset of a given set whose elements sum to a given target value.,-
-17,1,1,2,5,-,LIS algorithm,-,Algorithmic Techniques,-,Understanding,-,An algorithm for finding the longest increasing subsequence in a given sequence of numbers.,-
-17,1,2,,,-,Dynamic Programming,-,Algorithmic Techniques,-,Understanding,-,A technique used to solve problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once,-
-17,1,2,1,,-,Fibonacci Sequence,-,Algorithmic Techniques,-,Understanding,-,Finding the nth Fibonacci number using dynamic programming to avoid redundant recursive calls.,-
-17,1,2,2,,-,Text Segmentation,-,Algorithmic Techniques,-,Understanding,-,"Breaking a given text into words such that the concatenation of these words forms the original text, with the minimum number of words.",-
-17,1,2,3,,-,Subset Sum,-,Algorithmic Techniques,-,Understanding,-,Determining whether there exists a subset of a given set whose elements sum to a given target value.,-
-17,1,2,4,,-,Longest Increasing Subsequence,-,Algorithmic Techniques,-,Understanding,-,Finding the longest subsequence in a given sequence of numbers that is strictly increasing.,-
-17,1,2,5,,-,Edit Distance,-,Algorithmic Techniques,-,Understanding,-,"Calculating the minimum number of operations (insertion, deletion, substitution) required to transform one string into another.",-
-17,1,2,6,,-,Maximum Independent Set,-,Algorithmic Techniques,-,Understanding,-,"Finding the largest subset of vertices in a graph such that no two vertices are adjacent (i.e., there are no edges between any two vertices in the subset).",-
-17,1,3,,,-,Greedy Algorithms,-,Algorithmic Techniques,-,Understanding,-,A class of algorithms that make locally optimal choices at each step with the hope of finding a global optimum solution.,-
-17,1,3,1,,-,Sorting Files on Tape,-,Algorithmic Techniques,-,Understanding,-,Arranging files stored on multiple tapes in a specific order to minimize the total time required to access all files.,-
-17,1,3,2,,-,Exchange Arguments,-,Algorithmic Techniques,-,Understanding,-,A technique used in proving the optimality of greedy algorithms by showing that any optimal solution must have certain properties.,-
-17,1,3,3,,-,Scheduling Problem,-,Algorithmic Techniques,-,Understanding,-,"Assigning tasks or jobs to resources such as processors or machines to optimize a certain objective, such as minimizing completion time or maximizing throughput.",-
-17,1,3,4,,-,Huffman Codes,-,Algorithmic Techniques,-,Understanding,-,"A method of data compression that assigns variable-length codes to input characters, with shorter codes assigned to more frequently occurring characters.",-
-17,2,,,,-,Graph Algorithms,-,Graph Algorithms,-,Understanding,-,"Graph algorithms are a fundamental part of computer science, focusing on analyzing and manipulating graphs, which consist of nodes (vertices) connected by edges.",-
-17,2,1,,,-,Spanning trees,-,Graph Algorithms,-,Understanding,-,A subgraph of a graph that includes all the vertices of the original graph with the minimum possible number of edges.,-
-17,2,1,1,,-,Kruskal’s algorithm,-,Graph Algorithms,-,Understanding,-,"A greedy algorithm for finding the minimum spanning tree (MST) of a connected, weighted graph.",-
-17,2,1,2,,-,Jarník’s algorithm,-,Graph Algorithms,-,Understanding,-,"Another greedy algorithm for finding the minimum spanning tree (MST) of a connected, weighted graph.",-
-17,2,2,,,-,Shortest Paths,-,Graph Algorithms,-,Understanding,-,"Finding the shortest path between two vertices in a weighted graph, where the path length is the sum of the weights of its edges.",-
-17,2,2,1,,-,Dijkstra’s algorithm,-,Graph Algorithms,-,Understanding,-,A greedy algorithm for finding the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights.,-
-17,2,3,,,-,Network Flows,-,Graph Algorithms,-,Understanding,-,"Modeling the flow of goods, information, or resources through a network of nodes and edges, where the goal is to maximize or minimize the flow subject to capacity ",-
-17,2,3,1,,-,Network Flows and Cuts,-,Graph Algorithms,-,Understanding,-,The relationship between flows in a network and cuts that partition the network into two disjoint sets of vertices.,-
-17,2,3,2,,-,Max Flow- Min Cut Theorem,-,Graph Algorithms,-,Understanding,-,"The theorem states that in a flow network, the maximum flow value through the network equals the minimum cut capacity across all possible cuts of the network.",-
-17,2,3,3,,-,Ford-Fulkerson Algorithm,-,Graph Algorithms,-,Understanding,-,An algorithm for computing the maximum flow in a flow network by repeatedly augmenting paths from the source to the sink until no more augmenting paths exist.,-
-17,2,4,,,-,Graph Applications,-,Graph Algorithms,-,Understanding,-,,-
-17,2,4,1,,-,Edge Disjoint Paths,-,Graph Algorithms,-,Understanding,-,Finding a set of paths in a graph such that no two paths share a common edge.,-
-17,2,4,2,,-,Vertex Disjoint Paths,-,Graph Algorithms,-,Understanding,-,Finding a set of paths in a graph such that no two paths share a common vertex.,-
-17,2,4,3,,-,Bipartite Matching,-,Graph Algorithms,-,Understanding,-,"Finding a maximum matching in a bipartite graph, where each vertex in one set is adjacent to at most one vertex in the other set.",-
-17,2,5,,,-,Real-Life Applications,-,Graph Algorithms,-,Understanding,-,,-
-17,2,5,1,,-,Assignment Problem,-,Graph Algorithms,-,Understanding,-,"Assigning a set of tasks to a set of resources in a way that optimizes some objective, such as minimizing total cost or maximizing efficiency.",-
-17,2,5,2,,-,Baseball Elimination,-,Graph Algorithms,-,Understanding,-,Determining which teams are mathematically eliminated from contention in a baseball league based on the remaining games to be played.,-
-17,2,5,3,,-,Job Selection,-,Graph Algorithms,-,Understanding,-,"Selecting a subset of jobs from a pool of available jobs to maximize some objective, such as total profit or total satisfaction.",-
-17,3,,,,,Linear Programming,-,Linear Programming,-,Understanding,-,,-
-17,3,1,,,,LP Introduction,,Linear Programming,,Understanding,,"Introduction to linear programming, a method for optimizing a linear objective function subject to linear equality and inequality constraints.",
-17,3,2,,,,Compute dual of a LP,-,Linear Programming,-,Understanding,-,"Finding the dual of a linear programming problem, which involves interchanging the roles of variables and constraints to obtain an equivalent problem with different objectives and constraints.",-
+17,,,,,-,Algorithm and Complexity,-,Course,-,Understand,-,,-
+17,0,,,,-,Objective,-,Course objective,-,Understand,-,,-
+17,0,1,,,-,Obj1,-,Course objective,-,Understand,-,"Student can explain the following concepts: complexity measures, complexity classes, optimization algorithms, dynamic programming, greedy algorithms, reductions, complex problems.",-
+17,0,2,,,-,Obj2,-,Course objective,-,Understand,-,The student can determine the time complexity of a given algorithm.,-
+17,0,3,,,-,Obj3,-,Course objective,-,Understand,-,The student can design an algorithm with a predetermined upper bound for a given problem.,-
+17,0,4,,,-,Obj4,-,Course objective,-,Understand,-,The student can design an algorithm in one of the three optimization strategies discussed.,-
+17,0,5,,,-,Obj5,-,Course objective,-,Understand,-,The student can analyze a network problem and translate it from a given problem into a network problem.,-
+17,0,6,,,,Obj6,,Course objective,,Understand,,The student can apply Discrete Fourier Transform to practical examples.,-
+17,0,7,,,,Obj7,,Course objective,,Understand,,The student can translate a problem into another problem through time-bounded reduction.,-
+17,0,8,,,,Obj8,,Course objective,,Understand,,"The student can analyze algorithmic properties of a problem (for example: requires exhaustive search over a large domain, or is bounded by constant space) on the basis of which predictions can be made about the (im)possibility of designing efficient algorithms.",-
+17,1,,,,-,Algorithmic Techniques,-,Algorithmic Techniques,-,Understand,-,,-
+17,1,1,,,-,Recursion,-,Algorithmic Techniques,-,Understand,-,A technique where a function calls itself in order to solve smaller instances of the same problem.,-
+17,1,1,1,,-,Divide and Conquer,-,Algorithmic Techniques,-,Understand,-,"Divides a problem into smaller subproblems, solves each subproblem independently, and then combines the solutions.",-
+17,1,1,1,1,-,Binary search,-,Algorithmic Techniques,-,Understand,-,An efficient search algorithm for finding a target value within a sorted array by repeatedly dividing the search interval in half.,-
+17,1,1,1,2,-,Mergesort,-,Algorithmic Techniques,-,Understand,-,"A sorting algorithm that follows the divide and conquer strategy by recursively dividing the array into halves, sorting each half, and then merging the sorted halves.",-
+17,1,1,1,3,-,Quicksort,-,Algorithmic Techniques,-,Understand,-,A sorting algorithm that uses the divide and conquer strategy by partitioning the array into smaller subarrays based on a pivot element and recursively sorting each subarray.,-
+17,1,1,1,4,-,Matrix multiplication,-,Algorithmic Techniques,-,Understand,-,A mathematical operation that computes the product of two matrices.,-
+17,1,1,1,5,-,Karatsuba Multiplication,-,Algorithmic Techniques,-,Understand,-,An algorithm for fast multiplication of large numbers using a divide and conquer approach.,-
+17,1,1,1,6,-,Fast Fourier Transform,-,Algorithmic Techniques,-,Understand,-,An efficient algorithm for computing the discrete Fourier transform and its inverse.,-
+17,1,1,2,,-,Backtracking,-,Algorithmic Techniques,-,Understand,-,"A technique for systematically searching through all possible solutions to find the optimal one, often used in constraint satisfaction problems.",-
+17,1,1,2,1,-,Gauss’ algorithm,-,Algorithmic Techniques,-,Understand,-,"Various algorithms attributed to Carl Friedrich Gauss, often used for solving linear equations and finding determinants.",-
+17,1,1,2,2,-,Recursive algorithm,-,Algorithmic Techniques,-,Understand,-,An algorithm that solves a problem by solving smaller instances of the same problem.,-
+17,1,1,2,3,-,Game-playing algorithm,-,Algorithmic Techniques,-,Understand,-,"Algorithms used in artificial intelligence for making decisions in games, such as minimax algorithm with alpha-beta pruning.",-
+17,1,1,2,4,-,subset sum,-,Algorithmic Techniques,-,Understand,-,A problem in combinatorial optimization that asks whether there exists a subset of a given set whose elements sum to a given target value.,-
+17,1,1,2,5,-,LIS algorithm,-,Algorithmic Techniques,-,Understand,-,An algorithm for finding the longest increasing subsequence in a given sequence of numbers.,-
+17,1,2,,,-,Dynamic Programming,-,Algorithmic Techniques,-,Understand,-,A technique used to solve problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once,-
+17,1,2,1,,-,Fibonacci Sequence,-,Algorithmic Techniques,-,Understand,-,Finding the nth Fibonacci number using dynamic programming to avoid redundant recursive calls.,-
+17,1,2,2,,-,Text Segmentation,-,Algorithmic Techniques,-,Understand,-,"Breaking a given text into words such that the concatenation of these words forms the original text, with the minimum number of words.",-
+17,1,2,3,,-,Subset Sum,-,Algorithmic Techniques,-,Understand,-,Determining whether there exists a subset of a given set whose elements sum to a given target value.,-
+17,1,2,4,,-,Longest Increasing Subsequence,-,Algorithmic Techniques,-,Understand,-,Finding the longest subsequence in a given sequence of numbers that is strictly increasing.,-
+17,1,2,5,,-,Edit Distance,-,Algorithmic Techniques,-,Understand,-,"Calculating the minimum number of operations (insertion, deletion, substitution) required to transform one string into another.",-
+17,1,2,6,,-,Maximum Independent Set,-,Algorithmic Techniques,-,Understand,-,"Finding the largest subset of vertices in a graph such that no two vertices are adjacent (i.e., there are no edges between any two vertices in the subset).",-
+17,1,3,,,-,Greedy Algorithms,-,Algorithmic Techniques,-,Understand,-,A class of algorithms that make locally optimal choices at each step with the hope of finding a global optimum solution.,-
+17,1,3,1,,-,Sorting Files on Tape,-,Algorithmic Techniques,-,Understand,-,Arranging files stored on multiple tapes in a specific order to minimize the total time required to access all files.,-
+17,1,3,2,,-,Exchange Arguments,-,Algorithmic Techniques,-,Understand,-,A technique used in proving the optimality of greedy algorithms by showing that any optimal solution must have certain properties.,-
+17,1,3,3,,-,Scheduling Problem,-,Algorithmic Techniques,-,Understand,-,"Assigning tasks or jobs to resources such as processors or machines to optimize a certain objective, such as minimizing completion time or maximizing throughput.",-
+17,1,3,4,,-,Huffman Codes,-,Algorithmic Techniques,-,Understand,-,"A method of data compression that assigns variable-length codes to input characters, with shorter codes assigned to more frequently occurring characters.",-
+17,2,,,,-,Graph Algorithms,-,Graph Algorithms,-,Understand,-,"Graph algorithms are a fundamental part of computer science, focusing on analyzing and manipulating graphs, which consist of nodes (vertices) connected by edges.",-
+17,2,1,,,-,Spanning trees,-,Graph Algorithms,-,Understand,-,A subgraph of a graph that includes all the vertices of the original graph with the minimum possible number of edges.,-
+17,2,1,1,,-,Kruskal’s algorithm,-,Graph Algorithms,-,Understand,-,"A greedy algorithm for finding the minimum spanning tree (MST) of a connected, weighted graph.",-
+17,2,1,2,,-,Jarník’s algorithm,-,Graph Algorithms,-,Understand,-,"Another greedy algorithm for finding the minimum spanning tree (MST) of a connected, weighted graph.",-
+17,2,2,,,-,Shortest Paths,-,Graph Algorithms,-,Understand,-,"Finding the shortest path between two vertices in a weighted graph, where the path length is the sum of the weights of its edges.",-
+17,2,2,1,,-,Dijkstra’s algorithm,-,Graph Algorithms,-,Understand,-,A greedy algorithm for finding the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights.,-
+17,2,3,,,-,Network Flows,-,Graph Algorithms,-,Understand,-,"Modeling the flow of goods, information, or resources through a network of nodes and edges, where the goal is to maximize or minimize the flow subject to capacity ",-
+17,2,3,1,,-,Network Flows and Cuts,-,Graph Algorithms,-,Understand,-,The relationship between flows in a network and cuts that partition the network into two disjoint sets of vertices.,-
+17,2,3,2,,-,Max Flow- Min Cut Theorem,-,Graph Algorithms,-,Understand,-,"The theorem states that in a flow network, the maximum flow value through the network equals the minimum cut capacity across all possible cuts of the network.",-
+17,2,3,3,,-,Ford-Fulkerson Algorithm,-,Graph Algorithms,-,Understand,-,An algorithm for computing the maximum flow in a flow network by repeatedly augmenting paths from the source to the sink until no more augmenting paths exist.,-
+17,2,4,,,-,Graph Applications,-,Graph Algorithms,-,Understand,-,,-
+17,2,4,1,,-,Edge Disjoint Paths,-,Graph Algorithms,-,Understand,-,Finding a set of paths in a graph such that no two paths share a common edge.,-
+17,2,4,2,,-,Vertex Disjoint Paths,-,Graph Algorithms,-,Understand,-,Finding a set of paths in a graph such that no two paths share a common vertex.,-
+17,2,4,3,,-,Bipartite Matching,-,Graph Algorithms,-,Understand,-,"Finding a maximum matching in a bipartite graph, where each vertex in one set is adjacent to at most one vertex in the other set.",-
+17,2,5,,,-,Real-Life Applications,-,Graph Algorithms,-,Understand,-,,-
+17,2,5,1,,-,Assignment Problem,-,Graph Algorithms,-,Understand,-,"Assigning a set of tasks to a set of resources in a way that optimizes some objective, such as minimizing total cost or maximizing efficiency.",-
+17,2,5,2,,-,Baseball Elimination,-,Graph Algorithms,-,Understand,-,Determining which teams are mathematically eliminated from contention in a baseball league based on the remaining games to be played.,-
+17,2,5,3,,-,Job Selection,-,Graph Algorithms,-,Understand,-,"Selecting a subset of jobs from a pool of available jobs to maximize some objective, such as total profit or total satisfaction.",-
+17,3,,,,,Linear Programming,-,Linear Programming,-,Understand,-,,-
+17,3,1,,,,LP Introduction,,Linear Programming,,Understand,,"Introduction to linear programming, a method for optimizing a linear objective function subject to linear equality and inequality constraints.",
+17,3,2,,,,Compute dual of a LP,-,Linear Programming,-,Understand,-,"Finding the dual of a linear programming problem, which involves interchanging the roles of variables and constraints to obtain an equivalent problem with different objectives and constraints.",-
