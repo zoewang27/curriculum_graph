@@ -414,7 +414,6 @@ def bertModel(first_nodes, second_nodes):
                     'from': first_nodes_dict[first_labels[i]],
                     'to': second_nodes_dict[second_labels[j]],
                     'title': '',
-                    'length':900,
                     'color': 'grey',
                     'width': 1,
                     'shadow': False,

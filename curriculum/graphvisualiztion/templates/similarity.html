@@ -185,9 +185,15 @@
             shadow: true,
           },
 
+
           interaction: {
             navigationButtons: true,
             keyboard: true,
+          },
+
+          physics: {
+            barnesHut: { gravitationalConstant: -8000 },
+            stabilization: { iterations: 8000 },
           },
       };
       network = new vis.Network(container, data, options);
