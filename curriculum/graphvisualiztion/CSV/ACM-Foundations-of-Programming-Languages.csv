@@ -142,7 +142,7 @@ courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive leve
 5,7,9,1,,,Errors early vs. errors late/avoided,,Type Systems,,Develop,,,
 5,7,9,2,,,Enforce invariants during code development and code maintenance vs. postpone typing decisions while prototyping and conveniently allow flexible coding patterns such as heterogeneous collections,,Type Systems,,Develop,,,
 5,7,9,3,,,Typing rules,,Type Systems,,Develop,,"Rules for function, product, and sum types",
-,,,4,,,Alternative type systems such as Hindley-Miller and Grant-Reynolds type systems. ,,,,,,,
+5,7,9,4,,,Alternative type systems such as Hindley-Miller and Grant-Reynolds type systems. ,,,,,,,
 5,7,9,5,,,Avoid misuse of code vs. allow more code reuse,,Type Systems,,Develop,,,
 5,7,9,6,,,Detect incomplete programs vs. allow incomplete programs trun,,Type Systems,,Develop,,,
 5,7,9,7,,,Relationship tstatic analysis,,Type Systems,,Develop,,,

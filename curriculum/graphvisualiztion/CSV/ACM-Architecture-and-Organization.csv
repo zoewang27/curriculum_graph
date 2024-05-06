@@ -85,7 +85,7 @@ courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive leve
 2,7,5,2,,,Lock implementations,,Performance and Energy Efficiency,,Explain,,,
 2,7,5,3,,,Point‐to‐point synchronization,,Performance and Energy Efficiency,,Explain,,,
 2,7,5,4,,,Barrier implementation,,Performance and Energy Efficiency,,Explain,,,
-2,7,5,,,,Scalability,,Performance and Energy Efficiency,,Explain,,,
+2,7,5,5,,,Scalability,,Performance and Energy Efficiency,,Explain,,,
 2,7,6,,,,"Alternative architectures, such as VLIW/EPIC, accelerators and other special‐purpose processors",,Performance and Energy Efficiency,,Explain,,,
 2,7,7,,,,Dynamic voltage and frequency scaling (DVFS),,Performance and Energy Efficiency,,Explain,,,
 2,7,8,,,,Dark Silicon,,Performance and Energy Efficiency,,Explain,,,

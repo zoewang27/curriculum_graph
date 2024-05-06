@@ -6,7 +6,8 @@ import os
 import json
 from difflib import SequenceMatcher
 from sentence_transformers import SentenceTransformer, util
-# from sentence_transformers import SentenceTransformer, util
+
+
 NULL=-10000
 #---------------------------------------------------------------------------------------------------------------------
 
@@ -206,20 +207,20 @@ def createGraph(courseTitle,csv_data,id):
         Cur_CognitiveLevel = row[10]
         Cur_description = row[12]
 
-        if not(Prev_courseid): # 检查前一个课程ID是否存在。如果不存在，表示这是第一个课程，则执行创建第一个chapter节点
-            parentID=id # 1
+        if not(Prev_courseid): 
+            parentID=id 
             nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3]))
             edges.append(createEdge(CourseID,id))
 
-        else:   # 非第一个chapter，执行                   
-            if (Cur_chapterid != Prev_chapterid): # 判断：如果不是同一个chapter，创建新的chapter
-                parentID=id # 赋值 新的父id 2
+        else:                    
+            if (Cur_chapterid != Prev_chapterid):
+                parentID=id 
                 nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3])) 
-                edges.append(createEdge(CourseID,id)) # 创建 课程节点 到 chapter 节点 之间的边
+                edges.append(createEdge(CourseID,id)) 
 
-            else: # 判断：如果是同一个chapter，创建子节点
-                nodes.append(createNode(id,Cur_topic,"",Cur_description,"","image",10,colors[0])) # 创建 子节点
-                edges.append(createEdge(parentID,id)) # 创建 chpter节点到 子节点的边
+            else: 
+                nodes.append(createNode(id,Cur_topic,"",Cur_description,"","image",10,colors[0])) 
+                edges.append(createEdge(parentID,id)) 
             
 
 
@@ -299,11 +300,12 @@ def createSimilarityGraph(similarNodes):
 
 
 
+
+
 '''
 return all courses name
 '''
-def SimilarityPage(request):
-
+def getAllcourses():
     courseTitles=[]
     folder_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/')
 
@@ -317,6 +319,27 @@ def SimilarityPage(request):
     acm_courses = [course for course in courseTitles if course.startswith("ACM")]
     uva_courses = [course for course in courseTitles if course.startswith("UVA")]
 
+    return acm_courses, uva_courses
+    
+
+
+
+
+'''
+return singlecourse.html
+'''
+def singleCourse(request):
+    acm_courses,uva_courses = getAllcourses()
+    return render(request,'singlecourse.html', {'acm_courses': acm_courses, 'uva_courses': uva_courses})
+
+
+
+
+'''
+return Similarity.html
+'''
+def SimilarityPage(request):
+    acm_courses,uva_courses = getAllcourses()
     return render(request,'similarity.html', {'acm_courses': acm_courses, 'uva_courses': uva_courses}) 
 
 
@@ -383,6 +406,39 @@ def buildNodeEdges(csv_data):
     return nodes, edges, courseid
 
 
+
+'''
+Show single course graph
+'''
+def showCourseGraph(request):
+    if request.method == 'POST':
+        selectedCourse = request.POST.get('course') 
+        csv_file = selectedCourse + ".csv"
+
+        # build the path
+        # file_name = selectedCourse + '.json'
+        # file_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data', file_name)
+
+        # # check if the file is exist
+        # if os.path.exists(file_path):
+        #     with open(file_path, 'r') as json_file:
+        #         response_data = json.load(json_file)
+        #     return JsonResponse(response_data)
+        # else:
+        csv_data = openfile(csv_file)
+        nodes,edges,courseID = buildNodeEdges(csv_data)
+        response = {"nodes": nodes, "edges": edges, "courseId": courseID}
+
+            # save the result to the json file
+            # folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data')      
+            # if not os.path.exists(folder_path):
+            #     os.makedirs(folder_path)
+
+            # new_file_path = os.path.join(folder_path, file_name)
+            # with open(new_file_path, 'w') as json_file:
+            #     json.dump(response, json_file)
+
+        return JsonResponse(response)
 
 
 

@@ -3,7 +3,7 @@ courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive leve
 16,1,,,,,Common  Aspects ,,Common  Aspects ,,Apply,,,
 16,1,1,,,,Overview of platforms,,Common  Aspects ,,Apply,,"(e.g., Web, Mobile, Game,Robot, Embedded, and Interactive)",
 16,1,2,,,,Programming via platform-specific Application,,Common  Aspects ,,Apply,,,
-,,3,,,,Programming Interface (API) vs traditional application construction,,,,,,,
+16,1,3,,,,Programming Interface (API) vs traditional application construction,,,,,,,
 16,1,4,,,,Overview of Platform Languages,,Common  Aspects ,,Apply,,"(e.g., Kotlin, Swift, C#,  C++, Java, JavaScript, HTML5)",
 16,1,5,,,,Programming under platform constraints,,Common  Aspects ,,Apply,,"(e.g., available development tools, development)",
 16,1,6,,,,Techniques.,,Common  Aspects ,,Apply,,for learning and mastering a platform-specific programming language,
