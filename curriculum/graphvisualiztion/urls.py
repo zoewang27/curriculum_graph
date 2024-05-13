@@ -19,4 +19,9 @@ urlpatterns = [
     path("allcourses/", views.allCourses, name="allcourses"),
     path("detectAllcourses/", views.detectAllcourses, name="all-courses-similarity"),
 
+    # upload and delete csv files
+    path("filesManagement/", views.filesManagement, name="filesManagement"),
+    path("uploadfiles/", views.uploadfile, name="upload-file"),
+    path("deletefiles/", views.deletefile, name="delete-file"),
+
 ]

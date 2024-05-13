@@ -1,0 +1,140 @@
+{% extends "./layout.html" %}
+{% load static %}
+{% block content %}
+
+
+<main>
+
+  <div style="margin-left: 10%; margin-right: 10%;">
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+        <label for="fileInput" class="form-label">Select a CSV file to upload (please name a file starting with 'ACM-' or 'UvA-'):</label>
+        <input type="file" class="form-control" id="fileInput" name="files" multiple>
+    </div>
+    <button type="submit" class="btn btn-primary" id="upload-file-button" style="margin-bottom: 2%;">Upload File</button>
+  </form>
+
+
+  <h4>Uploaded files:</h4>
+  <table class="table table-sm">
+      <thead class="thead-light">
+          <tr>
+              <th scope="col">File name</th>
+              <th scope="col">Source</th>
+              <th scope="col">Operation</th>
+          </tr>
+      </thead>
+      <tbody>
+        {% for course in acm_courses %}
+          <tr>
+              <td style="vertical-align: middle;">{{ course }}.csv</td>
+              <td style="vertical-align: middle;">ACM</td>
+              <td><button class="btn btn-danger delete-btn" data-course="{{ course }}">Delete</button></td>
+          </tr>
+          {% endfor %}
+
+          {% for course in uva_courses %}
+          <tr>
+              <td style="vertical-align: middle;">{{ course }}.csv</td>
+              <td style="vertical-align: middle;">UvA</td>
+              <td><button class="btn btn-danger delete-btn" data-course="{{ course }}">Delete</button></td>
+          </tr>
+          {% endfor %}
+
+      </tbody>
+  </table>
+
+
+
+</div>
+
+</main>
+
+
+
+
+
+
+
+<script>
+
+$(document).ready(function() {
+
+    // upload file event
+    $("#upload-file-button").click(function(e) {
+      e.preventDefault(); 
+      var fileInput = document.getElementById('fileInput');
+      var file = fileInput.files[0];
+
+      if (!file) {
+          alert("Please upload a file!");
+      }else {
+         // check if the file is a csv file
+        var fileName = file.name.toLowerCase();
+        if (!fileName.endsWith('.csv')) { 
+            alert("Please upload a CSV file!");
+            return; 
+        }
+        
+        var formData = new FormData();
+        formData.append('file', file);
+        fileInput.value = ''
+
+        $.ajax({
+            url: '{% url "upload-file" %}', 
+            type: "POST",
+            data: formData,
+            processData: false, 
+            contentType: false, 
+            headers: {
+                'X-CSRFToken': '{{ csrf_token }}' 
+            },
+            success: function(response) {
+              alert(response.message);
+              location.reload()            
+            },
+            error: function(xhr, status, error) {
+                alert(response.message);
+            }
+        });
+      }
+    });
+
+
+
+
+    // delete file event
+    $(".delete-btn").click(function() {
+        var courseName = $(this).data("course");
+        if (confirm("Are you sure you want to delete " + courseName + ".csv ?")) {
+            // Send AJAX request to delete file
+            $.ajax({
+                url: "{% url 'delete-file' %}",
+                type: "POST",
+                data: {
+                    course_name: courseName,
+                    csrfmiddlewaretoken: "{{ csrf_token }}"
+                },
+                success: function(response) {
+                  alert(response.message);
+                  location.reload()            
+              },
+              error: function(xhr, status, error) {
+                  alert(response.message);
+              }
+            });
+        }
+    });
+  });
+
+
+
+
+
+
+
+</script>
+
+{% endblock %}

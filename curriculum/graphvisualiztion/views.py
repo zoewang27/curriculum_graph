@@ -5,7 +5,10 @@ import csv
 import os
 import json
 from difflib import SequenceMatcher
+
+# BERT
 from sentence_transformers import SentenceTransformer, util
+
 
 
 NULL=-10000
@@ -317,7 +320,7 @@ def getAllcourses():
 
     # separate "ACM" courses and "UVA" courses
     acm_courses = [course for course in courseTitles if course.startswith("ACM")]
-    uva_courses = [course for course in courseTitles if course.startswith("UVA")]
+    uva_courses = [course for course in courseTitles if course.startswith("UVA") or course.startswith("UvA")]
 
     return acm_courses, uva_courses
     
@@ -440,11 +443,11 @@ def showCourseGraph(request):
 
 
 '''
-Use a BERT model to check similarity
+Use a BERT model to check semantic similarity
 '''
 def bertModel(first_nodes, second_nodes):
     # use the fastest model
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    model = SentenceTransformer('all-mpnet-base-v2')
 
     first_nodes_dict =  {node['title']: node['id'] for node in first_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
     second_nodes_dict =  {node['title']: node['id'] for node in second_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
@@ -477,6 +480,7 @@ def bertModel(first_nodes, second_nodes):
                 nodeId.append(second_nodes_dict[second_labels[j]])
                               
     return similarEdges, nodeId
+
 
 
 
@@ -601,11 +605,14 @@ def detectAllcourses(request):
         else:      
             folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'CSV')  
             # get all CSV files with start with "UVA" or "ACM"
-            matching_files = [file for file in os.listdir(folder_path) if file.startswith(curriculum)]
+            if curriculum == "ACM":
+                matching_files = [file for file in os.listdir(folder_path) if file.startswith(curriculum)]
+            else:
+                matching_files = [file for file in os.listdir(folder_path) if file.startswith("UVA") or file.startswith("UvA")]
 
             file_list = []  
             for file in matching_files:
-                csv_data = openfile(file)  #  # extract data from csv file and turn it to a list: [{},{},{}]
+                csv_data = openfile(file)  
                 file_list.append(csv_data)
 
             # create the course node
@@ -633,7 +640,7 @@ def detectAllcourses(request):
                                 edge = {
                                     'from': course_id_1,
                                     'to': course_id_2,
-                                    'title': '',
+                                    'title': num_similar_edges,
                                     'value': num_similar_edges
                                 }
                                 if edge not in edges:  # Check if edge already exists
@@ -652,3 +659,57 @@ def detectAllcourses(request):
 
 
             return JsonResponse(response)
+
+
+
+
+'''
+return filesmgmt.html
+'''
+def filesManagement(request):
+    acm_courses,uva_courses = getAllcourses()
+    return render(request,'filesmgmt.html', {'acm_courses': acm_courses, 'uva_courses': uva_courses})
+
+
+
+
+'''
+Upload csv files
+'''
+def uploadfile(request):
+    if request.method == 'POST' and request.FILES.get('file'):
+        uploaded_file = request.FILES['file']
+        file_name = uploaded_file.name
+
+        # check if the file already exists
+        file_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/', file_name)
+        if os.path.exists(file_path):
+            return JsonResponse({'message': 'The file already exists.'})
+
+        # if no, then save the file
+        with open(file_path, 'wb') as destination:
+            for chunk in uploaded_file.chunks():
+                destination.write(chunk)
+        return JsonResponse({'message': 'File uploaded successfully!'})
+    
+    else:
+        return JsonResponse({'message': 'Failed to upload file.'})
+
+
+
+
+'''
+Delete csv files
+'''
+def deletefile(request):
+    if request.method == 'POST':
+        course_name = request.POST.get('course_name')
+        if course_name:
+            file_name = course_name + ".csv"
+            file_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/', file_name)
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                return JsonResponse({'message': 'File deleted successfully!'})
+        return JsonResponse({'message': 'Failed to delete file.'})
+    else:
+        return JsonResponse({'message': 'Invalid request method.'})

@@ -21,7 +21,7 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLong" >
   Select Two courses
 </button>
-<p style="margin-bottom: 0; margin-left: 20px;" id="selected-course">  </p>
+<p style="margin-bottom: 0; margin-left: 20px;" id="selected-course"> </p><a href="#" id="nodes-pairs" style="color:dodgerblue; text-decoration: underline;"></a>
 </div>
 
 
@@ -62,8 +62,7 @@
         </div>
          {% endfor %}
         </div>
-
-
+        <!-- end -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -76,6 +75,33 @@
 
 
 
+
+
+<div class="modal fade bd-example-modal-lg" id="Modal-nodes-pairs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle">Similar nodes pairs</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body-node-pair" style="max-height: 500px; overflow-y: auto;">
+          <div style="padding-left: 25px;  padding-right: 25px; padding-top: 10px" id="nodes-pair-content">
+            <ul class="list-group list-group-horizontal">
+              <!-- Nodes pairs will be appended here -->
+            </ul>
+        </div>
+        </div>
+      </br>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
 <div id="mynetwork"></div>
 
 
@@ -84,6 +110,9 @@
 
 
 <script>
+  var dataset_nodes; 
+  var dataset_edges; 
+
   $(document).ready(function() {
     $("#add-button").click(function() {
       var checkboxes = $(".form-check-input:checked");
@@ -101,10 +130,40 @@
             $("#ModalLong").modal("hide");
 
             // update the text of id="selected-course" 
-            $("#selected-course").text("selected: " + selectedCourses.join(", "));
+            $("#selected-course").text("selected: " + selectedCourses.join(", ") + "");
+
+            // Add click event for "nodes pair"
+            $("#nodes-pairs").text("(check similar nodes pairs)");
+            $("#nodes-pairs").click(function() {
+                $("#Modal-nodes-pairs").modal("show");
+
+                var modalBody = $("#nodes-pair-content .list-group");
+                modalBody.empty(); 
+                var count = 1;
+                // filter the similar nodes pairs data
+                dataset_edges.forEach(function(edge) {
+                    if (edge.color === "grey") {
+                      var fromNode = findNodeById(edge.from);
+                      var toNode = findNodeById(edge.to);
+                      if (fromNode && toNode) {
+                        modalBody.append("<li class='list-group-item'>" + count + "</li>");
+                        modalBody.append("<li class='list-group-item list-group-item-primary'>"  + fromNode.title  + "</li>");
+                        modalBody.append("<li class='list-group-item list-group-item-warning'>"  + toNode.title + "</li>");
+                        count++;
+                      }
+                    }
+                });
+            });
         }
     });
   });
+
+
+  function findNodeById(nodeId) {
+      return dataset_nodes.find(function(node) {
+          return node.id === nodeId;
+      });
+  }
   
   
   function sendSelectedCourses(courses) {
@@ -124,6 +183,8 @@
               console.log(response);
 
               if (response.nodes.length > 0) {
+                dataset_nodes = response.nodes;
+                dataset_edges = response.edges;
                 displayGraph(response);
               } else {
                   alert("The selected courses don't have any similar nodes. Please select other courses!");
@@ -135,13 +196,17 @@
   }
 
   
+
   function displayGraph(response) {
+
+      var nodes = new vis.DataSet(response.nodes);
+      var edges = new vis.DataSet(response.edges);
   
-      var dataset_nodes = response.nodes; 
-      var dataset_edges = response.edges; 
+      // var dataset_nodes = response.nodes; 
+      // var dataset_edges = response.edges; 
   
-      var nodes = new vis.DataSet(dataset_nodes);
-      var edges = new vis.DataSet(dataset_edges);
+      // var nodes = new vis.DataSet(dataset_nodes);
+      // var edges = new vis.DataSet(dataset_edges);
 
       // Cut text and add ellipses
       nodes.forEach(function(node) {
