@@ -22,4 +22,5 @@
 
 4, A page to manage all upload csv files, be able to upload files and delete files in this page.
 
-<img width="1194" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/24d47173-e126-4ebc-85b7-7e84bd7ed7fa">
+<img width="1143" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/dc524438-328a-4316-9e30-f42cf8ae01df">
+
