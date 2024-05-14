@@ -8,26 +8,89 @@
         height: 100%;
         border: 0px solid lightgray;
       }
+
+table{
+    table-layout:fixed;
+}
+
+th,td{
+    font-size: 0.875em;;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    width: 40%;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    width: 40%;
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
+}
+
     
 </style>
 
 
 <main>
-  <div style="display: flex; align-items: center; justify-content: center;">
+<div style="display: flex; align-items: center; justify-content: center;">
     <button type="button" class="btn btn-primary detect-button" id = "show-acm-courses">
       ACM curricula
     </button>
-    <button type="button" class="btn btn-primary detect-button" style="margin-left: 20px;" id = "show-uva-courses">
+    <button type="button" class="btn btn-primary detect-button" style="margin-left: 20px; margin-right: 20px;" id = "show-uva-courses">
       UvA curricula
     </button>
+    <a href="#" id="courses-pairs" style="color:dodgerblue; text-decoration: underline;"></a>
     </div>
-    
-  <div id="mynetwork"></div>
 
+
+
+
+<div id="mynetwork"></div>
+
+
+
+<div class="modal fade bd-example-modal-lg" id="Modal-nodes-pairs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle">Courses pairs</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+        <div class="modal-body-node-pair" style="max-height: 500px; overflow-y: auto;">
+
+          <div style="padding-left: 5px;  padding-right: 5px; padding-top: 5px" id="nodes-pair-content">
+
+            <table class="table table-sm">
+              <thead class="thead-light">
+                  <tr>
+                      <th scope="col">Course A</th>
+                      <th scope="col">Course B</th>
+                      <th scope="col">Similar level</th>
+                  </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+        </div>
+        </div>
+      </br>
+
+      </div>
+    </div>
+  </div> 
 
 </main>
 
 <script>
+var dataset_nodes;
+var dataset_edges;
 
 $(document).ready(function() {
   $(".detect-button").click(function() {
@@ -38,7 +101,6 @@ $(document).ready(function() {
     } else if (buttonText === "UvA curricula") {
         source = "UvA";
     }
-
       console.log("source:",source);
 
       $.ajax({
@@ -54,7 +116,30 @@ $(document).ready(function() {
           success: function(response) {
               console.log(response);
               if (response.nodes.length > 0) {
+
+                dataset_nodes = response.nodes; 
+                dataset_edges = response.edges; 
+
+                // Add click event for "nodes pair"
+                $("#courses-pairs").text("(check courses pairs)");
+                $("#courses-pairs").click(function() {
+                    $("#Modal-nodes-pairs").modal("show");
+
+                    var modalBody = $("#nodes-pair-content table tbody");
+                    modalBody.empty(); 
+
+                    dataset_edges.forEach(function(edge) {
+                        var fromNode = findNodeById(edge.from);
+                        var toNode = findNodeById(edge.to);
+                        if (fromNode && toNode) {
+                          var rowHTML = "<tr><td>" + fromNode.label + "</td><td>" + toNode.label + "</td><td>" + edge.title + "</td></tr>";
+                          modalBody.append(rowHTML);
+                        }
+                    });
+                });
+
                 showGraph(response);
+
               } else {
                   alert("Don't have the related files now!");
               }
@@ -63,19 +148,36 @@ $(document).ready(function() {
           }
       });
 
+
     });
   });
 
 
 
 
+
+  function findNodeById(nodeId) {
+      return dataset_nodes.find(function(node) {
+          return node.id === nodeId;
+      });
+  }
+
+
+
+
+
+
+
   function showGraph(response) {
+
+      var nodes_raw = new vis.DataSet(response.nodes);
+      var edges = new vis.DataSet(response.edges);
   
-      var dataset_nodes = response.nodes; 
-      var dataset_edges = response.edges; 
+      // var dataset_nodes = response.nodes; 
+      // var dataset_edges = response.edges; 
   
-      var nodes_raw = new vis.DataSet(dataset_nodes);
-      var edges = new vis.DataSet(dataset_edges);
+      // var nodes_raw = new vis.DataSet(dataset_nodes);
+      // var edges = new vis.DataSet(dataset_edges);
 
       const nodes = nodes_raw.map(node => {
       const { group, ...rest } = node;
