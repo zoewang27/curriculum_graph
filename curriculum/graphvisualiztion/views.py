@@ -466,10 +466,11 @@ def bertModel(first_nodes, second_nodes):
     for i in range(len(first_labels)):
         for j in range(len(second_labels)):
             if cosine_scores[i][j] > 0.65:
+                score = str(round(float(cosine_scores[i][j]), 4))
                 edge = {
                     'from': first_nodes_dict[first_labels[i]],
                     'to': second_nodes_dict[second_labels[j]],
-                    'title': '',
+                    'title': score,
                     'color': 'grey',
                     'width': 1,
                     'shadow': False,

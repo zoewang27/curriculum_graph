@@ -146,7 +146,7 @@
                       var fromNode = findNodeById(edge.from);
                       var toNode = findNodeById(edge.to);
                       if (fromNode && toNode) {
-                        modalBody.append("<li class='list-group-item'>" + count + "</li>");
+                        modalBody.append("<li class='list-group-item'>" + 'Cosine similarity score: ' + edge.title + "</li>");
                         modalBody.append("<li class='list-group-item list-group-item-primary'>"  + fromNode.title  + "</li>");
                         modalBody.append("<li class='list-group-item list-group-item-warning'>"  + toNode.title + "</li>");
                         count++;
