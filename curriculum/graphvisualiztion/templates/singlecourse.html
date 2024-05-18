@@ -13,9 +13,8 @@
 </style>
 
 
-<main>
-
-  <form class="form-inline">
+<main >
+  <form class="form-inline" style="display: flex; align-items: center; justify-content: center;">
     <label class="my-1 mr-2" for="inlineFormCustomSelectPref">
       Choose a course from UvA or ACM: 
     </label>
@@ -40,6 +39,9 @@
 
 
 <script>
+
+var dataset_nodes = {{ nodes|safe }}; 
+var dataset_edges = {{ edges|safe }}; 
 
 
 var acmCourses = {{ acm_courses|safe }};
@@ -71,6 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   $(document).ready(function() {
+    displayGraph(dataset_nodes, dataset_edges);
+
     $("#show-Graph-Button").click(function() {
       var selectedCourse = $("#courcesList option:selected").val();
       console.log(selectedCourse)
@@ -87,7 +91,10 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         success: function(response) {
             console.log(response);
-            displayGraph(response);
+            dataset_nodes = response.nodes;
+            dataset_edges = response.edges;
+            displayGraph(dataset_nodes, dataset_edges);
+
         },
         error: function(xhr, status, error) {
         }
@@ -97,13 +104,10 @@ document.addEventListener("DOMContentLoaded", function() {
   
 
   
-  function displayGraph(response) {
+  function displayGraph(new_nodes, new_edges) {
   
-      var dataset_nodes = response.nodes; 
-      var dataset_edges = response.edges; 
-  
-      var nodes = new vis.DataSet(dataset_nodes);
-      var edges = new vis.DataSet(dataset_edges);
+      var nodes = new vis.DataSet(new_nodes);
+      var edges = new vis.DataSet(new_edges);
 
 
       nodes.forEach(function(node) {

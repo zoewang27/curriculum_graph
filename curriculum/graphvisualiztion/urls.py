@@ -19,9 +19,10 @@ urlpatterns = [
     path("allcourses/", views.allCourses, name="allcourses"),
     path("detectAllcourses/", views.detectAllcourses, name="all-courses-similarity"),
 
-    # upload and delete csv files
+    # upload and delete csv files, and clear JSON files
     path("filesManagement/", views.filesManagement, name="filesManagement"),
     path("uploadfiles/", views.uploadfile, name="upload-file"),
-    path("deletefiles/", views.deletefile, name="delete-file"),
+    path("deleteCSVfiles/", views.deleteCSVfile, name="delete-csv-file"),
+    path("deleteJSONfiles/", views.deleteJSONfile, name="delete-json-file"),
 
 ]

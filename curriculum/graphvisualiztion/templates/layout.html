@@ -67,6 +67,8 @@
       #title {
         margin-bottom: 5em;
       }
+
+
     </style>
 
     <style>
@@ -112,7 +114,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="{% url 'graph' %}">
+                    <a href="{% url 'singlecourse' %}">
                         <img class="img-fluid" src="{% static 'images/uva_logo.webp' %}" style="width:250px; margin-left: -50px;  padding:6px;margin-top:-5px;padding-left: -150px;" alt="Theme-Logo" />
                     </a>
                     <a class="mobile-options">
@@ -158,10 +160,10 @@
             </div>
         </nav>
 
-        <!-- 下面 -->
+        <!-- main content -->
         <div class="pcoded-main-container">
             <div class="pcoded-wrapper">
-                <!-- 左边 -->
+                <!-- left side -->
                 <nav class="pcoded-navbar">
                   <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                   <div class="pcoded-inner-navbar main-menu">
@@ -201,9 +203,9 @@
 
 
 
-                      <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">New function</div>
+                      <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">visualization</div>
                       <ul class="pcoded-item pcoded-left-item">
-                        <li class="">
+                        <li>
                             <a href="{% url 'singlecourse' %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main"> Course graph</span>
@@ -211,21 +213,21 @@
                             </a>
                         </li>
 
-                          <li class="">
+                          <li>
                               <a href="{% url 'similarity' %}">
                                   <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                   <span class="pcoded-mtext" data-i18n="nav.form-components.main">Courses Similarity</span>
                                   <span class="pcoded-mcaret"></span>
                               </a>
                           </li>
-                          <li class="">
+                          <li>
                             <a href="{% url 'allcourses' %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Curricula Similarity</span>
                                 <span class="pcoded-mcaret"></span>
                             </a>
                         </li>
-                        <li class="">
+                        <li>
                             <a href="{% url 'filesManagement' %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Upload files</span>
@@ -235,12 +237,9 @@
 
                       </ul>
 
-
-
-
                       <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Info</div>
                       <ul class="pcoded-item pcoded-left-item">
-                          <li class="">
+                          <li>
                               <a href="javascript:void(0);">
                                   <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                   <span class="pcoded-mtext" data-i18n="nav.form-components.main">Publications</span>
@@ -265,8 +264,10 @@
                   </div>
                 </nav>
 
-                <!-- 右边           -->
-                <div class="pcoded-content">
+
+
+                <!-- right side -->
+                <div class="pcoded-content" style="height: calc(100% - 120px);">
                   <div class="pcoded-inner-content">
 
                       <div class="main-body">
@@ -289,21 +290,6 @@
 
 
 <script>
-
-//   var dataset_nodes={{ dataset_nodes|safe }};
-//   var dataset_edges={{ dataset_edges|safe }};
-//   var courseTitles={{ courseTitles|safe}}
-// //---------------------------------------------------------------------
-
-// function selectGraph(courseTitle){
-//     // Construct URLSearchParams object instance from current URL querystring.
-//     var queryParams = new URLSearchParams(window.location.search);
-//     // Set new or modify existing parameter value.
-//     queryParams.set("courseTitle", courseTitle);
-//     // Replace current querystring with the new one.
-//     history.replaceState(null, null, "?"+queryParams.toString());
-//     location.reload();
-// }
 
 //---------------------------------------------------------------------
 function search(searchBoxNum){

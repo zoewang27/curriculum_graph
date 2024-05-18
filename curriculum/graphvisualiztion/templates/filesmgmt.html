@@ -3,6 +3,14 @@
 {% block content %}
 
 
+<style type="text/css">
+    main{
+        height: 100%;
+        overflow-y: auto; 
+    }
+
+</style>
+
 <main>
 
   <div style="margin-left: 10%; margin-right: 10%;">
@@ -13,11 +21,15 @@
         <label for="fileInput" class="form-label">Select a CSV file to upload (please name a file starting with 'ACM-' or 'UvA-'):</label>
         <input type="file" class="form-control" id="fileInput" name="files" multiple>
     </div>
-    <button type="submit" class="btn btn-primary" id="upload-file-button" style="margin-bottom: 2%;">Upload File</button>
+    <button type="submit" class="btn btn-primary" id="upload-file-button" style="margin-bottom: 1%;">Upload File</button>
   </form>
 
 
-  <h4>Uploaded files:</h4>
+  <div style="display: flex; align-items: center; margin-bottom: 1%;">
+    <h4 style="margin: 0;">Uploaded files:</h4>
+    <button class="btn btn-warning" id="delete-jsonfile-button" style="margin-left: auto;">Clear temporary files</button>
+  </div>
+
   <table class="table table-sm">
       <thead class="thead-light">
           <tr>
@@ -105,13 +117,13 @@ $(document).ready(function() {
 
 
 
-    // delete file event
+    // delete csv file event
     $(".delete-btn").click(function() {
         var courseName = $(this).data("course");
         if (confirm("Are you sure you want to delete " + courseName + ".csv ?")) {
             // Send AJAX request to delete file
             $.ajax({
-                url: "{% url 'delete-file' %}",
+                url: "{% url 'delete-csv-file' %}",
                 type: "POST",
                 data: {
                     course_name: courseName,
@@ -127,11 +139,30 @@ $(document).ready(function() {
             });
         }
     });
-  });
 
 
 
+     // delete json file event
+    $("#delete-jsonfile-button").click(function() {
+        if (confirm("Are you sure you want to clear all temporary JSON files? These files were created from CSV files to generate the graph. If you upload new CSV files,it is recommended.")) {
+            $.ajax({
+                url: "{% url 'delete-json-file' %}",
+                type: "POST",
+                data: {
+                    csrfmiddlewaretoken: "{{ csrf_token }}"
+                },
+                success: function(response) {
+                  alert(response.message);        
+              },
+              error: function(xhr, status, error) {
+                  alert(response.message);
+              }
+            });
+        }
+    });
 
+
+});
 
 
 

@@ -18,11 +18,11 @@
 
 
 <div style="display: flex; align-items: center; justify-content: center;">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLong" >
-  Select Two courses
-</button>
-<p style="margin-bottom: 0; margin-left: 20px;" id="selected-course"> </p>
-<a href="#" id="nodes-pairs" style="color:dodgerblue; text-decoration: underline;"></a>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLong" >
+    Select Two courses
+  </button>
+  <p style="margin-bottom: 0; margin-left: 20px;" id="selected-course"> </p>
+  <a href="#" id="nodes-pairs" style="color:dodgerblue; text-decoration: underline;"></a>
 </div>
 
 
@@ -77,7 +77,6 @@
 
 
 
-
 <div class="modal fade bd-example-modal-lg" id="Modal-nodes-pairs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -103,8 +102,11 @@
 </div>
 
 
-<div id="mynetwork"></div>
 
+
+<div id="mynetwork" style="display: flex; align-items: center; justify-content: center;">
+  <span id="usage-hint" style="color: rgb(147, 145, 145);">Please click the button and choose two courses to compare the similarty between them</span>
+</div>
 
 </main>
 
@@ -116,6 +118,8 @@
 
   $(document).ready(function() {
     $("#add-button").click(function() {
+      $("#usage-hint").hide(); //hide the hint text
+
       var checkboxes = $(".form-check-input:checked");
         if (checkboxes.length !== 2) {
             alert("Please select 2 courses.");
@@ -147,7 +151,7 @@
                       var fromNode = findNodeById(edge.from);
                       var toNode = findNodeById(edge.to);
                       if (fromNode && toNode) {
-                        modalBody.append("<li class='list-group-item'>" + 'Cosine similarity score: ' + edge.title + "</li>");
+                        modalBody.append("<li class='list-group-item'>" + 'Similarity score: ' + edge.title + "</li>");
                         modalBody.append("<li class='list-group-item list-group-item-primary'>"  + fromNode.title  + "</li>");
                         modalBody.append("<li class='list-group-item list-group-item-warning'>"  + toNode.title + "</li>");
                         count++;
@@ -203,12 +207,6 @@
       var nodes = new vis.DataSet(response.nodes);
       var edges = new vis.DataSet(response.edges);
   
-      // var dataset_nodes = response.nodes; 
-      // var dataset_edges = response.edges; 
-  
-      // var nodes = new vis.DataSet(dataset_nodes);
-      // var edges = new vis.DataSet(dataset_edges);
-
       // Cut text and add ellipses
       nodes.forEach(function(node) {
           var maxLength = 20; 

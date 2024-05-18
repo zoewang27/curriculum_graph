@@ -327,11 +327,15 @@ def getAllcourses():
 
 
 '''
-return singlecourse.html
+return singlecourse.html and the first course
 '''
 def singleCourse(request):
     acm_courses,uva_courses = getAllcourses()
-    return render(request,'singlecourse.html', {'acm_courses': acm_courses, 'uva_courses': uva_courses})
+    firstCourse = uva_courses[0]
+    csv_file = firstCourse + ".csv"
+    csv_data = openfile(csv_file)
+    nodes,edges,_ = buildNodeEdges(csv_data)
+    return render(request,'singlecourse.html', {"nodes": nodes, "edges": edges, 'acm_courses': acm_courses, 'uva_courses': uva_courses})
 
 
 
@@ -699,10 +703,11 @@ def uploadfile(request):
 
 
 
+
 '''
 Delete csv files
 '''
-def deletefile(request):
+def deleteCSVfile(request):
     if request.method == 'POST':
         course_name = request.POST.get('course_name')
         if course_name:
@@ -712,5 +717,25 @@ def deletefile(request):
                 os.remove(file_path)
                 return JsonResponse({'message': 'File deleted successfully!'})
         return JsonResponse({'message': 'Failed to delete file.'})
+    else:
+        return JsonResponse({'message': 'Invalid request method.'})
+    
+
+
+
+
+'''
+Delete temporary json files( this function is needed after uploading new csv files)
+'''
+def deleteJSONfile(request):
+    if request.method == 'POST':
+        file_dir = os.path.join(os.getcwd(), 'graphvisualiztion/data/')
+        if os.path.exists(file_dir):
+            for file_name in os.listdir(file_dir):
+                file_path = os.path.join(file_dir, file_name)
+                if os.path.isfile(file_path):
+                    os.remove(file_path)
+            return JsonResponse({'message': 'All temporary JSON files are cleared successfully!'})
+        return JsonResponse({'message': 'Failed to delete files.'})
     else:
         return JsonResponse({'message': 'Invalid request method.'})
