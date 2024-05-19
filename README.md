@@ -24,3 +24,6 @@
 
 <img width="1143" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/dc524438-328a-4316-9e30-f42cf8ae01df">
 
+
+5, User login
+<img width="1505" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/f14c025a-41a1-4477-941d-4342086d8491">
