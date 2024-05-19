@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %} 
+
+
+<main>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 style="text-align: center;">Login</h3>
+                        </br>
+                        <form method="POST" autocomplete="off">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="{{ loginform.username.id_for_label }}">Username</label>
+                                <input type="text" name="{{ loginform.username.name }}" class="form-control" placeholder="Username" >
+                            </div>
+                            <div class="form-group">
+                                <label for="{{ loginform.password.id_for_label }}">Password</label>
+                                <input type="password" name="{{ loginform.password.name }}" class="form-control" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</main>
+
+{% endblock %}

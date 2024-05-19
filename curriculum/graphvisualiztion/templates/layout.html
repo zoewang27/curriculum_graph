@@ -81,6 +81,9 @@
         .show-read-more .more-text{
             display: none;
         }
+        .active a {
+            color: blue;
+        }
 
       
     </style>
@@ -143,18 +146,11 @@
                         </li>
                     </ul>
                     <ul class="nav-right">
-
-                        <li class="user-profile header-notification">
-                            <a href="#!">
-                                <img src="{% static 'images/GuestICON.png' %}" class="img-radius" alt="User-Profile-Image">
-                                <span>Guest</span>
-                                <i class="ti-angle-down"></i>
-                            </a>
-                            <ul class="show-notification profile-notification">
-                                <li><a href="../accountManagement/login"><i class="ti-layout-sidebar-left"></i> Login </a> </li>
-
-                            </ul>
-                        </li>
+                        {% if user.is_authenticated %}
+                        <li><a href="{% url 'logout' %}"><i aria-hidden="true"></i>Logout </a> </li>
+                        {% else %}
+                        <li><a href="{% url 'login' %}">Login </a> </li>
+                        {% endif %}
                     </ul>
                 </div>
             </div>
@@ -205,7 +201,7 @@
 
                       <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">visualization</div>
                       <ul class="pcoded-item pcoded-left-item">
-                        <li>
+                        <li class="{% if request.path == '/graphvisualiztion/singlecourse' %} active {% endif %}">
                             <a href="{% url 'singlecourse' %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main"> Course graph</span>
@@ -213,22 +209,23 @@
                             </a>
                         </li>
 
-                          <li>
+                          <li class="{% if request.path == '/graphvisualiztion/similarity' %} active {% endif %}">
                               <a href="{% url 'similarity' %}">
                                   <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                   <span class="pcoded-mtext" data-i18n="nav.form-components.main">Courses Similarity</span>
                                   <span class="pcoded-mcaret"></span>
                               </a>
                           </li>
-                          <li>
+                          <li class="{% if request.path == '/graphvisualiztion/allcourses' %} active {% endif %}">
                             <a href="{% url 'allcourses' %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Curricula Similarity</span>
                                 <span class="pcoded-mcaret"></span>
                             </a>
                         </li>
-                        <li>
-                            <a href="{% url 'filesManagement' %}">
+                        
+                        <li class="{% if request.path == '/graphvisualiztion/filesManagement' %} active {% endif %}">
+                            <a href="{% if user.is_authenticated %}{% url 'filesManagement' %}{% else %}{% url 'login' %}{% endif %}">
                                 <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Upload files</span>
                                 <span class="pcoded-mcaret"></span>
