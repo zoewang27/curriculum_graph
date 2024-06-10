@@ -172,38 +172,11 @@
                           </div>
                       </div>
 
-                      <!-- <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">Visualization</div>
-                      <ul class="pcoded-item pcoded-left-item">
-                          <li class="active pcoded-hasmenu">
-                              <a href="{% url 'graph' %}">
-                                  <span class="pcoded-micon"><i class="ti-sharethis"></i><b>FC</b></span>
-                                  <span class="pcoded-mtext" data-i18n="nav.form-components.main">Graph based</span>
-                                  <span class="pcoded-mcaret"></span>
-                              </a>
-                              <ul class="pcoded-submenu">
-                                  {%for course in courseTitles %}
-                                  <li class=" " >
-                                      <a href="#" onclick="selectGraph('{{ course }}')">
-                                          <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                          <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">
-                                              {{ course }}
-                                          </span>
-                                          <span class="pcoded-mcaret"></span>
-                                      </a>
-                                  </li>
-                                  {% endfor %}
-                              </ul>
-                          </li>
-
-                      </ul> -->
-
-
-
                       <div class="pcoded-navigatio-lavel" data-i18n="nav.category.forms">visualization</div>
                       <ul class="pcoded-item pcoded-left-item">
                         <li class="{% if request.path == '/graphvisualiztion/singlecourse' %} active {% endif %}">
                             <a href="{% url 'singlecourse' %}">
-                                <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
+                                <span class="pcoded-micon"><i class="ti-vector"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main"> Course graph</span>
                                 <span class="pcoded-mcaret"></span>
                             </a>
@@ -211,22 +184,30 @@
 
                           <li class="{% if request.path == '/graphvisualiztion/similarity' %} active {% endif %}">
                               <a href="{% url 'similarity' %}">
-                                  <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
-                                  <span class="pcoded-mtext" data-i18n="nav.form-components.main">Courses Similarity</span>
+                                  <span class="pcoded-micon"><i class="ti-link"></i><b>FC</b></span>
+                                  <span class="pcoded-mtext" data-i18n="nav.form-components.main">Course Similarity</span>
                                   <span class="pcoded-mcaret"></span>
                               </a>
                           </li>
                           <li class="{% if request.path == '/graphvisualiztion/allcourses' %} active {% endif %}">
                             <a href="{% url 'allcourses' %}">
-                                <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
+                                <span class="pcoded-micon"><i class="ti-loop"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Curricula Similarity</span>
+                                <span class="pcoded-mcaret"></span>
+                            </a>
+                        </li>
+
+                        <li class="{% if request.path == '/graphvisualiztion/trajectory' %} active {% endif %}">
+                            <a href="{% url 'trajectory' %}">
+                                <span class="pcoded-micon"><i class="ti-pulse"></i><b>FC</b></span>
+                                <span class="pcoded-mtext" data-i18n="nav.form-components.main">Trajectory</span>
                                 <span class="pcoded-mcaret"></span>
                             </a>
                         </li>
                         
                         <li class="{% if request.path == '/graphvisualiztion/filesManagement' %} active {% endif %}">
                             <a href="{% if user.is_authenticated %}{% url 'filesManagement' %}{% else %}{% url 'login' %}{% endif %}">
-                                <span class="pcoded-micon"><i class="ti-write"></i><b>FC</b></span>
+                                <span class="pcoded-micon"><i class="ti-files"></i><b>FC</b></span>
                                 <span class="pcoded-mtext" data-i18n="nav.form-components.main">Upload files</span>
                                 <span class="pcoded-mcaret"></span>
                             </a>

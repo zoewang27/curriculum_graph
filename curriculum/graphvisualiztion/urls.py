@@ -4,8 +4,8 @@ from . import views
 
 
 urlpatterns = [
-    path("graph", views.graph,name="graph"),
-    path("contentmgmt", views.contentmgmt),
+    # path("graph", views.graph,name="graph"),
+    # path("contentmgmt", views.contentmgmt),
 
     # single course graph
     path("singlecourse", views.singleCourse, name="singlecourse"),
@@ -24,5 +24,10 @@ urlpatterns = [
     path("uploadfiles/", views.uploadfile, name="upload-file"),
     path("deleteCSVfiles/", views.deleteCSVfile, name="delete-csv-file"),
     path("deleteJSONfiles/", views.deleteJSONfile, name="delete-json-file"),
+    path('download-csv-file/<int:course_id>/', views.download_csv_file, name='download-csv-file'),
+
+     # trajectory
+    path("trajectory", views.trajectory, name="trajectory"),
+    path("showTrajectory", views.showTrajectory, name="showTrajectory"),
 
 ]

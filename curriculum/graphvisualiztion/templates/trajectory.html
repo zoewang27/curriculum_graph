@@ -1,0 +1,239 @@
+{% extends "./layout.html" %}
+{% load static %}
+{% block content %}
+
+
+<style type="text/css">
+#mynetwork {
+        width: 100%;
+        height: 100%;
+        border: 0px solid lightgray;
+      }
+    
+</style>
+
+
+<main >
+  <form class="form-inline" style="display: flex; align-items: center; justify-content: center;">
+    <label class="my-1 mr-2" for="inlineFormCustomSelectPref">
+      Choose a trajectory: 
+    </label>
+    <select class="custom-select my-1 mr-sm-2" id="trajectorySource">
+      <option selected>Software Systems</option>
+      <option >Modelbased Systems</option>
+      <option >Mathematics and Computer Science Theory</option>
+      <option >Data and Information Systems</option>
+      <option >Computer Systems</option>
+      <option >Academic Competences</option>
+    </select>
+
+    <button type="button" class="btn btn-primary" id="show-Graph-Button">
+      Show Trajectory
+    </button>
+  </form>
+
+
+  <div id="mynetwork" style="display: flex; align-items: center; justify-content: center;">
+    <span id="usage-hint" style="color: rgb(147, 145, 145);">Please choose a trajectory and click the button to see the graph </span>
+  </div>
+
+
+
+<script>
+    var dataset_nodes;
+    var dataset_edges;
+  $(document).ready(function() {
+
+    $("#show-Graph-Button").click(function() {
+      $("#usage-hint").hide(); //hide the hint text
+      var selected_trajectory = $("#trajectorySource option:selected").text();
+      console.log(selected_trajectory)
+
+      $.ajax({
+  
+        url: '{% url "showTrajectory" %}', 
+        type: "POST",
+        data:{
+
+          trajectory: selected_trajectory, 
+          csrfmiddlewaretoken: "{{csrf_token}}",
+
+        },
+        success: function(response) {
+            console.log(response);
+            dataset_nodes = response.nodes;
+            dataset_edges = response.edges;
+            displayGraph(dataset_nodes, dataset_edges);
+
+        },
+        error: function(xhr, status, error) {
+        }
+      });
+    });
+  });
+  
+
+  
+  function displayGraph(new_nodes, new_edges) {
+  
+      var nodes = new vis.DataSet(new_nodes);
+      var edges = new vis.DataSet(new_edges);
+
+      nodes.forEach(function(node) {
+        node.title = '(' + node.cog_level + ') ' + node.title;
+      });
+
+
+      // Instantiate our network object.
+      var container = document.getElementById("mynetwork");
+      var data = {
+        nodes: nodes,
+        edges: edges,
+      };
+
+      
+      var options = {
+        nodes: {
+          shape: "dot",
+          borderWidth: 2,
+          shadow: true,
+          size: 15,
+          color: {
+            border: "#D3D3D3",
+            background: "#D3D3D3",
+          },
+          font: { color: "black" },
+          shapeProperties: {
+            useBorderWithImage: true,
+          },
+          margin: 10,
+          widthConstraint: {
+            maximum: 200,
+          },
+        },
+
+        edges: {
+          width: 2,
+          shadow: true,
+          // smooth: false,
+        },
+
+        physics: {
+            enabled: true,
+            barnesHut: {
+                avoidOverlap: 0.5, 
+                gravitationalConstant: -2500
+            },
+            stabilization: { iterations: 800 },
+       },
+       layout: { 
+        randomSeed: 16
+      },
+
+
+        groups: {
+          create: {
+            shape: "dot",
+            color: "#b8bceb", // orange
+          },
+          evaluate: {
+            shape: "dot",
+            color: "#a3ddf5", // blue
+          },
+          analyze: {
+            shape: "dot",
+            color: "#b0e3bf", // purple
+          },
+          apply: {
+            shape: "dot",
+            color: "#fefaa3", // red
+          },
+          understand: {
+            shape: "dot",
+            color: "#ffd2af", // green
+          },
+          remember: {
+            shape: "dot",
+            color: "#faadb0", // green
+          },
+        },
+
+        interaction: {
+          navigationButtons: true,
+          keyboard: true,
+        },
+      };
+      network = new vis.Network(container, data, options);
+      var x = -mynetwork.clientWidth / 2 - 600;
+      var y = -mynetwork.clientHeight / 2 + 50;
+      var step = 70;
+      nodes.add({
+        id: 1000,
+        x: x,
+        y: y,
+        label: "create",
+        group: "create",
+        value: 1,
+        fixed: true,
+        physics: false,
+      });
+      nodes.add({
+        id: 1001,
+        x: x,
+        y: y + step,
+        label: "evaluate",
+        group: "evaluate",
+        value: 1,
+        fixed: true,
+        physics: false,
+      });
+      nodes.add({
+        id: 1002,
+        x: x,
+        y: y + 2 * step,
+        label: "analyze",
+        group: "analyze",
+        value: 1,
+        fixed: true,
+        physics: false,
+      });
+      nodes.add({
+        id: 1003,
+        x: x,
+        y: y + 3 * step,
+        label: "apply",
+        group: "apply",
+        value: 1,
+        fixed: true,
+        physics: false,
+      });
+      nodes.add({
+        id: 1004,
+        x: x,
+        y: y + 4 * step,
+        label: "understand",
+        group: "understand",
+        value: 1,
+        fixed: true,
+        physics: false,
+      });
+      nodes.add({
+        id: 1005,
+        x: x,
+        y: y + 5 * step,
+        label: "remember",
+        group: "remember",
+        value: 1,
+        fixed: true,
+        physics: false,
+      });
+
+    }
+</script>
+
+
+
+
+
+
+{% endblock %}

@@ -11,57 +11,132 @@
 
 </style>
 
+
 <main>
 
-  <div style="margin-left: 10%; margin-right: 10%;">
-
-  <form method="post" enctype="multipart/form-data">
-    {% csrf_token %}
-    <div class="mb-3">
-        <label for="fileInput" class="form-label">Select a CSV file to upload (please name a file starting with 'ACM-' or 'UvA-'):</label>
-        <input type="file" class="form-control" id="fileInput" name="files" multiple>
+  <div style="margin-left: 2%; margin-right: 2%;">
+    <div style="display: flex; align-items: center; margin-bottom: 1%;">
+        <h2>UvA Courses</h2>
+        <button class="btn btn-warning" id="delete-jsonfile-button" style="margin-left: auto;">Clear temporary files</button>
     </div>
-    <button type="submit" class="btn btn-primary" id="upload-file-button" style="margin-bottom: 1%;">Upload File</button>
-  </form>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>NO.</th>
+                <th>Course</th>
+                <th>Source</th>
+                <th>Category</th>
+                <th>CSV File</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in uva_courses %}
+            <tr>
+                <td>{{ course.course_number }}</td>
+                <td>{{ course.course_name }}</td>
+                <td>{{ course.source }}</td>
+                <td>{{ course.course_category }}</td>
+                <td>
+                    {% if course.csv_file %}
+                       {{ course.csv_file.name|cut:'CSV/' }}
+                    {% else %}
+                        No file
+                    {% endif %}
+                </td>
+                <td>
+                    {% if course.csv_file %}
+                        <button class="btn btn-danger delete-btn" data-course-id="{{ course.course_id }}"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="ti-trash"></i>
+                        </button>
+                        <a href="{% url 'download-csv-file' course.course_id %}" class="btn btn-dark">
+                            <i class="ti-download"></i>
+                        </a>
+                     {% else %}
+                        <button class="btn btn-primary upload-btn" data-course-name="{{ course.course_name }}" data-course-id="{{ course.course_id }}" >
+                            <i class="ti-upload"></i>
+                        </button>
+                     {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
 
-  <div style="display: flex; align-items: center; margin-bottom: 1%;">
-    <h4 style="margin: 0;">Uploaded files:</h4>
-    <button class="btn btn-warning" id="delete-jsonfile-button" style="margin-left: auto;">Clear temporary files</button>
-  </div>
+    <h2>ACM Courses</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>N0.</th>
+                <th>Course</th>
+                <th>Source</th>
+                <th>CSV File</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for course in acm_courses %}
+            <tr>
+                <td>{{ course.course_number }}</td>
+                <td>{{ course.course_name }}</td>
+                <td>{{ course.source }}</td>
+                <td>
+                    {% if course.csv_file %}
+                        {{ course.csv_file.name|cut:'CSV/' }}
+                    {% else %}
+                        No file 
+                    {% endif %}
+                </td>
+                <td>
+                    {% if course.csv_file %}
+                        <button class="btn btn-danger delete-btn" data-course-id="{{ course.course_id }}"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <i class="ti-trash"></i>
+                        </button>
+                        <a href="{% url 'download-csv-file' course.course_id %}" class="btn btn-dark">
+                            <i class="ti-download"></i>
+                        </a>
+                    {% else %}
+                        <button class="btn btn-primary upload-btn" data-course-name="{{ course.course_name }}" data-course-id="{{ course.course_id }}">
+                            <i class="ti-upload"></i>
+                        </button>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 
-  <table class="table table-sm">
-      <thead class="thead-light">
-          <tr>
-              <th scope="col">File name</th>
-              <th scope="col">Source</th>
-              <th scope="col">Operation</th>
-          </tr>
-      </thead>
-      <tbody>
-        {% for course in acm_courses %}
-          <tr>
-              <td style="vertical-align: middle;">{{ course }}.csv</td>
-              <td style="vertical-align: middle;">ACM</td>
-              <td><button class="btn btn-danger delete-btn" data-course="{{ course }}">Delete</button></td>
-          </tr>
-          {% endfor %}
 
-          {% for course in uva_courses %}
-          <tr>
-              <td style="vertical-align: middle;">{{ course }}.csv</td>
-              <td style="vertical-align: middle;">UvA</td>
-              <td><button class="btn btn-danger delete-btn" data-course="{{ course }}">Delete</button></td>
-          </tr>
-          {% endfor %}
-
-      </tbody>
-  </table>
-
+    <!-- modal -->
+    <div class="modal fade" id="Modal-upload-file" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Upload file</h5>
+                </div>
+                <div class="modal-body">
+                    <form method="post" enctype="multipart/form-data" id="upload-file-form" style="padding-left: 5px; padding-right: 5px; padding-top: 5px">
+                        {% csrf_token %}
+                        <div class="mb-2">
+                            <label>Course name:</label>
+                            <span id="course-name-placeholder"></span>
+                        </div>
+                        <div class="mb-3">
+                            <input type="hidden" id="course-id-input" name="course_id">
+                            <label for="fileInput" class="form-label form-label-as-heading">File:</label>
+                            <input type="file" class="form-control" id="fileInput" name="files">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="upload-file-button">Upload</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-</div>
-
+    </div>
 </main>
 
 
@@ -74,59 +149,48 @@
 
 $(document).ready(function() {
 
-    // upload file event
-    $("#upload-file-button").click(function(e) {
-      e.preventDefault(); 
-      var fileInput = document.getElementById('fileInput');
-      var file = fileInput.files[0];
+    // upload csv file 
+    $(".upload-btn").click(function(e) {
+        var courseName = $(this).data("course-name");
+        var courseId = $(this).data("course-id");
+        $("#course-name-placeholder").text(courseName);
+        $("#course-id-input").val(courseId);
+        $("#Modal-upload-file").modal("show");
+    });
 
-      if (!file) {
-          alert("Please upload a file!");
-      }else {
-         // check if the file is a csv file
-        var fileName = file.name.toLowerCase();
-        if (!fileName.endsWith('.csv')) { 
-            alert("Please upload a CSV file!");
-            return; 
-        }
+    $("#upload-file-form").submit(function(e) {
+        e.preventDefault();
 
-        var formData = new FormData();
-        formData.append('file', file);
-        fileInput.value = ''
-
+        var formData = new FormData(this);
         $.ajax({
-            url: '{% url "upload-file" %}', 
+            url: "{% url 'upload-file' %}",
             type: "POST",
             data: formData,
-            processData: false, 
-            contentType: false, 
-            headers: {
-                'X-CSRFToken': '{{ csrf_token }}' 
-            },
+            processData: false,
+            contentType: false,
             success: function(response) {
-              alert(response.message);
-              location.reload()            
+                alert(response.message);
+                $("#Modal-upload-file").modal("hide");
+                location.reload(); 
             },
             error: function(xhr, status, error) {
-                alert(response.message);
+                alert("Failed to upload file: " + xhr.responseText);
             }
         });
-      }
     });
 
 
 
-
-    // delete csv file event
+    // delete csv file 
     $(".delete-btn").click(function() {
-        var courseName = $(this).data("course");
-        if (confirm("Are you sure you want to delete " + courseName + ".csv ?")) {
+        var courseID = $(this).data("course-id");
+        if (confirm("Are you sure to delete this course's file?")) {
             // Send AJAX request to delete file
             $.ajax({
                 url: "{% url 'delete-csv-file' %}",
                 type: "POST",
                 data: {
-                    course_name: courseName,
+                    courseID: courseID,
                     csrfmiddlewaretoken: "{{ csrf_token }}"
                 },
                 success: function(response) {
@@ -142,7 +206,7 @@ $(document).ready(function() {
 
 
 
-     // delete json file event
+     // delete json file 
     $("#delete-jsonfile-button").click(function() {
         if (confirm("Are you sure you want to clear all temporary JSON files? These files were created from CSV files to generate the graph. If you upload new CSV files,it is recommended.")) {
             $.ajax({

@@ -1,295 +1,299 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse,Http404
 from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
+import mimetypes
 import csv
 import os
 import json
 from difflib import SequenceMatcher
+from .models import Trajectory, Course
 
 # BERT
 from sentence_transformers import SentenceTransformer, util
 
 
 
-NULL=-10000
-#---------------------------------------------------------------------------------------------------------------------
+# NULL=-10000
+# #---------------------------------------------------------------------------------------------------------------------
 
-def similar(a, b, threshold=0.75):
-    """
-    Checks if two strings are similar based on a similarity threshold.
-    """
-    matcher = SequenceMatcher(None, a, b)
-    return matcher.ratio() >= threshold
-#---------------------------------------------------------------------------------------------------------------------
-def generateSearchSpace(csv_files,folder_path):
-    searchSpace={}
-    id=0
-    for csv_file in csv_files:
-        csv_data = open_csv_file(folder_path+csv_file)
-        for row in csv_data:
-            if 'courseid' not in row:
-                searchSpace[id]={'csv_file':csv_file,'row':row}
-                id=id+1
-    return searchSpace
-#---------------------------------------------------------------------------------------------------------------------
-def detectSimilarNodes(searchSpace):
-    similarNodes={}
-    id=0
-    for travers1 in searchSpace:
-        for travers2 in searchSpace:
-            if ((searchSpace[travers1]['csv_file'] != searchSpace[travers2]['csv_file'])) and ("Obj" not in searchSpace[travers1]['row'][6]) and ("Obj" not in searchSpace[travers2]['row'][6]):
-                if similar(searchSpace[travers1]['row'][6],searchSpace[travers2]['row'][6]):
-                    similarNodes[id]={'node1':searchSpace[travers1],'node2':searchSpace[travers2]}
-                    id=id+1
-    return similarNodes
-#---------------------------------------------------------------------------------------------------------------------
+# def similar(a, b, threshold=0.75):
+#     """
+#     Checks if two strings are similar based on a similarity threshold.
+#     """
+#     matcher = SequenceMatcher(None, a, b)
+#     return matcher.ratio() >= threshold
+# #---------------------------------------------------------------------------------------------------------------------
+# def generateSearchSpace(csv_files,folder_path):
+#     searchSpace={}
+#     id=0
+#     for csv_file in csv_files:
+#         csv_data = open_csv_file(folder_path+csv_file)
+#         for row in csv_data:
+#             if 'courseid' not in row:
+#                 searchSpace[id]={'csv_file':csv_file,'row':row}
+#                 id=id+1
+#     return searchSpace
+# #---------------------------------------------------------------------------------------------------------------------
+# def detectSimilarNodes(searchSpace):
+#     similarNodes={}
+#     id=0
+#     for travers1 in searchSpace:
+#         for travers2 in searchSpace:
+#             if ((searchSpace[travers1]['csv_file'] != searchSpace[travers2]['csv_file'])) and ("Obj" not in searchSpace[travers1]['row'][6]) and ("Obj" not in searchSpace[travers2]['row'][6]):
+#                 if similar(searchSpace[travers1]['row'][6],searchSpace[travers2]['row'][6]):
+#                     similarNodes[id]={'node1':searchSpace[travers1],'node2':searchSpace[travers2]}
+#                     id=id+1
+#     return similarNodes
+# #---------------------------------------------------------------------------------------------------------------------
 
-def buildSimilarityGraph(csv_files,folder_path):
-    dataset_nodes=[]
-    dataset_edges=[]
-    searchSpace=generateSearchSpace(csv_files,folder_path)
-    similarNodes=detectSimilarNodes(searchSpace)
-    #print(similarNodes)
-    dataset_nodes,dataset_edges = createSimilarityGraph(similarNodes)
+# def buildSimilarityGraph(csv_files,folder_path):
+#     dataset_nodes=[]
+#     dataset_edges=[]
+#     searchSpace=generateSearchSpace(csv_files,folder_path)
+#     similarNodes=detectSimilarNodes(searchSpace)
+#     #print(similarNodes)
+#     dataset_nodes,dataset_edges = createSimilarityGraph(similarNodes)
 
-    return dataset_nodes,dataset_edges
-#---------------------------------------------------------------------------------------------------------------------
+#     return dataset_nodes,dataset_edges
+# #---------------------------------------------------------------------------------------------------------------------
 
-def graph(request):
+# def graph(request):
 
-    try:
-        courseTitle = request.GET['courseTitle']
-    except:
-        courseTitle = ''
+#     try:
+#         courseTitle = request.GET['courseTitle']
+#     except:
+#         courseTitle = ''
 
-    dataset_nodes={}
-    dataset_edges={}
-    courseTitles=[]
-    folder_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/')
+#     dataset_nodes={}
+#     dataset_edges={}
+#     courseTitles=[]
+#     folder_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/')
 
-    # folder_path=os.getcwd()+"\\graphvisualiztion\\CSV\\"
-    csv_files = get_csv_files_in_folder(folder_path)
+#     # folder_path=os.getcwd()+"\\graphvisualiztion\\CSV\\"
+#     csv_files = get_csv_files_in_folder(folder_path)
 
-    for csv_file in csv_files:
-        courseTitles.append(csv_file[:len(csv_file)-4])
+#     for csv_file in csv_files:
+#         courseTitles.append(csv_file[:len(csv_file)-4])
 
-    id=0
+#     id=0
 
-    if courseTitle=="Similarity graph":
-        dataset_nodes,dataset_edges= buildSimilarityGraph(csv_files,folder_path)
-    else:        
-        if courseTitle:
-            csv_file=courseTitle+".csv"
-        else:
-            csv_file = csv_files[0]
+#     if courseTitle=="Similarity graph":
+#         dataset_nodes,dataset_edges= buildSimilarityGraph(csv_files,folder_path)
+#     else:        
+#         if courseTitle:
+#             csv_file=courseTitle+".csv"
+#         else:
+#             csv_file = csv_files[0]
 
-        if not csv_files:
-            print("No CSV files found!")
-        else:
-            csv_data = open_csv_file(folder_path+csv_file) # extract data from csv file and turn it to a list
-            dataset_nodes,dataset_edges,id = createGraph(csv_file,csv_data,id) # csv_file='XX.csv'; csv_data=list; id = 0
+#         if not csv_files:
+#             print("No CSV files found!")
+#         else:
+#             csv_data = open_csv_file(folder_path+csv_file) # extract data from csv file and turn it to a list
+#             dataset_nodes,dataset_edges,id = createGraph(csv_file,csv_data,id) # csv_file='XX.csv'; csv_data=list; id = 0
 
                
-    return render(request,'graph.html',{
-        "dataset_nodes":json.dumps(dataset_nodes),
-        "dataset_edges":json.dumps(dataset_edges),
-        "courseTitles":courseTitles
-    })
-#---------------------------------------------------------------------------------------------------------------------
-def mergeList(first_list, second_list):
-    resulting_list = list(first_list)
-    resulting_list.extend(x for x in second_list if x not in resulting_list)
-    return resulting_list
-#---------------------------------------------------------------------------------------------------------------------
+#     return render(request,'graph.html',{
+#         "dataset_nodes":json.dumps(dataset_nodes),
+#         "dataset_edges":json.dumps(dataset_edges),
+#         "courseTitles":courseTitles
+#     })
+# #---------------------------------------------------------------------------------------------------------------------
+# def mergeList(first_list, second_list):
+#     resulting_list = list(first_list)
+#     resulting_list.extend(x for x in second_list if x not in resulting_list)
+#     return resulting_list
+# #---------------------------------------------------------------------------------------------------------------------
 
-def contentmgmt(request):
-       return render(request,'contentmgmt.html') 
+# def contentmgmt(request):
+#        return render(request,'contentmgmt.html') 
 
 
-#---------------------------------------------------------------------------------------------------------------------
-def open_csv_file(file_path):
-    """
-    Opens a CSV file and returns its contents as a list of lists.
-    Each inner list represents a row in the CSV file.
-    """
-    with open(file_path, 'r', newline='') as file:
-        csv_reader = csv.reader(file)
-        csv_data = list(csv_reader)
-    return csv_data
-#---------------------------------------------------------------------------------------------------------------------
-def access_csv_cell(csv_data, row_index, col_index):
-    """
-    Accesses a cell in the CSV data based on row and column indices.
-    Returns the value of the cell.
-    """
-    if row_index < 0 or row_index >= len(csv_data):
-        return None
-    if col_index < 0 or col_index >= len(csv_data[row_index]):
-        return None
-    return csv_data[row_index][col_index]
-#---------------------------------------------------------------------------------------------------------------------
-def get_csv_files_in_folder(folder_path):
-    """
-    Retrieves a list of CSV files in the specified folder.
-    """
-    csv_files = []
-    for file in os.listdir(folder_path):
-        if file.endswith(".csv"):
-            csv_files.append(file)
-    return csv_files
-#---------------------------------------------------------------------------------------------------------------------
-def createNode(id, cap, url, tooltip, img ,shape='image', size=12,color='white'):
+# #---------------------------------------------------------------------------------------------------------------------
+# def open_csv_file(file_path):
+#     """
+#     Opens a CSV file and returns its contents as a list of lists.
+#     Each inner list represents a row in the CSV file.
+#     """
+#     with open(file_path, 'r', newline='') as file:
+#         csv_reader = csv.reader(file)
+#         csv_data = list(csv_reader)
+#     return csv_data
+# #---------------------------------------------------------------------------------------------------------------------
+# def access_csv_cell(csv_data, row_index, col_index):
+#     """
+#     Accesses a cell in the CSV data based on row and column indices.
+#     Returns the value of the cell.
+#     """
+#     if row_index < 0 or row_index >= len(csv_data):
+#         return None
+#     if col_index < 0 or col_index >= len(csv_data[row_index]):
+#         return None
+#     return csv_data[row_index][col_index]
+# #---------------------------------------------------------------------------------------------------------------------
+# def get_csv_files_in_folder(folder_path):
+#     """
+#     Retrieves a list of CSV files in the specified folder.
+#     """
+#     csv_files = []
+#     for file in os.listdir(folder_path):
+#         if file.endswith(".csv"):
+#             csv_files.append(file)
+#     return csv_files
+# #---------------------------------------------------------------------------------------------------------------------
+# def createNode(id, cap, url, tooltip, img ,shape='image', size=12,color='white'):
 
-    if len(cap)>30:
-        tooltip=cap+"\n"+tooltip
+#     if len(cap)>30:
+#         tooltip=cap+"\n"+tooltip
 
-    newNode={
-        'id': id,
-        'url': url.replace('json',''),
-        'label': cap[:30] + (cap[30:] and '...'),
-        'title': tooltip[:100]  + (tooltip[100:] and '...'),
-        'color':color,
-        'shape': shape,
-        'image': img,
-        'size':size,
-    }
-    return newNode
-#---------------------------------------------------------------------------------------------------------------------
-def createEdge(from_node_id, to_node_id):
-    Newedge={'from': from_node_id, 'to': to_node_id, 'title': '' }    
-    return Newedge
-#---------------------------------------------------------------------------------------------------------------------
-# only for create course node
-def createCourseNode(id,label,tooltip):
-    Course={
-        'id': id,
-        'url':'N/A',
-        'widthConstraint': { 'maximum': 150,'minimum': 100  },
-        'heightConstraint': { 'minimum': 70, 'maximum': 100 },
-        'title': tooltip[:100]  + (tooltip[100:] and '...'),
-        'label': label,
-        'x': -150,
-        'y': -150,
-        'shape': "circle",
-    }
-    return Course
-#---------------------------------------------------------------------------------------------------------------------
-def createGraph(courseTitle,csv_data,id):
-    colors=['BlueViolet','DeepPink','Lime','orange','Indigo','DarkSlateBlue','DarkMagenta',"brown","lightgray"]
-    nodes=[]
-    edges=[]
-    nodes.append(createCourseNode(id,courseTitle[:len(courseTitle)-4],csv_data[1][6])) # id=0, and get courseTitle from file name, and extract the 2-7 columns
-    CourseID=id
-    id=id+1
+#     newNode={
+#         'id': id,
+#         'url': url.replace('json',''),
+#         'label': cap[:30] + (cap[30:] and '...'),
+#         'title': tooltip[:100]  + (tooltip[100:] and '...'),
+#         'color':color,
+#         'shape': shape,
+#         'image': img,
+#         'size':size,
+#     }
+#     return newNode
+# #---------------------------------------------------------------------------------------------------------------------
+# def createEdge(from_node_id, to_node_id):
+#     Newedge={'from': from_node_id, 'to': to_node_id, 'title': '' }    
+#     return Newedge
+# #---------------------------------------------------------------------------------------------------------------------
+# # only for create course node
+# def createCourseNode(id,label,tooltip):
+#     Course={
+#         'id': id,
+#         'url':'N/A',
+#         'widthConstraint': { 'maximum': 150,'minimum': 100  },
+#         'heightConstraint': { 'minimum': 70, 'maximum': 100 },
+#         'title': tooltip[:100]  + (tooltip[100:] and '...'),
+#         'label': label,
+#         'x': -150,
+#         'y': -150,
+#         'shape': "circle",
+#     }
+#     return Course
+# #---------------------------------------------------------------------------------------------------------------------
+# def createGraph(courseTitle,csv_data,id):
+#     colors=['BlueViolet','DeepPink','Lime','orange','Indigo','DarkSlateBlue','DarkMagenta',"brown","lightgray"]
+#     nodes=[]
+#     edges=[]
+#     nodes.append(createCourseNode(id,courseTitle[:len(courseTitle)-4],csv_data[1][6])) # id=0, and get courseTitle from file name, and extract the 2-7 columns
+#     CourseID=id
+#     id=id+1
     
-    Prev_courseid	= NULL
-    Prev_chapterid	= NULL
-    Prev_sectionid	= NULL
-    Prev_unitid	    = NULL
-    Prev_subunitid   = NULL
-    Prev_topic       = NULL
-    Prev_chapter     = NULL
-    Prev_CognitiveLevel = NULL
-    Prev_description = NULL
+#     Prev_courseid	= NULL
+#     Prev_chapterid	= NULL
+#     Prev_sectionid	= NULL
+#     Prev_unitid	    = NULL
+#     Prev_subunitid   = NULL
+#     Prev_topic       = NULL
+#     Prev_chapter     = NULL
+#     Prev_CognitiveLevel = NULL
+#     Prev_description = NULL
 
-    cnt=0
+#     cnt=0
     
-    for row in csv_data:
+#     for row in csv_data:
         
-        if cnt<2: #ignore the first two rows (title)
-            cnt=cnt+1
-            continue    
+#         if cnt<2: #ignore the first two rows (title)
+#             cnt=cnt+1
+#             continue    
                 
-        Cur_courseid	= row[0]
-        Cur_chapterid	= row[1]
-        Cur_sectionid	= row[2]
-        Cur_unitid	    = row[3]
-        Cur_subunitid   = row[4]
-        Cur_topic       = row[6]
-        Cur_chapter     = row[8]
-        Cur_CognitiveLevel = row[10]
-        Cur_description = row[12]
+#         Cur_courseid	= row[0]
+#         Cur_chapterid	= row[1]
+#         Cur_sectionid	= row[2]
+#         Cur_unitid	    = row[3]
+#         Cur_subunitid   = row[4]
+#         Cur_topic       = row[6]
+#         Cur_chapter     = row[8]
+#         Cur_CognitiveLevel = row[10]
+#         Cur_description = row[12]
 
-        if not(Prev_courseid): 
-            parentID=id 
-            nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3]))
-            edges.append(createEdge(CourseID,id))
+#         if not(Prev_courseid): 
+#             parentID=id 
+#             nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3]))
+#             edges.append(createEdge(CourseID,id))
 
-        else:                    
-            if (Cur_chapterid != Prev_chapterid):
-                parentID=id 
-                nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3])) 
-                edges.append(createEdge(CourseID,id)) 
+#         else:                    
+#             if (Cur_chapterid != Prev_chapterid):
+#                 parentID=id 
+#                 nodes.append(createNode(id,Cur_topic,"",Cur_description,"","box",10,colors[3])) 
+#                 edges.append(createEdge(CourseID,id)) 
 
-            else: 
-                nodes.append(createNode(id,Cur_topic,"",Cur_description,"","image",10,colors[0])) 
-                edges.append(createEdge(parentID,id)) 
+#             else: 
+#                 nodes.append(createNode(id,Cur_topic,"",Cur_description,"","image",10,colors[0])) 
+#                 edges.append(createEdge(parentID,id)) 
             
 
 
-        Prev_courseid	= Cur_courseid
-        Prev_chapterid	= Cur_chapterid
-        Prev_sectionid	= Cur_sectionid
-        Prev_unitid	    = Cur_unitid
-        Prev_subunitid   = Cur_subunitid
-        Prev_topic       = Cur_topic
-        Prev_chapter     = Cur_chapter
-        Prev_CognitiveLevel = Cur_CognitiveLevel
-        Prev_description = Cur_description
-        id=id+1
+#         Prev_courseid	= Cur_courseid
+#         Prev_chapterid	= Cur_chapterid
+#         Prev_sectionid	= Cur_sectionid
+#         Prev_unitid	    = Cur_unitid
+#         Prev_subunitid   = Cur_subunitid
+#         Prev_topic       = Cur_topic
+#         Prev_chapter     = Cur_chapter
+#         Prev_CognitiveLevel = Cur_CognitiveLevel
+#         Prev_description = Cur_description
+#         id=id+1
 
 
-        #print(row)
-        #parentID=id 
-        #for i in range(6,14):
-        #    if  row[i] =="-" or row[i] =="": continue
-        #    nodes.append(createNode(id,row[i],"","","",10,colors[i-6]))
-        #    if parentID==id:
-        #        edges.append(createEdge(CourseID,id))
-        #    else:
-        #        edges.append(createEdge(parentID,id))
-        #    id=id+1
-    return nodes,edges,id
-#---------------------------------------------------------------------------------------------------------------------
-def createSimilarityGraph(similarNodes):
-    colors=['BlueViolet','DeepPink','Lime','orange','Indigo','DarkSlateBlue','DarkMagenta',"brown"]
-    nodes=[]
-    edges=[]
-    courses={}
-    id=0
+#         #print(row)
+#         #parentID=id 
+#         #for i in range(6,14):
+#         #    if  row[i] =="-" or row[i] =="": continue
+#         #    nodes.append(createNode(id,row[i],"","","",10,colors[i-6]))
+#         #    if parentID==id:
+#         #        edges.append(createEdge(CourseID,id))
+#         #    else:
+#         #        edges.append(createEdge(parentID,id))
+#         #    id=id+1
+#     return nodes,edges,id
+# #---------------------------------------------------------------------------------------------------------------------
+# def createSimilarityGraph(similarNodes):
+#     colors=['BlueViolet','DeepPink','Lime','orange','Indigo','DarkSlateBlue','DarkMagenta',"brown"]
+#     nodes=[]
+#     edges=[]
+#     courses={}
+#     id=0
 
-    index=[]
+#     index=[]
 
-    for similarPair in similarNodes:
-        #-----------------------------------------------------------------
-        node1= similarNodes[similarPair]['node1']
-        if node1['csv_file'] not in courses:
-            id=id+1          
-            nodes.append(createCourseNode(id,node1['csv_file'][:len(node1['csv_file'])-4],""))
-            courses[node1['csv_file']]=id
+#     for similarPair in similarNodes:
+#         #-----------------------------------------------------------------
+#         node1= similarNodes[similarPair]['node1']
+#         if node1['csv_file'] not in courses:
+#             id=id+1          
+#             nodes.append(createCourseNode(id,node1['csv_file'][:len(node1['csv_file'])-4],""))
+#             courses[node1['csv_file']]=id
 
-        row1 = node1['row']
-        parentID1= courses[node1['csv_file']]
+#         row1 = node1['row']
+#         parentID1= courses[node1['csv_file']]
 
-        #-----------------------------------------------------------------
-        node2= similarNodes[similarPair]['node2']        
-        if node2['csv_file'] not in courses:
-            id=id+1
-            nodes.append(createCourseNode(id,node2['csv_file'][:len(node2['csv_file'])-4],""))
-            courses[node2['csv_file']]=id
+#         #-----------------------------------------------------------------
+#         node2= similarNodes[similarPair]['node2']        
+#         if node2['csv_file'] not in courses:
+#             id=id+1
+#             nodes.append(createCourseNode(id,node2['csv_file'][:len(node2['csv_file'])-4],""))
+#             courses[node2['csv_file']]=id
 
-        row2 = node2['row']
-        parentID2= courses[node2['csv_file']]
+#         row2 = node2['row']
+#         parentID2= courses[node2['csv_file']]
 
-        #-----------------------------------------------------------------
-        id=id+1
-        nodes.append(createNode(id,row1[6]+","+ row2[6],"","","",10,colors[4]))
+#         #-----------------------------------------------------------------
+#         id=id+1
+#         nodes.append(createNode(id,row1[6]+","+ row2[6],"","","",10,colors[4]))
 
-        edges.append(createEdge(parentID2,id))
-        edges.append(createEdge(parentID1,id))
+#         edges.append(createEdge(parentID2,id))
+#         edges.append(createEdge(parentID1,id))
 
-    return nodes,edges
-#---------------------------------------------------------------------------------------------------------------------
+#     return nodes,edges
+# #---------------------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -306,36 +310,24 @@ def createSimilarityGraph(similarNodes):
 
 
 '''
-return all courses name
+return all courses with an uploaded CSV file.
 '''
 def getAllcourses():
-    courseTitles=[]
-    folder_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/')
-
-    # folder_path=os.getcwd()+"\\graphvisualiztion\\CSV\\"
-    csv_files = get_csv_files_in_folder(folder_path)
-
-    for csv_file in csv_files:
-        courseTitles.append(csv_file[:len(csv_file)-4])
-
-    # separate "ACM" courses and "UVA" courses
-    acm_courses = [course for course in courseTitles if course.startswith("ACM")]
-    uva_courses = [course for course in courseTitles if course.startswith("UVA") or course.startswith("UvA")]
-
+    acm_courses = Course.objects.filter(source='ACM').exclude(csv_file__isnull=True).exclude(csv_file='').order_by('course_number').values('course_id', 'course_name')
+    uva_courses = Course.objects.filter(source='UvA').exclude(csv_file__isnull=True).exclude(csv_file='').order_by('course_number').values('course_id', 'course_name')
     return acm_courses, uva_courses
     
 
 
+
 '''
-return singlecourse.html and the first course
+return singlecourse.html
 '''
 def singleCourse(request):
     acm_courses,uva_courses = getAllcourses()
-    firstCourse = uva_courses[0]
-    csv_file = firstCourse + ".csv"
-    csv_data = openfile(csv_file)
-    nodes,edges,_ = buildNodeEdges(csv_data)
-    return render(request,'singlecourse.html', {"nodes": nodes, "edges": edges, 'acm_courses': acm_courses, 'uva_courses': uva_courses})
+    uva_courses_json =  json.dumps(list((uva_courses))) # Convert the queryset to JSON format.
+    acm_courses_json = json.dumps(list((acm_courses)))
+    return render(request,'singlecourse.html', {'acm_courses': acm_courses_json, 'uva_courses': uva_courses_json})
 
 
 
@@ -353,10 +345,15 @@ def SimilarityPage(request):
 '''
 Open the file and extract data into a list
 '''
-def openfile(csvFile):
-    folder_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/')
+def openfile(csvFile, folder_path=None):
+    if folder_path is None:
+        folder_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/')
+    else:
+        folder_path = os.path.join(os.getcwd(), folder_path)
+
     data = []
-    with open(folder_path+csvFile, mode='r', encoding='utf-8') as file:
+    file_path = os.path.join(folder_path, csvFile)
+    with open(file_path, mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file)
         for row in reader:
             data.append(row)
@@ -396,6 +393,7 @@ def buildNodeEdges(csv_data):
             "shape": shape,
             "cog_level": row["Cognitive level"],
             "title": row["topic"] + ": " + row["description_of_topic"],
+            "level": level
         }
         nodes.append(node)
 
@@ -414,36 +412,28 @@ def buildNodeEdges(csv_data):
 
 '''
 Show single course graph
-comment: No need to save to a file now
 '''
 def showCourseGraph(request):
     if request.method == 'POST':
-        selectedCourse = request.POST.get('course') 
-        csv_file = selectedCourse + ".csv"
-
-        
-        # file_name = selectedCourse + '.json'
-        # file_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data', file_name)
-
-        # if os.path.exists(file_path):
-        #     with open(file_path, 'r') as json_file:
-        #         response_data = json.load(json_file)
-        #     return JsonResponse(response_data)
-        # else:
-        csv_data = openfile(csv_file)
+        selected_courseID = request.POST.get('course') 
+        selected_course = Course.objects.filter(course_id = selected_courseID)
+        csv_data = openfile(str(selected_course[0].csv_file), 'media/')
         nodes,edges,courseID = buildNodeEdges(csv_data)
         response = {"nodes": nodes, "edges": edges, "courseId": courseID}
-
-            # folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data')      
-            # if not os.path.exists(folder_path):
-            #     os.makedirs(folder_path)
-
-            # new_file_path = os.path.join(folder_path, file_name)
-            # with open(new_file_path, 'w') as json_file:
-            #     json.dump(response, json_file)
-
         return JsonResponse(response)
 
+
+
+'''
+Save result(nodes and edges) to a json file
+'''
+def saveToJSON(folder_path,file_path,result):
+
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+
+    with open(file_path, 'w') as json_file:
+        json.dump(result, json_file)
 
 
 '''
@@ -539,13 +529,14 @@ Detect the semantic similarity between two courses and save the result into a js
 def detectSimilarCourse(request):
 
     if request.method == 'POST':
-
         courselist_json = request.POST.get('courselist') # get selected courses list
         courselist = json.loads(courselist_json) #Convert JSON
+        selected_courses = Course.objects.filter(course_id__in=courselist)
 
         # build the path
-        file_name = courselist[0] + '_' + courselist[1] + '.json'
-        file_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data', file_name)
+        file_name = selected_courses[0].course_name + '_' + selected_courses[1].course_name + '.json'
+        folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'course')   
+        file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
         # check if the file is exist
         if os.path.exists(file_path):
@@ -553,10 +544,8 @@ def detectSimilarCourse(request):
                 response_data = json.load(json_file)
             return JsonResponse(response_data)
         else:
-            csv_file_0 = courselist[0] + ".csv"
-            csv_file_1 = courselist[1] + ".csv"
-            csv_data_0 = openfile(csv_file_0) # extract data from csv file and turn it to a list: [{},{},{}]
-            csv_data_1 = openfile(csv_file_1)
+            csv_data_0 = openfile(str(selected_courses[0].csv_file), 'media/') # extract data from csv file and turn it to a list: [{},{},{}]
+            csv_data_1 = openfile(str(selected_courses[1].csv_file), 'media/')
 
             nodes_0,_,courseID_0 = buildNodeEdges(csv_data_0) 
             nodes_1,_,courseID_1= buildNodeEdges(csv_data_1) 
@@ -564,20 +553,12 @@ def detectSimilarCourse(request):
             # compare nodes，and build the edges between similar nodes，get nodeId
             similarEdges, nodeId = bertModel(nodes_0, nodes_1)
 
-            #build edges for parents of similar nodes and find all nodes
+            # build edges for parents of similar nodes and find all nodes
             nodeEdges, allId = buildEdgesForParentNode(nodeId)
             matchNode = find_matching_nodes(nodes_0 + nodes_1, allId)
 
             response = {"nodes": matchNode, "edges": nodeEdges + similarEdges, "courseId": [courseID_0,courseID_1]}
-
-            # save the result to a json file
-            folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data')      
-            if not os.path.exists(folder_path):
-                os.makedirs(folder_path)
-
-            new_file_path = os.path.join(folder_path, file_name)
-            with open(new_file_path, 'w') as json_file:
-                json.dump(response, json_file)
+            saveToJSON(folder_path,file_path,response)
 
             return JsonResponse(response)
 
@@ -595,11 +576,12 @@ Detect the semantic similarity among all courses and save the result into a json
 def detectAllcourses(request):
 
     if request.method == 'POST':
-        curriculum = request.POST.get('curriculumSource') 
+        curricula = request.POST.get('curriculumSource') 
 
         # build the path
-        file_name = curriculum + '_all_courses' + '.json'
-        file_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data', file_name)
+        file_name = curricula + '_all_courses' + '.json'
+        folder_path = os.path.join(os.getcwd(),'media', 'JSON', 'curricula')  
+        file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
         # check if the file is exist
         if os.path.exists(file_path):
@@ -608,16 +590,10 @@ def detectAllcourses(request):
             return JsonResponse(response_data)
         
         else:      
-            folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'CSV')  
-            # get all CSV files with start with "UVA" or "ACM"
-            if curriculum == "ACM":
-                matching_files = [file for file in os.listdir(folder_path) if file.startswith(curriculum)]
-            else:
-                matching_files = [file for file in os.listdir(folder_path) if file.startswith("UVA") or file.startswith("UvA")]
-
-            file_list = []  
-            for file in matching_files:
-                csv_data = openfile(file)  
+            selected_courses = Course.objects.filter(source = curricula).exclude(csv_file__isnull=True).exclude(csv_file='')
+            file_list = [] 
+            for course in selected_courses:
+                csv_data = openfile(str(course.csv_file), 'media/') 
                 file_list.append(csv_data)
 
             # create the course node
@@ -651,19 +627,10 @@ def detectAllcourses(request):
                                 if edge not in edges:  # Check if edge already exists
                                     edges.append(edge)
             
-            response = {"nodes": course_nodes, "edges": edges, "matched": curriculum}
-
-            # save the result to the json file
-            folder_path = os.path.join(os.getcwd(), 'graphvisualiztion', 'data')      
-            if not os.path.exists(folder_path):
-                os.makedirs(folder_path)
-
-            new_file_path = os.path.join(folder_path, file_name)
-            with open(new_file_path, 'w') as json_file:
-                json.dump(response, json_file)
-
-
+            response = {"nodes": course_nodes, "edges": edges, "matched": curricula}
+            saveToJSON(folder_path,file_path,response)
             return JsonResponse(response)
+        
 
 
 
@@ -672,8 +639,14 @@ def detectAllcourses(request):
 return filesmgmt.html
 '''
 def filesManagement(request):
-    acm_courses,uva_courses = getAllcourses()
-    return render(request,'filesmgmt.html', {'acm_courses': acm_courses, 'uva_courses': uva_courses})
+    acm_courses = Course.objects.filter(source='ACM').order_by('course_number')
+    uva_courses = Course.objects.filter(source='UvA').order_by('course_number')
+    context = {
+        'acm_courses': acm_courses,
+        'uva_courses': uva_courses
+    }
+    
+    return render(request,'filesmgmt.html', context)
 
 
 
@@ -682,25 +655,19 @@ def filesManagement(request):
 Upload csv files
 '''
 def uploadfile(request):
-    if request.method == 'POST' and request.FILES.get('file'):
-        uploaded_file = request.FILES['file']
-        file_name = uploaded_file.name
-
-        # check if the file already exists
-        file_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/', file_name)
-        if os.path.exists(file_path):
-            return JsonResponse({'message': 'The file already exists.'})
-
-        # if no, then save the file
-        with open(file_path, 'wb') as destination:
-            for chunk in uploaded_file.chunks():
-                destination.write(chunk)
-        return JsonResponse({'message': 'File uploaded successfully!'})
-    
+    if request.method == 'POST':
+        course_id = request.POST.get('course_id')
+        csv_file = request.FILES.get('files')
+        
+        if course_id and csv_file:
+            course = get_object_or_404(Course, course_id=course_id)
+            course.csv_file = csv_file
+            course.save()
+            return JsonResponse({'message': 'File uploaded successfully!'})
+        else:
+            return JsonResponse({'message': 'Failed to upload file.'}, status=400)
     else:
-        return JsonResponse({'message': 'Failed to upload file.'})
-
-
+        return JsonResponse({'message': 'Invalid request method.'}, status=405)
 
 
 
@@ -709,17 +676,38 @@ Delete csv files
 '''
 def deleteCSVfile(request):
     if request.method == 'POST':
-        course_name = request.POST.get('course_name')
-        if course_name:
-            file_name = course_name + ".csv"
-            file_path = os.path.join(os.getcwd(), 'graphvisualiztion/CSV/', file_name)
-            if os.path.exists(file_path):
-                os.remove(file_path)
-                return JsonResponse({'message': 'File deleted successfully!'})
+        select_course = request.POST.get('courseID')
+        if select_course:
+            course = Course.objects.filter(course_id=select_course).first()
+            if course:
+                if course.csv_file:
+                    file_path = course.csv_file.path
+                    if os.path.exists(file_path):
+                        os.remove(file_path)
+                    course.csv_file = None  
+                    course.save() 
+                    return JsonResponse({'message': 'File deleted successfully.'})
         return JsonResponse({'message': 'Failed to delete file.'})
     else:
         return JsonResponse({'message': 'Invalid request method.'})
     
+
+
+
+'''
+download csv files
+'''
+def download_csv_file (request, course_id):
+    course = get_object_or_404(Course, course_id=course_id)
+    if course.csv_file:
+        file_path = course.csv_file.path
+        file_name = course.csv_file.name.split('/')[-1]
+        mime_type, _ = mimetypes.guess_type(file_path)
+        response = HttpResponse(open(file_path, 'rb'), content_type=mime_type)
+        response['Content-Disposition'] = f'attachment; filename={file_name}'
+        return response
+    else:
+        raise Http404("No CSV file associated with this course.")
 
 
 
@@ -729,13 +717,142 @@ Delete temporary json files( this function is needed after uploading new csv fil
 '''
 def deleteJSONfile(request):
     if request.method == 'POST':
-        file_dir = os.path.join(os.getcwd(), 'graphvisualiztion/data/')
-        if os.path.exists(file_dir):
-            for file_name in os.listdir(file_dir):
-                file_path = os.path.join(file_dir, file_name)
-                if os.path.isfile(file_path):
-                    os.remove(file_path)
+        directories = ['media/JSON/course', 'media/JSON/curricula', 'media/JSON/trajectory']
+        success = True
+        
+        for directory in directories:
+            file_dir = os.path.join(os.getcwd(), directory)
+            if os.path.exists(file_dir):
+                for file_name in os.listdir(file_dir):
+                    file_path = os.path.join(file_dir, file_name)
+                    if os.path.isfile(file_path):
+                        os.remove(file_path)
+            else:
+                success = False
+                break
+
+        if success:
             return JsonResponse({'message': 'All temporary JSON files are cleared successfully!'})
-        return JsonResponse({'message': 'Failed to delete files.'})
+        else:
+            return JsonResponse({'message': 'Failed to delete files.'})
     else:
         return JsonResponse({'message': 'Invalid request method.'})
+    
+
+
+
+
+'''
+Return trajectory.html
+'''
+def trajectory(request):
+    return render(request,'trajectory.html') 
+
+
+
+'''
+show the trajectory graph
+'''
+def showTrajectory(request):
+    if request.method == 'POST':
+        selected_trajectory = request.POST.get('trajectory') 
+        # build the path
+        file_name = selected_trajectory + '.json'
+        folder_path = os.path.join(os.getcwd(),'media', 'JSON', 'trajectory') 
+        file_path = os.path.join(os.getcwd(), folder_path, file_name)
+
+        # check if the file is exist
+        if os.path.exists(file_path):
+            with open(file_path, 'r') as json_file:
+                response_data = json.load(json_file)
+            return JsonResponse(response_data)
+        
+        else:    
+
+            # Find all records where trajectory_name is the value of the selected trajectory
+            trajectory_records = Trajectory.objects.filter(trajectory_name=selected_trajectory)
+
+            nodes = []
+            edges = []  
+            color_mapping = {
+                "create": "#b8bceb",      # purple
+                "evaluate": "#a3ddf5",    # blue
+                "analyze": "#b0e3bf",     # green
+                "apply": "#fefaa3",       # yellow
+                "understand": "#ffd2af",  # orange
+                "remember": "#faadb0"     # red
+            }
+
+            for i, trajectory_record in enumerate(trajectory_records):
+                # add objective nodes and edges of the trajectory
+                trajectory_objective_node_id  = str(trajectory_record.trajectory_id)
+                objective_label = f"{i + 1}. {trajectory_record.objective}" 
+                level_color = color_mapping.get(trajectory_record.level.lower(), "#000000") 
+                nodes.append({'id': trajectory_objective_node_id, 'label': objective_label, "cog_level": trajectory_record.level, "shape": "box", "color": level_color,  "font": {"align": "left" }})
+
+                if i != len(trajectory_records) - 1:
+                    next_node = str(trajectory_records[i + 1].trajectory_id)
+                    edges.append({'from': trajectory_objective_node_id, 'to': next_node, 'arrows': "to", 'width': "2", "color": {"color": '#363a44'} })
+    
+                related_objectives = trajectory_record.related_course_objectives.all() # return all Course.Objective instances
+                added_courses = set()
+
+                for objective in related_objectives:
+
+                    # Add course nodes and edges
+                    related_course_name = objective.course.course_name
+                    course_node_id = trajectory_objective_node_id + '.' + str(objective.course.course_id)
+                    objective_node_id = course_node_id + '.' + str(objective.objective_id)
+
+                    if related_course_name not in added_courses:
+                        nodes.append({'id': course_node_id, 'label': related_course_name,  "shape": "ellipse"}) 
+                        edges.append({'from': trajectory_objective_node_id, 'to': course_node_id}) 
+                        added_courses.add(related_course_name)
+                        
+                    # Add objective nodes and edges of the course
+                    level_color = color_mapping.get(objective.level.lower(), "#000000") 
+                    if objective.course.csv_file:
+                        similarity_level = compareObjectiveAndTopic(objective.course.csv_file, objective.content)
+                    else:
+                        similarity_level = "[N/A]"
+
+                    if similarity_level == "[0]":
+                        nodes.append({'id': objective_node_id, 'label': similarity_level + "--" + objective.content, "shape": "square", "cog_level": objective.level, "shape": "box", "font": {"align": "left", "color": "#ffffff", "background": "#404040" } , "color": level_color})
+                    else:
+                        nodes.append({'id': objective_node_id, 'label': similarity_level + "--" + objective.content, "shape": "square", "cog_level": objective.level, "shape": "box", "font": {"align": "left" } , "color": level_color})
+                    edges.append({'from': course_node_id, 'to': objective_node_id})
+            
+            response = {"nodes": nodes, "edges": edges}
+            saveToJSON(folder_path,file_path,response)
+            return JsonResponse(response)
+
+
+
+
+
+
+
+'''
+detect how many topics cover this course's objective
+'''
+def compareObjectiveAndTopic(csv_file_name,objective):
+    
+    path = 'media/'
+    csv_data = openfile(str(csv_file_name), path)
+    nodes,_,_ = buildNodeEdges(csv_data) 
+    topics = [node['label'] for node in nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')]
+
+    # use BERT model to calculate the semilarity between objective and course topics
+    model = SentenceTransformer('all-mpnet-base-v2')
+    first_embedding = model.encode(objective, convert_to_tensor=True)
+    second_embeddings = model.encode(topics, convert_to_tensor=True)
+
+    cosine_scores = util.cos_sim(first_embedding, second_embeddings)
+    threshold = 0.4
+    counter = 0
+    for score in cosine_scores[0]: 
+        if score > threshold:
+            counter += 1 
+
+    str_counter = "[" + str(counter)+ "]"
+    return str_counter
