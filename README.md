@@ -11,7 +11,8 @@
 
 2, Semantic similarity detection between the nodes of two courses.
 
-<img width="1508" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/c5ddb544-9e59-4349-b65e-fceb02263429">
+<img width="1511" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/d9cdc339-c641-4949-b06f-c2ad2895594d">
+
 
 
 
