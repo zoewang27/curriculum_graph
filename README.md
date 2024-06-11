@@ -39,4 +39,5 @@
 
 
 6, User login
-<img width="1505" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/f14c025a-41a1-4477-941d-4342086d8491">
+<img width="1511" alt="image" src="https://github.com/zoewang27/curriculum_graph/assets/135633595/2c550b56-2d04-4c4c-90dd-bc51b5a4f4d4">
+
