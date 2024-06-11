@@ -47,7 +47,6 @@
     $("#show-Graph-Button").click(function() {
       $("#usage-hint").hide(); //hide the hint text
       var selected_trajectory = $("#trajectorySource option:selected").text();
-      console.log(selected_trajectory)
 
       $.ajax({
   
@@ -60,7 +59,6 @@
 
         },
         success: function(response) {
-            console.log(response);
             dataset_nodes = response.nodes;
             dataset_edges = response.edges;
             displayGraph(dataset_nodes, dataset_edges);

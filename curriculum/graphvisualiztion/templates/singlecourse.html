@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#show-Graph-Button").click(function() {
       $("#usage-hint").hide(); //hide the hint text
       var selectedCourseId = $("#coursesList").val();
-      console.log(selectedCourseId)
+      
 
       $.ajax({
   
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         },
         success: function(response) {
-            console.log(response);
+            
             var dataset_nodes = response.nodes;
             var dataset_edges = response.edges;
             displayGraph(dataset_nodes, dataset_edges);

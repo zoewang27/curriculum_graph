@@ -364,10 +364,13 @@ def openfile(csvFile, folder_path=None):
 '''
 Extract nodes and edges from a list
 '''
-def buildNodeEdges(csv_data):
+def buildNodeEdges(csv_data,course_id=None):
     nodes = []
     edges = []
-    courseid = csv_data[1]['courseid']
+    if course_id is None:
+        courseId = csv_data[1]['courseid']
+    else:
+        courseId = str(course_id)
     shape_mapping = {
     0: "circle",
     1: "box",
@@ -382,18 +385,18 @@ def buildNodeEdges(csv_data):
             cnt += 1
             continue   
 
-        nodeId = ".".join(filter(None, [row["courseid"], row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
-        level = nodeId.count(".")
-        shape = shape_mapping.get(level, "square")
+        nodeId = ".".join(filter(None, [courseId, row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
+        layer = nodeId.count(".")
+        shape = shape_mapping.get(layer, "square")
 
         node = {
             "id": nodeId,
             "label": row["topic"],
-            "group": courseid,
+            "group": courseId,
             "shape": shape,
-            "cog_level": row["Cognitive level"],
+            "cog_level": row["Cognitive level"].strip(),
             "title": row["topic"] + ": " + row["description_of_topic"],
-            "level": level
+            "layer": layer
         }
         nodes.append(node)
 
@@ -406,7 +409,7 @@ def buildNodeEdges(csv_data):
           }
           edges.append(edge)
 
-    return nodes, edges, courseid
+    return nodes, edges, courseId
 
 
 
@@ -418,7 +421,7 @@ def showCourseGraph(request):
         selected_courseID = request.POST.get('course') 
         selected_course = Course.objects.filter(course_id = selected_courseID)
         csv_data = openfile(str(selected_course[0].csv_file), 'media/')
-        nodes,edges,courseID = buildNodeEdges(csv_data)
+        nodes,edges,courseID = buildNodeEdges(csv_data,selected_course[0].course_id)
         response = {"nodes": nodes, "edges": edges, "courseId": courseID}
         return JsonResponse(response)
 
@@ -534,7 +537,7 @@ def detectSimilarCourse(request):
         selected_courses = Course.objects.filter(course_id__in=courselist)
 
         # build the path
-        file_name = selected_courses[0].course_name + '_' + selected_courses[1].course_name + '.json'
+        file_name = selected_courses[0].course_name.replace("/", "_") + '_' + selected_courses[1].course_name.replace("/", "_") + '.json'
         folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'course')   
         file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
@@ -547,8 +550,8 @@ def detectSimilarCourse(request):
             csv_data_0 = openfile(str(selected_courses[0].csv_file), 'media/') # extract data from csv file and turn it to a list: [{},{},{}]
             csv_data_1 = openfile(str(selected_courses[1].csv_file), 'media/')
 
-            nodes_0,_,courseID_0 = buildNodeEdges(csv_data_0) 
-            nodes_1,_,courseID_1= buildNodeEdges(csv_data_1) 
+            nodes_0,_,courseID_0 = buildNodeEdges(csv_data_0, str(selected_courses[0].course_id)) 
+            nodes_1,_,courseID_1= buildNodeEdges(csv_data_1, str(selected_courses[1].course_id)) 
 
             # compare nodes，and build the edges between similar nodes，get nodeId
             similarEdges, nodeId = bertModel(nodes_0, nodes_1)

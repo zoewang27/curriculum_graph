@@ -131,7 +131,6 @@
                 selectedCoursesID.push($(this).val());
             });
             // send the selected courses to the backend
-            console.log(selectedCoursesID);
             sendSelectedCourses(selectedCoursesID);
 
             // close the modal
@@ -187,7 +186,7 @@
   
           },
           success: function(response) {
-              console.log(response);
+              
 
               if (response.nodes.length > 0) {
                 dataset_nodes = response.nodes;
