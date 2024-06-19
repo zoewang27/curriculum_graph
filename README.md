@@ -1,4 +1,4 @@
-# curriculum
+# Knowledge graph-based tool for curriculum design
 
 
 1, Graph representation of a single course with five layers
