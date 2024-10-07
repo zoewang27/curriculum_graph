@@ -1,4 +1,5 @@
 from django.db import models
+import uuid
 
 class Course(models.Model):
     COURSE_CATEGORY_CHOICES = [
@@ -21,6 +22,8 @@ class Course(models.Model):
     year = models.IntegerField(choices=YEAR_CHOICES, blank=True, null=True)
     period = models.CharField(max_length=20, blank=True, null=True)
     csv_file = models.FileField(upload_to='CSV/', blank=True, null=True)
+    # 新增的 UUID 字段
+    # uuid = models.UUIDField(default=uuid.uuid4, editable=False, unique=True)
     
     class Objective(models.Model):
         objective_id = models.IntegerField(default=0)

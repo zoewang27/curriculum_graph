@@ -110,7 +110,7 @@ courseid,chapterid,sectionid,unitid,subunitid,-,topic,-,chapter,-,Cognitive leve
 3,4,13,2,,,Performance metrics for regressors,,Machine Learning,-,Apply,,"Understand evaluation metrics specific to regression tasks, including mean squared error (MSE), mean absolute error (MAE), and R-squared.",
 3,4,13,3,,,Confusion matrix,,Machine Learning,-,Apply,,"Learn about the confusion matrix as a tool for evaluating the performance of a classification algorithm by summarizing the counts of true positive, true negative, false positive, and false negative predictions.",
 3,4,13,4,,,Cross-validation,,Machine Learning,-,Apply,,Explore cross-validation techniques such as k-fold cross-validation and leave-one-out cross-validation for estimating the performance of machine learning models on unseen data. ,
-3,4,13,4,1,,"Parameter tuning (grid/random search, via cross-validation)",,,,,,,
+3,4,13,4,1,,"Parameter tuning (grid/random search, via cross-validation)",,,,remember,,,
 3,4,14,,,,Overview of reinforcement learning,,Machine Learning,-,Apply,,,
 3,4,15,,,,Twor more applications of machine learning algorithms,,Machine Learning,-,Apply,,"E.g., medicine and health, economics, vision, natural language, robotics, game play",
 3,4,16,,,,Ethics for Machine Learning,,Machine Learning,-,Understand,,"Continued focus on real data, real scenarios, and case studies; Privacy; Fairness",

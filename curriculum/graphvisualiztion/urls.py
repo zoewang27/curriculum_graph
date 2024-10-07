@@ -30,4 +30,12 @@ urlpatterns = [
     path("trajectory", views.trajectory, name="trajectory"),
     path("showTrajectory", views.showTrajectory, name="showTrajectory"),
 
+    path("editGraph/<int:course_id>/", views.editGraph, name="editGraph"),
+    path("explainByAI/", views.explainByAI, name="explain-By-AI"),
+
+    path("overview", views.overview, name="overview"),
+    path("save-json/", views.saveJson, name="save-json"),
+
+
+
 ]

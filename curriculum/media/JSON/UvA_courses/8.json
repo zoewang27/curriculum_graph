@@ -1,0 +1,1615 @@
+{
+  "nodes": [
+    {
+      "id": "d846c4d8-d919-4c65-9962-428b6d7451e2",
+      "label": "Networks and Network Security",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Networks and Network Security",
+      "description": "Networks and Network Security: ",
+      "layer": 0,
+      "color": {
+        "background": "#D3D3D3",
+        "border": "#7D7C7C"
+      }
+    },
+    {
+      "id": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "label": "Computer Networks and the Internet",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Computer Networks and the Internet",
+      "description": "Computer Networks and the Internet: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5eebb26e-ab8e-40aa-99ba-05076cbc6215",
+      "label": "Internet introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Internet introduction",
+      "description": "Internet introduction: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "588680a4-af17-450b-92b2-4f971f1ad302",
+      "label": "The Internet",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "The Internet",
+      "description": "The Internet: Internet Introduction: An overview of the Internet, a global network connecting billions of devices worldwide.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f67b8b89-ebfd-4842-9b2b-eadda788d484",
+      "label": "The birth of the Internet",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "The birth of the Internet",
+      "description": "The birth of the Internet: The Birth of the Internet: A historical perspective on the development and evolution of the Internet from its inception to its current state.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4e06aaf9-a7c9-48df-b0ed-46a4d4d390c5",
+      "label": "Current Internet structure",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Current Internet structure",
+      "description": "Current Internet structure: Current Internet Structure: An examination of the modern Internet infrastructure, including its backbone networks, ISPs (Internet Service Providers), and interconnected networks.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "eb9ef5f6-38e5-4294-9b97-e9380d38423f",
+      "label": "Network performance",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Network performance",
+      "description": "Network performance: Network Performance: Measures of network performance including delay, loss, and throughput",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "adaf0c9f-7dd2-4da9-be60-f60c312b7d87",
+      "label": "Protocols layers",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Protocols layers",
+      "description": "Protocols layers: Protocol Layers: The hierarchical structure of network protocols organized into layers, such as the OSI (Open Systems Interconnection) model or the TCP/IP (Transmission Control Protocol/Internet Protocol) suite.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d45d40b1-6ee3-4a03-a2fc-679d934b14cb",
+      "label": "Encapsulation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Encapsulation",
+      "description": "Encapsulation: Encapsulation: The process of adding protocol headers and trailers to data packets as they traverse the network, providing information for routing and delivery.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "436d5bdb-f083-4f68-a90a-deb677587a99",
+      "label": "Application layer protocols",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Application layer protocols",
+      "description": "Application layer protocols: Application Layer Protocols: Protocols operating at the highest layer of the OSI model, facilitating communication between applications, such as HTTP (Hypertext Transfer Protocol) for web browsing and SMTP (Simple Mail Transfer Protocol) for email communication.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "885ba491-022b-4789-a9c2-ab08850ea917",
+      "label": "Sockets",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Sockets",
+      "description": "Sockets: Sockets: Communication endpoints used to establish connections between devices over a network, enabling data exchange between client and server applications.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0ec14883-b1a8-46c8-aa56-1bb70b26ec29",
+      "label": "HTTP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "HTTP",
+      "description": "HTTP: HTTP: The protocol used for transferring hypertext documents on the World Wide Web, defining how web browsers and servers communicate to retrieve and display web pages.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3797440c-17b0-495b-87ff-bca2fec7b89a",
+      "label": "SMTP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "SMTP",
+      "description": "SMTP: SMTP: A protocol for sending and receiving email messages between servers, allowing users to exchange electronic mail over the Internet.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b394cb46-b273-44d8-8a96-5e9330cf355c",
+      "label": "Application layer",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Application layer",
+      "description": "Application layer: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "aa4e0a47-9b1f-4978-8ce1-4c530d295da0",
+      "label": "DNS",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DNS",
+      "description": "DNS: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e294dec3-297c-4d57-b123-1a24fcf9bd6e",
+      "label": "DNS introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DNS introduction",
+      "description": "DNS introduction: DNS Introduction: An overview of the Domain Name System (DNS), a hierarchical naming system for translating domain names into IP addresses.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "82e4ed47-07c8-4840-8dce-ad381a4df87e",
+      "label": "DNS records",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DNS records",
+      "description": "DNS records: DNS Records: Different types of DNS records, such as A records (address records), CNAME records (canonical name records), MX records (mail exchange records), and TXT records (text records), each serving a specific purpose within the DNS infrastructure.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3013af80-c235-46b1-b3c8-a487d5c0d197",
+      "label": "DNS security",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DNS security",
+      "description": "DNS security: DNS Security: Measures and protocols implemented to enhance the security of the DNS, including DNSSEC (DNS Security Extensions) for data integrity and authentication, DNS filtering to prevent malicious activities, and DNS over HTTPS (DoH) or DNS over TLS (DoT) for encrypted DNS communications.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "label": "Transport layer",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Transport layer",
+      "description": "Transport layer: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1a2a1ec5-9f38-408b-90d6-01327dc3fde7",
+      "label": "Transport layer protocols",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Transport layer protocols",
+      "description": "Transport layer protocols: Transport Layer Protocols: Overview of UDP (User Datagram Protocol) and TCP (Transmission Control Protocol), the two primary transport layer protocols used for communication over the Internet.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5fe73a6f-987b-46d7-828b-9c9402ca1554",
+      "label": "UDP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "UDP",
+      "description": "UDP: UDP: A connectionless protocol that provides a lightweight and fast but unreliable delivery of data packets.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "158f162d-e285-4456-9133-5e9b680ae4ca",
+      "label": "TCP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "TCP",
+      "description": "TCP: TCP: A connection-oriented protocol that ensures reliable, ordered, and error-checked delivery of data packets.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5b3b5891-2b84-4b91-8b62-bb8950f96008",
+      "label": "Flow control",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Flow control",
+      "description": "Flow control: Flow Control: Mechanisms employed to manage the rate of data transmission between sender and receiver to prevent overwhelming the receiver or network congestion.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "26a151fa-06d0-42e6-9a70-87bff1cb2a15",
+      "label": "BDP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "BDP",
+      "description": "BDP: BDP (Bandwidth-Delay Product): A measure of the maximum amount of data that can be in transit between the sender and receiver.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5ea12b71-1217-4d39-9cf6-424ec42e6827",
+      "label": "Error recovery",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Error recovery",
+      "description": "Error recovery: Error Recovery: Techniques used to detect and recover from errors or lost packets during data transmission, such as TCP's acknowledgment and retransmission mechanism.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "441ea2b6-fd0e-4150-99aa-fc249c86ef36",
+      "label": "Refinements through options",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Refinements through options",
+      "description": "Refinements through options: Refinements through Options: Additional features or options within TCP to optimize performance or cater to specific requirements, including TCP window scaling, selective acknowledgment (SACK), and timestamp options.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3bd6bb11-a92c-42d4-9af8-987bda92815d",
+      "label": "Congestion control",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Congestion control",
+      "description": "Congestion control: Congestion Control: Algorithms and mechanisms employed to manage and prevent network congestion, ensuring fair allocation of network resources and stable operation of the network.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c362cdfb-7c85-4b97-9abb-c00fbeed0d17",
+      "label": "TCP fairness",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "TCP fairness",
+      "description": "TCP fairness: TCP Fairness: Ensuring fair access to network bandwidth among competing TCP connections, achieved through various congestion control algorithms like TCP Reno or TCP Vegas.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "label": "Network Layer",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Network Layer",
+      "description": "Network Layer: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2047cecb-85fa-4c8d-9802-a07615420be7",
+      "label": "Functions of the network layer",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Functions of the network layer",
+      "description": "Functions of the network layer: Functions of the Network Layer: The network layer facilitates communication between devices on different networks by managing packet forwarding, routing, and addressing.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7ee48f32-f9b1-4d1d-89f7-42e71583a23b",
+      "label": "Forwarding",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Forwarding",
+      "description": "Forwarding: Forwarding: The process of passing packets from one network device to another based on the destination address.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "08600878-24a2-4c69-bcab-86ab99a5b905",
+      "label": "Routing",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Routing",
+      "description": "Routing: Routing: Determining the optimal path for packet delivery from the source to the destination across multiple interconnected networks.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "469d66e9-595c-4958-a8ff-7310d9be16a8",
+      "label": "Datagram networks",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Datagram networks",
+      "description": "Datagram networks: Datagram Networks: Network architecture where data is transmitted in discrete packets called datagrams, independently routed across the network.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6d017afd-d6de-47b3-93ce-ab8ca194be78",
+      "label": "IP protocol",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "IP protocol",
+      "description": "IP protocol: IP Protocol: Internet Protocol, the principal protocol used for addressing and routing packets across the Internet.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "065f839f-56d3-4372-83fc-d3b47e616403",
+      "label": "IPv4",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "IPv4",
+      "description": "IPv4: IPv4: The fourth version of the Internet Protocol, widely used for addressing devices on the Internet, employing a 32-bit address space.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "69a3eaaf-53e1-4877-832e-94d7781a8ca2",
+      "label": "Fragmentation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Fragmentation",
+      "description": "Fragmentation: Fragmentation: Process of breaking down large packets into smaller fragments to fit within the maximum transmission unit (MTU) size of the underlying network.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8453bccd-aeb5-44ef-8f20-8aca40803ff7",
+      "label": "IPv6 protocol",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "IPv6 protocol",
+      "description": "IPv6 protocol: IPv6 Protocol: The sixth version of the Internet Protocol, designed to overcome the limitations of IPv4, offering a larger address space and improved security features.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e7052e5b-7132-4c8f-837e-a621d4870445",
+      "label": "IPv6 addressing",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "IPv6 addressing",
+      "description": "IPv6 addressing: IPv6 Addressing: IPv6 addresses are 128 bits in length and expressed in hexadecimal notation, allowing for a significantly larger number of unique addresses compared to IPv4.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3baf4260-fc2a-43c8-8741-cc5c19d90d5f",
+      "label": "ICMP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ICMP",
+      "description": "ICMP: ICMP (Internet Control Message Protocol): Protocol used for diagnostic and error-reporting functions in IP networks, including ping and traceroute.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a1c5f860-d837-4463-b9e2-4db63d442b84",
+      "label": "DHCP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DHCP",
+      "description": "DHCP: DHCP (Dynamic Host Configuration Protocol): Network management protocol used for dynamically assigning IP addresses and other configuration parameters to devices on a network.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5891375f-61b6-4478-911d-fd33a3b64984",
+      "label": "NAT",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "NAT",
+      "description": "NAT: NAT (Network Address Translation): Technique used to map private IP addresses of devices within a local network to a single public IP address for communication over the Internet, enhancing network security and address space conservation.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "32157b8b-277c-42c5-955b-41c3af526c30",
+      "label": "Basic features of the routing control plane",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Basic features of the routing control plane",
+      "description": "Basic features of the routing control plane: Routing Control Plane: Manages the exchange of routing information between routers to establish optimal paths for data packets.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "06caba30-f459-4634-875c-f6bb4577c807",
+      "label": "Routing",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Routing",
+      "description": "Routing: Routing: The process of determining the best path for data packets to travel from a source to a destination across a network.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b0292f8d-8f57-4243-90cf-d0e0e0626a46",
+      "label": "Subnets",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Subnets",
+      "description": "Subnets: Subnets: Logical divisions of an IP network, created by partitioning a larger network into smaller segments to improve performance and management.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f3f660dc-b3fb-472e-9c3f-cdd285f4adaf",
+      "label": "Addressing and routing",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Addressing and routing",
+      "description": "Addressing and routing: Addressing and Routing: Involves assigning unique IP addresses to devices and using routing protocols to direct packets to their destinations based on these addresses.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1cd639e8-8ba2-44f6-a74b-7527ef594ccb",
+      "label": "Intra-domain routing",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Intra-domain routing",
+      "description": "Intra-domain routing: Intra-domain Routing: Routing within a single administrative domain or network, typically managed by interior gateway protocols (IGPs) such as OSPF or RIP.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9187c186-bf98-40ef-af13-04f9be7c7d5e",
+      "label": "Routing algorithms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Routing algorithms",
+      "description": "Routing algorithms: Routing Algorithms: Algorithms used by routers to calculate optimal paths for packet forwarding.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2e2f6898-9197-4253-b905-58239e6a33bb",
+      "label": "Link state algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Link state algorithm",
+      "description": "Link state algorithm: Link State Algorithm: Also known as the Shortest Path First (SPF) algorithm, it calculates the shortest path to all destinations in the network based on information exchanged among routers regarding network topology and link costs.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e52369b7-9203-4f12-8e69-b3a353ec9019",
+      "label": "Distance vector algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Distance vector algorithm",
+      "description": "Distance vector algorithm: Distance Vector Algorithm: Also known as the Bellman-Ford algorithm, it iteratively calculates the shortest path to all destinations based on distance estimates obtained from neighboring routers.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0f45707f-1ee1-4ad1-abdb-27265a3dc307",
+      "label": "Graphs and trees",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graphs and trees",
+      "description": "Graphs and trees: Graphs and Trees: Data structures used to represent network topologies and hierarchies in computer networks.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c62d65ca-1138-48d2-a721-c2054047ed53",
+      "label": "interior gateway protocols (IGP)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "interior gateway protocols (IGP)",
+      "description": "interior gateway protocols (IGP): Interior Gateway Protocols (IGP): Routing protocols used within an autonomous system (AS) or network domain to exchange routing information.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "cfb42405-7d56-4809-9028-eebf5cfbb324",
+      "label": "RIP: Routing Information Protocol",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "RIP: Routing Information Protocol",
+      "description": "RIP: Routing Information Protocol: RIP (Routing Information Protocol): A distance vector routing protocol used for routing within small to medium-sized networks.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "423af3b0-177f-4aea-b2ab-ec558fb91444",
+      "label": "OSPF: Open Shortest Path First",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "OSPF: Open Shortest Path First",
+      "description": "OSPF: Open Shortest Path First: OSPF (Open Shortest Path First): A link-state routing protocol used for routing within larger networks, providing faster convergence and greater scalability compared to RIP.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c4b6f4c5-56be-47ee-8a90-78ccbe150e22",
+      "label": "IS-IS",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "IS-IS",
+      "description": "IS-IS: IS-IS (Intermediate System to Intermediate System): Another link-state routing protocol similar to OSPF, commonly used in large service provider networks.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "27f6ec75-5dd7-4ae5-ab67-9a318750ec8c",
+      "label": "EIGRP: Interior Gateway Routing Protocol",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "EIGRP: Interior Gateway Routing Protocol",
+      "description": "EIGRP: Interior Gateway Routing Protocol: EIGRP (Enhanced Interior Gateway Routing Protocol): A hybrid routing protocol that combines aspects of both distance vector and link-state protocols, developed by Cisco.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3fa439d1-8188-4a21-89a0-cd4db0cc428a",
+      "label": "BGP(Border Gateway Protocol)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "BGP(Border Gateway Protocol)",
+      "description": "BGP(Border Gateway Protocol): BGP (Border Gateway Protocol): A path vector routing protocol used to exchange routing information between different autonomous systems (ASes) on the internet.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e23300bd-dbfa-491d-b964-df5ebc614417",
+      "label": "BGP introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "BGP introduction",
+      "description": "BGP introduction: BGP Introduction: Overview of the Border Gateway Protocol, which is critical for internet routing and inter-domain communication.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5e40eb79-6369-4c4c-8ceb-7223226a3a2e",
+      "label": "BGP security",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "BGP security",
+      "description": "BGP security: BGP Security: Concerns and measures related to securing the Border Gateway Protocol to prevent various attacks and ensure the stability and integrity of internet routing.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "56564828-8bda-49ac-9699-6e512937cccc",
+      "label": "What's inside a router?",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "What's inside a router?",
+      "description": "What's inside a router?: What's Inside a Router?: Components and functionalities found within a typical router, including processors, memory, interfaces, and routing engines.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "37018f38-1484-425b-9671-5d8cf4f6abda",
+      "label": "Router architectures",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Router architectures",
+      "description": "Router architectures: Router Architectures: Various designs and configurations used in the construction of routers, such as modular, monolithic, and distributed architectures.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6361ab03-8949-4373-ae93-4e5f083c4347",
+      "label": "Quality of Service principles",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Quality of Service principles",
+      "description": "Quality of Service principles: Quality of Service (QoS) Principles: Techniques and mechanisms employed to manage and prioritize network traffic based on predefined criteria, ensuring better performance and resource allocation.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "078f79b8-c65b-4a1a-b18e-43adf4e0bb2b",
+      "label": "Diffserv and IntServ",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Diffserv and IntServ",
+      "description": "Diffserv and IntServ: Diffserv and IntServ: Differentiated Services (Diffserv) and Integrated Services (IntServ) are two QoS models used to provide different levels of service in packet-switched networks.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6ad1c7cd-a57f-4589-9abd-eb82fb7a173e",
+      "label": "Differentiated Services",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Differentiated Services",
+      "description": "Differentiated Services: Differentiated Services: A QoS model that classifies and prioritizes network traffic into different service levels based on packet markings or other attributes.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9d8b0971-9308-4460-a10f-e4552b0e6aec",
+      "label": "Integrated services",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Integrated services",
+      "description": "Integrated services: Integrated Services: A QoS model that establishes a dedicated path for each flow of traffic and reserves network resources end-to-end to guarantee certain levels of service.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e6a876e3-c668-4167-a8b5-b99a3b9a225e",
+      "label": "Policing, shaping and scheduling",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Policing, shaping and scheduling",
+      "description": "Policing, shaping and scheduling: Policing, Shaping, and Scheduling: Traffic management techniques used to control the rate and priority of packets entering and leaving a network interface.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "04e1317a-a0fd-45c3-8964-cd07070beda2",
+      "label": "Resource Reservation Protocol (RSVP)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Resource Reservation Protocol (RSVP)",
+      "description": "Resource Reservation Protocol (RSVP): Resource Reservation Protocol (RSVP): A signaling protocol used to establish and maintain reservations for network resources along a data path, particularly in IntServ-based networks.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "label": "Link layer",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Link layer",
+      "description": "Link layer: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8c3b784a-3cc7-4c05-b925-458352f2391c",
+      "label": "Introduction to data link layer",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Introduction to data link layer",
+      "description": "Introduction to data link layer: Introduction to Data Link Layer: The second layer of the OSI model responsible for the reliable transmission of data across a physical link.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "07918d13-c918-45e3-9624-b199a8caea98",
+      "label": "ARP(address resolution protocol)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ARP(address resolution protocol)",
+      "description": "ARP(address resolution protocol): ARP (Address Resolution Protocol): A protocol used to map IP addresses to MAC addresses in local area networks.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5d14706a-5f0d-4b3d-ab6a-2a478a3a7e8a",
+      "label": "Ethernet",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Ethernet",
+      "description": "Ethernet: Ethernet: A widely-used wired networking technology that defines the physical and data link layers of the OSI model.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bad5fb96-7544-4682-aa0b-b0cbeba383de",
+      "label": "Ethernet Frame",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Ethernet Frame",
+      "description": "Ethernet Frame: Ethernet Frame: The structure of data transmitted over an Ethernet network, including destination and source MAC addresses, type/length field, and payload.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "daebb8f3-398a-4656-9ba1-8523bcedad88",
+      "label": "Switches",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Switches",
+      "description": "Switches: Switches: Network devices that operate at the data link layer, forwarding data based on MAC addresses within Ethernet frames.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ff5fd505-7925-486b-a38e-e03791e77f96",
+      "label": "Spanning tree protocol",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Spanning tree protocol",
+      "description": "Spanning tree protocol: Spanning Tree Protocol (STP): A protocol used to prevent loops in Ethernet networks by selectively blocking redundant paths.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ffd92d4c-5420-4dba-9951-5146aac2309c",
+      "label": "Virtual LANs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Virtual LANs",
+      "description": "Virtual LANs: Virtual LANs (VLANs): A method of partitioning a physical network into multiple logical networks, improving network efficiency and security.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a82a9910-a32a-4b95-b1ee-34523198baa9",
+      "label": "Wireless basics",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Wireless basics",
+      "description": "Wireless basics: Wireless Basics: Introduction to wireless communication principles, including radio signals, wireless links, and the wireless spectrum.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2276905b-112d-45bd-a49b-83385933d388",
+      "label": "Radio signals",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Radio signals",
+      "description": "Radio signals: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e88909c0-d22d-44fc-9762-90f683e6934c",
+      "label": "Wireless links",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Wireless links",
+      "description": "Wireless links: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "97a8b33b-b732-4ada-b271-d577c5e30aed",
+      "label": "Wireless spectrum",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Wireless spectrum",
+      "description": "Wireless spectrum: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4e6b8ce8-8aee-4483-bbb3-957129f5fc74",
+      "label": "Wireless networks",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Wireless networks",
+      "description": "Wireless networks: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "799ce254-ec92-4170-94ea-d9a8d7f052fc",
+      "label": "Bluetooth",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Bluetooth",
+      "description": "Bluetooth: Bluetooth: A wireless technology used for short-range communication between devices, often for purposes like file sharing or audio streaming.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "25ec9404-9f44-460c-a346-d8f8b599b017",
+      "label": "WiFi",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "WiFi",
+      "description": "WiFi: WiFi: A wireless networking technology based on IEEE 802.11 standards, commonly used for local area networking and internet access.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bafdd7eb-863e-48a0-9277-eee7eefaa7a9",
+      "label": "Media access",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Media access",
+      "description": "Media access: Media Access: Methods used in shared media networks (like Ethernet) to control access to the transmission medium, such as collision avoidance and contention-based protocols like DCF (Distributed Coordination Function).",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "24b7a907-46df-4bb2-b02b-5a833fd66c88",
+      "label": "Collision avoidance",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Collision avoidance",
+      "description": "Collision avoidance: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8bbefa5c-0bae-4db9-8954-5187c1844e0e",
+      "label": "DCF",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DCF",
+      "description": "DCF: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2d2da3c4-5661-4e6c-b366-296e4f7e349e",
+      "label": "802.11 frames",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "802.11 frames",
+      "description": "802.11 frames: 802.11 Frames: The structure of data frames used in WiFi networks, including management frames, control frames, and data frames.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "d846c4d8-d919-4c65-9962-428b6d7451e2",
+      "to": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "title": "",
+      "id": "cb3b1969-3080-4de1-8074-c11fea851c96"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "5eebb26e-ab8e-40aa-99ba-05076cbc6215",
+      "title": "",
+      "id": "cfdc6126-b69d-43bb-bb6f-dedf888d86e3"
+    },
+    {
+      "from": "5eebb26e-ab8e-40aa-99ba-05076cbc6215",
+      "to": "588680a4-af17-450b-92b2-4f971f1ad302",
+      "title": "",
+      "id": "d193fa10-b291-4530-9086-6d75532616f4"
+    },
+    {
+      "from": "5eebb26e-ab8e-40aa-99ba-05076cbc6215",
+      "to": "f67b8b89-ebfd-4842-9b2b-eadda788d484",
+      "title": "",
+      "id": "f2638d82-54fa-4b26-8b62-6f2a2cefcb8a"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "4e06aaf9-a7c9-48df-b0ed-46a4d4d390c5",
+      "title": "",
+      "id": "210e5c15-efdc-4563-be75-143d563a487d"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "eb9ef5f6-38e5-4294-9b97-e9380d38423f",
+      "title": "",
+      "id": "d6465200-51ce-443c-96bf-35705b705dcc"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "adaf0c9f-7dd2-4da9-be60-f60c312b7d87",
+      "title": "",
+      "id": "418bf55b-0d7e-4f0e-b54f-bb6f8b6e7488"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "d45d40b1-6ee3-4a03-a2fc-679d934b14cb",
+      "title": "",
+      "id": "52377113-9ae4-4cf4-a68c-32743b56f290"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "436d5bdb-f083-4f68-a90a-deb677587a99",
+      "title": "",
+      "id": "ec9956a9-1c01-4b17-8b74-57cb10322ece"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "885ba491-022b-4789-a9c2-ab08850ea917",
+      "title": "",
+      "id": "e4931a50-785c-49cf-808d-dd71eccc30d9"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "0ec14883-b1a8-46c8-aa56-1bb70b26ec29",
+      "title": "",
+      "id": "f30e95fa-f746-455a-a4c9-b501c36e57fe"
+    },
+    {
+      "from": "9020b0aa-7716-490f-a3ae-1d45919bad58",
+      "to": "3797440c-17b0-495b-87ff-bca2fec7b89a",
+      "title": "",
+      "id": "4b76d1c1-2bce-46bb-aca6-368fbbb5638b"
+    },
+    {
+      "from": "d846c4d8-d919-4c65-9962-428b6d7451e2",
+      "to": "b394cb46-b273-44d8-8a96-5e9330cf355c",
+      "title": "",
+      "id": "a0efcc5a-ef36-4550-918c-e82a95ab0ff0"
+    },
+    {
+      "from": "b394cb46-b273-44d8-8a96-5e9330cf355c",
+      "to": "aa4e0a47-9b1f-4978-8ce1-4c530d295da0",
+      "title": "",
+      "id": "14f696f5-042a-40b2-886f-a3eeddd5c114"
+    },
+    {
+      "from": "aa4e0a47-9b1f-4978-8ce1-4c530d295da0",
+      "to": "e294dec3-297c-4d57-b123-1a24fcf9bd6e",
+      "title": "",
+      "id": "9fdb5a4b-adc5-4d89-89f2-c06ffc94bf13"
+    },
+    {
+      "from": "aa4e0a47-9b1f-4978-8ce1-4c530d295da0",
+      "to": "82e4ed47-07c8-4840-8dce-ad381a4df87e",
+      "title": "",
+      "id": "adb04489-96df-41ad-aea6-8750c7cf8a09"
+    },
+    {
+      "from": "aa4e0a47-9b1f-4978-8ce1-4c530d295da0",
+      "to": "3013af80-c235-46b1-b3c8-a487d5c0d197",
+      "title": "",
+      "id": "ee57a511-59a7-4c55-a797-7f6e0511238a"
+    },
+    {
+      "from": "d846c4d8-d919-4c65-9962-428b6d7451e2",
+      "to": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "title": "",
+      "id": "39923804-9df0-47a1-a982-6e3313840fcf"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "1a2a1ec5-9f38-408b-90d6-01327dc3fde7",
+      "title": "",
+      "id": "6722f24f-7a41-41e3-9e44-c3ba46ff9b88"
+    },
+    {
+      "from": "1a2a1ec5-9f38-408b-90d6-01327dc3fde7",
+      "to": "5fe73a6f-987b-46d7-828b-9c9402ca1554",
+      "title": "",
+      "id": "27de328a-320b-4d53-b016-0eba847a5384"
+    },
+    {
+      "from": "1a2a1ec5-9f38-408b-90d6-01327dc3fde7",
+      "to": "158f162d-e285-4456-9133-5e9b680ae4ca",
+      "title": "",
+      "id": "5828d309-e556-4e5b-bef3-ba9367d78250"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "5b3b5891-2b84-4b91-8b62-bb8950f96008",
+      "title": "",
+      "id": "b2f2b092-b334-4f34-962c-4af9457df2bd"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "26a151fa-06d0-42e6-9a70-87bff1cb2a15",
+      "title": "",
+      "id": "7e553d8a-1d12-4f46-8d37-3ac995da3f93"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "5ea12b71-1217-4d39-9cf6-424ec42e6827",
+      "title": "",
+      "id": "fa04a9ac-d74b-47ba-be27-dd04cdfcfd45"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "441ea2b6-fd0e-4150-99aa-fc249c86ef36",
+      "title": "",
+      "id": "4ac40f46-c367-4d53-9b4d-d5f70f28c15d"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "3bd6bb11-a92c-42d4-9af8-987bda92815d",
+      "title": "",
+      "id": "11c2a75d-3e59-4a93-8be1-b9b11e6378a9"
+    },
+    {
+      "from": "b45ee6b6-b5f0-468f-bfab-dd5bb4975094",
+      "to": "c362cdfb-7c85-4b97-9abb-c00fbeed0d17",
+      "title": "",
+      "id": "34e73129-6c88-4df2-8743-7d7d0a9f7c27"
+    },
+    {
+      "from": "d846c4d8-d919-4c65-9962-428b6d7451e2",
+      "to": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "title": "",
+      "id": "9645f8ae-ca13-4d44-aec7-3428c8db861f"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "2047cecb-85fa-4c8d-9802-a07615420be7",
+      "title": "",
+      "id": "be91059a-db05-49e4-9314-7a03eccd3f37"
+    },
+    {
+      "from": "2047cecb-85fa-4c8d-9802-a07615420be7",
+      "to": "7ee48f32-f9b1-4d1d-89f7-42e71583a23b",
+      "title": "",
+      "id": "059da239-413f-4856-acb7-600b25a45d84"
+    },
+    {
+      "from": "2047cecb-85fa-4c8d-9802-a07615420be7",
+      "to": "08600878-24a2-4c69-bcab-86ab99a5b905",
+      "title": "",
+      "id": "027d4700-a53c-47dd-aaaf-c7ef21c4dcc7"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "469d66e9-595c-4958-a8ff-7310d9be16a8",
+      "title": "",
+      "id": "1783c88e-36bd-4bb3-86de-7daa2f9eac1d"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "6d017afd-d6de-47b3-93ce-ab8ca194be78",
+      "title": "",
+      "id": "db19d8c6-508c-4b7a-86bd-e1192bb7c378"
+    },
+    {
+      "from": "6d017afd-d6de-47b3-93ce-ab8ca194be78",
+      "to": "065f839f-56d3-4372-83fc-d3b47e616403",
+      "title": "",
+      "id": "5f51873f-be91-43eb-b9e6-810e44fea980"
+    },
+    {
+      "from": "065f839f-56d3-4372-83fc-d3b47e616403",
+      "to": "69a3eaaf-53e1-4877-832e-94d7781a8ca2",
+      "title": "",
+      "id": "e8afaaee-d2fc-4f52-bca3-e9a640da255f"
+    },
+    {
+      "from": "6d017afd-d6de-47b3-93ce-ab8ca194be78",
+      "to": "8453bccd-aeb5-44ef-8f20-8aca40803ff7",
+      "title": "",
+      "id": "74fc7c4f-4f13-411b-8287-2c5341d63b2c"
+    },
+    {
+      "from": "8453bccd-aeb5-44ef-8f20-8aca40803ff7",
+      "to": "e7052e5b-7132-4c8f-837e-a621d4870445",
+      "title": "",
+      "id": "b0a0f711-81af-4073-ad40-198527fc4050"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "3baf4260-fc2a-43c8-8741-cc5c19d90d5f",
+      "title": "",
+      "id": "c648ee57-e014-448d-988f-80c559fcfe71"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "a1c5f860-d837-4463-b9e2-4db63d442b84",
+      "title": "",
+      "id": "f8805440-86e5-46dd-b026-3b3cf92b51e1"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "5891375f-61b6-4478-911d-fd33a3b64984",
+      "title": "",
+      "id": "7ebf4b8c-6a9f-4606-8a04-1a6beaeb94df"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "32157b8b-277c-42c5-955b-41c3af526c30",
+      "title": "",
+      "id": "076cd297-4588-49a1-909f-1382324e55cc"
+    },
+    {
+      "from": "32157b8b-277c-42c5-955b-41c3af526c30",
+      "to": "06caba30-f459-4634-875c-f6bb4577c807",
+      "title": "",
+      "id": "0c2d0bae-ba93-4b3b-8db3-3958bea007d8"
+    },
+    {
+      "from": "32157b8b-277c-42c5-955b-41c3af526c30",
+      "to": "b0292f8d-8f57-4243-90cf-d0e0e0626a46",
+      "title": "",
+      "id": "ff0e710e-8c26-4f10-a57e-def331495f44"
+    },
+    {
+      "from": "32157b8b-277c-42c5-955b-41c3af526c30",
+      "to": "f3f660dc-b3fb-472e-9c3f-cdd285f4adaf",
+      "title": "",
+      "id": "88d22a4d-544c-4e4b-896d-cf6427d7a219"
+    },
+    {
+      "from": "32157b8b-277c-42c5-955b-41c3af526c30",
+      "to": "1cd639e8-8ba2-44f6-a74b-7527ef594ccb",
+      "title": "",
+      "id": "1fa89c31-2ac2-430d-a9db-76cb5d2e006d"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "9187c186-bf98-40ef-af13-04f9be7c7d5e",
+      "title": "",
+      "id": "df2f146c-8846-4d51-a54f-9de7c3d8d80e"
+    },
+    {
+      "from": "9187c186-bf98-40ef-af13-04f9be7c7d5e",
+      "to": "2e2f6898-9197-4253-b905-58239e6a33bb",
+      "title": "",
+      "id": "ca9d07ee-df5e-4d20-b360-f499284a28db"
+    },
+    {
+      "from": "9187c186-bf98-40ef-af13-04f9be7c7d5e",
+      "to": "e52369b7-9203-4f12-8e69-b3a353ec9019",
+      "title": "",
+      "id": "1c04753e-81f5-4452-93da-a8967d9f693c"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "0f45707f-1ee1-4ad1-abdb-27265a3dc307",
+      "title": "",
+      "id": "62b577d3-f034-4da1-8306-fdf8f6d991d5"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "c62d65ca-1138-48d2-a721-c2054047ed53",
+      "title": "",
+      "id": "aba45a19-f865-4cb3-b082-194e16cd4ff5"
+    },
+    {
+      "from": "c62d65ca-1138-48d2-a721-c2054047ed53",
+      "to": "cfb42405-7d56-4809-9028-eebf5cfbb324",
+      "title": "",
+      "id": "9c34a7ce-8164-4662-854b-97c59aaec398"
+    },
+    {
+      "from": "c62d65ca-1138-48d2-a721-c2054047ed53",
+      "to": "423af3b0-177f-4aea-b2ab-ec558fb91444",
+      "title": "",
+      "id": "741237d1-f879-4e06-83ca-9ca259c3619c"
+    },
+    {
+      "from": "c62d65ca-1138-48d2-a721-c2054047ed53",
+      "to": "c4b6f4c5-56be-47ee-8a90-78ccbe150e22",
+      "title": "",
+      "id": "d84fcfd3-b30b-4074-84a3-5bb9fe1a934d"
+    },
+    {
+      "from": "c62d65ca-1138-48d2-a721-c2054047ed53",
+      "to": "27f6ec75-5dd7-4ae5-ab67-9a318750ec8c",
+      "title": "",
+      "id": "ac139aed-bb3c-4268-86bc-2b1c26c84157"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "3fa439d1-8188-4a21-89a0-cd4db0cc428a",
+      "title": "",
+      "id": "324408e6-f1d4-477e-b120-0afade700135"
+    },
+    {
+      "from": "3fa439d1-8188-4a21-89a0-cd4db0cc428a",
+      "to": "e23300bd-dbfa-491d-b964-df5ebc614417",
+      "title": "",
+      "id": "b0a86497-8486-462a-a73e-57aff72b2fdf"
+    },
+    {
+      "from": "3fa439d1-8188-4a21-89a0-cd4db0cc428a",
+      "to": "5e40eb79-6369-4c4c-8ceb-7223226a3a2e",
+      "title": "",
+      "id": "73abaedd-74a4-4951-b85b-c624727dff5e"
+    },
+    {
+      "from": "2acb9151-586a-4857-a5ae-f65009fcb682",
+      "to": "56564828-8bda-49ac-9699-6e512937cccc",
+      "title": "",
+      "id": "b3ad3c87-b0bd-4fb2-8dff-e37e6aed6a04"
+    },
+    {
+      "from": "56564828-8bda-49ac-9699-6e512937cccc",
+      "to": "37018f38-1484-425b-9671-5d8cf4f6abda",
+      "title": "",
+      "id": "0dfe3484-6f6d-40b3-a146-808e5bb05fca"
+    },
+    {
+      "from": "56564828-8bda-49ac-9699-6e512937cccc",
+      "to": "6361ab03-8949-4373-ae93-4e5f083c4347",
+      "title": "",
+      "id": "7ae3a0f4-aa09-4d50-8575-81d2a21e9e2f"
+    },
+    {
+      "from": "56564828-8bda-49ac-9699-6e512937cccc",
+      "to": "078f79b8-c65b-4a1a-b18e-43adf4e0bb2b",
+      "title": "",
+      "id": "4d5a3543-1dee-4ef5-984f-d9ee1a2a0ca6"
+    },
+    {
+      "from": "078f79b8-c65b-4a1a-b18e-43adf4e0bb2b",
+      "to": "6ad1c7cd-a57f-4589-9abd-eb82fb7a173e",
+      "title": "",
+      "id": "ee9901cd-f265-4a7c-b049-e5d5ef76e8c0"
+    },
+    {
+      "from": "078f79b8-c65b-4a1a-b18e-43adf4e0bb2b",
+      "to": "9d8b0971-9308-4460-a10f-e4552b0e6aec",
+      "title": "",
+      "id": "9d17ad36-6c1b-43c0-aeda-208d325a5534"
+    },
+    {
+      "from": "56564828-8bda-49ac-9699-6e512937cccc",
+      "to": "e6a876e3-c668-4167-a8b5-b99a3b9a225e",
+      "title": "",
+      "id": "80f5c315-4782-4af6-9bc8-47149d210dd8"
+    },
+    {
+      "from": "e6a876e3-c668-4167-a8b5-b99a3b9a225e",
+      "to": "04e1317a-a0fd-45c3-8964-cd07070beda2",
+      "title": "",
+      "id": "d86b979c-d6b2-488b-9a80-12f98fd795a3"
+    },
+    {
+      "from": "d846c4d8-d919-4c65-9962-428b6d7451e2",
+      "to": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "title": "",
+      "id": "94494d22-3923-4aba-bc2d-2375541d831b"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "8c3b784a-3cc7-4c05-b925-458352f2391c",
+      "title": "",
+      "id": "72221fb3-e1f7-4750-9d83-fe9be29f969f"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "07918d13-c918-45e3-9624-b199a8caea98",
+      "title": "",
+      "id": "b6c0bec3-088f-4472-b6d3-5dd10c67f966"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "5d14706a-5f0d-4b3d-ab6a-2a478a3a7e8a",
+      "title": "",
+      "id": "56ee8241-fc80-43d8-a5e4-7f9fda46ccda"
+    },
+    {
+      "from": "5d14706a-5f0d-4b3d-ab6a-2a478a3a7e8a",
+      "to": "bad5fb96-7544-4682-aa0b-b0cbeba383de",
+      "title": "",
+      "id": "c1837fcd-4c14-4e5a-adad-10296957a483"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "daebb8f3-398a-4656-9ba1-8523bcedad88",
+      "title": "",
+      "id": "4098961d-6907-4b07-a4f2-04eb60129b74"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "ff5fd505-7925-486b-a38e-e03791e77f96",
+      "title": "",
+      "id": "c627c43b-608e-493a-9450-b82aaf62c75c"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "ffd92d4c-5420-4dba-9951-5146aac2309c",
+      "title": "",
+      "id": "7d3fb63f-a223-462a-b86b-55c3d714029d"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "a82a9910-a32a-4b95-b1ee-34523198baa9",
+      "title": "",
+      "id": "515f2a59-7b62-49f6-8912-29d4c4b48594"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "2276905b-112d-45bd-a49b-83385933d388",
+      "title": "",
+      "id": "7eca28a2-df43-4c73-a2fb-bd292319f1e4"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "e88909c0-d22d-44fc-9762-90f683e6934c",
+      "title": "",
+      "id": "02d1ea33-1756-4fca-bee8-bf56cdd97415"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "97a8b33b-b732-4ada-b271-d577c5e30aed",
+      "title": "",
+      "id": "5a003ac6-8ea8-4aca-a7e4-096247517366"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "4e6b8ce8-8aee-4483-bbb3-957129f5fc74",
+      "title": "",
+      "id": "c3644414-ce3e-4ca9-ba63-184df28b6c38"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "799ce254-ec92-4170-94ea-d9a8d7f052fc",
+      "title": "",
+      "id": "cfcc12e6-43fd-475a-a5b2-ed5d250d9f96"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "25ec9404-9f44-460c-a346-d8f8b599b017",
+      "title": "",
+      "id": "34cefc73-81f7-40cd-8997-4bddeebcdb8c"
+    },
+    {
+      "from": "25ec9404-9f44-460c-a346-d8f8b599b017",
+      "to": "bafdd7eb-863e-48a0-9277-eee7eefaa7a9",
+      "title": "",
+      "id": "46da9cbc-36d0-4f47-99b6-f895aec3edfb"
+    },
+    {
+      "from": "25ec9404-9f44-460c-a346-d8f8b599b017",
+      "to": "24b7a907-46df-4bb2-b02b-5a833fd66c88",
+      "title": "",
+      "id": "c3d88323-8a08-4b14-9487-48628ed18c42"
+    },
+    {
+      "from": "25ec9404-9f44-460c-a346-d8f8b599b017",
+      "to": "8bbefa5c-0bae-4db9-8954-5187c1844e0e",
+      "title": "",
+      "id": "0f22b46e-44e2-44c7-b8f5-9fbe387894bb"
+    },
+    {
+      "from": "83fe125f-dd05-47d8-9cf9-f4a710a03ff1",
+      "to": "2d2da3c4-5661-4e6c-b366-296e4f7e349e",
+      "title": "",
+      "id": "e33f3bf9-164d-4219-9d6c-b91b9c6d91b0"
+    }
+  ]
+}

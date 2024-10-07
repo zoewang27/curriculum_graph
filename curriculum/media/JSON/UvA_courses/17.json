@@ -1,0 +1,931 @@
+{
+  "nodes": [
+    {
+      "id": "e3d2e1fb-b73b-4377-9983-13d5cc6f87ec",
+      "label": "Algorithm and Complexity",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Algorithm and Complexity",
+      "description": "Algorithm and Complexity: ",
+      "layer": 0,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a3fd606f-91c3-4019-b019-207dee46add6",
+      "label": "Algorithmic Techniques",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Algorithmic Techniques",
+      "description": "Algorithmic Techniques: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "325a8b17-809f-4059-9b37-66d3413fde6d",
+      "label": "Recursion",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Recursion",
+      "description": "Recursion: A technique where a function calls itself in order to solve smaller instances of the same problem.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "label": "Divide and Conquer",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Divide and Conquer",
+      "description": "Divide and Conquer: Divides a problem into smaller subproblems, solves each subproblem independently, and then combines the solutions.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "59222654-ea27-4ceb-8a64-4ad23e6b479b",
+      "label": "Binary search",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Binary search",
+      "description": "Binary search: An efficient search algorithm for finding a target value within a sorted array by repeatedly dividing the search interval in half.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "139cccbd-ea1c-4290-b08d-a6388c4a4694",
+      "label": "Mergesort",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Mergesort",
+      "description": "Mergesort: A sorting algorithm that follows the divide and conquer strategy by recursively dividing the array into halves, sorting each half, and then merging the sorted halves.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0df1465a-c380-4b5e-8971-4538933e2399",
+      "label": "Quicksort",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Quicksort",
+      "description": "Quicksort: A sorting algorithm that uses the divide and conquer strategy by partitioning the array into smaller subarrays based on a pivot element and recursively sorting each subarray.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2ebb7c21-1b55-4162-96bd-e9f40b5048c3",
+      "label": "Matrix multiplication",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Matrix multiplication",
+      "description": "Matrix multiplication: A mathematical operation that computes the product of two matrices.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7c3bedc8-2468-49e9-bd97-28e9c260f18e",
+      "label": "Karatsuba Multiplication",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Karatsuba Multiplication",
+      "description": "Karatsuba Multiplication: An algorithm for fast multiplication of large numbers using a divide and conquer approach.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d04d968d-9372-45eb-87c9-4f335d97246c",
+      "label": "Fast Fourier Transform",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Fast Fourier Transform",
+      "description": "Fast Fourier Transform: An efficient algorithm for computing the discrete Fourier transform and its inverse.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "label": "Backtracking",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Backtracking",
+      "description": "Backtracking: A technique for systematically searching through all possible solutions to find the optimal one, often used in constraint satisfaction problems.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a0193d81-0ba7-403f-bbcd-dfd21bc0aae4",
+      "label": "Gauss\u2019 algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Gauss\u2019 algorithm",
+      "description": "Gauss\u2019 algorithm: Various algorithms attributed to Carl Friedrich Gauss, often used for solving linear equations and finding determinants.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5671cc5a-a76c-4270-bd8e-da4a24af153b",
+      "label": "Recursive algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Recursive algorithm",
+      "description": "Recursive algorithm: An algorithm that solves a problem by solving smaller instances of the same problem.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f4b3f3da-494c-4fd8-82aa-5a4c7496e02a",
+      "label": "Game-playing algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Game-playing algorithm",
+      "description": "Game-playing algorithm: Algorithms used in artificial intelligence for making decisions in games, such as minimax algorithm with alpha-beta pruning.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0a0dc241-5c41-442d-8beb-8d803b61e09e",
+      "label": "subset sum",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "subset sum",
+      "description": "subset sum: A problem in combinatorial optimization that asks whether there exists a subset of a given set whose elements sum to a given target value.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3a0150bb-cb95-4555-befe-d884ef116cc7",
+      "label": "LIS algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "LIS algorithm",
+      "description": "LIS algorithm: An algorithm for finding the longest increasing subsequence in a given sequence of numbers.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "label": "Dynamic Programming",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Dynamic Programming",
+      "description": "Dynamic Programming: A technique used to solve problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e5eaaf80-386b-487f-ab76-ccbb57ffb319",
+      "label": "Fibonacci Sequence",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Fibonacci Sequence",
+      "description": "Fibonacci Sequence: Finding the nth Fibonacci number using dynamic programming to avoid redundant recursive calls.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "46bed253-a943-4729-8a6a-f2e66ce890b9",
+      "label": "Text Segmentation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Text Segmentation",
+      "description": "Text Segmentation: Breaking a given text into words such that the concatenation of these words forms the original text, with the minimum number of words.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bb39377e-c422-4ca7-b404-91174be30a9d",
+      "label": "Subset Sum",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Subset Sum",
+      "description": "Subset Sum: Determining whether there exists a subset of a given set whose elements sum to a given target value.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e5a7f254-be6d-4dec-9416-00166ac0c23e",
+      "label": "Longest Increasing Subsequence",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Longest Increasing Subsequence",
+      "description": "Longest Increasing Subsequence: Finding the longest subsequence in a given sequence of numbers that is strictly increasing.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c3f34149-c279-4fff-9bb1-b9a334ba25e5",
+      "label": "Edit Distance",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Edit Distance",
+      "description": "Edit Distance: Calculating the minimum number of operations (insertion, deletion, substitution) required to transform one string into another.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "714b38c5-0768-4d41-a481-de3c2ef26bee",
+      "label": "Maximum Independent Set",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Maximum Independent Set",
+      "description": "Maximum Independent Set: Finding the largest subset of vertices in a graph such that no two vertices are adjacent (i.e., there are no edges between any two vertices in the subset).",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e9c975f7-6d70-49dd-a2a3-f55501f4361e",
+      "label": "Greedy Algorithms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Greedy Algorithms",
+      "description": "Greedy Algorithms: A class of algorithms that make locally optimal choices at each step with the hope of finding a global optimum solution.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4f7eb204-fc6d-4419-8575-7bc41781e90d",
+      "label": "Sorting Files on Tape",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Sorting Files on Tape",
+      "description": "Sorting Files on Tape: Arranging files stored on multiple tapes in a specific order to minimize the total time required to access all files.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "97823cd6-e851-4a45-a02e-8d3f5c6f9b84",
+      "label": "Exchange Arguments",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Exchange Arguments",
+      "description": "Exchange Arguments: A technique used in proving the optimality of greedy algorithms by showing that any optimal solution must have certain properties.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1fcd8aa3-9ec5-43c2-86f4-4f6da1898eb1",
+      "label": "Scheduling Problem",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Scheduling Problem",
+      "description": "Scheduling Problem: Assigning tasks or jobs to resources such as processors or machines to optimize a certain objective, such as minimizing completion time or maximizing throughput.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "05e784a3-8fca-41b8-85da-c67f7eb62d20",
+      "label": "Huffman Codes",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Huffman Codes",
+      "description": "Huffman Codes: A method of data compression that assigns variable-length codes to input characters, with shorter codes assigned to more frequently occurring characters.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "label": "Graph Algorithms",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Graph Algorithms",
+      "description": "Graph Algorithms: Graph algorithms are a fundamental part of computer science, focusing on analyzing and manipulating graphs, which consist of nodes (vertices) connected by edges.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "946867ca-51af-42ec-a0ad-9765ee1eec7a",
+      "label": "Spanning trees",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Spanning trees",
+      "description": "Spanning trees: A subgraph of a graph that includes all the vertices of the original graph with the minimum possible number of edges.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b68fc79b-dd5f-46af-bea5-1167356dff63",
+      "label": "Kruskal\u2019s algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Kruskal\u2019s algorithm",
+      "description": "Kruskal\u2019s algorithm: A greedy algorithm for finding the minimum spanning tree (MST) of a connected, weighted graph.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a852abc2-731e-4a0b-bfbe-ef734311792e",
+      "label": "Jarn\u00edk\u2019s algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Jarn\u00edk\u2019s algorithm",
+      "description": "Jarn\u00edk\u2019s algorithm: Another greedy algorithm for finding the minimum spanning tree (MST) of a connected, weighted graph.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c080659c-a401-4a9d-8556-0f46fbbfe4f6",
+      "label": "Shortest Paths",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Shortest Paths",
+      "description": "Shortest Paths: Finding the shortest path between two vertices in a weighted graph, where the path length is the sum of the weights of its edges.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0c567d56-c34a-4005-9e6a-71dbba448688",
+      "label": "Dijkstra\u2019s algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Dijkstra\u2019s algorithm",
+      "description": "Dijkstra\u2019s algorithm: A greedy algorithm for finding the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "18f5a362-dbe6-48d4-ad9e-a45b69081fe2",
+      "label": "Network Flows",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Network Flows",
+      "description": "Network Flows: Modeling the flow of goods, information, or resources through a network of nodes and edges, where the goal is to maximize or minimize the flow subject to capacity ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "35288596-7a1c-4a03-99f2-3d0fdc91529e",
+      "label": "Network Flows and Cuts",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Network Flows and Cuts",
+      "description": "Network Flows and Cuts: The relationship between flows in a network and cuts that partition the network into two disjoint sets of vertices.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "990dee28-8ff7-43d2-bd9d-e59ef481aa50",
+      "label": "Max Flow- Min Cut Theorem",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Max Flow- Min Cut Theorem",
+      "description": "Max Flow- Min Cut Theorem: The theorem states that in a flow network, the maximum flow value through the network equals the minimum cut capacity across all possible cuts of the network.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8ab9ef4b-147d-4df7-97ec-ebc311452721",
+      "label": "Ford-Fulkerson Algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Ford-Fulkerson Algorithm",
+      "description": "Ford-Fulkerson Algorithm: An algorithm for computing the maximum flow in a flow network by repeatedly augmenting paths from the source to the sink until no more augmenting paths exist.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "aba893fe-d88e-4465-b97c-1410af6c754e",
+      "label": "Graph Applications",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graph Applications",
+      "description": "Graph Applications: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "82c9bf7e-f01e-4ba1-bd1e-d1350ec349fa",
+      "label": "Edge Disjoint Paths",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Edge Disjoint Paths",
+      "description": "Edge Disjoint Paths: Finding a set of paths in a graph such that no two paths share a common edge.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f9151536-269b-4498-83db-13ad35475542",
+      "label": "Vertex Disjoint Paths",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Vertex Disjoint Paths",
+      "description": "Vertex Disjoint Paths: Finding a set of paths in a graph such that no two paths share a common vertex.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4bc003e6-1c3d-401f-88b1-8dabf3e3b24a",
+      "label": "Bipartite Matching",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Bipartite Matching",
+      "description": "Bipartite Matching: Finding a maximum matching in a bipartite graph, where each vertex in one set is adjacent to at most one vertex in the other set.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8dfc33c6-3991-46ed-95bb-441d477affbb",
+      "label": "Real-Life Applications",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Real-Life Applications",
+      "description": "Real-Life Applications: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5b666f62-0226-4ac4-8183-38c0e24f6ad8",
+      "label": "Assignment Problem",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Assignment Problem",
+      "description": "Assignment Problem: Assigning a set of tasks to a set of resources in a way that optimizes some objective, such as minimizing total cost or maximizing efficiency.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ea56606e-06bd-4cd0-98f6-ef87ac5a9a01",
+      "label": "Baseball Elimination",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Baseball Elimination",
+      "description": "Baseball Elimination: Determining which teams are mathematically eliminated from contention in a baseball league based on the remaining games to be played.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c7f0db65-26e1-46ad-af94-afefeb0ea6aa",
+      "label": "Job Selection",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Job Selection",
+      "description": "Job Selection: Selecting a subset of jobs from a pool of available jobs to maximize some objective, such as total profit or total satisfaction.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f83810e7-9f5d-4b2b-8637-34e831f962fb",
+      "label": "Linear Programming",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Linear Programming",
+      "description": "Linear Programming: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1ace2584-9e05-48cd-b1fd-d20983c06bf4",
+      "label": "LP Introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "LP Introduction",
+      "description": "LP Introduction: Introduction to linear programming, a method for optimizing a linear objective function subject to linear equality and inequality constraints.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b5f80740-d59c-4086-8f0d-cf121b23d457",
+      "label": "Compute dual of a LP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compute dual of a LP",
+      "description": "Compute dual of a LP: Finding the dual of a linear programming problem, which involves interchanging the roles of variables and constraints to obtain an equivalent problem with different objectives and constraints.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "e3d2e1fb-b73b-4377-9983-13d5cc6f87ec",
+      "to": "a3fd606f-91c3-4019-b019-207dee46add6",
+      "title": "",
+      "id": "b9a0d212-b5a8-4df9-8cb9-1d35d3c1c3a7"
+    },
+    {
+      "from": "a3fd606f-91c3-4019-b019-207dee46add6",
+      "to": "325a8b17-809f-4059-9b37-66d3413fde6d",
+      "title": "",
+      "id": "9b00d8f8-50c2-41cf-9b92-88de61cd717a"
+    },
+    {
+      "from": "325a8b17-809f-4059-9b37-66d3413fde6d",
+      "to": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "title": "",
+      "id": "ee3ecc7a-d826-4914-b518-9b81c2c190af"
+    },
+    {
+      "from": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "to": "59222654-ea27-4ceb-8a64-4ad23e6b479b",
+      "title": "",
+      "id": "5e44911b-841f-4520-ab0c-9f95456ad596"
+    },
+    {
+      "from": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "to": "139cccbd-ea1c-4290-b08d-a6388c4a4694",
+      "title": "",
+      "id": "0c8effc5-9450-4f37-a59a-093559a5faf1"
+    },
+    {
+      "from": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "to": "0df1465a-c380-4b5e-8971-4538933e2399",
+      "title": "",
+      "id": "a72e3b05-7174-4c86-8adc-b58d37ef60e5"
+    },
+    {
+      "from": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "to": "2ebb7c21-1b55-4162-96bd-e9f40b5048c3",
+      "title": "",
+      "id": "331d56cc-0318-47fd-8d44-992d12b54553"
+    },
+    {
+      "from": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "to": "7c3bedc8-2468-49e9-bd97-28e9c260f18e",
+      "title": "",
+      "id": "1f5b1f01-6797-4a67-9419-34721ee18a04"
+    },
+    {
+      "from": "586a3400-55ee-4c7c-8c9c-c8d0ddbcc925",
+      "to": "d04d968d-9372-45eb-87c9-4f335d97246c",
+      "title": "",
+      "id": "f097454c-b5fa-4465-8721-666348e40b1f"
+    },
+    {
+      "from": "325a8b17-809f-4059-9b37-66d3413fde6d",
+      "to": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "title": "",
+      "id": "f7142243-7885-4e6c-ab94-6314bc83059b"
+    },
+    {
+      "from": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "to": "a0193d81-0ba7-403f-bbcd-dfd21bc0aae4",
+      "title": "",
+      "id": "d9f78971-b73c-4131-ab85-5a7e386a9d6b"
+    },
+    {
+      "from": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "to": "5671cc5a-a76c-4270-bd8e-da4a24af153b",
+      "title": "",
+      "id": "f0a014a7-136c-4432-b592-29388e269d48"
+    },
+    {
+      "from": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "to": "f4b3f3da-494c-4fd8-82aa-5a4c7496e02a",
+      "title": "",
+      "id": "e9f2d8ba-1418-4db4-ad99-8ee388ce7227"
+    },
+    {
+      "from": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "to": "0a0dc241-5c41-442d-8beb-8d803b61e09e",
+      "title": "",
+      "id": "68672e4a-2605-4827-aeee-0d9b49aa2d0a"
+    },
+    {
+      "from": "fa537b4b-ab0b-4202-8af8-329d6f05b34e",
+      "to": "3a0150bb-cb95-4555-befe-d884ef116cc7",
+      "title": "",
+      "id": "6155df1d-06c2-4c27-ac07-909baa1d805c"
+    },
+    {
+      "from": "a3fd606f-91c3-4019-b019-207dee46add6",
+      "to": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "title": "",
+      "id": "0ba94d55-3344-4f60-a397-486e5de8129e"
+    },
+    {
+      "from": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "to": "e5eaaf80-386b-487f-ab76-ccbb57ffb319",
+      "title": "",
+      "id": "0d9a6a15-045f-4e7b-8d87-3499e769904b"
+    },
+    {
+      "from": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "to": "46bed253-a943-4729-8a6a-f2e66ce890b9",
+      "title": "",
+      "id": "414ded1d-a239-4f3e-b134-16aebed39682"
+    },
+    {
+      "from": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "to": "bb39377e-c422-4ca7-b404-91174be30a9d",
+      "title": "",
+      "id": "11f85848-eb6b-4bf2-9b0e-a8d8d856ac24"
+    },
+    {
+      "from": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "to": "e5a7f254-be6d-4dec-9416-00166ac0c23e",
+      "title": "",
+      "id": "031d7dde-b1ff-4982-a1a7-fc8046c5b0b9"
+    },
+    {
+      "from": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "to": "c3f34149-c279-4fff-9bb1-b9a334ba25e5",
+      "title": "",
+      "id": "2650408e-b6a7-457e-82c8-6e77a74849bd"
+    },
+    {
+      "from": "590b3a89-b55c-4d3a-a04f-f4bda9e0c21c",
+      "to": "714b38c5-0768-4d41-a481-de3c2ef26bee",
+      "title": "",
+      "id": "1f9c701f-3245-4573-a0c8-92d1a6892cf3"
+    },
+    {
+      "from": "a3fd606f-91c3-4019-b019-207dee46add6",
+      "to": "e9c975f7-6d70-49dd-a2a3-f55501f4361e",
+      "title": "",
+      "id": "be2a98ec-f476-4fc6-b682-d1f3f86a711f"
+    },
+    {
+      "from": "e9c975f7-6d70-49dd-a2a3-f55501f4361e",
+      "to": "4f7eb204-fc6d-4419-8575-7bc41781e90d",
+      "title": "",
+      "id": "e73115f2-0ed7-4fa6-9ce9-001533642d5f"
+    },
+    {
+      "from": "e9c975f7-6d70-49dd-a2a3-f55501f4361e",
+      "to": "97823cd6-e851-4a45-a02e-8d3f5c6f9b84",
+      "title": "",
+      "id": "796a0e0b-dc03-4d39-9676-a006c0bfe85c"
+    },
+    {
+      "from": "e9c975f7-6d70-49dd-a2a3-f55501f4361e",
+      "to": "1fcd8aa3-9ec5-43c2-86f4-4f6da1898eb1",
+      "title": "",
+      "id": "45140dca-7b08-42d1-8a73-d6ad4ac777c3"
+    },
+    {
+      "from": "e9c975f7-6d70-49dd-a2a3-f55501f4361e",
+      "to": "05e784a3-8fca-41b8-85da-c67f7eb62d20",
+      "title": "",
+      "id": "aa67dda1-4975-4827-a551-c4e54038e106"
+    },
+    {
+      "from": "e3d2e1fb-b73b-4377-9983-13d5cc6f87ec",
+      "to": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "title": "",
+      "id": "3fcc9001-b731-407f-9c60-2b8dd0f34340"
+    },
+    {
+      "from": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "to": "946867ca-51af-42ec-a0ad-9765ee1eec7a",
+      "title": "",
+      "id": "a17e4ceb-eb5b-4548-b340-699ba71c6503"
+    },
+    {
+      "from": "946867ca-51af-42ec-a0ad-9765ee1eec7a",
+      "to": "b68fc79b-dd5f-46af-bea5-1167356dff63",
+      "title": "",
+      "id": "43576c92-66b3-4f63-b425-335d3cb22ce6"
+    },
+    {
+      "from": "946867ca-51af-42ec-a0ad-9765ee1eec7a",
+      "to": "a852abc2-731e-4a0b-bfbe-ef734311792e",
+      "title": "",
+      "id": "22dcb2e3-a5fc-461a-bf40-278c5a8becbb"
+    },
+    {
+      "from": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "to": "c080659c-a401-4a9d-8556-0f46fbbfe4f6",
+      "title": "",
+      "id": "e8063347-b9c6-4a91-8e9a-3ac54ebda2e6"
+    },
+    {
+      "from": "c080659c-a401-4a9d-8556-0f46fbbfe4f6",
+      "to": "0c567d56-c34a-4005-9e6a-71dbba448688",
+      "title": "",
+      "id": "ad55bc0d-cbf2-4c71-8421-bdea12705e84"
+    },
+    {
+      "from": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "to": "18f5a362-dbe6-48d4-ad9e-a45b69081fe2",
+      "title": "",
+      "id": "9c04e9ad-22c4-43fd-8c81-25473a00830f"
+    },
+    {
+      "from": "18f5a362-dbe6-48d4-ad9e-a45b69081fe2",
+      "to": "35288596-7a1c-4a03-99f2-3d0fdc91529e",
+      "title": "",
+      "id": "2f878390-3764-4878-a81c-3559260603ab"
+    },
+    {
+      "from": "18f5a362-dbe6-48d4-ad9e-a45b69081fe2",
+      "to": "990dee28-8ff7-43d2-bd9d-e59ef481aa50",
+      "title": "",
+      "id": "2d36d969-ced0-42d4-ac98-f3a70eddf541"
+    },
+    {
+      "from": "18f5a362-dbe6-48d4-ad9e-a45b69081fe2",
+      "to": "8ab9ef4b-147d-4df7-97ec-ebc311452721",
+      "title": "",
+      "id": "275318bb-aad3-4b61-a651-8297f66fc5c2"
+    },
+    {
+      "from": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "to": "aba893fe-d88e-4465-b97c-1410af6c754e",
+      "title": "",
+      "id": "c7c2af70-cfc8-4d6e-b578-18824a143a3a"
+    },
+    {
+      "from": "aba893fe-d88e-4465-b97c-1410af6c754e",
+      "to": "82c9bf7e-f01e-4ba1-bd1e-d1350ec349fa",
+      "title": "",
+      "id": "066568e9-22ad-4174-ae80-6ba365be1e3c"
+    },
+    {
+      "from": "aba893fe-d88e-4465-b97c-1410af6c754e",
+      "to": "f9151536-269b-4498-83db-13ad35475542",
+      "title": "",
+      "id": "c6cb1b99-617b-46dc-be36-5af8ffdac93b"
+    },
+    {
+      "from": "aba893fe-d88e-4465-b97c-1410af6c754e",
+      "to": "4bc003e6-1c3d-401f-88b1-8dabf3e3b24a",
+      "title": "",
+      "id": "d12a0137-45ce-401d-ab6b-36cf315dadf9"
+    },
+    {
+      "from": "a29a3ce1-33e8-4906-b016-8f01f5c6f3d2",
+      "to": "8dfc33c6-3991-46ed-95bb-441d477affbb",
+      "title": "",
+      "id": "3e25117e-82fd-4288-ae0f-7225a89939ea"
+    },
+    {
+      "from": "8dfc33c6-3991-46ed-95bb-441d477affbb",
+      "to": "5b666f62-0226-4ac4-8183-38c0e24f6ad8",
+      "title": "",
+      "id": "8328224f-b86e-4793-9b3b-703fd4b6eb71"
+    },
+    {
+      "from": "8dfc33c6-3991-46ed-95bb-441d477affbb",
+      "to": "ea56606e-06bd-4cd0-98f6-ef87ac5a9a01",
+      "title": "",
+      "id": "5a12188d-39c0-4d0d-b9c7-129af9761ec0"
+    },
+    {
+      "from": "8dfc33c6-3991-46ed-95bb-441d477affbb",
+      "to": "c7f0db65-26e1-46ad-af94-afefeb0ea6aa",
+      "title": "",
+      "id": "a4b7d5eb-316f-4658-b383-a573dd8e8497"
+    },
+    {
+      "from": "e3d2e1fb-b73b-4377-9983-13d5cc6f87ec",
+      "to": "f83810e7-9f5d-4b2b-8637-34e831f962fb",
+      "title": "",
+      "id": "2fb44f46-ebba-4507-a218-3112823aa1fd"
+    },
+    {
+      "from": "f83810e7-9f5d-4b2b-8637-34e831f962fb",
+      "to": "1ace2584-9e05-48cd-b1fd-d20983c06bf4",
+      "title": "",
+      "id": "2cd7e933-f7da-4bca-8342-45a690c6f2d5"
+    },
+    {
+      "from": "f83810e7-9f5d-4b2b-8637-34e831f962fb",
+      "to": "b5f80740-d59c-4086-8f0d-cf121b23d457",
+      "title": "",
+      "id": "ffcc48d7-7eef-4638-a7f8-c929663cc2fe"
+    }
+  ]
+}

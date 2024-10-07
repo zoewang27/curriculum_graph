@@ -1,0 +1,779 @@
+{
+  "nodes": [
+    {
+      "id": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "label": "Data Structures",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Data Structures",
+      "description": "Data Structures: ",
+      "layer": 0,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "be0cd596-b20b-4ee7-806d-5b41055e60ce",
+      "label": "Data Structures Introduction",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Data Structures Introduction",
+      "description": "Data Structures Introduction: Data Structures Introduction: Fundamentals of organizing and storing data efficiently.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a8db9ecc-9aae-4638-a010-33d79c7de740",
+      "label": "ADT: STACK",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ADT: STACK",
+      "description": "ADT: STACK: ADT: STACK: Abstract Data Type representing a collection of elements with Last In, First Out (LIFO) access.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "45736c90-7f9f-47e8-9661-9a774cd99c26",
+      "label": "ADT: QUEUE",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ADT: QUEUE",
+      "description": "ADT: QUEUE: ADT: QUEUE: Abstract Data Type representing a collection of elements with First In, First Out (FIFO) access.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7f9c4604-6cc0-4d83-9d73-ed6325cfe663",
+      "label": "DS: ARRAY",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DS: ARRAY",
+      "description": "DS: ARRAY: DS: ARRAY: Data Structure storing elements in contiguous memory locations with constant-time access to elements using indices.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "08c8dcff-b5fb-4ce7-94ef-dfaf25d9a13d",
+      "label": "Searching And Lists",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Searching And Lists",
+      "description": "Searching And Lists: Searching And Lists: Techniques for searching data efficiently and organizing data in lists.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0031df3a-d942-4a36-b4cc-e78618f5e209",
+      "label": "ALG: Search algorithms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ALG: Search algorithms",
+      "description": "ALG: Search algorithms: ALG: Search algorithms: Various algorithms for searching data including linear search, binary search, and more.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "197e049d-2f7c-43eb-ae06-158997939bf0",
+      "label": "DS: Dynamic array",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DS: Dynamic array",
+      "description": "DS: Dynamic array: DS: Dynamic array: Data Structure similar to an array but with the ability to resize dynamically as needed.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "acb36ffc-f98b-4448-ba33-8905b0b9227d",
+      "label": "Searching And Lists",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Searching And Lists",
+      "description": "Searching And Lists: DS: Linked list: Data Structure where elements are stored in nodes, each containing a reference to the next node in the sequence.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "65e5cad4-5de8-4410-afae-47c37ad48919",
+      "label": "Measuring performance",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Measuring performance",
+      "description": "Measuring performance: Measuring performance: Methods for evaluating the efficiency and effectiveness of algorithms and data structures.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3e8c16f5-92f4-4fe1-b028-fb823c733d9f",
+      "label": "Analysing Performance",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Analysing Performance",
+      "description": "Analysing Performance: Analysing Performance: Techniques for analyzing the performance of algorithms and data structures under various conditions.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7e319154-2344-4c7f-a6f8-d367ed9e745d",
+      "label": "Simplifying With Bounds",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Simplifying With Bounds",
+      "description": "Simplifying With Bounds: Simplifying With Bounds: Using upper and lower bounds to simplify the analysis of algorithms and data structures.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "aa0d1509-2356-404d-9231-22e6faa25f85",
+      "label": "Sets And Maps",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Sets And Maps",
+      "description": "Sets And Maps: Sets And Maps: Fundamental data structures for storing unique elements (sets) and key-value pairs (maps).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d957ddde-6639-408e-b542-53ae2c2b7447",
+      "label": "A Naive Set Implementation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "A Naive Set Implementation",
+      "description": "A Naive Set Implementation: A Naive Set Implementation: Basic implementation of a set data structure without optimization or sophisticated features.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1849eb5d-59d7-4965-9e68-42015ab218d3",
+      "label": "Efficient Sets",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Efficient Sets",
+      "description": "Efficient Sets: Efficient Sets: Data structures optimized for efficient storage and retrieval of unique elements.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1acf79a6-c19a-441c-8950-a535adbbd66a",
+      "label": "ALG: BINARY SEARCH",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ALG: BINARY SEARCH",
+      "description": "ALG: BINARY SEARCH: ALG: BINARY SEARCH: Algorithm for searching sorted data by repeatedly dividing the search interval in half.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "239245e5-6607-4faf-9152-95e24327e804",
+      "label": "Better Sets And Maps With Hash Tables",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Better Sets And Maps With Hash Tables",
+      "description": "Better Sets And Maps With Hash Tables: Better Sets And Maps With Hash Tables: Data structures utilizing hash tables to achieve efficient insertion, deletion, and retrieval operations for sets and maps.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "35e11bb4-c60b-4890-a0ad-53db7f5aa43e",
+      "label": "Algorithmic Bounds and Tree",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Algorithmic Bounds and Tree",
+      "description": "Algorithmic Bounds and Tree: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "33207a0b-3636-434b-a422-6314f4da1fe4",
+      "label": "Algorithmic Bounds",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Algorithmic Bounds",
+      "description": "Algorithmic Bounds: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "acfeb525-d692-4ed5-9886-187b99f79100",
+      "label": "Upper Bound: Big O",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Upper Bound: Big O",
+      "description": "Upper Bound: Big O: Upper Bound: Big O: Represents the worst-case time complexity of an algorithm.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9b7d5dc6-db39-44f2-8f33-d4f923ab63a1",
+      "label": "Lower Bound: Omega",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Lower Bound: Omega",
+      "description": "Lower Bound: Omega: Lower Bound: Omega: Represents the best-case time complexity of an algorithm.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "dc5f4f0a-34a4-404b-a8b6-3d61fed04848",
+      "label": "Sharp Bounds: Theta",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Sharp Bounds: Theta",
+      "description": "Sharp Bounds: Theta: Sharp Bounds: Theta: Represents both upper and lower bounds, indicating tight asymptotic behavior.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4a795b24-23a1-4f50-be26-51e85c585915",
+      "label": "Data Structure: Tree",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Data Structure: Tree",
+      "description": "Data Structure: Tree: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1cce5f28-2992-475f-aeb5-5c655e9f2bd1",
+      "label": "tree",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "tree",
+      "description": "tree: Tree: A hierarchical data structure consisting of nodes connected by edges, typically with one designated as the root.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "70dc329b-e16e-4cf7-bb3f-30e2fc72e5df",
+      "label": "Trie",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Trie",
+      "description": "Trie: Trie: A tree data structure used for efficient retrieval of strings, particularly in dictionary implementations.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "653b5154-e4f0-4513-afee-e01eec3cc197",
+      "label": "Suffix tree",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Suffix tree",
+      "description": "Suffix tree: Suffix Tree: A tree data structure used for pattern matching in strings, particularly for finding all occurrences of a substring in a larger string.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "584e720d-70e5-4420-94f2-c8671d96b148",
+      "label": "Data Structure: Binary Tree",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Data Structure: Binary Tree",
+      "description": "Data Structure: Binary Tree: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e0ea5438-a9e5-4291-b32a-86f2dc2e7452",
+      "label": "Binary Tree",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Binary Tree",
+      "description": "Binary Tree: Binary Tree: A tree data structure in which each node has at most two children, commonly referred to as the left child and the right child.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bd1a579a-14d9-431e-850b-af2a65fb9372",
+      "label": "ADT: Priority Queue",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ADT: Priority Queue",
+      "description": "ADT: Priority Queue: A data structure that supports efficient retrieval of the highest (or lowest) priority element.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3c2b7db0-7345-4709-ae65-b3eabf796a11",
+      "label": "DS: Binary Heap",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DS: Binary Heap",
+      "description": "DS: Binary Heap: A complete binary tree with a special property where the value of each node is greater than or equal to (or less than or equal to) the values of its children.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ad25ee8e-7959-4aec-871f-797a532192d9",
+      "label": "Algorithm: Heapsort",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Algorithm: Heapsort",
+      "description": "Algorithm: Heapsort: A comparison-based sorting algorithm that uses a binary heap data structure to sort elements in-place.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8442313d-77b6-4008-a89f-112c3a868fec",
+      "label": "DS: Binary Search Tree",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "DS: Binary Search Tree",
+      "description": "DS: Binary Search Tree: A binary tree data structure in which each node has a key greater than all keys in its left subtree and less than all keys in its right subtree.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2e45b27b-98f0-4e57-b654-8be13d0330f6",
+      "label": "Balancing A Bst",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Balancing A Bst",
+      "description": "Balancing A Bst: Process of ensuring that the height of a binary search tree remains balanced to maintain efficient search, insertion, and deletion operations.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "986d6ba7-e50c-4c07-96ee-4c42dfca2705",
+      "label": "Rebalancing A Bst",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Rebalancing A Bst",
+      "description": "Rebalancing A Bst: The process of restoring balance in a binary search tree after an insertion or deletion operation that may have caused it to become unbalanced.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d202a04c-0f15-4fce-869d-bdd1815a743d",
+      "label": "Limitations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Limitations",
+      "description": "Limitations: Constraints or drawbacks associated with binary search trees, such as the potential for degeneration into a linear data structure.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6929b97c-24ae-46ea-9510-2c51ea1230c1",
+      "label": "Self-Balancing Trees: AVL Trees",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Self-Balancing Trees: AVL Trees",
+      "description": "Self-Balancing Trees: AVL Trees: A type of binary search tree that automatically maintains balance by performing rotations after insertions and deletions to ensure a maximum height difference of 1 between subtrees.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "36e348a6-13bf-46c3-ac4b-609a9b72ed42",
+      "label": "Amortized Analysis",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Amortized Analysis",
+      "description": "Amortized Analysis: A method of analyzing the time complexity of algorithms over a sequence of operations, considering both expensive and inexpensive operations to provide an average performance guarantee.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "551b595a-15c4-45ff-8ba7-48944c7d7390",
+      "label": "Graph",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Graph",
+      "description": "Graph: A data structure composed of a set of vertices and a set of edges connecting pairs of vertices.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7fbf20fa-f9ba-4cc7-a411-03c6bfaad413",
+      "label": "Graph Representations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graph Representations",
+      "description": "Graph Representations: Various ways to represent graphs, such as adjacency matrix, adjacency list, and edge list.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7869d7bc-2706-4df7-8628-91d179af8294",
+      "label": "Graph Search",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graph Search",
+      "description": "Graph Search: Algorithms for traversing or searching a graph to visit all vertices or find specific paths or patterns within the graph.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "35dbba9a-f273-4508-aad3-e763618aa1a3",
+      "label": "Disjoint Set And Minimum Spanning Tree",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Disjoint Set And Minimum Spanning Tree",
+      "description": "Disjoint Set And Minimum Spanning Tree: Techniques and algorithms related to disjoint set data structures and the construction of minimum spanning trees in graphs.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "be0cd596-b20b-4ee7-806d-5b41055e60ce",
+      "title": "",
+      "id": "f90625f5-cf72-4f01-b2e2-b7a603031f6e"
+    },
+    {
+      "from": "be0cd596-b20b-4ee7-806d-5b41055e60ce",
+      "to": "a8db9ecc-9aae-4638-a010-33d79c7de740",
+      "title": "",
+      "id": "26c5b5f7-738d-4113-94ae-702be2c628fa"
+    },
+    {
+      "from": "be0cd596-b20b-4ee7-806d-5b41055e60ce",
+      "to": "45736c90-7f9f-47e8-9661-9a774cd99c26",
+      "title": "",
+      "id": "f69735dc-9594-4128-aa9e-c1fe9b323670"
+    },
+    {
+      "from": "be0cd596-b20b-4ee7-806d-5b41055e60ce",
+      "to": "7f9c4604-6cc0-4d83-9d73-ed6325cfe663",
+      "title": "",
+      "id": "6aaaf878-24a0-4320-9cb6-fae081a98d14"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "08c8dcff-b5fb-4ce7-94ef-dfaf25d9a13d",
+      "title": "",
+      "id": "25efaa61-248b-40ed-9782-800e495ff384"
+    },
+    {
+      "from": "08c8dcff-b5fb-4ce7-94ef-dfaf25d9a13d",
+      "to": "0031df3a-d942-4a36-b4cc-e78618f5e209",
+      "title": "",
+      "id": "5774f793-b643-47c8-83d1-b3c3a58c1ff0"
+    },
+    {
+      "from": "08c8dcff-b5fb-4ce7-94ef-dfaf25d9a13d",
+      "to": "197e049d-2f7c-43eb-ae06-158997939bf0",
+      "title": "",
+      "id": "1728d1c6-f7be-438e-ac3b-64ca3b6a64d7"
+    },
+    {
+      "from": "08c8dcff-b5fb-4ce7-94ef-dfaf25d9a13d",
+      "to": "acb36ffc-f98b-4448-ba33-8905b0b9227d",
+      "title": "",
+      "id": "1b1ea2f6-047f-4e73-8f31-32ae24a546cb"
+    },
+    {
+      "from": "08c8dcff-b5fb-4ce7-94ef-dfaf25d9a13d",
+      "to": "65e5cad4-5de8-4410-afae-47c37ad48919",
+      "title": "",
+      "id": "09915d15-127a-4416-82f3-89bf0922631d"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "3e8c16f5-92f4-4fe1-b028-fb823c733d9f",
+      "title": "",
+      "id": "569c10bd-5328-47bd-9557-ba203fcc2f0b"
+    },
+    {
+      "from": "3e8c16f5-92f4-4fe1-b028-fb823c733d9f",
+      "to": "7e319154-2344-4c7f-a6f8-d367ed9e745d",
+      "title": "",
+      "id": "60513499-7d01-4b36-adc9-afd156e3967c"
+    },
+    {
+      "from": "3e8c16f5-92f4-4fe1-b028-fb823c733d9f",
+      "to": "aa0d1509-2356-404d-9231-22e6faa25f85",
+      "title": "",
+      "id": "e1193450-3b9b-4b7e-9ce7-6089044d1933"
+    },
+    {
+      "from": "3e8c16f5-92f4-4fe1-b028-fb823c733d9f",
+      "to": "d957ddde-6639-408e-b542-53ae2c2b7447",
+      "title": "",
+      "id": "50289193-58d5-4f9e-9fc2-4d913a16773f"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "1849eb5d-59d7-4965-9e68-42015ab218d3",
+      "title": "",
+      "id": "cf2b9fea-ff36-4aed-88c2-5532ee634241"
+    },
+    {
+      "from": "1849eb5d-59d7-4965-9e68-42015ab218d3",
+      "to": "1acf79a6-c19a-441c-8950-a535adbbd66a",
+      "title": "",
+      "id": "ae53d2a3-59e5-4385-a4fc-2d8e2207dbfa"
+    },
+    {
+      "from": "1849eb5d-59d7-4965-9e68-42015ab218d3",
+      "to": "239245e5-6607-4faf-9152-95e24327e804",
+      "title": "",
+      "id": "22b44f0a-6e6c-4e20-99fb-82db0da9457f"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "35e11bb4-c60b-4890-a0ad-53db7f5aa43e",
+      "title": "",
+      "id": "982b9094-7156-4252-b571-362a60f31960"
+    },
+    {
+      "from": "35e11bb4-c60b-4890-a0ad-53db7f5aa43e",
+      "to": "33207a0b-3636-434b-a422-6314f4da1fe4",
+      "title": "",
+      "id": "a248e5a0-6ef5-4e12-8a99-72bfd453d9e0"
+    },
+    {
+      "from": "33207a0b-3636-434b-a422-6314f4da1fe4",
+      "to": "acfeb525-d692-4ed5-9886-187b99f79100",
+      "title": "",
+      "id": "ef5721df-99f2-4608-9e5d-c1eb0500a810"
+    },
+    {
+      "from": "33207a0b-3636-434b-a422-6314f4da1fe4",
+      "to": "9b7d5dc6-db39-44f2-8f33-d4f923ab63a1",
+      "title": "",
+      "id": "2f6262fb-299a-4da3-9842-ca3bbc43f100"
+    },
+    {
+      "from": "33207a0b-3636-434b-a422-6314f4da1fe4",
+      "to": "dc5f4f0a-34a4-404b-a8b6-3d61fed04848",
+      "title": "",
+      "id": "3b151268-0d2f-4233-81fc-84ee2dd89078"
+    },
+    {
+      "from": "35e11bb4-c60b-4890-a0ad-53db7f5aa43e",
+      "to": "4a795b24-23a1-4f50-be26-51e85c585915",
+      "title": "",
+      "id": "eea05f8d-8a57-4fb4-b8ad-7554dd0cdb47"
+    },
+    {
+      "from": "4a795b24-23a1-4f50-be26-51e85c585915",
+      "to": "1cce5f28-2992-475f-aeb5-5c655e9f2bd1",
+      "title": "",
+      "id": "432ae17b-171c-4bd4-88fd-e70d71082cf9"
+    },
+    {
+      "from": "4a795b24-23a1-4f50-be26-51e85c585915",
+      "to": "70dc329b-e16e-4cf7-bb3f-30e2fc72e5df",
+      "title": "",
+      "id": "a6686f45-225b-4c04-8f28-c751c89b99a1"
+    },
+    {
+      "from": "4a795b24-23a1-4f50-be26-51e85c585915",
+      "to": "653b5154-e4f0-4513-afee-e01eec3cc197",
+      "title": "",
+      "id": "a79f1dc1-a57c-4d61-a0a9-3d9830029271"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "584e720d-70e5-4420-94f2-c8671d96b148",
+      "title": "",
+      "id": "c22da702-ce8f-4ed3-89c2-a185b527605e"
+    },
+    {
+      "from": "584e720d-70e5-4420-94f2-c8671d96b148",
+      "to": "e0ea5438-a9e5-4291-b32a-86f2dc2e7452",
+      "title": "",
+      "id": "1207b54e-41a2-4656-a5f5-5bf4dd26d201"
+    },
+    {
+      "from": "584e720d-70e5-4420-94f2-c8671d96b148",
+      "to": "bd1a579a-14d9-431e-850b-af2a65fb9372",
+      "title": "",
+      "id": "500adc96-0d29-40a5-82a6-4b9d40cb91d7"
+    },
+    {
+      "from": "584e720d-70e5-4420-94f2-c8671d96b148",
+      "to": "3c2b7db0-7345-4709-ae65-b3eabf796a11",
+      "title": "",
+      "id": "7894adfc-2ab0-471c-8ecb-52a0ddd893ae"
+    },
+    {
+      "from": "584e720d-70e5-4420-94f2-c8671d96b148",
+      "to": "ad25ee8e-7959-4aec-871f-797a532192d9",
+      "title": "",
+      "id": "b376bcbc-aacd-4b45-892d-a19263ef0319"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "8442313d-77b6-4008-a89f-112c3a868fec",
+      "title": "",
+      "id": "a23019f0-3703-41b4-844f-7ad8163e9acc"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "2e45b27b-98f0-4e57-b654-8be13d0330f6",
+      "title": "",
+      "id": "aef6f003-0776-45ac-9939-d6d443ef9816"
+    },
+    {
+      "from": "2e45b27b-98f0-4e57-b654-8be13d0330f6",
+      "to": "986d6ba7-e50c-4c07-96ee-4c42dfca2705",
+      "title": "",
+      "id": "d0acff81-1765-4af8-84b8-f8491d59bb4a"
+    },
+    {
+      "from": "2e45b27b-98f0-4e57-b654-8be13d0330f6",
+      "to": "d202a04c-0f15-4fce-869d-bdd1815a743d",
+      "title": "",
+      "id": "ff0e59ec-2b47-4e4a-b916-e28d0915f6ba"
+    },
+    {
+      "from": "2e45b27b-98f0-4e57-b654-8be13d0330f6",
+      "to": "6929b97c-24ae-46ea-9510-2c51ea1230c1",
+      "title": "",
+      "id": "461d257c-d08d-4f3f-85ee-920c68417009"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "36e348a6-13bf-46c3-ac4b-609a9b72ed42",
+      "title": "",
+      "id": "20c10781-c6fe-4c00-99de-097688bd6e51"
+    },
+    {
+      "from": "bca12540-eb91-4ec4-b730-ea195cf13eb8",
+      "to": "551b595a-15c4-45ff-8ba7-48944c7d7390",
+      "title": "",
+      "id": "9795f85b-887f-4283-a13e-4f7e35a45573"
+    },
+    {
+      "from": "551b595a-15c4-45ff-8ba7-48944c7d7390",
+      "to": "7fbf20fa-f9ba-4cc7-a411-03c6bfaad413",
+      "title": "",
+      "id": "06286cd7-accc-4ea5-a02e-4897db1b766f"
+    },
+    {
+      "from": "551b595a-15c4-45ff-8ba7-48944c7d7390",
+      "to": "7869d7bc-2706-4df7-8628-91d179af8294",
+      "title": "",
+      "id": "a093abb1-2273-4dd6-bed6-b58053b8538b"
+    },
+    {
+      "from": "551b595a-15c4-45ff-8ba7-48944c7d7390",
+      "to": "35dbba9a-f273-4508-aad3-e763618aa1a3",
+      "title": "",
+      "id": "20811c2d-f6d9-4e91-a1e7-9e946dfb8758"
+    }
+  ]
+}

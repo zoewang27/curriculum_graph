@@ -1,0 +1,969 @@
+{
+  "nodes": [
+    {
+      "id": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "label": "Discrete Math",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Discrete Math",
+      "description": "Discrete Math: ",
+      "layer": 0,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "label": "Introduction and Propositional Logic",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Introduction and Propositional Logic",
+      "description": "Introduction and Propositional Logic: An overview of propositional logic, which deals with propositions or statements that are either true or false.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2908a599-783a-4787-a730-de41dec31bb4",
+      "label": "Propositional Logic",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Propositional Logic",
+      "description": "Propositional Logic: The formal system of logic that represents propositions using variables and logical connectives such as AND, OR, and NOT.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ce85d050-dd05-44c9-b8ac-6e8cea9af05c",
+      "label": "Propositional Equivalences",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Propositional Equivalences",
+      "description": "Propositional Equivalences: Rules and principles that determine when two propositional expressions are logically equivalent.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7f98de02-e4e1-4330-9fdb-eaa6f8ed2d27",
+      "label": "Proofs and Inferences",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Proofs and Inferences",
+      "description": "Proofs and Inferences: Methods for demonstrating the validity of propositional statements, often using logical rules and inference techniques.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0bf6a3c3-a85b-4403-b99f-b44f1655786a",
+      "label": "Natural Deduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Natural Deduction",
+      "description": "Natural Deduction: A method of reasoning in propositional logic that involves deriving conclusions from premises using inference rules.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5ed5a23a-fc13-4468-b055-c44cd1047b01",
+      "label": "Tableau",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Tableau",
+      "description": "Tableau: A proof technique in which the truth of a proposition is systematically explored by constructing a tree-like structure.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "15f938b5-baef-4654-ab0a-814a40f08b2b",
+      "label": "Informal Proofs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Informal Proofs",
+      "description": "Informal Proofs: Proofs that use natural language and intuitive reasoning to demonstrate the validity of propositions, often found in everyday discourse and mathematical exposition.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "label": "Recursion",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Recursion",
+      "description": "Recursion: A programming technique where a function calls itself in order to solve problems that can be broken down into smaller, similar subproblems.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9a94cce0-b547-4080-ba8b-cac990d358d2",
+      "label": "Proofs over Formulae",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Proofs over Formulae",
+      "description": "Proofs over Formulae: Demonstrating the correctness or properties of mathematical formulae through deductive reasoning and logical inference.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2b487c57-46b7-4d3f-abdf-fb7a17c9e842",
+      "label": "Recursive Definitions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Recursive Definitions",
+      "description": "Recursive Definitions: Definitions that refer to themselves in their own definition, often used to define mathematical structures or functions.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "91a7bb9e-5bda-47db-9b59-d936a1dcc8d9",
+      "label": "The Natural Numbers",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "The Natural Numbers",
+      "description": "The Natural Numbers: The set of positive integers starting from 1, often denoted as \u2115",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "71f56fbb-4415-46df-861a-d87d5e032b37",
+      "label": "More Complex Recursive Definitions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "More Complex Recursive Definitions",
+      "description": "More Complex Recursive Definitions: Recursive definitions that involve multiple base cases or conditions, leading to more intricate structures or behaviors.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c40cc05a-ed8a-4573-a3cd-f4ed1ca1dba0",
+      "label": "Recursive Algoritms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Recursive Algoritms",
+      "description": "Recursive Algoritms: Algorithms that solve problems by breaking them down into smaller instances of the same problem until a base case is reached.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "40745355-03e3-4311-b3be-0030f51f2916",
+      "label": "Predicate Logic",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Predicate Logic",
+      "description": "Predicate Logic: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f4b5371a-e425-40a9-8cce-75dd1a484138",
+      "label": "Predicates and Quantifiers",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Predicates and Quantifiers",
+      "description": "Predicates and Quantifiers: Predicate logic extends propositional logic by introducing predicates, which are functions that map objects to truth values, and quantifiers,",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f8342557-94c7-4528-afc7-4fe28beb268e",
+      "label": "Nested Quantifiers",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Nested Quantifiers",
+      "description": "Nested Quantifiers: Nested Quantifiers: In predicate logic, quantifiers can be nested within each other to express statements about relationships between multiple variables or objects.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c3b63db4-17ce-4ec1-8b2e-ceed749db18f",
+      "label": "Proofs in First Order Logic",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Proofs in First Order Logic",
+      "description": "Proofs in First Order Logic: Proofs in First Order Logic: First-order logic allows for the formal proof of statements using rules of inference and axioms, with the aim of establishing the truth of universally quantified statements.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "784271b0-4cfa-49ea-ab17-d740027cebbc",
+      "label": "Natural Deduction for Predicate Logic",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Natural Deduction for Predicate Logic",
+      "description": "Natural Deduction for Predicate Logic: Natural Deduction for Predicate Logic: Natural deduction is a method for proving the validity of logical formulas by constructing proofs using inference rules and axioms, tailored for predicate logic to handle quantifiers and predicates.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ce6b70d3-2a79-4e75-bdf0-3ff03c466175",
+      "label": "Informal Proofs for Predicate Logic",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Informal Proofs for Predicate Logic",
+      "description": "Informal Proofs for Predicate Logic: Informal Proofs for Predicate Logic: Informal proofs provide a less formal but intuitive way to establish the truth of statements in predicate logic, often relying on reasoning techniques and examples to illustrate logical relationships.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "16691c65-e4c7-48c9-9484-6391f0dc23c4",
+      "label": "Mathematical Induction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Mathematical Induction",
+      "description": "Mathematical Induction: Mathematical Induction: Mathematical induction is a proof technique used to establish the truth of statements about natural numbers by proving a base case and then showing that if the statement holds for one natural number, it also holds for the next.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ace44cdb-b120-4bb4-8e0d-fb3826244dcb",
+      "label": "Strong Induction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Strong Induction",
+      "description": "Strong Induction: Strong Induction: Strong induction is a variant of mathematical induction that allows the assumption that the statement holds for all previous natural numbers up to a given value, rather than just the immediately preceding number.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "label": "Set Theory",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Set Theory",
+      "description": "Set Theory: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4702f5e4-a32c-40e7-9937-6c35cb004238",
+      "label": "Sets",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Sets",
+      "description": "Sets: Sets: Sets are collections of distinct objects, considered as a single entity. They are fundamental in mathematics and used to represent groups of elements with common properties.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0b79eaaf-86e2-4bcf-8ba2-bfab1007e98a",
+      "label": "Operations with Sets",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Operations with Sets",
+      "description": "Operations with Sets: Operations with Sets: Sets can undergo various operations, including union, intersection, difference, and complement, allowing for manipulation and comparison of sets.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "eeed6713-072f-4ff6-a584-2e92e1c7e1fa",
+      "label": "Relations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Relations",
+      "description": "Relations: Relations: Relations are associations between elements of sets. They can be represented as sets of ordered pairs and are used to describe connections or interactions between objects.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "84bc03fb-1e51-4bea-baff-c2de4fdb837a",
+      "label": "Equivalence Relations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Equivalence Relations",
+      "description": "Equivalence Relations: Equivalence Relations: Equivalence relations are a special type of relation that satisfy three properties: reflexivity, symmetry, and transitivity. They partition a set into disjoint subsets called equivalence classes.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7c5f1347-d51b-4cb1-8a83-8adce449fec9",
+      "label": "Functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Functions",
+      "description": "Functions: Functions: Functions are mathematical constructs that relate elements of one set (the domain) to elements of another set (the codomain). They assign exactly one output to each input and are essential for modeling relationships between objects.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "892ef36b-9060-47a9-8880-8d4d6da9295b",
+      "label": "Cardinality of sets",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Cardinality of sets",
+      "description": "Cardinality of sets: Cardinality of Sets: The cardinality of a set is the measure of its size, representing the number of elements it contains. It can be finite or infinite, and different techniques, such as counting and bijections, are used to determine cardinality.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c7fb84aa-e286-4b9b-9597-6e5aa2ac0a18",
+      "label": "Algebra",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Algebra",
+      "description": "Algebra: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1f1cdfaf-8202-493e-b166-8cc661779cfa",
+      "label": "Groups",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Groups",
+      "description": "Groups: Groups: Groups are algebraic structures consisting of a set together with a binary operation that satisfies four properties: closure, associativity, identity element, and invertibility.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b78a4e7b-6f84-4663-a3b6-bb170d938a59",
+      "label": "Subgroups",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Subgroups",
+      "description": "Subgroups: Subgroups: Subgroups are subsets of a group that form a group themselves under the same binary operation.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c7321106-defe-40ec-84c3-c2bad4d5947b",
+      "label": "Morphisms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Morphisms",
+      "description": "Morphisms: Morphisms: Morphisms are structure-preserving mappings between algebraic structures.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c35a990a-7288-417e-9a37-93c63fe164fd",
+      "label": "Multiplicative Groups",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Multiplicative Groups",
+      "description": "Multiplicative Groups: Multiplicative Groups: Multiplicative groups arise from certain sets of elements equipped with multiplication as the binary operation.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f452f067-8531-4c82-86f8-cb0ebd723f5c",
+      "label": "RSA",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "RSA",
+      "description": "RSA: RSA (Rivest-Shamir-Adleman) is a widely used public-key encryption algorithm based on the difficulty of factoring large prime numbers.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6fbfaa27-730f-4e54-8c8a-1784a6021011",
+      "label": "Other Results of Group and Field Theory",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Other Results of Group and Field Theory",
+      "description": "Other Results of Group and Field Theory: Group and field theory yield various important results and theorems, including Lagrange's theorem, which relates the order of a subgroup to the order of the parent group, and the fundamental theorem of finite abelian groups",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "label": "Combinatorics",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Combinatorics",
+      "description": "Combinatorics: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1dc02670-fcd8-44e0-af34-668a05ebf03a",
+      "label": "The Basics of Counting",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "The Basics of Counting",
+      "description": "The Basics of Counting: The Basics of Counting: Combinatorics deals with counting, arranging, and choosing objects. It includes fundamental concepts such as permutations, combinations, and the principle of inclusion-exclusion.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "704313c2-7fd5-4ee4-a63f-35aa41f2a58d",
+      "label": "Permutations and Combinations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Permutations and Combinations",
+      "description": "Permutations and Combinations: Permutations and Combinations: Permutations are arrangements of objects in a specific order, while combinations are selections of objects without considering the order.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e7ae4bb0-63d2-4372-825e-48155a0cbed9",
+      "label": "Binomial Coefficients and Identities",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Binomial Coefficients and Identities",
+      "description": "Binomial Coefficients and Identities: Binomial Coefficients and Identities: Binomial coefficients represent the number of ways to choose k elements from a set of n elements.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "295dd219-7828-40db-b67b-81de1550ac3b",
+      "label": "Generalized Permutations and Combinations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Generalized Permutations and Combinations",
+      "description": "Generalized Permutations and Combinations: Generalized Permutations and Combinations: Generalizations of permutations and combinations involve situations with restrictions or additional conditions. Examples include permutations with repetition, combinations with replacement, and multinomial coefficients.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "31d14cb9-aab6-4442-a411-bd8c00e8cd38",
+      "label": "Catalan Numbers",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Catalan Numbers",
+      "description": "Catalan Numbers: Catalan Numbers: Catalan numbers are a sequence of natural numbers that appear in various combinatorial problems, such as counting different types of well-formed parentheses expressions, binary trees, and polygon triangulations.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "label": "Graphs",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Graphs",
+      "description": "Graphs: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2214f1cc-1488-48fc-b8d4-2b669bc6d5a8",
+      "label": "Graphs and Graph Models",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graphs and Graph Models",
+      "description": "Graphs and Graph Models: Graphs and Graph Models: Graph theory studies the properties and relationships of graphs, which consist of vertices (nodes) and edges (connections). Graphs model various real-world scenarios, such as networks, social interactions, and transportation systems.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "fddecbdc-8dac-4266-ab63-b26e90c3101b",
+      "label": "Graph Terminology: Degrees and Neighbourhoods",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graph Terminology: Degrees and Neighbourhoods",
+      "description": "Graph Terminology: Degrees and Neighbourhoods: Graph Terminology: Degrees and Neighbourhoods: The degree of a vertex refers to the number of edges incident to it, while the neighbourhood of a vertex includes all vertices adjacent to it.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0fa6fba7-d9e7-4ce7-885c-95faf643668a",
+      "label": "Named Graphs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Named Graphs",
+      "description": "Named Graphs: Named Graphs: Named graphs are specific types of graphs with well-defined properties or structures. Examples include complete graphs, cycles, paths, and trees.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "268ef451-7808-4800-a0f1-ad7e0ac169e5",
+      "label": "Connectivity",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Connectivity",
+      "description": "Connectivity: Connectivity: Connectivity in graphs refers to the degree to which vertices are connected.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d6707691-9db6-4010-b8de-3415f070522f",
+      "label": "Commonly Known Graph Problems",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Commonly Known Graph Problems",
+      "description": "Commonly Known Graph Problems: Commonly Known Graph Problems: Graph theory encompasses a wide range of problems, including finding shortest paths, determining connectivity, identifying cycles, and solving optimization tasks like the traveling salesman problem",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e7bd0d8d-1d95-4b9b-9ec6-f25785bc7184",
+      "label": "Representing Graphs and Graph Isomorphisms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Representing Graphs and Graph Isomorphisms",
+      "description": "Representing Graphs and Graph Isomorphisms: Representing Graphs and Graph Isomorphisms: Graphs can be represented using various data structures, such as adjacency matrices or adjacency lists. Graph isomorphism deals with determining whether two graphs are structurally identical, despite differences in vertex labeling or edge orientation.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d4a897bc-7f2d-4f61-8fc7-0cb1d982d8e0",
+      "label": "Shortest Path Problems",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Shortest Path Problems",
+      "description": "Shortest Path Problems: Shortest Path Problems: Shortest path problems involve finding the most efficient route between two vertices in a graph. Algorithms like Dijkstra's algorithm and Bellman-Ford algorithm are commonly used to solve such problems.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2f70d077-3166-46db-aafa-811c521f8e51",
+      "label": "Euler and Hamiltonian Graphs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Euler and Hamiltonian Graphs",
+      "description": "Euler and Hamiltonian Graphs: Euler and Hamiltonian Graphs: Eulerian graphs are graphs that contain an Eulerian cycle, a path that traverses every edge exactly once. Hamiltonian graphs contain a Hamiltonian cycle, a path that visits every vertex exactly once.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "title": "",
+      "id": "2dca986d-682a-4f33-ba9f-de191f5ddae9"
+    },
+    {
+      "from": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "to": "2908a599-783a-4787-a730-de41dec31bb4",
+      "title": "",
+      "id": "01f21285-6fbb-4d04-981c-319381fb1e3c"
+    },
+    {
+      "from": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "to": "ce85d050-dd05-44c9-b8ac-6e8cea9af05c",
+      "title": "",
+      "id": "8b045c7f-5666-44e6-a2aa-1d3afef27eb0"
+    },
+    {
+      "from": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "to": "7f98de02-e4e1-4330-9fdb-eaa6f8ed2d27",
+      "title": "",
+      "id": "923add5d-de22-4f3a-9d4d-7c08640487ed"
+    },
+    {
+      "from": "7f98de02-e4e1-4330-9fdb-eaa6f8ed2d27",
+      "to": "0bf6a3c3-a85b-4403-b99f-b44f1655786a",
+      "title": "",
+      "id": "f93124b1-5b7d-4249-88ed-a132b1a13a72"
+    },
+    {
+      "from": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "to": "5ed5a23a-fc13-4468-b055-c44cd1047b01",
+      "title": "",
+      "id": "2b90434f-9ae3-46d1-b254-284db23ff49d"
+    },
+    {
+      "from": "b632b53d-9fc4-4dcf-b5cf-66740600a986",
+      "to": "15f938b5-baef-4654-ab0a-814a40f08b2b",
+      "title": "",
+      "id": "b5677631-13f3-468e-89ba-d662ee5b9b1a"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "title": "",
+      "id": "367785d9-ff92-46cb-abc5-43488918bb1d"
+    },
+    {
+      "from": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "to": "9a94cce0-b547-4080-ba8b-cac990d358d2",
+      "title": "",
+      "id": "7dd2d08f-6a9b-4443-95e6-565934ad38ee"
+    },
+    {
+      "from": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "to": "2b487c57-46b7-4d3f-abdf-fb7a17c9e842",
+      "title": "",
+      "id": "83221c79-69a3-41a2-96ab-8d8eefea84dd"
+    },
+    {
+      "from": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "to": "91a7bb9e-5bda-47db-9b59-d936a1dcc8d9",
+      "title": "",
+      "id": "d796b872-4ff7-48b7-b056-24d2ee3c36b2"
+    },
+    {
+      "from": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "to": "71f56fbb-4415-46df-861a-d87d5e032b37",
+      "title": "",
+      "id": "b4bfd32b-d6aa-43bc-a004-9a892a08be26"
+    },
+    {
+      "from": "da8d583a-c295-44ff-9402-408073a4bef3",
+      "to": "c40cc05a-ed8a-4573-a3cd-f4ed1ca1dba0",
+      "title": "",
+      "id": "fbc47911-6953-4838-b42d-e6db33581308"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "40745355-03e3-4311-b3be-0030f51f2916",
+      "title": "",
+      "id": "52b7ef38-fa7b-43ff-80d2-13ddf450def0"
+    },
+    {
+      "from": "40745355-03e3-4311-b3be-0030f51f2916",
+      "to": "f4b5371a-e425-40a9-8cce-75dd1a484138",
+      "title": "",
+      "id": "08d96978-dd85-4545-9ec9-bda126c6997f"
+    },
+    {
+      "from": "40745355-03e3-4311-b3be-0030f51f2916",
+      "to": "f8342557-94c7-4528-afc7-4fe28beb268e",
+      "title": "",
+      "id": "4fbd4679-9d7a-4f2a-841f-70bd3f8c8e51"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "c3b63db4-17ce-4ec1-8b2e-ceed749db18f",
+      "title": "",
+      "id": "d1100cdc-7123-45d7-bc07-1e1964fa1ef4"
+    },
+    {
+      "from": "c3b63db4-17ce-4ec1-8b2e-ceed749db18f",
+      "to": "784271b0-4cfa-49ea-ab17-d740027cebbc",
+      "title": "",
+      "id": "a95cb6ba-529e-4854-a0ea-c5c5c5d5087b"
+    },
+    {
+      "from": "c3b63db4-17ce-4ec1-8b2e-ceed749db18f",
+      "to": "ce6b70d3-2a79-4e75-bdf0-3ff03c466175",
+      "title": "",
+      "id": "501e4444-e47b-4175-a2fc-f69f2caa2f70"
+    },
+    {
+      "from": "c3b63db4-17ce-4ec1-8b2e-ceed749db18f",
+      "to": "16691c65-e4c7-48c9-9484-6391f0dc23c4",
+      "title": "",
+      "id": "a449bf65-5cff-4588-8cf3-9ba4eb0a15ef"
+    },
+    {
+      "from": "c3b63db4-17ce-4ec1-8b2e-ceed749db18f",
+      "to": "ace44cdb-b120-4bb4-8e0d-fb3826244dcb",
+      "title": "",
+      "id": "817c04b7-9475-4168-86cf-25a1c5ca9bed"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "title": "",
+      "id": "b73d352c-7442-4728-a592-a3929e63de0b"
+    },
+    {
+      "from": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "to": "4702f5e4-a32c-40e7-9937-6c35cb004238",
+      "title": "",
+      "id": "10e68310-7bba-428b-8fd9-179854daafb5"
+    },
+    {
+      "from": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "to": "0b79eaaf-86e2-4bcf-8ba2-bfab1007e98a",
+      "title": "",
+      "id": "0b0ac950-31f5-4485-bee0-ce40bf716cdf"
+    },
+    {
+      "from": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "to": "eeed6713-072f-4ff6-a584-2e92e1c7e1fa",
+      "title": "",
+      "id": "0b4ccb3b-56fa-4212-9955-a42f220430da"
+    },
+    {
+      "from": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "to": "84bc03fb-1e51-4bea-baff-c2de4fdb837a",
+      "title": "",
+      "id": "7f045bd0-1055-430a-a691-91ee9ba53fb3"
+    },
+    {
+      "from": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "to": "7c5f1347-d51b-4cb1-8a83-8adce449fec9",
+      "title": "",
+      "id": "cab9181a-a098-4e12-a059-9fa98aa592f7"
+    },
+    {
+      "from": "3c3fe85e-527c-453d-96ab-c96c005f3b11",
+      "to": "892ef36b-9060-47a9-8880-8d4d6da9295b",
+      "title": "",
+      "id": "60bd08f0-7ad4-49f5-bc73-0ca1d94e5b11"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "c7fb84aa-e286-4b9b-9597-6e5aa2ac0a18",
+      "title": "",
+      "id": "4ef6d6a1-bf05-45ee-be0d-75ac558ab190"
+    },
+    {
+      "from": "c7fb84aa-e286-4b9b-9597-6e5aa2ac0a18",
+      "to": "1f1cdfaf-8202-493e-b166-8cc661779cfa",
+      "title": "",
+      "id": "712d5ea8-ba45-4889-bae5-2c0f7a69917a"
+    },
+    {
+      "from": "1f1cdfaf-8202-493e-b166-8cc661779cfa",
+      "to": "b78a4e7b-6f84-4663-a3b6-bb170d938a59",
+      "title": "",
+      "id": "7139a131-bf21-4f86-90fe-79399a5a9dd9"
+    },
+    {
+      "from": "c7fb84aa-e286-4b9b-9597-6e5aa2ac0a18",
+      "to": "c7321106-defe-40ec-84c3-c2bad4d5947b",
+      "title": "",
+      "id": "8a59b6ec-03fa-4ebc-8997-3ef4a00b7627"
+    },
+    {
+      "from": "c7fb84aa-e286-4b9b-9597-6e5aa2ac0a18",
+      "to": "c35a990a-7288-417e-9a37-93c63fe164fd",
+      "title": "",
+      "id": "572fe704-c26b-4968-9fbc-ef3e29ee0335"
+    },
+    {
+      "from": "c35a990a-7288-417e-9a37-93c63fe164fd",
+      "to": "f452f067-8531-4c82-86f8-cb0ebd723f5c",
+      "title": "",
+      "id": "2881a8b4-9db8-4832-8f16-c2c8180e9d35"
+    },
+    {
+      "from": "c7fb84aa-e286-4b9b-9597-6e5aa2ac0a18",
+      "to": "6fbfaa27-730f-4e54-8c8a-1784a6021011",
+      "title": "",
+      "id": "6524e7b6-9bc8-4276-9b1d-9fc8c1000239"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "title": "",
+      "id": "1355e2bb-f42f-48e0-9cfb-540c1bc1d339"
+    },
+    {
+      "from": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "to": "1dc02670-fcd8-44e0-af34-668a05ebf03a",
+      "title": "",
+      "id": "3dc157fe-9373-4106-a297-99b47021317b"
+    },
+    {
+      "from": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "to": "704313c2-7fd5-4ee4-a63f-35aa41f2a58d",
+      "title": "",
+      "id": "d62c3acd-ab53-48cb-ba80-43f457b020d9"
+    },
+    {
+      "from": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "to": "e7ae4bb0-63d2-4372-825e-48155a0cbed9",
+      "title": "",
+      "id": "9c420ff6-3982-4cf7-b344-6ecf931f5b9d"
+    },
+    {
+      "from": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "to": "295dd219-7828-40db-b67b-81de1550ac3b",
+      "title": "",
+      "id": "4bdd89dd-0b9e-48b7-9380-df53676782f1"
+    },
+    {
+      "from": "7e0db763-9233-4ad4-ab75-f5bef7a47d7a",
+      "to": "31d14cb9-aab6-4442-a411-bd8c00e8cd38",
+      "title": "",
+      "id": "5dba060d-8e61-4d2c-9d77-da63a36203a8"
+    },
+    {
+      "from": "09687b7f-abd9-4f68-af60-fe7e1f830510",
+      "to": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "title": "",
+      "id": "4e9521aa-50a8-40dd-9f68-b4d9a1a02b06"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "2214f1cc-1488-48fc-b8d4-2b669bc6d5a8",
+      "title": "",
+      "id": "1f16f118-8c52-498e-8f5d-a8477bd85417"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "fddecbdc-8dac-4266-ab63-b26e90c3101b",
+      "title": "",
+      "id": "b01969b1-db44-464b-9e2a-540531acf2ad"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "0fa6fba7-d9e7-4ce7-885c-95faf643668a",
+      "title": "",
+      "id": "ab44676a-57ae-4d65-9984-7ab1c6aad652"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "268ef451-7808-4800-a0f1-ad7e0ac169e5",
+      "title": "",
+      "id": "4a153e8d-7060-412f-b115-403483c7dd30"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "d6707691-9db6-4010-b8de-3415f070522f",
+      "title": "",
+      "id": "4599ced2-42ec-4aaa-ad12-6f103b04f90f"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "e7bd0d8d-1d95-4b9b-9ec6-f25785bc7184",
+      "title": "",
+      "id": "b8ad5a0b-cc4a-4bc3-b292-f5ce131d86dd"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "d4a897bc-7f2d-4f61-8fc7-0cb1d982d8e0",
+      "title": "",
+      "id": "d349bdbf-326a-46cd-8035-56669d2398e5"
+    },
+    {
+      "from": "27c4bf23-74ec-4620-b7c6-bbe01328e9de",
+      "to": "2f70d077-3166-46db-aafa-811c521f8e51",
+      "title": "",
+      "id": "2e5d803b-b861-480a-b666-fa4f13ba937d"
+    }
+  ]
+}

@@ -1,13 +1,15 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from django.http import HttpResponse,Http404
 from django.http import JsonResponse
-from django.shortcuts import get_object_or_404
 import mimetypes
 import csv
 import os
 import json
+import uuid
 from difflib import SequenceMatcher
 from .models import Trajectory, Course
+import google.generativeai as genai
+
 
 # BERT
 from sentence_transformers import SentenceTransformer, util
@@ -384,6 +386,10 @@ def buildNodeEdges(csv_data,course_id=None):
         if cnt < 0: # 
             cnt += 1
             continue   
+        
+        if row["topic"].startswith('Obj'): # 
+            cnt += 1
+            continue   
 
         nodeId = ".".join(filter(None, [courseId, row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
         layer = nodeId.count(".")
@@ -436,7 +442,7 @@ def saveToJSON(folder_path,file_path,result):
         os.makedirs(folder_path)
 
     with open(file_path, 'w') as json_file:
-        json.dump(result, json_file)
+        json.dump(result, json_file, indent=2)
 
 
 '''
@@ -446,8 +452,20 @@ def bertModel(first_nodes, second_nodes):
     # use the fastest model
     model = SentenceTransformer('all-mpnet-base-v2')
 
-    first_nodes_dict =  {node['title']: node['id'] for node in first_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
-    second_nodes_dict =  {node['title']: node['id'] for node in second_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')}
+    first_nodes_dict =  {
+        node['title']: node['id'] for node in first_nodes if not node['label'].startswith('Obj')
+        }
+    second_nodes_dict =  {
+        node['title']: node['id'] for node in second_nodes if not node['label'].startswith('Obj')
+        }
+    
+#     first_nodes_dict =  {
+#     node['title']: node['id'] for node in first_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')
+#     }
+# second_nodes_dict =  {
+#     node['title']: node['id'] for node in second_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')
+#     }
+
 
     first_labels = list(first_nodes_dict.keys())
     second_labels = list(second_nodes_dict.keys())
@@ -462,7 +480,7 @@ def bertModel(first_nodes, second_nodes):
     nodeId = []
     for i in range(len(first_labels)):
         for j in range(len(second_labels)):
-            if cosine_scores[i][j] > 0.65:
+            if cosine_scores[i][j] > 0.6:
                 score = str(round(float(cosine_scores[i][j]), 4))
                 edge = {
                     'from': first_nodes_dict[first_labels[i]],
@@ -478,6 +496,9 @@ def bertModel(first_nodes, second_nodes):
                 nodeId.append(second_nodes_dict[second_labels[j]])
                               
     return similarEdges, nodeId
+
+
+
 
 
 
@@ -538,7 +559,7 @@ def detectSimilarCourse(request):
 
         # build the path
         file_name = selected_courses[0].course_name.replace("/", "_") + '_' + selected_courses[1].course_name.replace("/", "_") + '.json'
-        folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'course')   
+        folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'courseSimilarity')   
         file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
         # check if the file is exist
@@ -583,7 +604,7 @@ def detectAllcourses(request):
 
         # build the path
         file_name = curricula + '_all_courses' + '.json'
-        folder_path = os.path.join(os.getcwd(),'media', 'JSON', 'curricula')  
+        folder_path = os.path.join(os.getcwd(),'media', 'JSON', 'curriculaSimilarity')  
         file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
         # check if the file is exist
@@ -594,16 +615,11 @@ def detectAllcourses(request):
         
         else:      
             selected_courses = Course.objects.filter(source = curricula).exclude(csv_file__isnull=True).exclude(csv_file='')
-            file_list = [] 
+            course_nodes = []
+            file_node = {}
             for course in selected_courses:
                 csv_data = openfile(str(course.csv_file), 'media/') 
-                file_list.append(csv_data)
-
-            # create the course node
-            course_nodes = []
-            file_node = {}  
-            for list in file_list:
-                nodes,_,courseId= buildNodeEdges(list) 
+                nodes,_,courseId= buildNodeEdges(csv_data,course.course_id) 
                 file_node[courseId] = nodes
                 if nodes:
                     course_nodes.append(nodes[0])
@@ -616,24 +632,30 @@ def detectAllcourses(request):
                     if course_id_1 != course_id_2 and (course_id_1, course_id_2) not in compared_pairs:
 
                         similarEdges, _ = bertModel(nodes_1, nodes_2)
+
                         compared_pairs.add((course_id_1, course_id_2)) 
                         compared_pairs.add((course_id_2, course_id_1)) 
                         
                         if similarEdges:
                                 num_similar_edges = len(similarEdges)  
-                                edge = {
-                                    'from': course_id_1,
-                                    'to': course_id_2,
-                                    'title': num_similar_edges,
-                                    'value': num_similar_edges
-                                }
-                                if edge not in edges:  # Check if edge already exists
-                                    edges.append(edge)
+                                if num_similar_edges > 3:
+                                    edge = {
+                                        'from': course_id_1,
+                                        'to': course_id_2,
+                                        'title': num_similar_edges,
+                                        'value': num_similar_edges
+                                    }
+                                    if edge not in edges:  # Check if edge already exists
+                                        edges.append(edge)
             
             response = {"nodes": course_nodes, "edges": edges, "matched": curricula}
             saveToJSON(folder_path,file_path,response)
             return JsonResponse(response)
         
+
+
+
+
 
 
 
@@ -666,6 +688,24 @@ def uploadfile(request):
             course = get_object_or_404(Course, course_id=course_id)
             course.csv_file = csv_file
             course.save()
+
+            # 转为json文件存储
+            csv_data = openfile(str(course.csv_file), 'media/')
+            nodes, edges, _ = buildNodeEdgesVersion2(csv_data, course.course_id)
+            json_data = {
+                'nodes': nodes,
+                'edges': edges
+            }
+
+            # build the path
+            file_name = course_id + '.json'
+            folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')   
+            file_path = os.path.join(os.getcwd(), folder_path, file_name)
+
+            if json_data:
+                saveToJSON(folder_path,file_path,json_data)
+
+
             return JsonResponse({'message': 'File uploaded successfully!'})
         else:
             return JsonResponse({'message': 'Failed to upload file.'}, status=400)
@@ -720,7 +760,7 @@ Delete temporary json files( this function is needed after uploading new csv fil
 '''
 def deleteJSONfile(request):
     if request.method == 'POST':
-        directories = ['media/JSON/course', 'media/JSON/curricula', 'media/JSON/trajectory']
+        directories = ['media/JSON/courseSimilarity', 'media/JSON/curriculaSimilarity', 'media/JSON/trajectory']
         success = True
         
         for directory in directories:
@@ -859,3 +899,331 @@ def compareObjectiveAndTopic(csv_file_name,objective):
 
     str_counter = "[" + str(counter)+ "]"
     return str_counter
+
+
+
+
+
+
+
+
+
+
+
+
+
+def editGraph(request, course_id):
+
+    course = get_object_or_404(Course, pk=course_id)
+    objectives = course.objectives.all()
+
+    nodes, edges = courseNodesEdgesFromJSON(course.course_id, course.course_name)
+
+
+    if not nodes and not edges:
+      
+        if course.csv_file:
+            csv_data = openfile(str(course.csv_file), 'media/')
+            nodes, edges,_ = buildNodeEdgesVersion2(csv_data, course.course_id)
+
+    if not nodes and not edges:
+        nodes = [{
+            'id': course.course_id,  
+            'label': course.course_name,  
+            'shape': "circle"
+        }]
+        edges = []
+
+    related_courses = findRelatedCourse2(course_id)
+
+    response = {
+        "nodes": nodes, 
+        "edges": edges, 
+        "courseId": course_id, 
+        "course": course, 
+        "objectives": objectives,
+        "related_courses":related_courses
+    }
+    
+    return render(request, 'editGraph.html', response)
+
+
+
+
+
+# 从 JSON 获取单个课程的内容
+def courseNodesEdgesFromJSON(course_id, course_name):
+    file_name = str(course_id) + '.json'
+    folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')
+    file_path = os.path.join(folder_path, file_name)
+    nodes = []
+    edges = []
+
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        try:
+            with open(file_path, 'r') as json_file:
+                # Read JSON file data
+                json_data = json.load(json_file)
+                if json_data and "nodes" in json_data and "edges" in json_data:
+                    nodes = json_data["nodes"]
+                    edges = json_data["edges"]
+        except Exception as e:
+            print(f"Error reading JSON file: {e}")
+
+    return nodes, edges
+
+
+
+
+
+'''
+Extract nodes and edges from a list(version 2)
+'''
+def buildNodeEdgesVersion2(csv_data,course_id=None):
+    nodes = []
+    edges = []
+    if course_id is None:
+        courseId = csv_data[1]['courseid']
+    else:
+        courseId = str(course_id)
+    shape_mapping = {
+    0: "circle",
+    1: "ellipse",
+    2: "box",
+    3: "box",
+    4: "box"
+    }
+
+    original_to_uuid = {}  # Mapping from original ID to UUID
+    node_map = {}  # To keep track of nodes by UUID
+
+    cnt = 0
+    for row in csv_data:
+        if cnt < 0: # 
+            cnt += 1
+            continue   
+        
+        if row["topic"].startswith('Obj'): # 
+            cnt += 1
+            continue   
+
+        nodeId = str(uuid.uuid4())
+        original_id = ".".join(filter(None, [courseId, row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
+        layer = original_id.count(".")
+        shape = shape_mapping.get(layer, "square")
+
+        node = {
+            "id": nodeId,
+            "label": row["topic"],
+            "shape": shape,
+            "cog_level": row["Cognitive level"].strip(),
+            "title": row["topic"],
+            "description":row["topic"] + ": " + row["description_of_topic"],
+            "layer": layer
+        }
+        nodes.append(node)
+
+        node_map[nodeId] = original_id
+        original_to_uuid[original_id] = nodeId
+
+        # Set up parent-child relationships based on original IDs
+        parent_original_id = original_id[:original_id.rfind('.')] if '.' in original_id else None
+        if parent_original_id and parent_original_id in original_to_uuid:
+            parent_uuid = original_to_uuid[parent_original_id]
+            edge = {
+                'from': parent_uuid,
+                'to': nodeId,
+                'title': ''
+            }
+            edges.append(edge)
+
+    return nodes, edges, courseId
+
+
+def explainByAI(request):
+    if request.method == 'POST':
+        nodeInfo = request.POST.get('nodeInfo')
+        
+        # 配置 Google Generative AI
+        genai.configure(api_key=os.environ.get("API_KEY"))
+        model = genai.GenerativeModel("gemini-pro")
+        content = "Write a short description about '" + nodeInfo + "'"
+        response_obj = model.generate_content(content)
+        
+        # 从 GenerateContentResponse 对象中提取文本内容
+        response_text = response_obj.text  # 假设返回对象有一个 text 属性
+        
+        # 将响应包装在字典中
+        response = {
+            'description': response_text
+        }
+        
+        return JsonResponse(response, safe=False)
+
+
+def overview(request):
+    # 获取所有课程
+    courses = Course.objects.all().filter(source="UvA")
+
+    trajectories = Trajectory.objects.values('trajectory_name').distinct().order_by('trajectory_name')
+
+    selected_trajectory_name = request.GET.get('trajectory')
+
+    selected_objectives = []
+    
+    if selected_trajectory_name:
+        selected_trajectories = Trajectory.objects.filter(trajectory_name=selected_trajectory_name)
+        selected_objectives = selected_trajectories.values_list('objective', flat=True)
+
+
+    if selected_trajectory_name:
+
+        selected_trajectories = Trajectory.objects.filter(trajectory_name=selected_trajectory_name)
+        related_objectives = Course.Objective.objects.filter(trajectory__in=selected_trajectories)
+        courses = Course.objects.filter(objectives__in=related_objectives).distinct()
+    else:
+        courses = Course.objects.all()
+
+    context = {
+        'courses': courses,
+        'trajectories': trajectories,
+        'selected_trajectory_name': selected_trajectory_name,
+        'selected_objectives': selected_objectives,
+    }
+
+
+    return render(request,'overview.html',context)
+
+
+
+def saveJson(request):
+    if request.method == 'POST':
+        try:
+            course_id = request.POST.get('courseId')
+            json_data = request.POST.get('data')
+
+            # build the path
+            file_name = course_id + '.json'
+            folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')   
+            file_path = os.path.join(os.getcwd(), folder_path, file_name)
+
+            if json_data:
+                # 将JSON字符串解析为Python字典
+                data = json.loads(json_data)
+            saveToJSON(folder_path,file_path,data)
+
+            return JsonResponse({'status': 'success', 'message': 'File saved successfully.'})
+        except Exception as e:
+            return JsonResponse({'status': 'error', 'message': str(e)}, status=400)
+
+    return JsonResponse({'status': 'error', 'message': 'Invalid request method'}, status=405)
+
+
+
+
+
+
+# def findRelatedCourse(course_id):
+#     file_name = str(course_id) + '.json'
+#     folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')
+#     file_path = os.path.join(folder_path, file_name)
+
+#     if os.path.exists(file_path) and os.path.isfile(file_path):
+#         with open(file_path, 'r') as json_file:
+#             # 读取 JSON 文件数据
+#             json_data = json.load(json_file)
+#             target_labels = [node["label"] for node in json_data["nodes"]]
+#             target_course = ",".join(target_labels)
+
+#             target_labels_1 = {node["label"] for node in json_data["nodes"]}
+#     else:
+#         return []
+    
+#     other_courses = []
+#     for file in os.listdir(folder_path):
+#         if file.endswith('.json') and file != file_name:
+#             other_file_path = os.path.join(folder_path, file)
+#             with open(other_file_path, 'r') as other_json_file:
+#                 other_json_data = json.load(other_json_file)
+#                 other_labels = [node["label"] for node in other_json_data["nodes"]]
+#                 other_course_str = ",".join(other_labels)
+#                 other_courses.append((file, other_course_str))  # 保存文件名和拼接后的字符串
+
+#                 other_labels_1 = {node["label"] for node in other_json_data["nodes"]}
+#                 common_labels =  target_labels_1.intersection(other_labels_1)
+#                 print(common_labels)
+    
+
+#     model = SentenceTransformer("all-MiniLM-L6-v2")
+#     target_embedding = model.encode(target_course)
+    
+#     similar_courses = []
+
+#     for file, other_course_str in other_courses:
+#         other_embedding = model.encode(other_course_str)  # 计算每个课程的嵌入
+#         similarity = util.cos_sim(target_embedding, other_embedding).item()  # 计算相似度
+        
+#         if similarity > 0.45: 
+#             print(similarity)
+#             course_id_from_file = file.replace('.json', '')  # 获取课程 ID (去掉 .json 扩展名)
+#             similar_courses.append((course_id_from_file, similarity))
+
+#     # Step 4: 返回相似度大于 0.5 的课程的 Course 对象
+#     if similar_courses:
+#         similar_courses.sort(key=lambda x: x[1], reverse=True)  # 按相似度排序
+        
+#         # 获取相似课程的 Course 对象
+#         course_ids = [course_id for course_id, _ in similar_courses]
+#         related_courses = Course.objects.filter(course_id__in=course_ids)  # 根据课程 ID 查询 Course 对象
+        
+#         return related_courses
+#     else:
+#         return []
+
+
+
+'''
+打开文件名为UvA_all_courses的json文件
+搜索edges里面的from 或者 to 里面有该course_id的边
+然后或者该边的另一个course id 收集起来 
+
+'''
+
+def findRelatedCourse2(course_id):
+    # Initialize an empty set to collect course IDs
+    course_ids = set()
+
+    # Construct the file path
+    file_name = 'UvA_all_courses.json'
+    folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'curriculaSimilarity')
+    file_path = os.path.join(folder_path, file_name)
+
+    # Check if the file exists and is valid
+    if os.path.exists(file_path) and os.path.isfile(file_path):
+        try:
+            # Open and load the JSON data
+            with open(file_path, 'r') as json_file:
+                json_data = json.load(json_file)
+
+                # Iterate over the edges and find related courses
+                for edge in json_data["edges"]:
+                    # Convert edge["from"] and edge["to"] to string to ensure type match
+                    if str(edge["from"]) == str(course_id):
+                        course_ids.add(edge["to"])
+                    elif str(edge["to"]) == str(course_id):
+                        course_ids.add(edge["from"])
+
+            # Query the Course model for the related courses
+            related_courses = Course.objects.filter(course_id__in=list(course_ids))
+
+            return related_courses
+
+        except json.JSONDecodeError:
+            print("Error: Failed to decode the JSON file.")
+        except Exception as e:
+            print(f"Error: {e}")
+
+    else:
+        print("Error: File not found or inaccessible.")
+
+    return []

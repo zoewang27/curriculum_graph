@@ -1,0 +1,1653 @@
+{
+  "nodes": [
+    {
+      "id": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "label": "Compiler Construction",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Compiler Construction",
+      "description": "Compiler Construction: ",
+      "layer": 0,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f813df62-2a6d-4340-9050-846955861489",
+      "label": "Introduction",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Introduction",
+      "description": "Introduction: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b6a52359-ff81-4fee-8971-3d49c70e9cf4",
+      "label": "Compiler Introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compiler Introduction",
+      "description": "Compiler Introduction: Compiler Introduction: A compiler is a program that translates source code written in a high-level programming language into machine code that a computer can execute.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5aa58314-a8f1-4d66-8c3f-52e9ee0fa28a",
+      "label": "Compiler and Interpreter",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compiler and Interpreter",
+      "description": "Compiler and Interpreter: Compiler and Interpreter: While compilers translate entire source code files into machine code before execution, interpreters execute code line by line, translating and executing each line at runtime.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "83e64afa-968a-448b-9111-b871ccd728ac",
+      "label": "Just-in-Time Compilation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Just-in-Time Compilation",
+      "description": "Just-in-Time Compilation: Just-in-Time Compilation: Just-in-Time (JIT) compilation combines aspects of both compilation and interpretation.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "861ed3ee-d26d-4cbc-b234-dfcd4c4dee0c",
+      "label": "Fundamental Principle of Compilation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Fundamental Principle of Compilation",
+      "description": "Fundamental Principle of Compilation: Fundamental Principle of Compilation: The fundamental principle of compilation is to translate code from a high-level programming language into a lower-level representation, typically machine code or bytecode, while preserving the semantics and functionality of the original code.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8844e78a-134c-450c-8eea-123969ade27f",
+      "label": "Compiler Tool Chain",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compiler Tool Chain",
+      "description": "Compiler Tool Chain: Compiler Tool Chain: The compiler tool chain refers to the sequence of tools involved in the compilation process, including the preprocessor, compiler, assembler, linker, and loader.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "683e88c0-691a-4e5c-bec8-cfe5c0378c43",
+      "label": "Compiler: The User\u2019s View",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compiler: The User\u2019s View",
+      "description": "Compiler: The User\u2019s View: Compiler: The User\u2019s View: From the user's perspective, a compiler is a software tool that takes source code written in a high-level programming language, such as C, C++, or Java, and translates it into executable machine code.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "44675a32-53be-451f-8294-b7a6ce00fa8b",
+      "label": "Compiler Structure",
+      "shape": "ellipse",
+      "cog_level": "Evaluate",
+      "title": "Compiler Structure",
+      "description": "Compiler Structure: ",
+      "layer": 1,
+      "color": {
+        "background": "#a3ddf5",
+        "border": "#a3ddf5"
+      }
+    },
+    {
+      "id": "934c44c5-8b75-416c-8033-66903bed80f4",
+      "label": "Basic Compiler Structure",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Basic Compiler Structure",
+      "description": "Basic Compiler Structure: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f301fb6b-7be3-4c59-938d-ec750beeaab7",
+      "label": "Front end",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Front end",
+      "description": "Front end: Front end: The front end of a compiler is responsible for analyzing and processing the source code. It includes components like lexical analysis, syntactic analysis, and semantic analysis.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "49411d09-c349-4b04-b87a-52006385fdd3",
+      "label": "Back end",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Back end",
+      "description": "Back end: Back end: The back end of a compiler generates target code or intermediate code based on the analyzed source code. It involves tasks such as code optimization and code generation.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6170f394-1bfb-434e-b8aa-ad315206218b",
+      "label": "Advanced Compiler Structure",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Advanced Compiler Structure",
+      "description": "Advanced Compiler Structure: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6da4133a-df2c-46df-9ea3-71ca9fb14726",
+      "label": "Front end",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Front end",
+      "description": "Front end: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f3d476ac-a260-4f14-843b-fea22189cd63",
+      "label": "Lexicographic analysis:Scanner",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Lexicographic analysis:Scanner",
+      "description": "Lexicographic analysis:Scanner: Lexicographic analysis (Scanner): The scanner reads the input source code character by character and converts it into tokens or lexemes.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e21ead25-74e3-4a64-9f90-9dd082cdb530",
+      "label": "Syntactic analysis:Parser",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Syntactic analysis:Parser",
+      "description": "Syntactic analysis:Parser: Syntactic analysis (Parser): The parser analyzes the structure of the source code based on the grammar rules of the programming language.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0c7ba1ea-d870-437a-aa5f-084ed1569fcd",
+      "label": "Semantic analysis",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Semantic analysis",
+      "description": "Semantic analysis: Semantic analysis: The semantic analyzer performs type checking and ensures that the source code follows the language's semantic rules.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ecbe5944-866b-46b6-a461-b5fd99395aba",
+      "label": "Optimiser (Middle end)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Optimiser (Middle end)",
+      "description": "Optimiser (Middle end): Optimiser (Middle end): The optimizer optimizes the intermediate code generated by the front end. It includes prologue optimizations, cycle optimizations, and epilogue optimizations.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f145d34e-01cb-4a26-880f-03b507790a60",
+      "label": "Prologue optimisations:",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Prologue optimisations:",
+      "description": "Prologue optimisations:: Prologue optimizations: Optimizations applied at the beginning of a function or subroutine.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3fc23249-b10d-4a42-a7e2-bc6c90c2d897",
+      "label": "Cycle optimisations:",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Cycle optimisations:",
+      "description": "Cycle optimisations:: Cycle optimizations: Optimizations aimed at reducing the number of machine instructions or cycles required to execute code.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "69fbe13b-489f-406c-86d2-52edcf170062",
+      "label": "Epilogue optimisations:",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Epilogue optimisations:",
+      "description": "Epilogue optimisations:: Epilogue optimizations: Optimizations applied at the end of a function or subroutine.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e661a59a-3a9b-4528-b471-cf4fb3b9dcf6",
+      "label": "Back end",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Back end",
+      "description": "Back end: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "17dfc44f-2d51-472b-af49-a0f60b511064",
+      "label": "Instruction selector:",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Instruction selector:",
+      "description": "Instruction selector:: Instruction selector: Selects the instructions from the instruction set architecture (ISA) that best match the intermediate code.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3ece9dde-3ada-48db-a078-db32ee6246be",
+      "label": "Register allocator\uff1a",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Register allocator\uff1a",
+      "description": "Register allocator\uff1a: Register allocator: Allocates physical registers to variables and ensures efficient use of available registers.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0e3d80aa-9b73-4dde-b0c5-4208b862d474",
+      "label": "Instruction scheduler\uff1a",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Instruction scheduler\uff1a",
+      "description": "Instruction scheduler\uff1a: Instruction scheduler: Reorders instructions to optimize execution time or resource utilization on the target architecture.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2d114e0a-f2ae-4b16-acea-e4bc9d0d453f",
+      "label": "Lexicographical Analysis",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Lexicographical Analysis",
+      "description": "Lexicographical Analysis: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "85df8c9b-bb18-4233-9470-77ad3723c569",
+      "label": "Finite Automata",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Finite Automata",
+      "description": "Finite Automata: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ec8df8ab-80c8-4e00-81e7-38a1fd9a4a70",
+      "label": "A deterministic finite automaton",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "A deterministic finite automaton",
+      "description": "A deterministic finite automaton: A deterministic finite automaton (DFA) is a mathematical model of computation consisting of a finite set of states, a finite set of input symbols, a transition function, and a start state and one or more accepting states.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "64d9ed42-173e-4b9b-857a-626e6fb529ed",
+      "label": "A non-deterministic finite automaton",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "A non-deterministic finite automaton",
+      "description": "A non-deterministic finite automaton: A non-deterministic finite automaton (NFA) is similar to a DFA, but it allows multiple transitions from a state on the same input symbol and can have \u03b5-transitions.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "label": "Construct an efficient finite automaton",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Construct an efficient finite automaton",
+      "description": "Construct an efficient finite automaton: To construct an efficient finite automaton, one can use algorithms like Subset Construction or Hopcroft\u2019s Algorithm to minimize the number of states and transitions while preserving the language accepted by the automaton.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "20bea8b1-3612-4092-bf92-5784924b8eb9",
+      "label": "Regular Expressions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Regular Expressions",
+      "description": "Regular Expressions: Regular expressions are formal descriptions for patterns of strings. They can be used to describe sets of strings using a compact and expressive syntax.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4e16c6d4-6ce4-4d89-8eac-7ba4d827bcab",
+      "label": "Thompson Construction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Thompson Construction",
+      "description": "Thompson Construction: Thompson Construction is a method for converting a regular expression into an equivalent NFA.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "072147f3-84a1-4eed-a2a7-fb86cdd66128",
+      "label": "Subset Construction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Subset Construction",
+      "description": "Subset Construction: Subset Construction is an algorithm used to convert an NFA into a DFA, resulting in a more efficient deterministic automaton.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "87af594e-b2c8-45c3-b2f3-b0afc683131e",
+      "label": "Hopcroft\u2019s Algorithm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Hopcroft\u2019s Algorithm",
+      "description": "Hopcroft\u2019s Algorithm: Hopcroft\u2019s Algorithm is a method for minimizing the number of states in a DFA by partitioning the states into equivalence classes and merging equivalent states.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e8431edc-e2a8-488f-a8d9-01c71fed8870",
+      "label": "Construct scanner",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Construct scanner",
+      "description": "Construct scanner: Scanners, also known as lexers, are programs that recognize lexical patterns in input streams. They are commonly used as the first phase of a compiler.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "36f089df-ec90-4f76-921d-fc9f9ed8e470",
+      "label": "Table-driven scanner",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Table-driven scanner",
+      "description": "Table-driven scanner: A table-driven scanner uses finite automata to recognize tokens.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "87714138-b653-4401-9632-37621f3c93b4",
+      "label": "Direct-coded scanner",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Direct-coded scanner",
+      "description": "Direct-coded scanner: A direct-coded scanner uses explicit code to recognize tokens.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5e9b6c10-ab46-4421-b731-df5cec87f00a",
+      "label": "Automatic Scanner Generation with (F)Lex",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Automatic Scanner Generation with (F)Lex",
+      "description": "Automatic Scanner Generation with (F)Lex: (F)Lex is a popular tool for generating scanners automatically from lexical specifications written in regular expressions.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ae9afe2a-8abd-46c4-a095-ab7bbefb8ae2",
+      "label": "Syntactic Analysis",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Syntactic Analysis",
+      "description": "Syntactic Analysis: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3f906bd9-aab6-4161-8e32-58b76431f9d0",
+      "label": "Backus-Naur Form",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Backus-Naur Form",
+      "description": "Backus-Naur Form: BNF is a notation technique used to formally describe the syntax of programming languages or other formal languages.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1bef0544-1db6-4119-a22c-35b7f6adca41",
+      "label": "Context-Free Grammars",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Context-Free Grammars",
+      "description": "Context-Free Grammars: CFG is a formal grammar type used to describe the syntax of context-free languages.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "116227d7-d5b8-41e5-a6cd-565527ec3876",
+      "label": "Parser generator formalisms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Parser generator formalisms",
+      "description": "Parser generator formalisms: Parser generator tools like YACC (Yet Another Compiler Compiler) are used to automatically generate parsers from formal grammar specifications.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bf444d1b-8888-48e4-b11b-9bcae087dccd",
+      "label": "Yet Another Compiler Compiler(YACC)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Yet Another Compiler Compiler(YACC)",
+      "description": "Yet Another Compiler Compiler(YACC): YACC is a widely-used parser generator tool originally developed for Unix systems.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "fa9f6f80-de40-4961-ae43-d1708cbb49ce",
+      "label": "Abstract syntax definitions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Abstract syntax definitions",
+      "description": "Abstract syntax definitions: Abstract syntax definitions provide a structured representation of the syntax of a programming language or other formal language.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "89afc478-99b2-4ba0-8065-0d9ce4652dad",
+      "label": "Semantic Analysis",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Semantic Analysis",
+      "description": "Semantic Analysis: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "af5cdc31-15fd-4c92-a036-b9623cce1c3f",
+      "label": "Context Analysis",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Context Analysis",
+      "description": "Context Analysis: Context analysis, also known as semantic analysis, is the phase in the compilation process where the compiler checks the semantics of the program beyond its syntactic correctness.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6d873d11-f7be-4ad6-a008-1296817b8dfe",
+      "label": "Type checker",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Type checker",
+      "description": "Type checker: The type checker is a crucial component of semantic analysis responsible for ensuring that the types of expressions and variables in the program are used in a manner consistent with the language's type system.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "14520ecf-5fa0-4124-880a-ca9bfb69c9c8",
+      "label": "Code Transformation & Optimisation",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Code Transformation & Optimisation",
+      "description": "Code Transformation & Optimisation: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4a2cc644-338b-4975-b8dd-46bde8813a8e",
+      "label": "Machine-Independent Optimisation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Machine-Independent Optimisation",
+      "description": "Machine-Independent Optimisation: This involves optimizations that are not specific to any particular hardware architecture",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "979ca9db-38cf-4572-974b-454cee381a54",
+      "label": "A Taxonomy of Optimisations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "A Taxonomy of Optimisations",
+      "description": "A Taxonomy of Optimisations: Optimizations can be categorized based on various criteria such as the scope of optimization (local or global), the level of abstraction (high-level or low-level), and the nature of transformations (restructuring, redundancy elimination, etc.).",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b1512a52-fd3f-4506-8573-edd155ca9071",
+      "label": "Local Optimisation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Local Optimisation",
+      "description": "Local Optimisation: Local optimization targets small code segments or individual basic blocks within a program",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9f4a2427-ed9c-427e-b13c-fd9317a61d47",
+      "label": "Intra-procedural optimisation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Intra-procedural optimisation",
+      "description": "Intra-procedural optimisation: This optimization focuses on improving the efficiency of code within individual procedures or functions",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c66d787a-ad5c-429d-bef4-65fccdc3c3ef",
+      "label": "Inter-procedural optimisation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Inter-procedural optimisation",
+      "description": "Inter-procedural optimisation: Inter-procedural optimization extends optimization across multiple procedures or functions",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d07f3189-ed2a-49a0-8df5-bacb3bee9e36",
+      "label": "Machine-dependent optimisation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Machine-dependent optimisation",
+      "description": "Machine-dependent optimisation: These optimizations are tailored to specific hardware architectures, exploiting features and characteristics of the target machine to achieve performance improvements.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f4b6235b-4477-4aed-be87-c6583cfdf6b2",
+      "label": "Compilation Scheme:",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compilation Scheme:",
+      "description": "Compilation Scheme:: The compilation scheme refers to the overall process and infrastructure used for transforming source code into executable machine code, including the stages of parsing, optimization, code generation, and linking.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0b8fac00-e7ef-4ffc-8754-62890b8ee0ab",
+      "label": "Optimisation Infrastructure",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Optimisation Infrastructure",
+      "description": "Optimisation Infrastructure: This encompasses the tools, techniques, and frameworks used to implement and support optimization strategies within a compiler or programming environment",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "fd46db65-bdfe-4322-ab65-d5b40576f09a",
+      "label": "Code Generation",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Code Generation",
+      "description": "Code Generation: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "df88ef07-86f3-4073-a2fa-d2507077b6d5",
+      "label": "Taxonomy of Target Languages",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Taxonomy of Target Languages",
+      "description": "Taxonomy of Target Languages: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "51f68bf8-cba2-4d19-8a6d-76dbeef1b2df",
+      "label": "Machine assembly",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Machine assembly",
+      "description": "Machine assembly: Machine assembly, a low-level target language, directly maps to machine instructions and is architecture-specific.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "48f8a757-0899-4aee-966c-88b3c97bf504",
+      "label": "Virtual machine assembly",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Virtual machine assembly",
+      "description": "Virtual machine assembly: Virtual machine assembly targets a virtual machine, providing an intermediate representation that can be interpreted or compiled to native code.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c2899ea3-150b-43e5-a59a-da48e9391fb4",
+      "label": "Higher level language",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Higher level language",
+      "description": "Higher level language: Higher-level languages like C, Java, or Python abstract away machine-specific details, allowing for platform-independent development.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d42dc4b6-01a9-4003-8fae-ddce6aa0b233",
+      "label": "Virtual Machines",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Virtual Machines",
+      "description": "Virtual Machines: Virtual machines can operate on register-based architectures, where operations are performed directly on registers.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8ee4e749-78fa-4c01-ada1-f775d105efee",
+      "label": "Register-based virtual machines",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Register-based virtual machines",
+      "description": "Register-based virtual machines: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4be54347-2234-4a92-9195-0a95cbc300eb",
+      "label": "Stack-based virtual machines",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Stack-based virtual machines",
+      "description": "Stack-based virtual machines: Stack-based virtual machines use a stack data structure for operand manipulation and intermediate results storage.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "322ee451-7670-401e-a312-6be885523a80",
+      "label": "The CiviC Virtual Machine",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "The CiviC Virtual Machine",
+      "description": "The CiviC Virtual Machine: The CiviC Virtual Machine is an example of a stack-based virtual machine designed for simplicity and ease of implementation.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "837146b3-5149-409f-98b3-ea6843addab9",
+      "label": "Arithmetic Operations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Arithmetic Operations",
+      "description": "Arithmetic Operations: Arithmetic operations in code generation encompass addition, subtraction, multiplication, and division, among others.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d66e714c-31e2-48cd-a05f-d5806fee9f47",
+      "label": "Relational Operations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Relational Operations",
+      "description": "Relational Operations: Relational operations include comparisons like equality, inequality, greater than, less than, etc.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d98ec67d-2364-49f7-a8e7-4d38ff8a019d",
+      "label": "Logical Operations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Logical Operations",
+      "description": "Logical Operations: Logical operations involve Boolean operations such as AND, OR, and NOT.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "95439fa4-efbf-45d4-9039-42417488cce0",
+      "label": "Type Conversion",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Type Conversion",
+      "description": "Type Conversion: Type conversion converts data from one type to another, ensuring compatibility between different data types.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d4f7f867-a134-4906-bb32-09cf0b0ea5e0",
+      "label": "Constants",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Constants",
+      "description": "Constants: Constants are fixed values in the code, while variables represent memory locations storing data that can change during program execution.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a246d810-0acf-4a25-b96f-a06368eb3a78",
+      "label": "Variables",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Variables",
+      "description": "Variables: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "label": "Code Generation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Code Generation",
+      "description": "Code Generation: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e768f6d3-dd82-4922-8402-4fcfc9e6348d",
+      "label": "Basic Blocks",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Basic Blocks",
+      "description": "Basic Blocks: Basic Blocks: Fundamental units of code containing straight-line sequences of instructions with no branches.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e507ee78-000e-43b6-9d2e-e79be08b5f29",
+      "label": "Simple Expressions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Simple Expressions",
+      "description": "Simple Expressions: Simple Expressions: Generation of code for arithmetic and logical expressions involving literals and variables.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4a582437-9598-4fa6-90ef-5237b8b92107",
+      "label": "Control Flow Constructs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Control Flow Constructs",
+      "description": "Control Flow Constructs: Control Flow Constructs: Handling of conditional and iterative control flow structures.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d919f29e-6f57-427d-81dc-d05de578bc44",
+      "label": "Conditionals",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Conditionals",
+      "description": "Conditionals: Conditionals: Translation of conditional statements like if-else into machine instructions.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0b07deec-ff4e-4252-ba27-bd7116d3c964",
+      "label": "Do-While-Loops",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Do-While-Loops",
+      "description": "Do-While-Loops: Do-While-Loops: Code generation for do-while loop constructs.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "31da61a0-dbf7-42c5-b69f-4e37e820cde2",
+      "label": "While-Loops",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "While-Loops",
+      "description": "While-Loops: While-Loops: Translation of while loop constructs into executable code.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7a911479-2bec-4fe2-b2c3-43d2dda50fba",
+      "label": "Extern Declarations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Extern Declarations",
+      "description": "Extern Declarations: Extern Declarations: Handling of external declarations for variables and functions.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "01984995-c7c2-4c56-86d3-c95db5947d74",
+      "label": "External linkage information",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "External linkage information",
+      "description": "External linkage information: External Linkage Information: Management of information related to linking with external modules or libraries.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "83031b31-a15f-4251-b3c9-53017f0ebb16",
+      "label": "Calling Convention",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Calling Convention",
+      "description": "Calling Convention: Calling Convention: Specification of rules governing how function calls are performed, including parameter passing and return values.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ab1213c6-2756-43a9-81ae-bf7a1f6eec25",
+      "label": "CiviC Procedure Call Convention",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "CiviC Procedure Call Convention",
+      "description": "CiviC Procedure Call Convention: CiviC Procedure Call Convention: Specific calling convention defined for the CiviC Virtual Machine.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "126bc9b7-e132-4fa0-a963-bb96cd4b36ce",
+      "label": "Nested Functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Nested Functions",
+      "description": "Nested Functions: Nested Functions: Support for functions defined within other functions.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f0cb79bf-b9f6-4638-8e43-a3ed8f4a952a",
+      "label": "Extended Context Analysis",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Extended Context Analysis",
+      "description": "Extended Context Analysis: Extended Context Analysis: Analysis of function context to support proper code generation.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bc43661b-be86-4e96-8d3c-7e194bd516bf",
+      "label": "Static vs Dynamic Link",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Static vs Dynamic Link",
+      "description": "Static vs Dynamic Link: Static vs Dynamic Link: Differentiation between static linking and dynamic linking mechanisms.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "542f44fe-3540-4aae-9198-6420c0221bd7",
+      "label": "Calling External Functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Calling External Functions",
+      "description": "Calling External Functions: Calling External Functions: Generating code to call functions defined in external modules or libraries.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b835cd0c-770e-42c1-b17f-c80853e51166",
+      "label": "Instruction Selection",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Instruction Selection",
+      "description": "Instruction Selection: Instruction Selection: Selection of appropriate machine instructions to implement high-level language constructs.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "f813df62-2a6d-4340-9050-846955861489",
+      "title": "",
+      "id": "b00c06b7-ed62-4945-ae7f-b02dba5004a5"
+    },
+    {
+      "from": "f813df62-2a6d-4340-9050-846955861489",
+      "to": "b6a52359-ff81-4fee-8971-3d49c70e9cf4",
+      "title": "",
+      "id": "b149eb2b-aa35-4c8d-a446-4bebd588fc31"
+    },
+    {
+      "from": "f813df62-2a6d-4340-9050-846955861489",
+      "to": "5aa58314-a8f1-4d66-8c3f-52e9ee0fa28a",
+      "title": "",
+      "id": "3241b6a3-2116-4f20-87e6-b848566e2120"
+    },
+    {
+      "from": "f813df62-2a6d-4340-9050-846955861489",
+      "to": "83e64afa-968a-448b-9111-b871ccd728ac",
+      "title": "",
+      "id": "e41c5445-aaea-46a1-9c24-623710491241"
+    },
+    {
+      "from": "f813df62-2a6d-4340-9050-846955861489",
+      "to": "861ed3ee-d26d-4cbc-b234-dfcd4c4dee0c",
+      "title": "",
+      "id": "11c54078-4d24-43b0-b2d9-d5eef8aa730f"
+    },
+    {
+      "from": "f813df62-2a6d-4340-9050-846955861489",
+      "to": "8844e78a-134c-450c-8eea-123969ade27f",
+      "title": "",
+      "id": "585fe9a2-4da2-4465-8942-8e27ad216f8e"
+    },
+    {
+      "from": "f813df62-2a6d-4340-9050-846955861489",
+      "to": "683e88c0-691a-4e5c-bec8-cfe5c0378c43",
+      "title": "",
+      "id": "cd92a16f-00a5-42ad-918e-b7bb0663102c"
+    },
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "44675a32-53be-451f-8294-b7a6ce00fa8b",
+      "title": "",
+      "id": "b5b390c0-9afc-4b24-a4d4-1e6be13876ca"
+    },
+    {
+      "from": "44675a32-53be-451f-8294-b7a6ce00fa8b",
+      "to": "934c44c5-8b75-416c-8033-66903bed80f4",
+      "title": "",
+      "id": "c096170f-8307-41a3-a8d9-193f5200f3b8"
+    },
+    {
+      "from": "934c44c5-8b75-416c-8033-66903bed80f4",
+      "to": "f301fb6b-7be3-4c59-938d-ec750beeaab7",
+      "title": "",
+      "id": "6e5b2ac6-d729-48dc-bcca-2140d773bfca"
+    },
+    {
+      "from": "934c44c5-8b75-416c-8033-66903bed80f4",
+      "to": "49411d09-c349-4b04-b87a-52006385fdd3",
+      "title": "",
+      "id": "1cf40c07-00ee-451c-93ee-fcfb5e48a19c"
+    },
+    {
+      "from": "44675a32-53be-451f-8294-b7a6ce00fa8b",
+      "to": "6170f394-1bfb-434e-b8aa-ad315206218b",
+      "title": "",
+      "id": "c23d8c35-95ac-4568-962b-5ab8f9c675ae"
+    },
+    {
+      "from": "6170f394-1bfb-434e-b8aa-ad315206218b",
+      "to": "6da4133a-df2c-46df-9ea3-71ca9fb14726",
+      "title": "",
+      "id": "a169ef79-0a55-4789-8947-f10edf2e9abe"
+    },
+    {
+      "from": "6da4133a-df2c-46df-9ea3-71ca9fb14726",
+      "to": "f3d476ac-a260-4f14-843b-fea22189cd63",
+      "title": "",
+      "id": "4c710c03-c01a-49bf-8e57-4560ece8bb6e"
+    },
+    {
+      "from": "6da4133a-df2c-46df-9ea3-71ca9fb14726",
+      "to": "e21ead25-74e3-4a64-9f90-9dd082cdb530",
+      "title": "",
+      "id": "f6c2d4f3-40ca-4a8a-b69f-a14b1bbe6099"
+    },
+    {
+      "from": "6da4133a-df2c-46df-9ea3-71ca9fb14726",
+      "to": "0c7ba1ea-d870-437a-aa5f-084ed1569fcd",
+      "title": "",
+      "id": "5e3d1e03-aa58-4ac0-bbc1-59c4af7dc41a"
+    },
+    {
+      "from": "6170f394-1bfb-434e-b8aa-ad315206218b",
+      "to": "ecbe5944-866b-46b6-a461-b5fd99395aba",
+      "title": "",
+      "id": "115c0922-f37a-44a3-a70c-a028f7cbfb5c"
+    },
+    {
+      "from": "ecbe5944-866b-46b6-a461-b5fd99395aba",
+      "to": "f145d34e-01cb-4a26-880f-03b507790a60",
+      "title": "",
+      "id": "9cda1213-bec5-4c01-82ec-c6247add4c31"
+    },
+    {
+      "from": "ecbe5944-866b-46b6-a461-b5fd99395aba",
+      "to": "3fc23249-b10d-4a42-a7e2-bc6c90c2d897",
+      "title": "",
+      "id": "b3b749a9-a912-4ca9-9122-968750a39368"
+    },
+    {
+      "from": "ecbe5944-866b-46b6-a461-b5fd99395aba",
+      "to": "69fbe13b-489f-406c-86d2-52edcf170062",
+      "title": "",
+      "id": "b7f1c799-52e4-4fa3-9985-00b49b31d212"
+    },
+    {
+      "from": "6170f394-1bfb-434e-b8aa-ad315206218b",
+      "to": "e661a59a-3a9b-4528-b471-cf4fb3b9dcf6",
+      "title": "",
+      "id": "29c7b5e0-d7f1-4608-b9e0-b13913d1957b"
+    },
+    {
+      "from": "e661a59a-3a9b-4528-b471-cf4fb3b9dcf6",
+      "to": "17dfc44f-2d51-472b-af49-a0f60b511064",
+      "title": "",
+      "id": "2103b0b3-0237-408c-a4de-86a605fd469a"
+    },
+    {
+      "from": "e661a59a-3a9b-4528-b471-cf4fb3b9dcf6",
+      "to": "3ece9dde-3ada-48db-a078-db32ee6246be",
+      "title": "",
+      "id": "bae388e3-f946-4a16-a81a-01e46e0dbe5f"
+    },
+    {
+      "from": "e661a59a-3a9b-4528-b471-cf4fb3b9dcf6",
+      "to": "0e3d80aa-9b73-4dde-b0c5-4208b862d474",
+      "title": "",
+      "id": "10dae89d-cb04-4847-b0dc-57f0f9a2d772"
+    },
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "2d114e0a-f2ae-4b16-acea-e4bc9d0d453f",
+      "title": "",
+      "id": "d74248a1-d737-43a0-b661-5ff7aa690b91"
+    },
+    {
+      "from": "2d114e0a-f2ae-4b16-acea-e4bc9d0d453f",
+      "to": "85df8c9b-bb18-4233-9470-77ad3723c569",
+      "title": "",
+      "id": "ac885964-bf9f-4172-b2fb-1df292b64431"
+    },
+    {
+      "from": "85df8c9b-bb18-4233-9470-77ad3723c569",
+      "to": "ec8df8ab-80c8-4e00-81e7-38a1fd9a4a70",
+      "title": "",
+      "id": "f72fe67b-2046-47b8-b530-b5b978743741"
+    },
+    {
+      "from": "85df8c9b-bb18-4233-9470-77ad3723c569",
+      "to": "64d9ed42-173e-4b9b-857a-626e6fb529ed",
+      "title": "",
+      "id": "51167c06-7ab4-4a92-b54b-cf8a224386af"
+    },
+    {
+      "from": "2d114e0a-f2ae-4b16-acea-e4bc9d0d453f",
+      "to": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "title": "",
+      "id": "29bfbd05-abcb-4e61-9279-7994af71aeb2"
+    },
+    {
+      "from": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "to": "20bea8b1-3612-4092-bf92-5784924b8eb9",
+      "title": "",
+      "id": "714a5428-a147-4a56-af12-69addd7bea5c"
+    },
+    {
+      "from": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "to": "4e16c6d4-6ce4-4d89-8eac-7ba4d827bcab",
+      "title": "",
+      "id": "e555455b-4db2-4fe6-b037-49aa1e51ce37"
+    },
+    {
+      "from": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "to": "072147f3-84a1-4eed-a2a7-fb86cdd66128",
+      "title": "",
+      "id": "7f78a6ff-fe4b-4c47-a373-3ed93222ef59"
+    },
+    {
+      "from": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "to": "87af594e-b2c8-45c3-b2f3-b0afc683131e",
+      "title": "",
+      "id": "8f32a136-fcd8-4fd8-9875-e35be49a9296"
+    },
+    {
+      "from": "d217a5be-fa29-49c2-a81e-7a3c3fcd6928",
+      "to": "e8431edc-e2a8-488f-a8d9-01c71fed8870",
+      "title": "",
+      "id": "d7dd599e-84e0-4b76-b8c5-a74eec6552dd"
+    },
+    {
+      "from": "e8431edc-e2a8-488f-a8d9-01c71fed8870",
+      "to": "36f089df-ec90-4f76-921d-fc9f9ed8e470",
+      "title": "",
+      "id": "763b44a2-61b9-409a-9f77-2e94e423f14a"
+    },
+    {
+      "from": "e8431edc-e2a8-488f-a8d9-01c71fed8870",
+      "to": "87714138-b653-4401-9632-37621f3c93b4",
+      "title": "",
+      "id": "b78dfe05-6259-4a36-9f60-cd85baab9c15"
+    },
+    {
+      "from": "2d114e0a-f2ae-4b16-acea-e4bc9d0d453f",
+      "to": "5e9b6c10-ab46-4421-b731-df5cec87f00a",
+      "title": "",
+      "id": "02c79cc8-21fd-41df-8869-e2b2cd8bf9f3"
+    },
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "ae9afe2a-8abd-46c4-a095-ab7bbefb8ae2",
+      "title": "",
+      "id": "5a463920-c4f1-4bbd-b425-8ada3b5c45cc"
+    },
+    {
+      "from": "ae9afe2a-8abd-46c4-a095-ab7bbefb8ae2",
+      "to": "3f906bd9-aab6-4161-8e32-58b76431f9d0",
+      "title": "",
+      "id": "abdaeb2a-5bad-45e7-b7e7-fff85dacc0e9"
+    },
+    {
+      "from": "ae9afe2a-8abd-46c4-a095-ab7bbefb8ae2",
+      "to": "1bef0544-1db6-4119-a22c-35b7f6adca41",
+      "title": "",
+      "id": "cfd54bd9-97b7-4acc-a06c-b94f7fdd4ec3"
+    },
+    {
+      "from": "ae9afe2a-8abd-46c4-a095-ab7bbefb8ae2",
+      "to": "116227d7-d5b8-41e5-a6cd-565527ec3876",
+      "title": "",
+      "id": "c632e460-1633-4386-9dc6-703c1e8fc868"
+    },
+    {
+      "from": "116227d7-d5b8-41e5-a6cd-565527ec3876",
+      "to": "bf444d1b-8888-48e4-b11b-9bcae087dccd",
+      "title": "",
+      "id": "e288ccdf-790b-42ab-ba79-d33364db984c"
+    },
+    {
+      "from": "ae9afe2a-8abd-46c4-a095-ab7bbefb8ae2",
+      "to": "fa9f6f80-de40-4961-ae43-d1708cbb49ce",
+      "title": "",
+      "id": "7a7f0a02-47f7-4074-9d01-7f9e979b3595"
+    },
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "89afc478-99b2-4ba0-8065-0d9ce4652dad",
+      "title": "",
+      "id": "d2a67960-def2-4b2b-9b6e-b21481e257cc"
+    },
+    {
+      "from": "89afc478-99b2-4ba0-8065-0d9ce4652dad",
+      "to": "af5cdc31-15fd-4c92-a036-b9623cce1c3f",
+      "title": "",
+      "id": "1b4b37a6-35e9-43e4-8167-32fefc48fd64"
+    },
+    {
+      "from": "89afc478-99b2-4ba0-8065-0d9ce4652dad",
+      "to": "6d873d11-f7be-4ad6-a008-1296817b8dfe",
+      "title": "",
+      "id": "d8405273-c006-4224-bad2-2416245539c7"
+    },
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "14520ecf-5fa0-4124-880a-ca9bfb69c9c8",
+      "title": "",
+      "id": "80054fc3-2cfc-4a7d-a0aa-9b49fad2b001"
+    },
+    {
+      "from": "14520ecf-5fa0-4124-880a-ca9bfb69c9c8",
+      "to": "4a2cc644-338b-4975-b8dd-46bde8813a8e",
+      "title": "",
+      "id": "e56e5c6f-e144-4cd6-b5ac-dc85df969805"
+    },
+    {
+      "from": "4a2cc644-338b-4975-b8dd-46bde8813a8e",
+      "to": "979ca9db-38cf-4572-974b-454cee381a54",
+      "title": "",
+      "id": "f92cf151-0137-475b-8bc5-03c4e6939325"
+    },
+    {
+      "from": "979ca9db-38cf-4572-974b-454cee381a54",
+      "to": "b1512a52-fd3f-4506-8573-edd155ca9071",
+      "title": "",
+      "id": "60fb279c-da43-45dc-bcf7-5111a1ad758f"
+    },
+    {
+      "from": "979ca9db-38cf-4572-974b-454cee381a54",
+      "to": "9f4a2427-ed9c-427e-b13c-fd9317a61d47",
+      "title": "",
+      "id": "71dc34c2-a237-41f0-b087-9525d0a43e4c"
+    },
+    {
+      "from": "979ca9db-38cf-4572-974b-454cee381a54",
+      "to": "c66d787a-ad5c-429d-bef4-65fccdc3c3ef",
+      "title": "",
+      "id": "956a82e6-1847-48a1-9b6a-dbc3cdcef028"
+    },
+    {
+      "from": "14520ecf-5fa0-4124-880a-ca9bfb69c9c8",
+      "to": "d07f3189-ed2a-49a0-8df5-bacb3bee9e36",
+      "title": "",
+      "id": "76d7f908-c665-410e-80a5-4907896d92f9"
+    },
+    {
+      "from": "14520ecf-5fa0-4124-880a-ca9bfb69c9c8",
+      "to": "f4b6235b-4477-4aed-be87-c6583cfdf6b2",
+      "title": "",
+      "id": "4e125e07-4b42-4577-a4a8-009b00f347b8"
+    },
+    {
+      "from": "14520ecf-5fa0-4124-880a-ca9bfb69c9c8",
+      "to": "0b8fac00-e7ef-4ffc-8754-62890b8ee0ab",
+      "title": "",
+      "id": "4b661d0c-edbb-4a4f-8d29-7f5d1110ee93"
+    },
+    {
+      "from": "b17faabd-a9ea-446c-95ba-5cbf7de99839",
+      "to": "fd46db65-bdfe-4322-ab65-d5b40576f09a",
+      "title": "",
+      "id": "1eba1d21-bfdc-42f9-83b2-1c25703c969f"
+    },
+    {
+      "from": "fd46db65-bdfe-4322-ab65-d5b40576f09a",
+      "to": "df88ef07-86f3-4073-a2fa-d2507077b6d5",
+      "title": "",
+      "id": "b96871e1-bbe0-4d2e-b51b-19f85da719bb"
+    },
+    {
+      "from": "df88ef07-86f3-4073-a2fa-d2507077b6d5",
+      "to": "51f68bf8-cba2-4d19-8a6d-76dbeef1b2df",
+      "title": "",
+      "id": "11819bdb-980e-441d-bcc6-55d00c1739d4"
+    },
+    {
+      "from": "df88ef07-86f3-4073-a2fa-d2507077b6d5",
+      "to": "48f8a757-0899-4aee-966c-88b3c97bf504",
+      "title": "",
+      "id": "79e56f8d-d1b0-46aa-b473-1329b3064c50"
+    },
+    {
+      "from": "df88ef07-86f3-4073-a2fa-d2507077b6d5",
+      "to": "c2899ea3-150b-43e5-a59a-da48e9391fb4",
+      "title": "",
+      "id": "2a1d7f0b-7a60-4107-ad54-e9152844f35f"
+    },
+    {
+      "from": "fd46db65-bdfe-4322-ab65-d5b40576f09a",
+      "to": "d42dc4b6-01a9-4003-8fae-ddce6aa0b233",
+      "title": "",
+      "id": "6d2a1826-22f6-4a93-9754-8c50ee91f242"
+    },
+    {
+      "from": "d42dc4b6-01a9-4003-8fae-ddce6aa0b233",
+      "to": "8ee4e749-78fa-4c01-ada1-f775d105efee",
+      "title": "",
+      "id": "f9d70b43-7d38-4162-9cbd-b19854b34be8"
+    },
+    {
+      "from": "d42dc4b6-01a9-4003-8fae-ddce6aa0b233",
+      "to": "4be54347-2234-4a92-9195-0a95cbc300eb",
+      "title": "",
+      "id": "6a73c03b-4a37-4b9e-a966-d2cff93deceb"
+    },
+    {
+      "from": "fd46db65-bdfe-4322-ab65-d5b40576f09a",
+      "to": "322ee451-7670-401e-a312-6be885523a80",
+      "title": "",
+      "id": "f0420f9f-04e3-4d74-b8e9-926dc862c8dc"
+    },
+    {
+      "from": "322ee451-7670-401e-a312-6be885523a80",
+      "to": "837146b3-5149-409f-98b3-ea6843addab9",
+      "title": "",
+      "id": "1b5b37b7-d0cc-4d37-808c-d340da7167d7"
+    },
+    {
+      "from": "322ee451-7670-401e-a312-6be885523a80",
+      "to": "d66e714c-31e2-48cd-a05f-d5806fee9f47",
+      "title": "",
+      "id": "3ec8767c-0251-4b57-aab5-ba6f72694544"
+    },
+    {
+      "from": "322ee451-7670-401e-a312-6be885523a80",
+      "to": "d98ec67d-2364-49f7-a8e7-4d38ff8a019d",
+      "title": "",
+      "id": "ec2c9e34-c70c-4349-8fa4-4ffa6fe4e6a7"
+    },
+    {
+      "from": "322ee451-7670-401e-a312-6be885523a80",
+      "to": "95439fa4-efbf-45d4-9039-42417488cce0",
+      "title": "",
+      "id": "763a452d-c882-448a-8199-6332a6970fce"
+    },
+    {
+      "from": "322ee451-7670-401e-a312-6be885523a80",
+      "to": "d4f7f867-a134-4906-bb32-09cf0b0ea5e0",
+      "title": "",
+      "id": "40430781-fcb5-4313-a3ca-459d782746c2"
+    },
+    {
+      "from": "322ee451-7670-401e-a312-6be885523a80",
+      "to": "a246d810-0acf-4a25-b96f-a06368eb3a78",
+      "title": "",
+      "id": "bb06f6a6-b4da-4d86-b0e6-579156e45ff3"
+    },
+    {
+      "from": "fd46db65-bdfe-4322-ab65-d5b40576f09a",
+      "to": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "title": "",
+      "id": "38644d65-4293-4b15-8f6a-bf50f01be1a0"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "e768f6d3-dd82-4922-8402-4fcfc9e6348d",
+      "title": "",
+      "id": "10a4bcbe-fde9-4cfb-9ad3-6198595c0392"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "e507ee78-000e-43b6-9d2e-e79be08b5f29",
+      "title": "",
+      "id": "bb145169-4087-482a-a6a5-9da18de054a5"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "4a582437-9598-4fa6-90ef-5237b8b92107",
+      "title": "",
+      "id": "5b4c53bf-e72d-4574-8584-6a142a988ab8"
+    },
+    {
+      "from": "4a582437-9598-4fa6-90ef-5237b8b92107",
+      "to": "d919f29e-6f57-427d-81dc-d05de578bc44",
+      "title": "",
+      "id": "b2afdf5b-d703-42c1-93b4-9ae86fc6967a"
+    },
+    {
+      "from": "4a582437-9598-4fa6-90ef-5237b8b92107",
+      "to": "0b07deec-ff4e-4252-ba27-bd7116d3c964",
+      "title": "",
+      "id": "b6660a83-572b-4a09-b4a6-e713efa9b058"
+    },
+    {
+      "from": "4a582437-9598-4fa6-90ef-5237b8b92107",
+      "to": "31da61a0-dbf7-42c5-b69f-4e37e820cde2",
+      "title": "",
+      "id": "ad86b396-c256-449b-b81d-6353e3eca827"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "7a911479-2bec-4fe2-b2c3-43d2dda50fba",
+      "title": "",
+      "id": "a8da5128-50f6-4429-84cf-1c5ec188f956"
+    },
+    {
+      "from": "7a911479-2bec-4fe2-b2c3-43d2dda50fba",
+      "to": "01984995-c7c2-4c56-86d3-c95db5947d74",
+      "title": "",
+      "id": "740fcc58-5da6-4035-a2d8-7bf040000694"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "83031b31-a15f-4251-b3c9-53017f0ebb16",
+      "title": "",
+      "id": "9a7bb49a-ae9c-4fcd-95cf-08abba951e13"
+    },
+    {
+      "from": "83031b31-a15f-4251-b3c9-53017f0ebb16",
+      "to": "ab1213c6-2756-43a9-81ae-bf7a1f6eec25",
+      "title": "",
+      "id": "4d8235e5-52a8-412a-b00c-5917a10626a2"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "126bc9b7-e132-4fa0-a963-bb96cd4b36ce",
+      "title": "",
+      "id": "b71ea9b2-426e-48b9-bc3a-a55d6935ad06"
+    },
+    {
+      "from": "126bc9b7-e132-4fa0-a963-bb96cd4b36ce",
+      "to": "f0cb79bf-b9f6-4638-8e43-a3ed8f4a952a",
+      "title": "",
+      "id": "c17b96ad-9c1b-4a7e-9a51-5ff69f252e76"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "bc43661b-be86-4e96-8d3c-7e194bd516bf",
+      "title": "",
+      "id": "92a0bb48-4d12-4192-8557-6adf968a44d7"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "542f44fe-3540-4aae-9198-6420c0221bd7",
+      "title": "",
+      "id": "b0ce1b1a-bd9d-4acd-80f8-be134ae9bb91"
+    },
+    {
+      "from": "1d0c6e4e-08a9-40c0-9a4f-351cada557df",
+      "to": "b835cd0c-770e-42c1-b17f-c80853e51166",
+      "title": "",
+      "id": "31984754-458a-41a1-9920-327c4cd18809"
+    }
+  ]
+}

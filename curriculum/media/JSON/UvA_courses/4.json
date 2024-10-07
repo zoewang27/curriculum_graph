@@ -1,0 +1,1116 @@
+{
+  "nodes": [
+    {
+      "id": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "label": "Programming Languages",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Programming Languages",
+      "description": "Programming Languages: ",
+      "layer": 0,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "bb11f8b1-d6a2-4cef-8dc7-bb72eec9888c",
+      "label": "Programming Languages, Paradigms, and Environments",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Programming Languages, Paradigms, and Environments",
+      "description": "Programming Languages, Paradigms, and Environments: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0fcbac45-0b08-407a-8cf5-df832ca12da4",
+      "label": "Programming languages",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Programming languages",
+      "description": "Programming languages: Programming Languages: High-level languages (Python, Java), Low-level languages (Assembly), Scripting languages (Perl, Ruby), Domain-specific languages (SQL, HTML).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9b6c6e4b-c02c-4811-8d7e-8eb6a74742a4",
+      "label": "Programming Paradigms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Programming Paradigms",
+      "description": "Programming Paradigms: Programming Paradigms: Imperative (C, Pascal), Declarative (Functional, Logic), Object-Oriented (Java, C++), Procedural (C, Fortran).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c97fcc4c-85de-4062-92a5-3676c5d17f43",
+      "label": "Programming environments",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Programming environments",
+      "description": "Programming environments: Programming Environments: Integrated Development Environments (IDEs), Text Editors, Notebook Environments (Jupyter), Web-based Development Environments (CodePen).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "label": "Python",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Python",
+      "description": "Python: Python: High-level, interpreted, general-purpose programming language.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4aba058c-305d-4543-8427-aec55b6e4d74",
+      "label": "Programming Paradigm",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Programming Paradigm",
+      "description": "Programming Paradigm: Programming Paradigm: Multi-paradigm, supporting object-oriented, imperative, functional, and procedural programming.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1477a5c9-86a5-49ae-b5df-76b4229ce77a",
+      "label": "Fundamental Types",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Fundamental Types",
+      "description": "Fundamental Types: Fundamental Types: Integers, floats, strings, booleans, lists, tuples, dictionaries, sets.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "30581662-d342-4a59-a017-6d4e24672c97",
+      "label": "The Type System",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "The Type System",
+      "description": "The Type System: The Type System: Dynamic typing, strong typing.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "ed765250-911c-4ce3-9959-46cc4d569b20",
+      "label": "Flow Control",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Flow Control",
+      "description": "Flow Control: Flow Control: if-else statements, loops (for, while).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d77a4db5-85c1-4637-b35c-0c9d6c3c3d03",
+      "label": "Compound Data Types",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Compound Data Types",
+      "description": "Compound Data Types: Compound Data Types: Lists, tuples, dictionaries, sets.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "809cfb4e-8de5-4749-a5d7-484acb7c08d8",
+      "label": "Strings",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Strings",
+      "description": "Strings: Strings: Immutable sequences of characters, supporting a wide range of string manipulation operations.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "86c978eb-3f45-4afb-b6b8-7c4b30e86d22",
+      "label": "Exceptions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Exceptions",
+      "description": "Exceptions: Exceptions: Mechanism for handling errors and exceptional situations in Python code.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1df0e847-40e6-4340-a456-a96ffeaab52e",
+      "label": "Memory Model",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Memory Model",
+      "description": "Memory Model: Memory Model: Garbage collection, reference counting.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d9be7321-0587-452f-b88b-117d613a0b60",
+      "label": "Iteratie of Recursie",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Iteratie of Recursie",
+      "description": "Iteratie of Recursie: Iteratie of Recursie: Iteration (for loops) and recursion (calling functions within themselves) are common control flow mechanisms.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4de87fec-3a43-4278-ac32-2227ff4404ee",
+      "label": "Higher Order Functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Higher Order Functions",
+      "description": "Higher Order Functions: Higher Order Functions: Functions that can accept other functions as arguments or return functions as results.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e68b8fc4-2437-4fff-9889-2a60ab97d847",
+      "label": "Iterable",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Iterable",
+      "description": "Iterable: Iterable: Objects that can be iterated over using loops or comprehension expressions.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a8bc3e41-c770-4f06-8837-802514d30a54",
+      "label": "Generator",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Generator",
+      "description": "Generator: Generator: Functions that return iterators, allowing lazy evaluation of values.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "label": "C++",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "C++",
+      "description": "C++: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c065b9e3-0a33-42cf-ba13-43bc4761dc1a",
+      "label": "History",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "History",
+      "description": "History: History: Developed by Bjarne Stroustrup in 1983 as an extension of the C programming language.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3b135b52-f8ac-44ee-a127-b848cac1e9c0",
+      "label": "Usage",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Usage",
+      "description": "Usage: Usage: Widely used in systems and application programming, game development, and high-performance computing.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "947b9c2a-29ae-4f53-8782-85a3b9c078a9",
+      "label": "Types",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Types",
+      "description": "Types: Types: Strongly typed language supporting fundamental types like integers, floats, characters, as well as user-defined types.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "179ed868-3f05-465e-9142-be8fa11cd46f",
+      "label": "Memory Model",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Memory Model",
+      "description": "Memory Model: Memory Model: Manual memory management with support for dynamic allocation and deallocation using new and delete keywords.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9ae841df-b7cf-4172-91b6-d942feb112ca",
+      "label": "RAII",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "RAII",
+      "description": "RAII: RAII (Resource Acquisition Is Initialization): Idiomatic C++ pattern for managing resource allocation and deallocation using constructors and destructors.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "db3eb125-a183-477c-8b2d-c63e98133309",
+      "label": "Operator Overloading",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Operator Overloading",
+      "description": "Operator Overloading: Operator Overloading: Ability to redefine the behavior of operators for user-defined types.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b7f41373-40d2-48ec-97cf-c833daaa4fcd",
+      "label": "Polymorphism",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Polymorphism",
+      "description": "Polymorphism: Polymorphism: Achieved through virtual functions and inheritance hierarchies, allowing objects of different types to be treated uniformly.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "59cc6c8e-08f3-4e23-914e-0ad33c33b050",
+      "label": "Data structures",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Data structures",
+      "description": "Data structures: Data Structures: C++ offers a rich set of data structures including arrays, vectors, linked lists, stacks, queues, trees, and maps, among others.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6377a498-a807-4a0a-807c-b86f92b200db",
+      "label": "inheritance",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "inheritance",
+      "description": "inheritance: Inheritance: Allows a class to inherit properties and behavior from another class, facilitating code reuse and promoting a hierarchical relationship between classes.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5ce6c074-c8e0-49dd-a7dd-9e56e50502a0",
+      "label": "Inclusion Polymorphism",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Inclusion Polymorphism",
+      "description": "Inclusion Polymorphism: Inclusion Polymorphism: Also known as runtime polymorphism or method overriding, it allows objects of different classes to be treated as objects of a common superclass, enabling dynamic method dispatch.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d7d2c82e-9c40-4a0f-bd9a-02a8106ef335",
+      "label": "Software engineering principes",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Software engineering principes",
+      "description": "Software engineering principes: Software Engineering Principles: Principles such as SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion) guide object-oriented design and promote maintainability, scalability, and robustness.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "49f6b749-1c59-4f3e-8c9e-d39459d8a250",
+      "label": "Coupling\uff08not treated\uff09",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Coupling\uff08not treated\uff09",
+      "description": "Coupling\uff08not treated\uff09: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3e82ef9f-29a9-441a-851c-a63fc485671d",
+      "label": "Design patterns\uff08not covered\uff09",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Design patterns\uff08not covered\uff09",
+      "description": "Design patterns\uff08not covered\uff09: ",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a60ef344-c11e-4fc0-b1c2-541937ae6839",
+      "label": "Encapsulation and information hiding",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Encapsulation and information hiding",
+      "description": "Encapsulation and information hiding: Encapsulation and Information Hiding: Encapsulation is the bundling of data and methods that operate on the data into a single unit (class), while information hiding restricts access to certain components of an object, promoting modularity and reducing dependencies.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "73074f07-9ed4-4888-aac5-ce39bd203731",
+      "label": "OO in Python en C++",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "OO in Python en C++",
+      "description": "OO in Python en C++: OO in Python and C++: Both Python and C++ are object-oriented languages, but they have different approaches to implementing OOP concepts. Python emphasizes simplicity and readability, while C++ offers more control over memory management and performance.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "label": "Haskell",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Haskell",
+      "description": "Haskell: Haskell: A purely functional programming language known for its strong type system and lazy evaluation.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8db1a790-508e-4448-a9cc-150578145ab4",
+      "label": "First steps",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "First steps",
+      "description": "First steps: First steps: Basic introduction to Haskell syntax, data types, and functional programming concepts.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4f4d6302-7ae9-4f30-ad78-d434bb510656",
+      "label": "Lists and tuples",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Lists and tuples",
+      "description": "Lists and tuples: Lists and tuples: Common data structures in Haskell; lists are sequences of elements, tuples are fixed-size heterogeneous collections of elements.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "56078f25-8d40-48af-a469-fd91ddf96110",
+      "label": "Functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Functions",
+      "description": "Functions: Functions: Fundamental building blocks for defining computations, often using pattern matching and recursion.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1304ce86-98c4-4045-8b4c-1f64eafc66fe",
+      "label": "Working with lists",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Working with lists",
+      "description": "Working with lists: Working with lists: Various operations for efficient manipulation of lists, such as mapping, filtering, folding, and list comprehensions.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a0baae19-0e5d-4053-bd75-446fcc32e6b1",
+      "label": "Tips'n Tricks",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Tips'n Tricks",
+      "description": "Tips'n Tricks: Tips'n Tricks: Practical tips and best practices for writing clear, concise, and idiomatic Haskell code.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "161cc620-4ec6-4bfb-a760-72acaa06e779",
+      "label": "Types",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Types",
+      "description": "Types: Types: Haskell boasts a powerful type system ensuring type safety and expressive type signatures for functions and data structures.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "06e1f374-d0f1-4bd1-aeee-e1a1491eaed8",
+      "label": "Polymorphism",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Polymorphism",
+      "description": "Polymorphism: Polymorphism: Haskell supports both parametric polymorphism using type variables and ad-hoc polymorphism using type classes.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b45127a8-73cd-4433-a5a8-7da06b9a72f3",
+      "label": "Input/Output",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Input/Output",
+      "description": "Input/Output: Input/Output: Interaction with the outside world, including reading from and writing to files, handling user input, and performing IO operations.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "84e02573-0e0b-404a-ba3e-d953c80f67ad",
+      "label": "Functors",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Functors",
+      "description": "Functors: Functors: Types that can be mapped over, allowing for serialization of computations while preserving structure.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c80fd916-e369-422c-aeb7-21154b193e3b",
+      "label": "do-notation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "do-notation",
+      "description": "do-notation: do-notation: Syntax sugar in Haskell used to serialize IO operations in a more imperative style, making IO code more readable and manageable.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f9c1ca3a-9874-4935-8917-760a4cf1d7d8",
+      "label": "Functional programming",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Functional programming",
+      "description": "Functional programming: Functional programming: A programming paradigm centered around the evaluation of mathematical functions and avoiding mutable state and side effects.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0b98ee6d-1106-44cd-8070-c206fcd64ecb",
+      "label": "Haskell design choices",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Haskell design choices",
+      "description": "Haskell design choices: Haskell design choices: Haskell is a purely functional programming language designed to be concise, expressive, and efficient, featuring lazy evaluation and strong static typing.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "27e75be7-84ac-4cbc-bc74-ada6b23c8da4",
+      "label": "Procedures versus functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Procedures versus functions",
+      "description": "Procedures versus functions: Procedures versus functions: Functions in functional programming are pure and deterministic, while procedures may have side effects and mutable state, common in imperative programming.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c78357e7-3acb-4159-919a-bec4e114f68e",
+      "label": "Program State and Input/Output",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Program State and Input/Output",
+      "description": "Program State and Input/Output: Program State and Input/Output: In functional programming, program state is typically immutable, and IO operations are handled in a referentially transparent manner using monads or other abstractions.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8b579d43-22fc-4286-acd6-3726cf4a697c",
+      "label": "Evaluation strategy",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Evaluation strategy",
+      "description": "Evaluation strategy: Evaluation strategy: Functional programming languages often use lazy evaluation, where expressions are only evaluated when their results are needed, enabling more efficient and modular code.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "1e669ca3-00e4-4dc1-925a-ae2789bcc15f",
+      "label": "Lazy evaluation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Lazy evaluation",
+      "description": "Lazy evaluation: Lazy evaluation: In lazy evaluation, expressions are not evaluated until their results are needed, allowing for more efficient use of resources and enabling the creation of infinite data structures.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "label": "Enlang",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Enlang",
+      "description": "Enlang: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d0a6a066-de8d-41bd-a937-f2d82e5aa8c2",
+      "label": "History",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "History",
+      "description": "History: History: Erlang is a programming language developed by Ericsson in the 1980s for telecommunications applications, known for its fault tolerance and concurrency features.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a467651c-fd8b-4634-b581-0789653fc048",
+      "label": "Imperative vs Functional",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Imperative vs Functional",
+      "description": "Imperative vs Functional: Imperative vs Functional: Erlang is primarily a functional programming language, emphasizing immutability and declarative programming, although it does support some imperative constructs.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "163605ac-c18f-4732-b1c3-7ea4220f3638",
+      "label": "Strict vs lazy evaluation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Strict vs lazy evaluation",
+      "description": "Strict vs lazy evaluation: Strict vs lazy evaluation: Erlang primarily uses strict evaluation, meaning expressions are evaluated as soon as they are bound to variables. Lazy evaluation is not a primary feature of Erlang.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c38a9c01-331c-47c5-b9f8-b83a11bcd876",
+      "label": "IO in Erlang",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "IO in Erlang",
+      "description": "IO in Erlang: IO in Erlang: Input/output operations in Erlang are handled through message passing between Erlang processes, allowing for asynchronous and concurrent IO operations.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "963b1111-459e-45cc-a734-ce981a282d69",
+      "label": "Data types",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Data types",
+      "description": "Data types: Data types: Erlang supports a variety of data types including integers, floats, atoms, tuples, lists, binaries, and maps, as well as user-defined data structures.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "463b7f58-ba9f-404e-b582-4d4a484a22fb",
+      "label": "Functions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Functions",
+      "description": "Functions: Functions: Functions in Erlang are first-class citizens, meaning they can be passed as arguments to other functions, returned from functions, and assigned to variables.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6a6d1de3-a68a-4fcf-b373-023fe52534eb",
+      "label": "Regular expressions",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Regular expressions",
+      "description": "Regular expressions: Regular expressions: Erlang provides support for regular expressions through the re module, allowing for pattern matching and manipulation of strings based on regular expressions.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "cf88b780-3b00-4d55-99e4-a3bf93a0487f",
+      "label": "Error handling",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Error handling",
+      "description": "Error handling: Error handling: Erlang has built-in mechanisms for error handling, including the use of exception handling with try...catch blocks and the error function for raising errors.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "to": "bb11f8b1-d6a2-4cef-8dc7-bb72eec9888c",
+      "title": "",
+      "id": "cf6524c4-cf09-4cc1-b607-6e8002a8a402"
+    },
+    {
+      "from": "bb11f8b1-d6a2-4cef-8dc7-bb72eec9888c",
+      "to": "0fcbac45-0b08-407a-8cf5-df832ca12da4",
+      "title": "",
+      "id": "692b64ce-5d6f-4bff-9609-17e797da546a"
+    },
+    {
+      "from": "bb11f8b1-d6a2-4cef-8dc7-bb72eec9888c",
+      "to": "9b6c6e4b-c02c-4811-8d7e-8eb6a74742a4",
+      "title": "",
+      "id": "88809e89-dbda-420f-bbba-766844195a08"
+    },
+    {
+      "from": "bb11f8b1-d6a2-4cef-8dc7-bb72eec9888c",
+      "to": "c97fcc4c-85de-4062-92a5-3676c5d17f43",
+      "title": "",
+      "id": "4096c759-c650-4156-b0dc-202b3950d238"
+    },
+    {
+      "from": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "to": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "title": "",
+      "id": "5191a3dc-ba52-4e88-a3b5-d1472eca4fbc"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "4aba058c-305d-4543-8427-aec55b6e4d74",
+      "title": "",
+      "id": "85afc34e-4972-43a3-9a9e-b59f4655c600"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "1477a5c9-86a5-49ae-b5df-76b4229ce77a",
+      "title": "",
+      "id": "e037361b-d8bd-4cf2-9e35-6f2e4eb063e1"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "30581662-d342-4a59-a017-6d4e24672c97",
+      "title": "",
+      "id": "3dbed14b-7e38-4948-b4fd-1882076dff68"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "ed765250-911c-4ce3-9959-46cc4d569b20",
+      "title": "",
+      "id": "cd28cc42-6139-46dd-be82-fc9066581b7d"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "d77a4db5-85c1-4637-b35c-0c9d6c3c3d03",
+      "title": "",
+      "id": "ea9f37b4-39f0-422b-ab65-c9fe68c580d0"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "809cfb4e-8de5-4749-a5d7-484acb7c08d8",
+      "title": "",
+      "id": "be19ee5f-08e6-442b-a0ff-80609e463a2e"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "86c978eb-3f45-4afb-b6b8-7c4b30e86d22",
+      "title": "",
+      "id": "79ab1ed5-2217-4e52-b0d6-f606ea4eed76"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "1df0e847-40e6-4340-a456-a96ffeaab52e",
+      "title": "",
+      "id": "b4356cb2-62fe-41bc-8638-26fec01637fa"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "d9be7321-0587-452f-b88b-117d613a0b60",
+      "title": "",
+      "id": "cc35faaa-7d76-44d2-aafd-fac0ecf31f43"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "4de87fec-3a43-4278-ac32-2227ff4404ee",
+      "title": "",
+      "id": "c97f514b-b6c1-4ac7-87dd-2ad94742ed9c"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "e68b8fc4-2437-4fff-9889-2a60ab97d847",
+      "title": "",
+      "id": "5e04dbab-49f7-4962-9ddb-c337f2a65a2f"
+    },
+    {
+      "from": "0db40103-ce3a-491a-95bc-c388f0b5e23e",
+      "to": "a8bc3e41-c770-4f06-8837-802514d30a54",
+      "title": "",
+      "id": "4fc2cd76-1d7a-4760-b83d-9efcbbf824fc"
+    },
+    {
+      "from": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "to": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "title": "",
+      "id": "94a53e8b-2b59-4736-9911-ea3e53a08fce"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "c065b9e3-0a33-42cf-ba13-43bc4761dc1a",
+      "title": "",
+      "id": "add5feb5-15df-4ee0-83e8-3ab04ad5ca5b"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "3b135b52-f8ac-44ee-a127-b848cac1e9c0",
+      "title": "",
+      "id": "d617af87-392e-4410-a3df-6f2e83f398f5"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "947b9c2a-29ae-4f53-8782-85a3b9c078a9",
+      "title": "",
+      "id": "212ebfee-d2c9-46bc-bc4e-211c2bd07de0"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "179ed868-3f05-465e-9142-be8fa11cd46f",
+      "title": "",
+      "id": "e8cecf25-950b-4dd6-ab24-b1b52cf64905"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "9ae841df-b7cf-4172-91b6-d942feb112ca",
+      "title": "",
+      "id": "41a3241e-5ae1-4802-8c84-cb9721476733"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "db3eb125-a183-477c-8b2d-c63e98133309",
+      "title": "",
+      "id": "99942257-de08-469b-b860-70dc982e7798"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "b7f41373-40d2-48ec-97cf-c833daaa4fcd",
+      "title": "",
+      "id": "859f8bd4-6305-497b-9d27-e0c7bdf5bd1b"
+    },
+    {
+      "from": "be1360a6-1b46-4e3c-9db0-4f45e08d610f",
+      "to": "59cc6c8e-08f3-4e23-914e-0ad33c33b050",
+      "title": "",
+      "id": "59c3308f-bcf0-4889-a3cb-6d192e849e3a"
+    },
+    {
+      "from": "d7d2c82e-9c40-4a0f-bd9a-02a8106ef335",
+      "to": "49f6b749-1c59-4f3e-8c9e-d39459d8a250",
+      "title": "",
+      "id": "ff926eb6-9846-4b4c-8e68-71262a622d2c"
+    },
+    {
+      "from": "d7d2c82e-9c40-4a0f-bd9a-02a8106ef335",
+      "to": "3e82ef9f-29a9-441a-851c-a63fc485671d",
+      "title": "",
+      "id": "93cbf985-3ec2-4909-9fb7-9958ea663304"
+    },
+    {
+      "from": "d7d2c82e-9c40-4a0f-bd9a-02a8106ef335",
+      "to": "a60ef344-c11e-4fc0-b1c2-541937ae6839",
+      "title": "",
+      "id": "4488d463-d724-4758-aaf4-f043c6a2840e"
+    },
+    {
+      "from": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "to": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "title": "",
+      "id": "e70f7223-f952-4605-bf6d-52ace316a894"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "8db1a790-508e-4448-a9cc-150578145ab4",
+      "title": "",
+      "id": "f361c30b-0ec0-4e78-9c9e-33aec7b58221"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "4f4d6302-7ae9-4f30-ad78-d434bb510656",
+      "title": "",
+      "id": "987a2b9e-f706-4aac-ae58-415d8243b607"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "56078f25-8d40-48af-a469-fd91ddf96110",
+      "title": "",
+      "id": "ea84688b-c567-4225-80ef-847a992040ea"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "1304ce86-98c4-4045-8b4c-1f64eafc66fe",
+      "title": "",
+      "id": "e99a63da-9cce-4054-a41a-e7ef0cbfa264"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "a0baae19-0e5d-4053-bd75-446fcc32e6b1",
+      "title": "",
+      "id": "89c54f07-7206-45ae-9eb3-6f0f5dbfaa9d"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "161cc620-4ec6-4bfb-a760-72acaa06e779",
+      "title": "",
+      "id": "dce910dd-d48d-4838-a2de-ec0baaa475b2"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "06e1f374-d0f1-4bd1-aeee-e1a1491eaed8",
+      "title": "",
+      "id": "a850bc52-3ce8-4c07-86ce-2f219c255026"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "b45127a8-73cd-4433-a5a8-7da06b9a72f3",
+      "title": "",
+      "id": "f5f3a547-189d-4a5f-aa53-db450cdd81a0"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "84e02573-0e0b-404a-ba3e-d953c80f67ad",
+      "title": "",
+      "id": "03e79c7f-fc15-43bd-8eed-0ada13c29703"
+    },
+    {
+      "from": "5feb69a4-aa8e-4fd3-876b-b65faa8fb024",
+      "to": "c80fd916-e369-422c-aeb7-21154b193e3b",
+      "title": "",
+      "id": "4fa99787-d010-4e2c-9abe-d696ac414680"
+    },
+    {
+      "from": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "to": "f9c1ca3a-9874-4935-8917-760a4cf1d7d8",
+      "title": "",
+      "id": "2fc6c9ad-5d27-4b41-a2f2-59ce5046cb32"
+    },
+    {
+      "from": "f9c1ca3a-9874-4935-8917-760a4cf1d7d8",
+      "to": "0b98ee6d-1106-44cd-8070-c206fcd64ecb",
+      "title": "",
+      "id": "00a2c86f-73a7-48e6-a3bd-ccc37136a152"
+    },
+    {
+      "from": "f9c1ca3a-9874-4935-8917-760a4cf1d7d8",
+      "to": "27e75be7-84ac-4cbc-bc74-ada6b23c8da4",
+      "title": "",
+      "id": "987c6966-5bc4-417b-895f-64fb27425556"
+    },
+    {
+      "from": "27e75be7-84ac-4cbc-bc74-ada6b23c8da4",
+      "to": "c78357e7-3acb-4159-919a-bec4e114f68e",
+      "title": "",
+      "id": "760ed936-9415-4a4e-981a-e082f25ec810"
+    },
+    {
+      "from": "27e75be7-84ac-4cbc-bc74-ada6b23c8da4",
+      "to": "8b579d43-22fc-4286-acd6-3726cf4a697c",
+      "title": "",
+      "id": "e179997b-1254-4270-b961-58dce7c2d99f"
+    },
+    {
+      "from": "f9c1ca3a-9874-4935-8917-760a4cf1d7d8",
+      "to": "1e669ca3-00e4-4dc1-925a-ae2789bcc15f",
+      "title": "",
+      "id": "253ac16d-6636-456e-9ae2-664f76a1ea56"
+    },
+    {
+      "from": "919b9d5d-22e6-4e82-b4db-1800fa59a387",
+      "to": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "title": "",
+      "id": "cfb582be-7a72-49d1-8758-98a3006d0d08"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "d0a6a066-de8d-41bd-a937-f2d82e5aa8c2",
+      "title": "",
+      "id": "f4aad8ff-780b-47dd-b2de-7aefda2de0aa"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "a467651c-fd8b-4634-b581-0789653fc048",
+      "title": "",
+      "id": "fae2ed40-8348-4e90-a4dd-04dfdccd2948"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "163605ac-c18f-4732-b1c3-7ea4220f3638",
+      "title": "",
+      "id": "90fc87f6-c184-4e05-a0c7-35079390760b"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "c38a9c01-331c-47c5-b9f8-b83a11bcd876",
+      "title": "",
+      "id": "8642ce71-6449-494a-bdcf-f3cf2aac1354"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "963b1111-459e-45cc-a734-ce981a282d69",
+      "title": "",
+      "id": "120c23f2-6019-4003-8122-a7600760471e"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "463b7f58-ba9f-404e-b582-4d4a484a22fb",
+      "title": "",
+      "id": "bca9e856-938c-47e7-8ed4-a5d0e9e42a2a"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "6a6d1de3-a68a-4fcf-b373-023fe52534eb",
+      "title": "",
+      "id": "c08c8508-8561-4ac1-9819-9bedcccf6d26"
+    },
+    {
+      "from": "c09449a2-60cc-4660-8be0-2494c9bc70f6",
+      "to": "cf88b780-3b00-4d55-99e4-a3bf93a0487f",
+      "title": "",
+      "id": "f908506b-f230-4add-ac67-7850b6a84a39"
+    }
+  ]
+}

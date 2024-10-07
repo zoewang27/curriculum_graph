@@ -7,7 +7,7 @@ class ObjectiveInline(admin.TabularInline):
     extra = 1
 
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ('course_number', 'course_name','source', 'year', 'period', 'csv_file')
+    list_display = ('course_id','course_number', 'course_name','source', 'year', 'period', 'csv_file')
     list_display_links = ('course_number', 'course_name', 'year', 'period')
     inlines = (ObjectiveInline,)
     ordering = ('source','course_number')

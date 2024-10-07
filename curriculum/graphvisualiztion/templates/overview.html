@@ -1,0 +1,120 @@
+{% extends "./layout.html" %}
+{% load static %}
+{% block content %}
+
+<main style="height: 100vh; overflow-y: auto; ">
+<h2>Bachelor Informatica</h2>
+
+    <form method="GET">
+      <label for="trajectory">Select a Trajectory:</label>
+      <select name="trajectory" id="trajectory" onchange="this.form.submit()" class="custom-select my-1 mr-sm-2" id="courseSource">
+          <option value="">-- All Trajectories --</option>
+          {% for trajectory in trajectories %}
+              <option value="{{ trajectory.trajectory_name }}" {% if trajectory.trajectory_name == selected_trajectory_name %}selected{% endif %}>
+                  {{ trajectory.trajectory_name }}
+              </option>
+          {% endfor %}
+      </select>
+  </form>
+
+
+  {% if selected_trajectory_name %}
+  <h6>Objectives for {{ selected_trajectory_name }}:</h6>
+  <ul>
+      {% for objective in selected_objectives %}
+          <li>{{ forloop.counter }}. {{ objective }}</li>
+      {% empty %}
+          <li>No objectives found for this trajectory.</li>
+      {% endfor %}
+  </ul>
+  <br/>
+{% endif %}
+
+
+
+<h3>Year 1</h3>
+
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+{% for course in courses %}
+    {% if course.year == 1 %}
+        <div class="card" style="width: 18rem; background-color: {% if not course.csv_file %}#d3d3d3{% else %}white{% endif %};">
+          <a href="{% url 'editGraph' course.course_id %}" class="card-link">
+          <div class="card-body">
+            <h5 class="card-title">{{ course.course_name }}</h5>
+          </div>
+          <!-- <ul class="list-group list-group-flush">
+            <li class="list-group-item">period: {{ course.period }}</li>
+          </ul> -->
+          <div class="card-body">
+            <p class="card-text">period: {{ course.period }}</p>
+          </div>
+        </a>
+        </div>
+    {% endif %}
+{% endfor %}
+
+</div>
+<br/>
+
+  
+
+<h3>Year 2</h3>
+
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+  {% for course in courses %}
+      {% if course.year == 2 %}
+          <div class="card" style="width: 18rem; background-color: {% if not course.csv_file %}#d3d3d3{% else %}white{% endif %};">
+            <a href="{% url 'editGraph' course.course_id %}" class="card-link">
+            <div class="card-body">
+              <h5 class="card-title">{{ course.course_name }}</h5>
+            </div>
+            <!-- <ul class="list-group list-group-flush">
+              <li class="list-group-item">period: {{ course.period }}</li>
+            </ul> -->
+            <div class="card-body">
+              <p class="card-text">period: {{ course.period }}</p>
+            </div>
+          </a>
+          </div>
+      {% endif %}
+  {% endfor %}
+  
+  </div>
+  <br/>
+
+
+
+
+<h3>Year 3</h3>
+
+<div class="card-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+
+  {% for course in courses %}
+      {% if course.year == 3 %}
+          <div class="card" style="width: 18rem; background-color: {% if not course.csv_file %}#d3d3d3{% else %}white{% endif %};">
+            <a href="{% url 'editGraph' course.course_id %}" class="card-link">
+            <div class="card-body">
+              <h5 class="card-title">{{ course.course_name }}</h5>
+            </div>
+            <!-- <ul class="list-group list-group-flush">
+              <li class="list-group-item">period: {{ course.period }}</li>
+            </ul> -->
+            <div class="card-body">
+              <p class="card-text">period: {{ course.period }}</p>
+            </div>
+          </a>
+          </div>
+      {% endif %}
+  {% endfor %}
+  
+  </div>
+  
+
+  <br/>
+  <br/>
+  <br/>
+</main>
+
+{% endblock %}

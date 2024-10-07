@@ -1,0 +1,410 @@
+{
+  "nodes": [
+    {
+      "id": "17",
+      "label": "Algorithm and Complexity",
+      "group": "17",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Algorithm and Complexity: ",
+      "layer": 0
+    },
+    {
+      "id": "17.1",
+      "label": "Algorithmic Techniques",
+      "group": "17",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Algorithmic Techniques: ",
+      "layer": 1
+    },
+    {
+      "id": "17.1.1",
+      "label": "Recursion",
+      "group": "17",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Recursion: A technique where a function calls itself in order to solve smaller instances of the same problem.",
+      "layer": 2
+    },
+    {
+      "id": "17.1.1.1",
+      "label": "Divide and Conquer",
+      "group": "17",
+      "shape": "square",
+      "cog_level": "Understand",
+      "title": "Divide and Conquer: Divides a problem into smaller subproblems, solves each subproblem independently, and then combines the solutions.",
+      "layer": 3
+    },
+    {
+      "id": "17.1.1.2",
+      "label": "Backtracking",
+      "group": "17",
+      "shape": "square",
+      "cog_level": "Understand",
+      "title": "Backtracking: A technique for systematically searching through all possible solutions to find the optimal one, often used in constraint satisfaction problems.",
+      "layer": 3
+    },
+    {
+      "id": "17.1.1.2.2",
+      "label": "Recursive algorithm",
+      "group": "17",
+      "shape": "diamond",
+      "cog_level": "Understand",
+      "title": "Recursive algorithm: An algorithm that solves a problem by solving smaller instances of the same problem.",
+      "layer": 4
+    },
+    {
+      "id": "17.1.2",
+      "label": "Dynamic Programming",
+      "group": "17",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Dynamic Programming: A technique used to solve problems by breaking them down into smaller overlapping subproblems and solving each subproblem only once",
+      "layer": 2
+    },
+    {
+      "id": "17.2",
+      "label": "Graph Algorithms",
+      "group": "17",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graph Algorithms: Graph algorithms are a fundamental part of computer science, focusing on analyzing and manipulating graphs, which consist of nodes (vertices) connected by edges.",
+      "layer": 1
+    },
+    {
+      "id": "17.2.2",
+      "label": "Shortest Paths",
+      "group": "17",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Shortest Paths: Finding the shortest path between two vertices in a weighted graph, where the path length is the sum of the weights of its edges.",
+      "layer": 2
+    },
+    {
+      "id": "17.2.2.1",
+      "label": "Dijkstra\u2019s algorithm",
+      "group": "17",
+      "shape": "square",
+      "cog_level": "Understand",
+      "title": "Dijkstra\u2019s algorithm: A greedy algorithm for finding the shortest path from a single source vertex to all other vertices in a weighted graph with non-negative edge weights.",
+      "layer": 3
+    },
+    {
+      "id": "17.2.4",
+      "label": "Graph Applications",
+      "group": "17",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Graph Applications: ",
+      "layer": 2
+    },
+    {
+      "id": "3",
+      "label": "Discrete Math",
+      "group": "3",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Discrete Math: ",
+      "layer": 0
+    },
+    {
+      "id": "3.2",
+      "label": "Recursion",
+      "group": "3",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Recursion: A programming technique where a function calls itself in order to solve problems that can be broken down into smaller, similar subproblems.",
+      "layer": 1
+    },
+    {
+      "id": "3.2.4",
+      "label": "More Complex Recursive Definitions",
+      "group": "3",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "More Complex Recursive Definitions: Recursive definitions that involve multiple base cases or conditions, leading to more intricate structures or behaviors.",
+      "layer": 2
+    },
+    {
+      "id": "3.2.5",
+      "label": "Recursive Algoritms",
+      "group": "3",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Recursive Algoritms: Algorithms that solve problems by breaking them down into smaller instances of the same problem until a base case is reached.",
+      "layer": 2
+    },
+    {
+      "id": "3.8",
+      "label": "Graphs",
+      "group": "3",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graphs: ",
+      "layer": 1
+    },
+    {
+      "id": "3.8.1",
+      "label": "Graphs and Graph Models",
+      "group": "3",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Graphs and Graph Models: Graphs and Graph Models: Graph theory studies the properties and relationships of graphs, which consist of vertices (nodes) and edges (connections). Graphs model various real-world scenarios, such as networks, social interactions, and transportation systems.",
+      "layer": 2
+    },
+    {
+      "id": "3.8.5",
+      "label": "Commonly Known Graph Problems",
+      "group": "3",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Commonly Known Graph Problems: Commonly Known Graph Problems: Graph theory encompasses a wide range of problems, including finding shortest paths, determining connectivity, identifying cycles, and solving optimization tasks like the traveling salesman problem",
+      "layer": 2
+    },
+    {
+      "id": "3.8.7",
+      "label": "Shortest Path Problems",
+      "group": "3",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Shortest Path Problems: Shortest Path Problems: Shortest path problems involve finding the most efficient route between two vertices in a graph. Algorithms like Dijkstra's algorithm and Bellman-Ford algorithm are commonly used to solve such problems.",
+      "layer": 2
+    }
+  ],
+  "edges": [
+    {
+      "from": "3",
+      "to": "3.2",
+      "title": ""
+    },
+    {
+      "from": "17.1",
+      "to": "17.1.1",
+      "title": ""
+    },
+    {
+      "from": "17",
+      "to": "17.1",
+      "title": ""
+    },
+    {
+      "from": "17.1.1.2",
+      "to": "17.1.1.2.2",
+      "title": ""
+    },
+    {
+      "from": "17.1.1",
+      "to": "17.1.1.2",
+      "title": ""
+    },
+    {
+      "from": "3.2",
+      "to": "3.2.4",
+      "title": ""
+    },
+    {
+      "from": "3.2",
+      "to": "3.2.5",
+      "title": ""
+    },
+    {
+      "from": "17.1.1",
+      "to": "17.1.1.1",
+      "title": ""
+    },
+    {
+      "from": "17.1",
+      "to": "17.1.2",
+      "title": ""
+    },
+    {
+      "from": "3",
+      "to": "3.8",
+      "title": ""
+    },
+    {
+      "from": "17.2",
+      "to": "17.2.4",
+      "title": ""
+    },
+    {
+      "from": "17",
+      "to": "17.2",
+      "title": ""
+    },
+    {
+      "from": "3.8",
+      "to": "3.8.1",
+      "title": ""
+    },
+    {
+      "from": "3.8",
+      "to": "3.8.5",
+      "title": ""
+    },
+    {
+      "from": "3.8",
+      "to": "3.8.7",
+      "title": ""
+    },
+    {
+      "from": "17.2",
+      "to": "17.2.2",
+      "title": ""
+    },
+    {
+      "from": "17.2.2",
+      "to": "17.2.2.1",
+      "title": ""
+    },
+    {
+      "from": "3.2",
+      "to": "17.1.1",
+      "title": "0.8552",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2",
+      "to": "17.1.1.2.2",
+      "title": "0.8049",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.4",
+      "to": "17.1.1",
+      "title": "0.6033",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.4",
+      "to": "17.1.1.2.2",
+      "title": "0.6019",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.5",
+      "to": "17.1",
+      "title": "0.6325",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.5",
+      "to": "17.1.1",
+      "title": "0.6866",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.5",
+      "to": "17.1.1.1",
+      "title": "0.6436",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.5",
+      "to": "17.1.1.2.2",
+      "title": "0.8295",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.2.5",
+      "to": "17.1.2",
+      "title": "0.6163",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8",
+      "to": "17.2.4",
+      "title": "0.6992",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8.1",
+      "to": "17.2",
+      "title": "0.6856",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8.1",
+      "to": "17.2.4",
+      "title": "0.6693",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8.5",
+      "to": "17.2",
+      "title": "0.6267",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8.5",
+      "to": "17.2.4",
+      "title": "0.6295",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8.7",
+      "to": "17.2.2",
+      "title": "0.6472",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    },
+    {
+      "from": "3.8.7",
+      "to": "17.2.2.1",
+      "title": "0.6312",
+      "color": "grey",
+      "width": 1,
+      "shadow": false,
+      "dashes": true
+    }
+  ],
+  "courseId": [
+    "3",
+    "17"
+  ]
+}

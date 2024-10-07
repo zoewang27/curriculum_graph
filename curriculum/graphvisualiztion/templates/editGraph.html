@@ -1,0 +1,767 @@
+{% extends "./layout.html" %}
+{% load static %}
+{% block content %}
+
+
+<style>
+    body,
+    select {
+    font: 10pt sans;
+    }
+
+
+
+
+    #container {
+        display: flex; /* 使用 flexbox 布局 */
+    }
+    #mynetwork {
+        flex: 1; /* 让网络图占据可用空间 */
+        width: 800px; /* 你可以根据需要调整宽度 */
+        height: 600px;
+        border: 1px solid lightgray;
+    }
+    #info-container {
+        flex: 0.3; /* 让信息栏占据剩余空间的30% */
+        margin-left: 20px; /* 添加一些左边距 */
+        display: flex; /* 使用 flexbox 布局 */
+        flex-direction: column; /* 垂直布局 */
+    }
+    #node-info {
+        flex: 1; /* 让信息区域占据上部分 */
+        border: 1px solid lightgray;
+        padding: 10px;
+        overflow-y: auto; /* 添加垂直滚动条，如果内容溢出 */
+        margin-bottom: 10px;
+        background-color: #ffffff;
+    }
+    #course-objectives {
+        flex: 4; /* 让附加信息区域占据下部分 */
+        border: 1px solid lightgray;
+        padding: 10px;
+        max-height: 350px;
+        margin-top: 10px;
+        overflow-y: auto;
+        /* background-color: #f1f0f0; */
+    }
+
+
+
+
+
+    #operation {
+    font-size: 20px;
+    }
+    #network-popUp {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        z-index: 299;
+        width: 500px;
+        height: 430px;
+        background-color: #ffffff;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dedee3;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* input[type="button"] {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    } */
+
+    #legend-container {
+    display: flex; /* 让图例在一行内排列 */
+    gap: 20px; /* 每个图例之间留出空间 */
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 10px;
+    }
+
+    .legend-item {
+        display: flex; /* 每个图例包含颜色方块和文字，水平排列 */
+        align-items: center;
+        gap: 10px; /* 颜色方块和文字之间的间距 */
+    }
+
+    .color-box, .shape-box {
+        width: 20px; /* 默认宽度 */
+        height: 20px; /* 默认高度 */
+    }
+    .shape-box{
+        border: 1px solid black; /* 添加边框 */
+    }
+
+    /* 定义不同的形状 */
+    .circle {
+        border-radius: 50%; /* 完全的圆形 */
+    }
+
+    .oval {
+        width: 40px; /* 椭圆形需要较大的宽度 */
+        height: 20px;
+        border-radius: 50%; /* 完全的圆角，形成椭圆 */
+    }
+
+    .round-rect {
+        width: 40px; /* 圆角矩形宽度 */
+        height: 20px; /* 圆角矩形高度 */
+        border-radius: 5px; /* 圆角半径，形成圆角矩形 */
+    }
+
+
+
+
+</style>
+
+
+ <!-- Add node pop-up window  -->
+<div id="network-popUp">
+  <span id="operation">node</span> 
+  <br/>
+  <table class="table table-bordered" style="margin-top: 10px;">
+    <tbody>
+      <tr>
+        <td style="width: 25%;">Id</td>
+        <td style="width: 75%;"><input id="node-id" value="new value" class="form-control" disabled/></td>
+      </tr>
+      <tr>
+        <td >Label</td>
+        <td><input id="node-label" value="new value" class="form-control"/></td>
+      </tr>
+      <tr>
+        <td>Node Type</td>
+        <td>
+            <select class="form-control" id="node-type">
+                <option value="box">Knowledge Point</option>
+                <option value="ellipse">Knowledge Unit</option>
+                <option value="circle">Course name</option>
+              </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Cognitive Level</td>
+        <td>
+            <select class="form-control" id="cog-level">
+                <option value="Create">Create</option>
+                <option value="Evaluate">Evaluate</option>
+                <option value="Analyze">Analyze</option>
+                <option value="Apply">Apply</option>
+                <option value="Understand">Understand</option>
+                <option value="Remember">Remember</option>
+              </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Description</td>
+        <td><input id="node-description" placeholder="more description about this node" class="form-control"/></td>
+      </tr>
+    </tbody>
+  </table>
+  <input type="button" value="Save" class="btn btn-primary" id="saveButton" />
+  <input type="button" value="Cancel" class="btn btn-secondary" id="cancelButton" />
+</div>
+
+
+
+
+<div class="modal fade bd-example-modal-lg" id="Modal-nodes-pairs" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ModalLongTitle">Similar nodes pairs</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+          <div class="modal-body-node-pair" style="max-height: 500px; overflow-y: auto;">
+            <div style="padding-left: 25px;  padding-right: 25px; padding-top: 10px" id="nodes-pair-content">
+              <ul class="list-group list-group-horizontal">
+                <!-- Nodes pairs will be appended here -->
+              </ul>
+          </div>
+          </div>
+        </br>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main style="height: 100vh; overflow-y: auto;">
+
+    <h3 style="display: inline;">{{ course.course_name }}</h3>
+    <p style="display: inline;">(Year: {{ course.year }}     Period: {{ course.period }}     Category: {{ course.course_category }} )</p>
+    <hr>
+
+    <div id="legend-container">
+        <div class="legend-item">
+            <div class="color-box" style="background-color: #b8bceb;"></div>
+            <span>Create</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background-color: #a3ddf5;"></div>
+            <span>Evaluate</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background-color: #b0e3bf;"></div>
+            <span>Analyze</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background-color: #FDDA0D;"></div>
+            <span>Apply</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background-color: #ffd2af;"></div>
+            <span>Understand</span>
+        </div>
+        <div class="legend-item">
+            <div class="color-box" style="background-color: #faadb0;"></div>
+            <span>Remember</span>
+        </div>
+
+        <!-- 形状图例 -->
+        <div class="legend-item">
+            <div class="shape-box circle" ></div>
+            <span>Course</span>
+        </div>
+        <div class="legend-item">
+            <div class="shape-box oval"></div>
+            <span>Knowledge Unit</span>
+        </div>
+        <div class="legend-item">
+            <div class="shape-box round-rect"></div>
+            <span>Knowledge Point / Sub Knowledge Point</span>
+        </div>
+    </div>
+    
+
+    
+    <div id="container">
+        <div id="mynetwork"></div>
+        <div id="info-container">
+            <input type="button" value="Save Changes" class="btn btn-primary" onclick="exportNetwork()" style="margin-bottom: 10px;"/>
+
+            <p>* Please save changes after editing the graph</p>
+            <h5>Node Description:</h5>
+            <div id="node-info">Click on a node to see its description.</div>
+            <h5>Course Objectives:</h5>
+            <div id="course-objectives">
+                <ul>
+                    {% for objective in objectives %}
+                        <li>{{ forloop.counter }}. ({{ objective.level }}){{ objective.content }} </li>
+                    {% empty %}
+                        <li>No objectives found for this course.</li>
+                    {% endfor %}
+                </ul> 
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+
+ 
+
+
+    <h3 style="padding: 10px;">Related Course</h3>
+    <div class="card-container" style="display: flex; flex-wrap: wrap; gap: 10px;">
+    {% for course in related_courses %}
+        <div class="card" style="width: 18rem; " data-course-id="{{ course.course_id }}">
+            <a href="{% url 'editGraph' course.course_id %}" class="card-link">
+                <div class="card-body" style="flex: 1;">
+                    <h5 class="card-title">{{ course.course_name }}</h5>
+                    <p class="card-text">Year: {{ course.year }} Period: {{ course.period }}</p>
+                </div>
+                <div class="card-body" style="display: flex; flex-direction: column; justify-content: flex-end ">
+                    <a href="#" class="btn btn-primary  similar-nodes-btn">similar nodes</a>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+    </div>
+    </br>
+    </br>
+    <div style="margin-top: 30px;"></div>
+
+
+
+    
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var dataset_nodes = {{ nodes|safe }};
+var dataset_edges = {{ edges|safe }};
+
+if (dataset_nodes.length > 0) {
+        var nodes = new vis.DataSet(dataset_nodes);
+        var edges = new vis.DataSet(dataset_edges);
+}
+
+var network = null;
+var seed = 2;
+
+var courseId = {{ course.course_id |safe }};
+
+// Color mapping based on cognitive level
+var color_mapping = {
+    "create": "#b8bceb",      // purple
+    "evaluate": "#a3ddf5",    // blue
+    "analyze": "#b0e3bf",     // green
+    "apply": "#FDDA0D",       // yellow
+    "understand": "#ffd2af",  // orange
+    "remember": "#faadb0"     // red
+};
+
+// Function to apply colors based on cognitive level
+function applyNodeColors() {
+    nodes.forEach(function(node) {
+        var cogLevel = node.cog_level ? node.cog_level.toLowerCase() : "";
+        if (color_mapping.hasOwnProperty(cogLevel)) {
+            node.color = { background: color_mapping[cogLevel], border: color_mapping[cogLevel] };
+        } else if (cogLevel === "") {
+            node.color = { background: "#D3D3D3", border: "#7D7C7C" }; // Gray for empty cog_level
+        }
+        nodes.update(node); // Update the node with the new color
+    });
+}
+
+// Function to destroy the existing network
+function destroy() {
+    if (network !== null) {
+    network.destroy();
+    network = null;
+    }
+}
+
+// Function to draw the network
+function draw() {
+    destroy();
+
+    applyNodeColors();
+
+    // Create a network
+    var container = document.getElementById("mynetwork");
+    var options = {
+    nodes: {
+        shape: "circle",
+        borderWidth: 2,
+        shadow: true,
+        size: 15,
+        font: { color: "black" },
+        },
+
+    edges: {
+        width: 2,
+        // physics: false,
+        // smooth:{
+        //     // enable: true,
+        //     type:'dynamic',
+        //     // forceDirection: 'horizontal'
+        // }
+        // shadow: true,
+        },
+
+    layout: { randomSeed: seed }, // Maintain layout consistency
+    // locale: 'en', // Set locale to English
+    interaction: { keyboard: true },
+    manipulation: {
+        addNode: function (data, callback) {
+        // Populate the popup for adding a node
+        document.getElementById("operation").innerText = "Add Node";
+        document.getElementById("node-id").value = data.id || '';
+        document.getElementById("node-label").value = data.label || '';
+        document.getElementById("node-type").value = data.shape || '';
+        document.getElementById("cog-level").value = data.cog_level || '';
+        document.getElementById("node-description").value = data.description || '';
+        document.getElementById("saveButton").onclick = saveData.bind(
+            this,
+            data,
+            callback
+        );
+        document.getElementById("cancelButton").onclick = clearPopUp;
+        document.getElementById("network-popUp").style.display = "block";
+        },
+        editNode: function (data, callback) {
+        // Populate the popup for editing a node
+        document.getElementById("operation").innerText = "Edit Node";
+        document.getElementById("node-id").value = data.id;
+        document.getElementById("node-label").value = data.label;
+        document.getElementById("node-type").value = data.shape || '';
+        document.getElementById("cog-level").value = data.cog_level || '';
+        document.getElementById("node-description").value = data.description || '';
+        document.getElementById("saveButton").onclick = saveData.bind(
+            this,
+            data,
+            callback
+        );
+        document.getElementById("cancelButton").onclick = cancelEdit.bind(
+            this,
+            callback
+        );
+        document.getElementById("network-popUp").style.display = "block";
+        },
+        addEdge: function (data, callback) {
+        if (data.from == data.to) {
+            var r = confirm("Do you want to connect the node to itself?");
+            if (r == true) {
+            callback(data);
+            }
+        } else {
+            callback(data);
+        }
+        },
+    },
+};
+
+    // Set up data before creating the network
+    var data = {
+    nodes: nodes,
+    edges: edges,
+    };
+
+    network = new vis.Network(container, data, options)
+}
+
+function clearPopUp() {
+    document.getElementById("saveButton").onclick = null;
+    document.getElementById("cancelButton").onclick = null;
+    document.getElementById("network-popUp").style.display = "none";
+}
+
+function cancelEdit(callback) {
+    clearPopUp();
+    callback(null);
+}
+
+function saveData(data, callback) {
+    let cleanedData = {
+        id: document.getElementById("node-id").value,
+        label: document.getElementById("node-label").value,
+        cog_level: document.getElementById("cog-level").value,
+        description: document.getElementById("node-description").value,
+        shape: document.getElementById("node-type").value
+        // layer: 2,     // Default layer
+        // group: "1"    // Default group
+    };
+
+    clearPopUp();
+    callback(cleanedData);  // Return the cleaned data to the network
+    applyNodeColors();      // Reapply node colors if necessary
+
+}
+
+$(document).ready(function() {
+    // Your initialization code here
+    draw();;  // Call the draw function to set up the network
+
+    network.on("click", function (params) {
+    // 检查点击的是否是节点
+    if (params.nodes.length > 0) {
+        // 获取点击的节点ID
+        var nodeId = params.nodes[0];
+        // 通过节点ID获取节点数据
+        var node = nodes.get(nodeId);
+        // 显示节点的title字段到#node-info
+        if (node.description) {
+            document.getElementById("node-info").innerText = node.description;
+        } else {
+            document.getElementById("node-info").innerText = "No title available for this node.";
+        }
+    } else {
+        // 如果未点击节点，清空或显示默认文本
+        document.getElementById("node-info").innerText = "Click on a node to see its description.";
+    }
+    });
+
+
+    $(".similar-nodes-btn").click(function(event) {
+        // 当前课程id，以及选中的课程ID
+        const card = $(this).closest('.card');
+        const related_courseId = card.data('course-id');
+        console.log("Selected course_id:", related_courseId);
+        console.log("courseId", courseId);
+
+        var selectedCoursesID = [];
+        selectedCoursesID.push(courseId)
+        selectedCoursesID.push(related_courseId)
+
+        // send the selected courses to the backend
+        sendSelectedCourses(selectedCoursesID)
+            .then(function(response) {
+                // 解构返回的对象
+                const { nodes: similar_nodes, edges: similar_edges } = response;
+
+                // 检查响应中是否有节点
+                if (similar_nodes && similar_nodes.length > 0) {
+                    $("#Modal-nodes-pairs").modal("show");
+
+                    var modalBody = $("#nodes-pair-content .list-group");
+                    modalBody.empty(); // 清空之前的内容
+
+                    // 填充模态框中的节点和边
+                    similar_edges.forEach(function(edge) {
+                        var fromNode = findNodeById(edge.from, similar_nodes);
+                        var toNode = findNodeById(edge.to, similar_nodes);
+                        if (fromNode && toNode) {
+                            modalBody.append("<li class='list-group-item'>" + 'Similarity score: ' + edge.title + "</li>");
+                            modalBody.append("<li class='list-group-item list-group-item-primary'>" + fromNode.title + "</li>");
+                            modalBody.append("<li class='list-group-item list-group-item-warning'>" + toNode.title + "</li>");
+                        }
+                    });
+                } else {
+                    alert("The selected courses don't have any similar nodes. Please select other courses!");
+                }
+            })
+            .catch(function(error) {
+                console.error("Error sending selected courses:", error);
+                alert("An error occurred while processing your request. Please try again.");
+            });
+
+    });
+
+
+
+
+    
+
+    // $("#explain-btn").click(function() {
+    //     var nodeInfo = $("#node-info").text();
+    //     console.log(nodeInfo);
+        
+    //     $.ajax({
+    //         url: '{% url "explain-By-AI" %}', 
+    //         type: "POST",
+    //         data: {
+    //             nodeInfo: nodeInfo, 
+    //             csrfmiddlewaretoken: "{{ csrf_token }}",
+    //         },
+    //         success: function(response) {
+    //             // 假设 response 是一个 JSON 对象
+    //             $("#explain-info").html(response.description); // 将服务器返回的描述插入到 div 中
+    //         },
+    //         error: function(xhr, status, error) {
+    //             console.error("Error occurred:", status, error);
+    //             $("#explain-info").html("An error occurred while fetching the explanation."); // 错误时的提示
+    //         }
+    //     });
+    // });
+
+
+});
+
+
+function sendSelectedCourses(courses) {
+    return $.ajax({
+        url: '{% url "similarity-detect" %}', 
+        type: "POST",
+        data: {
+            courselist: JSON.stringify(courses), 
+            csrfmiddlewaretoken: "{{ csrf_token }}",
+        }
+    }).then(function(response) {
+        // 返回节点和边作为一个对象
+        return {
+            nodes: response.nodes,
+            edges: response.edges
+        };
+    });
+}
+
+// 辅助函数，用于根据 ID 从节点列表中查找节点
+function findNodeById(nodeId, nodes) {
+    return nodes.find(node => node.id === nodeId);
+}
+
+
+// function addConnections(elem, index) {
+//   // 获取节点的连接信息并赋值给connections
+//   elem.connections = network.getConnectedNodes(index);
+// }
+
+
+function exportNetwork() {
+  // 获取所有节点数据，包含自定义属性如description, cognitive_level等
+  var nodes = network.body.data.nodes.get();  // 从network中获取所有节点的信息
+  var edges = network.body.data.edges.get();  // 从network中获取所有节点的信息
+  
+  const graph_data = {
+    nodes: nodes,
+    edges: edges
+};
+
+
+  // 为每个节点添加connections
+//   nodes.forEach((node, index) => {
+//     addConnections(node, node.id);  // 获取并添加每个节点的connections
+//   });
+
+  // 格式化输出节点数据为JSON字符串
+  var exportValue = JSON.stringify(graph_data, undefined, 2);
+
+  // 将JSON数据发送到后端
+  saveToBackend(exportValue);
+}
+
+
+
+
+function saveToBackend(jsonData) {
+    $.ajax({
+        url: "{% url 'save-json' %}",  // Django 视图的 URL
+        type: "POST",
+        data: {
+            courseId: courseId,   // 传递课程名称
+            data: jsonData,           // 传递 JSON 数据
+            csrfmiddlewaretoken: "{{ csrf_token }}",  // CSRF 令牌
+        },
+        success: function(response) {
+            console.log('Success:', response);  // 成功回调
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.error('Error:', textStatus, errorThrown);  // 错误回调
+        }
+    });
+}
+
+
+
+
+
+// function getNodeData(data) {
+//   var networkNodes = [];
+
+//   data.forEach(function (elem, index, array) {
+//     networkNodes.push({
+//       id: elem.id,
+//       label: elem.label,
+//       cog_level:elem.cog_level,
+ 
+//       title: elem.title,
+//       description:elem.description,
+//       shape:elem.shape,
+//       layer:elem.layer,
+//       group:elem.group
+//     });
+//   });
+
+//   return new vis.DataSet(networkNodes);
+// }
+
+// function getNodeById(data, id) {
+//   for (var n = 0; n < data.length; n++) {
+//     if (data[n].id == id) {
+//       // double equals since id can be numeric or string
+//       return data[n];
+//     }
+//   }
+
+//   throw "Can not find id '" + id + "' in data";
+// }
+
+// function getEdgeData(data) {
+//   var networkEdges = [];
+
+//   data.forEach(function (node) {
+//     // add the connection
+//     node.connections.forEach(function (connId, cIndex, conns) {
+//       networkEdges.push({ from: node.id, to: connId });
+//       let cNode = getNodeById(data, connId);
+
+//       var elementConnections = cNode.connections;
+
+//       // remove the connection from the other node to prevent duplicate connections
+//       var duplicateIndex = elementConnections.findIndex(function (connection) {
+//         return connection == node.id; // double equals since id can be numeric or string
+//       });
+
+//       if (duplicateIndex != -1) {
+//         elementConnections.splice(duplicateIndex, 1);
+//       }
+//     });
+//   });
+
+//   return new vis.DataSet(networkEdges);
+// }
+
+
+
+
+
+
+
+
+</script>
+
+
+
+{% endblock %}

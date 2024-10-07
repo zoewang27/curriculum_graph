@@ -1,0 +1,271 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "label": "Introduction to Programming",
+      "group": "1",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Introduction to Programming: ",
+      "layer": 0
+    },
+    {
+      "id": "2",
+      "label": "Architecture and computer organization",
+      "group": "2",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Architecture and computer organization: ",
+      "layer": 0
+    },
+    {
+      "id": "3",
+      "label": "Discrete Math",
+      "group": "3",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Discrete Math: ",
+      "layer": 0
+    },
+    {
+      "id": "4",
+      "label": "Programming Languages",
+      "group": "4",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Programming Languages: ",
+      "layer": 0
+    },
+    {
+      "id": "5",
+      "label": "Data Structures",
+      "group": "5",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Data Structures: ",
+      "layer": 0
+    },
+    {
+      "id": "6",
+      "label": "Distributed and parallel programming",
+      "group": "6",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Distributed and parallel programming: ",
+      "layer": 0
+    },
+    {
+      "id": "8",
+      "label": "Networks and Network Security",
+      "group": "8",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Networks and Network Security: ",
+      "layer": 0
+    },
+    {
+      "id": "9",
+      "label": "Web Technology",
+      "group": "9",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Web Technology: ",
+      "layer": 0
+    },
+    {
+      "id": "14",
+      "label": "Modern Databases",
+      "group": "14",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Modern Databases: ",
+      "layer": 0
+    },
+    {
+      "id": "16",
+      "label": "Numerical Receipt",
+      "group": "16",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Numerical Receipt: ",
+      "layer": 0
+    },
+    {
+      "id": "17",
+      "label": "Algorithm and Complexity",
+      "group": "17",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Algorithm and Complexity: ",
+      "layer": 0
+    },
+    {
+      "id": "18",
+      "label": "Computational Science",
+      "group": "18",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Computational Science: ",
+      "layer": 0
+    },
+    {
+      "id": "21",
+      "label": "Compiler Construction",
+      "group": "21",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Compiler Construction: ",
+      "layer": 0
+    },
+    {
+      "id": "23",
+      "label": "Functional Programming",
+      "group": "23",
+      "shape": "circle",
+      "cog_level": "Understand",
+      "title": "Functional Programming: ",
+      "layer": 0
+    }
+  ],
+  "edges": [
+    {
+      "from": "1",
+      "to": "4",
+      "title": 15,
+      "value": 15
+    },
+    {
+      "from": "1",
+      "to": "21",
+      "title": 19,
+      "value": 19
+    },
+    {
+      "from": "2",
+      "to": "4",
+      "title": 5,
+      "value": 5
+    },
+    {
+      "from": "2",
+      "to": "6",
+      "title": 9,
+      "value": 9
+    },
+    {
+      "from": "2",
+      "to": "21",
+      "title": 12,
+      "value": 12
+    },
+    {
+      "from": "3",
+      "to": "4",
+      "title": 4,
+      "value": 4
+    },
+    {
+      "from": "3",
+      "to": "5",
+      "title": 5,
+      "value": 5
+    },
+    {
+      "from": "3",
+      "to": "14",
+      "title": 7,
+      "value": 7
+    },
+    {
+      "from": "3",
+      "to": "17",
+      "title": 16,
+      "value": 16
+    },
+    {
+      "from": "3",
+      "to": "18",
+      "title": 13,
+      "value": 13
+    },
+    {
+      "from": "4",
+      "to": "21",
+      "title": 9,
+      "value": 9
+    },
+    {
+      "from": "4",
+      "to": "23",
+      "title": 103,
+      "value": 103
+    },
+    {
+      "from": "5",
+      "to": "8",
+      "title": 4,
+      "value": 4
+    },
+    {
+      "from": "5",
+      "to": "14",
+      "title": 15,
+      "value": 15
+    },
+    {
+      "from": "5",
+      "to": "17",
+      "title": 9,
+      "value": 9
+    },
+    {
+      "from": "5",
+      "to": "18",
+      "title": 4,
+      "value": 4
+    },
+    {
+      "from": "5",
+      "to": "23",
+      "title": 5,
+      "value": 5
+    },
+    {
+      "from": "6",
+      "to": "14",
+      "title": 7,
+      "value": 7
+    },
+    {
+      "from": "8",
+      "to": "9",
+      "title": 16,
+      "value": 16
+    },
+    {
+      "from": "9",
+      "to": "14",
+      "title": 6,
+      "value": 6
+    },
+    {
+      "from": "14",
+      "to": "18",
+      "title": 5,
+      "value": 5
+    },
+    {
+      "from": "14",
+      "to": "21",
+      "title": 4,
+      "value": 4
+    },
+    {
+      "from": "17",
+      "to": "18",
+      "title": 4,
+      "value": 4
+    }
+  ],
+  "matched": "UvA"
+}

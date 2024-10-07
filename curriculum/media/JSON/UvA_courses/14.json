@@ -1,0 +1,1729 @@
+{
+  "nodes": [
+    {
+      "id": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "label": "Modern Databases",
+      "shape": "circle",
+      "cog_level": "",
+      "title": "Modern Databases",
+      "description": "Modern Databases: ",
+      "layer": 0,
+      "color": {
+        "background": "#D3D3D3",
+        "border": "#7D7C7C"
+      }
+    },
+    {
+      "id": "e5020fbd-0eff-4b60-8f14-f5af0d023d04",
+      "label": "Relational Model & Algebra",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Relational Model & Algebra",
+      "description": "Relational Model & Algebra: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "66de3bc2-8248-434a-a619-ce2ff28d64c9",
+      "label": "Relational Model",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Relational Model",
+      "description": "Relational Model: A database model based on the concept of relations (tables) consisting of rows (tuples) and columns (attributes)",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "632d5d75-03f8-4f0e-bd49-2d09c8a97d6b",
+      "label": "Schema",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Schema",
+      "description": "Schema: The structure or blueprint of a database, defining the organization of data elements, their relationships, and constraints.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "17e44207-aab8-423a-b237-4154dc62e894",
+      "label": "NULL values",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "NULL values",
+      "description": "NULL values: Placeholder values in a database representing missing or undefined data for a particular attribute in a tuple.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b311a2a6-1060-4586-8cd8-5fa9d12464e8",
+      "label": "Constraints",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Constraints",
+      "description": "Constraints: Rules or conditions imposed on data to ensure its integrity and validity, including primary key, foreign key, unique, not null, and check constraints.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "624ba7c4-e744-4b98-8684-9e747ae23699",
+      "label": "Key",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Key",
+      "description": "Key: An attribute or combination of attributes that uniquely identifies each tuple in a relation, such as a primary key or candidate key.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "4e5c673e-535c-4024-b6ca-1b92b0464a44",
+      "label": "Foreign Key",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Foreign Key",
+      "description": "Foreign Key: An attribute or set of attributes in a relation that refers to the primary key of another relation, establishing a relationship between the two relations.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "11363179-071e-4137-a658-c3383ad02671",
+      "label": "Relational Algebra",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Relational Algebra",
+      "description": "Relational Algebra: A formal language for querying and manipulating data in relational databases, consisting of a set of operators for performing operations like selection, projection, joins, and set operations.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "546b8c5b-65d5-4735-a38b-2606b7e68bba",
+      "label": "Selection",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Selection",
+      "description": "Selection: Operation that retrieves tuples from a relation based on a specified condition or predicate.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d3ca03fb-c7d7-4a20-9b77-738092b2e151",
+      "label": "Projection",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Projection",
+      "description": "Projection: Operation that retrieves specific attributes (columns) from a relation while discarding others.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "76eddccc-cd45-41da-9d29-e24e90e4747f",
+      "label": "Joins",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Joins",
+      "description": "Joins: Operation that combines tuples from two or more relations based on a common attribute or condition, such as inner join, outer join, and cross join.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e8ecca08-83b7-4111-8d47-929ad7671bc1",
+      "label": "Set Operations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Set Operations",
+      "description": "Set Operations: Operations such as union, intersection, and difference that manipulate sets of tuples to perform operations across relations.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "dcb5db12-ea4c-4892-9dac-e9c2420681af",
+      "label": "Entity/Relationship Models",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Entity/Relationship Models",
+      "description": "Entity/Relationship Models: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "label": "E/R Model",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "E/R Model",
+      "description": "E/R Model: A conceptual modeling technique used to represent the entities, attributes, and relationships within a domain.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b16b58d0-1c25-47dd-a0fc-7f3cdfc1167d",
+      "label": "Entities",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Entities",
+      "description": "Entities: Objects or concepts in the real world that are represented in the database, each identified by a unique key. Examples include a person, place, event, or object.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e2a1ad49-2d54-421a-b8f8-de73adf7f6e0",
+      "label": "Attributes",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Attributes",
+      "description": "Attributes: Properties or characteristics of entities that describe them. Attributes have values associated with them.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "cb997792-8601-4e82-a1c8-bdf5fbb689b3",
+      "label": "Relationships",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Relationships",
+      "description": "Relationships: Associations between entities that represent connections or interactions.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "afd137f4-cbd6-4273-899b-8b120e9c3504",
+      "label": "Roles",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Roles",
+      "description": "Roles: Roles define the participation of an entity in a relationship.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "abc9b8bf-b108-4270-9784-53de3b566283",
+      "label": "Cardinalities",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Cardinalities",
+      "description": "Cardinalities: Cardinality constraints specify the number of instances of one entity that can be associated with the number of instances of another entity in a relationship.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d6c774bb-8428-4033-9584-d89384eb175f",
+      "label": "Attributes",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Attributes",
+      "description": "Attributes: ",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "18e6024e-9af0-41dd-be6c-2cc4c0655818",
+      "label": "Weak Entities",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Weak Entities",
+      "description": "Weak Entities: Entities that do not have a primary key attribute and depend on the existence of another entity (owner entity) for identification.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "75a96629-3a8a-49a6-b4a0-43e4daf80080",
+      "label": "Inheritance",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Inheritance",
+      "description": "Inheritance: Inheritance allows entities to inherit attributes and relationships from another entity.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2840e3c6-2b24-4798-99e4-45c387489115",
+      "label": "E/R To Relational",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "E/R To Relational",
+      "description": "E/R To Relational: The process of converting an entity/relationship model into a relational schema, where entities become tables, relationships become foreign keys, and attributes become columns.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "62f4268b-1416-4f09-bbb8-61cb57fe81ce",
+      "label": "UML Class Diagrams",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "UML Class Diagrams",
+      "description": "UML Class Diagrams: Unified Modeling Language diagrams used to represent the structure and relationships of classes (entities) in object-oriented systems.Class diagrams can include attributes, operations, associations, inheritance, and multiplicity.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "label": "SQL",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "SQL",
+      "description": "SQL: A domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "112a8670-0e7f-46c2-80c0-56f37e78e6c8",
+      "label": "Table Definition",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Table Definition",
+      "description": "Table Definition: SQL statements used to define the structure of database tables, including specifying column names, data types, constraints, and indexes.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c97da0da-e843-422f-8e30-5496d2d45561",
+      "label": "Basic SELECT Queries",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Basic SELECT Queries",
+      "description": "Basic SELECT Queries: SQL queries used to retrieve data from a single table using the SELECT statement, which can include filtering, sorting, and limiting results.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a5dfe29a-7c8a-4a4e-a3d6-7a7a2ddb3110",
+      "label": "Subqueries",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Subqueries",
+      "description": "Subqueries: SQL queries nested within another query, used to perform operations on the result set of the outer query.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0130e507-f474-441a-8595-90f60d9c81ce",
+      "label": "Aggregations",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Aggregations",
+      "description": "Aggregations: SQL functions used to perform calculations on sets of values to return a single value. Common aggregation functions include SUM, AVG, COUNT, MIN, and MAX.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6fe20083-d7ea-4189-a1be-5a0d45bf47a1",
+      "label": "Join Variants",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Join Variants",
+      "description": "Join Variants: SQL clauses used to combine rows from two or more tables based on a related column between them.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e420371b-e432-4fa3-9022-606caf7b45a4",
+      "label": "Set Operators",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Set Operators",
+      "description": "Set Operators: SQL operators used to combine the results of two or more SELECT queries. Set operators include UNION, INTERSECT, and EXCEPT (or MINUS in some databases).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3ccb70b8-799b-4c52-a129-d8843f0ffc2c",
+      "label": "Data Modification & Triggers",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Data Modification & Triggers",
+      "description": "Data Modification & Triggers: SQL statements used to modify data in database tables, including INSERT, UPDATE, DELETE, and MERGE. Triggers are special stored procedures that are automatically executed in response to certain database events, such as INSERT, UPDATE, or DELETE operations on a table.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "67a4315c-83ed-48f8-95d0-b62788030146",
+      "label": "Normalization",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Normalization",
+      "description": "Normalization: Normalization: A database design technique used to organize tables and reduce data redundancy.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "732c5872-8d57-4928-b038-5e2d3dcf69af",
+      "label": "Introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Introduction",
+      "description": "Introduction: Introduction: The process of organizing data in a database to minimize redundancy and dependency.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "558848c9-cc27-42dd-97bf-65560300d6a8",
+      "label": "Normal Forms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Normal Forms",
+      "description": "Normal Forms: Normal Forms: A set of rules that determine the degree of normalization achieved in a database schema.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "153c2d6e-62f3-41e9-a947-292068c178ee",
+      "label": "First Normal Form",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "First Normal Form",
+      "description": "First Normal Form: First Normal Form (1NF): Ensures that each column in a table contains atomic values and there are no repeating groups of columns.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "15c23af7-ade8-4b49-8f68-f549c612d991",
+      "label": "Relational Normal Forms",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Relational Normal Forms",
+      "description": "Relational Normal Forms: Relational Normal Forms: A series of progressively stricter rules for database normalization.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2249f0c6-6f1a-4189-8a3e-246e59f99915",
+      "label": "Introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Introduction",
+      "description": "Introduction: ",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e33159ea-f820-4063-b661-5f192d9a94db",
+      "label": "Functional Dependencies",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Functional Dependencies",
+      "description": "Functional Dependencies: Functional Dependencies: Relationships between attributes in a relation, where the value of one attribute uniquely determines the value of another.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e5ea2f9a-4baa-4219-9890-31a7b4f6a196",
+      "label": "Boyce-Codd Normal Form (BCNF)",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Boyce-Codd Normal Form (BCNF)",
+      "description": "Boyce-Codd Normal Form (BCNF): Boyce-Codd Normal Form (BCNF): A higher level of normalization than Third Normal Form (3NF), where every determinant is a candidate key.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "68333149-0787-4eec-8e4e-0110f0964cdc",
+      "label": "Achieving Normalisation",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Achieving Normalisation",
+      "description": "Achieving Normalisation: Achieving Normalization: The process of transforming a database schema into higher normal forms by eliminating data redundancy and dependency through decomposition and restructuring.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e92591ae-3bd8-4a33-9965-91c59e056b4a",
+      "label": "Alternative Databases",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Alternative Databases",
+      "description": "Alternative Databases: Alternative Databases: Databases that diverge from traditional relational databases in terms of data models and storage mechanisms.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e7dc134c-0bc4-466e-88a1-867f8fb4f78e",
+      "label": "NoSQL",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "NoSQL",
+      "description": "NoSQL: NoSQL: A category of databases that use non-relational data models, designed for scalability, flexibility, and high performance.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "2718c86a-21c2-4b7a-b39e-0d69d07da53c",
+      "label": "Key-value stores",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Key-value stores",
+      "description": "Key-value stores: Key-value Stores: Database systems that store data as a collection of key-value pairs, offering fast retrieval based on keys.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "23905243-4ffa-4c77-be72-633cc8f61fed",
+      "label": "DynamoDB",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "DynamoDB",
+      "description": "DynamoDB: DynamoDB: A fully managed NoSQL database service provided by Amazon Web Services (AWS), known for its scalability and low latency.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "955ba98e-724c-485e-99d1-99603f1519f2",
+      "label": "Cassandra",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Cassandra",
+      "description": "Cassandra: Cassandra: A distributed and highly scalable NoSQL database designed to handle large amounts of data across multiple nodes.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "340fdce0-3d61-4b98-9ef9-793627f91cf2",
+      "label": "memcached",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "memcached",
+      "description": "memcached: Memcached: A distributed memory caching system often used to speed up dynamic database-driven websites.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c76541ba-6c86-42cc-8057-470552a5c9e8",
+      "label": "redis",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "redis",
+      "description": "redis: Redis: An open-source, in-memory data structure store used as a database, cache, and message broker.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "e17d1672-0ba3-433b-808d-f1d52358ae08",
+      "label": "Document stores",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Document stores",
+      "description": "Document stores: Document Stores: Databases that store and query data in the form of documents, typically using JSON or BSON formats.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "30f82922-1987-45af-9dcf-ac65c36991b5",
+      "label": "CouchDB",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "CouchDB",
+      "description": "CouchDB: CouchDB: A document-oriented NoSQL database that uses JSON to store data, providing a RESTful HTTP API for document access.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "71fe1905-3953-4eea-bfb5-5fb407c9cc16",
+      "label": "MongoDB",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "MongoDB",
+      "description": "MongoDB: MongoDB: A widely-used NoSQL document database known for its flexibility, scalability, and ease of use.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "89a3a5a0-9ca6-4045-a544-6655ac9dc3d1",
+      "label": "Graph databases",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Graph databases",
+      "description": "Graph databases: Graph Databases: Database systems designed for storing and querying graph data structures, consisting of nodes, edges, and properties.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "09a29020-f503-4ce4-8e4e-8a44bab2027f",
+      "label": "Neo4J",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Neo4J",
+      "description": "Neo4J: Neo4J: A graph database management system known for its expressive query language (Cypher) and efficient handling of graph data.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c9d26e0e-3d47-4de1-8621-da4022c9b985",
+      "label": "Triple Stores",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Triple Stores",
+      "description": "Triple Stores: Triple Stores: Databases designed to store and query RDF data in the form of subject-predicate-object triples, adhering to the Resource Description Framework (RDF) standards.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a1286a13-be63-48f7-80e1-d81c50183886",
+      "label": "Text Indices",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Text Indices",
+      "description": "Text Indices: Text Indices: Database systems that specialize in indexing and searching textual data efficiently.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c429cefa-9fa9-4072-afeb-c0cffdf7dece",
+      "label": "Elasticsearch",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Elasticsearch",
+      "description": "Elasticsearch: Elasticsearch: A distributed, RESTful search and analytics engine designed for horizontal scalability and real-time search capabilities.",
+      "layer": 4,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "0ba8fc31-32b4-4326-9d8a-a5bb0e780b98",
+      "label": "Indexing",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Indexing",
+      "description": "Indexing: A technique used to improve the speed of data retrieval operations by creating a data structure that allows for efficient lookup based on specific attributes or columns.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "dc98473e-f3a3-4a33-b50a-7925bd83da79",
+      "label": "Introduction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Introduction",
+      "description": "Introduction: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "43a9e24e-91d3-438e-91d4-4cd1fc087e66",
+      "label": "Kinds of Indices",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Kinds of Indices",
+      "description": "Kinds of Indices: ",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5640f3bc-46b8-45a4-987e-1a828ee36760",
+      "label": "Ordered",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Ordered",
+      "description": "Ordered: Ordered: Index structure that maintains the keys in sorted order, facilitating binary search for efficient lookup.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "b074958e-6d5e-458e-b43d-8be0893061e7",
+      "label": "Hash",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Hash",
+      "description": "Hash: Hash: Index structure that uses a hash function to map keys to buckets, providing fast access to data based on the hash value.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "9e78e692-cef1-4a49-b18b-9c514791734c",
+      "label": "B-Tree",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "B-Tree",
+      "description": "B-Tree: B-Tree: Balanced tree structure that maintains sorted data and allows for efficient insertion, deletion, and search operations.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c24804b2-2d55-4c62-b8a0-1f6395dcc3fd",
+      "label": "Inverted",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Inverted",
+      "description": "Inverted: Inverted: Index structure commonly used in full-text search engines, where the index maps terms to the documents in which they occur.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "c8186ad5-90a7-4454-9a5d-a19792d38de3",
+      "label": "Query Processing & Multi-Key",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Query Processing & Multi-Key",
+      "description": "Query Processing & Multi-Key: Techniques and algorithms used by database systems to leverage indices for query optimization and processing. Multi-key indexing refers to the creation of indices on multiple columns or attributes to support more complex query conditions efficiently.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "36b65fc1-b262-4d79-befd-c99e0424f683",
+      "label": "Database APIs",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Database APIs",
+      "description": "Database APIs: Application Programming Interfaces provided by database management systems (DBMS) to interact with databases.",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "f2420835-8fbc-4601-8ff2-a213ff3b7014",
+      "label": "Database Client APIs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Database Client APIs",
+      "description": "Database Client APIs: APIs specifically designed for database clients to establish connections, execute queries, and retrieve results from a database server.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "29168a11-d7ba-43ed-a8db-c1a6c9be0f4c",
+      "label": "ORM & Query Construction",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ORM & Query Construction",
+      "description": "ORM & Query Construction: Object-Relational Mapping (ORM) frameworks facilitate database interaction by abstracting the database schema into object-oriented models.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6b8660ce-6497-4802-ba15-ced2d5125e39",
+      "label": "UDFs",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "UDFs",
+      "description": "UDFs: Functions defined by users within a database system that extend its functionality.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "19e7d44d-6f8d-440c-9185-7d6f3441ab60",
+      "label": "OLAP & Warehousing",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "OLAP & Warehousing",
+      "description": "OLAP & Warehousing: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "729d2c4d-3664-4b06-8664-7ab4fddc6ef5",
+      "label": "OLAP",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "OLAP",
+      "description": "OLAP: Technology used for analyzing multidimensional data from multiple perspectives.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "00c2bee0-809c-4ae7-ad2a-25f6279bdff8",
+      "label": "Data Warenouse",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Data Warenouse",
+      "description": "Data Warenouse: A centralized repository that stores data from multiple sources in a structured format for analysis and reporting.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5f49a5d2-cf36-4fb7-81d4-f3faed563851",
+      "label": "Star Schema",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Star Schema",
+      "description": "Star Schema: A data warehouse schema design consisting of a central fact table surrounded by dimension tables.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "50f4db9d-6c8c-444d-af15-6a356643ab67",
+      "label": "ETL",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "ETL",
+      "description": "ETL: The process of extracting data from various sources, transforming it into a consistent format, and loading it into a data warehouse.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6ed0618e-ffb8-42b1-9b4a-b5b679d0a16f",
+      "label": "Data Cubes",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Data Cubes",
+      "description": "Data Cubes: Multidimensional arrays or structures used in OLAP systems to represent summarized data.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "957cb5b4-ed56-4e79-b313-28209eb34d45",
+      "label": "Cubes in SQL",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Cubes in SQL",
+      "description": "Cubes in SQL: SQL-based implementations or extensions that support multidimensional analysis similar to OLAP cubes.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "43e1790b-6c7e-418f-a558-5bf0bf7694c8",
+      "label": "Transactions",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Transactions",
+      "description": "Transactions: Transactions: Units of work performed within a database management system that must be executed atomically, consistently, isolated, and durably (ACID properties).",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "36bfd5f5-2d9a-4318-9507-303064e4f751",
+      "label": "Anomalies",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Anomalies",
+      "description": "Anomalies: Anomalies: Inconsistencies that can occur in a database when transactions are executed concurrently and not properly managed.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "a78fea9e-ab0d-4493-8e13-a50dd3e85fa1",
+      "label": "Lost Update",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Lost Update",
+      "description": "Lost Update: Lost Update: An anomaly where the value of data is overwritten by a concurrent transaction, resulting in one of the updates being lost.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6cf44f7f-f38b-4003-9841-94484308c9cd",
+      "label": "Dirty Read",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Dirty Read",
+      "description": "Dirty Read: Dirty Read: An anomaly where a transaction reads data that has been modified by another uncommitted transaction, leading to potentially incorrect results if the modifying transaction is rolled back.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "41182e2f-c773-4863-a182-bde48a808c46",
+      "label": "Conflicts/Scheduling",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Conflicts/Scheduling",
+      "description": "Conflicts/Scheduling: Conflicts/Scheduling: Situations where multiple transactions attempt to access or modify the same data concurrently, leading to contention and potential blocking.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "d9048012-cac8-4454-b7f9-d2870dd4d960",
+      "label": "Serialization Strategies",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Serialization Strategies",
+      "description": "Serialization Strategies: Serialization Strategies: Techniques for managing concurrency and ensuring the serializability of transactions.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "374e8fb7-0254-4e18-8511-855702c7cb2b",
+      "label": "Pessimistic",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Pessimistic",
+      "description": "Pessimistic: Pessimistic: Approach where locks are acquired on data items before performing operations to prevent concurrent access. It assumes that conflicts are likely to occur.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "84372c40-bf44-496a-99ed-f1ad9a6e9960",
+      "label": "Optimistic",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Optimistic",
+      "description": "Optimistic: Optimistic: Approach where transactions proceed without acquiring locks initially, and conflicts are detected and resolved later during transaction commit. It assumes conflicts are less likely.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "3ed89931-4242-47b2-9dee-be42a8922bc0",
+      "label": "Multi-Version",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Multi-Version",
+      "description": "Multi-Version: Multi-Version: Approach where multiple versions of data items are maintained to allow concurrent transactions to access consistent snapshots of the database. It is commonly used in systems employing snapshot isolation.",
+      "layer": 3,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "label": "Database System Architectures",
+      "shape": "ellipse",
+      "cog_level": "Understand",
+      "title": "Database System Architectures",
+      "description": "Database System Architectures: ",
+      "layer": 1,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "6bf640a5-a032-4aa9-a11c-829c44714671",
+      "label": "Centralized Database Systems",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Centralized Database Systems",
+      "description": "Centralized Database Systems: Centralized Database Systems: Database systems where all data and processing are centralized on a single server or node.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "7830df1e-8747-4940-b228-ec9886861291",
+      "label": "Server System Architectures",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Server System Architectures",
+      "description": "Server System Architectures: Server System Architectures: Database systems where data and processing are distributed across multiple servers, with one server acting as the primary node coordinating operations.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "402659dd-a538-4221-a756-c204edf1742a",
+      "label": "Parallel Systems",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Parallel Systems",
+      "description": "Parallel Systems: Parallel Systems: Database systems designed to execute operations concurrently across multiple processors or cores, improving performance through parallelism.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "21a12f46-5b3d-486f-9633-3957955b610d",
+      "label": "Distributed Systems",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Distributed Systems",
+      "description": "Distributed Systems: Distributed Systems: Database systems where data is distributed across multiple nodes connected over a network, enabling scalability, fault tolerance, and geographic distribution.",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    },
+    {
+      "id": "5b04d99d-663a-4ddd-980e-42a75fd3baa4",
+      "label": "Network Types",
+      "shape": "box",
+      "cog_level": "Understand",
+      "title": "Network Types",
+      "description": "Network Types: Network Types: The types of networks used to connect nodes in distributed systems, including LANs (Local Area Networks), WANs (Wide Area Networks), and MANs (Metropolitan Area Networks).",
+      "layer": 2,
+      "color": {
+        "background": "#ffd2af",
+        "border": "#ffd2af"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "e5020fbd-0eff-4b60-8f14-f5af0d023d04",
+      "title": "",
+      "id": "fcbea0c3-d5d9-4eaf-b999-0801bf0b7a04"
+    },
+    {
+      "from": "e5020fbd-0eff-4b60-8f14-f5af0d023d04",
+      "to": "66de3bc2-8248-434a-a619-ce2ff28d64c9",
+      "title": "",
+      "id": "0997a7a6-28b7-4acc-99d9-dd8067b021af"
+    },
+    {
+      "from": "66de3bc2-8248-434a-a619-ce2ff28d64c9",
+      "to": "632d5d75-03f8-4f0e-bd49-2d09c8a97d6b",
+      "title": "",
+      "id": "5f55229f-77a2-4ad2-9c33-55590920d6c1"
+    },
+    {
+      "from": "66de3bc2-8248-434a-a619-ce2ff28d64c9",
+      "to": "17e44207-aab8-423a-b237-4154dc62e894",
+      "title": "",
+      "id": "592787d6-6a6c-4394-957b-5a87e58be3a8"
+    },
+    {
+      "from": "e5020fbd-0eff-4b60-8f14-f5af0d023d04",
+      "to": "b311a2a6-1060-4586-8cd8-5fa9d12464e8",
+      "title": "",
+      "id": "c9c93c68-1f18-47a7-ab45-2dd82d7cb6fa"
+    },
+    {
+      "from": "b311a2a6-1060-4586-8cd8-5fa9d12464e8",
+      "to": "624ba7c4-e744-4b98-8684-9e747ae23699",
+      "title": "",
+      "id": "df33f108-a60f-49c9-8be6-f076f3849c71"
+    },
+    {
+      "from": "b311a2a6-1060-4586-8cd8-5fa9d12464e8",
+      "to": "4e5c673e-535c-4024-b6ca-1b92b0464a44",
+      "title": "",
+      "id": "b7656ac9-6608-4bf0-a005-c5afaea8d8fd"
+    },
+    {
+      "from": "e5020fbd-0eff-4b60-8f14-f5af0d023d04",
+      "to": "11363179-071e-4137-a658-c3383ad02671",
+      "title": "",
+      "id": "fbaeef95-69e6-48a0-8277-0f8f1a586594"
+    },
+    {
+      "from": "11363179-071e-4137-a658-c3383ad02671",
+      "to": "546b8c5b-65d5-4735-a38b-2606b7e68bba",
+      "title": "",
+      "id": "26133a25-a7c5-4016-ac59-2dc3ac705707"
+    },
+    {
+      "from": "11363179-071e-4137-a658-c3383ad02671",
+      "to": "d3ca03fb-c7d7-4a20-9b77-738092b2e151",
+      "title": "",
+      "id": "354d645f-6092-4e4c-8a90-93866c2fe286"
+    },
+    {
+      "from": "11363179-071e-4137-a658-c3383ad02671",
+      "to": "76eddccc-cd45-41da-9d29-e24e90e4747f",
+      "title": "",
+      "id": "f930e06d-73a7-4797-81e1-a18a89a2ff5f"
+    },
+    {
+      "from": "11363179-071e-4137-a658-c3383ad02671",
+      "to": "e8ecca08-83b7-4111-8d47-929ad7671bc1",
+      "title": "",
+      "id": "c5aa1bba-72dd-4894-837c-7a449731a9b6"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "dcb5db12-ea4c-4892-9dac-e9c2420681af",
+      "title": "",
+      "id": "57faafd4-5c38-4150-82df-536ca392ed0e"
+    },
+    {
+      "from": "dcb5db12-ea4c-4892-9dac-e9c2420681af",
+      "to": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "title": "",
+      "id": "f446eb33-3240-4047-8cf2-74091b67c8f4"
+    },
+    {
+      "from": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "to": "b16b58d0-1c25-47dd-a0fc-7f3cdfc1167d",
+      "title": "",
+      "id": "32696378-57c0-4bcf-95b0-56e8a59e33bd"
+    },
+    {
+      "from": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "to": "e2a1ad49-2d54-421a-b8f8-de73adf7f6e0",
+      "title": "",
+      "id": "c80830d9-85b6-46aa-93a3-1965a4c5d1d8"
+    },
+    {
+      "from": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "to": "cb997792-8601-4e82-a1c8-bdf5fbb689b3",
+      "title": "",
+      "id": "0dc5f501-c88b-4c27-a72d-43de2537a46c"
+    },
+    {
+      "from": "cb997792-8601-4e82-a1c8-bdf5fbb689b3",
+      "to": "afd137f4-cbd6-4273-899b-8b120e9c3504",
+      "title": "",
+      "id": "096370af-63fd-4d32-822f-3e1925b3d781"
+    },
+    {
+      "from": "cb997792-8601-4e82-a1c8-bdf5fbb689b3",
+      "to": "abc9b8bf-b108-4270-9784-53de3b566283",
+      "title": "",
+      "id": "cff44101-8738-40ff-933b-87a4519e5d22"
+    },
+    {
+      "from": "cb997792-8601-4e82-a1c8-bdf5fbb689b3",
+      "to": "d6c774bb-8428-4033-9584-d89384eb175f",
+      "title": "",
+      "id": "acf9b17f-20e3-47ff-8e34-da95398b3aec"
+    },
+    {
+      "from": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "to": "18e6024e-9af0-41dd-be6c-2cc4c0655818",
+      "title": "",
+      "id": "9413fb2f-6e53-4202-9181-9fea5a089aa2"
+    },
+    {
+      "from": "47103937-f0cc-4638-b8f3-8e9dd340ecf2",
+      "to": "75a96629-3a8a-49a6-b4a0-43e4daf80080",
+      "title": "",
+      "id": "769730ec-67c7-480e-b62d-82beb30547f8"
+    },
+    {
+      "from": "dcb5db12-ea4c-4892-9dac-e9c2420681af",
+      "to": "2840e3c6-2b24-4798-99e4-45c387489115",
+      "title": "",
+      "id": "d9fe26e7-5242-4c06-a5db-2f960da05bc5"
+    },
+    {
+      "from": "dcb5db12-ea4c-4892-9dac-e9c2420681af",
+      "to": "62f4268b-1416-4f09-bbb8-61cb57fe81ce",
+      "title": "",
+      "id": "7105e062-2277-493b-ba6a-d5232b10f2ee"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "title": "",
+      "id": "ad7790fe-9d99-41b7-88e6-07258de36dda"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "112a8670-0e7f-46c2-80c0-56f37e78e6c8",
+      "title": "",
+      "id": "18c4714f-b1ef-450e-8174-815f32e11613"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "c97da0da-e843-422f-8e30-5496d2d45561",
+      "title": "",
+      "id": "81e4dbd6-3cc0-4017-a121-85a10fdd2847"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "a5dfe29a-7c8a-4a4e-a3d6-7a7a2ddb3110",
+      "title": "",
+      "id": "602abfe2-fc65-4271-a61b-5c9dac311e4a"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "0130e507-f474-441a-8595-90f60d9c81ce",
+      "title": "",
+      "id": "d8b2b35c-2ab0-427c-b477-fb8fdba10055"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "6fe20083-d7ea-4189-a1be-5a0d45bf47a1",
+      "title": "",
+      "id": "a3c97ad2-c25f-4286-ba13-b68aca09afc4"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "e420371b-e432-4fa3-9022-606caf7b45a4",
+      "title": "",
+      "id": "75a1ed96-49bd-44ef-8b60-60d74031e68b"
+    },
+    {
+      "from": "5007e1bd-cb88-4f1f-ae7b-49e265cca6fa",
+      "to": "3ccb70b8-799b-4c52-a129-d8843f0ffc2c",
+      "title": "",
+      "id": "3704287e-77a3-4cb8-9952-3236437f5544"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "67a4315c-83ed-48f8-95d0-b62788030146",
+      "title": "",
+      "id": "a74101dd-dcbf-4986-9fc9-c4e9e3d4c7cd"
+    },
+    {
+      "from": "67a4315c-83ed-48f8-95d0-b62788030146",
+      "to": "732c5872-8d57-4928-b038-5e2d3dcf69af",
+      "title": "",
+      "id": "90d54a8a-d083-431c-9c8d-a7b6c9ad6eb4"
+    },
+    {
+      "from": "67a4315c-83ed-48f8-95d0-b62788030146",
+      "to": "558848c9-cc27-42dd-97bf-65560300d6a8",
+      "title": "",
+      "id": "c5276573-bec5-401a-ac02-f943c4c77036"
+    },
+    {
+      "from": "558848c9-cc27-42dd-97bf-65560300d6a8",
+      "to": "153c2d6e-62f3-41e9-a947-292068c178ee",
+      "title": "",
+      "id": "32604f92-676b-4119-bf44-827bd5f94db5"
+    },
+    {
+      "from": "558848c9-cc27-42dd-97bf-65560300d6a8",
+      "to": "15c23af7-ade8-4b49-8f68-f549c612d991",
+      "title": "",
+      "id": "7ec12b8d-3808-42d1-9522-4ed9373256a0"
+    },
+    {
+      "from": "15c23af7-ade8-4b49-8f68-f549c612d991",
+      "to": "2249f0c6-6f1a-4189-8a3e-246e59f99915",
+      "title": "",
+      "id": "60bd85d8-86e5-4855-a910-8d3ccddeb5bf"
+    },
+    {
+      "from": "15c23af7-ade8-4b49-8f68-f549c612d991",
+      "to": "e33159ea-f820-4063-b661-5f192d9a94db",
+      "title": "",
+      "id": "9d54c77c-8f10-4edb-821b-deb50e6cf74c"
+    },
+    {
+      "from": "15c23af7-ade8-4b49-8f68-f549c612d991",
+      "to": "e5ea2f9a-4baa-4219-9890-31a7b4f6a196",
+      "title": "",
+      "id": "018fa112-a9b1-402e-b743-566649e19256"
+    },
+    {
+      "from": "15c23af7-ade8-4b49-8f68-f549c612d991",
+      "to": "68333149-0787-4eec-8e4e-0110f0964cdc",
+      "title": "",
+      "id": "ccd5537d-db19-4d6b-b4de-b41af280e063"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "e92591ae-3bd8-4a33-9965-91c59e056b4a",
+      "title": "",
+      "id": "4c9c838f-8f1e-44d8-ae33-7f0c0d504d3f"
+    },
+    {
+      "from": "e92591ae-3bd8-4a33-9965-91c59e056b4a",
+      "to": "e7dc134c-0bc4-466e-88a1-867f8fb4f78e",
+      "title": "",
+      "id": "43d615e1-2bc0-47ee-b2aa-33a337670653"
+    },
+    {
+      "from": "e7dc134c-0bc4-466e-88a1-867f8fb4f78e",
+      "to": "2718c86a-21c2-4b7a-b39e-0d69d07da53c",
+      "title": "",
+      "id": "d3ea1045-1ce4-41a8-a28d-52f6711c1328"
+    },
+    {
+      "from": "2718c86a-21c2-4b7a-b39e-0d69d07da53c",
+      "to": "23905243-4ffa-4c77-be72-633cc8f61fed",
+      "title": "",
+      "id": "85e63131-8e75-4e56-9bf1-bc8a4034ec5d"
+    },
+    {
+      "from": "2718c86a-21c2-4b7a-b39e-0d69d07da53c",
+      "to": "955ba98e-724c-485e-99d1-99603f1519f2",
+      "title": "",
+      "id": "e0ca9785-9016-4897-a4d7-75e86db30f0e"
+    },
+    {
+      "from": "2718c86a-21c2-4b7a-b39e-0d69d07da53c",
+      "to": "340fdce0-3d61-4b98-9ef9-793627f91cf2",
+      "title": "",
+      "id": "f83f32ca-cb36-4ae7-a409-122922383d96"
+    },
+    {
+      "from": "2718c86a-21c2-4b7a-b39e-0d69d07da53c",
+      "to": "c76541ba-6c86-42cc-8057-470552a5c9e8",
+      "title": "",
+      "id": "da634f79-68fd-4b26-8216-3b02a422e500"
+    },
+    {
+      "from": "e7dc134c-0bc4-466e-88a1-867f8fb4f78e",
+      "to": "e17d1672-0ba3-433b-808d-f1d52358ae08",
+      "title": "",
+      "id": "e1f03dee-31df-4ce0-9073-fe2e2c220639"
+    },
+    {
+      "from": "e17d1672-0ba3-433b-808d-f1d52358ae08",
+      "to": "30f82922-1987-45af-9dcf-ac65c36991b5",
+      "title": "",
+      "id": "4604898a-9f95-4f70-9346-3306b10cfb9e"
+    },
+    {
+      "from": "e17d1672-0ba3-433b-808d-f1d52358ae08",
+      "to": "71fe1905-3953-4eea-bfb5-5fb407c9cc16",
+      "title": "",
+      "id": "36fc91c2-daa9-4633-a190-9339a100977b"
+    },
+    {
+      "from": "e7dc134c-0bc4-466e-88a1-867f8fb4f78e",
+      "to": "89a3a5a0-9ca6-4045-a544-6655ac9dc3d1",
+      "title": "",
+      "id": "e0c2fac1-ac5f-4e2d-8724-67a678b41853"
+    },
+    {
+      "from": "89a3a5a0-9ca6-4045-a544-6655ac9dc3d1",
+      "to": "09a29020-f503-4ce4-8e4e-8a44bab2027f",
+      "title": "",
+      "id": "68600499-2d4e-4f2d-b8f5-d8d80ef68ee3"
+    },
+    {
+      "from": "89a3a5a0-9ca6-4045-a544-6655ac9dc3d1",
+      "to": "c9d26e0e-3d47-4de1-8621-da4022c9b985",
+      "title": "",
+      "id": "50a3efec-2544-4cb2-813b-3d177dacff84"
+    },
+    {
+      "from": "e7dc134c-0bc4-466e-88a1-867f8fb4f78e",
+      "to": "a1286a13-be63-48f7-80e1-d81c50183886",
+      "title": "",
+      "id": "2cef8fcd-2da3-493a-80ff-b9d8f304fc7e"
+    },
+    {
+      "from": "a1286a13-be63-48f7-80e1-d81c50183886",
+      "to": "c429cefa-9fa9-4072-afeb-c0cffdf7dece",
+      "title": "",
+      "id": "306dc974-742a-48ce-bab4-1fc5e2a0ef89"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "0ba8fc31-32b4-4326-9d8a-a5bb0e780b98",
+      "title": "",
+      "id": "56f1de10-0d9b-4de2-8879-ae591eb71007"
+    },
+    {
+      "from": "0ba8fc31-32b4-4326-9d8a-a5bb0e780b98",
+      "to": "dc98473e-f3a3-4a33-b50a-7925bd83da79",
+      "title": "",
+      "id": "456579b8-0af2-4452-a433-6ade09016a7d"
+    },
+    {
+      "from": "0ba8fc31-32b4-4326-9d8a-a5bb0e780b98",
+      "to": "43a9e24e-91d3-438e-91d4-4cd1fc087e66",
+      "title": "",
+      "id": "9bcfcc9b-a192-4cea-a9b5-8efaeeb20158"
+    },
+    {
+      "from": "43a9e24e-91d3-438e-91d4-4cd1fc087e66",
+      "to": "5640f3bc-46b8-45a4-987e-1a828ee36760",
+      "title": "",
+      "id": "02d13c53-657c-4dda-8596-60daced152f1"
+    },
+    {
+      "from": "43a9e24e-91d3-438e-91d4-4cd1fc087e66",
+      "to": "b074958e-6d5e-458e-b43d-8be0893061e7",
+      "title": "",
+      "id": "4d141aa6-3cff-4be0-88ac-f52b14bb3e8c"
+    },
+    {
+      "from": "43a9e24e-91d3-438e-91d4-4cd1fc087e66",
+      "to": "9e78e692-cef1-4a49-b18b-9c514791734c",
+      "title": "",
+      "id": "b89148ea-87b6-4cc1-8ce1-51d429a1840a"
+    },
+    {
+      "from": "43a9e24e-91d3-438e-91d4-4cd1fc087e66",
+      "to": "c24804b2-2d55-4c62-b8a0-1f6395dcc3fd",
+      "title": "",
+      "id": "944c563b-4d90-482f-927e-c2b3ad474d81"
+    },
+    {
+      "from": "0ba8fc31-32b4-4326-9d8a-a5bb0e780b98",
+      "to": "c8186ad5-90a7-4454-9a5d-a19792d38de3",
+      "title": "",
+      "id": "08e742fe-3390-4fe6-b922-5922d8bac804"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "36b65fc1-b262-4d79-befd-c99e0424f683",
+      "title": "",
+      "id": "9793b775-2785-49de-b019-012e3e9737df"
+    },
+    {
+      "from": "36b65fc1-b262-4d79-befd-c99e0424f683",
+      "to": "f2420835-8fbc-4601-8ff2-a213ff3b7014",
+      "title": "",
+      "id": "ec59fcb1-7f36-484b-badd-46593e3f90dc"
+    },
+    {
+      "from": "36b65fc1-b262-4d79-befd-c99e0424f683",
+      "to": "29168a11-d7ba-43ed-a8db-c1a6c9be0f4c",
+      "title": "",
+      "id": "2f31d368-0f0d-4f24-90e1-67db35622371"
+    },
+    {
+      "from": "36b65fc1-b262-4d79-befd-c99e0424f683",
+      "to": "6b8660ce-6497-4802-ba15-ced2d5125e39",
+      "title": "",
+      "id": "1a77252c-c8df-45e0-b860-64de4b6ff273"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "19e7d44d-6f8d-440c-9185-7d6f3441ab60",
+      "title": "",
+      "id": "d123d79c-fc5f-426d-b1c6-88d1d86bb547"
+    },
+    {
+      "from": "19e7d44d-6f8d-440c-9185-7d6f3441ab60",
+      "to": "729d2c4d-3664-4b06-8664-7ab4fddc6ef5",
+      "title": "",
+      "id": "430801ae-13e3-43bb-bf22-a47f79203b13"
+    },
+    {
+      "from": "729d2c4d-3664-4b06-8664-7ab4fddc6ef5",
+      "to": "00c2bee0-809c-4ae7-ad2a-25f6279bdff8",
+      "title": "",
+      "id": "14a9d355-114c-46aa-a6b1-cf4a6b61ebd9"
+    },
+    {
+      "from": "729d2c4d-3664-4b06-8664-7ab4fddc6ef5",
+      "to": "5f49a5d2-cf36-4fb7-81d4-f3faed563851",
+      "title": "",
+      "id": "b74d2512-d05b-45f4-abfd-ab183d32dfde"
+    },
+    {
+      "from": "729d2c4d-3664-4b06-8664-7ab4fddc6ef5",
+      "to": "50f4db9d-6c8c-444d-af15-6a356643ab67",
+      "title": "",
+      "id": "90f0a789-3116-4924-b9bb-3c4a291cd879"
+    },
+    {
+      "from": "19e7d44d-6f8d-440c-9185-7d6f3441ab60",
+      "to": "6ed0618e-ffb8-42b1-9b4a-b5b679d0a16f",
+      "title": "",
+      "id": "b8e6cd90-f126-410a-bfb0-129731d61d6d"
+    },
+    {
+      "from": "6ed0618e-ffb8-42b1-9b4a-b5b679d0a16f",
+      "to": "957cb5b4-ed56-4e79-b313-28209eb34d45",
+      "title": "",
+      "id": "ddcf7dce-1947-4c9d-becc-e0214fb14d6c"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "43e1790b-6c7e-418f-a558-5bf0bf7694c8",
+      "title": "",
+      "id": "b4d04add-ad2e-48e1-96d1-eeb347bf5863"
+    },
+    {
+      "from": "43e1790b-6c7e-418f-a558-5bf0bf7694c8",
+      "to": "36bfd5f5-2d9a-4318-9507-303064e4f751",
+      "title": "",
+      "id": "7dafbaf3-54eb-4874-8e63-7f305f7cdc04"
+    },
+    {
+      "from": "36bfd5f5-2d9a-4318-9507-303064e4f751",
+      "to": "a78fea9e-ab0d-4493-8e13-a50dd3e85fa1",
+      "title": "",
+      "id": "7e486884-ef20-458c-af1d-12ce3c12fc8a"
+    },
+    {
+      "from": "36bfd5f5-2d9a-4318-9507-303064e4f751",
+      "to": "6cf44f7f-f38b-4003-9841-94484308c9cd",
+      "title": "",
+      "id": "3e50bdbc-5d9b-4e62-9ff2-bcde981bdab1"
+    },
+    {
+      "from": "43e1790b-6c7e-418f-a558-5bf0bf7694c8",
+      "to": "41182e2f-c773-4863-a182-bde48a808c46",
+      "title": "",
+      "id": "adccfee1-2609-47c4-91a4-627d41afee73"
+    },
+    {
+      "from": "43e1790b-6c7e-418f-a558-5bf0bf7694c8",
+      "to": "d9048012-cac8-4454-b7f9-d2870dd4d960",
+      "title": "",
+      "id": "29af3612-6edb-415a-84fa-3e7094f92f74"
+    },
+    {
+      "from": "d9048012-cac8-4454-b7f9-d2870dd4d960",
+      "to": "374e8fb7-0254-4e18-8511-855702c7cb2b",
+      "title": "",
+      "id": "3c48b8c6-4006-49c0-ad87-55a6e8b25b2e"
+    },
+    {
+      "from": "d9048012-cac8-4454-b7f9-d2870dd4d960",
+      "to": "84372c40-bf44-496a-99ed-f1ad9a6e9960",
+      "title": "",
+      "id": "29ef7d58-179d-4dea-8b41-e64eb5820589"
+    },
+    {
+      "from": "d9048012-cac8-4454-b7f9-d2870dd4d960",
+      "to": "3ed89931-4242-47b2-9dee-be42a8922bc0",
+      "title": "",
+      "id": "3e5c031d-44cb-45c1-9f2f-15abf5fbeca9"
+    },
+    {
+      "from": "542a7ceb-80c5-4dad-9360-ff4e84b3a1fe",
+      "to": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "title": "",
+      "id": "39e5adee-b9c5-490b-8a52-15cbf12b1d05"
+    },
+    {
+      "from": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "to": "6bf640a5-a032-4aa9-a11c-829c44714671",
+      "title": "",
+      "id": "262c4ea5-1471-43cc-ab2a-4f17971d3fa1"
+    },
+    {
+      "from": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "to": "7830df1e-8747-4940-b228-ec9886861291",
+      "title": "",
+      "id": "709dec4d-5956-44cc-a9b6-370e006a37bd"
+    },
+    {
+      "from": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "to": "402659dd-a538-4221-a756-c204edf1742a",
+      "title": "",
+      "id": "8bb4f6be-482d-4272-bd35-5e728856a5b3"
+    },
+    {
+      "from": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "to": "21a12f46-5b3d-486f-9633-3957955b610d",
+      "title": "",
+      "id": "fbb76cf6-c017-432c-8145-2cc419333810"
+    },
+    {
+      "from": "8235b96b-2739-46bc-b00f-d91adb279e48",
+      "to": "5b04d99d-663a-4ddd-980e-42a75fd3baa4",
+      "title": "",
+      "id": "d4570208-59c9-43a7-8174-e997127afc2c"
+    }
+  ]
+}
