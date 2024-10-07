@@ -1,6 +1,5 @@
 asgiref==3.8.1
 certifi==2022.12.7
-conda==23.1.0
 distlib==0.3.8
 Django==5.0.4
 filelock==3.13.1
