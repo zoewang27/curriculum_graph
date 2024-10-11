@@ -1,0 +1,702 @@
+{
+  "nodes": [
+    {
+      "id": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "label": "Networking and Communication",
+      "cog_level": "",
+      "title": "Networking and Communication",
+      "description": "Networking and Communication: ",
+      "node_type": "course",
+      "shape": "circle"
+    },
+    {
+      "id": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "label": "Introduction",
+      "cog_level": "",
+      "title": "Introduction",
+      "description": "Introduction: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "e2bd4814-de4d-4f35-b918-96b77c6f2f7a",
+      "label": "Importance of networking in contemporary computing, and associated challenges.",
+      "cog_level": "Understand",
+      "title": "Importance of networking in contemporary computing, and associated challenges.",
+      "description": "Importance of networking in contemporary computing, and associated challenges.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cb29021c-43b7-45fd-af52-57b47fc665ee",
+      "label": "Organization of the Internet",
+      "cog_level": "Understand",
+      "title": "Organization of the Internet",
+      "description": "Organization of the Internet: e.g. users, Internet Service Providers, autonomous systems, content providers, content delivery networks",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fbe88ca5-d3ad-4cf6-8dfa-059beccb1ba4",
+      "label": "Switching techniques",
+      "cog_level": "Evaluate",
+      "title": "Switching techniques",
+      "description": "Switching techniques: e.g., circuit and packet",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "24879f6c-c809-423d-aa73-6a026840cec0",
+      "label": "Layers and their roles",
+      "cog_level": "Understand",
+      "title": "Layers and their roles",
+      "description": "Layers and their roles: application, transport, network, datalink, and physical",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "645ffbf8-cb46-4693-9e18-b9aaa9d637f9",
+      "label": "Layering principles",
+      "cog_level": "Understand",
+      "title": "Layering principles",
+      "description": "Layering principles: e.g. encapsulation and hourglass model",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "93e8d18c-a395-431f-8c80-caaaed9f1205",
+      "label": "Network elements",
+      "cog_level": "Understand",
+      "title": "Network elements",
+      "description": "Network elements: e.g. routers, switches, hubs, access points, and hosts",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7b461361-ddf2-447d-96e1-bbccbbe41a32",
+      "label": "Basic queueing concepts",
+      "cog_level": "Understand",
+      "title": "Basic queueing concepts",
+      "description": "Basic queueing concepts: e.g. relationship with latency, congestion, service levels, etc.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "label": "Networked Applications",
+      "cog_level": "",
+      "title": "Networked Applications",
+      "description": "Networked Applications: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "9f8a7f1a-778e-4dee-94fc-731bf107d8e8",
+      "label": "Naming and address schemes.",
+      "cog_level": "Understand",
+      "title": "Naming and address schemes.",
+      "description": "Naming and address schemes.: DNS, IP addresses, and Uniform Resource Identifiers",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c8d3edbf-73fb-4f62-ba08-ae0947e93517",
+      "label": "Distributed application paradigms",
+      "cog_level": "Evaluate",
+      "title": "Distributed application paradigms",
+      "description": "Distributed application paradigms: e.g. client/server, peer-to-peer, cloud, edge, and fog",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f928f6b9-045e-4f52-b778-edb4020617e1",
+      "label": "Diversity of networked application demands",
+      "cog_level": "Understand",
+      "title": "Diversity of networked application demands",
+      "description": "Diversity of networked application demands: e.g. latency, bandwidth, and loss tolerance",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "55baa720-a51c-4b73-94d2-6ad13e722e4f",
+      "label": "Application-layer development using one or more protocols",
+      "cog_level": "Create",
+      "title": "Application-layer development using one or more protocols",
+      "description": "Application-layer development using one or more protocols: e.g. HTTP, SMTP, and POP3",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "522fa2c9-9c21-4432-87ed-0a2ea68fbfb5",
+      "label": "Interactions with TCP, UDP, and Socket APIs.",
+      "cog_level": "Understand",
+      "title": "Interactions with TCP, UDP, and Socket APIs.",
+      "description": "Interactions with TCP, UDP, and Socket APIs.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "label": "Reliability Support",
+      "cog_level": "",
+      "title": "Reliability Support",
+      "description": "Reliability Support: e.g. UDP",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "5651b91f-1597-4e8e-878b-bc4d9f817b2c",
+      "label": "Unreliable delivery",
+      "cog_level": "Understand",
+      "title": "Unreliable delivery",
+      "description": "Unreliable delivery: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "08c4d877-770f-4b8b-9947-939801efb500",
+      "label": "Principles of reliability",
+      "cog_level": "Create",
+      "title": "Principles of reliability",
+      "description": "Principles of reliability: e.g. delivery without loss, duplication, or out of order",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d416966b-a794-4a77-b6df-925aa3f66472",
+      "label": "Error control",
+      "cog_level": "Evaluate",
+      "title": "Error control",
+      "description": "Error control: e.g. retransmission, error correction",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ab4c1a19-e995-47d9-b399-0811314de24e",
+      "label": "Flow control",
+      "cog_level": "Create",
+      "title": "Flow control",
+      "description": "Flow control: e.g. stop and wait, window based",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1145a514-1f51-4ea9-9f26-3bd2c89c577e",
+      "label": "Congestion control",
+      "cog_level": "Understand",
+      "title": "Congestion control",
+      "description": "Congestion control: e.g. implicit and explicit congestion notification",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5445ed11-5532-401c-a5cb-e70ea704ec92",
+      "label": "TCP and performance issues",
+      "cog_level": "Evaluate",
+      "title": "TCP and performance issues",
+      "description": "TCP and performance issues: e.g. Tahoe, Reno, Vegas, Cubic, QUIC",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d9dce4d6-2204-4662-9259-b642beb5cd6a",
+      "label": "Routing And Forwarding",
+      "cog_level": "",
+      "title": "Routing And Forwarding",
+      "description": "Routing And Forwarding: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "12af2bd6-39f1-4854-9d6d-071674f49e1d",
+      "label": "Routing paradigms and hierarchy",
+      "cog_level": "Evaluate",
+      "title": "Routing paradigms and hierarchy",
+      "description": "Routing paradigms and hierarchy: e.g. intra/inter domain, centralized and decentralized, source routing, virtual circuits, QoS",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e678987-ec5e-4d2a-8007-2c068d1805f4",
+      "label": "Forwarding methods",
+      "cog_level": "Apply",
+      "title": "Forwarding methods",
+      "description": "Forwarding methods: e.g. forwarding tables and matching algorithms",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e07f679c-46d8-4a54-83ea-adfeed721973",
+      "label": "IP and Scalability issues",
+      "cog_level": "Understand",
+      "title": "IP and Scalability issues",
+      "description": "IP and Scalability issues: e.g. NAT, CIDR, BGP, different versions of IP",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "label": "Single-Hop Communication",
+      "cog_level": "",
+      "title": "Single-Hop Communication",
+      "description": "Single-Hop Communication: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "74d78d87-2b00-4006-8146-71ed628f9c56",
+      "label": "Introduction tmodulation, bandwidth, and communication media.",
+      "cog_level": "Understand",
+      "title": "Introduction tmodulation, bandwidth, and communication media.",
+      "description": "Introduction tmodulation, bandwidth, and communication media.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f106f975-e6c3-4f36-a6df-e8e8fc3c69fa",
+      "label": "Encoding and Framing.",
+      "cog_level": "Evaluate",
+      "title": "Encoding and Framing.",
+      "description": "Encoding and Framing.: involve converting digital data into a format suitable for transmission over communication media, including techniques such as binary encoding and packet framing.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "203ac13c-8573-4725-a577-9908a818d5eb",
+      "label": "Medium Access Control (MAC)",
+      "cog_level": "Evaluate",
+      "title": "Medium Access Control (MAC)",
+      "description": "Medium Access Control (MAC): e.g. random access and scheduled access",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fbf510b7-6877-41c8-8841-0a1e998e3d1a",
+      "label": "Ethernet",
+      "cog_level": "Understand",
+      "title": "Ethernet",
+      "description": "Ethernet: is a widely used LAN technology that defines standards for MAC addressing, frame formats, and collision detection",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "914a1e6e-cf8c-44fd-9c08-9ed47c98018b",
+      "label": "Switching",
+      "cog_level": "Apply",
+      "title": "Switching",
+      "description": "Switching: involves directing data packets between network devices based on their destination addresses",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a76a4e41-7cc9-498e-bf0e-bbb70c7b83e7",
+      "label": "Local Area Network Topologies",
+      "cog_level": "Understand",
+      "title": "Local Area Network Topologies",
+      "description": "Local Area Network Topologies: e.g. data center networks",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "label": "Mobility Support",
+      "cog_level": "Understand",
+      "title": "Mobility Support",
+      "description": "Mobility Support: enables seamless communication for devices as they move between different locations or networks",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "7849c143-d79a-4e75-8f42-c5515d53faaf",
+      "label": "Principles of cellular communication (e.g.4G,5G)",
+      "cog_level": "Understand",
+      "title": "Principles of cellular communication (e.g.4G,5G)",
+      "description": "Principles of cellular communication (e.g.4G,5G): e.g.4G,5G",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "34468502-476b-46d2-a954-3096807cd8c4",
+      "label": "Principles of Wireless LANs (mainly 802.11)",
+      "cog_level": "Understand",
+      "title": "Principles of Wireless LANs (mainly 802.11)",
+      "description": "Principles of Wireless LANs (mainly 802.11): mainly 802.11",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "dc7beacc-76e4-4aa8-b8f7-098b3211f887",
+      "label": "Device to device communication",
+      "cog_level": "Understand",
+      "title": "Device to device communication",
+      "description": "Device to device communication: refers to direct communication between wireless devices without the need for intermediary infrastructure",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ceafc7c3-80a4-40c6-9560-3219697b5331",
+      "label": "Multihop wireless networks",
+      "cog_level": "Understand",
+      "title": "Multihop wireless networks",
+      "description": "Multihop wireless networks: involve communication between devices over multiple wireless hops, enabling extended coverage",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a3d55f70-1727-4c9f-9c98-97885861f8b9",
+      "label": "Examples",
+      "cog_level": "Understand",
+      "title": "Examples",
+      "description": "Examples: e.g ad hoc networks, opportunistic, delay tolerant",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "82504cbc-70a5-4d87-8cc4-e588e6f3b2f4",
+      "label": "Network Security",
+      "cog_level": "Understand",
+      "title": "Network Security",
+      "description": "Network Security: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "9274006a-633c-4f05-9a25-bc38d3ee157f",
+      "label": "General intrabout security",
+      "cog_level": "Understand",
+      "title": "General intrabout security",
+      "description": "General intrabout security: Threats, vulnerabilities, and countermeasures",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0738e6c4-46ef-426c-9fde-f982e347c31d",
+      "label": "Network specific threats and attack types",
+      "cog_level": "Understand",
+      "title": "Network specific threats and attack types",
+      "description": "Network specific threats and attack types: e.g., denial of service, spoofing, sniffing and traffic redirection, man-in-the-middle, message integrity attacks, routing attacks, and traffic analysis",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bdba49ac-57a2-41c4-984b-73ff8af5484d",
+      "label": "Countermeasures",
+      "cog_level": "Understand",
+      "title": "Countermeasures",
+      "description": "Countermeasures: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f9875bfb-c1d3-4b13-8e3a-ee244aff4109",
+      "label": "Cryptography",
+      "cog_level": "Understand",
+      "title": "Cryptography",
+      "description": "Cryptography: e.g.SSL,symmetric/asymmetric",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a885136b-f78a-4b9a-965a-3086d1bf6fb2",
+      "label": "Architectures for secure networks",
+      "cog_level": "Understand",
+      "title": "Architectures for secure networks",
+      "description": "Architectures for secure networks: e.g., secure Channels, secure routing protocols, secure DNS, VPNS, DMZ, ZerTrust Network AccesS, hyper network security, anonymous communication protocols, isolation",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b0d2298e-4a56-488f-8d4b-14646aa8679a",
+      "label": "Network monitoring, intrusion detection, firewalls, spoofing and DoS protection, honeypots, tracebacks, BGP Sec.",
+      "cog_level": "Understand",
+      "title": "Network monitoring, intrusion detection, firewalls, spoofing and DoS protection, honeypots, tracebacks, BGP Sec.",
+      "description": "Network monitoring, intrusion detection, firewalls, spoofing and DoS protection, honeypots, tracebacks, BGP Sec.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e90cae35-d60b-4473-8e62-20d2e51827e0",
+      "label": "Emerging Topics",
+      "cog_level": "",
+      "title": "Emerging Topics",
+      "description": "Emerging Topics: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "be843fed-ff3f-45db-bee7-c287eca607ae",
+      "label": "Middleboxes",
+      "cog_level": "Understand",
+      "title": "Middleboxes",
+      "description": "Middleboxes: e.g. filtering, deep packet inspection, oad balancing, NAT, CDN",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9eda2343-b14e-4959-9629-430d23bfbe80",
+      "label": "Virtualization",
+      "cog_level": "Understand",
+      "title": "Virtualization",
+      "description": "Virtualization: e.g. SDN, Data Center Networks",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8af6ea61-d8b0-4c19-860a-a3763852bada",
+      "label": "Quantum Networking",
+      "cog_level": "Understand",
+      "title": "Quantum Networking",
+      "description": "Quantum Networking: e.g. Intrtthe domain, teleportation, security, Quantum Internet",
+      "node_type": "knowledge point",
+      "shape": "box"
+    }
+  ],
+  "edges": [
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "e2bd4814-de4d-4f35-b918-96b77c6f2f7a",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "cb29021c-43b7-45fd-af52-57b47fc665ee",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "fbe88ca5-d3ad-4cf6-8dfa-059beccb1ba4",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "24879f6c-c809-423d-aa73-6a026840cec0",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "645ffbf8-cb46-4693-9e18-b9aaa9d637f9",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "93e8d18c-a395-431f-8c80-caaaed9f1205",
+      "title": ""
+    },
+    {
+      "from": "d9501eff-af1f-4fd8-8cdf-226e4e412e5a",
+      "to": "7b461361-ddf2-447d-96e1-bbccbbe41a32",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "title": ""
+    },
+    {
+      "from": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "to": "9f8a7f1a-778e-4dee-94fc-731bf107d8e8",
+      "title": ""
+    },
+    {
+      "from": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "to": "c8d3edbf-73fb-4f62-ba08-ae0947e93517",
+      "title": ""
+    },
+    {
+      "from": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "to": "f928f6b9-045e-4f52-b778-edb4020617e1",
+      "title": ""
+    },
+    {
+      "from": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "to": "55baa720-a51c-4b73-94d2-6ad13e722e4f",
+      "title": ""
+    },
+    {
+      "from": "9148b3f1-b8ef-474c-beda-57ac4e46805f",
+      "to": "522fa2c9-9c21-4432-87ed-0a2ea68fbfb5",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "title": ""
+    },
+    {
+      "from": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "to": "5651b91f-1597-4e8e-878b-bc4d9f817b2c",
+      "title": ""
+    },
+    {
+      "from": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "to": "08c4d877-770f-4b8b-9947-939801efb500",
+      "title": ""
+    },
+    {
+      "from": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "to": "d416966b-a794-4a77-b6df-925aa3f66472",
+      "title": ""
+    },
+    {
+      "from": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "to": "ab4c1a19-e995-47d9-b399-0811314de24e",
+      "title": ""
+    },
+    {
+      "from": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "to": "1145a514-1f51-4ea9-9f26-3bd2c89c577e",
+      "title": ""
+    },
+    {
+      "from": "441dd1ef-e9b3-45f4-8cab-c9e11e79c193",
+      "to": "5445ed11-5532-401c-a5cb-e70ea704ec92",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "d9dce4d6-2204-4662-9259-b642beb5cd6a",
+      "title": ""
+    },
+    {
+      "from": "d9dce4d6-2204-4662-9259-b642beb5cd6a",
+      "to": "12af2bd6-39f1-4854-9d6d-071674f49e1d",
+      "title": ""
+    },
+    {
+      "from": "d9dce4d6-2204-4662-9259-b642beb5cd6a",
+      "to": "2e678987-ec5e-4d2a-8007-2c068d1805f4",
+      "title": ""
+    },
+    {
+      "from": "d9dce4d6-2204-4662-9259-b642beb5cd6a",
+      "to": "e07f679c-46d8-4a54-83ea-adfeed721973",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "title": ""
+    },
+    {
+      "from": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "to": "74d78d87-2b00-4006-8146-71ed628f9c56",
+      "title": ""
+    },
+    {
+      "from": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "to": "f106f975-e6c3-4f36-a6df-e8e8fc3c69fa",
+      "title": ""
+    },
+    {
+      "from": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "to": "203ac13c-8573-4725-a577-9908a818d5eb",
+      "title": ""
+    },
+    {
+      "from": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "to": "fbf510b7-6877-41c8-8841-0a1e998e3d1a",
+      "title": ""
+    },
+    {
+      "from": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "to": "914a1e6e-cf8c-44fd-9c08-9ed47c98018b",
+      "title": ""
+    },
+    {
+      "from": "8169e3be-f020-41f1-8a63-9d404abbbab1",
+      "to": "a76a4e41-7cc9-498e-bf0e-bbb70c7b83e7",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "title": ""
+    },
+    {
+      "from": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "to": "7849c143-d79a-4e75-8f42-c5515d53faaf",
+      "title": ""
+    },
+    {
+      "from": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "to": "34468502-476b-46d2-a954-3096807cd8c4",
+      "title": ""
+    },
+    {
+      "from": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "to": "dc7beacc-76e4-4aa8-b8f7-098b3211f887",
+      "title": ""
+    },
+    {
+      "from": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "to": "ceafc7c3-80a4-40c6-9560-3219697b5331",
+      "title": ""
+    },
+    {
+      "from": "1aaf6c54-e59d-4dee-ac2e-922375a6593c",
+      "to": "a3d55f70-1727-4c9f-9c98-97885861f8b9",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "82504cbc-70a5-4d87-8cc4-e588e6f3b2f4",
+      "title": ""
+    },
+    {
+      "from": "82504cbc-70a5-4d87-8cc4-e588e6f3b2f4",
+      "to": "9274006a-633c-4f05-9a25-bc38d3ee157f",
+      "title": ""
+    },
+    {
+      "from": "82504cbc-70a5-4d87-8cc4-e588e6f3b2f4",
+      "to": "0738e6c4-46ef-426c-9fde-f982e347c31d",
+      "title": ""
+    },
+    {
+      "from": "82504cbc-70a5-4d87-8cc4-e588e6f3b2f4",
+      "to": "bdba49ac-57a2-41c4-984b-73ff8af5484d",
+      "title": ""
+    },
+    {
+      "from": "bdba49ac-57a2-41c4-984b-73ff8af5484d",
+      "to": "f9875bfb-c1d3-4b13-8e3a-ee244aff4109",
+      "title": ""
+    },
+    {
+      "from": "bdba49ac-57a2-41c4-984b-73ff8af5484d",
+      "to": "a885136b-f78a-4b9a-965a-3086d1bf6fb2",
+      "title": ""
+    },
+    {
+      "from": "bdba49ac-57a2-41c4-984b-73ff8af5484d",
+      "to": "b0d2298e-4a56-488f-8d4b-14646aa8679a",
+      "title": ""
+    },
+    {
+      "from": "e925024a-c574-46b9-bfb7-19f307fc6b23",
+      "to": "e90cae35-d60b-4473-8e62-20d2e51827e0",
+      "title": ""
+    },
+    {
+      "from": "e90cae35-d60b-4473-8e62-20d2e51827e0",
+      "to": "be843fed-ff3f-45db-bee7-c287eca607ae",
+      "title": ""
+    },
+    {
+      "from": "e90cae35-d60b-4473-8e62-20d2e51827e0",
+      "to": "9eda2343-b14e-4959-9629-430d23bfbe80",
+      "title": ""
+    },
+    {
+      "from": "e90cae35-d60b-4473-8e62-20d2e51827e0",
+      "to": "8af6ea61-d8b0-4c19-860a-a3763852bada",
+      "title": ""
+    }
+  ],
+  "courseId": "43"
+}

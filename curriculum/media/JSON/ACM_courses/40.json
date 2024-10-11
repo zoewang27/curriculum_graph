@@ -1,0 +1,2676 @@
+{
+  "nodes": [
+    {
+      "id": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "label": "Graphics and Interactive Techniques",
+      "cog_level": "",
+      "title": "Graphics and Interactive Techniques",
+      "description": "Graphics and Interactive Techniques: ",
+      "node_type": "course",
+      "shape": "circle"
+    },
+    {
+      "id": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "label": "Fundamental Concepts",
+      "cog_level": "",
+      "title": "Fundamental Concepts",
+      "description": "Fundamental Concepts: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "6b7e6860-e7d8-4e65-b09a-56fab8c34d83",
+      "label": "Entertainment, business, and scientific applications",
+      "cog_level": "Understand",
+      "title": "Entertainment, business, and scientific applications",
+      "description": "Entertainment, business, and scientific applications: examples include visual effects, machine learning, computer vision, user interfaces, videediting, games and game engines, computer-aided design and manufacturing, data visualization, and virtual/augmented/mixed reality.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "db557b28-c33d-4d60-80db-ddc9d3e41455",
+      "label": "Human vision system",
+      "cog_level": "Understand",
+      "title": "Human vision system",
+      "description": "Human vision system: 1, tristimulus reception (RGB); 2, eye-as-camera (projection); 3, persistence of vision (frame rate/motion blur); 4, contrast (detection/Mach banding/dithering/aliasing); 5, non-linear response (tone mapping); 6, binocular vision (stereo); 7, accessibility (color deficiency, strobing, monocular vision etc.);",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6788ecd9-77c3-4f0f-be68-c614d27579c6",
+      "label": "Digitization of analog data",
+      "cog_level": "Understand",
+      "title": "Digitization of analog data",
+      "description": "Digitization of analog data: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "869148ff-bf1a-4df7-8e13-e2e64bf6469e",
+      "label": "rasterization vs vector representations",
+      "cog_level": "Understand",
+      "title": "rasterization vs vector representations",
+      "description": "rasterization vs vector representations: example: polygon vs volume vs actual object",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7b78c1bb-d4f5-4e82-9c52-a013cc503972",
+      "label": "resolution",
+      "cog_level": "Understand",
+      "title": "resolution",
+      "description": "resolution: 1, pixels for visual display. 2, dots for laser printers",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a4b9fc92-3843-4107-9ab8-df0ec0186cd2",
+      "label": "sampling and quantization",
+      "cog_level": "Understand",
+      "title": "sampling and quantization",
+      "description": "sampling and quantization: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a0e7f015-b9e8-47fc-839f-1a501bbdfab7",
+      "label": "Standard media formats",
+      "cog_level": "Understand",
+      "title": "Standard media formats",
+      "description": "Standard media formats: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fd2a6438-1667-4d21-9b62-28892a329a7a",
+      "label": "raster",
+      "cog_level": "Understand",
+      "title": "raster",
+      "description": "raster: 1, lossless. 2, lossy",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "75457494-90eb-4c01-9f2a-e4c3e6309d99",
+      "label": "vector",
+      "cog_level": "Understand",
+      "title": "vector",
+      "description": "vector: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e007524-1409-4297-82df-bbd597f19614",
+      "label": "Color models",
+      "cog_level": "Understand",
+      "title": "Color models",
+      "description": "Color models: additive (RGB), subtractive (CMYK) and color perception (HSV)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fd49fc98-9f45-478f-a60b-3ba33442d785",
+      "label": "Tradeoffs between storing data and re-computing data as embodied by vector and raster representations of images",
+      "cog_level": "Understand",
+      "title": "Tradeoffs between storing data and re-computing data as embodied by vector and raster representations of images",
+      "description": "Tradeoffs between storing data and re-computing data as embodied by vector and raster representations of images: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "04d10350-9094-4708-85db-62f5a6fbebce",
+      "label": "Animation as a sequence of stillimages",
+      "cog_level": "Understand",
+      "title": "Animation as a sequence of stillimages",
+      "description": "Animation as a sequence of stillimages: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f2874f90-4c1e-4799-81df-83de23b027e0",
+      "label": "SEP issues",
+      "cog_level": "Understand",
+      "title": "SEP issues",
+      "description": "SEP issues: deep fakes, facial recognition, privacy, intellectual property",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "label": "Visualization",
+      "cog_level": "Understand",
+      "title": "Visualization",
+      "description": "Visualization: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "874ab0fd-d370-4e01-a6cf-cdd3cf2aa1e4",
+      "label": "Data Visualization and Information Visualization",
+      "cog_level": "Understand",
+      "title": "Data Visualization and Information Visualization",
+      "description": "Data Visualization and Information Visualization: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f2614c4a-9e13-47d0-a0d8-0462b4167c50",
+      "label": "Visualization of",
+      "cog_level": "Understand",
+      "title": "Visualization of",
+      "description": "Visualization of: 1, 2D/3D scalar fields. 2, Vector fields and flow data. 3, Time-varying data. 4, High-dimensional data. 5, Non-spatial data",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4d79de47-8311-4c48-8fde-af602733e1cb",
+      "label": "Visualization techniques",
+      "cog_level": "Understand",
+      "title": "Visualization techniques",
+      "description": "Visualization techniques: color mapping, isosurfaces, dimension reduction, parallel coordinates, multi-variate, tree/graph structured, text",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "db57bb73-c2d2-41c7-ae9f-c1813c831604",
+      "label": "Direct volume data rendering",
+      "cog_level": "Understand",
+      "title": "Direct volume data rendering",
+      "description": "Direct volume data rendering: ray-casting, transfer functions, segmentation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "30806cc5-2731-4abe-8907-e25c6a129502",
+      "label": "Common data formats",
+      "cog_level": "Understand",
+      "title": "Common data formats",
+      "description": "Common data formats: HDF, netCDF, geotiff, raw binary, CSV, ASCIl tparse, etc.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2bae8b7c-3e31-4133-9f61-f391ff4c54b4",
+      "label": "Common Visualization software and libraries",
+      "cog_level": "Understand",
+      "title": "Common Visualization software and libraries",
+      "description": "Common Visualization software and libraries: R, Processing, D3.js, GIS, Matlab, IDL, Python, etc.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "041511d0-4b8b-4f6e-afeb-f6494c016f15",
+      "label": "Perceptual and cognitive foundations that drive visual abstractions.",
+      "cog_level": "Understand",
+      "title": "Perceptual and cognitive foundations that drive visual abstractions.",
+      "description": "Perceptual and cognitive foundations that drive visual abstractions.: 1, Visual communication. 2, Color theory",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "70465248-a282-4079-9dc0-e1b448282933",
+      "label": "Visualization design.",
+      "cog_level": "Understand",
+      "title": "Visualization design.",
+      "description": "Visualization design.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e0161c90-032e-4977-9afc-a98f81d7e4b9",
+      "label": "Purpose (discovery, outreach).",
+      "cog_level": "Understand",
+      "title": "Purpose (discovery, outreach).",
+      "description": "Purpose (discovery, outreach).: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8312db23-e3e8-4322-bd38-94e123c3735d",
+      "label": "Audience (technical, general public).",
+      "cog_level": "Understand",
+      "title": "Audience (technical, general public).",
+      "description": "Audience (technical, general public).: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "42e10005-d7e3-48ad-a182-4d7100633ba8",
+      "label": "Ethically responsible visualization",
+      "cog_level": "Understand",
+      "title": "Ethically responsible visualization",
+      "description": "Ethically responsible visualization: 1, Avoid misleading visualizations (exaggeration, hole filling, smoothing, data cleanup). 2, Even corect data can be misleading - eg, allasing, incorrectly moving or stopped fan blades.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "18d47f7d-9693-4694-8622-b31169398d41",
+      "label": "Evaluation of visualization methods and applications.",
+      "cog_level": "Understand",
+      "title": "Evaluation of visualization methods and applications.",
+      "description": "Evaluation of visualization methods and applications.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "36819319-8349-4cf1-9641-7059a972f589",
+      "label": "Visualization Bias",
+      "cog_level": "Understand",
+      "title": "Visualization Bias",
+      "description": "Visualization Bias: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "721a6c55-051c-4c0c-93eb-3e678303ba20",
+      "label": "Applications of visualization.",
+      "cog_level": "Understand",
+      "title": "Applications of visualization.",
+      "description": "Applications of visualization.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "label": "Basic Rendering",
+      "cog_level": "Understand",
+      "title": "Basic Rendering",
+      "description": "Basic Rendering: encompasses the fundamental concepts and techniques used to create visual representations of 3D scenes in computer graphics",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "e6f1bd73-fdf9-45d5-9aee-0091a5c0b01e",
+      "label": "Graphics pipeline.",
+      "cog_level": "Understand",
+      "title": "Graphics pipeline.",
+      "description": "Graphics pipeline.: is the sequence of stages through which 3D geometry is transformed, shaded, and rasterized to produce the final image on the screen",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1c516de4-9db0-411d-b69c-e4c07bfe0d1f",
+      "label": "Rendering in nature",
+      "cog_level": "Understand",
+      "title": "Rendering in nature",
+      "description": "Rendering in nature: e.g. the emission and scattering of light and its relation tnumerical integration.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f9986afd-0372-4ee3-98c3-513d4bb5babe",
+      "label": "Forward and backward rendering",
+      "cog_level": "Understand",
+      "title": "Forward and backward rendering",
+      "description": "Forward and backward rendering: i.e., ray-casting and rasterization",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "df3f1a9d-a954-48d2-a2e7-d99d3b83b84a",
+      "label": "Polygonal representation.",
+      "cog_level": "Understand",
+      "title": "Polygonal representation.",
+      "description": "Polygonal representation.: Polygonal meshes composed of vertices, edges, and faces are commonly used to represent 3D objects in computer graphics due to their simplicity and efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "92370392-76e8-48a0-8e9c-4f5bfa7ecde1",
+      "label": "Basic radiometry, similar triangles, and projection model.",
+      "cog_level": "Understand",
+      "title": "Basic radiometry, similar triangles, and projection model.",
+      "description": "Basic radiometry, similar triangles, and projection model.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6c57658e-a306-4250-a089-5fcaf4ef8ffb",
+      "label": "Affine and coordinate system transformations.",
+      "cog_level": "Understand",
+      "title": "Affine and coordinate system transformations.",
+      "description": "Affine and coordinate system transformations.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "05350c9c-e80a-4fa5-8b94-92166521eb97",
+      "label": "Ray tracing.",
+      "cog_level": "Understand",
+      "title": "Ray tracing.",
+      "description": "Ray tracing.: Ray tracing is a rendering technique that simulates the path of light rays",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "dc15424f-7046-4239-9ea5-57a275f81985",
+      "label": "Visibility and occlusion",
+      "cog_level": "Understand",
+      "title": "Visibility and occlusion",
+      "description": "Visibility and occlusion: including solutions tthis problem such as depth buffering, Painter's algorithm. and ray tracing.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d9c0d952-a55e-4582-8564-37b4657e5880",
+      "label": "The rendering equation.",
+      "cog_level": "Understand",
+      "title": "The rendering equation.",
+      "description": "The rendering equation.: The rendering equation is a fundamental equation in computer graphics that describes the total incoming light at a point in a scene as the sum of emitted, reflected, and transmitted light, accounting for surface properties and lighting conditions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9ae98977-b9a6-4ab9-b1f7-4f038a590456",
+      "label": "Simple triangle rasterization.",
+      "cog_level": "Understand",
+      "title": "Simple triangle rasterization.",
+      "description": "Simple triangle rasterization.: Triangle rasterization algorithms determine which pixels are covered by a triangle and interpolate vertex attributes across the triangle's surface.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ad8f0646-4388-4b1b-aacf-2d52f5625c5b",
+      "label": "Rendering with a shader-based API.",
+      "cog_level": "Understand",
+      "title": "Rendering with a shader-based API.",
+      "description": "Rendering with a shader-based API.: Modern rendering pipelines often use shader-based APIs, such as OpenGL and DirectX, to programmatically define the shading, lighting, and other rendering effects applied to objects in a scene.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e08a1489-a31d-461b-84cd-e71af39ab7d7",
+      "label": "Texture mapping",
+      "cog_level": "Understand",
+      "title": "Texture mapping",
+      "description": "Texture mapping: including minification and magnification (e.g.,trilinear MIP-mapping).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ae7865c2-c282-498b-92a8-10c6ed037e35",
+      "label": "Application of spatial data structures trendering.",
+      "cog_level": "Understand",
+      "title": "Application of spatial data structures trendering.",
+      "description": "Application of spatial data structures trendering.: Spatial data structures, such as bounding volume hierarchies (BVHs) and octrees, are used to efficiently organize and search for objects in a scene, improving rendering performance and scalability.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7e0401df-11f0-4b7c-a099-d97f3390e18f",
+      "label": "Sampling and anti-aliasing.",
+      "cog_level": "Understand",
+      "title": "Sampling and anti-aliasing.",
+      "description": "Sampling and anti-aliasing.: Sampling techniques are used to discretize continuous geometric and lighting data into discrete values for rendering. Anti-aliasing techniques are used to reduce visual artifacts caused by aliasing effects, such as jagged edges and pixelation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b8087f97-34ec-4d7b-b38d-80e85bb58286",
+      "label": "Scene graphs.",
+      "cog_level": "Understand",
+      "title": "Scene graphs.",
+      "description": "Scene graphs.: Scene graphs are hierarchical data structures used to represent the objects, transformations, and relationships in a 3D scene, facilitating efficient traversal, manipulation, and rendering of the scene.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "label": "Geometric Modeling",
+      "cog_level": "Understand",
+      "title": "Geometric Modeling",
+      "description": "Geometric Modeling: involves the representation, manipulation, and visualization of geometric shapes and objects in computer graphics and CAD applications.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "bd222f3e-60bb-4ac0-a8bd-42e84b65bf4d",
+      "label": "Basic geometric operations",
+      "cog_level": "Understand",
+      "title": "Basic geometric operations",
+      "description": "Basic geometric operations: such as intersection calculation and proxinity tests",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "label": "Surface representation/model",
+      "cog_level": "Understand",
+      "title": "Surface representation/model",
+      "description": "Surface representation/model: Surfaces are represented using mathematical equations, such as parametric or implicit representations, which describe the geometry of the surface.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "da0a9518-2c76-48a9-921b-13c0f240722d",
+      "label": "Tessellation",
+      "cog_level": "Understand",
+      "title": "Tessellation",
+      "description": "Tessellation: Tessellation is the process of subdividing a surface into smaller geometric primitives, such as triangles or quadrilaterals, for rendering and manipulation purposes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2568ce30-0d67-46af-be3b-eedee098e001",
+      "label": "Mesh representation, mesh fairing, and mesh generation techniques ",
+      "cog_level": "Understand",
+      "title": "Mesh representation, mesh fairing, and mesh generation techniques ",
+      "description": "Mesh representation, mesh fairing, and mesh generation techniques : such as Delaunay triangulation, marching cubes",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "274b4441-6d67-4d84-b658-969d9a5cedef",
+      "label": "Parametric polynomial curves and surfaces",
+      "cog_level": "Understand",
+      "title": "Parametric polynomial curves and surfaces",
+      "description": "Parametric polynomial curves and surfaces: Parametric curves and surfaces are defined using polynomial equations and are commonly used in CAD applications for modeling smooth shapes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ef1c3620-358b-4797-9bd5-a40073134142",
+      "label": "Implicit representation of curves and surfaces",
+      "cog_level": "Understand",
+      "title": "Implicit representation of curves and surfaces",
+      "description": "Implicit representation of curves and surfaces: Implicit equations describe surfaces as the zero sets of functions and are used for modeling complex and irregular shapes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "86d3dd36-0b89-4b73-a1e5-fa8a8148e1f4",
+      "label": "Spatial subdivision techniques",
+      "cog_level": "Understand",
+      "title": "Spatial subdivision techniques",
+      "description": "Spatial subdivision techniques: Spatial subdivision methods, such as octrees and binary space partitioning trees, are used to efficiently organize and search geometric data in 3D space.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0dd009ec-4854-45ac-94ae-ac0611c0a840",
+      "label": "Volumetric representation/model",
+      "cog_level": "Understand",
+      "title": "Volumetric representation/model",
+      "description": "Volumetric representation/model: Volumetric models represent objects as a collection of voxels or points in 3D space and are used in medical imaging, computer graphics, and simulation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6995c835-e9f0-4ae9-95f5-78c32fc7af17",
+      "label": "Volumes, voxels, and point-based representations.",
+      "cog_level": "Understand",
+      "title": "Volumes, voxels, and point-based representations.",
+      "description": "Volumes, voxels, and point-based representations.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8d354318-d410-4c31-ab0e-53e5ba31575d",
+      "label": "Signed Distance Fields",
+      "cog_level": "Understand",
+      "title": "Signed Distance Fields",
+      "description": "Signed Distance Fields: Signed distance fields represent the distance from each point in space to the nearest surface and are used for various geometric operations, such as ray tracing and collision detection.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cd01dd75-6217-40ce-8ad0-b38dcedfb279",
+      "label": "Sparse Volumes, ie., VDB",
+      "cog_level": "Understand",
+      "title": "Sparse Volumes, ie., VDB",
+      "description": "Sparse Volumes, ie., VDB: Sparse volume representations store voxel data efficiently by only storing non-empty regions of space, reducing memory consumption and computational overhead.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a1a53c45-c7cb-40fd-bf89-24b13a1f288c",
+      "label": "Constructive Solid Geometry (CSG) representation",
+      "cog_level": "Understand",
+      "title": "Constructive Solid Geometry (CSG) representation",
+      "description": "Constructive Solid Geometry (CSG) representation: CSG operations combine primitive shapes using Boolean operations (union, intersection, difference) to create complex shapes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a47782e5-2d3d-4c2e-a61b-45775ecd5b82",
+      "label": "Procedural representation/model",
+      "cog_level": "Understand",
+      "title": "Procedural representation/model",
+      "description": "Procedural representation/model: 1, Fractals. 2,L-Systems, cross referenced with programming languages (grammars tgenerated pictures).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "176bea6f-114f-4cc6-818e-a2c8c25a2831",
+      "label": "Procedural models",
+      "cog_level": "Understand",
+      "title": "Procedural models",
+      "description": "Procedural models: such as fractals, generative modeling",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "caa3ae63-bf67-469f-928d-84ac6a24e418",
+      "label": "Elastically deformation and freeform deformable models.",
+      "cog_level": "Understand",
+      "title": "Elastically deformation and freeform deformable models.",
+      "description": "Elastically deformation and freeform deformable models.: 1,Quasi-static methods. 2, Bi-harmonic capture/deform",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9bf9fe49-5005-48df-aa10-a0b653181a9c",
+      "label": "Mutresolution modeling.",
+      "cog_level": "Understand",
+      "title": "Mutresolution modeling.",
+      "description": "Mutresolution modeling.: The key idea is to create a hierarchical data structure that allows for efficient storage, transmission, and rendering of complex geometry by storing multiple versions of an object at different levels of detail (LODs).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6877f17c-4433-49ac-a0c2-dc2ff209e711",
+      "label": "Reconstruction.",
+      "cog_level": "Understand",
+      "title": "Reconstruction.",
+      "description": "Reconstruction.: Reconstruction techniques convert 2D or 3D data (e.g., point clouds, images) into geometric models, commonly used in computer vision, medical imaging, and 3D scanning applications.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "label": "Shading",
+      "cog_level": "Apply",
+      "title": "Shading",
+      "description": "Shading: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "185736c6-dc85-416a-8422-a4cc2efcf3cd",
+      "label": "Solutions and approximations to the rendering equation",
+      "cog_level": "Apply",
+      "title": "Solutions and approximations to the rendering equation",
+      "description": "Solutions and approximations to the rendering equation: for example: 1, Distribution ray tracing and path tracing; 2, Photon mapping; 3, Bidirectional path tracing; 4,Metropolis light transport;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "df0cd5dd-84bf-409d-b8d7-6004c529f28f",
+      "label": "Time (motion blur), lens position (focus), and continuous frequency (color) and their impact on rendering",
+      "cog_level": "Apply",
+      "title": "Time (motion blur), lens position (focus), and continuous frequency (color) and their impact on rendering",
+      "description": "Time (motion blur), lens position (focus), and continuous frequency (color) and their impact on rendering: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cdb27412-3f88-4972-a020-780144c5e4f4",
+      "label": "Shadow mapping",
+      "cog_level": "Apply",
+      "title": "Shadow mapping",
+      "description": "Shadow mapping: Shadow mapping is a technique used to simulate shadows in a scene by rendering depth information from the viewpoint of a light source and comparing it with the depth of objects from the camera's viewpoint to determine visibility.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2ee1d074-a81a-4b89-93f1-d6f80e4046ea",
+      "label": "Occlusion culling",
+      "cog_level": "Apply",
+      "title": "Occlusion culling",
+      "description": "Occlusion culling: Occlusion culling techniques identify and eliminate objects or parts of objects that are not visible to the camera, improving rendering performance by reducing unnecessary computations.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a6c02c7d-d662-4540-8d4a-91908638cace",
+      "label": "Bidirectional Scattering Distribution function (BSDF) theory and microfacets",
+      "cog_level": "Apply",
+      "title": "Bidirectional Scattering Distribution function (BSDF) theory and microfacets",
+      "description": "Bidirectional Scattering Distribution function (BSDF) theory and microfacets: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "81f840eb-4d9b-46e8-b550-c3e01a66f162",
+      "label": "Subsurface scattering",
+      "cog_level": "Apply",
+      "title": "Subsurface scattering",
+      "description": "Subsurface scattering: Subsurface scattering refers to the phenomenon where light penetrates a translucent material, interacts with its interior, and emerges at a different point, creating soft and diffuse lighting effects. It is commonly used to render materials like skin, wax, and marble.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "693dc66f-aa37-4731-9fb6-b3e5d67a75cf",
+      "label": "Area light sources",
+      "cog_level": "Apply",
+      "title": "Area light sources",
+      "description": "Area light sources: Area light sources are light-emitting surfaces with finite area, such as lamps or windows, which emit soft and realistic shadows compared to point lights. They require special handling in shading algorithms to accurately simulate their effects.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "51e40243-87c7-4a6d-82eb-fdc19c2501df",
+      "label": "Hierarchical depth buffering",
+      "cog_level": "Apply",
+      "title": "Hierarchical depth buffering",
+      "description": "Hierarchical depth buffering: Hierarchical depth buffering is a technique used to optimize the rendering of scenes with complex geometry by organizing depth values into a hierarchical data structure, improving efficiency in depth testing and occlusion culling.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5f97b2b6-4bfc-47e1-9dc6-9f22284bc20c",
+      "label": "The Light Field, image-based rendering",
+      "cog_level": "Apply",
+      "title": "The Light Field, image-based rendering",
+      "description": "The Light Field, image-based rendering: The light field represents the distribution of light rays in a scene, enabling advanced rendering techniques such as image-based rendering, where images are synthesized from captured or computed light field data.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3bc4273a-6dd5-48f7-bed4-100130c32611",
+      "label": "Non-photorealistic rendering",
+      "cog_level": "Apply",
+      "title": "Non-photorealistic rendering",
+      "description": "Non-photorealistic rendering: NPR techniques simulate artistic styles to produce images that resemble traditional media, cartoons, or illustrations, adding expressive and stylized effects to computer-generated imagery.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4f2cdbd8-0130-4e21-944e-fa6c3fe40723",
+      "label": "GPU architecture",
+      "cog_level": "Apply",
+      "title": "GPU architecture",
+      "description": "GPU architecture: GPU architecture influences the performance and capabilities of shading algorithms and rendering techniques.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "874d8150-bbc1-45a4-8c4f-3e9a68f491b9",
+      "label": "Human visual systems",
+      "cog_level": "Apply",
+      "title": "Human visual systems",
+      "description": "Human visual systems: Understanding the human visual system helps in designing shading algorithms that produce visually appealing and realistic images by considering factors like color perception, contrast sensitivity, and visual acuity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "label": "Computer Animation",
+      "cog_level": "Apply",
+      "title": "Computer Animation",
+      "description": "Computer Animation: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "8ffce561-60bb-4744-a3fc-bab70ceb34e3",
+      "label": "Principles of Animation",
+      "cog_level": "Apply",
+      "title": "Principles of Animation",
+      "description": "Principles of Animation: Squash and Stretch, Timing, Anticipation, Staging, Follow Through and Overlapping Action, Straight Ahead Action and Pose-to-Pose Action, Slow In and Out, Arcs, Exaggeration, and Appeal",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a8083474-dead-463b-abca-40b80622df4d",
+      "label": "Key-frame animation",
+      "cog_level": "Apply",
+      "title": "Key-frame animation",
+      "description": "Key-frame animation: Keyframe Interpolation Methods: Lerp / Slerp / Spline",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c8988a5a-aa8c-444f-8155-7176d408413a",
+      "label": "Forward and inverse kinematics",
+      "cog_level": "Apply",
+      "title": "Forward and inverse kinematics",
+      "description": "Forward and inverse kinematics: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c93471c9-ae3e-424e-8817-369fcbc1b092",
+      "label": "Skinning algorithms",
+      "cog_level": "Apply",
+      "title": "Skinning algorithms",
+      "description": "Skinning algorithms: 1, Capturing; 2, Linear blend, dual quaternion;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3b11c90f-a14d-4d40-9714-7df46c974938",
+      "label": "Rigging",
+      "cog_level": "Apply",
+      "title": "Rigging",
+      "description": "Rigging: Rigging is the process of creating skeletal structures (rigs) for characters or objects, including bones, joints, and controls, to facilitate animation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fd2416f3-f745-44dd-9a2a-8d8c76c143eb",
+      "label": "Blend shapes",
+      "cog_level": "Apply",
+      "title": "Blend shapes",
+      "description": "Blend shapes: 1, Pose space deformation",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e4a030c-7850-44e5-9639-8c9af2484357",
+      "label": "Transforms",
+      "cog_level": "Create",
+      "title": "Transforms",
+      "description": "Transforms: Transforms represent changes in position, rotation, and scale of objects in 3D space, crucial for animating objects and characters.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a2beaa41-cf0d-4cca-b21d-dab27d7b2369",
+      "label": "Translations",
+      "cog_level": "Create",
+      "title": "Translations",
+      "description": "Translations: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f6dcd71d-5c5e-420a-b4c3-7396f2fbafe8",
+      "label": "Scale / Shear",
+      "cog_level": "Create",
+      "title": "Scale / Shear",
+      "description": "Scale / Shear: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b6961357-95ea-47c6-8267-c8053bb491d1",
+      "label": "Rotations",
+      "cog_level": "Create",
+      "title": "Rotations",
+      "description": "Rotations: 1, Euler angles; 2, Quaternions; 3, Angle/axis, exponential map;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "64543222-78a9-463b-89e6-22a09446d71a",
+      "label": "Transformation Order:SRT /XYZ",
+      "cog_level": "Create",
+      "title": "Transformation Order:SRT /XYZ",
+      "description": "Transformation Order:SRT /XYZ: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3d970ff9-bd49-4f4f-8010-883d49240613",
+      "label": "Camera animation",
+      "cog_level": "Create",
+      "title": "Camera animation",
+      "description": "Camera animation: Animating the camera's position, orientation, and focal length adds cinematic movement and perspective to scenes, enhancing storytelling and visual impact.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9940c66a-c828-42de-b04e-c13524d301c6",
+      "label": "Look at",
+      "cog_level": "Create",
+      "title": "Look at",
+      "description": "Look at: Look at constraints or controllers orient objects or characters to face a specified target, useful for directing attention or creating interactive behaviors.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2cb4a215-fa77-4730-aab5-0a39321da77e",
+      "label": "Focus",
+      "cog_level": "Create",
+      "title": "Focus",
+      "description": "Focus: Focus controls adjust the depth of field in a scene, simulating realistic camera focus effects and directing viewer attention.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "39218c9a-d89a-427d-90bc-c9c7be2101b4",
+      "label": "Motion capture",
+      "cog_level": "Understand",
+      "title": "Motion capture",
+      "description": "Motion capture: Motion capture (mocap) records real-world movement data from actors or objects and applies it to digital characters or models",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a23a4abc-7fbb-450f-af3a-1881cb409bcb",
+      "label": "Set up and fundamentals",
+      "cog_level": "Understand",
+      "title": "Set up and fundamentals",
+      "description": "Set up and fundamentals: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bfff4e2a-e31c-4bc2-b71e-804cedddfdde",
+      "label": "Ethical considerations (e.g., accessibility and privacy)",
+      "cog_level": "Understand",
+      "title": "Ethical considerations (e.g., accessibility and privacy)",
+      "description": "Ethical considerations (e.g., accessibility and privacy): Avoidance of \"default\u201d captures - there is ntypical human walk cycle",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "label": "Simulation",
+      "cog_level": "Create",
+      "title": "Simulation",
+      "description": "Simulation: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "ccabe316-b250-4492-ac62-62a2d9bc9c32",
+      "label": "Collision detection and response",
+      "cog_level": "Create",
+      "title": "Collision detection and response",
+      "description": "Collision detection and response: Algorithms for detecting collisions between objects and responding appropriately, including resolving intersections and applying forces.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e9555f6-7af1-4421-b6c5-7a3946e0fa18",
+      "label": "Signed Distance Fields",
+      "cog_level": "Create",
+      "title": "Signed Distance Fields",
+      "description": "Signed Distance Fields: Representations of surfaces in 3D space as the signed distance to the nearest surface point, useful for collision detection, rendering, and other applications.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8d2980f4-17c2-47a0-a1cd-cebf6da6e47b",
+      "label": "Sphere/sphere",
+      "cog_level": "Create",
+      "title": "Sphere/sphere",
+      "description": "Sphere/sphere: Specific types of collision detection algorithms for different geometric primitives.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "746e5c54-611b-465d-be2b-6e4401fadec8",
+      "label": "Triangle/point",
+      "cog_level": "Create",
+      "title": "Triangle/point",
+      "description": "Triangle/point: Specific types of collision detection algorithms for different geometric primitives.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7f378cf6-d960-4081-9ad1-4e1a8cd1a21b",
+      "label": "Edge/edge",
+      "cog_level": "Create",
+      "title": "Edge/edge",
+      "description": "Edge/edge: Specific types of collision detection algorithms for different geometric primitives.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "401a274c-90c8-475a-915e-4b827daf2801",
+      "label": "Procedural animation using noise",
+      "cog_level": "Create",
+      "title": "Procedural animation using noise",
+      "description": "Procedural animation using noise: Generating natural-looking motion and deformations using procedural noise functions, such as Perlin noise or simplex noise.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "451b59bd-6810-44d1-a505-469152b8a918",
+      "label": "Particle systems",
+      "cog_level": "Create",
+      "title": "Particle systems",
+      "description": "Particle systems: Simulating dynamic effects like fire, smoke, and explosions by modeling particles with properties like position, velocity, and lifespan.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e73eb545-89da-4a08-81dc-88c9fdfc8c67",
+      "label": "Integration methods (Forward Euler, Midpoint, Leapfrog)",
+      "cog_level": "Create",
+      "title": "Integration methods (Forward Euler, Midpoint, Leapfrog)",
+      "description": "Integration methods (Forward Euler, Midpoint, Leapfrog): Numerical methods for integrating equations of motion over time, including Forward Euler, Midpoint, and Leapfrog methods.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "027bef40-8817-4c2d-b926-c6801072fc65",
+      "label": "Mass/spring networks",
+      "cog_level": "Create",
+      "title": "Mass/spring networks",
+      "description": "Mass/spring networks: Modeling deformable objects or soft bodies using interconnected masses and springs to simulate elasticity and deformation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "915317bc-4083-4bd3-ae28-29a62fb9bf30",
+      "label": "Position based dynamics",
+      "cog_level": "Create",
+      "title": "Position based dynamics",
+      "description": "Position based dynamics: A simulation approach that focuses on satisfying constraints between object positions rather than explicitly computing forces.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4ff5b3a9-acf5-4535-96e0-1a2d521093a2",
+      "label": "Rules (boids/crowds)",
+      "cog_level": "Create",
+      "title": "Rules (boids/crowds)",
+      "description": "Rules (boids/crowds): Behavioral rules governing the movement and interaction of agents in a simulation, such as flocking behavior in bird flocks or crowd simulation in urban environments.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cd0cf1a3-db66-48cb-9477-0f07b7ab49f8",
+      "label": "Rigid bodies",
+      "cog_level": "Create",
+      "title": "Rigid bodies",
+      "description": "Rigid bodies: Simulating rigid objects with fixed shapes and masses, accounting for collisions, friction, and constraints.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d7cad425-96f8-4682-9bf3-92407352847a",
+      "label": "Grid based fluids",
+      "cog_level": "Create",
+      "title": "Grid based fluids",
+      "description": "Grid based fluids: Simulating fluid behavior using a grid-based approach, including techniques like Eulerian fluid simulation and Navier-Stokes equations.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c9fdcea5-a141-4e58-8662-3014ba10160e",
+      "label": "Semi-Lagrangian advection",
+      "cog_level": "Create",
+      "title": "Semi-Lagrangian advection",
+      "description": "Semi-Lagrangian advection: A method for simulating fluid flow by tracing particle trajectories in a Lagrangian frame and advecting properties through a grid.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c6e477cc-01c6-4d9d-aa25-33a7f27218a9",
+      "label": "Pressure Projection",
+      "cog_level": "Create",
+      "title": "Pressure Projection",
+      "description": "Pressure Projection: A technique for enforcing incompressibility in fluid simulations by projecting velocity fields onto a divergence-free space.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1a88dffc-b14a-4d0f-8ef3-b4fbded7042e",
+      "label": "Heightfields",
+      "cog_level": "Create",
+      "title": "Heightfields",
+      "description": "Heightfields: Representations of terrain or landscapes using 2D grids of elevation values, commonly used in terrain modeling and simulation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "375640c1-1c54-4a99-969c-f833ff680a7f",
+      "label": "Terrain: Transport, erosion",
+      "cog_level": "Create",
+      "title": "Terrain: Transport, erosion",
+      "description": "Terrain: Transport, erosion: Simulating erosion processes like water flow, sediment transport, and terrain modification over time.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "12cceb11-38fe-4ddf-8952-bb39bd7a6374",
+      "label": "Water: Ripple, Shallow water.",
+      "cog_level": "Create",
+      "title": "Water: Ripple, Shallow water.",
+      "description": "Water: Ripple, Shallow water.: Modeling water behavior, including surface ripples, waves, and shallow water dynamics, using fluid simulation techniques.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5f187213-e485-4951-8896-69047848e54c",
+      "label": "Rule-based system",
+      "cog_level": "Create",
+      "title": "Rule-based system",
+      "description": "Rule-based system: Using sets of rules to model complex behavior or interactions between entities in a simulation, such as cellular automata or rule-based growth systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e63519e-2fc7-4519-af7f-116ac62fe24b",
+      "label": "LSystems.",
+      "cog_level": "Create",
+      "title": "LSystems.",
+      "description": "LSystems.: Models for generating organic or branching structures, such as trees or plants, using recursive rules.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d24c07ed-747b-4919-8644-99949af7c999",
+      "label": "Space-colonizing systems.",
+      "cog_level": "Create",
+      "title": "Space-colonizing systems.",
+      "description": "Space-colonizing systems.: Models for generating organic or branching structures, such as trees or plants, using recursive rules.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bc54c2e3-bccb-4a9f-ae8f-fe2b17147088",
+      "label": "Game of Life",
+      "cog_level": "Create",
+      "title": "Game of Life",
+      "description": "Game of Life: A cellular automaton simulation with simple rules for evolving patterns on a grid, used as a model for emergent behavior and complex systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "label": "Immersion",
+      "cog_level": "",
+      "title": "Immersion",
+      "description": "Immersion: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "e06be3a3-203a-41b0-a6b4-46544f4470fb",
+      "label": "Define and distinguish VR, AR, and MR",
+      "cog_level": "Understand",
+      "title": "Define and distinguish VR, AR, and MR",
+      "description": "Define and distinguish VR, AR, and MR: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fc304a2c-ab91-47cc-ac02-72dab3835e6d",
+      "label": "Stereoscopic display",
+      "cog_level": "Create",
+      "title": "Stereoscopic display",
+      "description": "Stereoscopic display: Stereoscopic displays present separate images to each eye to create the illusion of depth perception",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b419e795-6827-4676-ad14-a5ebbc17f2ea",
+      "label": "Viewer tracking",
+      "cog_level": "Create",
+      "title": "Viewer tracking",
+      "description": "Viewer tracking: Viewer tracking technologies, such as positional tracking and eye tracking, monitor the user's movements and actions within the virtual environment, allowing for real-time interaction and immersion.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e93940f6-3c5b-4127-aaa6-f4775d282ff7",
+      "label": "Inside out vs Outside In",
+      "cog_level": "Create",
+      "title": "Inside out vs Outside In",
+      "description": "Inside out vs Outside In: Inside-out tracking involves sensors on the VR device detecting the user's movements relative to their environment, while outside-in tracking relies on external sensors or cameras to track the user's position and movements.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "647f7e71-2cd4-4e6d-b1d9-fb5dfaa1cccd",
+      "label": "Head/ Body/ Hand / tracking",
+      "cog_level": "Create",
+      "title": "Head/ Body/ Hand / tracking",
+      "description": "Head/ Body/ Hand / tracking: Tracking technologies monitor the user's head, body, and hand movements, enabling natural interaction with virtual objects and environments.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fb619a94-eead-4d6e-9c1c-5a07fce97b8d",
+      "label": "Visibility computation",
+      "cog_level": "Create",
+      "title": "Visibility computation",
+      "description": "Visibility computation: Visibility computation algorithms determine which objects and surfaces are visible to the user's viewpoint, optimizing rendering performance and enhancing immersion by presenting realistic scenes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "89763208-951c-4ce2-a3ad-83391a21a1e2",
+      "label": "Time-critical rendering, multiple levels of details (LOD) Image-based VR system",
+      "cog_level": "Create",
+      "title": "Time-critical rendering, multiple levels of details (LOD) Image-based VR system",
+      "description": "Time-critical rendering, multiple levels of details (LOD) Image-based VR system: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e568a233-92bc-44ba-8f18-db8c4ed32d8e",
+      "label": "Motion to Photon latency",
+      "cog_level": "Create",
+      "title": "Motion to Photon latency",
+      "description": "Motion to Photon latency: Motion-to-photon latency measures the time delay between the user's movement and the corresponding change in the VR display",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "195a4070-1d9d-4f85-a8c1-bd93e6247b09",
+      "label": "Distributed VR, collaboration over computer network",
+      "cog_level": "Create",
+      "title": "Distributed VR, collaboration over computer network",
+      "description": "Distributed VR, collaboration over computer network: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "37e25963-41fd-4416-b91f-389b4e4f3c10",
+      "label": "Interactive modeling",
+      "cog_level": "Create",
+      "title": "Interactive modeling",
+      "description": "Interactive modeling: interactive modeling tools allow users to create and manipulate virtual objects and environments in real-time",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "78556483-ac94-4700-a415-8be61be68fd4",
+      "label": "Applications in medicine, simulation, training, and visualization",
+      "cog_level": "Create",
+      "title": "Applications in medicine, simulation, training, and visualization",
+      "description": "Applications in medicine, simulation, training, and visualization: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b8ac8f9a-95f4-4fe9-ac4d-ed608f095d8a",
+      "label": "Safety in immersive applications",
+      "cog_level": "Evaluate",
+      "title": "Safety in immersive applications",
+      "description": "Safety in immersive applications: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "59cf2357-c131-4dfc-810d-bbe0038316a7",
+      "label": "Motion sickness",
+      "cog_level": "Evaluate",
+      "title": "Motion sickness",
+      "description": "Motion sickness: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "eb63bf04-0234-412e-8d06-315951a6811f",
+      "label": "VR obscures the real world, which increases the potential for falls and physical accidents",
+      "cog_level": "Evaluate",
+      "title": "VR obscures the real world, which increases the potential for falls and physical accidents",
+      "description": "VR obscures the real world, which increases the potential for falls and physical accidents: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9e7daa8a-60f6-476c-9f53-177957db62a2",
+      "label": "Accessibility in immersive applications",
+      "cog_level": "Evaluate",
+      "title": "Accessibility in immersive applications",
+      "description": "Accessibility in immersive applications: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f5b0af9d-0f9b-49ff-8cfb-0d82c04f6baa",
+      "label": "Accessible tthose whcannot move",
+      "cog_level": "Evaluate",
+      "title": "Accessible tthose whcannot move",
+      "description": "Accessible tthose whcannot move: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "268fd036-c61f-4edb-add4-7f003b2c887c",
+      "label": "Accessible tthose whcannot be moved",
+      "cog_level": "Evaluate",
+      "title": "Accessible tthose whcannot be moved",
+      "description": "Accessible tthose whcannot be moved: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f17b7f30-9848-4bac-ad10-85e44c02b17e",
+      "label": "Ethics/privacy in immersive applications. ",
+      "cog_level": "Evaluate",
+      "title": "Ethics/privacy in immersive applications. ",
+      "description": "Ethics/privacy in immersive applications. : ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6904f061-26e7-4021-a1c3-f9aead44063d",
+      "label": "Acquisition of private data",
+      "cog_level": "Evaluate",
+      "title": "Acquisition of private data",
+      "description": "Acquisition of private data: room scans, body proportions, active cameras, etc",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3bbff703-4b55-4939-98c5-887603737e8e",
+      "label": "Can't look away from immersive applications easily.",
+      "cog_level": "Evaluate",
+      "title": "Can't look away from immersive applications easily.",
+      "description": "Can't look away from immersive applications easily.: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1de99fe8-d334-4e2c-83b2-d5257771d7f4",
+      "label": "Danger to self/surroundings while immersed",
+      "cog_level": "Evaluate",
+      "title": "Danger to self/surroundings while immersed",
+      "description": "Danger to self/surroundings while immersed: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "label": "Interaction",
+      "cog_level": "Create",
+      "title": "Interaction",
+      "description": "Interaction: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "8be4ac41-ba47-40d0-b037-66de6c4cf9da",
+      "label": "Event Driven Programming",
+      "cog_level": "Create",
+      "title": "Event Driven Programming",
+      "description": "Event Driven Programming: 1, Mouse or touch events; 2, Keyboard events; 3, Voice input; 4, Sensors; 5, Message passing communication; 6, Network events; 7, Interrupt event processing;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "16506900-8de3-4acf-aeb7-7f33665c628f",
+      "label": "Graphical User Interface (Single Channel)",
+      "cog_level": "Create",
+      "title": "Graphical User Interface (Single Channel)",
+      "description": "Graphical User Interface (Single Channel): 1, Window; 2, Icons; 3, Menus; 4,Pointing Devices;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8d01f829-c623-453e-8843-8a7cd077d5d7",
+      "label": "Gestural Interfaces",
+      "cog_level": "Evaluate",
+      "title": "Gestural Interfaces",
+      "description": "Gestural Interfaces: Accessibility - other approaches if gesture not possible (Inject \"thumbs up\" without a thumb)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f3daacc0-3d06-43d4-9f50-ea86a95aad8f",
+      "label": "Haptic Interfaces",
+      "cog_level": "Evaluate",
+      "title": "Haptic Interfaces",
+      "description": "Haptic Interfaces: 1, External actuators; 2, Gloves; 3, Exoskeletons;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "704f9d6e-c132-4c1c-9120-cf0206be8731",
+      "label": "Multimodal Interfaces",
+      "cog_level": "Evaluate",
+      "title": "Multimodal Interfaces",
+      "description": "Multimodal Interfaces: Multimodal interfaces combine multiple modes of interaction, such as voice, gesture, touch, and gaze",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9b429f01-c916-43e0-941e-2e28c120fa07",
+      "label": "Immersive Interfaces (Al)",
+      "cog_level": "Evaluate",
+      "title": "Immersive Interfaces (Al)",
+      "description": "Immersive Interfaces (Al): 1, brainwave (EEG type electrodes); 2, headsets with embedded eye tracking. 3, AR glasses;",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cae90634-f07b-4268-a904-76d13485c5db",
+      "label": "Accessibility ",
+      "cog_level": "Evaluate",
+      "title": "Accessibility ",
+      "description": "Accessibility : Accessibility in interaction design focuses on ensuring that digital systems and interfaces are usable and inclusive for users with diverse abilities and needs",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "label": "Image Processing ",
+      "cog_level": "Understand",
+      "title": "Image Processing ",
+      "description": "Image Processing : Image processing involves manipulating digital images to improve their quality or extract useful information.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "8aca4b66-81ab-4d2a-a300-c8a4f522f8cc",
+      "label": "Morphological operations",
+      "cog_level": "Understand",
+      "title": "Morphological operations",
+      "description": "Morphological operations: Morphological operations are mathematical operations applied to binary or grayscale images to manipulate their shape and structure. These operations include dilation, erosion, opening, closing, and more.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "28c377f3-431d-4bdf-b94b-335a72833230",
+      "label": "Connected components",
+      "cog_level": "Understand",
+      "title": "Connected components",
+      "description": "Connected components: Connected components analysis identifies and labels distinct regions or objects within an image based on their connectivity. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0ce27b40-f964-47fa-9f1c-9973d09bbfea",
+      "label": "Dilation",
+      "cog_level": "Understand",
+      "title": "Dilation",
+      "description": "Dilation: Dilation is a morphological operation that expands the boundaries of objects in a binary image. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bc117be3-5629-41d9-a7c7-3017dd2726d9",
+      "label": "Erosion",
+      "cog_level": "Understand",
+      "title": "Erosion",
+      "description": "Erosion: Erosion is a morphological operation that shrinks the boundaries of objects in a binary image.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bd04c938-4bc6-40b3-bef1-9e71a1244724",
+      "label": "Computing region properties (area, perimeter, centroid, etc.)",
+      "cog_level": "Understand",
+      "title": "Computing region properties (area, perimeter, centroid, etc.)",
+      "description": "Computing region properties (area, perimeter, centroid, etc.): After segmentation, computing region properties such as area, perimeter, centroid, and bounding box helps characterize and analyze the identified regions or objects within an image.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "63d66e11-a132-4354-918a-065c2850fb4f",
+      "label": "Color histograms",
+      "cog_level": "Understand",
+      "title": "Color histograms",
+      "description": "Color histograms: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "af8a786e-e135-40ef-8ec7-5e95e8fd3f6a",
+      "label": "Representation",
+      "cog_level": "Understand",
+      "title": "Representation",
+      "description": "Representation: Color histograms represent the distribution of colors in an image by counting the frequency of each color or intensity level.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d7147be0-ba2b-4e9a-868e-46966acb4685",
+      "label": "Contrast enhancement through normalization",
+      "cog_level": "Understand",
+      "title": "Contrast enhancement through normalization",
+      "description": "Contrast enhancement through normalization: Contrast enhancement techniques adjust the intensity distribution of an image to improve visibility and enhance details. Normalization is one such technique that stretches the intensity values of an image to span the full dynamic range, effectively increasing the image's contrast.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "81fde89d-ec4c-4aad-8bad-bcc2c525f356",
+      "label": "Image enhancement",
+      "cog_level": "Understand",
+      "title": "Image enhancement",
+      "description": "Image enhancement: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3d4a694f-891d-49bf-a9ff-2dc9f3cf393c",
+      "label": "Convolution",
+      "cog_level": "Understand",
+      "title": "Convolution",
+      "description": "Convolution: Convolution is a fundamental operation in image processing where a filter kernel is applied to an image to perform various operations like blurring, edge detection, or sharpening.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a3dc0f91-b5e4-40d6-afe2-64e8ab4aabea",
+      "label": "Blur (e.g., Gaussian)",
+      "cog_level": "Understand",
+      "title": "Blur (e.g., Gaussian)",
+      "description": "Blur (e.g., Gaussian): Gaussian blur is a common technique used to blur an image by convolving it with a Gaussian kernel. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7789e28c-654a-4298-85cd-089f9707562f",
+      "label": "Sharpen (Laplacian)",
+      "cog_level": "Understand",
+      "title": "Sharpen (Laplacian)",
+      "description": "Sharpen (Laplacian): Laplacian sharpening enhances the edges and details in an image by accentuating high-frequency components. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "972930ee-0f8d-456e-af8e-082acf314fad",
+      "label": "Frequency fltering (low-pass, high-pass)",
+      "cog_level": "Understand",
+      "title": "Frequency fltering (low-pass, high-pass)",
+      "description": "Frequency fltering (low-pass, high-pass): Frequency filtering techniques manipulate the frequency components of an image to achieve specific effects. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "36854138-4659-470a-a79b-c7d7b71325c1",
+      "label": "Image restoration",
+      "cog_level": "Understand",
+      "title": "Image restoration",
+      "description": "Image restoration: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "58705561-0f2b-434c-8323-07bf0091ecdc",
+      "label": "Noise, degradation",
+      "cog_level": "Understand",
+      "title": "Noise, degradation",
+      "description": "Noise, degradation: Image restoration aims to recover the original image from degraded or noisy versions. This includes removing noise caused by sensor imperfections, compression artifacts, or environmental factors, as well as restoring lost or damaged image information.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f0656091-15be-4843-a27d-95e64020fcf4",
+      "label": "Inpainting and other completion algorithms",
+      "cog_level": "Understand",
+      "title": "Inpainting and other completion algorithms",
+      "description": "Inpainting and other completion algorithms: Inpainting algorithms reconstruct missing or damaged parts of an image based on surrounding information. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "58fbfe1d-c926-48ae-8005-5ba37ad851e5",
+      "label": "Wiener filter",
+      "cog_level": "Understand",
+      "title": "Wiener filter",
+      "description": "Wiener filter: The Wiener filter is a signal processing filter used in image restoration to remove noise while preserving image details. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "label": "Image coding",
+      "cog_level": "Understand",
+      "title": "Image coding",
+      "description": "Image coding: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e3f9bc64-fe86-48ba-9ab5-78955765ccba",
+      "label": "Redundancy",
+      "cog_level": "Understand",
+      "title": "Redundancy",
+      "description": "Redundancy: Redundancy refers to patterns or information that can be predicted or represented more efficiently.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e64f8a64-11ef-4190-a7d8-e500eca6debc",
+      "label": "Huffman coding",
+      "cog_level": "Understand",
+      "title": "Huffman coding",
+      "description": "Huffman coding: Huffman coding is a lossless data compression technique that assigns variable-length codes to symbols based on their frequency of occurrence in the data. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f9f5c5de-6b41-42d1-937f-da70a528ebe0",
+      "label": "DCT, wavelet transform, Fourier transforms",
+      "cog_level": "Understand",
+      "title": "DCT, wavelet transform, Fourier transforms",
+      "description": "DCT, wavelet transform, Fourier transforms: Transform-based image coding methods, such as Discrete Cosine Transform (DCT), Wavelet Transform, and Fourier Transforms, analyze the frequency components of an image and represent it in a more compact form. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "882fde06-aa21-4b3c-886a-6893ea64c2ca",
+      "label": "Nyquist Theorem",
+      "cog_level": "Understand",
+      "title": "Nyquist Theorem",
+      "description": "Nyquist Theorem: The Nyquist theorem states that to accurately reconstruct a signal, including digital images, its sampling rate must be at least twice the highest frequency present in the signal. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5f0d288b-5f2a-423c-92ab-39f2012a36e7",
+      "label": "Watermarks",
+      "cog_level": "Understand",
+      "title": "Watermarks",
+      "description": "Watermarks: Ethical considerations",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "28d2eb3f-3a03-4076-bc3c-3bd636b46c81",
+      "label": "Emerging area",
+      "cog_level": "Understand",
+      "title": "Emerging area",
+      "description": "Emerging area: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5ed46512-ce19-424d-9544-d02ff64c4a95",
+      "label": "Convolutional Neural Networks",
+      "cog_level": "Understand",
+      "title": "Convolutional Neural Networks",
+      "description": "Convolutional Neural Networks: CNNs are a class of deep learning models designed for processing structured grid data, such as images.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e3491683-43b0-4947-8254-54265ab55d43",
+      "label": "Transformers",
+      "cog_level": "Understand",
+      "title": "Transformers",
+      "description": "Transformers: Transformers are a type of deep learning architecture originally designed for natural language processing tasks. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6d0a3c03-65dd-4e29-8502-b5168a40bb45",
+      "label": "SEP issues",
+      "cog_level": "Understand",
+      "title": "SEP issues",
+      "description": "SEP issues: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b4911e1d-128a-4f18-b1dc-10ecf249dd84",
+      "label": "Deep fakes",
+      "cog_level": "Understand",
+      "title": "Deep fakes",
+      "description": "Deep fakes: Deep fakes are AI-generated synthetic media, including images and videos, that convincingly depict people saying or doing things they never did.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8ffb75b7-aaa5-4b59-a956-4ba492658415",
+      "label": "Applications that misidentify people based on skin color or hairstyle",
+      "cog_level": "Understand",
+      "title": "Applications that misidentify people based on skin color or hairstyle",
+      "description": "Applications that misidentify people based on skin color or hairstyle: Biased algorithms or poorly designed computer vision systems can perpetuate racial or gender biases by misidentifying or underrepresenting individuals based on their skin color, ethnicity, or hairstyle.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "label": "Tangible/Physical Computing",
+      "cog_level": "Understand",
+      "title": "Tangible/Physical Computing",
+      "description": "Tangible/Physical Computing: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "9f28a19a-cf4a-4378-ac30-c9f68015fba5",
+      "label": "Communication with the physical world",
+      "cog_level": "Understand",
+      "title": "Communication with the physical world",
+      "description": "Communication with the physical world: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9e318482-b0fc-4317-995a-68905555ebee",
+      "label": "Acquisition of data from sensors",
+      "cog_level": "Understand",
+      "title": "Acquisition of data from sensors",
+      "description": "Acquisition of data from sensors: This involves collecting data from various sensors such as temperature sensors, accelerometers, cameras, etc.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "65d2fdf6-0965-4976-97f6-d6101c641d7e",
+      "label": "Driving external actuators",
+      "cog_level": "Understand",
+      "title": "Driving external actuators",
+      "description": "Driving external actuators: Actuators are devices that convert electrical signals into physical actions. Examples include motors, solenoids, and relays.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "66f3cae8-ce23-4476-9cf4-69789fcac2ff",
+      "label": "Event driven programming (see Interaction topic)",
+      "cog_level": "Understand",
+      "title": "Event driven programming (see Interaction topic)",
+      "description": "Event driven programming (see Interaction topic): Event-driven programming is a programming paradigm where the flow of the program is determined by events such as user actions, sensor inputs, or system events.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1d61e082-2f13-43ba-8b34-dafbbb30e2e4",
+      "label": "Connection to physical artifacts",
+      "cog_level": "Understand",
+      "title": "Connection to physical artifacts",
+      "description": "Connection to physical artifacts: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e0b04ff7-9e53-47db-bea5-b87650331c1d",
+      "label": "Computer Aided Design",
+      "cog_level": "Understand",
+      "title": "Computer Aided Design",
+      "description": "Computer Aided Design: CAD software is used to create, modify, and analyze designs for various physical artifacts such as buildings, machinery, and consumer products.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ba88320c-d0b8-48d3-8575-515d326a135e",
+      "label": "Computer Aided Manufacturing",
+      "cog_level": "Understand",
+      "title": "Computer Aided Manufacturing",
+      "description": "Computer Aided Manufacturing: CAM software is used to generate instructions for manufacturing processes based on CAD designs.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3c69f70a-5f7e-474d-b5db-0902d0bd7bc7",
+      "label": "Fabrication",
+      "cog_level": "Understand",
+      "title": "Fabrication",
+      "description": "Fabrication: 1, HCl prototyping (see HCI); 2, Additive (3D printing); 3, Subtractive (CNC miling); 4, Forming (vacuum forming);",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a673dbaf-8300-43f8-8c81-8e5de59a00f7",
+      "label": "Internet of Things (reference Networking)",
+      "cog_level": "Understand",
+      "title": "Internet of Things (reference Networking)",
+      "description": "Internet of Things (reference Networking): ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bc09624e-8dc3-4e12-8313-504f7817e7dd",
+      "label": "Network connectivity",
+      "cog_level": "Understand",
+      "title": "Network connectivity",
+      "description": "Network connectivity: IoT devices require network connectivity to communicate with each other, cloud services, and other systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "953e883f-3bcf-4d31-ada6-9b60f76222c7",
+      "label": "Wireless communication",
+      "cog_level": "Understand",
+      "title": "Wireless communication",
+      "description": "Wireless communication: Wireless communication technologies play a crucial role in IoT deployments by enabling flexible and scalable connectivity without the need for physical wired connections.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1b0c5fb0-3f86-43d1-bdaf-f9b7355cf633",
+      "label": "SEP issue",
+      "cog_level": "Understand",
+      "title": "SEP issue",
+      "description": "SEP issue: Privacy concerns in the IoT ecosystem revolve around the collection, storage, and use of personal data generated by IoT devices.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    }
+  ],
+  "edges": [
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "6b7e6860-e7d8-4e65-b09a-56fab8c34d83",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "db557b28-c33d-4d60-80db-ddc9d3e41455",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "6788ecd9-77c3-4f0f-be68-c614d27579c6",
+      "title": ""
+    },
+    {
+      "from": "6788ecd9-77c3-4f0f-be68-c614d27579c6",
+      "to": "869148ff-bf1a-4df7-8e13-e2e64bf6469e",
+      "title": ""
+    },
+    {
+      "from": "6788ecd9-77c3-4f0f-be68-c614d27579c6",
+      "to": "7b78c1bb-d4f5-4e82-9c52-a013cc503972",
+      "title": ""
+    },
+    {
+      "from": "6788ecd9-77c3-4f0f-be68-c614d27579c6",
+      "to": "a4b9fc92-3843-4107-9ab8-df0ec0186cd2",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "a0e7f015-b9e8-47fc-839f-1a501bbdfab7",
+      "title": ""
+    },
+    {
+      "from": "a0e7f015-b9e8-47fc-839f-1a501bbdfab7",
+      "to": "fd2a6438-1667-4d21-9b62-28892a329a7a",
+      "title": ""
+    },
+    {
+      "from": "a0e7f015-b9e8-47fc-839f-1a501bbdfab7",
+      "to": "75457494-90eb-4c01-9f2a-e4c3e6309d99",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "2e007524-1409-4297-82df-bbd597f19614",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "fd49fc98-9f45-478f-a60b-3ba33442d785",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "04d10350-9094-4708-85db-62f5a6fbebce",
+      "title": ""
+    },
+    {
+      "from": "7b456d70-1902-42f2-aa98-42ba1557a255",
+      "to": "f2874f90-4c1e-4799-81df-83de23b027e0",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "874ab0fd-d370-4e01-a6cf-cdd3cf2aa1e4",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "f2614c4a-9e13-47d0-a0d8-0462b4167c50",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "4d79de47-8311-4c48-8fde-af602733e1cb",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "db57bb73-c2d2-41c7-ae9f-c1813c831604",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "30806cc5-2731-4abe-8907-e25c6a129502",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "2bae8b7c-3e31-4133-9f61-f391ff4c54b4",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "041511d0-4b8b-4f6e-afeb-f6494c016f15",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "70465248-a282-4079-9dc0-e1b448282933",
+      "title": ""
+    },
+    {
+      "from": "70465248-a282-4079-9dc0-e1b448282933",
+      "to": "e0161c90-032e-4977-9afc-a98f81d7e4b9",
+      "title": ""
+    },
+    {
+      "from": "70465248-a282-4079-9dc0-e1b448282933",
+      "to": "8312db23-e3e8-4322-bd38-94e123c3735d",
+      "title": ""
+    },
+    {
+      "from": "70465248-a282-4079-9dc0-e1b448282933",
+      "to": "42e10005-d7e3-48ad-a182-4d7100633ba8",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "18d47f7d-9693-4694-8622-b31169398d41",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "36819319-8349-4cf1-9641-7059a972f589",
+      "title": ""
+    },
+    {
+      "from": "ced79597-accc-47eb-85ed-c1d761bb7921",
+      "to": "721a6c55-051c-4c0c-93eb-3e678303ba20",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "e6f1bd73-fdf9-45d5-9aee-0091a5c0b01e",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "1c516de4-9db0-411d-b69c-e4c07bfe0d1f",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "f9986afd-0372-4ee3-98c3-513d4bb5babe",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "df3f1a9d-a954-48d2-a2e7-d99d3b83b84a",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "92370392-76e8-48a0-8e9c-4f5bfa7ecde1",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "6c57658e-a306-4250-a089-5fcaf4ef8ffb",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "05350c9c-e80a-4fa5-8b94-92166521eb97",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "dc15424f-7046-4239-9ea5-57a275f81985",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "d9c0d952-a55e-4582-8564-37b4657e5880",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "9ae98977-b9a6-4ab9-b1f7-4f038a590456",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "ad8f0646-4388-4b1b-aacf-2d52f5625c5b",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "e08a1489-a31d-461b-84cd-e71af39ab7d7",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "ae7865c2-c282-498b-92a8-10c6ed037e35",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "7e0401df-11f0-4b7c-a099-d97f3390e18f",
+      "title": ""
+    },
+    {
+      "from": "39331997-fb71-4fc7-b86a-ee01175b651c",
+      "to": "b8087f97-34ec-4d7b-b38d-80e85bb58286",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "bd222f3e-60bb-4ac0-a8bd-42e84b65bf4d",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "title": ""
+    },
+    {
+      "from": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "to": "da0a9518-2c76-48a9-921b-13c0f240722d",
+      "title": ""
+    },
+    {
+      "from": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "to": "2568ce30-0d67-46af-be3b-eedee098e001",
+      "title": ""
+    },
+    {
+      "from": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "to": "274b4441-6d67-4d84-b658-969d9a5cedef",
+      "title": ""
+    },
+    {
+      "from": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "to": "ef1c3620-358b-4797-9bd5-a40073134142",
+      "title": ""
+    },
+    {
+      "from": "2e925188-6c97-4e7b-a292-4c2ef6912074",
+      "to": "86d3dd36-0b89-4b73-a1e5-fa8a8148e1f4",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "0dd009ec-4854-45ac-94ae-ac0611c0a840",
+      "title": ""
+    },
+    {
+      "from": "0dd009ec-4854-45ac-94ae-ac0611c0a840",
+      "to": "6995c835-e9f0-4ae9-95f5-78c32fc7af17",
+      "title": ""
+    },
+    {
+      "from": "0dd009ec-4854-45ac-94ae-ac0611c0a840",
+      "to": "8d354318-d410-4c31-ab0e-53e5ba31575d",
+      "title": ""
+    },
+    {
+      "from": "0dd009ec-4854-45ac-94ae-ac0611c0a840",
+      "to": "cd01dd75-6217-40ce-8ad0-b38dcedfb279",
+      "title": ""
+    },
+    {
+      "from": "0dd009ec-4854-45ac-94ae-ac0611c0a840",
+      "to": "a1a53c45-c7cb-40fd-bf89-24b13a1f288c",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "a47782e5-2d3d-4c2e-a61b-45775ecd5b82",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "176bea6f-114f-4cc6-818e-a2c8c25a2831",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "caa3ae63-bf67-469f-928d-84ac6a24e418",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "9bf9fe49-5005-48df-aa10-a0b653181a9c",
+      "title": ""
+    },
+    {
+      "from": "1c09fe81-789d-4d1d-94d7-8c08df6b0f9f",
+      "to": "6877f17c-4433-49ac-a0c2-dc2ff209e711",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "185736c6-dc85-416a-8422-a4cc2efcf3cd",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "df0cd5dd-84bf-409d-b8d7-6004c529f28f",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "cdb27412-3f88-4972-a020-780144c5e4f4",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "2ee1d074-a81a-4b89-93f1-d6f80e4046ea",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "a6c02c7d-d662-4540-8d4a-91908638cace",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "81f840eb-4d9b-46e8-b550-c3e01a66f162",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "693dc66f-aa37-4731-9fb6-b3e5d67a75cf",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "51e40243-87c7-4a6d-82eb-fdc19c2501df",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "5f97b2b6-4bfc-47e1-9dc6-9f22284bc20c",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "3bc4273a-6dd5-48f7-bed4-100130c32611",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "4f2cdbd8-0130-4e21-944e-fa6c3fe40723",
+      "title": ""
+    },
+    {
+      "from": "cfc4fc3d-fc5b-4d58-9bf7-b81499b7cfa7",
+      "to": "874d8150-bbc1-45a4-8c4f-3e9a68f491b9",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "8ffce561-60bb-4744-a3fc-bab70ceb34e3",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "a8083474-dead-463b-abca-40b80622df4d",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "c8988a5a-aa8c-444f-8155-7176d408413a",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "c93471c9-ae3e-424e-8817-369fcbc1b092",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "3b11c90f-a14d-4d40-9714-7df46c974938",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "fd2416f3-f745-44dd-9a2a-8d8c76c143eb",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "2e4a030c-7850-44e5-9639-8c9af2484357",
+      "title": ""
+    },
+    {
+      "from": "2e4a030c-7850-44e5-9639-8c9af2484357",
+      "to": "a2beaa41-cf0d-4cca-b21d-dab27d7b2369",
+      "title": ""
+    },
+    {
+      "from": "2e4a030c-7850-44e5-9639-8c9af2484357",
+      "to": "f6dcd71d-5c5e-420a-b4c3-7396f2fbafe8",
+      "title": ""
+    },
+    {
+      "from": "2e4a030c-7850-44e5-9639-8c9af2484357",
+      "to": "b6961357-95ea-47c6-8267-c8053bb491d1",
+      "title": ""
+    },
+    {
+      "from": "2e4a030c-7850-44e5-9639-8c9af2484357",
+      "to": "64543222-78a9-463b-89e6-22a09446d71a",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "3d970ff9-bd49-4f4f-8010-883d49240613",
+      "title": ""
+    },
+    {
+      "from": "3d970ff9-bd49-4f4f-8010-883d49240613",
+      "to": "9940c66a-c828-42de-b04e-c13524d301c6",
+      "title": ""
+    },
+    {
+      "from": "3d970ff9-bd49-4f4f-8010-883d49240613",
+      "to": "2cb4a215-fa77-4730-aab5-0a39321da77e",
+      "title": ""
+    },
+    {
+      "from": "30c2a539-061c-413d-9477-dfbe136009b3",
+      "to": "39218c9a-d89a-427d-90bc-c9c7be2101b4",
+      "title": ""
+    },
+    {
+      "from": "39218c9a-d89a-427d-90bc-c9c7be2101b4",
+      "to": "a23a4abc-7fbb-450f-af3a-1881cb409bcb",
+      "title": ""
+    },
+    {
+      "from": "39218c9a-d89a-427d-90bc-c9c7be2101b4",
+      "to": "bfff4e2a-e31c-4bc2-b71e-804cedddfdde",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "title": ""
+    },
+    {
+      "from": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "to": "ccabe316-b250-4492-ac62-62a2d9bc9c32",
+      "title": ""
+    },
+    {
+      "from": "ccabe316-b250-4492-ac62-62a2d9bc9c32",
+      "to": "2e9555f6-7af1-4421-b6c5-7a3946e0fa18",
+      "title": ""
+    },
+    {
+      "from": "ccabe316-b250-4492-ac62-62a2d9bc9c32",
+      "to": "8d2980f4-17c2-47a0-a1cd-cebf6da6e47b",
+      "title": ""
+    },
+    {
+      "from": "ccabe316-b250-4492-ac62-62a2d9bc9c32",
+      "to": "746e5c54-611b-465d-be2b-6e4401fadec8",
+      "title": ""
+    },
+    {
+      "from": "ccabe316-b250-4492-ac62-62a2d9bc9c32",
+      "to": "7f378cf6-d960-4081-9ad1-4e1a8cd1a21b",
+      "title": ""
+    },
+    {
+      "from": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "to": "401a274c-90c8-475a-915e-4b827daf2801",
+      "title": ""
+    },
+    {
+      "from": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "to": "451b59bd-6810-44d1-a505-469152b8a918",
+      "title": ""
+    },
+    {
+      "from": "451b59bd-6810-44d1-a505-469152b8a918",
+      "to": "e73eb545-89da-4a08-81dc-88c9fdfc8c67",
+      "title": ""
+    },
+    {
+      "from": "451b59bd-6810-44d1-a505-469152b8a918",
+      "to": "027bef40-8817-4c2d-b926-c6801072fc65",
+      "title": ""
+    },
+    {
+      "from": "451b59bd-6810-44d1-a505-469152b8a918",
+      "to": "915317bc-4083-4bd3-ae28-29a62fb9bf30",
+      "title": ""
+    },
+    {
+      "from": "451b59bd-6810-44d1-a505-469152b8a918",
+      "to": "4ff5b3a9-acf5-4535-96e0-1a2d521093a2",
+      "title": ""
+    },
+    {
+      "from": "451b59bd-6810-44d1-a505-469152b8a918",
+      "to": "cd0cf1a3-db66-48cb-9477-0f07b7ab49f8",
+      "title": ""
+    },
+    {
+      "from": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "to": "d7cad425-96f8-4682-9bf3-92407352847a",
+      "title": ""
+    },
+    {
+      "from": "d7cad425-96f8-4682-9bf3-92407352847a",
+      "to": "c9fdcea5-a141-4e58-8662-3014ba10160e",
+      "title": ""
+    },
+    {
+      "from": "d7cad425-96f8-4682-9bf3-92407352847a",
+      "to": "c6e477cc-01c6-4d9d-aa25-33a7f27218a9",
+      "title": ""
+    },
+    {
+      "from": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "to": "1a88dffc-b14a-4d0f-8ef3-b4fbded7042e",
+      "title": ""
+    },
+    {
+      "from": "1a88dffc-b14a-4d0f-8ef3-b4fbded7042e",
+      "to": "375640c1-1c54-4a99-969c-f833ff680a7f",
+      "title": ""
+    },
+    {
+      "from": "1a88dffc-b14a-4d0f-8ef3-b4fbded7042e",
+      "to": "12cceb11-38fe-4ddf-8952-bb39bd7a6374",
+      "title": ""
+    },
+    {
+      "from": "5dc78796-f40d-4ce5-bce2-9fae371ef44b",
+      "to": "5f187213-e485-4951-8896-69047848e54c",
+      "title": ""
+    },
+    {
+      "from": "5f187213-e485-4951-8896-69047848e54c",
+      "to": "2e63519e-2fc7-4519-af7f-116ac62fe24b",
+      "title": ""
+    },
+    {
+      "from": "5f187213-e485-4951-8896-69047848e54c",
+      "to": "d24c07ed-747b-4919-8644-99949af7c999",
+      "title": ""
+    },
+    {
+      "from": "5f187213-e485-4951-8896-69047848e54c",
+      "to": "bc54c2e3-bccb-4a9f-ae8f-fe2b17147088",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "e06be3a3-203a-41b0-a6b4-46544f4470fb",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "fc304a2c-ab91-47cc-ac02-72dab3835e6d",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "b419e795-6827-4676-ad14-a5ebbc17f2ea",
+      "title": ""
+    },
+    {
+      "from": "b419e795-6827-4676-ad14-a5ebbc17f2ea",
+      "to": "e93940f6-3c5b-4127-aaa6-f4775d282ff7",
+      "title": ""
+    },
+    {
+      "from": "b419e795-6827-4676-ad14-a5ebbc17f2ea",
+      "to": "647f7e71-2cd4-4e6d-b1d9-fb5dfaa1cccd",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "fb619a94-eead-4d6e-9c1c-5a07fce97b8d",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "89763208-951c-4ce2-a3ad-83391a21a1e2",
+      "title": ""
+    },
+    {
+      "from": "89763208-951c-4ce2-a3ad-83391a21a1e2",
+      "to": "e568a233-92bc-44ba-8f18-db8c4ed32d8e",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "195a4070-1d9d-4f85-a8c1-bd93e6247b09",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "37e25963-41fd-4416-b91f-389b4e4f3c10",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "78556483-ac94-4700-a415-8be61be68fd4",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "b8ac8f9a-95f4-4fe9-ac4d-ed608f095d8a",
+      "title": ""
+    },
+    {
+      "from": "b8ac8f9a-95f4-4fe9-ac4d-ed608f095d8a",
+      "to": "59cf2357-c131-4dfc-810d-bbe0038316a7",
+      "title": ""
+    },
+    {
+      "from": "b8ac8f9a-95f4-4fe9-ac4d-ed608f095d8a",
+      "to": "eb63bf04-0234-412e-8d06-315951a6811f",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "9e7daa8a-60f6-476c-9f53-177957db62a2",
+      "title": ""
+    },
+    {
+      "from": "9e7daa8a-60f6-476c-9f53-177957db62a2",
+      "to": "f5b0af9d-0f9b-49ff-8cfb-0d82c04f6baa",
+      "title": ""
+    },
+    {
+      "from": "9e7daa8a-60f6-476c-9f53-177957db62a2",
+      "to": "268fd036-c61f-4edb-add4-7f003b2c887c",
+      "title": ""
+    },
+    {
+      "from": "d5ef6930-414c-4aca-9b22-b7cc1c5e8b93",
+      "to": "f17b7f30-9848-4bac-ad10-85e44c02b17e",
+      "title": ""
+    },
+    {
+      "from": "f17b7f30-9848-4bac-ad10-85e44c02b17e",
+      "to": "6904f061-26e7-4021-a1c3-f9aead44063d",
+      "title": ""
+    },
+    {
+      "from": "f17b7f30-9848-4bac-ad10-85e44c02b17e",
+      "to": "3bbff703-4b55-4939-98c5-887603737e8e",
+      "title": ""
+    },
+    {
+      "from": "f17b7f30-9848-4bac-ad10-85e44c02b17e",
+      "to": "1de99fe8-d334-4e2c-83b2-d5257771d7f4",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "8be4ac41-ba47-40d0-b037-66de6c4cf9da",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "16506900-8de3-4acf-aeb7-7f33665c628f",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "8d01f829-c623-453e-8843-8a7cd077d5d7",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "f3daacc0-3d06-43d4-9f50-ea86a95aad8f",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "704f9d6e-c132-4c1c-9120-cf0206be8731",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "9b429f01-c916-43e0-941e-2e28c120fa07",
+      "title": ""
+    },
+    {
+      "from": "fe9b6c42-e13f-4754-bc64-4146ccf16521",
+      "to": "cae90634-f07b-4268-a904-76d13485c5db",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "8aca4b66-81ab-4d2a-a300-c8a4f522f8cc",
+      "title": ""
+    },
+    {
+      "from": "8aca4b66-81ab-4d2a-a300-c8a4f522f8cc",
+      "to": "28c377f3-431d-4bdf-b94b-335a72833230",
+      "title": ""
+    },
+    {
+      "from": "8aca4b66-81ab-4d2a-a300-c8a4f522f8cc",
+      "to": "0ce27b40-f964-47fa-9f1c-9973d09bbfea",
+      "title": ""
+    },
+    {
+      "from": "8aca4b66-81ab-4d2a-a300-c8a4f522f8cc",
+      "to": "bc117be3-5629-41d9-a7c7-3017dd2726d9",
+      "title": ""
+    },
+    {
+      "from": "8aca4b66-81ab-4d2a-a300-c8a4f522f8cc",
+      "to": "bd04c938-4bc6-40b3-bef1-9e71a1244724",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "63d66e11-a132-4354-918a-065c2850fb4f",
+      "title": ""
+    },
+    {
+      "from": "63d66e11-a132-4354-918a-065c2850fb4f",
+      "to": "af8a786e-e135-40ef-8ec7-5e95e8fd3f6a",
+      "title": ""
+    },
+    {
+      "from": "63d66e11-a132-4354-918a-065c2850fb4f",
+      "to": "d7147be0-ba2b-4e9a-868e-46966acb4685",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "81fde89d-ec4c-4aad-8bad-bcc2c525f356",
+      "title": ""
+    },
+    {
+      "from": "81fde89d-ec4c-4aad-8bad-bcc2c525f356",
+      "to": "3d4a694f-891d-49bf-a9ff-2dc9f3cf393c",
+      "title": ""
+    },
+    {
+      "from": "81fde89d-ec4c-4aad-8bad-bcc2c525f356",
+      "to": "a3dc0f91-b5e4-40d6-afe2-64e8ab4aabea",
+      "title": ""
+    },
+    {
+      "from": "81fde89d-ec4c-4aad-8bad-bcc2c525f356",
+      "to": "7789e28c-654a-4298-85cd-089f9707562f",
+      "title": ""
+    },
+    {
+      "from": "81fde89d-ec4c-4aad-8bad-bcc2c525f356",
+      "to": "972930ee-0f8d-456e-af8e-082acf314fad",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "36854138-4659-470a-a79b-c7d7b71325c1",
+      "title": ""
+    },
+    {
+      "from": "36854138-4659-470a-a79b-c7d7b71325c1",
+      "to": "58705561-0f2b-434c-8323-07bf0091ecdc",
+      "title": ""
+    },
+    {
+      "from": "36854138-4659-470a-a79b-c7d7b71325c1",
+      "to": "f0656091-15be-4843-a27d-95e64020fcf4",
+      "title": ""
+    },
+    {
+      "from": "36854138-4659-470a-a79b-c7d7b71325c1",
+      "to": "58fbfe1d-c926-48ae-8005-5ba37ad851e5",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "title": ""
+    },
+    {
+      "from": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "to": "e3f9bc64-fe86-48ba-9ab5-78955765ccba",
+      "title": ""
+    },
+    {
+      "from": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "to": "e64f8a64-11ef-4190-a7d8-e500eca6debc",
+      "title": ""
+    },
+    {
+      "from": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "to": "f9f5c5de-6b41-42d1-937f-da70a528ebe0",
+      "title": ""
+    },
+    {
+      "from": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "to": "882fde06-aa21-4b3c-886a-6893ea64c2ca",
+      "title": ""
+    },
+    {
+      "from": "101aa278-b6cb-4bc3-b685-9c81975bb26d",
+      "to": "5f0d288b-5f2a-423c-92ab-39f2012a36e7",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "28d2eb3f-3a03-4076-bc3c-3bd636b46c81",
+      "title": ""
+    },
+    {
+      "from": "28d2eb3f-3a03-4076-bc3c-3bd636b46c81",
+      "to": "5ed46512-ce19-424d-9544-d02ff64c4a95",
+      "title": ""
+    },
+    {
+      "from": "28d2eb3f-3a03-4076-bc3c-3bd636b46c81",
+      "to": "e3491683-43b0-4947-8254-54265ab55d43",
+      "title": ""
+    },
+    {
+      "from": "42177ea7-71d7-4af5-b581-d781d13ccf42",
+      "to": "6d0a3c03-65dd-4e29-8502-b5168a40bb45",
+      "title": ""
+    },
+    {
+      "from": "6d0a3c03-65dd-4e29-8502-b5168a40bb45",
+      "to": "b4911e1d-128a-4f18-b1dc-10ecf249dd84",
+      "title": ""
+    },
+    {
+      "from": "6d0a3c03-65dd-4e29-8502-b5168a40bb45",
+      "to": "8ffb75b7-aaa5-4b59-a956-4ba492658415",
+      "title": ""
+    },
+    {
+      "from": "c1fb9e65-8e49-4e6e-be10-2c1624629318",
+      "to": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "title": ""
+    },
+    {
+      "from": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "to": "9f28a19a-cf4a-4378-ac30-c9f68015fba5",
+      "title": ""
+    },
+    {
+      "from": "9f28a19a-cf4a-4378-ac30-c9f68015fba5",
+      "to": "9e318482-b0fc-4317-995a-68905555ebee",
+      "title": ""
+    },
+    {
+      "from": "9f28a19a-cf4a-4378-ac30-c9f68015fba5",
+      "to": "65d2fdf6-0965-4976-97f6-d6101c641d7e",
+      "title": ""
+    },
+    {
+      "from": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "to": "66f3cae8-ce23-4476-9cf4-69789fcac2ff",
+      "title": ""
+    },
+    {
+      "from": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "to": "1d61e082-2f13-43ba-8b34-dafbbb30e2e4",
+      "title": ""
+    },
+    {
+      "from": "1d61e082-2f13-43ba-8b34-dafbbb30e2e4",
+      "to": "e0b04ff7-9e53-47db-bea5-b87650331c1d",
+      "title": ""
+    },
+    {
+      "from": "1d61e082-2f13-43ba-8b34-dafbbb30e2e4",
+      "to": "ba88320c-d0b8-48d3-8575-515d326a135e",
+      "title": ""
+    },
+    {
+      "from": "1d61e082-2f13-43ba-8b34-dafbbb30e2e4",
+      "to": "3c69f70a-5f7e-474d-b5db-0902d0bd7bc7",
+      "title": ""
+    },
+    {
+      "from": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "to": "a673dbaf-8300-43f8-8c81-8e5de59a00f7",
+      "title": ""
+    },
+    {
+      "from": "a673dbaf-8300-43f8-8c81-8e5de59a00f7",
+      "to": "bc09624e-8dc3-4e12-8313-504f7817e7dd",
+      "title": ""
+    },
+    {
+      "from": "a673dbaf-8300-43f8-8c81-8e5de59a00f7",
+      "to": "953e883f-3bcf-4d31-ada6-9b60f76222c7",
+      "title": ""
+    },
+    {
+      "from": "a690f9b7-f23e-4f69-859a-25779ac32d31",
+      "to": "1b0c5fb0-3f86-43d1-bdaf-f9b7355cf633",
+      "title": ""
+    }
+  ],
+  "courseId": "40"
+}

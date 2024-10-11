@@ -1,0 +1,1262 @@
+{
+  "nodes": [
+    {
+      "id": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "label": "Operating Systems",
+      "cog_level": "",
+      "title": "Operating Systems",
+      "description": "Operating Systems: ",
+      "node_type": "course",
+      "shape": "circle"
+    },
+    {
+      "id": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "label": "Role and Purpose of Operating Systems",
+      "cog_level": "Understand",
+      "title": "Role and Purpose of Operating Systems",
+      "description": "Role and Purpose of Operating Systems: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "aab73485-d2ff-4eda-8d82-62504667bbb9",
+      "label": "Operating system as mediator between general purpose hardware and application-specific software ",
+      "cog_level": "Understand",
+      "title": "Operating system as mediator between general purpose hardware and application-specific software ",
+      "description": "Operating system as mediator between general purpose hardware and application-specific software : Example concepts: Operating system as an abstract virtual machine via an API",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "738c20fe-700c-43eb-a530-2489a892cce0",
+      "label": "Unikersal operating system functions",
+      "cog_level": "Understand",
+      "title": "Unikersal operating system functions",
+      "description": "Unikersal operating system functions: Example concepts:  1, Interfaces (process, user, device, etc). 2, Creation and execution of application specific software. 3, Persistence of data",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0bebf312-a256-4854-97a0-cbcac4adac65",
+      "label": "Extended and/or specialized operating system functions",
+      "cog_level": "Understand",
+      "title": "Extended and/or specialized operating system functions",
+      "description": "Extended and/or specialized operating system functions: Example concepts: Embedded systems, Server types such as file, web, multimedia, boot loaders and boot security",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c6f66121-668a-4181-8190-3c88d8116bce",
+      "label": "Design issues",
+      "cog_level": "Understand",
+      "title": "Design issues",
+      "description": "Design issues:  (e.g. efficiency, robustness, flexibility, portability, security, compatibility, power, safety)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "98b8fdc5-8836-4ecf-b160-dc31ce2e8500",
+      "label": "Influences of security, networking, multimedia, parallel and distributed computing",
+      "cog_level": "Understand",
+      "title": "Influences of security, networking, multimedia, parallel and distributed computing",
+      "description": "Influences of security, networking, multimedia, parallel and distributed computing: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a4a1d85a-2e56-49cc-9086-2864fb97c86d",
+      "label": "Overarching concern of security/protection",
+      "cog_level": "Understand",
+      "title": "Overarching concern of security/protection",
+      "description": "Overarching concern of security/protection: Neglecting tconsider security at every layer creates an opportunity tinappropriately access resources.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "label": "Principles of Operating System",
+      "cog_level": "",
+      "title": "Principles of Operating System",
+      "description": "Principles of Operating System: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "857da457-a021-45b7-af9c-dfa562f73dd0",
+      "label": "Operating system software design and approaches",
+      "cog_level": "Understand",
+      "title": "Operating system software design and approaches",
+      "description": "Operating system software design and approaches: such as Monolithic, Layered, Modular, Micro\u2010kernel models and Unikernel ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a5826d2b-5569-4f16-891f-6e16889424e6",
+      "label": "Abstractions, processes, files and resources",
+      "cog_level": "Understand",
+      "title": "Abstractions, processes, files and resources",
+      "description": "Abstractions, processes, files and resources: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4d670661-f53f-40ef-b256-b421d33d4ff4",
+      "label": "Concept of system calls and links tapplication program interfaces (APIs)",
+      "cog_level": "Understand",
+      "title": "Concept of system calls and links tapplication program interfaces (APIs)",
+      "description": "Concept of system calls and links tapplication program interfaces (APIs): ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3d71af62-8a1c-4070-9b0f-f24db832eb8f",
+      "label": "The evolution of the link between hardware architecture and the operating system functions ",
+      "cog_level": "Understand",
+      "title": "The evolution of the link between hardware architecture and the operating system functions ",
+      "description": "The evolution of the link between hardware architecture and the operating system functions : ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fa239080-82eb-450d-b5e9-d9592cd60cfb",
+      "label": "Protection of resources means protecting some machine instructions/functions ",
+      "cog_level": "Understand",
+      "title": "Protection of resources means protecting some machine instructions/functions ",
+      "description": "Protection of resources means protecting some machine instructions/functions : ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9a032edd-3599-442b-a2bb-7fd2d23bcffe",
+      "label": "Leveraging interrupts from hardware level",
+      "cog_level": "Understand",
+      "title": "Leveraging interrupts from hardware level",
+      "description": "Leveraging interrupts from hardware level: service routines and implementations",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "113a17b1-791e-40fb-a154-45ed97f95080",
+      "label": "Concept of user/system state and protection, transition tkernel mode using system calls ",
+      "cog_level": "Understand",
+      "title": "Concept of user/system state and protection, transition tkernel mode using system calls ",
+      "description": "Concept of user/system state and protection, transition tkernel mode using system calls : ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "916d325e-18ef-4068-82cd-cf865a81077b",
+      "label": "Mechanism for invoking of system calls, the corresponding mode and context switch and return from interrupt ",
+      "cog_level": "Understand",
+      "title": "Mechanism for invoking of system calls, the corresponding mode and context switch and return from interrupt ",
+      "description": "Mechanism for invoking of system calls, the corresponding mode and context switch and return from interrupt : ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "label": "Concurrency",
+      "cog_level": "",
+      "title": "Concurrency",
+      "description": "Concurrency: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "c5249ea1-1a1c-457a-9b94-0d6f7bbf04f0",
+      "label": "Thread abstraction relative tconcurrency",
+      "cog_level": "Understand",
+      "title": "Thread abstraction relative tconcurrency",
+      "description": "Thread abstraction relative tconcurrency: provides a concurrent execution unit within a process, enabling parallelism and concurrency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "087853bb-79a7-4fda-ac59-7a0ebf109245",
+      "label": "Race conditions, critical sections (role of interrupts if needed)",
+      "cog_level": "Understand",
+      "title": "Race conditions, critical sections (role of interrupts if needed)",
+      "description": "Race conditions, critical sections (role of interrupts if needed): occur when multiple threads access shared resources concurrently, leading to unpredictable behavior, which interrupts may exacerbate.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "193a4558-bec0-440a-9975-18cc90389a79",
+      "label": "Deadlocks and starvation",
+      "cog_level": "Understand",
+      "title": "Deadlocks and starvation",
+      "description": "Deadlocks and starvation: are synchronization problems where threads are unable to proceed due to circular dependencies or resource starvation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "abcf4a1b-1c25-47d8-9821-374c0a9d9392",
+      "label": "Multiprocessor issues",
+      "cog_level": "Understand",
+      "title": "Multiprocessor issues",
+      "description": "Multiprocessor issues: (spin-locks, reentrancy)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0e04e4b6-bfc2-4da6-b98b-51e97cfff7dd",
+      "label": "Thread creation, states, structures",
+      "cog_level": "Apply",
+      "title": "Thread creation, states, structures",
+      "description": "Thread creation, states, structures: define the lifecycle and properties of threads, including creation, execution, and termination.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5df363f3-485b-4162-ada0-e645933da6f1",
+      "label": "Thread APIs",
+      "cog_level": "Apply",
+      "title": "Thread APIs",
+      "description": "Thread APIs: provide functions and interfaces for managing threads, including creation, synchronization, and communication.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "598bcee1-35d8-42dc-a889-b0cda34cb594",
+      "label": "Deadlocks and starvation",
+      "cog_level": "Apply",
+      "title": "Deadlocks and starvation",
+      "description": "Deadlocks and starvation:  (necessary conditions/mitigations)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7e4201b1-b56c-4a91-8f2d-c7d8bebed285",
+      "label": "Implementing thread safe code",
+      "cog_level": "Apply",
+      "title": "Implementing thread safe code",
+      "description": "Implementing thread safe code: (semaphores, mutex locks, cond vars)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e59ac8e1-fff4-436f-b5a5-e0becef79ad0",
+      "label": "Race conditions in shared memory",
+      "cog_level": "Apply",
+      "title": "Race conditions in shared memory",
+      "description": "Race conditions in shared memory: occur when multiple threads access shared data concurrently without proper synchronization, leading to inconsistencies and errors in the program's behavior.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "97df921f-b784-4c1d-a0a8-3c3dd36dd854",
+      "label": "Scheduling",
+      "cog_level": "Understand",
+      "title": "Scheduling",
+      "description": "Scheduling: involves the allocation of resources to tasks or processes over time, determining their execution order and duration.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "5bd4dc6d-8b72-40d2-94e7-ec3ec86743d3",
+      "label": "Preemptive and non-preemptive scheduling",
+      "cog_level": "Understand",
+      "title": "Preemptive and non-preemptive scheduling",
+      "description": "Preemptive and non-preemptive scheduling: allows a higher-priority task to interrupt the execution of a lower-priority task, while non-preemptive scheduling does not allow interruptions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "916c1cee-f797-480f-88d8-a52f4b4a83e3",
+      "label": "Timers",
+      "cog_level": "Understand",
+      "title": "Timers",
+      "description": "Timers: (e.g. building many timers out of finite hardware timers)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b50d3cd9-5395-4ae3-9a6c-192d07f73633",
+      "label": "Schedulers and policies",
+      "cog_level": "Understand",
+      "title": "Schedulers and policies",
+      "description": "Schedulers and policies: govern the decision-making process of allocating resources and prioritizing tasks, based on factors such as priority, fairness, and efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3d3f0724-a5e8-4bb3-8a87-b4fc7a54fc89",
+      "label": "Concepts of SMP/multiprocessor scheduling ",
+      "cog_level": "Understand",
+      "title": "Concepts of SMP/multiprocessor scheduling ",
+      "description": "Concepts of SMP/multiprocessor scheduling : involves coordinating the execution of tasks across multiple processors or cores in symmetric multiprocessing (SMP) systems",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "label": "Process Model",
+      "cog_level": "Understand",
+      "title": "Process Model",
+      "description": "Process Model: defines the structure and behavior of processes, including their creation, execution, and termination.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "740757c6-2687-462f-8d9d-5a917d6ee916",
+      "label": "Processes and threads relative tvirtualization-Protected memory, process state, memory isolation, etc",
+      "cog_level": "Understand",
+      "title": "Processes and threads relative tvirtualization-Protected memory, process state, memory isolation, etc",
+      "description": "Processes and threads relative tvirtualization-Protected memory, process state, memory isolation, etc: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f94bd63a-bf1a-4a3b-acd4-7dce6794ad45",
+      "label": "Memory footprint/segmentation (stack, heap, etc)",
+      "cog_level": "Understand",
+      "title": "Memory footprint/segmentation (stack, heap, etc)",
+      "description": "Memory footprint/segmentation (stack, heap, etc): involve organizing memory into distinct regions such as stack, heap, and code segments to manage memory usage efficiently.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "91217aca-bfe8-4caf-8dda-9dad5d88b849",
+      "label": "Creating and loading executables and shared libraries",
+      "cog_level": "Understand",
+      "title": "Creating and loading executables and shared libraries",
+      "description": "Creating and loading executables and shared libraries: Examples: 1, Dynamic linking, GOT, PLT. 2, Structure of modern executable formats like ELF",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "68feb158-8538-4c4c-bbf7-098e1f90dad0",
+      "label": "Dispatching and context switching",
+      "cog_level": "Understand",
+      "title": "Dispatching and context switching",
+      "description": "Dispatching and context switching: are mechanisms used by the operating system to manage the execution of processes and threads, allowing for multitasking and concurrency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9e7d2474-ef24-4171-81db-5a39fad3ba3c",
+      "label": "Interprocess communication",
+      "cog_level": "Understand",
+      "title": "Interprocess communication",
+      "description": "Interprocess communication: Shared memory, message passing, signals, environment variables, etc",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "label": "Memory Management",
+      "cog_level": "Understand",
+      "title": "Memory Management",
+      "description": "Memory Management: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "4dc198e1-4817-47ae-9c2c-4709cdf8f47e",
+      "label": "Review of physical memory, address translation and memory management hardware",
+      "cog_level": "Understand",
+      "title": "Review of physical memory, address translation and memory management hardware",
+      "description": "Review of physical memory, address translation and memory management hardware: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4750d53b-3186-42d0-87c1-5f1e83a3d0cc",
+      "label": "Impact of memory hierarchy",
+      "cog_level": "Understand",
+      "title": "Impact of memory hierarchy",
+      "description": "Impact of memory hierarchy: including cache concept, cache lookup, etcon operating system mechanisms and policy",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "88380062-945c-4aba-8213-496b08a7fa37",
+      "label": "Logical and physical addressing",
+      "cog_level": "Understand",
+      "title": "Logical and physical addressing",
+      "description": "Logical and physical addressing: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c38ad7dc-65a0-4d08-9f5a-b3615e97b140",
+      "label": "Concepts of paging, page replacement, thrashing and allocation of pages and frames",
+      "cog_level": "Understand",
+      "title": "Concepts of paging, page replacement, thrashing and allocation of pages and frames",
+      "description": "Concepts of paging, page replacement, thrashing and allocation of pages and frames: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "eabba743-c087-41d7-9e90-f8c141d04c0c",
+      "label": "Allocation/deallocation/storage techniques (algorithms and data structure) performance and flexibility",
+      "cog_level": "Understand",
+      "title": "Allocation/deallocation/storage techniques (algorithms and data structure) performance and flexibility",
+      "description": "Allocation/deallocation/storage techniques (algorithms and data structure) performance and flexibility: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "96ff2ab9-69ed-45b9-bd37-d64bc88b20d6",
+      "label": "Memory Caching and cache coherence",
+      "cog_level": "Understand",
+      "title": "Memory Caching and cache coherence",
+      "description": "Memory Caching and cache coherence: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "13ef2de7-039d-4231-836b-b2e2bfdd252d",
+      "label": "Security mechanisms and concepts in memory management",
+      "cog_level": "Understand",
+      "title": "Security mechanisms and concepts in memory management",
+      "description": "Security mechanisms and concepts in memory management: including sandboxing,protection, isolation, and relevant vectors of attack",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "label": "Protection and Safety",
+      "cog_level": "",
+      "title": "Protection and Safety",
+      "description": "Protection and Safety: involve measures to safeguard against unauthorized access, data breaches, and system compromises.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "a32a435e-9fd8-4e18-b0c1-ba56cda97974",
+      "label": "Overview of operating system security mechanisms",
+      "cog_level": "Apply",
+      "title": "Overview of operating system security mechanisms",
+      "description": "Overview of operating system security mechanisms: include user authentication, access control, encryption, firewalls, intrusion detection systems (IDS), and antivirus software.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a5fd2610-8ca8-4e29-b1e3-aad6bd995f11",
+      "label": "Attacks and antagonism",
+      "cog_level": "Apply",
+      "title": "Attacks and antagonism",
+      "description": "Attacks and antagonism: against operating systems can exploit vulnerabilities in software, protocols, or configurations, affecting system stability and security, including issues with scheduling algorithms.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c16b98a9-f156-4cfe-bc17-a13743b7cac0",
+      "label": "Review of major vulnerabilities in real operating systems",
+      "cog_level": "Apply",
+      "title": "Review of major vulnerabilities in real operating systems",
+      "description": "Review of major vulnerabilities in real operating systems: Major vulnerabilities in real operating systems have included buffer overflows, privilege escalation, code injection, and denial-of-service (DoS) attacks.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "aa637a59-adf7-4025-8fa4-41bf09656edb",
+      "label": "Operating systems mitigation strategies such as backups",
+      "cog_level": "Apply",
+      "title": "Operating systems mitigation strategies such as backups",
+      "description": "Operating systems mitigation strategies such as backups: include regular software updates, patches, backups, disaster recovery plans, and security best practices.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1274f00b-d012-4502-a2ce-c80e70d42aa9",
+      "label": "Policy/mechanism separation",
+      "cog_level": "Apply",
+      "title": "Policy/mechanism separation",
+      "description": "Policy/mechanism separation: is a security principle that separates the specification of security policies from the mechanisms used to enforce them, reducing the risk of policy misconfiguration or manipulation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1600fd3f-db6c-44ce-9a31-1a4859038df6",
+      "label": "Security methods and devices",
+      "cog_level": "Apply",
+      "title": "Security methods and devices",
+      "description": "Security methods and devices: Example concepts: Rings of protection (history from Multics to virtualized x86) ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3f76546d-41ac-4ee1-a3d9-f07c293ca10c",
+      "label": "Protection, access control, and authentication",
+      "cog_level": "Apply",
+      "title": "Protection, access control, and authentication",
+      "description": "Protection, access control, and authentication: are used to control and manage user access to system resources, ensuring confidentiality, integrity, and availability.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "297b22e2-59a3-4d0f-bc5b-29357fa3b8a0",
+      "label": "Device Management",
+      "cog_level": "Understand",
+      "title": "Device Management",
+      "description": "Device Management: involves controlling and coordinating the operation of hardware devices connected to a computer system, including input/output (I/O) devices like keyboards, mice, and storage devices.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "85e40146-b80a-4c59-8a95-9827eb276b5c",
+      "label": "Buffering strategies",
+      "cog_level": "Understand",
+      "title": "Buffering strategies",
+      "description": "Buffering strategies: optimize I/O performance by temporarily storing data in memory buffers before transferring it between devices and the CPU, reducing the overhead of frequent I/O operations.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4d1945e2-1e6b-4770-b03e-b6f9570362c8",
+      "label": "I/O and Storage Management",
+      "cog_level": "Understand",
+      "title": "I/O and Storage Management",
+      "description": "I/O and Storage Management: Direct Memory Access and Polled I/O, Memory\u2010mapped I/Historical and contextual \u2010 Persistent storage device management (magnetic, SSD, etc.)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "label": "File Systems APl and Implementation",
+      "cog_level": "Understand",
+      "title": "File Systems APl and Implementation",
+      "description": "File Systems APl and Implementation: provide interfaces and mechanisms for interacting with file systems, including creating, reading, writing, and deleting files.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "6fed9b1c-4616-4220-940f-d12b30591c93",
+      "label": "Concept of a file",
+      "cog_level": "Understand",
+      "title": "Concept of a file",
+      "description": "Concept of a file: represents a named collection of data stored on a storage device, identified by a unique path or file name.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b22cd616-eefc-40a7-bd6d-f4af2d12e564",
+      "label": "File system mounting",
+      "cog_level": "Understand",
+      "title": "File system mounting",
+      "description": "File system mounting: is the process of associating a storage device or partition with a directory in the file system hierarchy, allowing access to its contents.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4c7fdcd5-f804-4dce-8c9c-c0fa4771a8ee",
+      "label": "File access control",
+      "cog_level": "Understand",
+      "title": "File access control",
+      "description": "File access control: involves permissions and privileges that determine which users or processes can read, write, or execute files, enforced by the operating system's security mechanisms.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f5d5cc46-5269-44e9-b2b6-f083b3c4d65b",
+      "label": "File sharing",
+      "cog_level": "Understand",
+      "title": "File sharing",
+      "description": "File sharing: enables multiple users or processes to access and manipulate the same file concurrently, with mechanisms such as file locking to prevent conflicts and ensure data integrity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3cfb2612-1183-4db7-bc25-6045af06c7a5",
+      "label": "Basic file all bation methods",
+      "cog_level": "Understand",
+      "title": "Basic file all bation methods",
+      "description": "Basic file all bation methods: include contiguous allocation, linked allocation, and indexed allocation, determining how file data is stored and managed on the storage device.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b111d3a3-2fce-41a0-8ecb-7a56453bd57c",
+      "label": "File system structures comprising file allocation",
+      "cog_level": "Understand",
+      "title": "File system structures comprising file allocation",
+      "description": "File system structures comprising file allocation: including various directory structures and methods for uniquely identifying files (name, identified or metadata storage location)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e0d8d0a8-0912-4bd5-96b9-06110f1d76be",
+      "label": "Allocation/deallocation/storage techniques (algorithms and data structure) impact on performance and flexibility",
+      "cog_level": "Understand",
+      "title": "Allocation/deallocation/storage techniques (algorithms and data structure) impact on performance and flexibility",
+      "description": "Allocation/deallocation/storage techniques (algorithms and data structure) impact on performance and flexibility: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "72b1077c-8f9e-4fb1-9c16-9087afc6205f",
+      "label": "Free space management",
+      "cog_level": "Understand",
+      "title": "Free space management",
+      "description": "Free space management: involves tracking and managing available space on storage devices to allocate it efficiently for new files and avoid fragmentation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "332dbf47-7666-4f17-ba41-b04a42612613",
+      "label": "Implementation of directories tsegment and track file location",
+      "cog_level": "Understand",
+      "title": "Implementation of directories tsegment and track file location",
+      "description": "Implementation of directories tsegment and track file location: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "label": "Advanced File systems",
+      "cog_level": "",
+      "title": "Advanced File systems",
+      "description": "Advanced File systems: include features such as partitioning, which divides storage devices into logical segments, and mount/unmount operations to attach/detach file systems to/from the directory hierarchy.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "9eb6ab65-da67-4016-a35c-6398909fc5b4",
+      "label": "File systems",
+      "cog_level": "Understand",
+      "title": "File systems",
+      "description": "File systems: partitioning, mount/unmount, virtual file systems",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "62111a06-2d6d-43af-ae8a-2076e974cc20",
+      "label": "In-depth implementation techniques",
+      "cog_level": "Understand",
+      "title": "In-depth implementation techniques",
+      "description": "In-depth implementation techniques: involve data structures, algorithms, and optimizations used to manage file systems efficiently, including indexing, caching, and compression.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "45d2cf19-4c6b-4866-940f-ddbe2ae41ba1",
+      "label": "Memory-mapped files",
+      "cog_level": "Understand",
+      "title": "Memory-mapped files",
+      "description": "Memory-mapped files: enable direct memory access to files, facilitating efficient data exchange between memory and storage.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2b5315d6-f190-41de-bd0b-ebf72a315aeb",
+      "label": "Special-purpose file systems",
+      "cog_level": "Understand",
+      "title": "Special-purpose file systems",
+      "description": "Special-purpose file systems: are tailored for specific use cases, such as network file systems (NFS), distributed file systems (DFS), and encrypted file systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3db84d1d-0682-4bc2-aaf5-e6e44595ac15",
+      "label": "Naming, searching, acces, backups",
+      "cog_level": "Understand",
+      "title": "Naming, searching, acces, backups",
+      "description": "Naming, searching, acces, backups: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9e963f49-faa3-45ea-85f6-64a4051a6334",
+      "label": "Journaling and log-structured file systems",
+      "cog_level": "Understand",
+      "title": "Journaling and log-structured file systems",
+      "description": "Journaling and log-structured file systems: enhance reliability and recoverability by logging changes to file systems, enabling fast crash recovery and preventing data loss in the event of system failures.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "label": "Virtualization",
+      "cog_level": "Understand",
+      "title": "Virtualization",
+      "description": "Virtualization: leverages software to create virtual instances of hardware resources, allowing multiple operating systems or applications to run independently on the same physical hardware.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "b5461125-23d1-4a7e-9dd8-eb8a04596313",
+      "label": "Using virtualization and isolation tachieve protection and predictable performance",
+      "cog_level": "Understand",
+      "title": "Using virtualization and isolation tachieve protection and predictable performance",
+      "description": "Using virtualization and isolation tachieve protection and predictable performance: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fc829ad7-5737-43a7-989f-0339dd52a648",
+      "label": "Advanced paging and virtual memory",
+      "cog_level": "Understand",
+      "title": "Advanced paging and virtual memory",
+      "description": "Advanced paging and virtual memory: manage memory resources dynamically, swapping data between physical memory and storage to optimize performance and provide the illusion of abundant memory.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ec35d69a-8f49-43f2-ab30-cce43aa530ac",
+      "label": "Virtual file systems and virtual devices",
+      "cog_level": "Understand",
+      "title": "Virtual file systems and virtual devices",
+      "description": "Virtual file systems and virtual devices: abstract physical storage and hardware components, presenting a unified interface to applications and operating systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8d23f805-825c-4cbd-89f9-0b6c5460b529",
+      "label": "Thrashing",
+      "cog_level": "Understand",
+      "title": "Thrashing",
+      "description": "Thrashing: occurs when a system spends a significant amount of time swapping data between memory and storage, resulting in degraded performance due to excessive paging activity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e7df3b08-2adc-4d39-a460-74c5da00528e",
+      "label": "Containers",
+      "cog_level": "Understand",
+      "title": "Containers",
+      "description": "Containers: provide lightweight, portable, and isolated environments for running applications, encapsulating dependencies and configurations to ensure consistency across different computing environments.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2d65d928-fa39-421f-b6e3-3b6fbca59854",
+      "label": "Real-time and Embedded Systems",
+      "cog_level": "Understand",
+      "title": "Real-time and Embedded Systems",
+      "description": "Real-time and Embedded Systems: involve computing systems designed to respond to external events or inputs within specified time constraints",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "98a06602-098d-4251-abfb-a2d9c92dedc0",
+      "label": "Process and task scheduling",
+      "cog_level": "Understand",
+      "title": "Process and task scheduling",
+      "description": "Process and task scheduling: ensuring timely execution of critical tasks.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e2db85d8-80cb-45b7-8c72-f5603afc2359",
+      "label": "Deadlines and real-time issues",
+      "cog_level": "Understand",
+      "title": "Deadlines and real-time issues",
+      "description": "Deadlines and real-time issues: refer to the time constraints imposed on tasks or processes, with deadlines indicating when tasks must be completed to maintain system correctness or performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b679a9e5-ff65-4c08-9aac-575beb5ac7e5",
+      "label": "Low-latency/soft real-time\" vs \"hard real time\"",
+      "cog_level": "Understand",
+      "title": "Low-latency/soft real-time\" vs \"hard real time\"",
+      "description": "Low-latency/soft real-time\" vs \"hard real time\": Low-latency/soft real-time systems prioritize responsiveness and predictability but can tolerate occasional missed deadlines, while hard real-time systems require absolute adherence to deadlines to avoid catastrophic failures.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "80a93ec4-e5b3-495d-980e-3f9d6bc85857",
+      "label": "Fault Tolerance",
+      "cog_level": "Understand",
+      "title": "Fault Tolerance",
+      "description": "Fault Tolerance: ensure system reliability by detecting, isolating, and recovering from hardware or software failures, with approaches including redundancy, error detection and correction, and graceful degradation.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "73daa908-4cca-4300-a888-f26e0d346c23",
+      "label": "Reliable and available systems",
+      "cog_level": "Understand",
+      "title": "Reliable and available systems",
+      "description": "Reliable and available systems: maintain high levels of uptime and service availability, employing redundancy, failover, and recovery mechanisms to minimize downtime and data loss.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bc48add2-302c-47d1-a346-792bc91dc6b3",
+      "label": "Software and hardware approaches taddress tolerance (RAID)",
+      "cog_level": "Understand",
+      "title": "Software and hardware approaches taddress tolerance (RAID)",
+      "description": "Software and hardware approaches taddress tolerance (RAID): ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4e4900c7-ac76-44a7-8817-24f5896838d9",
+      "label": "Social, Ethical and Professional topics",
+      "cog_level": "Understand",
+      "title": "Social, Ethical and Professional topics",
+      "description": "Social, Ethical and Professional topics: include considerations of privacy, security, accessibility, and ethical implications of technology use and development.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "6185d0b8-a548-4cfb-8529-2762c2e1a293",
+      "label": "Open source in operating systems",
+      "cog_level": "Understand",
+      "title": "Open source in operating systems",
+      "description": "Open source in operating systems: involves collaborative development and sharing of source code, fostering innovation, transparency, and community-driven software development.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bbf967cf-b74a-4f7c-83c4-d1b47605e785",
+      "label": "End\u2010of\u2010life issues with sunsetting operating systems",
+      "cog_level": "Understand",
+      "title": "End\u2010of\u2010life issues with sunsetting operating systems",
+      "description": "End\u2010of\u2010life issues with sunsetting operating systems: refer to the discontinuation of support and updates for outdated or obsolete operating systems",
+      "node_type": "knowledge point",
+      "shape": "box"
+    }
+  ],
+  "edges": [
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "title": ""
+    },
+    {
+      "from": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "to": "aab73485-d2ff-4eda-8d82-62504667bbb9",
+      "title": ""
+    },
+    {
+      "from": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "to": "738c20fe-700c-43eb-a530-2489a892cce0",
+      "title": ""
+    },
+    {
+      "from": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "to": "0bebf312-a256-4854-97a0-cbcac4adac65",
+      "title": ""
+    },
+    {
+      "from": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "to": "c6f66121-668a-4181-8190-3c88d8116bce",
+      "title": ""
+    },
+    {
+      "from": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "to": "98b8fdc5-8836-4ecf-b160-dc31ce2e8500",
+      "title": ""
+    },
+    {
+      "from": "0f3a6050-eab9-4a47-b3e1-69bd12c77f5a",
+      "to": "a4a1d85a-2e56-49cc-9086-2864fb97c86d",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "857da457-a021-45b7-af9c-dfa562f73dd0",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "a5826d2b-5569-4f16-891f-6e16889424e6",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "4d670661-f53f-40ef-b256-b421d33d4ff4",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "3d71af62-8a1c-4070-9b0f-f24db832eb8f",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "fa239080-82eb-450d-b5e9-d9592cd60cfb",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "9a032edd-3599-442b-a2bb-7fd2d23bcffe",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "113a17b1-791e-40fb-a154-45ed97f95080",
+      "title": ""
+    },
+    {
+      "from": "54a33fe3-594c-429c-b78b-965f7dc7cccd",
+      "to": "916d325e-18ef-4068-82cd-cf865a81077b",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "c5249ea1-1a1c-457a-9b94-0d6f7bbf04f0",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "087853bb-79a7-4fda-ac59-7a0ebf109245",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "193a4558-bec0-440a-9975-18cc90389a79",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "abcf4a1b-1c25-47d8-9821-374c0a9d9392",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "0e04e4b6-bfc2-4da6-b98b-51e97cfff7dd",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "5df363f3-485b-4162-ada0-e645933da6f1",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "598bcee1-35d8-42dc-a889-b0cda34cb594",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "7e4201b1-b56c-4a91-8f2d-c7d8bebed285",
+      "title": ""
+    },
+    {
+      "from": "df394c37-ac6a-4d73-b444-d62f7d3b0f3b",
+      "to": "e59ac8e1-fff4-436f-b5a5-e0becef79ad0",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "97df921f-b784-4c1d-a0a8-3c3dd36dd854",
+      "title": ""
+    },
+    {
+      "from": "97df921f-b784-4c1d-a0a8-3c3dd36dd854",
+      "to": "5bd4dc6d-8b72-40d2-94e7-ec3ec86743d3",
+      "title": ""
+    },
+    {
+      "from": "97df921f-b784-4c1d-a0a8-3c3dd36dd854",
+      "to": "916c1cee-f797-480f-88d8-a52f4b4a83e3",
+      "title": ""
+    },
+    {
+      "from": "97df921f-b784-4c1d-a0a8-3c3dd36dd854",
+      "to": "b50d3cd9-5395-4ae3-9a6c-192d07f73633",
+      "title": ""
+    },
+    {
+      "from": "97df921f-b784-4c1d-a0a8-3c3dd36dd854",
+      "to": "3d3f0724-a5e8-4bb3-8a87-b4fc7a54fc89",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "title": ""
+    },
+    {
+      "from": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "to": "740757c6-2687-462f-8d9d-5a917d6ee916",
+      "title": ""
+    },
+    {
+      "from": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "to": "f94bd63a-bf1a-4a3b-acd4-7dce6794ad45",
+      "title": ""
+    },
+    {
+      "from": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "to": "91217aca-bfe8-4caf-8dda-9dad5d88b849",
+      "title": ""
+    },
+    {
+      "from": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "to": "68feb158-8538-4c4c-bbf7-098e1f90dad0",
+      "title": ""
+    },
+    {
+      "from": "8346db2e-b0d4-4d83-80cc-cd5f87b6429b",
+      "to": "9e7d2474-ef24-4171-81db-5a39fad3ba3c",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "4dc198e1-4817-47ae-9c2c-4709cdf8f47e",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "4750d53b-3186-42d0-87c1-5f1e83a3d0cc",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "88380062-945c-4aba-8213-496b08a7fa37",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "c38ad7dc-65a0-4d08-9f5a-b3615e97b140",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "eabba743-c087-41d7-9e90-f8c141d04c0c",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "96ff2ab9-69ed-45b9-bd37-d64bc88b20d6",
+      "title": ""
+    },
+    {
+      "from": "963dced1-6ff2-4d57-90e2-96b1c31c1099",
+      "to": "13ef2de7-039d-4231-836b-b2e2bfdd252d",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "a32a435e-9fd8-4e18-b0c1-ba56cda97974",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "a5fd2610-8ca8-4e29-b1e3-aad6bd995f11",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "c16b98a9-f156-4cfe-bc17-a13743b7cac0",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "aa637a59-adf7-4025-8fa4-41bf09656edb",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "1274f00b-d012-4502-a2ce-c80e70d42aa9",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "1600fd3f-db6c-44ce-9a31-1a4859038df6",
+      "title": ""
+    },
+    {
+      "from": "0ff09ec2-5edc-4001-a586-73eea78adc4b",
+      "to": "3f76546d-41ac-4ee1-a3d9-f07c293ca10c",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "297b22e2-59a3-4d0f-bc5b-29357fa3b8a0",
+      "title": ""
+    },
+    {
+      "from": "297b22e2-59a3-4d0f-bc5b-29357fa3b8a0",
+      "to": "85e40146-b80a-4c59-8a95-9827eb276b5c",
+      "title": ""
+    },
+    {
+      "from": "297b22e2-59a3-4d0f-bc5b-29357fa3b8a0",
+      "to": "4d1945e2-1e6b-4770-b03e-b6f9570362c8",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "6fed9b1c-4616-4220-940f-d12b30591c93",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "b22cd616-eefc-40a7-bd6d-f4af2d12e564",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "4c7fdcd5-f804-4dce-8c9c-c0fa4771a8ee",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "f5d5cc46-5269-44e9-b2b6-f083b3c4d65b",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "3cfb2612-1183-4db7-bc25-6045af06c7a5",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "b111d3a3-2fce-41a0-8ecb-7a56453bd57c",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "e0d8d0a8-0912-4bd5-96b9-06110f1d76be",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "72b1077c-8f9e-4fb1-9c16-9087afc6205f",
+      "title": ""
+    },
+    {
+      "from": "518cf3da-39df-4e92-9aa4-fbe1f724f2e1",
+      "to": "332dbf47-7666-4f17-ba41-b04a42612613",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "title": ""
+    },
+    {
+      "from": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "to": "9eb6ab65-da67-4016-a35c-6398909fc5b4",
+      "title": ""
+    },
+    {
+      "from": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "to": "62111a06-2d6d-43af-ae8a-2076e974cc20",
+      "title": ""
+    },
+    {
+      "from": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "to": "45d2cf19-4c6b-4866-940f-ddbe2ae41ba1",
+      "title": ""
+    },
+    {
+      "from": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "to": "2b5315d6-f190-41de-bd0b-ebf72a315aeb",
+      "title": ""
+    },
+    {
+      "from": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "to": "3db84d1d-0682-4bc2-aaf5-e6e44595ac15",
+      "title": ""
+    },
+    {
+      "from": "02303907-cace-4913-8bc0-f9357ec5bc0c",
+      "to": "9e963f49-faa3-45ea-85f6-64a4051a6334",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "title": ""
+    },
+    {
+      "from": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "to": "b5461125-23d1-4a7e-9dd8-eb8a04596313",
+      "title": ""
+    },
+    {
+      "from": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "to": "fc829ad7-5737-43a7-989f-0339dd52a648",
+      "title": ""
+    },
+    {
+      "from": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "to": "ec35d69a-8f49-43f2-ab30-cce43aa530ac",
+      "title": ""
+    },
+    {
+      "from": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "to": "8d23f805-825c-4cbd-89f9-0b6c5460b529",
+      "title": ""
+    },
+    {
+      "from": "82ccff74-5846-4f4f-bc23-1b8c31f43517",
+      "to": "e7df3b08-2adc-4d39-a460-74c5da00528e",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "2d65d928-fa39-421f-b6e3-3b6fbca59854",
+      "title": ""
+    },
+    {
+      "from": "2d65d928-fa39-421f-b6e3-3b6fbca59854",
+      "to": "98a06602-098d-4251-abfb-a2d9c92dedc0",
+      "title": ""
+    },
+    {
+      "from": "2d65d928-fa39-421f-b6e3-3b6fbca59854",
+      "to": "e2db85d8-80cb-45b7-8c72-f5603afc2359",
+      "title": ""
+    },
+    {
+      "from": "2d65d928-fa39-421f-b6e3-3b6fbca59854",
+      "to": "b679a9e5-ff65-4c08-9aac-575beb5ac7e5",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "80a93ec4-e5b3-495d-980e-3f9d6bc85857",
+      "title": ""
+    },
+    {
+      "from": "80a93ec4-e5b3-495d-980e-3f9d6bc85857",
+      "to": "73daa908-4cca-4300-a888-f26e0d346c23",
+      "title": ""
+    },
+    {
+      "from": "80a93ec4-e5b3-495d-980e-3f9d6bc85857",
+      "to": "bc48add2-302c-47d1-a346-792bc91dc6b3",
+      "title": ""
+    },
+    {
+      "from": "1153d60c-eda6-4460-8951-fd946212cf39",
+      "to": "4e4900c7-ac76-44a7-8817-24f5896838d9",
+      "title": ""
+    },
+    {
+      "from": "4e4900c7-ac76-44a7-8817-24f5896838d9",
+      "to": "6185d0b8-a548-4cfb-8529-2762c2e1a293",
+      "title": ""
+    },
+    {
+      "from": "4e4900c7-ac76-44a7-8817-24f5896838d9",
+      "to": "bbf967cf-b74a-4f7c-83c4-d1b47605e785",
+      "title": ""
+    }
+  ],
+  "courseId": "44"
+}

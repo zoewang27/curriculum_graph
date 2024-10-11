@@ -8,8 +8,6 @@ import json
 import uuid
 from difflib import SequenceMatcher
 from .models import Trajectory, Course
-import google.generativeai as genai
-
 
 # BERT
 from sentence_transformers import SentenceTransformer, util
@@ -363,23 +361,39 @@ def openfile(csvFile, folder_path=None):
 
 
 
+
+
+
+
 '''
-Extract nodes and edges from a list
+Extract nodes and edges from a list(version 2)
 '''
-def buildNodeEdges(csv_data,course_id=None):
+def buildNodeEdgesVersion2(csv_data,course_id=None):
     nodes = []
     edges = []
     if course_id is None:
         courseId = csv_data[1]['courseid']
     else:
         courseId = str(course_id)
-    shape_mapping = {
-    0: "circle",
-    1: "box",
-    2: "ellipse",
-    3: "square",
-    4: "diamond"
+
+    node_type_mapping = {
+        0: "course",
+        1: "knowledge unit",
+        2: "knowledge point",
+        3: "knowledge point",
+        4: "knowledge point"
     }
+
+    shape_mapping = {
+        0: "circle",
+        1: "ellipse",
+        2: "box",
+        3: "box",
+        4: "box"
+    }
+
+    original_to_uuid = {}  # Mapping from original ID to UUID
+    node_map = {}  # To keep track of nodes by UUID
 
     cnt = 0
     for row in csv_data:
@@ -391,31 +405,41 @@ def buildNodeEdges(csv_data,course_id=None):
             cnt += 1
             continue   
 
-        nodeId = ".".join(filter(None, [courseId, row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
-        layer = nodeId.count(".")
+        nodeId = str(uuid.uuid4())
+        original_id = ".".join(filter(None, [courseId, row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
+        layer = original_id.count(".")
+        node_type = node_type_mapping.get(layer, "knowledge point")
         shape = shape_mapping.get(layer, "square")
 
         node = {
             "id": nodeId,
             "label": row["topic"],
-            "group": courseId,
-            "shape": shape,
             "cog_level": row["Cognitive level"].strip(),
-            "title": row["topic"] + ": " + row["description_of_topic"],
-            "layer": layer
+            "title": row["topic"],
+            "description":row["topic"] + ": " + row["description_of_topic"],
+            "node_type": node_type,
+            "shape": shape
         }
         nodes.append(node)
 
-        parent_id = nodeId[:nodeId.rfind('.')] if '.' in nodeId else None
-        if parent_id:
-          edge = {
-              'from': parent_id,
-              'to': nodeId,
-              'title': '' 
-          }
-          edges.append(edge)
+        node_map[nodeId] = original_id
+        original_to_uuid[original_id] = nodeId
+
+        # Set up parent-child relationships based on original IDs
+        parent_original_id = original_id[:original_id.rfind('.')] if '.' in original_id else None
+        if parent_original_id and parent_original_id in original_to_uuid:
+            parent_uuid = original_to_uuid[parent_original_id]
+            edge = {
+                'from': parent_uuid,
+                'to': nodeId,
+                'title': ''
+            }
+            edges.append(edge)
 
     return nodes, edges, courseId
+
+
+
 
 
 
@@ -424,12 +448,43 @@ Show single course graph
 '''
 def showCourseGraph(request):
     if request.method == 'POST':
-        selected_courseID = request.POST.get('course') 
-        selected_course = Course.objects.filter(course_id = selected_courseID)
-        csv_data = openfile(str(selected_course[0].csv_file), 'media/')
-        nodes,edges,courseID = buildNodeEdges(csv_data,selected_course[0].course_id)
-        response = {"nodes": nodes, "edges": edges, "courseId": courseID}
+        selected_courseID = request.POST.get('courseId') 
+        course = get_object_or_404(Course, pk=selected_courseID)
+
+        # Set the folder path based on course source (UvA or ACM)
+        if course.source == 'UvA':
+            folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')  
+        else: 
+            folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'ACM_courses')
+        
+        # Set the file path for the JSON file
+        file_name = selected_courseID + '.json'
+        file_path = os.path.join(folder_path, file_name)
+
+        # Check if the JSON file already exists
+        if os.path.exists(file_path):
+            with open(file_path, 'r') as json_file:
+                response_data = json.load(json_file)
+            return JsonResponse(response_data)
+        else:
+            if course.csv_file:
+                csv_data = openfile(str(course.csv_file), 'media/')
+                nodes, edges, _ = buildNodeEdgesVersion2(csv_data, course.course_id)          
+
+        response = {
+            "nodes": nodes, 
+            "edges": edges, 
+            "courseId": selected_courseID
+        }
+
+        # Save to JSON for future requests
+        saveToJSON(folder_path, file_path, response)
+        
         return JsonResponse(response)
+
+
+
+
 
 
 
@@ -445,6 +500,8 @@ def saveToJSON(folder_path,file_path,result):
         json.dump(result, json_file, indent=2)
 
 
+
+
 '''
 Use a BERT model to check semantic similarity
 '''
@@ -452,24 +509,14 @@ def bertModel(first_nodes, second_nodes):
     # use the fastest model
     model = SentenceTransformer('all-mpnet-base-v2')
 
-    first_nodes_dict =  {
-        node['title']: node['id'] for node in first_nodes if not node['label'].startswith('Obj')
-        }
-    second_nodes_dict =  {
-        node['title']: node['id'] for node in second_nodes if not node['label'].startswith('Obj')
-        }
-    
-#     first_nodes_dict =  {
-#     node['title']: node['id'] for node in first_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')
-#     }
-# second_nodes_dict =  {
-#     node['title']: node['id'] for node in second_nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')
-#     }
+    first_nodes_dict =  { node['description']: node['id'] for node in first_nodes }
+    second_nodes_dict =  { node['description']: node['id'] for node in second_nodes }
 
+    # Extract descriptions (not ids) for similarity comparison
+    first_labels = list(first_nodes_dict.keys()) 
+    second_labels = list(second_nodes_dict.keys())  
 
-    first_labels = list(first_nodes_dict.keys())
-    second_labels = list(second_nodes_dict.keys())
-
+    # Generate embeddings based on descriptions
     first_embeddings = model.encode(first_labels, convert_to_tensor=False)
     second_embeddings = model.encode(second_labels, convert_to_tensor=False)
 
@@ -477,14 +524,17 @@ def bertModel(first_nodes, second_nodes):
     cosine_scores = util.cos_sim(first_embeddings, second_embeddings)
 
     similarEdges = []
-    nodeId = []
+    first_course_nodeId = []
+    second_course_nodeId = []
     for i in range(len(first_labels)):
         for j in range(len(second_labels)):
             if cosine_scores[i][j] > 0.6:
                 score = str(round(float(cosine_scores[i][j]), 4))
+
+                # Use description to get the corresponding id from the dictionary
                 edge = {
-                    'from': first_nodes_dict[first_labels[i]],
-                    'to': second_nodes_dict[second_labels[j]],
+                    'from': first_nodes_dict[first_labels[i]],  
+                    'to': second_nodes_dict[second_labels[j]],  
                     'title': score,
                     'color': 'grey',
                     'width': 1,
@@ -492,57 +542,13 @@ def bertModel(first_nodes, second_nodes):
                     'dashes': True
                 }
                 similarEdges.append(edge)
-                nodeId.append(first_nodes_dict[first_labels[i]])
-                nodeId.append(second_nodes_dict[second_labels[j]])
+
+                first_course_nodeId.append(first_nodes_dict[first_labels[i]])  
+                second_course_nodeId.append(second_nodes_dict[second_labels[j]])  
                               
-    return similarEdges, nodeId
+    return similarEdges, first_course_nodeId, second_course_nodeId
 
 
-
-
-
-
-
-
-'''
-build edges for parents of similar nodes
-'''
-def buildEdgesForParentNode(NodeIds):
-    edges = []
-    AllNodeIds = []
-    for NodeId in NodeIds:
-        for i in range(len(NodeId.split('.')) - 1, 0, -1):
-            parent_id = '.'.join(NodeId.split('.')[:i])
-            child_id = '.'.join(NodeId.split('.')[:i + 1])
-            edge = {
-                'from': parent_id, 
-                'to': child_id, 
-                'title': ''}
-            if edge not in edges:  # Check if edge already exists
-                edges.append(edge)
-
-    for NodeId in NodeIds:
-        id_parts = NodeId.split('.')
-        for i in range(len(id_parts)):
-            parent_id = '.'.join(id_parts[:i + 1])
-            if parent_id not in AllNodeIds:  # Check if nodeid already exists
-                AllNodeIds.append(parent_id)
-
-    return edges, sorted(AllNodeIds)
-
-
-
-
-'''
-Find all parents nodes
-'''
-def find_matching_nodes(nodes, nodeIds):
-    matching_nodes = []
-    for nodeId in nodeIds:
-        matching_node = next((node for node in nodes if node['id'] == nodeId), None)
-        if matching_node:
-            matching_nodes.append(matching_node)
-    return matching_nodes
 
 
 
@@ -557,8 +563,8 @@ def detectSimilarCourse(request):
         courselist = json.loads(courselist_json) #Convert JSON
         selected_courses = Course.objects.filter(course_id__in=courselist)
 
-        # build the path
-        file_name = selected_courses[0].course_name.replace("/", "_") + '_' + selected_courses[1].course_name.replace("/", "_") + '.json'
+        # build the path and use the two course id as file name
+        file_name = str(selected_courses[0].course_id) + '_' + str(selected_courses[1].course_id) + '.json'
         folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'courseSimilarity')   
         file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
@@ -568,23 +574,64 @@ def detectSimilarCourse(request):
                 response_data = json.load(json_file)
             return JsonResponse(response_data)
         else:
-            csv_data_0 = openfile(str(selected_courses[0].csv_file), 'media/') # extract data from csv file and turn it to a list: [{},{},{}]
-            csv_data_1 = openfile(str(selected_courses[1].csv_file), 'media/')
+            # Get nodes and edges
+            first_course_nodes, first_course_edges = courseNodesEdgesFromJSON(selected_courses[0].course_id,selected_courses[0].source)
+            second_course_nodes, second_course_edges = courseNodesEdgesFromJSON(selected_courses[1].course_id,selected_courses[1].source)
+            
+            # Compute semantic similarity and get edges between two similar nodes
+            similarEdges, nodeId_1, nodeId_2 = bertModel(first_course_nodes, second_course_nodes)
 
-            nodes_0,_,courseID_0 = buildNodeEdges(csv_data_0, str(selected_courses[0].course_id)) 
-            nodes_1,_,courseID_1= buildNodeEdges(csv_data_1, str(selected_courses[1].course_id)) 
-
-            # compare nodes，and build the edges between similar nodes，get nodeId
-            similarEdges, nodeId = bertModel(nodes_0, nodes_1)
-
-            # build edges for parents of similar nodes and find all nodes
-            nodeEdges, allId = buildEdgesForParentNode(nodeId)
-            matchNode = find_matching_nodes(nodes_0 + nodes_1, allId)
-
-            response = {"nodes": matchNode, "edges": nodeEdges + similarEdges, "courseId": [courseID_0,courseID_1]}
+            # Find the parents nodes and related edges
+            found_edges_1, found_nodes_1 = findParentEdgesAndNodes(nodeId_1, first_course_edges, first_course_nodes)
+            found_edges_2, found_nodes_2 = findParentEdgesAndNodes(nodeId_2, second_course_edges, second_course_nodes)
+            response = { 
+                "nodes": found_nodes_1 + found_nodes_2, 
+                "edges": found_edges_1 + found_edges_2 + similarEdges, 
+                "courseId": [selected_courses[0].course_id, selected_courses[1].course_id]
+                }
+            
             saveToJSON(folder_path,file_path,response)
-
             return JsonResponse(response)
+
+
+
+
+
+
+'''
+According to the node ID, find the parent node along the edge and get the information of all found nodes and edges.
+'''
+def findParentEdgesAndNodes(selected_ids, edges, nodes):
+    found_edges = []  
+    found_nodes = [] 
+    found_ids = set(selected_ids)
+
+    nodes_dict = {node['id']: node for node in nodes}
+    found_edges_set = set()
+    to_check = list(selected_ids)
+
+    while to_check:
+        current_id = to_check.pop()
+        # Find the parent ID of the current ID
+        for edge in edges:
+            if edge.get('to') == current_id: 
+                edge_from = edge.get('from')
+                if edge_from: 
+                    edge_tuple = (edge_from, current_id)  
+                    if edge_tuple not in found_edges_set:  
+                        found_edges.append({'from': edge_from, 'to': current_id})
+                        found_edges_set.add(edge_tuple) 
+                    found_ids.add(edge_from)  # Add parent ID for subsequent lookups
+                    if edge_from not in to_check:  
+                        to_check.append(edge_from)  
+
+    # Get the complete node information based on the found ID
+    for node_id in found_ids:
+        if node_id in nodes_dict:
+            found_nodes.append(nodes_dict[node_id])
+
+    return found_edges, found_nodes
+
 
 
 
@@ -594,18 +641,22 @@ def allCourses(request):
 
 
 
+        
+
+
+
 '''
 Detect the semantic similarity among all courses and save the result into a json file
 '''
 def detectAllcourses(request):
-
     if request.method == 'POST':
-        curricula = request.POST.get('curriculumSource') 
+        curricula = request.POST.get('curriculumSource')
+        print(curricula)
 
         # build the path
         file_name = curricula + '_all_courses' + '.json'
-        folder_path = os.path.join(os.getcwd(),'media', 'JSON', 'curriculaSimilarity')  
-        file_path = os.path.join(os.getcwd(), folder_path, file_name)
+        folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'curriculaSimilarity')
+        file_path = os.path.join(folder_path, file_name)
 
         # check if the file is exist
         if os.path.exists(file_path):
@@ -613,48 +664,56 @@ def detectAllcourses(request):
                 response_data = json.load(json_file)
             return JsonResponse(response_data)
         
-        else:      
-            selected_courses = Course.objects.filter(source = curricula).exclude(csv_file__isnull=True).exclude(csv_file='')
+        else:
+            
+            if curricula == 'UvA':
+                folder_path_json = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')
+            else: 
+                folder_path_json = os.path.join(os.getcwd(), 'media', 'JSON', 'ACM_courses')
+        
             course_nodes = []
             file_node = {}
-            for course in selected_courses:
-                csv_data = openfile(str(course.csv_file), 'media/') 
-                nodes,_,courseId= buildNodeEdges(csv_data,course.course_id) 
-                file_node[courseId] = nodes
-                if nodes:
-                    course_nodes.append(nodes[0])
+            # Read all JSON files in a folder
+            json_files = [f for f in os.listdir(folder_path_json) if f.endswith('.json')]
+            for json_file in json_files:
+                json_file_path = os.path.join(folder_path_json, json_file)
+                with open(json_file_path, 'r') as f:
+                    data = json.load(f)
+                    nodes = data.get('nodes', [])
+                    if nodes:
+                        first_node = nodes[0]
+                        courseId = os.path.splitext(json_file)[0]
+                        first_node['id'] = courseId
+                        
+                        file_node[courseId] = nodes
+                        course_nodes.append(first_node)  
 
-            # create the similar edges among all courses
-            compared_pairs = set()  # save the compared pair, avoid compare again
+            # Create similarity edges between courses
+            compared_pairs = set() 
             edges = []
             for course_id_1, nodes_1 in file_node.items():
                 for course_id_2, nodes_2 in file_node.items():
                     if course_id_1 != course_id_2 and (course_id_1, course_id_2) not in compared_pairs:
 
-                        similarEdges, _ = bertModel(nodes_1, nodes_2)
+                        similarEdges, _, _ = bertModel(nodes_1, nodes_2)
+                        compared_pairs.add((course_id_1, course_id_2))
+                        compared_pairs.add((course_id_2, course_id_1))
 
-                        compared_pairs.add((course_id_1, course_id_2)) 
-                        compared_pairs.add((course_id_2, course_id_1)) 
-                        
                         if similarEdges:
-                                num_similar_edges = len(similarEdges)  
-                                if num_similar_edges > 3:
-                                    edge = {
-                                        'from': course_id_1,
-                                        'to': course_id_2,
-                                        'title': num_similar_edges,
-                                        'value': num_similar_edges
-                                    }
-                                    if edge not in edges:  # Check if edge already exists
-                                        edges.append(edge)
-            
+                            num_similar_edges = len(similarEdges)
+                            if num_similar_edges > 3:
+                                edge = {
+                                    'from': course_id_1,
+                                    'to': course_id_2,
+                                    'title': num_similar_edges,
+                                    'value': num_similar_edges
+                                }
+                                if edge not in edges:  
+                                    edges.append(edge)
+
             response = {"nodes": course_nodes, "edges": edges, "matched": curricula}
             saveToJSON(folder_path,file_path,response)
             return JsonResponse(response)
-        
-
-
-
 
 
 
@@ -670,7 +729,6 @@ def filesManagement(request):
         'acm_courses': acm_courses,
         'uva_courses': uva_courses
     }
-    
     return render(request,'filesmgmt.html', context)
 
 
@@ -689,7 +747,7 @@ def uploadfile(request):
             course.csv_file = csv_file
             course.save()
 
-            # 转为json文件存储
+            # Convert to json file 
             csv_data = openfile(str(course.csv_file), 'media/')
             nodes, edges, _ = buildNodeEdgesVersion2(csv_data, course.course_id)
             json_data = {
@@ -699,18 +757,21 @@ def uploadfile(request):
 
             # build the path
             file_name = course_id + '.json'
-            folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')   
+            if course.source == 'UvA':
+                folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses') 
+            else:
+                folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'ACM_courses') 
             file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
             if json_data:
                 saveToJSON(folder_path,file_path,json_data)
-
 
             return JsonResponse({'message': 'File uploaded successfully!'})
         else:
             return JsonResponse({'message': 'Failed to upload file.'}, status=400)
     else:
         return JsonResponse({'message': 'Invalid request method.'}, status=405)
+
 
 
 
@@ -831,11 +892,23 @@ def showTrajectory(request):
                 trajectory_objective_node_id  = str(trajectory_record.trajectory_id)
                 objective_label = f"{i + 1}. {trajectory_record.objective}" 
                 level_color = color_mapping.get(trajectory_record.level.lower(), "#000000") 
-                nodes.append({'id': trajectory_objective_node_id, 'label': objective_label, "cog_level": trajectory_record.level, "shape": "box", "color": level_color,  "font": {"align": "left" }})
+                nodes.append({
+                    'id': trajectory_objective_node_id, 
+                    'label': objective_label, 
+                    "cog_level": trajectory_record.level, 
+                    "shape": "box", 
+                    "color": level_color, 
+                    "font": {"align": "left" }})
 
                 if i != len(trajectory_records) - 1:
                     next_node = str(trajectory_records[i + 1].trajectory_id)
-                    edges.append({'from': trajectory_objective_node_id, 'to': next_node, 'arrows': "to", 'width': "2", "color": {"color": '#363a44'} })
+                    edges.append({
+                        'from': trajectory_objective_node_id, 
+                        'to': next_node, 
+                        'arrows': "to", 
+                        'width': "2", 
+                        "color": {"color": '#363a44'} 
+                        })
     
                 related_objectives = trajectory_record.related_course_objectives.all() # return all Course.Objective instances
                 added_courses = set()
@@ -855,15 +928,33 @@ def showTrajectory(request):
                     # Add objective nodes and edges of the course
                     level_color = color_mapping.get(objective.level.lower(), "#000000") 
                     if objective.course.csv_file:
-                        similarity_level = compareObjectiveAndTopic(objective.course.csv_file, objective.content)
+                        similarity_level = compareObjectiveAndTopic(objective.course.course_id, objective.content)
                     else:
                         similarity_level = "[N/A]"
 
                     if similarity_level == "[0]":
-                        nodes.append({'id': objective_node_id, 'label': similarity_level + "--" + objective.content, "shape": "square", "cog_level": objective.level, "shape": "box", "font": {"align": "left", "color": "#ffffff", "background": "#404040" } , "color": level_color})
+                        nodes.append({
+                            'id': objective_node_id, 
+                            'label': similarity_level + "--" + objective.content, 
+                            "shape": "square", 
+                            "cog_level": objective.level, 
+                            "shape": "box", 
+                            "font": {"align": "left", "color": "#ffffff", "background": "#404040" } , 
+                            "color": level_color
+                            })
                     else:
-                        nodes.append({'id': objective_node_id, 'label': similarity_level + "--" + objective.content, "shape": "square", "cog_level": objective.level, "shape": "box", "font": {"align": "left" } , "color": level_color})
-                    edges.append({'from': course_node_id, 'to': objective_node_id})
+                        nodes.append({
+                            'id': objective_node_id, 
+                            'label': similarity_level + "--" + objective.content, 
+                            "cog_level": objective.level, 
+                            "shape": "box", 
+                            "font": {"align": "left" } , 
+                            "color": level_color
+                            })
+                    edges.append({
+                        'from': course_node_id, 
+                        'to': objective_node_id
+                        })
             
             response = {"nodes": nodes, "edges": edges}
             saveToJSON(folder_path,file_path,response)
@@ -878,12 +969,16 @@ def showTrajectory(request):
 '''
 detect how many topics cover this course's objective
 '''
-def compareObjectiveAndTopic(csv_file_name,objective):
-    
-    path = 'media/'
-    csv_data = openfile(str(csv_file_name), path)
-    nodes,_,_ = buildNodeEdges(csv_data) 
-    topics = [node['label'] for node in nodes if node['id'].count('.') > 0 and not node['label'].startswith('Obj')]
+def compareObjectiveAndTopic(courseId,objective):
+
+    course = get_object_or_404(Course, pk=courseId)
+    nodes, _ = courseNodesEdgesFromJSON(courseId,"UvA")
+    if not nodes:
+        if course.csv_file:
+            csv_data = openfile(str(course.csv_file), 'media/')
+            nodes, _, _ = buildNodeEdgesVersion2(csv_data, course.course_id)
+
+    topics = [node['description'] for node in nodes]
 
     # use BERT model to calculate the semilarity between objective and course topics
     model = SentenceTransformer('all-mpnet-base-v2')
@@ -908,34 +1003,70 @@ def compareObjectiveAndTopic(csv_file_name,objective):
 
 
 
+'''
+Return overview.html
+'''
+def overview(request):
+    # Get all courses initially filtered by source
+    courses = Course.objects.all().filter(source="UvA")
+
+    # Get all unique trajectory names
+    trajectories = Trajectory.objects.values('trajectory_name').distinct().order_by('trajectory_name')
+    selected_trajectory_name = request.GET.get('trajectory')
+
+    selected_objectives = []
+    if selected_trajectory_name:
+        # Filter by selected trajectory
+        selected_trajectories = Trajectory.objects.filter(trajectory_name=selected_trajectory_name)
+        selected_objectives = selected_trajectories.values_list('objective', flat=True)
+        
+        # Filter courses based on objectives related to the selected trajectory
+        related_objectives = Course.Objective.objects.filter(trajectory__in=selected_trajectories)
+        courses = courses.filter(objectives__in=related_objectives).distinct()
+
+    context = {
+        'courses': courses,
+        'trajectories': trajectories,
+        'selected_trajectory_name': selected_trajectory_name,
+        'selected_objectives': selected_objectives,
+    }
+    return render(request, 'overview.html', context)
 
 
 
 
+
+
+
+
+'''
+Return editGraph.html
+'''
 def editGraph(request, course_id):
 
     course = get_object_or_404(Course, pk=course_id)
     objectives = course.objectives.all()
-
-    nodes, edges = courseNodesEdgesFromJSON(course.course_id, course.course_name)
-
+    nodes, edges = courseNodesEdgesFromJSON(course.course_id,"UvA")
 
     if not nodes and not edges:
-      
         if course.csv_file:
             csv_data = openfile(str(course.csv_file), 'media/')
             nodes, edges,_ = buildNodeEdgesVersion2(csv_data, course.course_id)
 
     if not nodes and not edges:
+        nodeId = str(uuid.uuid4())
         nodes = [{
-            'id': course.course_id,  
-            'label': course.course_name,  
-            'shape': "circle"
+            'id': nodeId,  
+            'label': course.course_name, 
+            'title':course.course_name, 
+            "description": course.course_name,
+            'cog_level': '',
+            'shape': 'circle',
+            "node_type": "course"
         }]
         edges = []
 
-    related_courses = findRelatedCourse2(course_id)
-
+    related_courses = findRelatedCourse(course_id)
     response = {
         "nodes": nodes, 
         "edges": edges, 
@@ -951,11 +1082,18 @@ def editGraph(request, course_id):
 
 
 
-# 从 JSON 获取单个课程的内容
-def courseNodesEdgesFromJSON(course_id, course_name):
+
+'''
+Get the content of a single course from JSON
+'''
+def courseNodesEdgesFromJSON(course_id,course_source):
     file_name = str(course_id) + '.json'
-    folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')
+    if course_source == "UvA":
+        folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')
+    else:
+        folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'ACM_courses')
     file_path = os.path.join(folder_path, file_name)
+
     nodes = []
     edges = []
 
@@ -976,127 +1114,13 @@ def courseNodesEdgesFromJSON(course_id, course_name):
 
 
 
-'''
-Extract nodes and edges from a list(version 2)
-'''
-def buildNodeEdgesVersion2(csv_data,course_id=None):
-    nodes = []
-    edges = []
-    if course_id is None:
-        courseId = csv_data[1]['courseid']
-    else:
-        courseId = str(course_id)
-    shape_mapping = {
-    0: "circle",
-    1: "ellipse",
-    2: "box",
-    3: "box",
-    4: "box"
-    }
-
-    original_to_uuid = {}  # Mapping from original ID to UUID
-    node_map = {}  # To keep track of nodes by UUID
-
-    cnt = 0
-    for row in csv_data:
-        if cnt < 0: # 
-            cnt += 1
-            continue   
-        
-        if row["topic"].startswith('Obj'): # 
-            cnt += 1
-            continue   
-
-        nodeId = str(uuid.uuid4())
-        original_id = ".".join(filter(None, [courseId, row["chapterid"], row["sectionid"], row["unitid"], row["subunitid"]]))
-        layer = original_id.count(".")
-        shape = shape_mapping.get(layer, "square")
-
-        node = {
-            "id": nodeId,
-            "label": row["topic"],
-            "shape": shape,
-            "cog_level": row["Cognitive level"].strip(),
-            "title": row["topic"],
-            "description":row["topic"] + ": " + row["description_of_topic"],
-            "layer": layer
-        }
-        nodes.append(node)
-
-        node_map[nodeId] = original_id
-        original_to_uuid[original_id] = nodeId
-
-        # Set up parent-child relationships based on original IDs
-        parent_original_id = original_id[:original_id.rfind('.')] if '.' in original_id else None
-        if parent_original_id and parent_original_id in original_to_uuid:
-            parent_uuid = original_to_uuid[parent_original_id]
-            edge = {
-                'from': parent_uuid,
-                'to': nodeId,
-                'title': ''
-            }
-            edges.append(edge)
-
-    return nodes, edges, courseId
-
-
-def explainByAI(request):
-    if request.method == 'POST':
-        nodeInfo = request.POST.get('nodeInfo')
-        
-        # 配置 Google Generative AI
-        genai.configure(api_key=os.environ.get("API_KEY"))
-        model = genai.GenerativeModel("gemini-pro")
-        content = "Write a short description about '" + nodeInfo + "'"
-        response_obj = model.generate_content(content)
-        
-        # 从 GenerateContentResponse 对象中提取文本内容
-        response_text = response_obj.text  # 假设返回对象有一个 text 属性
-        
-        # 将响应包装在字典中
-        response = {
-            'description': response_text
-        }
-        
-        return JsonResponse(response, safe=False)
-
-
-def overview(request):
-    # 获取所有课程
-    courses = Course.objects.all().filter(source="UvA")
-
-    trajectories = Trajectory.objects.values('trajectory_name').distinct().order_by('trajectory_name')
-
-    selected_trajectory_name = request.GET.get('trajectory')
-
-    selected_objectives = []
-    
-    if selected_trajectory_name:
-        selected_trajectories = Trajectory.objects.filter(trajectory_name=selected_trajectory_name)
-        selected_objectives = selected_trajectories.values_list('objective', flat=True)
-
-
-    if selected_trajectory_name:
-
-        selected_trajectories = Trajectory.objects.filter(trajectory_name=selected_trajectory_name)
-        related_objectives = Course.Objective.objects.filter(trajectory__in=selected_trajectories)
-        courses = Course.objects.filter(objectives__in=related_objectives).distinct()
-    else:
-        courses = Course.objects.all()
-
-    context = {
-        'courses': courses,
-        'trajectories': trajectories,
-        'selected_trajectory_name': selected_trajectory_name,
-        'selected_objectives': selected_objectives,
-    }
-
-
-    return render(request,'overview.html',context)
 
 
 
-def saveJson(request):
+
+
+
+def saveChanges(request):
     if request.method == 'POST':
         try:
             course_id = request.POST.get('courseId')
@@ -1108,7 +1132,7 @@ def saveJson(request):
             file_path = os.path.join(os.getcwd(), folder_path, file_name)
 
             if json_data:
-                # 将JSON字符串解析为Python字典
+                # Parse the JSON string into a Python dictionary
                 data = json.loads(json_data)
             saveToJSON(folder_path,file_path,data)
 
@@ -1123,74 +1147,13 @@ def saveJson(request):
 
 
 
-# def findRelatedCourse(course_id):
-#     file_name = str(course_id) + '.json'
-#     folder_path = os.path.join(os.getcwd(), 'media', 'JSON', 'UvA_courses')
-#     file_path = os.path.join(folder_path, file_name)
-
-#     if os.path.exists(file_path) and os.path.isfile(file_path):
-#         with open(file_path, 'r') as json_file:
-#             # 读取 JSON 文件数据
-#             json_data = json.load(json_file)
-#             target_labels = [node["label"] for node in json_data["nodes"]]
-#             target_course = ",".join(target_labels)
-
-#             target_labels_1 = {node["label"] for node in json_data["nodes"]}
-#     else:
-#         return []
-    
-#     other_courses = []
-#     for file in os.listdir(folder_path):
-#         if file.endswith('.json') and file != file_name:
-#             other_file_path = os.path.join(folder_path, file)
-#             with open(other_file_path, 'r') as other_json_file:
-#                 other_json_data = json.load(other_json_file)
-#                 other_labels = [node["label"] for node in other_json_data["nodes"]]
-#                 other_course_str = ",".join(other_labels)
-#                 other_courses.append((file, other_course_str))  # 保存文件名和拼接后的字符串
-
-#                 other_labels_1 = {node["label"] for node in other_json_data["nodes"]}
-#                 common_labels =  target_labels_1.intersection(other_labels_1)
-#                 print(common_labels)
-    
-
-#     model = SentenceTransformer("all-MiniLM-L6-v2")
-#     target_embedding = model.encode(target_course)
-    
-#     similar_courses = []
-
-#     for file, other_course_str in other_courses:
-#         other_embedding = model.encode(other_course_str)  # 计算每个课程的嵌入
-#         similarity = util.cos_sim(target_embedding, other_embedding).item()  # 计算相似度
-        
-#         if similarity > 0.45: 
-#             print(similarity)
-#             course_id_from_file = file.replace('.json', '')  # 获取课程 ID (去掉 .json 扩展名)
-#             similar_courses.append((course_id_from_file, similarity))
-
-#     # Step 4: 返回相似度大于 0.5 的课程的 Course 对象
-#     if similar_courses:
-#         similar_courses.sort(key=lambda x: x[1], reverse=True)  # 按相似度排序
-        
-#         # 获取相似课程的 Course 对象
-#         course_ids = [course_id for course_id, _ in similar_courses]
-#         related_courses = Course.objects.filter(course_id__in=course_ids)  # 根据课程 ID 查询 Course 对象
-        
-#         return related_courses
-#     else:
-#         return []
-
 
 
 '''
-打开文件名为UvA_all_courses的json文件
-搜索edges里面的from 或者 to 里面有该course_id的边
-然后或者该边的另一个course id 收集起来 
-
+Find the related course from UvA_all_courses.json by using the target course ID
 '''
+def findRelatedCourse(course_id):
 
-def findRelatedCourse2(course_id):
-    # Initialize an empty set to collect course IDs
     course_ids = set()
 
     # Construct the file path
@@ -1205,9 +1168,9 @@ def findRelatedCourse2(course_id):
             with open(file_path, 'r') as json_file:
                 json_data = json.load(json_file)
 
-                # Iterate over the edges and find related courses
+                # Iterate over the edges and find related courses, Convert edge["from"] and edge["to"] to string to ensure type match
                 for edge in json_data["edges"]:
-                    # Convert edge["from"] and edge["to"] to string to ensure type match
+                    
                     if str(edge["from"]) == str(course_id):
                         course_ids.add(edge["to"])
                     elif str(edge["to"]) == str(course_id):
@@ -1215,7 +1178,6 @@ def findRelatedCourse2(course_id):
 
             # Query the Course model for the related courses
             related_courses = Course.objects.filter(course_id__in=list(course_ids))
-
             return related_courses
 
         except json.JSONDecodeError:

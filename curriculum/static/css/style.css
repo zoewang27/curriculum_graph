@@ -28,7 +28,7 @@ File: style.css
 ==========================  **/
 body {
   background-color: #f3f3f3;
-  font-size: 0.875em;
+  font-size: 0.75em;
   overflow-x: hidden;
   color: #222;
   font-family: "Poppins", sans-serif;
@@ -59,7 +59,7 @@ h6 {
   font-size: 14px; }
 
 p {
-  font-size: 14px; }
+  font-size: 12px; }
 
 h1,
 h2,

@@ -1,0 +1,1472 @@
+{
+  "nodes": [
+    {
+      "id": "b969a8ba-8b2a-4411-80f5-baa7537967cc",
+      "label": "Algorithms and Complexity",
+      "cog_level": "",
+      "title": "Algorithms and Complexity",
+      "description": "Algorithms and Complexity: ",
+      "node_type": "course",
+      "shape": "circle"
+    },
+    {
+      "id": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "label": "Algorithmic Strategies",
+      "cog_level": "Understand",
+      "title": "Algorithmic Strategies",
+      "description": "Algorithmic Strategies: Algorithmic Strategies covers various approaches and techniques used to design and analyze algorithms",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "dee96240-8084-4313-9ffa-f03e814c923d",
+      "label": "Approximation",
+      "cog_level": "Understand",
+      "title": "Approximation",
+      "description": "Approximation: Algorithms that find solutions that are close to optimal, often used for NP-hard problems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "67d03c7b-5beb-4963-af2e-d5f3adc32626",
+      "label": "Backtracking",
+      "cog_level": "Understand",
+      "title": "Backtracking",
+      "description": "Backtracking: A systematic method for exploring all possible solutions to a problem by incrementally building candidates and backtracking when a dead-end is reached.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0b14b56a-d22e-421c-8bea-da899a5c76b8",
+      "label": "Branch and Bound ",
+      "cog_level": "Understand",
+      "title": "Branch and Bound ",
+      "description": "Branch and Bound : A method for solving optimization problems by systematically exploring the search space and bounding the solution space based on specific criteria.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2865ac9c-a801-48af-a75a-60fdc36aef20",
+      "label": "Brute-Force/Exhaustive Search",
+      "cog_level": "Understand",
+      "title": "Brute-Force/Exhaustive Search",
+      "description": "Brute-Force/Exhaustive Search: A straightforward approach that systematically examines all possible solutions to find the optimal one.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "498f1655-b7d4-451d-9689-bbcefde9dc5d",
+      "label": "Consensus algorithms ",
+      "cog_level": "Understand",
+      "title": "Consensus algorithms ",
+      "description": "Consensus algorithms : Algorithms used in distributed computing to achieve agreement among a group of participants despite some of them possibly failing or behaving maliciously.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2294046b-b926-4d02-b892-71723e713a12",
+      "label": "Decrease-and-Conquer",
+      "cog_level": "Understand",
+      "title": "Decrease-and-Conquer",
+      "description": "Decrease-and-Conquer: Algorithms that reduce a problem instance to a smaller instance of the same problem, solve the smaller instance, and then use the solution to solve the original problem.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ae4bbb01-2390-403d-b2b3-80ff38a37775",
+      "label": "Divide-and-Conquer",
+      "cog_level": "Understand",
+      "title": "Divide-and-Conquer",
+      "description": "Divide-and-Conquer: A problem-solving technique that breaks a problem into smaller subproblems, solves the subproblems recursively, and then combines the solutions to solve the original problem.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fa99c2d4-827b-4e5d-b75c-47399bc9b3da",
+      "label": "Dynamic Programming",
+      "cog_level": "Understand",
+      "title": "Dynamic Programming",
+      "description": "Dynamic Programming: A method for solving optimization problems by breaking them down into simpler subproblems and storing the solutions to avoid redundant calculations.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "202d40fc-5bea-4d12-a8ee-9cffb1f1b43c",
+      "label": "Greedy",
+      "cog_level": "Understand",
+      "title": "Greedy",
+      "description": "Greedy: An algorithmic paradigm that makes locally optimal choices at each step with the hope of finding a global optimum solution.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "66b1f4c6-e073-42e4-8747-6f7196f4cf63",
+      "label": "Heuristic: A* ",
+      "cog_level": "Understand",
+      "title": "Heuristic: A* ",
+      "description": "Heuristic: A* : A popular search algorithm that efficiently finds the shortest path in a graph from a given start node to a target node.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "89a70f0c-3543-4969-ac45-aed852c307c8",
+      "label": "Iterative",
+      "cog_level": "Understand",
+      "title": "Iterative",
+      "description": "Iterative: Algorithms that repeatedly apply a set of instructions or steps until a specific condition is met.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "32be91a1-2add-423e-aade-4db1507ef7a1",
+      "label": "Parallel ",
+      "cog_level": "Understand",
+      "title": "Parallel ",
+      "description": "Parallel : Algorithms designed to execute multiple computational tasks simultaneously, exploiting parallel processing capabilities for improved efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c61c0e44-721b-4fbc-ad69-4bb9244a1f77",
+      "label": "Randomized/Stochastic Algorithms",
+      "cog_level": "Understand",
+      "title": "Randomized/Stochastic Algorithms",
+      "description": "Randomized/Stochastic Algorithms: Algorithms that incorporate randomness in their decision-making process to achieve certain goals, such as approximating solutions or finding better outcomes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "55e080b4-cd85-403e-8389-1b257c97541f",
+      "label": "Recursive",
+      "cog_level": "Understand",
+      "title": "Recursive",
+      "description": "Recursive: Algorithms that solve problems by calling themselves with smaller input instances until a base case is reached.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f95e1b45-53e0-48c5-8ae1-2ecba6247d6b",
+      "label": "Space and Time Tradeoff",
+      "cog_level": "Understand",
+      "title": "Space and Time Tradeoff",
+      "description": "Space and Time Tradeoff: Strategies that involve sacrificing either space or time efficiency to optimize the overall performance of an algorithm.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "328cb642-a680-4ee8-8596-bf376b08a58c",
+      "label": "Transform-and-Conquer/Reduction",
+      "cog_level": "Understand",
+      "title": "Transform-and-Conquer/Reduction",
+      "description": "Transform-and-Conquer/Reduction: Techniques that transform a problem into a different form that is easier to solve, often by reducing it to a known problem or by applying a series of transformations.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "label": "Complexity Analysis",
+      "cog_level": "",
+      "title": "Complexity Analysis",
+      "description": "Complexity Analysis: Complexity Analysis evaluating algorithms' performance in terms of time and space efficiency",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "7a32fa67-4851-409c-a887-6983e3439bf9",
+      "label": "Analysis Framework",
+      "cog_level": "Understand",
+      "title": "Analysis Framework",
+      "description": "Analysis Framework: Analysis Framework provides a comprehensive approach to evaluating algorithmic performance",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4f6aa317-8f01-4529-a694-e6f2b791906a",
+      "label": "Average, Best, and Worst case performance",
+      "cog_level": "Understand",
+      "title": "Average, Best, and Worst case performance",
+      "description": "Average, Best, and Worst case performance: Examining the efficiency of algorithms under different scenarios",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3cd7e7e5-1753-44f4-a12b-5d0e1092c2f2",
+      "label": "Empirical and Relative (Order of Growth) Measurements",
+      "cog_level": "Understand",
+      "title": "Empirical and Relative (Order of Growth) Measurements",
+      "description": "Empirical and Relative (Order of Growth) Measurements: Utilizing empirical data and comparing growth rates to assess algorithmic efficiency",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5ebcdf85-7e8d-4960-a209-352e5121a043",
+      "label": "Input Size and Primitive Operations",
+      "cog_level": "Understand",
+      "title": "Input Size and Primitive Operations",
+      "description": "Input Size and Primitive Operations: Considering the impact of input size and fundamental operations on algorithmic performance",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "32ca611c-bed4-459f-96da-77924489fbc8",
+      "label": "Time and Space Efficiency and tradeoffs",
+      "cog_level": "Understand",
+      "title": "Time and Space Efficiency and tradeoffs",
+      "description": "Time and Space Efficiency and tradeoffs: Balancing time and space requirements while understanding the tradeoffs between them",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8b473edc-fb87-4a91-b567-74308b78e32e",
+      "label": "Asymptotic complexity analysis",
+      "cog_level": "Understand",
+      "title": "Asymptotic complexity analysis",
+      "description": "Asymptotic complexity analysis: Asymptotic complexity analysis involves understanding how algorithms perform as input size grows",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4671863b-2842-4346-bbe7-5bfd07e5efa1",
+      "label": "Big O, Little O, Big Omega, and Big Theta",
+      "cog_level": "Understand",
+      "title": "Big O, Little O, Big Omega, and Big Theta",
+      "description": "Big O, Little O, Big Omega, and Big Theta: to describe the upper (O), lower (Omega), and tight (Theta) bounds on algorithmic performance, as well as strict upper (Little O) bounds",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b691edd3-2415-4125-865d-ff6917d0ebf1",
+      "label": "Foundational Complexity/Efficiency classes",
+      "cog_level": "Understand",
+      "title": "Foundational Complexity/Efficiency classes",
+      "description": "Foundational Complexity/Efficiency classes: Constant, Logarithmic, Linear, Log Linear, Quadratic, Cubic, Exponential, and Factorial",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a7efbd6d-0824-4cd1-b602-8e06585dd921",
+      "label": "Iterative and recursive algorithm analysis",
+      "cog_level": "Understand",
+      "title": "Iterative and recursive algorithm analysis",
+      "description": "Iterative and recursive algorithm analysis: examining algorithms' time and space complexities and comparing their performance under different scenarios",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "37666b66-f026-466b-97b9-b7b644104146",
+      "label": "Recurrence Relations",
+      "cog_level": "Understand",
+      "title": "Recurrence Relations",
+      "description": "Recurrence Relations: including Master Theorem Analysis, Substitution Analysis",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "293b9bfb-2485-49b6-8886-e1adf91ed939",
+      "label": "Tractability and Intractability",
+      "cog_level": "Understand",
+      "title": "Tractability and Intractability",
+      "description": "Tractability and Intractability: the feasibility of efficiently solving computational problems",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e59d37b9-90dd-452b-af9e-b624202715da",
+      "label": "P, NP and NP-C complexity classes",
+      "cog_level": "Understand",
+      "title": "P, NP and NP-C complexity classes",
+      "description": "P, NP and NP-C complexity classes: Hamiltonian Circuit, Knapsack, and SAT problems",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5ac3b246-4ca8-487a-8a20-e4ceff13fa82",
+      "label": "Turing Machine-Based Models of Complexity",
+      "cog_level": "Understand",
+      "title": "Turing Machine-Based Models of Complexity",
+      "description": "Turing Machine-Based Models of Complexity: involve classifications such as P, NP, and NPC complexity",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d8655d14-72cf-4999-9cef-825749eb64fe",
+      "label": "Space Complexity",
+      "cog_level": "Understand",
+      "title": "Space Complexity",
+      "description": "Space Complexity: categorized by classes like NSpace and PSpace, with Savitch's Theorem ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "label": "Fundamental Data Structures and Algorithms",
+      "cog_level": "",
+      "title": "Fundamental Data Structures and Algorithms",
+      "description": "Fundamental Data Structures and Algorithms: including arrays, linked lists, trees, sorting and searching algorithms",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "8aab0f43-5675-48e3-bc97-d6a002c9c0b9",
+      "label": "Abstract Data Types (ADTs)",
+      "cog_level": "Understand",
+      "title": "Abstract Data Types (ADTs)",
+      "description": "Abstract Data Types (ADTs): including Bag, Collection, Dictionary, List, and Set properties",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f838a92d-f23d-433f-9d57-6a11f49b857d",
+      "label": "Arrays: single and multi-dimensional",
+      "cog_level": "Understand",
+      "title": "Arrays: single and multi-dimensional",
+      "description": "Arrays: single and multi-dimensional: Basic data structures used for storing elements",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "55bc4083-6bfa-4ff5-9059-6432e21459f1",
+      "label": "Linear and Binary Search",
+      "cog_level": "Create",
+      "title": "Linear and Binary Search",
+      "description": "Linear and Binary Search: linear search iterates through elements one by one, and binary search halves the search space with each comparison in a sorted array.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "84205971-0f69-4ce4-949e-8b8bed7aa1c0",
+      "label": "Cryptography: AES (SHA-256), RSA",
+      "cog_level": "Understand",
+      "title": "Cryptography: AES (SHA-256), RSA",
+      "description": "Cryptography: AES (SHA-256), RSA: secure encryption and decryption techniques widely used for securing data transmission and storage",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "39dc617c-12d5-4dd4-bc96-e05565889f5c",
+      "label": "Graphs [MF/Graphs and Trees]",
+      "cog_level": "Understand",
+      "title": "Graphs [MF/Graphs and Trees]",
+      "description": "Graphs [MF/Graphs and Trees]: a fundamental data structure",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9e8f9bb2-ba63-4514-8b3c-bff35fbeb5a6",
+      "label": "(un)directed, (a)cyclic, (un)connected, and (un)weighted",
+      "cog_level": "Understand",
+      "title": "(un)directed, (a)cyclic, (un)connected, and (un)weighted",
+      "description": "(un)directed, (a)cyclic, (un)connected, and (un)weighted: Properties describing graphs",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bd1f5213-48fb-46b1-b346-15d1735abbc2",
+      "label": "Adjacency List and Matrix representations",
+      "cog_level": "Understand",
+      "title": "Adjacency List and Matrix representations",
+      "description": "Adjacency List and Matrix representations: Methods used to store and represent graphs in computer memory",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "label": "Graph Algorithms",
+      "cog_level": "Create",
+      "title": "Graph Algorithms",
+      "description": "Graph Algorithms: a set of techniques used to analyze and manipulate graphs",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "34fa62ab-6ee7-45ad-82e8-91136ec9337f",
+      "label": "Breadth-First Search",
+      "cog_level": "Create",
+      "title": "Breadth-First Search",
+      "description": "Breadth-First Search: Connectivity, Shortest-Path",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b0801489-11d3-49f8-aab2-7ac414d70958",
+      "label": "Depth-First Search",
+      "cog_level": "Create",
+      "title": "Depth-First Search",
+      "description": "Depth-First Search: Acyclicity, Connectivity, Topological Sort, Transitive Closure",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8cd27ebc-cc88-4c66-a138-8277de29cc50",
+      "label": "Hamiltonian Circuit",
+      "cog_level": "Create",
+      "title": "Hamiltonian Circuit",
+      "description": "Hamiltonian Circuit: Determines whether a graph contains a Hamiltonian circuit.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "68c8ffca-a41c-47d0-bb66-9390c3e21417",
+      "label": "Minimal Spanning Tree",
+      "cog_level": "Create",
+      "title": "Minimal Spanning Tree",
+      "description": "Minimal Spanning Tree: Prim\u2019s and Kruskal\u2019s algorithms",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f87743b3-1184-4711-adea-610510ef77d7",
+      "label": "Shortest-path",
+      "cog_level": "Create",
+      "title": "Shortest-path",
+      "description": "Shortest-path: Bellman-Ford, Dijkstra\u2019s/Uniform-Cost, Floyd-Warshall",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "100d8ce1-6e9d-405f-bb04-c6b9ae66cbb2",
+      "label": "Transitive Closure",
+      "cog_level": "Create",
+      "title": "Transitive Closure",
+      "description": "Transitive Closure: Warshall\u2019s Algorithm",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "54ee228b-5dac-40f4-8b91-9bad4a14720d",
+      "label": "Hash Tables / Maps",
+      "cog_level": "Understand",
+      "title": "Hash Tables / Maps",
+      "description": "Hash Tables / Maps: data structures that store key-value pairs and enable efficient retrieval and insertion of elements based on their keys",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e0450db0-144f-42ff-be7c-b1296ba51251",
+      "label": "Collision resolution",
+      "cog_level": "Understand",
+      "title": "Collision resolution",
+      "description": "Collision resolution: Techniques used to handle collisions, including Linear/Quadratic Probing, Chaining, and Rehashing",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d5bf9655-06f5-48ae-8f86-b696c690befc",
+      "label": "Linked Lists: single, doubly linked, and circular",
+      "cog_level": "Create",
+      "title": "Linked Lists: single, doubly linked, and circular",
+      "description": "Linked Lists: single, doubly linked, and circular: Represent different variations of linked list data structures",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "06161ee7-ec83-49f6-be67-a88684fbe19b",
+      "label": "Queues, Priority Queues, and Dequeues",
+      "cog_level": "Create",
+      "title": "Queues, Priority Queues, and Dequeues",
+      "description": "Queues, Priority Queues, and Dequeues: Data structures used to manage collections of elements with specific rules for accessing and modifying elements",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "42f5f0be-2827-4f45-9ac8-bebdf847dff4",
+      "label": "Records/Structs and Tuples",
+      "cog_level": "Create",
+      "title": "Records/Structs and Tuples",
+      "description": "Records/Structs and Tuples: Data structures used to manage collections of elements with specific rules for accessing and modifying elements",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "641b3460-3e9a-49d6-a6e9-e943a381ed54",
+      "label": "Stacks",
+      "cog_level": "Create",
+      "title": "Stacks",
+      "description": "Stacks: A data structure that follows last-in, first-out (LIFO) ordering",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3848c4b5-ac2c-490e-b360-f8aa0df1f80d",
+      "label": "Strings",
+      "cog_level": "Create",
+      "title": "Strings",
+      "description": "Strings: String Matching (Boyer-Moore)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1b361b8c-dff6-4dbe-a009-e71fb4731370",
+      "label": "Trees: Binary, n-ary, Search",
+      "cog_level": "Create",
+      "title": "Trees: Binary, n-ary, Search",
+      "description": "Trees: Binary, n-ary, Search: Trees are hierarchical data structures composed of nodes",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "31d7d3a1-acd4-42d2-abf6-5569cedc8ee5",
+      "label": "Depth-First, Breadth-First, Best-First, and Backtracking search",
+      "cog_level": "Create",
+      "title": "Depth-First, Breadth-First, Best-First, and Backtracking search",
+      "description": "Depth-First, Breadth-First, Best-First, and Backtracking search: Different traversal and search algorithms used on trees. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b4ed16cf-de2d-46bc-babb-54e7f144aed4",
+      "label": "Balanced",
+      "cog_level": "Create",
+      "title": "Balanced",
+      "description": "Balanced: 2-3, AVL, B, or Red-Black; Heap and Heapsort",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5c1e6ea3-b6f2-475c-ae9b-5f8b35f67e9a",
+      "label": "Huffman Coding",
+      "cog_level": "Create",
+      "title": "Huffman Coding",
+      "description": "Huffman Coding: A data compression algorithm used to encode data more efficiently by assigning variable-length codes to input characters",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "label": "Sorting Algorithms:",
+      "cog_level": "Create",
+      "title": "Sorting Algorithms:",
+      "description": "Sorting Algorithms:: Includes various techniques such as Selection Sort, Insertion Sort, Quicksort, Merge Sort, Heap Sort, Bucket Sort, Radix Sort, etc.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "860e6c8a-d2a4-4d6c-8dad-d9e6386ebba4",
+      "label": "O(n^2) Sorting",
+      "cog_level": "Create",
+      "title": "O(n^2) Sorting",
+      "description": "O(n^2) Sorting: Selection Sort and Insertion Sort, with a time complexity of O(n^2).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "733d9e31-01c2-4160-9056-42134d4a6900",
+      "label": "O(n log n) Sorting",
+      "cog_level": "Create",
+      "title": "O(n log n) Sorting",
+      "description": "O(n log n) Sorting: Quicksort, Merge Sort, and Heap Sort, with a time complexity of O(n log n).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "43b282b7-5df7-423d-918c-0ce878d9ab1a",
+      "label": "O(n) Fast-Sorting",
+      "cog_level": "Create",
+      "title": "O(n) Fast-Sorting",
+      "description": "O(n) Fast-Sorting: Bucket Sort and Radix Sort, achieving linear time complexity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ff4f6055-6849-4e04-b7aa-e4b0d00fd66c",
+      "label": "Lexicographical Ordering",
+      "cog_level": "Create",
+      "title": "Lexicographical Ordering",
+      "description": "Lexicographical Ordering: Sorting elements based on their lexicographical order, commonly seen in strings or sequences.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "bc0805c9-0c3a-46fe-846e-5069ea4c0df6",
+      "label": "Partial Ordering",
+      "cog_level": "Create",
+      "title": "Partial Ordering",
+      "description": "Partial Ordering: Sorting scenarios where only a partial order is defined, rather than a total order.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f95586a5-e7c4-4599-bb73-52e31e716d6a",
+      "label": "Basic Linear Algebra",
+      "cog_level": "Understand",
+      "title": "Basic Linear Algebra",
+      "description": "Basic Linear Algebra: Fundamental concepts such as vectors, matrices, operations like addition, subtraction, scalar multiplication, dot product, cross product, determinants",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "43fd002b-c513-4dcc-bc37-87a623e00342",
+      "label": "Matrix Multiplication",
+      "cog_level": "Understand",
+      "title": "Matrix Multiplication",
+      "description": "Matrix Multiplication: Strassen\u2019s Matrix Multiplication",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "850ceca4-cf13-4aeb-9ab0-d8db1f585411",
+      "label": "Differential Privacy",
+      "cog_level": "Understand",
+      "title": "Differential Privacy",
+      "description": "Differential Privacy: A framework ensuring statistical privacy by adding noise to data queries",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d0b3f436-2d9a-4a10-960d-3840aebdd1b1",
+      "label": "Invariants (loop, in search algorithms)",
+      "cog_level": "Understand",
+      "title": "Invariants (loop, in search algorithms)",
+      "description": "Invariants (loop, in search algorithms): Conditions that remain true throughout the execution of a loop or search algorithm",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0f235951-6d9c-4820-84ab-56411fb29a14",
+      "label": "Consensus Algorithms",
+      "cog_level": "Understand",
+      "title": "Consensus Algorithms",
+      "description": "Consensus Algorithms: e.g. Blockchain; Protocols enabling distributed systems to agree on a single data value",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b1acd22a-06ff-42d7-8698-d39c8975014e",
+      "label": "Geometric Algorithms",
+      "cog_level": "Understand",
+      "title": "Geometric Algorithms",
+      "description": "Geometric Algorithms: e.g., Graham Scan for Convex Hull; Computational techniques for solving geometric problems",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7abb533f-6189-4a67-8514-5e1ff7e1ce97",
+      "label": "Linear Programming",
+      "cog_level": "Understand",
+      "title": "Linear Programming",
+      "description": "Linear Programming: e.g., Simplex algorithm; Optimization method for maximizing or minimizing a linear objective function subject to linear equality and inequality constraints",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "970a8ac8-4f00-416d-8673-5583c34b538d",
+      "label": "Approximation algorithms",
+      "cog_level": "Understand",
+      "title": "Approximation algorithms",
+      "description": "Approximation algorithms: e.g., for Knapsack, Traveling Salesperson; Techniques for finding near-optimal solutions to NP-hard optimization problems like the Knapsack problem or Traveling Salesperson problem",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e0970beb-7dc5-4a53-a56e-6bf06ad6909e",
+      "label": "Randomized Algorithms",
+      "cog_level": "Understand",
+      "title": "Randomized Algorithms",
+      "description": "Randomized Algorithms: e.g. MaxCut, Balls and Bins; Algorithms that use randomness in their computations to achieve efficiency or improve accuracy",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "label": "Computational Models",
+      "cog_level": "",
+      "title": "Computational Models",
+      "description": "Computational Models: Formal representations used to describe, analyze, and simulate computational processes and systems. ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "c8f2b656-9237-448d-8cbb-9db932293ef6",
+      "label": "Formal Automata, Languages and Grammars, Chomsky Hierarchy",
+      "cog_level": "Understand",
+      "title": "Formal Automata, Languages and Grammars, Chomsky Hierarchy",
+      "description": "Formal Automata, Languages and Grammars, Chomsky Hierarchy: A classification system for languages and grammars based on their expressive power, from regular to recursively enumerable.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "45fa6f72-859f-4f67-999e-2f81ac593aa9",
+      "label": "Deterministic versus Nondeterministic equivalencies",
+      "cog_level": "Understand",
+      "title": "Deterministic versus Nondeterministic equivalencies",
+      "description": "Deterministic versus Nondeterministic equivalencies: Comparison of automata and grammars that either guarantee unique outcomes or allow multiple possible outcomes, respectively.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c92428f0-d60f-4c03-850b-3c0e4f01ef99",
+      "label": "Relations among formal automata, languages, and grammars",
+      "cog_level": "Understand",
+      "title": "Relations among formal automata, languages, and grammars",
+      "description": "Relations among formal automata, languages, and grammars: Understanding the connections between different models of computation.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "79862a1c-595c-4777-8f28-26e91ebe795d",
+      "label": "Finite State, Regular Grammar/Language",
+      "cog_level": "Understand",
+      "title": "Finite State, Regular Grammar/Language",
+      "description": "Finite State, Regular Grammar/Language: Simplest form of automata and grammar, described by regular expressions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7c0d4a23-8c24-47a4-918a-8c7bcae3e21f",
+      "label": "Regular Expressions",
+      "cog_level": "Understand",
+      "title": "Regular Expressions",
+      "description": "Regular Expressions: Patterns used to define regular languages and describe text search patterns.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2897b264-8d89-4c27-afa8-bc14d01d6fc8",
+      "label": "Pushdown, Context-Free Grammar/Languages",
+      "cog_level": "Understand",
+      "title": "Pushdown, Context-Free Grammar/Languages",
+      "description": "Pushdown, Context-Free Grammar/Languages: Automata and grammars with a stack-based memory, allowing for context-free languages.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a2a8acbb-a42e-409a-9e42-b11051cc6cdc",
+      "label": "Turing Machine, Recursively Enumerable",
+      "cog_level": "Understand",
+      "title": "Turing Machine, Recursively Enumerable",
+      "description": "Turing Machine, Recursively Enumerable: Universal model of computation capable of solving any computable problem.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ea357570-68b8-4e68-a605-2a2301c060d2",
+      "label": "Decidability, Computability, Halting problem The Church-Turing Thesis",
+      "cog_level": "Understand",
+      "title": "Decidability, Computability, Halting problem The Church-Turing Thesis",
+      "description": "Decidability, Computability, Halting problem The Church-Turing Thesis: These concepts all revolve around the fundamental properties and limitations of computation. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "20536a6f-184d-49a4-b828-a16a998a7155",
+      "label": "Finite State, Regular Grammars & Expressions",
+      "cog_level": "Create",
+      "title": "Finite State, Regular Grammars & Expressions",
+      "description": "Finite State, Regular Grammars & Expressions: Representations of languages or patterns with finite state machines",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "24ac1319-4e1d-443a-9b26-2776582e982a",
+      "label": "Pushdown, Context-Free Grammars",
+      "cog_level": "Create",
+      "title": "Pushdown, Context-Free Grammars",
+      "description": "Pushdown, Context-Free Grammars: used to describe and analyze languages and patterns with nested structures. ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "89ac6d0a-c579-48d5-887d-865e02e6c6f5",
+      "label": "Equivalent Models of Computation",
+      "cog_level": "Understand",
+      "title": "Equivalent Models of Computation",
+      "description": "Equivalent Models of Computation: Various formalisms such as Turing Machine variations, Lambda Calculus, and Mu-Recursive Functions",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "24015d80-989f-4faf-abcf-3c0aeb2ea227",
+      "label": "Turing Machine variations",
+      "cog_level": "Understand",
+      "title": "Turing Machine variations",
+      "description": "Turing Machine variations: Diverse extensions and modifications of the classical Turing Machine model",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6b725ce9-20e4-423a-a091-b80c68aa0aec",
+      "label": "Lambda Calculus",
+      "cog_level": "Understand",
+      "title": "Lambda Calculus",
+      "description": "Lambda Calculus: A formal system for expressing computation based on function abstraction and application",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "10e4617a-63fb-44a7-8545-497ab53acaf1",
+      "label": "Mu-Recursive Functions",
+      "cog_level": "Understand",
+      "title": "Mu-Recursive Functions",
+      "description": "Mu-Recursive Functions: A formal system for defining computable functions",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "8b0f62e4-5254-4864-975c-75cf6b7a4480",
+      "label": "Pumping Lemma Proofs",
+      "cog_level": "Understand",
+      "title": "Pumping Lemma Proofs",
+      "description": "Pumping Lemma Proofs: Techniques used in formal language theory to demonstrate that certain languages are not regular",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6c7c1a2d-b31d-40be-a2dd-f14504ad1358",
+      "label": "Finite State and Pushdown Automata",
+      "cog_level": "Understand",
+      "title": "Finite State and Pushdown Automata",
+      "description": "Finite State and Pushdown Automata: Formal models of computation used to recognize and process languages",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e9e5ff9c-0eb7-42e6-86b1-e68cceca1e59",
+      "label": "Decidability",
+      "cog_level": "Understand",
+      "title": "Decidability",
+      "description": "Decidability: The property of problems or languages for which an algorithmic procedure exists to determine membership or solve instances",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3d79ca25-6757-420d-aa33-06b6b31235f4",
+      "label": "Arithmetization",
+      "cog_level": "Understand",
+      "title": "Arithmetization",
+      "description": "Arithmetization: The process of encoding logical or mathematical statements into arithmetic expressions",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "06b9849a-76fd-42bc-b078-82b8a99700ad",
+      "label": "Diagonalization",
+      "cog_level": "Understand",
+      "title": "Diagonalization",
+      "description": "Diagonalization: A proof technique used to show that certain sets or languages cannot be enumerated or computed",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e666076e-d312-4a29-aefe-5d5789d7ccf4",
+      "label": "Reducibility",
+      "cog_level": "Understand",
+      "title": "Reducibility",
+      "description": "Reducibility: The concept of transforming one computational problem into another in such a way that a solution to the transformed problem can be used to solve the original problem",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "366040f2-bd6e-450e-b55f-17fc23e61354",
+      "label": "Time Complexity based on Turing Machine",
+      "cog_level": "Understand",
+      "title": "Time Complexity based on Turing Machine",
+      "description": "Time Complexity based on Turing Machine: Analyzing the efficiency of algorithms by measuring the number of computational steps required for a Turing Machine to solve a problem",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "19db07ef-84a9-40e1-a81f-6b2c81c2c4f5",
+      "label": "Space Complexity",
+      "cog_level": "Understand",
+      "title": "Space Complexity",
+      "description": "Space Complexity: PSPACE, Savitch\u2019s Theorem",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "047b87ad-073f-46e1-b204-d4f186c88fb1",
+      "label": "Quantum Computing Model (not algorithms)",
+      "cog_level": "Understand",
+      "title": "Quantum Computing Model (not algorithms)",
+      "description": "Quantum Computing Model (not algorithms): Theoretical frameworks describing computation using principles of quantum mechanics",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b84ecad4-9374-4162-bd68-b117c5507554",
+      "label": "Concurrent Systems ",
+      "cog_level": "Understand",
+      "title": "Concurrent Systems ",
+      "description": "Concurrent Systems : (e.g., non-termination, non-determinism, \u201cthread\u201d interference)",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "label": "Algorithms and Society",
+      "cog_level": "Understand",
+      "title": "Algorithms and Society",
+      "description": "Algorithms and Society: The intersection of computer algorithms and their impact on various aspects of society, including ethics, privacy, economy, politics, and culture.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "0f5f9190-9069-4ada-85e1-1556818ac4f3",
+      "label": "Context-Aware Computing",
+      "cog_level": "Understand",
+      "title": "Context-Aware Computing",
+      "description": "Context-Aware Computing: Systems that adapt behavior based on user context, like location or activity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "133ef452-cc2b-4476-8d9d-a5385be0e68e",
+      "label": "Social, Ethical, and Secure Algorithms",
+      "cog_level": "Understand",
+      "title": "Social, Ethical, and Secure Algorithms",
+      "description": "Social, Ethical, and Secure Algorithms: Algorithms addressing social behavior, ethical considerations, and security measures.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "20e6f4f8-9d90-42e0-bec6-a367911d7bf3",
+      "label": "Differential Privacy",
+      "cog_level": "Understand",
+      "title": "Differential Privacy",
+      "description": "Differential Privacy: Protecting individual privacy by ensuring data analysis does not reveal personal information.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "54240c21-045b-4ea7-96e9-846dc75f98ac",
+      "label": "Algorithmic Fairness [cross-reference AI]",
+      "cog_level": "Understand",
+      "title": "Algorithmic Fairness [cross-reference AI]",
+      "description": "Algorithmic Fairness [cross-reference AI]: Designing algorithms that do not discriminate against individuals or groups based on protected attributes.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "49bd3aeb-5e6f-4256-9bfd-f65236c1041a",
+      "label": "Accountability/Transparency",
+      "cog_level": "Understand",
+      "title": "Accountability/Transparency",
+      "description": "Accountability/Transparency: Holding individuals or organizations responsible and ensuring openness in algorithmic decisions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    }
+  ],
+  "edges": [
+    {
+      "from": "b969a8ba-8b2a-4411-80f5-baa7537967cc",
+      "to": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "dee96240-8084-4313-9ffa-f03e814c923d",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "67d03c7b-5beb-4963-af2e-d5f3adc32626",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "0b14b56a-d22e-421c-8bea-da899a5c76b8",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "2865ac9c-a801-48af-a75a-60fdc36aef20",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "498f1655-b7d4-451d-9689-bbcefde9dc5d",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "2294046b-b926-4d02-b892-71723e713a12",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "ae4bbb01-2390-403d-b2b3-80ff38a37775",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "fa99c2d4-827b-4e5d-b75c-47399bc9b3da",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "202d40fc-5bea-4d12-a8ee-9cffb1f1b43c",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "66b1f4c6-e073-42e4-8747-6f7196f4cf63",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "89a70f0c-3543-4969-ac45-aed852c307c8",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "32be91a1-2add-423e-aade-4db1507ef7a1",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "c61c0e44-721b-4fbc-ad69-4bb9244a1f77",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "55e080b4-cd85-403e-8389-1b257c97541f",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "f95e1b45-53e0-48c5-8ae1-2ecba6247d6b",
+      "title": ""
+    },
+    {
+      "from": "391feb61-3583-43fd-ac4c-a7a4ef9cf2da",
+      "to": "328cb642-a680-4ee8-8596-bf376b08a58c",
+      "title": ""
+    },
+    {
+      "from": "b969a8ba-8b2a-4411-80f5-baa7537967cc",
+      "to": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "title": ""
+    },
+    {
+      "from": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "to": "7a32fa67-4851-409c-a887-6983e3439bf9",
+      "title": ""
+    },
+    {
+      "from": "7a32fa67-4851-409c-a887-6983e3439bf9",
+      "to": "4f6aa317-8f01-4529-a694-e6f2b791906a",
+      "title": ""
+    },
+    {
+      "from": "7a32fa67-4851-409c-a887-6983e3439bf9",
+      "to": "3cd7e7e5-1753-44f4-a12b-5d0e1092c2f2",
+      "title": ""
+    },
+    {
+      "from": "7a32fa67-4851-409c-a887-6983e3439bf9",
+      "to": "5ebcdf85-7e8d-4960-a209-352e5121a043",
+      "title": ""
+    },
+    {
+      "from": "7a32fa67-4851-409c-a887-6983e3439bf9",
+      "to": "32ca611c-bed4-459f-96da-77924489fbc8",
+      "title": ""
+    },
+    {
+      "from": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "to": "8b473edc-fb87-4a91-b567-74308b78e32e",
+      "title": ""
+    },
+    {
+      "from": "8b473edc-fb87-4a91-b567-74308b78e32e",
+      "to": "4671863b-2842-4346-bbe7-5bfd07e5efa1",
+      "title": ""
+    },
+    {
+      "from": "8b473edc-fb87-4a91-b567-74308b78e32e",
+      "to": "b691edd3-2415-4125-865d-ff6917d0ebf1",
+      "title": ""
+    },
+    {
+      "from": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "to": "a7efbd6d-0824-4cd1-b602-8e06585dd921",
+      "title": ""
+    },
+    {
+      "from": "a7efbd6d-0824-4cd1-b602-8e06585dd921",
+      "to": "37666b66-f026-466b-97b9-b7b644104146",
+      "title": ""
+    },
+    {
+      "from": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "to": "293b9bfb-2485-49b6-8886-e1adf91ed939",
+      "title": ""
+    },
+    {
+      "from": "293b9bfb-2485-49b6-8886-e1adf91ed939",
+      "to": "e59d37b9-90dd-452b-af9e-b624202715da",
+      "title": ""
+    },
+    {
+      "from": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "to": "5ac3b246-4ca8-487a-8a20-e4ceff13fa82",
+      "title": ""
+    },
+    {
+      "from": "56cdc92f-fb4e-4722-bdd4-2352d494c796",
+      "to": "d8655d14-72cf-4999-9cef-825749eb64fe",
+      "title": ""
+    },
+    {
+      "from": "b969a8ba-8b2a-4411-80f5-baa7537967cc",
+      "to": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "8aab0f43-5675-48e3-bc97-d6a002c9c0b9",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "f838a92d-f23d-433f-9d57-6a11f49b857d",
+      "title": ""
+    },
+    {
+      "from": "f838a92d-f23d-433f-9d57-6a11f49b857d",
+      "to": "55bc4083-6bfa-4ff5-9059-6432e21459f1",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "84205971-0f69-4ce4-949e-8b8bed7aa1c0",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "39dc617c-12d5-4dd4-bc96-e05565889f5c",
+      "title": ""
+    },
+    {
+      "from": "39dc617c-12d5-4dd4-bc96-e05565889f5c",
+      "to": "9e8f9bb2-ba63-4514-8b3c-bff35fbeb5a6",
+      "title": ""
+    },
+    {
+      "from": "39dc617c-12d5-4dd4-bc96-e05565889f5c",
+      "to": "bd1f5213-48fb-46b1-b346-15d1735abbc2",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "title": ""
+    },
+    {
+      "from": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "to": "34fa62ab-6ee7-45ad-82e8-91136ec9337f",
+      "title": ""
+    },
+    {
+      "from": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "to": "b0801489-11d3-49f8-aab2-7ac414d70958",
+      "title": ""
+    },
+    {
+      "from": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "to": "8cd27ebc-cc88-4c66-a138-8277de29cc50",
+      "title": ""
+    },
+    {
+      "from": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "to": "68c8ffca-a41c-47d0-bb66-9390c3e21417",
+      "title": ""
+    },
+    {
+      "from": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "to": "f87743b3-1184-4711-adea-610510ef77d7",
+      "title": ""
+    },
+    {
+      "from": "72b7d63c-22f4-4abb-8ef0-6fcd5ec8c353",
+      "to": "100d8ce1-6e9d-405f-bb04-c6b9ae66cbb2",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "54ee228b-5dac-40f4-8b91-9bad4a14720d",
+      "title": ""
+    },
+    {
+      "from": "54ee228b-5dac-40f4-8b91-9bad4a14720d",
+      "to": "e0450db0-144f-42ff-be7c-b1296ba51251",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "d5bf9655-06f5-48ae-8f86-b696c690befc",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "06161ee7-ec83-49f6-be67-a88684fbe19b",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "42f5f0be-2827-4f45-9ac8-bebdf847dff4",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "641b3460-3e9a-49d6-a6e9-e943a381ed54",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "3848c4b5-ac2c-490e-b360-f8aa0df1f80d",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "1b361b8c-dff6-4dbe-a009-e71fb4731370",
+      "title": ""
+    },
+    {
+      "from": "1b361b8c-dff6-4dbe-a009-e71fb4731370",
+      "to": "31d7d3a1-acd4-42d2-abf6-5569cedc8ee5",
+      "title": ""
+    },
+    {
+      "from": "1b361b8c-dff6-4dbe-a009-e71fb4731370",
+      "to": "b4ed16cf-de2d-46bc-babb-54e7f144aed4",
+      "title": ""
+    },
+    {
+      "from": "1b361b8c-dff6-4dbe-a009-e71fb4731370",
+      "to": "5c1e6ea3-b6f2-475c-ae9b-5f8b35f67e9a",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "title": ""
+    },
+    {
+      "from": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "to": "860e6c8a-d2a4-4d6c-8dad-d9e6386ebba4",
+      "title": ""
+    },
+    {
+      "from": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "to": "733d9e31-01c2-4160-9056-42134d4a6900",
+      "title": ""
+    },
+    {
+      "from": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "to": "43b282b7-5df7-423d-918c-0ce878d9ab1a",
+      "title": ""
+    },
+    {
+      "from": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "to": "ff4f6055-6849-4e04-b7aa-e4b0d00fd66c",
+      "title": ""
+    },
+    {
+      "from": "f5b22dd4-f1b9-404f-9b26-33770c72be69",
+      "to": "bc0805c9-0c3a-46fe-846e-5069ea4c0df6",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "f95586a5-e7c4-4599-bb73-52e31e716d6a",
+      "title": ""
+    },
+    {
+      "from": "f95586a5-e7c4-4599-bb73-52e31e716d6a",
+      "to": "43fd002b-c513-4dcc-bc37-87a623e00342",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "850ceca4-cf13-4aeb-9ab0-d8db1f585411",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "d0b3f436-2d9a-4a10-960d-3840aebdd1b1",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "0f235951-6d9c-4820-84ab-56411fb29a14",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "b1acd22a-06ff-42d7-8698-d39c8975014e",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "7abb533f-6189-4a67-8514-5e1ff7e1ce97",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "970a8ac8-4f00-416d-8673-5583c34b538d",
+      "title": ""
+    },
+    {
+      "from": "60248d75-54b9-4eaa-bbcc-59ce3f3b0ed2",
+      "to": "e0970beb-7dc5-4a53-a56e-6bf06ad6909e",
+      "title": ""
+    },
+    {
+      "from": "b969a8ba-8b2a-4411-80f5-baa7537967cc",
+      "to": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "c8f2b656-9237-448d-8cbb-9db932293ef6",
+      "title": ""
+    },
+    {
+      "from": "c8f2b656-9237-448d-8cbb-9db932293ef6",
+      "to": "45fa6f72-859f-4f67-999e-2f81ac593aa9",
+      "title": ""
+    },
+    {
+      "from": "c8f2b656-9237-448d-8cbb-9db932293ef6",
+      "to": "c92428f0-d60f-4c03-850b-3c0e4f01ef99",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "79862a1c-595c-4777-8f28-26e91ebe795d",
+      "title": ""
+    },
+    {
+      "from": "79862a1c-595c-4777-8f28-26e91ebe795d",
+      "to": "7c0d4a23-8c24-47a4-918a-8c7bcae3e21f",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "2897b264-8d89-4c27-afa8-bc14d01d6fc8",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "a2a8acbb-a42e-409a-9e42-b11051cc6cdc",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "ea357570-68b8-4e68-a605-2a2301c060d2",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "20536a6f-184d-49a4-b828-a16a998a7155",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "24ac1319-4e1d-443a-9b26-2776582e982a",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "89ac6d0a-c579-48d5-887d-865e02e6c6f5",
+      "title": ""
+    },
+    {
+      "from": "89ac6d0a-c579-48d5-887d-865e02e6c6f5",
+      "to": "24015d80-989f-4faf-abcf-3c0aeb2ea227",
+      "title": ""
+    },
+    {
+      "from": "89ac6d0a-c579-48d5-887d-865e02e6c6f5",
+      "to": "6b725ce9-20e4-423a-a091-b80c68aa0aec",
+      "title": ""
+    },
+    {
+      "from": "89ac6d0a-c579-48d5-887d-865e02e6c6f5",
+      "to": "10e4617a-63fb-44a7-8545-497ab53acaf1",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "8b0f62e4-5254-4864-975c-75cf6b7a4480",
+      "title": ""
+    },
+    {
+      "from": "8b0f62e4-5254-4864-975c-75cf6b7a4480",
+      "to": "6c7c1a2d-b31d-40be-a2dd-f14504ad1358",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "e9e5ff9c-0eb7-42e6-86b1-e68cceca1e59",
+      "title": ""
+    },
+    {
+      "from": "e9e5ff9c-0eb7-42e6-86b1-e68cceca1e59",
+      "to": "3d79ca25-6757-420d-aa33-06b6b31235f4",
+      "title": ""
+    },
+    {
+      "from": "e9e5ff9c-0eb7-42e6-86b1-e68cceca1e59",
+      "to": "06b9849a-76fd-42bc-b078-82b8a99700ad",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "e666076e-d312-4a29-aefe-5d5789d7ccf4",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "366040f2-bd6e-450e-b55f-17fc23e61354",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "19db07ef-84a9-40e1-a81f-6b2c81c2c4f5",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "047b87ad-073f-46e1-b204-d4f186c88fb1",
+      "title": ""
+    },
+    {
+      "from": "0561ecc3-6f5a-43e4-9317-788d442fb2a1",
+      "to": "b84ecad4-9374-4162-bd68-b117c5507554",
+      "title": ""
+    },
+    {
+      "from": "b969a8ba-8b2a-4411-80f5-baa7537967cc",
+      "to": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "title": ""
+    },
+    {
+      "from": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "to": "0f5f9190-9069-4ada-85e1-1556818ac4f3",
+      "title": ""
+    },
+    {
+      "from": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "to": "133ef452-cc2b-4476-8d9d-a5385be0e68e",
+      "title": ""
+    },
+    {
+      "from": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "to": "20e6f4f8-9d90-42e0-bec6-a367911d7bf3",
+      "title": ""
+    },
+    {
+      "from": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "to": "54240c21-045b-4ea7-96e9-846dc75f98ac",
+      "title": ""
+    },
+    {
+      "from": "2948a13f-4ab3-49f3-963d-c7322e574bf7",
+      "to": "49bd3aeb-5e6f-4256-9bfd-f65236c1041a",
+      "title": ""
+    }
+  ],
+  "courseId": "35"
+}

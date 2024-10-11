@@ -2,16 +2,7 @@
 {% load static %}
 {% block content %}
 
-
-<style type="text/css">
-#mynetwork {
-        width: 100%;
-        height: 100%;
-        border: 0px solid lightgray;
-      }
-    
-</style>
-
+<link rel="stylesheet" type="text/css" href="{% static 'css/legend.css' %}">
 
 <main >
   <form class="form-inline" style="display: flex; align-items: center; justify-content: center;">
@@ -30,8 +21,56 @@
       Show Graph
     </button>
   </form>
+  <hr>
 
 
+
+
+<!-- legend part  -->
+<div id="legend-container">
+    <!-- color legend -->
+    <div class="legend-item">
+        <div class="color-box" style="background-color: #b8bceb;"></div>
+        <span>Create</span>
+    </div>
+    <div class="legend-item">
+        <div class="color-box" style="background-color: #a3ddf5;"></div>
+        <span>Evaluate</span>
+    </div>
+    <div class="legend-item">
+        <div class="color-box" style="background-color: #b0e3bf;"></div>
+        <span>Analyze</span>
+    </div>
+    <div class="legend-item">
+        <div class="color-box" style="background-color: #FDDA0D;"></div>
+        <span>Apply</span>
+    </div>
+    <div class="legend-item">
+        <div class="color-box" style="background-color: #ffd2af;"></div>
+        <span>Understand</span>
+    </div>
+    <div class="legend-item">
+        <div class="color-box" style="background-color: #faadb0;"></div>
+        <span>Remember</span>
+    </div>
+
+    <!-- shape legend -->
+    <div class="legend-item">
+        <div class="shape-box circle" ></div>
+        <span>Course</span>
+    </div>
+    <div class="legend-item">
+        <div class="shape-box oval"></div>
+        <span>Knowledge Unit</span>
+    </div>
+    <div class="legend-item">
+        <div class="shape-box round-rect"></div>
+        <span>Knowledge Point / Sub Knowledge Point</span>
+    </div>
+</div>
+
+
+<!-- network part  -->
 <div id="mynetwork" style="display: flex; align-items: center; justify-content: center;">
   <span id="usage-hint" style="color: rgb(147, 145, 145);">Please choose a course and click the button to see the graph </span>
 </div>
@@ -44,6 +83,44 @@
 
 var uvaCourses = {{ uva_courses|safe }};
 var acmCourses = {{ acm_courses|safe }};
+
+var color_mapping = {
+    "create": "#b8bceb",      // purple
+    "evaluate": "#a3ddf5",    // blue
+    "analyze": "#b0e3bf",     // green
+    "apply": "#FDDA0D",       // yellow
+    "understand": "#ffd2af",  // orange
+    "remember": "#faadb0"     // red
+};
+
+
+$(document).ready(function() {
+
+$("#show-Graph-Button").click(function() {
+  $("#usage-hint").hide(); //hide the hint text
+  var selectedCourseId = $("#coursesList").val();
+
+  $.ajax({
+    url: '{% url "show-course-graph" %}', 
+    type: "POST",
+    data:{
+      courseId: selectedCourseId, 
+      csrfmiddlewaretoken: "{{csrf_token}}",
+    },
+    success: function(response) {
+        var dataset_nodes = response.nodes;
+        var dataset_edges = response.edges;
+        displayGraph(dataset_nodes, dataset_edges);
+        console.log(dataset_nodes)
+
+    },
+    error: function(xhr, status, error) {
+    }
+  });
+});
+});
+
+
 
 // show course name dynamically
 document.addEventListener("DOMContentLoaded", function() {
@@ -70,294 +147,79 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-  $(document).ready(function() {
-
-    $("#show-Graph-Button").click(function() {
-      $("#usage-hint").hide(); //hide the hint text
-      var selectedCourseId = $("#coursesList").val();
-      
-
-      $.ajax({
   
-        url: '{% url "show-course-graph" %}', 
-        type: "POST",
-        data:{
+function displayGraph(new_nodes, new_edges) {
 
-          course: selectedCourseId, 
-          csrfmiddlewaretoken: "{{csrf_token}}",
+    var nodes = new vis.DataSet(new_nodes);
+    var edges = new vis.DataSet(new_edges);
 
+    applyNodeColors(nodes);
+
+    // Instantiate our network object.
+    var container = document.getElementById("mynetwork");
+    var data = {
+      nodes: nodes,
+      edges: edges,
+    };
+
+    
+    var options = {
+      nodes: {
+        shape: "dot",
+        borderWidth: 2,
+        shadow: true,
+        size: 15,
+        color: {
+          border: "#7D7C7C",
+          background: "#D3D3D3",
         },
-        success: function(response) {
-            
-            var dataset_nodes = response.nodes;
-            var dataset_edges = response.edges;
-            displayGraph(dataset_nodes, dataset_edges);
-
+        font: { color: "black" },
+        shapeProperties: {
+          useBorderWithImage: true,
         },
-        error: function(xhr, status, error) {
-        }
-      });
-    });
-  });
-  
+        widthConstraint: {
+          maximum: 200,
+        },
+        },
 
-  
-  function displayGraph(new_nodes, new_edges) {
-  
-      var nodes = new vis.DataSet(new_nodes);
-      var edges = new vis.DataSet(new_edges);
-
-      color_mapping = {
-            "create": "#b8bceb",      // purple
-            "evaluate": "#a3ddf5",    // blue
-            "analyze": "#b0e3bf",     // green
-            "apply": "#fefaa3",       // yellow
-            "understand": "#ffd2af",  // orange
-            "remember": "#faadb0"     // red
-        }
-
-      nodes.forEach(function(node) {
-          var cogLevel = node.cog_level.toLowerCase();
-          if (node.shape !== 'circle' && color_mapping.hasOwnProperty(cogLevel)) {
-              node.color = { background: color_mapping[cogLevel], border: color_mapping[cogLevel] };
-          } else if (node.cog_level === ""){
-              node.color = { background: "#D3D3D3", border: "#7D7C7C"};
-          }
-
-          node.title = '(' + node.cog_level + ') ' + node.title;
-          if (node.shape === 'circle') {
-              node.size = 80;
-              node.color = { background: "#D3D3D3", border: "#7D7C7C" };
-          }
-      });
-
-      // Cut text and add ellipses
-      nodes.forEach(function(node) {
-          var maxLength = 20; 
-          if (node.label.length > maxLength) {
-              node.label = node.label.substring(0, maxLength) + '...';
-          }
-      });
-
-      // Instantiate our network object.
-      var container = document.getElementById("mynetwork");
-      var data = {
-        nodes: nodes,
-        edges: edges,
-      };
-
-      
-      var options = {
-        nodes: {
-          shape: "dot",
-          borderWidth: 2,
+        edges: {
+          width: 2,
           shadow: true,
-          size: 15,
-          color: {
-            border: "#7D7C7C",
-            background: "#D3D3D3",
-          },
-          font: { color: "black" },
-          shapeProperties: {
-            useBorderWithImage: true,
-          },
-          },
-          edges: {
-            width: 2,
-            shadow: true,
-          },
-
-          physics: {
-            enabled: true,
-            // barnesHut: {
-            //     avoidOverlap: 0.5, 
-            //     gravitationalConstant: -1200
-            // },
-            // stabilization: { iterations: 1500 },
-          },
-
-          interaction: {
-            navigationButtons: true,
-            keyboard: true,
-          },
-          layout: {
-            improvedLayout: false,
-            randomSeed: 2
-          },
-
-          groups: {
-            circle: {
-              shape: "circle",
-              color: "#F0F0F0", 
-            },
-            box: {
-              shape: "box",
-              color: "#F0F0F0", 
-            },
-            ellipse: {
-              shape: "ellipse",
-              color: "#F0F0F0", 
-            },
-            square: {
-              shape: "square",
-              color: "#F0F0F0", 
-            },
-            diamond: {
-              shape: "diamond",
-              color: "#F0F0F0", 
-            },
-
-
-            create: {
-            shape: "dot",
-            color: "#b8bceb", // orange
-            },
-            evaluate: {
-              shape: "dot",
-              color: "#a3ddf5", // blue
-            },
-            analyze: {
-              shape: "dot",
-              color: "#b0e3bf", // purple
-            },
-            apply: {
-              shape: "dot",
-              color: "#fefaa3", // red
-            },
-            understand: {
-              shape: "dot",
-              color: "#ffd2af", // green
-            },
-            remember: {
-              shape: "dot",
-              color: "#faadb0", // green
-            },
         },
 
+        physics: {
+          enabled: true,
+        },
 
-      };
+        interaction: {
+          navigationButtons: true,
+          keyboard: true,
+        },
+        layout: {
+          improvedLayout: false,
+          randomSeed: 2
+        },
 
-      network = new vis.Network(container, data, options);
-      var x = -mynetwork.clientWidth / 2 - 600;
-      var x1 = -mynetwork.clientWidth / 2 - 500;
-      var y = -mynetwork.clientHeight / 2 + 50;
-      var step = 70;
-      //legend for shape
-      nodes.add({
-        id: 1000,
-        x: x,
-        y: y,
-        label: "course",
-        group: "circle",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1001,
-        x: x,
-        y: y + step,
-        label: "chapter",
-        group: "box",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1002,
-        x: x,
-        y: y + 2 * step,
-        label: "section",
-        group: "ellipse",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1003,
-        x: x,
-        y: y + 3 * step,
-        label: "unit",
-        group: "square",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1004,
-        x: x,
-        y: y + 4 * step,
-        label: "sub-unit",
-        group: "diamond",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
+    };
+
+    network = new vis.Network(container, data, options);
+
+  }
 
 
-      //legend for color 
-      nodes.add({
-        id: 1100,
-        x: x1,
-        y: y,
-        label: "create",
-        group: "create",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1101,
-        x: x1,
-        y: y + step,
-        label: "evaluate",
-        group: "evaluate",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1102,
-        x: x1,
-        y: y + 2 * step,
-        label: "analyze",
-        group: "analyze",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1103,
-        x: x1,
-        y: y + 3 * step,
-        label: "apply",
-        group: "apply",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1104,
-        x: x1,
-        y: y + 4 * step,
-        label: "understand",
-        group: "understand",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-      nodes.add({
-        id: 1105,
-        x: x1,
-        y: y + 5 * step,
-        label: "remember",
-        group: "remember",
-        value: 1,
-        fixed: true,
-        physics: false,
-      });
-
-    }
+  
+// Function to apply colors based on cognitive level
+function applyNodeColors(nodes) {
+    nodes.forEach(function(node) {
+        var cogLevel = node.cog_level ? node.cog_level.toLowerCase() : "";
+        if (color_mapping.hasOwnProperty(cogLevel)) {
+            node.color = { background: color_mapping[cogLevel], border: color_mapping[cogLevel] };
+        } else if (cogLevel === "") {
+            node.color = { background: "#D3D3D3", border: "#7D7C7C" }; // Gray for empty cog_level
+        }
+        nodes.update(node); // Update the node with the new color
+    });
+}
 </script>
 
 

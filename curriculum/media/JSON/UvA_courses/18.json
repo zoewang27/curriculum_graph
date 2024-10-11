@@ -1,793 +1,793 @@
 {
   "nodes": [
     {
-      "id": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
+      "id": "d6c206dd-521c-45b9-9767-e980ac6832a6",
       "label": "Computational Science",
-      "shape": "circle",
       "cog_level": "Understand",
       "title": "Computational Science",
       "description": "Computational Science: ",
-      "layer": 0,
+      "node_type": "course",
+      "shape": "circle",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "35cc12d6-12f1-49dc-b6aa-e1c26a374ae9",
+      "id": "cff6e87c-18ae-4804-8054-6388a7e1d301",
       "label": "Introduction",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "Introduction",
       "description": "Introduction: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "f5e2ffe4-50ed-4672-b843-509777e5cbd5",
+      "id": "2f0a20c2-3f5f-4331-bcf2-03c0b71ae488",
       "label": "The 3rd pillar of science",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "The 3rd pillar of science",
       "description": "The 3rd pillar of science: The 3rd pillar of science: Refers to computer simulation as a foundational tool in scientific inquiry, alongside theory and experimentation.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "3ba86f34-b9a2-419b-ad66-372b63ab20de",
+      "id": "cbcb519e-8ac5-4860-a213-3f6e81626b0a",
       "label": "System, experiment, model, simulation",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "System, experiment, model, simulation",
       "description": "System, experiment, model, simulation: System, experiment, model, simulation: Concepts central to the scientific process, where systems are studied through experiments, modeled, and simulated to gain insights.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "49a9c511-fa25-4a1c-9c65-de84dd5e1096",
+      "id": "0b6d0150-fad1-47ac-a281-c0cd2b10aa70",
       "label": "Validation and verification",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Validation and verification",
       "description": "Validation and verification: Validation and verification: Processes for ensuring that simulation models accurately represent the real-world systems they aim to simulate.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "6e681fb9-7954-47ce-8777-715e920431b9",
+      "id": "ded452cd-5398-4203-ad40-357f768cb76f",
       "label": "Types of models",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Types of models",
       "description": "Types of models: Types of models: Includes mathematical models, physical models, conceptual models, and computational models, each serving different purposes in scientific inquiry and engineering.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "ec60104f-bea3-4756-9738-f52ec465dbfb",
+      "id": "2e0437cc-1355-4475-9a91-f27edc3b2844",
       "label": "Cellular Automata",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "Cellular Automata",
       "description": "Cellular Automata: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "5f3c47fd-26a0-457c-9f5e-7228e22de980",
+      "id": "ec95fc31-540c-48f9-afb6-4a4d9fa2e9e8",
       "label": "Cellular Automata Introduction",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Cellular Automata Introduction",
       "description": "Cellular Automata Introduction: Cellular Automata Introduction: A computational model consisting of a grid of cells, each in a certain state, with their states evolving over discrete time steps based on predefined rules.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "0a982e04-e556-46bb-8535-00b27aac421e",
+      "id": "f1991c69-ea61-43b3-a852-fae60dcd570a",
       "label": "Wolfram classification",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Wolfram classification",
       "description": "Wolfram classification: Wolfram classification: Stephen Wolfram's classification of cellular automata into four classes based on their behavior, ranging from simple and predictable to complex and unpredictable.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "b1f56125-f1f0-42d2-8c83-c93a8518619d",
+      "id": "d4acddcb-d7c3-4089-823b-6a8acc0530cc",
       "label": "Transients and cycles",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Transients and cycles",
       "description": "Transients and cycles: Transients and cycles: Temporary states that occur during the evolution of cellular automata before reaching a stable configuration or periodic behavior.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "2f859e9c-8e70-497d-9795-8f590c7e12a6",
+      "id": "987a5b47-b81b-4cdb-acba-fe31c6f8a964",
       "label": "CA quantify complexity",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "CA quantify complexity",
       "description": "CA quantify complexity: CA quantify complexity: Cellular Automata (CA) quantify complexity through various measures such as entropy, fractal dimension, and computational universality.",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "c8993955-e9e4-442f-aede-3868ca18c77c",
+      "id": "8b36e006-107b-4ec9-88a4-b5d2f03ab544",
       "label": "Langton parameter",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Langton parameter",
       "description": "Langton parameter: Langton parameter: Introduced by Chris Langton, it quantifies the behavior of CA and is calculated as the ratio of the number of 1s in the CA rule table to the total number of entries in the table.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "ebff41a2-959a-4c9f-ba53-df6a48ea523a",
+      "id": "e87d4e54-0eac-4529-9091-13e5d0f4b989",
       "label": "Complexity measures",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Complexity measures",
       "description": "Complexity measures: Complexity measures: These include metrics such as entropy, which measures the randomness or uncertainty in the system, and fractal dimension, which characterizes the irregularity and self-similarity of CA patterns.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "80ca4b7d-f118-42c3-82b1-3b960cbafa3a",
+      "id": "a5f81f19-bf87-42c6-8db1-07ecefb40c8d",
       "label": "2-dimensional CA and Game of Life",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "2-dimensional CA and Game of Life",
       "description": "2-dimensional CA and Game of Life: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "8f7694e3-c684-4628-9c31-b1e11a54ea97",
+      "id": "7ef0bdfc-7725-4792-bae6-c4b0ac238408",
       "label": "2-dimensional CA",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "2-dimensional CA",
       "description": "2-dimensional CA: 2-dimensional CA: Cellular Automata (CA) extended to two dimensions, where each cell has neighbors in a grid-like structure, allowing for more complex patterns and behavior to emerge.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "8c679768-c10c-491a-a813-6aef8440c4ca",
+      "id": "d891b454-9697-4f03-84c2-ffcba7b2390b",
       "label": "Game of Life",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Game of Life",
       "description": "Game of Life: Game of Life: A famous example of a 2-dimensional CA devised by John Conway, where cells in a grid evolve based on simple rules related to the number of neighboring live cells.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "bcfb3e34-88ce-46ca-92bb-dd6c1d7e31ed",
+      "id": "689707a5-36d4-43c1-bc33-8477b6fd1b68",
       "label": "Universal computation",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Universal computation",
       "description": "Universal computation: Universal computation: Game of Life has been shown to be Turing complete, meaning it can simulate any algorithmic process and perform any computation that a Turing machine can.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "0ff0bc67-54b8-4f18-8dfc-7452f30cc5c2",
+      "id": "e13ed29f-55c7-41ce-a369-fd4c64b20652",
       "label": "CA-based models, Fire, traffic",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "CA-based models, Fire, traffic",
       "description": "CA-based models, Fire, traffic: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "6f08688c-b4de-4b97-92cd-d4582dd7003e",
+      "id": "f37a12d4-b36b-4ecb-8405-a6de77a6f807",
       "label": "Forest fire",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Forest fire",
       "description": "Forest fire: Forest fire: CA models used to simulate the spread and behavior of forest fires, where each cell represents a part of the forest, and rules dictate how fires spread based on factors like neighboring trees and wind direction.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "b7b6f65a-991f-41c3-9946-f98cbb49d5be",
+      "id": "e80e868b-095d-42ac-b602-e81baac7add5",
       "label": "Lattice gas",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Lattice gas",
       "description": "Lattice gas: Lattice gas: A CA model used to simulate fluid dynamics and gas behavior, where cells represent particles in a lattice and rules govern their movement and interactions.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "02ded737-61eb-47c4-9e5d-a39542526c7b",
+      "id": "1570b24f-df30-4cf4-ba3a-38f8161c558a",
       "label": "Traffic flow",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Traffic flow",
       "description": "Traffic flow: Traffic flow: CA models used to simulate vehicular traffic, where cells represent sections of road and rules dictate vehicle movement and behavior based on factors like speed limits, congestion, and driver behavior.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "3f84fa78-222b-4358-b2a7-de4cfbed7f6b",
+      "id": "4f9209ff-38c4-4f4e-a4f8-54530251f1d6",
       "label": "Mean-field theory and Voting model",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "Mean-field theory and Voting model",
       "description": "Mean-field theory and Voting model: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "05796ee1-b100-44ad-98c6-f09cf14bc307",
+      "id": "4ebdd469-15ee-4360-95fb-7625d3408c2d",
       "label": "Mean-field theory",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Mean-field theory",
       "description": "Mean-field theory: Mean-field theory: A mathematical approach used to study large systems of interacting elements by approximating their behavior through statistical averages, assuming each element interacts with the \"field\" created by all others.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "16f39291-59b9-4588-a41b-5cc3857bf45a",
+      "id": "318f5f50-955f-4f20-9035-4ca4dae93082",
       "label": "2D discrete CA-based",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "2D discrete CA-based",
       "description": "2D discrete CA-based: 2D discrete CA-based: Cellular automata models operating in two-dimensional space, where each cell's state evolves over time based on the states of its neighboring cells according to predefined rules.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "f3477933-e9c7-4e8c-a80a-c122d14ac397",
+      "id": "8f58ac00-19c1-46e0-8b43-16cdd6d37ca2",
       "label": "0D continuous ODE",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "0D continuous ODE",
       "description": "0D continuous ODE: 0D continuous ODE: A zero-dimensional model represented by continuous ordinary differential equations, typically used to describe systems where variables change continuously over time without spatial considerations.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "494fb166-3449-47ac-9be0-9370cb12bbeb",
+      "id": "d4123a2d-a93f-4aad-b9c8-3b6c02aae24d",
       "label": "Predator-prey model",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Predator-prey model",
       "description": "Predator-prey model: Predator-prey model: A mathematical model used to describe the dynamics of predator and prey populations in ecology, often represented by a system of coupled differential equations or as a cellular automaton.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "468e4889-c51a-4297-af38-2966bd8a0720",
+      "id": "8eedd5b8-c66e-4b21-abf5-7a1ecbc93387",
       "label": "Voting model",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Voting model",
       "description": "Voting model: Voting model: A model used to study opinion dynamics, where individuals update their opinions based on the opinions of their neighbors, often represented as a cellular automaton or a stochastic process.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "8d4b1db7-2a80-48b0-be28-4e31b9076ad2",
+      "id": "f3df76fc-ee15-4568-9a1a-06ac96e3e2e8",
       "label": "Game theory and Genetic Algorithms",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "Game theory and Genetic Algorithms",
       "description": "Game theory and Genetic Algorithms: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "6b08bef8-e860-4efa-878b-1d62df16347f",
+      "id": "6b5fac06-6a39-4877-a88d-ee3ea0485dff",
       "label": "Strategic interdependent behavior",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Strategic interdependent behavior",
       "description": "Strategic interdependent behavior: Strategic interdependent behavior: Analyzing decisions made by multiple actors, where each actor's choice depends on the choices made by others, leading to strategic interactions.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "10294e79-af79-4ea9-8386-8bf584d9ba6f",
+      "id": "2a1d8143-c51e-4bac-a4ea-3be36aef1427",
       "label": "Parallel scenarios",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Parallel scenarios",
       "description": "Parallel scenarios: Parallel scenarios: Instances where multiple independent scenarios or games are analyzed simultaneously, allowing for comparisons or interactions between them.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "108acd4c-e421-428f-99cf-86b3deb319e1",
+      "id": "88fa0791-1baa-4af2-b9d8-689743c2e7ab",
       "label": "Payoff tables",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Payoff tables",
       "description": "Payoff tables: Payoff tables: Tables used in game theory to represent the payoffs or outcomes associated with different strategies chosen by players in a game.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "f7fc56d2-ba4a-471f-8d3f-882b31ed9ba7",
+      "id": "6ec6f5f1-88a0-4a63-a85b-9056a057402b",
       "label": "Strict dominance and Nash equilibria",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Strict dominance and Nash equilibria",
       "description": "Strict dominance and Nash equilibria: Strict dominance and Nash equilibria: Concepts in game theory where a strategy strictly dominates another if it always yields a higher payoff regardless of opponents' choices, and Nash equilibria are sets of strategies where no player can unilaterally improve their payoff.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "0e16cdb7-2b13-478a-9f77-88a317fbcf93",
+      "id": "c2a2690c-893d-4934-8cb4-9911a0ce6d92",
       "label": "Mixed strategy",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Mixed strategy",
       "description": "Mixed strategy: Mixed strategy: A strategy where a player randomly selects from among several pure strategies according to specified probabilities.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "d9a5f8a8-72c0-4659-9b50-7780ff2368e5",
+      "id": "8d7bc7f6-31ce-4263-9d4f-6e0fcb5de577",
       "label": "Iterated Prisoner\u2019s Dilemma",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Iterated Prisoner\u2019s Dilemma",
       "description": "Iterated Prisoner\u2019s Dilemma: Iterated Prisoner\u2019s Dilemma: A version of the Prisoner's Dilemma game where players repeatedly interact and have the opportunity to learn from past interactions, leading to more complex strategies.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "9fbd9129-a331-45d2-9251-4abde16bc96e",
+      "id": "d0a4cf41-1f67-4e49-9717-595adf1b217f",
       "label": "model cooperation/competition",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "model cooperation/competition",
       "description": "model cooperation/competition: Model cooperation/competition: Studying how cooperation and competition emerge among agents in a system, often modeled using game theory principles.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "bc27d329-dd9c-48a2-a88b-3a182621bef3",
+      "id": "2e8413a1-cf86-458b-86ed-776f24716e95",
       "label": "Genetic algorithms",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Genetic algorithms",
       "description": "Genetic algorithms: Genetic algorithms: Optimization algorithms inspired by the process of natural selection and evolution, where solutions to a problem are represented as individuals in a population and undergo selection, crossover, and mutation to evolve toward better solutions over generations.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
+      "id": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
       "label": "CA analytics",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "CA analytics",
       "description": "CA analytics: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "c4358565-2543-4a85-ac57-97fabe6d53b8",
+      "id": "4833cd3b-c773-4923-bce2-4da64624e746",
       "label": "Totalistic",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Totalistic",
       "description": "Totalistic: Totalistic: A type of cellular automaton (CA) rule where the next state of a cell depends only on the total sum of states of neighboring cells, rather than the specific configuration of neighboring cells.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "8763f10a-3aef-4764-b8f8-bc62723b15d4",
+      "id": "a14aa7f6-2f3e-4313-a6de-f2a4deedcc46",
       "label": "Probabilistic",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Probabilistic",
       "description": "Probabilistic: Probabilistic: Cellular automaton rules where the state transitions of cells are determined by probabilities rather than deterministic rules, allowing for randomness in the evolution of the system.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "0c0c5939-fedb-44bc-8be3-483e7410e7e6",
+      "id": "b60cf735-b091-40a1-aa48-c223e15dab03",
       "label": "Additive",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Additive",
       "description": "Additive: Additive: CA rules where the new state of a cell is determined by adding the states of neighboring cells, often used in continuous CA models.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "dc9f5778-6a5f-4015-87a7-cc2612960cce",
+      "id": "df7db97b-dc7b-4279-9797-d7a3ac9f7d7a",
       "label": "Reversible",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Reversible",
       "description": "Reversible: Reversible: Cellular automaton rules that allow for the reversal of time, meaning that given a future state, the past state can be uniquely determined, facilitating bijective mappings between states.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "2689a591-7396-478c-8175-c0e27e395eb5",
+      "id": "eb854501-101d-4b62-886e-f66cade2644e",
       "label": "Ergodic",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Ergodic",
       "description": "Ergodic: Ergodic: A property of CA systems where, over time, the system visits all possible states with nonzero probability, indicating that the system explores its state space thoroughly.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "5270af73-8799-4012-87bc-5e1d1ea2c7f2",
+      "id": "6d9ac3f6-713e-48b5-a736-932e0df549de",
       "label": "Complex Networks and Graph theory",
-      "shape": "ellipse",
       "cog_level": "Understand",
       "title": "Complex Networks and Graph theory",
       "description": "Complex Networks and Graph theory: ",
-      "layer": 1,
+      "node_type": "knowledge unit",
+      "shape": "ellipse",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "1eae6057-7d6a-442a-8aa2-4907e4390e23",
+      "id": "7a60fbd5-bbf0-450c-b2c3-3dbd7ebeb33a",
       "label": "Complex networks",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Complex networks",
       "description": "Complex networks: Complex networks: Networks characterized by non-trivial topological features, such as high clustering, small-world properties, and scale-free degree distributions.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "ccd19767-cea0-4d9f-b613-94ca49ae1cc0",
+      "id": "0bd2414b-02c9-4a19-9fd7-511ffe7e87c4",
       "label": "Complex systems",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Complex systems",
       "description": "Complex systems: Complex systems: Systems composed of interconnected elements that exhibit emergent behaviors and properties arising from interactions between these elements.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "99bf40dc-d339-4bcf-9070-65f2b2b2cf88",
+      "id": "8ca76a73-fdad-4441-8d64-443457c89c38",
       "label": "Network",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Network",
       "description": "Network: Network: A structure comprising nodes (or vertices) connected by edges (or links), representing relationships or interactions between entities.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "9418ea8f-7911-4545-a83b-17e92c7dd1e9",
+      "id": "b3b8d893-aa19-41fa-9a61-8f6763068634",
       "label": "The role of networks",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "The role of networks",
       "description": "The role of networks: The role of networks: Networks serve as frameworks for representing and analyzing relationships between various entities, facilitating the study of complex systems in diverse domains.",
-      "layer": 4,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "9ccf5cd7-bc41-4f4a-8f5e-2f2be9426816",
+      "id": "cca441e0-1b92-4317-bc83-97883265eb00",
       "label": "The life of networks",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "The life of networks",
       "description": "The life of networks: The life of networks: Networks evolve over time through processes such as growth, adaptation, and decay, leading to changes in their structure, dynamics, and functionality.",
-      "layer": 4,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "08d35f54-2a21-447a-bbc5-d303174c6bf9",
+      "id": "768c9335-4167-48b2-87fa-32897f6e6da2",
       "label": "Network science",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Network science",
       "description": "Network science: Network science: An interdisciplinary field that studies the structure, dynamics, and function of complex networks, drawing from mathematics, physics, computer science, and other disciplines.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "f70a46f3-1016-4de5-9d91-2dd3e708d1dc",
+      "id": "d6b00249-56b6-4626-a555-a6ad80ef6d99",
       "label": "Impact of network science",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Impact of network science",
       "description": "Impact of network science: Impact of network science: Network science has profound implications across various domains, including biology, sociology, technology, and ecology, enabling insights into phenomena such as epidemics, social behavior, information flow, and organizational dynamics.",
-      "layer": 4,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
+      "id": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
       "label": "Graph",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Graph",
       "description": "Graph: ",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "2e0dca64-1742-4e39-b4d8-067058cbaed3",
+      "id": "a8ef3d4b-44c6-4edc-b563-a47fa3f81485",
       "label": "A proper representation",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "A proper representation",
       "description": "A proper representation: A proper representation: Graphs are mathematical structures comprising vertices (nodes) and edges (links) that represent relationships between pairs of vertices.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "bb1ade37-684a-45ff-9bdb-c9041f0c22cc",
+      "id": "1499a038-4d85-4ebe-928a-ce15b60167d4",
       "label": "Measures",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Measures",
       "description": "Measures: Measures: Graph measures quantify various properties of graphs, such as the number of vertices, edges, and paths, as well as metrics related to connectivity, centrality, and clustering.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "a82542c7-7a9a-4db9-9d46-383b9d5c01cb",
+      "id": "efc6260a-055f-4674-a0c9-89118c2b8cf4",
       "label": "Graphology",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Graphology",
       "description": "Graphology: Graphology: The study of graphs, including their structure, properties, and behaviors, often applied in fields such as network science and social network analysis.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "59aef726-004c-4440-a0b9-5aa389b3601e",
+      "id": "c4e22e33-69ee-47d4-acb8-dc57ac3034aa",
       "label": "Pathology",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Pathology",
       "description": "Pathology: Pathology: The study of paths in graphs, focusing on properties such as shortest paths, cycles, and connectivity, with applications in transportation, communication, and optimization.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "920c2d20-dd63-4f06-9ada-01cb43f8de76",
+      "id": "279f1291-e683-4974-b619-5837a8b041e7",
       "label": "Degree distribution",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Degree distribution",
       "description": "Degree distribution: Degree distribution: A statistical measure describing the distribution of degrees (number of connections) among vertices in a graph, providing insights into its topology and connectivity patterns.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "a43e898e-030e-4e22-824b-c5b459dd88c1",
+      "id": "8246c5d3-92e8-4590-91b7-d4344522456f",
       "label": "Types of Networks",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Types of Networks",
       "description": "Types of Networks: Types of Networks: Various models categorize networks based on their structural properties and characteristics, including regular lattices, random networks, small-world networks, and scale-free networks.",
-      "layer": 2,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "40bac8f9-9cef-49d9-b6bf-d68f4839018b",
+      "id": "b2ca5619-5139-41a7-8d64-d67399264622",
       "label": "Regular lattice",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Regular lattice",
       "description": "Regular lattice: Regular lattice: A type of network characterized by a regular, repeating geometric structure, where each node is connected to its nearest neighbors according to a predefined pattern.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "426468da-11a9-4921-8137-7704b906f2b8",
+      "id": "3895d8c7-227c-4243-bc4a-e26a2c3165d9",
       "label": "Random Networks",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Random Networks",
       "description": "Random Networks: Random Networks: Networks where edges are randomly distributed between vertices, leading to a homogeneous degree distribution and properties resembling those of a random graph.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "cac9c38c-234b-4542-861d-2d85748272cc",
+      "id": "de9a8d44-5396-47d8-9f65-7e10912a55d7",
       "label": "Watts-Strogatz model",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Watts-Strogatz model",
       "description": "Watts-Strogatz model: Watts-Strogatz model: A model for generating small-world networks, characterized by high clustering and short average path lengths, proposed by Duncan Watts and Steven Strogatz in 1998.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
       }
     },
     {
-      "id": "a0059a0d-6356-4f91-8493-f5d07595cb9e",
+      "id": "7a396749-885f-4127-8c41-2f05cf8e3fa4",
       "label": "Scale-Free Networks",
-      "shape": "box",
       "cog_level": "Understand",
       "title": "Scale-Free Networks",
       "description": "Scale-Free Networks: Scale-Free Networks: Networks where the degree distribution follows a power-law distribution, meaning that a few nodes (hubs) have a disproportionately high number of connections compared to the majority of nodes.",
-      "layer": 3,
+      "node_type": "knowledge point",
+      "shape": "box",
       "color": {
         "background": "#ffd2af",
         "border": "#ffd2af"
@@ -796,364 +796,364 @@
   ],
   "edges": [
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "35cc12d6-12f1-49dc-b6aa-e1c26a374ae9",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "cff6e87c-18ae-4804-8054-6388a7e1d301",
       "title": "",
-      "id": "5053fdb1-4770-48fa-807d-48d25af318b1"
+      "id": "5c7533bb-cb99-442a-93dc-fe45daf5c00b"
     },
     {
-      "from": "35cc12d6-12f1-49dc-b6aa-e1c26a374ae9",
-      "to": "f5e2ffe4-50ed-4672-b843-509777e5cbd5",
+      "from": "cff6e87c-18ae-4804-8054-6388a7e1d301",
+      "to": "2f0a20c2-3f5f-4331-bcf2-03c0b71ae488",
       "title": "",
-      "id": "f4ae8c5a-62e9-406a-8c1a-a3c6bd3d89ef"
+      "id": "0d138081-f4c0-428e-9efc-a5784cecd71f"
     },
     {
-      "from": "35cc12d6-12f1-49dc-b6aa-e1c26a374ae9",
-      "to": "3ba86f34-b9a2-419b-ad66-372b63ab20de",
+      "from": "cff6e87c-18ae-4804-8054-6388a7e1d301",
+      "to": "cbcb519e-8ac5-4860-a213-3f6e81626b0a",
       "title": "",
-      "id": "78977123-4ef0-403b-9716-207d52632ad2"
+      "id": "72fa01db-5cb0-4e70-9a9c-9b04208fbb96"
     },
     {
-      "from": "35cc12d6-12f1-49dc-b6aa-e1c26a374ae9",
-      "to": "49a9c511-fa25-4a1c-9c65-de84dd5e1096",
+      "from": "cff6e87c-18ae-4804-8054-6388a7e1d301",
+      "to": "0b6d0150-fad1-47ac-a281-c0cd2b10aa70",
       "title": "",
-      "id": "15d36055-b31c-4c19-b5ae-0774ddf080bc"
+      "id": "eb5c0eb4-b208-4b02-8a84-ff1ba806145f"
     },
     {
-      "from": "35cc12d6-12f1-49dc-b6aa-e1c26a374ae9",
-      "to": "6e681fb9-7954-47ce-8777-715e920431b9",
+      "from": "cff6e87c-18ae-4804-8054-6388a7e1d301",
+      "to": "ded452cd-5398-4203-ad40-357f768cb76f",
       "title": "",
-      "id": "20c5b8e6-0aab-4114-8bc8-1b413c2abadd"
+      "id": "c4973c4e-c99c-44e3-868b-0cea6dba000a"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "ec60104f-bea3-4756-9738-f52ec465dbfb",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "2e0437cc-1355-4475-9a91-f27edc3b2844",
       "title": "",
-      "id": "225ab73e-e5e5-452d-8a35-6a66fcc6c418"
+      "id": "0eab8de0-f1df-4ba6-bf61-f0aaff307327"
     },
     {
-      "from": "ec60104f-bea3-4756-9738-f52ec465dbfb",
-      "to": "5f3c47fd-26a0-457c-9f5e-7228e22de980",
+      "from": "2e0437cc-1355-4475-9a91-f27edc3b2844",
+      "to": "ec95fc31-540c-48f9-afb6-4a4d9fa2e9e8",
       "title": "",
-      "id": "46d9ff47-7a62-4bfa-82a0-0604b93b6614"
+      "id": "587dd970-c788-4b98-8ad0-ab78e3583f48"
     },
     {
-      "from": "ec60104f-bea3-4756-9738-f52ec465dbfb",
-      "to": "0a982e04-e556-46bb-8535-00b27aac421e",
+      "from": "2e0437cc-1355-4475-9a91-f27edc3b2844",
+      "to": "f1991c69-ea61-43b3-a852-fae60dcd570a",
       "title": "",
-      "id": "f60c760e-e2cf-4351-b3ab-4b000227a620"
+      "id": "9a3075cd-1efc-402a-8266-e19b605f3862"
     },
     {
-      "from": "ec60104f-bea3-4756-9738-f52ec465dbfb",
-      "to": "b1f56125-f1f0-42d2-8c83-c93a8518619d",
+      "from": "2e0437cc-1355-4475-9a91-f27edc3b2844",
+      "to": "d4acddcb-d7c3-4089-823b-6a8acc0530cc",
       "title": "",
-      "id": "e473e472-7d58-4533-b7d2-93965e7c59e1"
+      "id": "1e033895-881d-4741-a8cb-dfbd421a9450"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "2f859e9c-8e70-497d-9795-8f590c7e12a6",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "987a5b47-b81b-4cdb-acba-fe31c6f8a964",
       "title": "",
-      "id": "8f33e1cd-fb4a-4f20-9b75-da09e305cc45"
+      "id": "e6cf65e8-5bb5-481c-8573-77bf5206bf0a"
     },
     {
-      "from": "2f859e9c-8e70-497d-9795-8f590c7e12a6",
-      "to": "c8993955-e9e4-442f-aede-3868ca18c77c",
+      "from": "987a5b47-b81b-4cdb-acba-fe31c6f8a964",
+      "to": "8b36e006-107b-4ec9-88a4-b5d2f03ab544",
       "title": "",
-      "id": "d43754fe-561f-42a8-837b-999645a5975b"
+      "id": "333a8dd4-792a-4d11-96db-4e3cb262a6b7"
     },
     {
-      "from": "2f859e9c-8e70-497d-9795-8f590c7e12a6",
-      "to": "ebff41a2-959a-4c9f-ba53-df6a48ea523a",
+      "from": "987a5b47-b81b-4cdb-acba-fe31c6f8a964",
+      "to": "e87d4e54-0eac-4529-9091-13e5d0f4b989",
       "title": "",
-      "id": "e7c2e5ec-2052-4a80-a70b-6d228402c4aa"
+      "id": "e8b26752-62d7-405a-8d5a-fd7f50dfab39"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "80ca4b7d-f118-42c3-82b1-3b960cbafa3a",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "a5f81f19-bf87-42c6-8db1-07ecefb40c8d",
       "title": "",
-      "id": "b4dcb907-990a-4a44-b18c-f391896121a4"
+      "id": "29610265-f299-46bb-94b3-8ff2670ca71d"
     },
     {
-      "from": "80ca4b7d-f118-42c3-82b1-3b960cbafa3a",
-      "to": "8f7694e3-c684-4628-9c31-b1e11a54ea97",
+      "from": "a5f81f19-bf87-42c6-8db1-07ecefb40c8d",
+      "to": "7ef0bdfc-7725-4792-bae6-c4b0ac238408",
       "title": "",
-      "id": "c1251298-0616-4c17-9b8e-2dea126be3c8"
+      "id": "8eba154c-8b67-487a-ac14-ba528c7fcf45"
     },
     {
-      "from": "80ca4b7d-f118-42c3-82b1-3b960cbafa3a",
-      "to": "8c679768-c10c-491a-a813-6aef8440c4ca",
+      "from": "a5f81f19-bf87-42c6-8db1-07ecefb40c8d",
+      "to": "d891b454-9697-4f03-84c2-ffcba7b2390b",
       "title": "",
-      "id": "d93ec65a-1897-494d-8abf-cc0a2703c9fc"
+      "id": "ed9431cb-18a3-4d42-a479-a4955e884f02"
     },
     {
-      "from": "80ca4b7d-f118-42c3-82b1-3b960cbafa3a",
-      "to": "bcfb3e34-88ce-46ca-92bb-dd6c1d7e31ed",
+      "from": "a5f81f19-bf87-42c6-8db1-07ecefb40c8d",
+      "to": "689707a5-36d4-43c1-bc33-8477b6fd1b68",
       "title": "",
-      "id": "ec86935a-f67d-4c9f-acc5-7f03b0b1ef0d"
+      "id": "4369384b-c1e1-4680-b7c1-0b66f53debf9"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "0ff0bc67-54b8-4f18-8dfc-7452f30cc5c2",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "e13ed29f-55c7-41ce-a369-fd4c64b20652",
       "title": "",
-      "id": "9b39c944-8097-4d23-94cf-4c7250c209f5"
+      "id": "7ed152c7-5dee-4ed6-b476-a905b81c0f72"
     },
     {
-      "from": "0ff0bc67-54b8-4f18-8dfc-7452f30cc5c2",
-      "to": "6f08688c-b4de-4b97-92cd-d4582dd7003e",
+      "from": "e13ed29f-55c7-41ce-a369-fd4c64b20652",
+      "to": "f37a12d4-b36b-4ecb-8405-a6de77a6f807",
       "title": "",
-      "id": "052ac25f-8f66-466e-bdc6-98278d577cd8"
+      "id": "a1e4e8a5-c741-4268-9db9-c7ccb0fc0dbd"
     },
     {
-      "from": "0ff0bc67-54b8-4f18-8dfc-7452f30cc5c2",
-      "to": "b7b6f65a-991f-41c3-9946-f98cbb49d5be",
+      "from": "e13ed29f-55c7-41ce-a369-fd4c64b20652",
+      "to": "e80e868b-095d-42ac-b602-e81baac7add5",
       "title": "",
-      "id": "af95a36e-6576-4761-b77b-a9ae6436e94b"
+      "id": "91a6d5f5-3a32-49fc-8c35-f0e3c7632a77"
     },
     {
-      "from": "0ff0bc67-54b8-4f18-8dfc-7452f30cc5c2",
-      "to": "02ded737-61eb-47c4-9e5d-a39542526c7b",
+      "from": "e13ed29f-55c7-41ce-a369-fd4c64b20652",
+      "to": "1570b24f-df30-4cf4-ba3a-38f8161c558a",
       "title": "",
-      "id": "455040ac-3409-4738-9c5e-1519fdce1eb5"
+      "id": "8714a789-ed23-4929-9ecc-75fae97b2f09"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "3f84fa78-222b-4358-b2a7-de4cfbed7f6b",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "4f9209ff-38c4-4f4e-a4f8-54530251f1d6",
       "title": "",
-      "id": "2af8aa53-0ea1-4407-9f37-a9a82a4757d6"
+      "id": "3c7b6636-a194-482f-93ea-d45d6573d70b"
     },
     {
-      "from": "3f84fa78-222b-4358-b2a7-de4cfbed7f6b",
-      "to": "05796ee1-b100-44ad-98c6-f09cf14bc307",
+      "from": "4f9209ff-38c4-4f4e-a4f8-54530251f1d6",
+      "to": "4ebdd469-15ee-4360-95fb-7625d3408c2d",
       "title": "",
-      "id": "330fe030-1e92-404b-a87b-4026f292511b"
+      "id": "95bb87e8-c521-4d66-9011-80fbf67f20d5"
     },
     {
-      "from": "05796ee1-b100-44ad-98c6-f09cf14bc307",
-      "to": "16f39291-59b9-4588-a41b-5cc3857bf45a",
+      "from": "4ebdd469-15ee-4360-95fb-7625d3408c2d",
+      "to": "318f5f50-955f-4f20-9035-4ca4dae93082",
       "title": "",
-      "id": "1cd1fdbf-62ac-4a38-b0bd-d363e578743b"
+      "id": "78e16b68-b6ee-4233-8dd8-a5c8be614faf"
     },
     {
-      "from": "05796ee1-b100-44ad-98c6-f09cf14bc307",
-      "to": "f3477933-e9c7-4e8c-a80a-c122d14ac397",
+      "from": "4ebdd469-15ee-4360-95fb-7625d3408c2d",
+      "to": "8f58ac00-19c1-46e0-8b43-16cdd6d37ca2",
       "title": "",
-      "id": "4e107c02-b46c-422c-9189-93269d9e2479"
+      "id": "b5d2adf4-9403-470e-bb5a-4b6d0f7cef65"
     },
     {
-      "from": "05796ee1-b100-44ad-98c6-f09cf14bc307",
-      "to": "494fb166-3449-47ac-9be0-9370cb12bbeb",
+      "from": "4ebdd469-15ee-4360-95fb-7625d3408c2d",
+      "to": "d4123a2d-a93f-4aad-b9c8-3b6c02aae24d",
       "title": "",
-      "id": "23b38a8d-3cc8-4648-a849-ed8b11188243"
+      "id": "84d40a01-5b66-4b35-b098-b877cb7084f2"
     },
     {
-      "from": "3f84fa78-222b-4358-b2a7-de4cfbed7f6b",
-      "to": "468e4889-c51a-4297-af38-2966bd8a0720",
+      "from": "4f9209ff-38c4-4f4e-a4f8-54530251f1d6",
+      "to": "8eedd5b8-c66e-4b21-abf5-7a1ecbc93387",
       "title": "",
-      "id": "79ff1a01-0fe6-41d4-bc21-9c3758b17087"
+      "id": "4eb3a1f5-3851-4b89-b1e8-4f903fbe6980"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "8d4b1db7-2a80-48b0-be28-4e31b9076ad2",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "f3df76fc-ee15-4568-9a1a-06ac96e3e2e8",
       "title": "",
-      "id": "ca44aa5f-8e5f-4f22-9c9e-210d243b3050"
+      "id": "8322a380-2734-499c-b0b1-5fba9caf79c1"
     },
     {
-      "from": "8d4b1db7-2a80-48b0-be28-4e31b9076ad2",
-      "to": "6b08bef8-e860-4efa-878b-1d62df16347f",
+      "from": "f3df76fc-ee15-4568-9a1a-06ac96e3e2e8",
+      "to": "6b5fac06-6a39-4877-a88d-ee3ea0485dff",
       "title": "",
-      "id": "7c9eb99e-7a38-42fe-bfdd-9f17c978eacf"
+      "id": "bdaf11b4-ec5c-4c2d-86da-2f4764f50f66"
     },
     {
-      "from": "6b08bef8-e860-4efa-878b-1d62df16347f",
-      "to": "10294e79-af79-4ea9-8386-8bf584d9ba6f",
+      "from": "6b5fac06-6a39-4877-a88d-ee3ea0485dff",
+      "to": "2a1d8143-c51e-4bac-a4ea-3be36aef1427",
       "title": "",
-      "id": "1578a042-b40f-4df5-8f05-bc4b5015b499"
+      "id": "36885329-337b-4661-b5ef-0bb612cac0d3"
     },
     {
-      "from": "6b08bef8-e860-4efa-878b-1d62df16347f",
-      "to": "108acd4c-e421-428f-99cf-86b3deb319e1",
+      "from": "6b5fac06-6a39-4877-a88d-ee3ea0485dff",
+      "to": "88fa0791-1baa-4af2-b9d8-689743c2e7ab",
       "title": "",
-      "id": "8a594356-695b-448b-a7b8-bad8d7fbe965"
+      "id": "e30cf6ca-3709-4095-9ddf-25f654d94792"
     },
     {
-      "from": "6b08bef8-e860-4efa-878b-1d62df16347f",
-      "to": "f7fc56d2-ba4a-471f-8d3f-882b31ed9ba7",
+      "from": "6b5fac06-6a39-4877-a88d-ee3ea0485dff",
+      "to": "6ec6f5f1-88a0-4a63-a85b-9056a057402b",
       "title": "",
-      "id": "4dd28490-4e57-4e86-80dd-1b9a1fe860e0"
+      "id": "a4d7f0a1-c6a7-4225-bfc9-162d851db1bb"
     },
     {
-      "from": "6b08bef8-e860-4efa-878b-1d62df16347f",
-      "to": "0e16cdb7-2b13-478a-9f77-88a317fbcf93",
+      "from": "6b5fac06-6a39-4877-a88d-ee3ea0485dff",
+      "to": "c2a2690c-893d-4934-8cb4-9911a0ce6d92",
       "title": "",
-      "id": "915fc93d-71a6-42f8-8d2a-48c9ce9db0b3"
+      "id": "d8fdd7f8-6fae-452e-a488-9cd5aea6956f"
     },
     {
-      "from": "8d4b1db7-2a80-48b0-be28-4e31b9076ad2",
-      "to": "d9a5f8a8-72c0-4659-9b50-7780ff2368e5",
+      "from": "f3df76fc-ee15-4568-9a1a-06ac96e3e2e8",
+      "to": "8d7bc7f6-31ce-4263-9d4f-6e0fcb5de577",
       "title": "",
-      "id": "0e685558-a9e8-411f-9b6b-d576fbb5e1b8"
+      "id": "81c95673-eb33-4f50-addc-2035076bcd4a"
     },
     {
-      "from": "d9a5f8a8-72c0-4659-9b50-7780ff2368e5",
-      "to": "9fbd9129-a331-45d2-9251-4abde16bc96e",
+      "from": "8d7bc7f6-31ce-4263-9d4f-6e0fcb5de577",
+      "to": "d0a4cf41-1f67-4e49-9717-595adf1b217f",
       "title": "",
-      "id": "cc26e64f-5ec3-4e0e-a46d-4acdde22d4ce"
+      "id": "8c2f7ada-0d76-420a-aec9-8334d3d93dc1"
     },
     {
-      "from": "8d4b1db7-2a80-48b0-be28-4e31b9076ad2",
-      "to": "bc27d329-dd9c-48a2-a88b-3a182621bef3",
+      "from": "f3df76fc-ee15-4568-9a1a-06ac96e3e2e8",
+      "to": "2e8413a1-cf86-458b-86ed-776f24716e95",
       "title": "",
-      "id": "cfe86574-3df0-4017-878a-8b41ca9e6952"
+      "id": "cdf3577f-233f-4c98-92d2-0e143286e47d"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
       "title": "",
-      "id": "31999e9b-8937-4ebc-8109-3a7774c6dfa4"
+      "id": "bbbc2927-dfb1-4b3e-9adb-00e534184ff7"
     },
     {
-      "from": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
-      "to": "c4358565-2543-4a85-ac57-97fabe6d53b8",
+      "from": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
+      "to": "4833cd3b-c773-4923-bce2-4da64624e746",
       "title": "",
-      "id": "46c5a1e2-16c1-4072-b72c-1f3b02744ca9"
+      "id": "2d6aebcc-17e0-4a4a-ab96-7f21173b2e9b"
     },
     {
-      "from": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
-      "to": "8763f10a-3aef-4764-b8f8-bc62723b15d4",
+      "from": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
+      "to": "a14aa7f6-2f3e-4313-a6de-f2a4deedcc46",
       "title": "",
-      "id": "65b9b95d-afdb-4b83-95fd-4047daaedfb8"
+      "id": "13cd49bb-8ea3-4d66-8ca1-97101f44f86c"
     },
     {
-      "from": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
-      "to": "0c0c5939-fedb-44bc-8be3-483e7410e7e6",
+      "from": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
+      "to": "b60cf735-b091-40a1-aa48-c223e15dab03",
       "title": "",
-      "id": "f85fa8d5-0083-4aa6-956b-6d945cad7427"
+      "id": "870b3c16-093d-4399-bc47-294a3594c821"
     },
     {
-      "from": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
-      "to": "dc9f5778-6a5f-4015-87a7-cc2612960cce",
+      "from": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
+      "to": "df7db97b-dc7b-4279-9797-d7a3ac9f7d7a",
       "title": "",
-      "id": "54c93a75-e018-4395-9ff0-a47b665d66ad"
+      "id": "7a493913-f5ff-4417-b164-0b22b881341d"
     },
     {
-      "from": "5494fadb-c006-4f74-a2c0-5a0aa89c78f7",
-      "to": "2689a591-7396-478c-8175-c0e27e395eb5",
+      "from": "b14a1dfb-bb00-44ba-acf4-a68ca2ff8a58",
+      "to": "eb854501-101d-4b62-886e-f66cade2644e",
       "title": "",
-      "id": "3783a3dd-b0d1-4501-a0bc-94b4b8aac176"
+      "id": "6c4240e2-517f-47b9-a607-313e10e0ac75"
     },
     {
-      "from": "8af7c921-aeab-49d6-83cd-dfc4292adab6",
-      "to": "5270af73-8799-4012-87bc-5e1d1ea2c7f2",
+      "from": "d6c206dd-521c-45b9-9767-e980ac6832a6",
+      "to": "6d9ac3f6-713e-48b5-a736-932e0df549de",
       "title": "",
-      "id": "16d2de02-4715-458e-a9fa-5706dae8ae26"
+      "id": "3d215d5d-996f-4f33-a850-6d7cfa0dee9a"
     },
     {
-      "from": "5270af73-8799-4012-87bc-5e1d1ea2c7f2",
-      "to": "1eae6057-7d6a-442a-8aa2-4907e4390e23",
+      "from": "6d9ac3f6-713e-48b5-a736-932e0df549de",
+      "to": "7a60fbd5-bbf0-450c-b2c3-3dbd7ebeb33a",
       "title": "",
-      "id": "a43d7ded-b153-4010-be64-c6d9d80b09cf"
+      "id": "8ce3f6d3-3313-49f2-8212-777ff4578887"
     },
     {
-      "from": "1eae6057-7d6a-442a-8aa2-4907e4390e23",
-      "to": "ccd19767-cea0-4d9f-b613-94ca49ae1cc0",
+      "from": "7a60fbd5-bbf0-450c-b2c3-3dbd7ebeb33a",
+      "to": "0bd2414b-02c9-4a19-9fd7-511ffe7e87c4",
       "title": "",
-      "id": "6b933a87-0718-484e-907a-a38e655aa508"
+      "id": "be31326f-3739-4b6f-b622-d79d8b30d04a"
     },
     {
-      "from": "1eae6057-7d6a-442a-8aa2-4907e4390e23",
-      "to": "99bf40dc-d339-4bcf-9070-65f2b2b2cf88",
+      "from": "7a60fbd5-bbf0-450c-b2c3-3dbd7ebeb33a",
+      "to": "8ca76a73-fdad-4441-8d64-443457c89c38",
       "title": "",
-      "id": "d40d4060-9e22-4a4d-a495-c2e34249b44b"
+      "id": "925f7905-933d-40f7-aa0d-afb99252cb7e"
     },
     {
-      "from": "99bf40dc-d339-4bcf-9070-65f2b2b2cf88",
-      "to": "9418ea8f-7911-4545-a83b-17e92c7dd1e9",
+      "from": "8ca76a73-fdad-4441-8d64-443457c89c38",
+      "to": "b3b8d893-aa19-41fa-9a61-8f6763068634",
       "title": "",
-      "id": "287ce41b-6a7c-4782-b3ec-d52f91637553"
+      "id": "560d907a-6db3-42e8-8ae5-14648ebae99d"
     },
     {
-      "from": "99bf40dc-d339-4bcf-9070-65f2b2b2cf88",
-      "to": "9ccf5cd7-bc41-4f4a-8f5e-2f2be9426816",
+      "from": "8ca76a73-fdad-4441-8d64-443457c89c38",
+      "to": "cca441e0-1b92-4317-bc83-97883265eb00",
       "title": "",
-      "id": "1691c858-4058-43d0-8c5e-c36e02432e69"
+      "id": "56c5acb3-c5df-4de3-9d63-4c2556b043a2"
     },
     {
-      "from": "1eae6057-7d6a-442a-8aa2-4907e4390e23",
-      "to": "08d35f54-2a21-447a-bbc5-d303174c6bf9",
+      "from": "7a60fbd5-bbf0-450c-b2c3-3dbd7ebeb33a",
+      "to": "768c9335-4167-48b2-87fa-32897f6e6da2",
       "title": "",
-      "id": "2371c105-cb04-4563-a6ea-18fbe1c19013"
+      "id": "7a9a03bf-adb7-4263-bfd1-4bec63a468bb"
     },
     {
-      "from": "08d35f54-2a21-447a-bbc5-d303174c6bf9",
-      "to": "f70a46f3-1016-4de5-9d91-2dd3e708d1dc",
+      "from": "768c9335-4167-48b2-87fa-32897f6e6da2",
+      "to": "d6b00249-56b6-4626-a555-a6ad80ef6d99",
       "title": "",
-      "id": "6dc32e77-139a-4b9b-b552-881a3d2a393f"
+      "id": "6579ab66-3d72-4662-b1b1-6e93ac19878b"
     },
     {
-      "from": "5270af73-8799-4012-87bc-5e1d1ea2c7f2",
-      "to": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
+      "from": "6d9ac3f6-713e-48b5-a736-932e0df549de",
+      "to": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
       "title": "",
-      "id": "14fa0a1f-4215-42bb-9f75-9f53e8765556"
+      "id": "9724358a-aafa-43d3-a8bc-7fa108833064"
     },
     {
-      "from": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
-      "to": "2e0dca64-1742-4e39-b4d8-067058cbaed3",
+      "from": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
+      "to": "a8ef3d4b-44c6-4edc-b563-a47fa3f81485",
       "title": "",
-      "id": "546cd1f6-aad9-4eaa-8589-60744161202e"
+      "id": "5d520f97-a1e8-4e6e-b3b0-b38926741710"
     },
     {
-      "from": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
-      "to": "bb1ade37-684a-45ff-9bdb-c9041f0c22cc",
+      "from": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
+      "to": "1499a038-4d85-4ebe-928a-ce15b60167d4",
       "title": "",
-      "id": "8a003348-99d5-49b1-bb90-80eb785f0f15"
+      "id": "fc976a14-0d42-4922-8418-2ba045384242"
     },
     {
-      "from": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
-      "to": "a82542c7-7a9a-4db9-9d46-383b9d5c01cb",
+      "from": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
+      "to": "efc6260a-055f-4674-a0c9-89118c2b8cf4",
       "title": "",
-      "id": "7493428c-5b9b-48df-9e31-36208390efc4"
+      "id": "57bed4e5-f0cf-41ea-9a4f-89291910275d"
     },
     {
-      "from": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
-      "to": "59aef726-004c-4440-a0b9-5aa389b3601e",
+      "from": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
+      "to": "c4e22e33-69ee-47d4-acb8-dc57ac3034aa",
       "title": "",
-      "id": "c864e890-c816-47e0-9bd1-5ffa02d18f84"
+      "id": "849dc5cf-745e-4930-9361-c18b8c90b6a1"
     },
     {
-      "from": "a1d439b4-25c4-4f45-874c-f4f9917a3a72",
-      "to": "920c2d20-dd63-4f06-9ada-01cb43f8de76",
+      "from": "ad148cf4-e3e0-4144-aa5f-3f807f11591d",
+      "to": "279f1291-e683-4974-b619-5837a8b041e7",
       "title": "",
-      "id": "a700535e-a37a-4848-9b3c-9a4d401997b0"
+      "id": "74596c87-8c5b-418b-b120-5443558b6c79"
     },
     {
-      "from": "5270af73-8799-4012-87bc-5e1d1ea2c7f2",
-      "to": "a43e898e-030e-4e22-824b-c5b459dd88c1",
+      "from": "6d9ac3f6-713e-48b5-a736-932e0df549de",
+      "to": "8246c5d3-92e8-4590-91b7-d4344522456f",
       "title": "",
-      "id": "4c33c686-caa4-4542-b29e-af218896e734"
+      "id": "8fb6c355-11fc-4df6-9ae9-b03d95bf16b9"
     },
     {
-      "from": "a43e898e-030e-4e22-824b-c5b459dd88c1",
-      "to": "40bac8f9-9cef-49d9-b6bf-d68f4839018b",
+      "from": "8246c5d3-92e8-4590-91b7-d4344522456f",
+      "to": "b2ca5619-5139-41a7-8d64-d67399264622",
       "title": "",
-      "id": "41a414e0-82c5-4e81-a5f7-2a4dc1d9e136"
+      "id": "e1c92eec-0a72-44bf-bf0d-a386a2b11d5f"
     },
     {
-      "from": "a43e898e-030e-4e22-824b-c5b459dd88c1",
-      "to": "426468da-11a9-4921-8137-7704b906f2b8",
+      "from": "8246c5d3-92e8-4590-91b7-d4344522456f",
+      "to": "3895d8c7-227c-4243-bc4a-e26a2c3165d9",
       "title": "",
-      "id": "0b465fe9-55d7-493a-a1b1-eb16d8868a8e"
+      "id": "b53ed688-4735-4d77-9a43-f11ed27e0f7a"
     },
     {
-      "from": "a43e898e-030e-4e22-824b-c5b459dd88c1",
-      "to": "cac9c38c-234b-4542-861d-2d85748272cc",
+      "from": "8246c5d3-92e8-4590-91b7-d4344522456f",
+      "to": "de9a8d44-5396-47d8-9f65-7e10912a55d7",
       "title": "",
-      "id": "ff1b1a65-1148-499a-bd36-4e66ae7b41df"
+      "id": "613ae2cf-7cc3-4a4d-9a26-614e41e3ae25"
     },
     {
-      "from": "a43e898e-030e-4e22-824b-c5b459dd88c1",
-      "to": "a0059a0d-6356-4f91-8493-f5d07595cb9e",
+      "from": "8246c5d3-92e8-4590-91b7-d4344522456f",
+      "to": "7a396749-885f-4127-8c41-2f05cf8e3fa4",
       "title": "",
-      "id": "559f19d1-3b16-4e75-9861-c35d91d9bfb1"
+      "id": "6d9a8e38-9b9a-4770-b6f8-127398ae4cda"
     }
   ]
 }

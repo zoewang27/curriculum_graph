@@ -17,7 +17,6 @@
   <div style="margin-left: 2%; margin-right: 2%;">
     <div style="display: flex; align-items: center; margin-bottom: 1%;">
         <h2>UvA Courses</h2>
-        <button class="btn btn-warning" id="delete-jsonfile-button" style="margin-left: auto;">Clear temporary files</button>
     </div>
 
     <table class="table table-striped">
@@ -137,6 +136,10 @@
 
 
     </div>
+
+    <button class="btn btn-warning" id="delete-jsonfile-button" style="margin-left: auto;">Clear json file</button>
+
+
 </main>
 
 
@@ -158,6 +161,8 @@ $(document).ready(function() {
         $("#Modal-upload-file").modal("show");
     });
 
+
+
     $("#upload-file-form").submit(function(e) {
         e.preventDefault();
 
@@ -178,6 +183,7 @@ $(document).ready(function() {
             }
         });
     });
+
 
 
 

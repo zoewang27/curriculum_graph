@@ -1,0 +1,1752 @@
+{
+  "nodes": [
+    {
+      "id": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "label": "Architecture and Organization",
+      "cog_level": "",
+      "title": "Architecture and Organization",
+      "description": "Architecture and Organization: ",
+      "node_type": "course",
+      "shape": "circle"
+    },
+    {
+      "id": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "label": "Digital Logic and Digital Systems",
+      "cog_level": "",
+      "title": "Digital Logic and Digital Systems",
+      "description": "Digital Logic and Digital Systems: Study of binary logic and the design of digital circuits.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "dc03909a-bb5b-4481-a95a-d3a9189955ec",
+      "label": "Overview and history of computer architecture",
+      "cog_level": "Understand",
+      "title": "Overview and history of computer architecture",
+      "description": "Overview and history of computer architecture: Understanding the evolution and key concepts of computer systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "67236f8a-44d3-48df-ad2a-e63c57edf094",
+      "label": "Combinational vs. sequential logic",
+      "cog_level": "Understand",
+      "title": "Combinational vs. sequential logic",
+      "description": "Combinational vs. sequential logic: Differentiating between logic circuits with and without memory elements.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "270c5901-4676-41bc-8c00-c3b9271e33d5",
+      "label": "Fundamental combinational",
+      "cog_level": "Understand",
+      "title": "Fundamental combinational",
+      "description": "Fundamental combinational: Basic components like logic gates (AND, OR, NOT).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c0a15ca1-8e68-4d72-94a1-04d882770590",
+      "label": "Sequential logic building block",
+      "cog_level": "Understand",
+      "title": "Sequential logic building block",
+      "description": "Sequential logic building block: Components like flip-flops, latches enabling memory in circuits.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6e621e18-fc67-481a-8933-9559c270e412",
+      "label": "Functional hardware and software multi\u2010layer architecture",
+      "cog_level": "Understand",
+      "title": "Functional hardware and software multi\u2010layer architecture",
+      "description": "Functional hardware and software multi\u2010layer architecture: Understanding the interaction between hardware and software layers in a computer system.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "cfb14996-bb14-48cd-a695-1a5d6b63a39d",
+      "label": "Computer\u2010aided design tools that process hardware and architectural representations",
+      "cog_level": "Evaluate",
+      "title": "Computer\u2010aided design tools that process hardware and architectural representations",
+      "description": "Computer\u2010aided design tools that process hardware and architectural representations: Tools facilitating the design and analysis of digital systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b511f162-4de0-40dd-b90a-b2c8ca7965d6",
+      "label": "High\u2010level synthesis",
+      "cog_level": "Evaluate",
+      "title": "High\u2010level synthesis",
+      "description": "High\u2010level synthesis: Automated conversion of high-level code into hardware description language.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "20752925-071e-4554-a5f9-28f3fdad811a",
+      "label": "Register transfer notation",
+      "cog_level": "Evaluate",
+      "title": "Register transfer notation",
+      "description": "Register transfer notation: Description of digital systems in terms of data transfers between registers.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d49621c9-d4ad-419b-bbaf-a9ebde8a05eb",
+      "label": "Hardware description language",
+      "cog_level": "Evaluate",
+      "title": "Hardware description language",
+      "description": "Hardware description language: Languages like VHDL or Verilog for describing digital circuits.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "16e13b73-d2b3-45a8-80a6-1a90470769fb",
+      "label": "System\u2010on\u2010chip (SoC) design flow",
+      "cog_level": "Evaluate",
+      "title": "System\u2010on\u2010chip (SoC) design flow",
+      "description": "System\u2010on\u2010chip (SoC) design flow: Methodology for designing complex integrated circuits.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5b0614df-28f8-41d2-902e-402f00e607d8",
+      "label": "Physical constraints",
+      "cog_level": "Evaluate",
+      "title": "Physical constraints",
+      "description": "Physical constraints: Limitations imposed by the physical properties of hardware components.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c9af1c54-cc57-4e75-804c-3a385e4ff72b",
+      "label": "Gate delays",
+      "cog_level": "Evaluate",
+      "title": "Gate delays",
+      "description": "Gate delays: Time taken for signals to propagate through logic gates.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "74fb1763-ab05-4187-9811-78c121153447",
+      "label": "Fan\u2010in and fan\u2010out",
+      "cog_level": "Evaluate",
+      "title": "Fan\u2010in and fan\u2010out",
+      "description": "Fan\u2010in and fan\u2010out: Number of inputs and outputs a gate can handle.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "71ad577f-10cd-47eb-b6b4-caabbccfa9fd",
+      "label": "Energy/power",
+      "cog_level": "Evaluate",
+      "title": "Energy/power",
+      "description": "Energy/power: Considerations for power consumption and energy efficiency in digital systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "308f51bd-adbd-42dd-bc34-46edbb82923f",
+      "label": "Speed of light",
+      "cog_level": "Evaluate",
+      "title": "Speed of light",
+      "description": "Speed of light: Physical limitation affecting the propagation of signals in hardware.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "label": "Machine-Level Data Representation",
+      "cog_level": "",
+      "title": "Machine-Level Data Representation",
+      "description": "Machine-Level Data Representation: Understanding how data is represented at the binary level in a computer system.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "fa625e83-d8b1-4eea-a198-dc493959f29e",
+      "label": "Bits, bytes, and words",
+      "cog_level": "Apply",
+      "title": "Bits, bytes, and words",
+      "description": "Bits, bytes, and words: Basic units of digital data, where a bit is the smallest unit, a byte typically consists of 8 bits, and a word is the natural unit of data a processor can process at once.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2aa78e48-8da0-4e30-920a-880a2c0ec96f",
+      "label": "Numeric data representation and number bases",
+      "cog_level": "Apply",
+      "title": "Numeric data representation and number bases",
+      "description": "Numeric data representation and number bases: Representing numbers using different bases, such as binary, decimal, octal, and hexadecimal.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d7b159d4-5a4b-47fc-b043-931af215185e",
+      "label": "Fixed\u2010point",
+      "cog_level": "Apply",
+      "title": "Fixed\u2010point",
+      "description": "Fixed\u2010point: Representing numbers with a fixed number of digits after the decimal point.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "32ece4c6-8782-489c-bee7-62b0b09658de",
+      "label": "Floating\u2010point",
+      "cog_level": "Apply",
+      "title": "Floating\u2010point",
+      "description": "Floating\u2010point: Representing numbers with a variable number of significant digits and an exponent, allowing a wider range of values.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ea04c64b-3ed9-4135-ac1f-545562049c92",
+      "label": "Signed and twos\u2010complement representations",
+      "cog_level": "Apply",
+      "title": "Signed and twos\u2010complement representations",
+      "description": "Signed and twos\u2010complement representations: Methods for representing negative numbers in binary, where the most significant bit (MSB) indicates the sign in signed representation, and twos-complement representation simplifies arithmetic operations.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e341cacf-14c9-4830-a0bd-95eb3aaf3a2b",
+      "label": "Representation of non\u2010numeric data",
+      "cog_level": "Apply",
+      "title": "Representation of non\u2010numeric data",
+      "description": "Representation of non\u2010numeric data: Representing characters, symbols, and other non-numeric data using character encoding schemes like ASCII or Unicode.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "475e3ed8-1b60-423c-bdea-f41c243f7604",
+      "label": "Representation of records and arrays",
+      "cog_level": "Apply",
+      "title": "Representation of records and arrays",
+      "description": "Representation of records and arrays: Organizing structured data such as records (collections of related fields) and arrays (collections of data elements of the same type) in memory.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "label": "Assembly Level Machine Organization",
+      "cog_level": "",
+      "title": "Assembly Level Machine Organization",
+      "description": "Assembly Level Machine Organization: Understanding the low-level structure and operation of a computer at the assembly language level.",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "3d2eac36-2571-496b-a452-4bedd6c77699",
+      "label": "von Neumann machine architecture",
+      "cog_level": "Understand",
+      "title": "von Neumann machine architecture",
+      "description": "von Neumann machine architecture: Basic architecture featuring a single shared memory for both data and instructions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "363180ab-e841-4bb3-a27b-3955c172bab7",
+      "label": "Control unit; instruction fetch, decode, and execution",
+      "cog_level": "Understand",
+      "title": "Control unit; instruction fetch, decode, and execution",
+      "description": "Control unit; instruction fetch, decode, and execution: Components responsible for fetching, decoding, and executing instructions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5e3793d6-1462-4f99-ad8b-eb22ffd23c72",
+      "label": "Introduction to SIMD vs. MIMD and the Flynn taxonomy",
+      "cog_level": "Understand",
+      "title": "Introduction to SIMD vs. MIMD and the Flynn taxonomy",
+      "description": "Introduction to SIMD vs. MIMD and the Flynn taxonomy: Differentiating between Single Instruction, Multiple Data (SIMD) and Multiple Instruction, Multiple Data (MIMD) architectures based on instruction and data processing.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2afffbaa-87ee-455e-be30-d6b299ad7f6c",
+      "label": "Shared memory multiprocessors/multicore organization",
+      "cog_level": "Understand",
+      "title": "Shared memory multiprocessors/multicore organization",
+      "description": "Shared memory multiprocessors/multicore organization: Systems with multiple processors/cores sharing a common memory.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "label": "Instruction set architecture (ISA)e.g. x86, ARM and RISC\u2010V",
+      "cog_level": "Create",
+      "title": "Instruction set architecture (ISA)e.g. x86, ARM and RISC\u2010V",
+      "description": "Instruction set architecture (ISA)e.g. x86, ARM and RISC\u2010V: The set of instructions a processor can execute.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4d619ad5-56cf-412f-9257-a34f8f781349",
+      "label": "Instruction formats",
+      "cog_level": "Create",
+      "title": "Instruction formats",
+      "description": "Instruction formats: Different formats used to represent instructions in machine code.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b3292c4e-1262-4ab9-9ae6-24570a9e2581",
+      "label": "Data manipulation, control, I/O",
+      "cog_level": "Create",
+      "title": "Data manipulation, control, I/O",
+      "description": "Data manipulation, control, I/O: Types of operations performed by instructions, including data processing, control flow, and input/output.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2a10cce2-47da-475c-9951-25e3863e5747",
+      "label": "Addressing modes",
+      "cog_level": "Create",
+      "title": "Addressing modes",
+      "description": "Addressing modes: Different ways of specifying the address of operands in instructions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2e7dd3d7-b32d-4558-9cdd-0ae9a8c9dbe6",
+      "label": "Machine language programming",
+      "cog_level": "Create",
+      "title": "Machine language programming",
+      "description": "Machine language programming: Writing programs directly in machine code.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fd07e56b-7739-4ccb-b7f0-a919a179e520",
+      "label": "Assembly language programming",
+      "cog_level": "Create",
+      "title": "Assembly language programming",
+      "description": "Assembly language programming: Writing programs using human-readable mnemonics that map to machine code instructions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4d82bbe8-0e9f-4268-a56d-3924569c4aba",
+      "label": "Subroutine call and return mechanisms (xref PL/language translation and execution)",
+      "cog_level": "Create",
+      "title": "Subroutine call and return mechanisms (xref PL/language translation and execution)",
+      "description": "Subroutine call and return mechanisms (xref PL/language translation and execution): Techniques for calling and returning from subroutines in assembly language.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "991d4e73-ad40-4205-a191-a5c7c7dccc2a",
+      "label": "I/and interrupts ",
+      "cog_level": "Create",
+      "title": "I/and interrupts ",
+      "description": "I/and interrupts : Input/output operations and mechanisms for handling interrupts.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "19905579-3ba5-4643-8442-d4fe76d409e4",
+      "label": "Heap, static,  stack and code segments",
+      "cog_level": "Create",
+      "title": "Heap, static,  stack and code segments",
+      "description": "Heap, static,  stack and code segments: Different memory segments used by programs, including dynamic memory (heap), static data, runtime stack, and code.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "label": "Memory Hierarchy",
+      "cog_level": "",
+      "title": "Memory Hierarchy",
+      "description": "Memory Hierarchy: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "2c611723-19fc-406d-92d5-b97a4b27f66e",
+      "label": "Memory hierarchy: the importance of temporal and spatial locality [Shared with OS]",
+      "cog_level": "Understand",
+      "title": "Memory hierarchy: the importance of temporal and spatial locality [Shared with OS]",
+      "description": "Memory hierarchy: the importance of temporal and spatial locality [Shared with OS]: Organizes memory into levels based on speed and size, exploiting temporal and spatial locality to improve performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c0f4f136-8038-4941-af5d-4cf7124c5491",
+      "label": "Main memory organization and operations",
+      "cog_level": "Understand",
+      "title": "Main memory organization and operations",
+      "description": "Main memory organization and operations: RAM serves as the main memory, accessed by the CPU for storing and retrieving data and instructions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "51286bdb-054f-40c8-aaa7-d76be2ef0fd2",
+      "label": "Persistent memory (e.g. SSD, standard disks)",
+      "cog_level": "Understand",
+      "title": "Persistent memory (e.g. SSD, standard disks)",
+      "description": "Persistent memory (e.g. SSD, standard disks): Includes SSDs and standard disks, used for long-term storage of data even when the system is powered off.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "54537243-bc4e-4059-bac4-d3f8e9a74ee9",
+      "label": "Latency, cycle time, bandwidth and interleaving",
+      "cog_level": "Understand",
+      "title": "Latency, cycle time, bandwidth and interleaving",
+      "description": "Latency, cycle time, bandwidth and interleaving: Parameters that characterize memory performance, including access time, clock cycle duration, data transfer rate, and interleaved access.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "46c18e5d-b397-46bc-8810-6f958e1e58eb",
+      "label": "Virtual memory (hardware support, cross\u2010reference OS/Virtual Memory) ",
+      "cog_level": "Understand",
+      "title": "Virtual memory (hardware support, cross\u2010reference OS/Virtual Memory) ",
+      "description": "Virtual memory (hardware support, cross\u2010reference OS/Virtual Memory) : Provides an abstraction layer for managing memory resources, allowing the OS to use disk space as an extension of physical RAM.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "acad1873-682c-4d31-97bd-9c7f20f7ab77",
+      "label": "Fault handling and reliability",
+      "cog_level": "Understand",
+      "title": "Fault handling and reliability",
+      "description": "Fault handling and reliability: Mechanisms to detect and recover from memory errors, ensuring system stability and data integrity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b0e2969d-ac21-458a-a7fa-8ccc5d4cd3cb",
+      "label": "Reliability (cross\u2010reference SF/Reliability through Redundancy)",
+      "cog_level": "Understand",
+      "title": "Reliability (cross\u2010reference SF/Reliability through Redundancy)",
+      "description": "Reliability (cross\u2010reference SF/Reliability through Redundancy): Techniques such as error coding and redundancy to enhance system reliability and fault tolerance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9db44d49-8cae-47b4-91d9-cb3b4b8494f6",
+      "label": "Error coding",
+      "cog_level": "Understand",
+      "title": "Error coding",
+      "description": "Error coding: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e49dc5aa-af3f-4ef9-afb1-47e5f0f14b93",
+      "label": "Data compression",
+      "cog_level": "Understand",
+      "title": "Data compression",
+      "description": "Data compression: Techniques to reduce the size of stored or transmitted data, optimizing memory utilization and bandwidth usage.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "6a59d085-6208-47cd-935b-3b359592d6d6",
+      "label": "Data integrity",
+      "cog_level": "Understand",
+      "title": "Data integrity",
+      "description": "Data integrity: Ensures that data remains unchanged and consistent throughout its lifecycle, safeguarding against errors and corruption.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "2651a42a-c839-439d-b0cc-7ceb50b7f1fa",
+      "label": "Non\u2010von Neumann Architectures",
+      "cog_level": "Understand",
+      "title": "Non\u2010von Neumann Architectures",
+      "description": "Non\u2010von Neumann Architectures: Novel computing architectures that depart from the traditional von Neumann model, offering alternative approaches to memory and processing.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f8a0ff3a-e0d1-455a-98fc-618595c5944d",
+      "label": "In\u2010Memory Processing (PIM)",
+      "cog_level": "Understand",
+      "title": "In\u2010Memory Processing (PIM)",
+      "description": "In\u2010Memory Processing (PIM): Performs computations directly within memory modules, reducing data movement and improving processing efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ae770794-832e-44b2-8c2f-51d9168909fb",
+      "label": "Cache memories [Shared with OS]",
+      "cog_level": "Evaluate",
+      "title": "Cache memories [Shared with OS]",
+      "description": "Cache memories [Shared with OS]: Small, fast memory units that store frequently accessed data and instructions, reducing access latency and improving CPU performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1f3b74b3-811f-4c16-8592-be85a4c02a99",
+      "label": "Address mapping",
+      "cog_level": "Evaluate",
+      "title": "Address mapping",
+      "description": "Address mapping: Techniques for translating logical addresses to physical memory locations, facilitating memory access.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d9cba985-f354-418a-89f8-d028c94cc17d",
+      "label": "Block size",
+      "cog_level": "Evaluate",
+      "title": "Block size",
+      "description": "Block size: Determines the amount of data fetched from main memory to cache in a single operation, affecting cache efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "522562c0-bc13-44f9-8832-497bc09bfb2d",
+      "label": "Replacement and store policy",
+      "cog_level": "Evaluate",
+      "title": "Replacement and store policy",
+      "description": "Replacement and store policy: Algorithms for managing cache contents, including eviction and data placement strategies.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "31ce8272-60e8-4674-98c3-291749c6cc91",
+      "label": "Multiprocessor cache coherence",
+      "cog_level": "Evaluate",
+      "title": "Multiprocessor cache coherence",
+      "description": "Multiprocessor cache coherence: Ensures consistency of shared data across multiple caches in a multiprocessing system, preventing data inconsistencies and race conditions.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "label": "Interfacing and Communication",
+      "cog_level": "Understand",
+      "title": "Interfacing and Communication",
+      "description": "Interfacing and Communication: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "21bf9a3c-9226-49e7-8421-0849fa16e8ea",
+      "label": "I/fundamentals[Shared with OS and SPD]",
+      "cog_level": "Understand",
+      "title": "I/fundamentals[Shared with OS and SPD]",
+      "description": "I/fundamentals[Shared with OS and SPD]: Principles governing the interaction between different components, shared with operating systems and system programming.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "99e02b23-1eb0-4a0c-9efc-b86e666a3948",
+      "label": "Handshaking and buffering",
+      "cog_level": "Understand",
+      "title": "Handshaking and buffering",
+      "description": "Handshaking and buffering: Techniques for coordinating communication between devices and managing data flow.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9c684b0b-25a0-4b13-9811-047f89d5eeff",
+      "label": "Programmed I/O",
+      "cog_level": "Understand",
+      "title": "Programmed I/O",
+      "description": "Programmed I/O: Method where the CPU directly controls data transfer between peripherals and memory, requiring constant CPU intervention.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "a31a2ff2-e200-4814-86f0-82ab8139dedf",
+      "label": "Interrupt\u2010driven I/O",
+      "cog_level": "Understand",
+      "title": "Interrupt\u2010driven I/O",
+      "description": "Interrupt\u2010driven I/O: Mechanism where peripheral devices interrupt the CPU to request attention, enabling asynchronous data transfer.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "74912ed8-fa11-476b-ba5b-232d81237f15",
+      "label": "Interrupt structures: vectored and prioritized, interrupt acknowledgement [Shared with OS]",
+      "cog_level": "Understand",
+      "title": "Interrupt structures: vectored and prioritized, interrupt acknowledgement [Shared with OS]",
+      "description": "Interrupt structures: vectored and prioritized, interrupt acknowledgement [Shared with OS]: Includes vectored and prioritized interrupt mechanisms, along with interrupt acknowledgment protocols, shared with operating systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e80ed392-a2ec-4108-9836-933fb974f34b",
+      "label": "External storage, physical organization and drives [Shared with OS]",
+      "cog_level": "Understand",
+      "title": "External storage, physical organization and drives [Shared with OS]",
+      "description": "External storage, physical organization and drives [Shared with OS]: Refers to storage devices outside the CPU, such as hard drives and SSDs, with considerations for physical organization and drive characteristics, also shared with operating systems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9ac0f1d5-4167-4262-9803-7051ab3ad0f8",
+      "label": "Buses fundamentals [Shared with OS and SPD]",
+      "cog_level": "Understand",
+      "title": "Buses fundamentals [Shared with OS and SPD]",
+      "description": "Buses fundamentals [Shared with OS and SPD]: Basics of bus architecture, shared with operating systems and system programming, including bus protocols and arbitration methods.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "1cbd178f-eca7-49d1-87f1-87f7e3745eaa",
+      "label": "Bus protocols",
+      "cog_level": "Understand",
+      "title": "Bus protocols",
+      "description": "Bus protocols: Specifications defining the rules and procedures for communication between devices on a bus.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "84f90dbc-7f5a-4a64-a7d2-7bd9eb066348",
+      "label": "Arbitration",
+      "cog_level": "Understand",
+      "title": "Arbitration",
+      "description": "Arbitration: Process of resolving conflicts when multiple devices attempt to access the bus simultaneously.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b6494484-8ac5-4524-8824-ca414f246c16",
+      "label": "Direct\u2010memory access (DMA)",
+      "cog_level": "Understand",
+      "title": "Direct\u2010memory access (DMA)",
+      "description": "Direct\u2010memory access (DMA): Technique allowing peripherals to transfer data directly to and from memory without CPU intervention, enhancing efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "4e8c1f8b-55fc-4d81-8fc1-2deb913deacd",
+      "label": "Network\u2010on\u2010chip (NoC)",
+      "cog_level": "Understand",
+      "title": "Network\u2010on\u2010chip (NoC)",
+      "description": "Network\u2010on\u2010chip (NoC): Architecture where multiple processor cores or IP blocks communicate via an on-chip network, facilitating scalable and efficient interconnectivity.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c96af1d2-2f72-4c54-a89c-fe9bfdb17a63",
+      "label": "Functional Organization",
+      "cog_level": "",
+      "title": "Functional Organization",
+      "description": "Functional Organization: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "8a1d7f87-faed-458b-afdc-f052ded1b42f",
+      "label": "Implementation of simple datapaths, including instruction pipelining, hazard detection and resolution",
+      "cog_level": "Create",
+      "title": "Implementation of simple datapaths, including instruction pipelining, hazard detection and resolution",
+      "description": "Implementation of simple datapaths, including instruction pipelining, hazard detection and resolution: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "dafcca08-c042-4df1-b76f-a3f423596621",
+      "label": "Control unit",
+      "cog_level": "Create",
+      "title": "Control unit",
+      "description": "Control unit: Component responsible for directing the operation of the processor, including instruction decoding and execution control.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "51b0238a-fd62-4a79-950e-764f9f641c80",
+      "label": "Hardwired implementation",
+      "cog_level": "Create",
+      "title": "Hardwired implementation",
+      "description": "Hardwired implementation: Approach to building the control unit using physical circuitry, offering fast execution but limited flexibility.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b92c084a-5a3a-43f8-86f0-4f2f87831a7c",
+      "label": "Microprogrammed realization",
+      "cog_level": "Create",
+      "title": "Microprogrammed realization",
+      "description": "Microprogrammed realization: Technique where the control unit's behavior is defined by microinstructions stored in control memory, offering greater flexibility at the expense of some performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0ac51937-2c1d-4415-a4b2-5924f6c4cf00",
+      "label": "Instruction pipelining",
+      "cog_level": "Understand",
+      "title": "Instruction pipelining",
+      "description": "Instruction pipelining: Technique for improving processor throughput by breaking down instruction execution into multiple stages, allowing multiple instructions to be processed simultaneously.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "962e1606-02df-461d-a970-2b97bc513738",
+      "label": "Introduction to instruction\u2010level parallelism (ILP)",
+      "cog_level": "Understand",
+      "title": "Introduction to instruction\u2010level parallelism (ILP)",
+      "description": "Introduction to instruction\u2010level parallelism (ILP): Exploitation of parallelism at the instruction level to enhance performance, often achieved through techniques like pipelining and superscalar execution.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "label": "Performance and Energy Efficiency",
+      "cog_level": "",
+      "title": "Performance and Energy Efficiency",
+      "description": "Performance and Energy Efficiency: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "ca138584-278c-4dd6-8341-bb311a0dc940",
+      "label": "Performance\u2010energy evaluation (introduction): performance, power consumption, memory and communication costs",
+      "cog_level": "Evaluate",
+      "title": "Performance\u2010energy evaluation (introduction): performance, power consumption, memory and communication costs",
+      "description": "Performance\u2010energy evaluation (introduction): performance, power consumption, memory and communication costs: Examination of performance metrics including power consumption, memory, and communication costs to assess efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "00102511-17c4-44a4-9921-ad002ab09e6a",
+      "label": "Branch prediction, speculative execution, out\u2010of\u2010order execution, Tomasulo's algorithm",
+      "cog_level": "Evaluate",
+      "title": "Branch prediction, speculative execution, out\u2010of\u2010order execution, Tomasulo's algorithm",
+      "description": "Branch prediction, speculative execution, out\u2010of\u2010order execution, Tomasulo's algorithm: Techniques to improve processor performance by predicting branch outcomes, executing instructions speculatively, and reordering instructions for optimal execution.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "43b9c219-1ce7-42ff-a7f3-5e9d1d4ff890",
+      "label": "Prefetching ",
+      "cog_level": "Evaluate",
+      "title": "Prefetching ",
+      "description": "Prefetching : Strategy for improving memory access performance by fetching data before it is explicitly requested.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d9c0afa4-ce21-472c-b939-4fd7104dae32",
+      "label": "Enhancements for vector processors and GPUs",
+      "cog_level": "Understand",
+      "title": "Enhancements for vector processors and GPUs",
+      "description": "Enhancements for vector processors and GPUs: Techniques tailored for vector processors and Graphics Processing Units (GPUs) to optimize performance for specific workloads.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d0f8bf92-3c3d-4057-bfc2-b843236c0404",
+      "label": "Hardware support for Multithreading",
+      "cog_level": "Understand",
+      "title": "Hardware support for Multithreading",
+      "description": "Hardware support for Multithreading: Hardware-level features to facilitate concurrent execution of multiple threads for improved performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "29470104-d3f3-44a9-b005-5726dba1e7db",
+      "label": "Race conditions",
+      "cog_level": "Understand",
+      "title": "Race conditions",
+      "description": "Race conditions: Situations in concurrent programming where the outcome of operations depends on the timing of their execution, potentially leading to unexpected behavior.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "929690f6-75fc-42b0-bbb0-40974359735d",
+      "label": "Lock implementations",
+      "cog_level": "Understand",
+      "title": "Lock implementations",
+      "description": "Lock implementations: Mechanisms used to synchronize access to shared resources in multithreaded environments.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5392b579-2461-4cf7-a4f0-001b1ea2184c",
+      "label": "Point\u2010to\u2010point synchronization",
+      "cog_level": "Understand",
+      "title": "Point\u2010to\u2010point synchronization",
+      "description": "Point\u2010to\u2010point synchronization: Point-to-Point Synchronization: Techniques for coordinating synchronization between threads to avoid race conditions and ensure data consistency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "55ddd72e-b1f6-40eb-998e-48447f94e800",
+      "label": "Barrier implementation",
+      "cog_level": "Understand",
+      "title": "Barrier implementation",
+      "description": "Barrier implementation: Mechanisms for synchronizing multiple threads to ensure that all threads reach a designated point before proceeding.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0f3265e2-d808-4b1a-acb2-a1ea89b36597",
+      "label": "Scalability",
+      "cog_level": "Understand",
+      "title": "Scalability",
+      "description": "Scalability: The ability of a system to handle increasing workloads by adding resources without sacrificing performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b1cb61e4-f21e-4731-80d2-0dd5bdf869ad",
+      "label": "Alternative architectures, such as VLIW/EPIC, accelerators and other special\u2010purpose processors",
+      "cog_level": "Understand",
+      "title": "Alternative architectures, such as VLIW/EPIC, accelerators and other special\u2010purpose processors",
+      "description": "Alternative architectures, such as VLIW/EPIC, accelerators and other special\u2010purpose processors: Exploration of alternative hardware designs optimized for specific tasks or workloads.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b3af2cc8-5cf3-4a0c-81a6-2bfb2363eacf",
+      "label": "Dynamic voltage and frequency scaling (DVFS)",
+      "cog_level": "Understand",
+      "title": "Dynamic voltage and frequency scaling (DVFS)",
+      "description": "Dynamic voltage and frequency scaling (DVFS): Technique for adjusting the operating voltage and frequency of a processor dynamically to optimize energy efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "67415e8c-dbc3-49cf-85f6-9e9965816d98",
+      "label": "Dark Silicon",
+      "cog_level": "Understand",
+      "title": "Dark Silicon",
+      "description": "Dark Silicon: The portion of a chip that cannot be powered on simultaneously due to power and thermal constraints, leading to challenges in maximizing hardware utilization.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ef9c8b6d-79d4-419d-b4fb-dc5526c39027",
+      "label": "Heterogeneous Architectures",
+      "cog_level": "Understand",
+      "title": "Heterogeneous Architectures",
+      "description": "Heterogeneous Architectures: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "19203466-af8e-4603-ae51-c379408391c8",
+      "label": "SIMD and MIMD architectures (e.g. General\u2010Purpose GPUs, TPUs and NPUs)",
+      "cog_level": "Understand",
+      "title": "SIMD and MIMD architectures (e.g. General\u2010Purpose GPUs, TPUs and NPUs)",
+      "description": "SIMD and MIMD architectures (e.g. General\u2010Purpose GPUs, TPUs and NPUs): SIMD (Single Instruction, Multiple Data) and MIMD (Multiple Instruction, Multiple Data) architectures, including General-Purpose GPUs (Graphics Processing Units), TPUs (Tensor Processing Units), and NPUs (Neural Processing Units), designed to perform parallel computations efficiently.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "64cfff84-6900-4f0f-b9e3-e3154b74d40c",
+      "label": "Heterogeneous memory system",
+      "cog_level": "Understand",
+      "title": "Heterogeneous memory system",
+      "description": "Heterogeneous memory system: Systems that incorporate different types of memory, such as high-speed RAM, non-volatile memory (NVM), and specialized memory structures, to optimize performance and energy efficiency.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c062fdd8-7da9-40b7-ad68-c501fecf6799",
+      "label": "Shared memory versus distributed memory",
+      "cog_level": "Understand",
+      "title": "Shared memory versus distributed memory",
+      "description": "Shared memory versus distributed memory: Distinction between architectures where all processors share a common address space (shared memory) and those where each processor has its own local memory (distributed memory).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3ea54719-0063-4ca5-8a3a-0ed1054b4108",
+      "label": "Volatile vs non\u2010volatile memory",
+      "cog_level": "Understand",
+      "title": "Volatile vs non\u2010volatile memory",
+      "description": "Volatile vs non\u2010volatile memory: Differentiating between memory types that require power to retain data (volatile) and those that can retain data without power (non-volatile), influencing system design and performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "17d46da3-32d9-4c6e-880c-f9f61a3d845b",
+      "label": "Coherence protocols",
+      "cog_level": "Understand",
+      "title": "Coherence protocols",
+      "description": "Coherence protocols: Mechanisms employed in multiprocessor systems to ensure that all processors have consistent views of shared memory, preventing data inconsistencies.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "ba8ffedc-508e-4a67-8f17-f86f63504baa",
+      "label": "Domain\u2010Specific Architectures (DSAs)",
+      "cog_level": "Understand",
+      "title": "Domain\u2010Specific Architectures (DSAs)",
+      "description": "Domain\u2010Specific Architectures (DSAs): Architectures tailored for specific application domains, such as Machine Learning Accelerators optimized for neural network computations or In-Network Computing architectures that offload processing tasks to network devices.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "86abf867-ced6-4765-a6e6-62470dad6619",
+      "label": "Machine Learning Accelerator",
+      "cog_level": "Understand",
+      "title": "Machine Learning Accelerator",
+      "description": "Machine Learning Accelerator: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "be3a25b5-ad9c-4bfd-9857-8f18f673cc39",
+      "label": "In\u2010networking computing",
+      "cog_level": "Understand",
+      "title": "In\u2010networking computing",
+      "description": "In\u2010networking computing: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "99ea9e73-48df-4bd9-b947-36309f93720b",
+      "label": "Embedded systems for emerging applications",
+      "cog_level": "Understand",
+      "title": "Embedded systems for emerging applications",
+      "description": "Embedded systems for emerging applications: Systems designed to meet the requirements of specialized applications, often characterized by constraints such as size, power consumption, and real-time performance.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "48b2af85-00b2-43db-8903-4e1e7fd5bfe6",
+      "label": "Neuromorphic computing",
+      "cog_level": "Understand",
+      "title": "Neuromorphic computing",
+      "description": "Neuromorphic computing: Computing paradigms inspired by the structure and function of the human brain, aiming to develop systems with low power consumption and high efficiency for tasks such as pattern recognition and sensory processing.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "e4d3d1d9-0a68-4455-a000-8f88396e761c",
+      "label": "Packaging and integration solutions such as 3DIC and Chiplets",
+      "cog_level": "Understand",
+      "title": "Packaging and integration solutions such as 3DIC and Chiplets",
+      "description": "Packaging and integration solutions such as 3DIC and Chiplets: Advanced techniques for integrating multiple chips or functional units within a single package (3DIC) or combining discrete components (chiplets) to achieve higher performance, lower power consumption, and improved scalability.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "label": "Quantum Architectures",
+      "cog_level": "Understand",
+      "title": "Quantum Architectures",
+      "description": "Quantum Architectures: ",
+      "node_type": "knowledge unit",
+      "shape": "ellipse"
+    },
+    {
+      "id": "641d2bd6-aa92-4b3c-8920-415f4ff5374f",
+      "label": "Principles",
+      "cog_level": "Understand",
+      "title": "Principles",
+      "description": "Principles: Fundamental concepts including the wave-particle duality principle, which describes the behavior of particles like photons and electrons.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "fceca73e-5f6b-451c-937c-a0fdba5d1385",
+      "label": "The wave\u2010particle duality principle",
+      "cog_level": "Understand",
+      "title": "The wave\u2010particle duality principle",
+      "description": "The wave\u2010particle duality principle: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "c61246db-3ae3-49a9-a30c-99792a0e0d31",
+      "label": "The uncertainty principle in the double\u2010slit experiment",
+      "cog_level": "Understand",
+      "title": "The uncertainty principle in the double\u2010slit experiment",
+      "description": "The uncertainty principle in the double\u2010slit experiment: The Uncertainty Principle: Introduced by the double-slit experiment, stating that certain pairs of physical properties, like position and momentum, cannot be simultaneously measured with arbitrary precision.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "31aa20d9-2f4b-4109-be44-e3f2ab857c0e",
+      "label": "What is a Qubit? Superposition and measurement. Photons as qubits.",
+      "cog_level": "Understand",
+      "title": "What is a Qubit? Superposition and measurement. Photons as qubits.",
+      "description": "What is a Qubit? Superposition and measurement. Photons as qubits.: Qubit: The basic unit of quantum information, analogous to the classical bit but capable of existing in a superposition of states until measured. Superposition and Measurement: Qubits can exist in multiple states simultaneously, known as superposition, until measured, at which point they collapse to a definite state.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "50cb6842-80e8-4bfd-8eff-40928da73c77",
+      "label": "Systems of twqubits. Entanglement. Bell states. The No\u2010Signaling theorem.",
+      "cog_level": "Understand",
+      "title": "Systems of twqubits. Entanglement. Bell states. The No\u2010Signaling theorem.",
+      "description": "Systems of twqubits. Entanglement. Bell states. The No\u2010Signaling theorem.: The phenomenon where qubits become correlated in such a way that the state of one qubit is dependent on the state of another, even when separated by large distances.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "02bebde0-4eb2-4a43-a0ec-ddf63d79a88f",
+      "label": "Axioms of QM: superposition principle, measurement axiom, unitary evolution",
+      "cog_level": "Understand",
+      "title": "Axioms of QM: superposition principle, measurement axiom, unitary evolution",
+      "description": "Axioms of QM: superposition principle, measurement axiom, unitary evolution: Principles governing the behavior of quantum systems, including the superposition principle, measurement axiom, and unitary evolution.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b766a60e-e905-4556-896e-78bbea5392a7",
+      "label": "Single qubit gates for the circuit model of quantum computation: X, Z, H.",
+      "cog_level": "Understand",
+      "title": "Single qubit gates for the circuit model of quantum computation: X, Z, H.",
+      "description": "Single qubit gates for the circuit model of quantum computation: X, Z, H.: Basic quantum operations used in quantum circuits, such as X (bit-flip), Z (phase-flip), and H (Hadamard) gates.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3f662f06-6d15-42c3-849b-c2cf6a345a47",
+      "label": "Two-qubit gates and tensor products. Working with matrices.",
+      "cog_level": "Understand",
+      "title": "Two-qubit gates and tensor products. Working with matrices.",
+      "description": "Two-qubit gates and tensor products. Working with matrices.: Quantum operations that act on pairs of qubits, typically implemented using tensor products and matrices.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "5bef9227-162a-4b07-b676-65f3f99eb84b",
+      "label": "The No\u2010Cloning Theorem. The Quantum Teleportation protocol.",
+      "cog_level": "Understand",
+      "title": "The No\u2010Cloning Theorem. The Quantum Teleportation protocol.",
+      "description": "The No\u2010Cloning Theorem. The Quantum Teleportation protocol.: A fundamental principle stating that it is impossible to create an identical copy of an arbitrary unknown quantum state.Quantum Teleportation: A protocol that allows the transfer of quantum information from one qubit to another over long distances without physically transmitting the qubit itself.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "d7bb24f8-7534-4d95-94ba-ed90bc68adcb",
+      "label": "Algorithms",
+      "cog_level": "Understand",
+      "title": "Algorithms",
+      "description": "Algorithms: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "25e1b0c7-5e1d-4191-b542-15b5b7cc706e",
+      "label": "Simple quantum algorithms: Bernstein\u2010Vazirani, Simon\u2019s algorithm.",
+      "cog_level": "Understand",
+      "title": "Simple quantum algorithms: Bernstein\u2010Vazirani, Simon\u2019s algorithm.",
+      "description": "Simple quantum algorithms: Bernstein\u2010Vazirani, Simon\u2019s algorithm.: Bernstein-Vazirani and Simon's algorithm, which demonstrate the power of quantum computing in solving certain problems more efficiently than classical computers.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "b44af055-0bdf-49e0-bf62-ff598fbbef4e",
+      "label": "Implementing Deutsch\u2010Josza with Mach\u2010Zehnder Interferometers.",
+      "cog_level": "Understand",
+      "title": "Implementing Deutsch\u2010Josza with Mach\u2010Zehnder Interferometers.",
+      "description": "Implementing Deutsch\u2010Josza with Mach\u2010Zehnder Interferometers.: Using Mach-Zehnder Interferometers to realize the Deutsch-Josza algorithm, a demonstration of quantum parallelism.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "136687a0-f480-49e7-9c69-721836e60701",
+      "label": "Quantum factoring (Shor\u2019s Algorithm)",
+      "cog_level": "Understand",
+      "title": "Quantum factoring (Shor\u2019s Algorithm)",
+      "description": "Quantum factoring (Shor\u2019s Algorithm): Shor's algorithm is a quantum algorithm for integer factorization, which threatens current cryptographic systems relying on the difficulty of factoring large numbers.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "f87af1e6-11b2-4c3f-acf1-67781ea9799c",
+      "label": "Quantum search (Grover\u2019s Algorithm)",
+      "cog_level": "Understand",
+      "title": "Quantum search (Grover\u2019s Algorithm)",
+      "description": "Quantum search (Grover\u2019s Algorithm): Grover's algorithm provides a quadratic speedup over classical algorithms for unstructured search problems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "125b83fd-303d-4d35-a904-27e5a3ab2869",
+      "label": "Implementation aspects",
+      "cog_level": "Understand",
+      "title": "Implementation aspects",
+      "description": "Implementation aspects: Discussing the physical realization of qubits, the fundamental units of quantum information, and the challenges of classical control of a Quantum Processing Unit (QPU).",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "9a828153-264c-496f-b653-8cc70592d155",
+      "label": "The physical implementation of qubits ",
+      "cog_level": "Understand",
+      "title": "The physical implementation of qubits ",
+      "description": "The physical implementation of qubits : there are currently nine qubit modalities",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "61ae334a-3de9-420d-9eac-3c9c833498be",
+      "label": "Classical control of a Quantum Processing Unit (QPU)",
+      "cog_level": "Understand",
+      "title": "Classical control of a Quantum Processing Unit (QPU)",
+      "description": "Classical control of a Quantum Processing Unit (QPU): ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "489a7f2f-d62d-41b0-b7f9-ac03465cb179",
+      "label": "Error mitigation and control. NISQ and beyond.",
+      "cog_level": "Understand",
+      "title": "Error mitigation and control. NISQ and beyond.",
+      "description": "Error mitigation and control. NISQ and beyond.: Techniques for mitigating errors in quantum computations, particularly important in the era of Noisy Intermediate-Scale Quantum (NISQ) devices.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "0f8659ba-e6a6-4a07-aa4f-19ac631827a9",
+      "label": "Emerging Applications",
+      "cog_level": "Understand",
+      "title": "Emerging Applications",
+      "description": "Emerging Applications: Exploring post-quantum encryption, the potential of the Quantum Internet for secure communication, and the promise of adiabatic quantum computation (AQC) and quantum annealing for optimization problems.",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "83e3fed5-7f24-4294-9be1-a53aa0e26825",
+      "label": "Post\u2010quantum encryption",
+      "cog_level": "Understand",
+      "title": "Post\u2010quantum encryption",
+      "description": "Post\u2010quantum encryption: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "3795aeeb-358a-49f7-a36f-82547bb08f35",
+      "label": "The Quantum Internet",
+      "cog_level": "Understand",
+      "title": "The Quantum Internet",
+      "description": "The Quantum Internet: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    },
+    {
+      "id": "03050da2-a0b6-4071-ab43-316f60064b2b",
+      "label": "Adiabatic quantum computation (AQC) and quantum annealing",
+      "cog_level": "Understand",
+      "title": "Adiabatic quantum computation (AQC) and quantum annealing",
+      "description": "Adiabatic quantum computation (AQC) and quantum annealing: ",
+      "node_type": "knowledge point",
+      "shape": "box"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "dc03909a-bb5b-4481-a95a-d3a9189955ec",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "67236f8a-44d3-48df-ad2a-e63c57edf094",
+      "title": ""
+    },
+    {
+      "from": "67236f8a-44d3-48df-ad2a-e63c57edf094",
+      "to": "270c5901-4676-41bc-8c00-c3b9271e33d5",
+      "title": ""
+    },
+    {
+      "from": "67236f8a-44d3-48df-ad2a-e63c57edf094",
+      "to": "c0a15ca1-8e68-4d72-94a1-04d882770590",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "6e621e18-fc67-481a-8933-9559c270e412",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "cfb14996-bb14-48cd-a695-1a5d6b63a39d",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "b511f162-4de0-40dd-b90a-b2c8ca7965d6",
+      "title": ""
+    },
+    {
+      "from": "b511f162-4de0-40dd-b90a-b2c8ca7965d6",
+      "to": "20752925-071e-4554-a5f9-28f3fdad811a",
+      "title": ""
+    },
+    {
+      "from": "b511f162-4de0-40dd-b90a-b2c8ca7965d6",
+      "to": "d49621c9-d4ad-419b-bbaf-a9ebde8a05eb",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "16e13b73-d2b3-45a8-80a6-1a90470769fb",
+      "title": ""
+    },
+    {
+      "from": "b028e050-58f8-4b0b-8a46-9c4d3d290f70",
+      "to": "5b0614df-28f8-41d2-902e-402f00e607d8",
+      "title": ""
+    },
+    {
+      "from": "5b0614df-28f8-41d2-902e-402f00e607d8",
+      "to": "c9af1c54-cc57-4e75-804c-3a385e4ff72b",
+      "title": ""
+    },
+    {
+      "from": "5b0614df-28f8-41d2-902e-402f00e607d8",
+      "to": "74fb1763-ab05-4187-9811-78c121153447",
+      "title": ""
+    },
+    {
+      "from": "5b0614df-28f8-41d2-902e-402f00e607d8",
+      "to": "71ad577f-10cd-47eb-b6b4-caabbccfa9fd",
+      "title": ""
+    },
+    {
+      "from": "5b0614df-28f8-41d2-902e-402f00e607d8",
+      "to": "308f51bd-adbd-42dd-bc34-46edbb82923f",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "title": ""
+    },
+    {
+      "from": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "to": "fa625e83-d8b1-4eea-a198-dc493959f29e",
+      "title": ""
+    },
+    {
+      "from": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "to": "2aa78e48-8da0-4e30-920a-880a2c0ec96f",
+      "title": ""
+    },
+    {
+      "from": "2aa78e48-8da0-4e30-920a-880a2c0ec96f",
+      "to": "d7b159d4-5a4b-47fc-b043-931af215185e",
+      "title": ""
+    },
+    {
+      "from": "2aa78e48-8da0-4e30-920a-880a2c0ec96f",
+      "to": "32ece4c6-8782-489c-bee7-62b0b09658de",
+      "title": ""
+    },
+    {
+      "from": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "to": "ea04c64b-3ed9-4135-ac1f-545562049c92",
+      "title": ""
+    },
+    {
+      "from": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "to": "e341cacf-14c9-4830-a0bd-95eb3aaf3a2b",
+      "title": ""
+    },
+    {
+      "from": "7ba488b6-6653-41cd-90b0-bbce7ffd8e0d",
+      "to": "475e3ed8-1b60-423c-bdea-f41c243f7604",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "3d2eac36-2571-496b-a452-4bedd6c77699",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "363180ab-e841-4bb3-a27b-3955c172bab7",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "5e3793d6-1462-4f99-ad8b-eb22ffd23c72",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "2afffbaa-87ee-455e-be30-d6b299ad7f6c",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "title": ""
+    },
+    {
+      "from": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "to": "4d619ad5-56cf-412f-9257-a34f8f781349",
+      "title": ""
+    },
+    {
+      "from": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "to": "b3292c4e-1262-4ab9-9ae6-24570a9e2581",
+      "title": ""
+    },
+    {
+      "from": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "to": "2a10cce2-47da-475c-9951-25e3863e5747",
+      "title": ""
+    },
+    {
+      "from": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "to": "2e7dd3d7-b32d-4558-9cdd-0ae9a8c9dbe6",
+      "title": ""
+    },
+    {
+      "from": "500db8e0-f0a5-4dfa-b66a-c43df440e0f0",
+      "to": "fd07e56b-7739-4ccb-b7f0-a919a179e520",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "4d82bbe8-0e9f-4268-a56d-3924569c4aba",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "991d4e73-ad40-4205-a191-a5c7c7dccc2a",
+      "title": ""
+    },
+    {
+      "from": "0f6d111d-7817-4c6c-b57d-757008b02567",
+      "to": "19905579-3ba5-4643-8442-d4fe76d409e4",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "2c611723-19fc-406d-92d5-b97a4b27f66e",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "c0f4f136-8038-4941-af5d-4cf7124c5491",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "51286bdb-054f-40c8-aaa7-d76be2ef0fd2",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "54537243-bc4e-4059-bac4-d3f8e9a74ee9",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "46c18e5d-b397-46bc-8810-6f958e1e58eb",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "acad1873-682c-4d31-97bd-9c7f20f7ab77",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "b0e2969d-ac21-458a-a7fa-8ccc5d4cd3cb",
+      "title": ""
+    },
+    {
+      "from": "b0e2969d-ac21-458a-a7fa-8ccc5d4cd3cb",
+      "to": "9db44d49-8cae-47b4-91d9-cb3b4b8494f6",
+      "title": ""
+    },
+    {
+      "from": "b0e2969d-ac21-458a-a7fa-8ccc5d4cd3cb",
+      "to": "e49dc5aa-af3f-4ef9-afb1-47e5f0f14b93",
+      "title": ""
+    },
+    {
+      "from": "b0e2969d-ac21-458a-a7fa-8ccc5d4cd3cb",
+      "to": "6a59d085-6208-47cd-935b-3b359592d6d6",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "2651a42a-c839-439d-b0cc-7ceb50b7f1fa",
+      "title": ""
+    },
+    {
+      "from": "2651a42a-c839-439d-b0cc-7ceb50b7f1fa",
+      "to": "f8a0ff3a-e0d1-455a-98fc-618595c5944d",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "ae770794-832e-44b2-8c2f-51d9168909fb",
+      "title": ""
+    },
+    {
+      "from": "ae770794-832e-44b2-8c2f-51d9168909fb",
+      "to": "1f3b74b3-811f-4c16-8592-be85a4c02a99",
+      "title": ""
+    },
+    {
+      "from": "ae770794-832e-44b2-8c2f-51d9168909fb",
+      "to": "d9cba985-f354-418a-89f8-d028c94cc17d",
+      "title": ""
+    },
+    {
+      "from": "ae770794-832e-44b2-8c2f-51d9168909fb",
+      "to": "522562c0-bc13-44f9-8832-497bc09bfb2d",
+      "title": ""
+    },
+    {
+      "from": "87755bca-e7f9-4049-89c3-0316d4a07bc8",
+      "to": "31ce8272-60e8-4674-98c3-291749c6cc91",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "title": ""
+    },
+    {
+      "from": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "to": "21bf9a3c-9226-49e7-8421-0849fa16e8ea",
+      "title": ""
+    },
+    {
+      "from": "21bf9a3c-9226-49e7-8421-0849fa16e8ea",
+      "to": "99e02b23-1eb0-4a0c-9efc-b86e666a3948",
+      "title": ""
+    },
+    {
+      "from": "21bf9a3c-9226-49e7-8421-0849fa16e8ea",
+      "to": "9c684b0b-25a0-4b13-9811-047f89d5eeff",
+      "title": ""
+    },
+    {
+      "from": "21bf9a3c-9226-49e7-8421-0849fa16e8ea",
+      "to": "a31a2ff2-e200-4814-86f0-82ab8139dedf",
+      "title": ""
+    },
+    {
+      "from": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "to": "74912ed8-fa11-476b-ba5b-232d81237f15",
+      "title": ""
+    },
+    {
+      "from": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "to": "e80ed392-a2ec-4108-9836-933fb974f34b",
+      "title": ""
+    },
+    {
+      "from": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "to": "9ac0f1d5-4167-4262-9803-7051ab3ad0f8",
+      "title": ""
+    },
+    {
+      "from": "9ac0f1d5-4167-4262-9803-7051ab3ad0f8",
+      "to": "1cbd178f-eca7-49d1-87f1-87f7e3745eaa",
+      "title": ""
+    },
+    {
+      "from": "9ac0f1d5-4167-4262-9803-7051ab3ad0f8",
+      "to": "84f90dbc-7f5a-4a64-a7d2-7bd9eb066348",
+      "title": ""
+    },
+    {
+      "from": "9ac0f1d5-4167-4262-9803-7051ab3ad0f8",
+      "to": "b6494484-8ac5-4524-8824-ca414f246c16",
+      "title": ""
+    },
+    {
+      "from": "dc822401-069a-44df-aeb9-28c9d1c6a29b",
+      "to": "4e8c1f8b-55fc-4d81-8fc1-2deb913deacd",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "c96af1d2-2f72-4c54-a89c-fe9bfdb17a63",
+      "title": ""
+    },
+    {
+      "from": "c96af1d2-2f72-4c54-a89c-fe9bfdb17a63",
+      "to": "8a1d7f87-faed-458b-afdc-f052ded1b42f",
+      "title": ""
+    },
+    {
+      "from": "c96af1d2-2f72-4c54-a89c-fe9bfdb17a63",
+      "to": "dafcca08-c042-4df1-b76f-a3f423596621",
+      "title": ""
+    },
+    {
+      "from": "dafcca08-c042-4df1-b76f-a3f423596621",
+      "to": "51b0238a-fd62-4a79-950e-764f9f641c80",
+      "title": ""
+    },
+    {
+      "from": "dafcca08-c042-4df1-b76f-a3f423596621",
+      "to": "b92c084a-5a3a-43f8-86f0-4f2f87831a7c",
+      "title": ""
+    },
+    {
+      "from": "c96af1d2-2f72-4c54-a89c-fe9bfdb17a63",
+      "to": "0ac51937-2c1d-4415-a4b2-5924f6c4cf00",
+      "title": ""
+    },
+    {
+      "from": "c96af1d2-2f72-4c54-a89c-fe9bfdb17a63",
+      "to": "962e1606-02df-461d-a970-2b97bc513738",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "ca138584-278c-4dd6-8341-bb311a0dc940",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "00102511-17c4-44a4-9921-ad002ab09e6a",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "43b9c219-1ce7-42ff-a7f3-5e9d1d4ff890",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "d9c0afa4-ce21-472c-b939-4fd7104dae32",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "d0f8bf92-3c3d-4057-bfc2-b843236c0404",
+      "title": ""
+    },
+    {
+      "from": "d0f8bf92-3c3d-4057-bfc2-b843236c0404",
+      "to": "29470104-d3f3-44a9-b005-5726dba1e7db",
+      "title": ""
+    },
+    {
+      "from": "d0f8bf92-3c3d-4057-bfc2-b843236c0404",
+      "to": "929690f6-75fc-42b0-bbb0-40974359735d",
+      "title": ""
+    },
+    {
+      "from": "d0f8bf92-3c3d-4057-bfc2-b843236c0404",
+      "to": "5392b579-2461-4cf7-a4f0-001b1ea2184c",
+      "title": ""
+    },
+    {
+      "from": "d0f8bf92-3c3d-4057-bfc2-b843236c0404",
+      "to": "55ddd72e-b1f6-40eb-998e-48447f94e800",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "0f3265e2-d808-4b1a-acb2-a1ea89b36597",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "b1cb61e4-f21e-4731-80d2-0dd5bdf869ad",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "b3af2cc8-5cf3-4a0c-81a6-2bfb2363eacf",
+      "title": ""
+    },
+    {
+      "from": "aa7047bd-6d6c-467a-be0f-6e84639a2348",
+      "to": "67415e8c-dbc3-49cf-85f6-9e9965816d98",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "ef9c8b6d-79d4-419d-b4fb-dc5526c39027",
+      "title": ""
+    },
+    {
+      "from": "ef9c8b6d-79d4-419d-b4fb-dc5526c39027",
+      "to": "19203466-af8e-4603-ae51-c379408391c8",
+      "title": ""
+    },
+    {
+      "from": "ef9c8b6d-79d4-419d-b4fb-dc5526c39027",
+      "to": "64cfff84-6900-4f0f-b9e3-e3154b74d40c",
+      "title": ""
+    },
+    {
+      "from": "64cfff84-6900-4f0f-b9e3-e3154b74d40c",
+      "to": "c062fdd8-7da9-40b7-ad68-c501fecf6799",
+      "title": ""
+    },
+    {
+      "from": "64cfff84-6900-4f0f-b9e3-e3154b74d40c",
+      "to": "3ea54719-0063-4ca5-8a3a-0ed1054b4108",
+      "title": ""
+    },
+    {
+      "from": "64cfff84-6900-4f0f-b9e3-e3154b74d40c",
+      "to": "17d46da3-32d9-4c6e-880c-f9f61a3d845b",
+      "title": ""
+    },
+    {
+      "from": "ef9c8b6d-79d4-419d-b4fb-dc5526c39027",
+      "to": "ba8ffedc-508e-4a67-8f17-f86f63504baa",
+      "title": ""
+    },
+    {
+      "from": "ba8ffedc-508e-4a67-8f17-f86f63504baa",
+      "to": "86abf867-ced6-4765-a6e6-62470dad6619",
+      "title": ""
+    },
+    {
+      "from": "ba8ffedc-508e-4a67-8f17-f86f63504baa",
+      "to": "be3a25b5-ad9c-4bfd-9857-8f18f673cc39",
+      "title": ""
+    },
+    {
+      "from": "ba8ffedc-508e-4a67-8f17-f86f63504baa",
+      "to": "99ea9e73-48df-4bd9-b947-36309f93720b",
+      "title": ""
+    },
+    {
+      "from": "ba8ffedc-508e-4a67-8f17-f86f63504baa",
+      "to": "48b2af85-00b2-43db-8903-4e1e7fd5bfe6",
+      "title": ""
+    },
+    {
+      "from": "ef9c8b6d-79d4-419d-b4fb-dc5526c39027",
+      "to": "e4d3d1d9-0a68-4455-a000-8f88396e761c",
+      "title": ""
+    },
+    {
+      "from": "ef4757e7-361c-4f53-a3f0-8d60dbf9b5d0",
+      "to": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "641d2bd6-aa92-4b3c-8920-415f4ff5374f",
+      "title": ""
+    },
+    {
+      "from": "641d2bd6-aa92-4b3c-8920-415f4ff5374f",
+      "to": "fceca73e-5f6b-451c-937c-a0fdba5d1385",
+      "title": ""
+    },
+    {
+      "from": "641d2bd6-aa92-4b3c-8920-415f4ff5374f",
+      "to": "c61246db-3ae3-49a9-a30c-99792a0e0d31",
+      "title": ""
+    },
+    {
+      "from": "641d2bd6-aa92-4b3c-8920-415f4ff5374f",
+      "to": "31aa20d9-2f4b-4109-be44-e3f2ab857c0e",
+      "title": ""
+    },
+    {
+      "from": "641d2bd6-aa92-4b3c-8920-415f4ff5374f",
+      "to": "50cb6842-80e8-4bfd-8eff-40928da73c77",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "02bebde0-4eb2-4a43-a0ec-ddf63d79a88f",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "b766a60e-e905-4556-896e-78bbea5392a7",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "3f662f06-6d15-42c3-849b-c2cf6a345a47",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "5bef9227-162a-4b07-b676-65f3f99eb84b",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "d7bb24f8-7534-4d95-94ba-ed90bc68adcb",
+      "title": ""
+    },
+    {
+      "from": "d7bb24f8-7534-4d95-94ba-ed90bc68adcb",
+      "to": "25e1b0c7-5e1d-4191-b542-15b5b7cc706e",
+      "title": ""
+    },
+    {
+      "from": "d7bb24f8-7534-4d95-94ba-ed90bc68adcb",
+      "to": "b44af055-0bdf-49e0-bf62-ff598fbbef4e",
+      "title": ""
+    },
+    {
+      "from": "d7bb24f8-7534-4d95-94ba-ed90bc68adcb",
+      "to": "136687a0-f480-49e7-9c69-721836e60701",
+      "title": ""
+    },
+    {
+      "from": "d7bb24f8-7534-4d95-94ba-ed90bc68adcb",
+      "to": "f87af1e6-11b2-4c3f-acf1-67781ea9799c",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "125b83fd-303d-4d35-a904-27e5a3ab2869",
+      "title": ""
+    },
+    {
+      "from": "125b83fd-303d-4d35-a904-27e5a3ab2869",
+      "to": "9a828153-264c-496f-b653-8cc70592d155",
+      "title": ""
+    },
+    {
+      "from": "125b83fd-303d-4d35-a904-27e5a3ab2869",
+      "to": "61ae334a-3de9-420d-9eac-3c9c833498be",
+      "title": ""
+    },
+    {
+      "from": "125b83fd-303d-4d35-a904-27e5a3ab2869",
+      "to": "489a7f2f-d62d-41b0-b7f9-ac03465cb179",
+      "title": ""
+    },
+    {
+      "from": "c886e86c-f1c2-47b5-b0fb-a102d4740ec2",
+      "to": "0f8659ba-e6a6-4a07-aa4f-19ac631827a9",
+      "title": ""
+    },
+    {
+      "from": "0f8659ba-e6a6-4a07-aa4f-19ac631827a9",
+      "to": "83e3fed5-7f24-4294-9be1-a53aa0e26825",
+      "title": ""
+    },
+    {
+      "from": "0f8659ba-e6a6-4a07-aa4f-19ac631827a9",
+      "to": "3795aeeb-358a-49f7-a36f-82547bb08f35",
+      "title": ""
+    },
+    {
+      "from": "0f8659ba-e6a6-4a07-aa4f-19ac631827a9",
+      "to": "03050da2-a0b6-4071-ab43-316f60064b2b",
+      "title": ""
+    }
+  ],
+  "courseId": "36"
+}
