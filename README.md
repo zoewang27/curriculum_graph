@@ -2,131 +2,143 @@
 
 
 ## Introduction
-This document provides an overview and detailed instructions for the handover of the Django-based web application. The application uses Django for both backend and frontend development, along with Bootstrap for styling and ti icons for iconography.
+
+This application is designed to help users visualize and manage university courses, focusing on course knowledge graph visualization, curriculum comparison, and course knowledge mapping. Developed for UvA (University of Amsterdam), the platform provides various tools to explore, compare, and edit course content, relationships, and knowledge graphs.
+
+online link: https://ckg.lab.uvalight.net/graphvisualiztion/overview
 
 ## Project Overview
-Purpose: This project is a [brief description of the app's functionality, e.g., task management tool, e-commerce site, etc.].
-Primary Features:
-User Authentication (Sign up, Login, Logout)
-[List your key features]
-Target Audience: [Who the application is intended for, e.g., small businesses, individual users, etc.]
+
+### Primary Features:
+
+#### 1. **Course Overview**
+
+- Users can view UvA courses by year and filter them by different trajectories.
+- Each course is displayed as a card, with courses that lack data shown in grey.
+- Clicking on a card takes the user to the course knowledge graph editor, where they can edit nodes and edges and save changes.
+- Users can also view related courses and similar nodes for each course.
+
+#### 2. **Course Graph**
+
+- Displays a graph of UvA and ACM courses.
+- Users can see relationships between courses and understand the overall course structure.
+
+#### 3. **Course Similarity**
+
+- Allows users to compare the similarity between two courses.
+- Shows how similar the courses are and highlights similar nodes between them.
+
+#### 4. **Curricula Similarity**
+
+- Compares the overall similarity of curricula from UvA or ACM.
+- Provides a big-picture view, showing the relationships and similarities between all courses.
+
+#### 5. **Trajectory Visualization**
+
+- Visualizes each trajectory, showing its objectives and the related courses.
+- Users can also check if the course objectives are aligned with the course's knowledge points
+
+#### 6. **Upload Files**
+
+- Users can upload CSV files with course information.
+
+#### 7. **User Authentication**
+
+- Includes login and logout.
+
+#### 8. **Admin Panel**
+
+- The admin panel allows users to add or edit basic course information, like course names and years.
+
+
 
 ## Technology Stack
-Backend: Django (Python)
-Frontend: Django templates, HTML, CSS, JavaScript
-Styling: Bootstrap 5
-Icons: ti-icons (Themify Icons)
-Database: SQLite (for development) / PostgreSQL (for production)
-Other Libraries: [List any additional libraries used, e.g., jQuery, Django Rest Framework, Celery]
+
+1. Backend: Django (Python)
+2. Frontend: Django templates, HTML, CSS, JavaScript
+3. Styling: Bootstrap 5
+4. Icons: Themify Icons
+5. Database: SQLite (for storing basic information of courses) / Json Files (for storing nodes and edges)
+
+
 
 ## Environment Setup
-Development Environment:
-Python 3.x
-Django 3.x (or 4.x if you're using it)
-Virtual Environment (venv or pipenv)
-Node.js (if needed, for compiling assets like Bootstrap or for other frontend dependencies)
+
 Steps to Set Up Development Environment:
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourrepo/project.git
-Create and activate a virtual environment:
-bash
-Copy code
-python3 -m venv venv
-source venv/bin/activate  # For Windows: venv\Scripts\activate
-Install dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Run migrations:
-bash
-Copy code
-python manage.py migrate
-Create a superuser for accessing the admin:
-bash
-Copy code
-python manage.py createsuperuser
-Run the development server:
-bash
-Copy code
-python manage.py runserver
-5. Deployment Instructions
-The project is deployed using [your deployment platform, e.g., Heroku, AWS, DigitalOcean]. Provide clear instructions on how the production environment is set up.
-Steps to Deploy:
-Set environment variables for production:
-bash
-Copy code
-export DJANGO_SETTINGS_MODULE=project.settings.production
-Install production dependencies using:
-bash
-Copy code
-pip install -r requirements.txt
-Collect static files:
-bash
-Copy code
-python manage.py collectstatic
-Apply migrations:
-bash
-Copy code
-python manage.py migrate
-Restart the server.
-Note: Make sure to configure your production settings (project/settings/production.py) with the correct database, allowed hosts, and other relevant configurations.
 
-6. Frontend Details
-Bootstrap 5: The application uses Bootstrap for responsive design. The base template includes Bootstrap's CDN, and any custom styling is done through additional CSS files located in the static/css/ directory.
-ti-icons (Themify Icons): Icons are implemented using ti-icons. Example usage:
-html
-Copy code
-<i class="ti-home"></i>  <!-- Home Icon -->
-7. Core Functionalities
-7.1 User Authentication
-Description: The app includes built-in user authentication using Django's auth system (sign up, login, logout).
-Code Example (Login View):
-python
-Copy code
-from django.contrib.auth import authenticate, login
-from django.shortcuts import render, redirect
+1，Clone the repository:
 
-def login_view(request):
-    if request.method == "POST":
-        username = request.POST['username']
-        password = request.POST['password']
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
-            return redirect('dashboard')
-    return render(request, 'login.html')
-7.2 Feature 2 (e.g., Task Management)
-Description: [Detailed explanation of the feature.]
-Code Example (e.g., task creation):
-python
-Copy code
-@login_required
-def create_task(request):
-    if request.method == "POST":
-        # Task creation logic
-    return render(request, 'create_task.html')
-8. Common Issues and Solutions
-Issue 1: Static files not loading in production
-Solution: Ensure STATIC_ROOT is correctly set in settings.py and run python manage.py collectstatic.
-Issue 2: Database connection failure
-Solution: Check that the correct database settings are configured in the production settings file.
-9. User Guide
-Logging In:
-Navigate to the login page (/login/).
-Enter your username and password.
-On successful login, you'll be redirected to the dashboard.
-Creating a Task:
-Go to the task management page (/tasks/).
-Click on "Create Task" and fill out the form.
-10. Maintenance and Support
-Scheduled Maintenance: Regular code reviews, updates to dependencies, and server monitoring.
-Backup Strategy: Weekly backups of the database and static files.
-Point of Contact:
-Developer: John Doe (johndoe@example.com)
-Support: support@example.com
-11. Appendix
-Link to API documentation
-Link to database schema
-[Other relevant documentation, if any]
+`git clone https://github.com/zoewang27/curriculum_graph.git`
+
+2，Create and activate a virtual environment:
+`python3 -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate`
+
+3，Install dependencies:
+
+`pip install -r requirements.txt`
+
+4，Run migrations:
+
+`python manage.py migrate`
+
+5，Create a superuser for accessing the admin:
+
+`python manage.py createsuperuser`
+
+6，Run the development server:
+
+`python manage.py runserver`
+
+
+
+## File Structure
+
+**curriculum/**: This is the main project directory, where the settings and configuration files are located.
+
+**account**/: This application is responsible for managing user accounts
+
+**graphvisualiztion/**: This application focuses on visualizing course graphs and relationships.
+
+- **migrations/**: Contains migration files generated by Django for database schema changes.
+- **models.py**: Defined 2 data models, including course and trajectory.
+- **views.py**: Contains all functions that handle incoming web requests and return responses.
+- **urls.py**: Maps URL patterns to the corresponding view functions.
+- **templates/**: Holds HTML templates.
+
+> > **graph.html**:  Not in use (deprecated)
+> > **contentmgmt.html**:  Not in use (deprecated)
+> > **allcourses.html**:  Handles Curricula Similarity
+> > **editGraph.html**:  Edits the course knowledge graph
+> > **filesmgmt.html**:  Handles file uploads
+> > **layout.html**:  Base layout template for consistent design
+> > **overview.html**:  Overview of UvA courses
+> > **similarity.html**:  Handles Course Similarity
+> > **singlecourse.html**:  Displays the course graph for a single course
+> > **trajectory.html**:  Handles trajectory visualization
+
+**media/**: This directory is where user-uploaded files will be stored. It includes:
+
+- **CSV Files**: Used for uploading course-related data, such as course descriptions, objectives, and other relevant information. Users can upload these files to populate the database with course data.
+- **JSON Files**: These files serve as the database for nodes and edges in the course knowledge graphs. They can store structured data about the relationships and attributes of various course elements, making it easier to manage and visualize the course content.
+
+**static/**: Contains static files like CSS, JavaScript.
+
+**requirements.txt**: Lists all Python packages required for the project, which can be installed using `pip install -r requirements.txt`.
+
+**db.sqlite3**: The `db.sqlite3` file is the default SQLite database file created by Django
+
+**README.md**: Provides documentation about your project, including setup instructions, features, and usage.
+
+
+
+## Others
+
+ACM material : https://github.com/zoewang27/curriculum_graph/blob/main/curriculum/cc2023.pdf
+
+
+
+CSV template: https://docs.google.com/spreadsheets/d/1dDXfAThGlsENnwjmo4QMnMzGiW3E5MExrz3ZoT_V1Ns/edit?gid=616175438#gid=616175438
+
+
+
