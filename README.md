@@ -106,17 +106,17 @@ source venv/bin/activate  # For Windows: venv\Scripts\activate`
 - **urls.py**: Maps URL patterns to the corresponding view functions.
 - **templates/**: Holds HTML templates.
 
-> > **graph.html**:  Not in use (deprecated)
-> > **contentmgmt.html**:  Not in use (deprecated)
-> > **allcourses.html**:  Handles Curricula Similarity
-> > **editGraph.html**:  Edits the course knowledge graph
-> > **filesmgmt.html**:  Handles file uploads
-> > **layout.html**:  Base layout template for consistent design
-> > **overview.html**:  Overview of UvA courses
-> > **similarity.html**:  Handles Course Similarity
-> > **singlecourse.html**:  Displays the course graph for a single course
-> > **trajectory.html**:  Handles trajectory visualization
-
+    - **allcourses.html**: Handles Curricula Similarity
+    - **contentmgmt.html**: Not in use (deprecated)
+    - **editGraph.html**: Edits the course knowledge graph
+    - **filesmgmt.html**: Handles file uploads
+    - **graph.html**: Not in use (deprecated)
+    - **layout.html**: Base layout template for consistent design
+    - **overview.html**: Overview of UvA courses
+    - **similarity.html**: Handles Course Similarity
+    - **singlecourse.html**: Displays the course graph for a single course
+    - **trajectory.html**: Handles trajectory visualization
+    
 **media/**: This directory is where user-uploaded files will be stored. It includes:
 
 - **CSV Files**: Used for uploading course-related data, such as course descriptions, objectives, and other relevant information. Users can upload these files to populate the database with course data.
