@@ -139,8 +139,7 @@ Steps to Set Up Development Environment:
 ACM material : https://github.com/zoewang27/curriculum_graph/blob/main/curriculum/cc2023.pdf
 
 
-
 CSV template: https://docs.google.com/spreadsheets/d/1dDXfAThGlsENnwjmo4QMnMzGiW3E5MExrz3ZoT_V1Ns/edit?gid=616175438#gid=616175438
 
 
-
+UvA courses'information: https://studiegids.uva.nl/xmlpages/page/2024-2025/zoek-opleiding/opleiding/8274/262838
