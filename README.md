@@ -5,7 +5,7 @@
 
 This application is designed to help users visualize and manage university courses, focusing on course knowledge graph visualization, curriculum comparison, and course knowledge mapping. Developed for UvA (University of Amsterdam), the platform provides various tools to explore, compare, and edit course content, relationships, and knowledge graphs.
 
-online link: https://ckg.lab.uvalight.net/graphvisualiztion/overview
+online link: https://ckg.lab.uvalight.net
 
 ## Project Overview
 
