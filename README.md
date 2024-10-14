@@ -71,7 +71,9 @@ Steps to Set Up Development Environment:
 `git clone https://github.com/zoewang27/curriculum_graph.git`
 
 2，Create and activate a virtual environment:
+
 `python3 -m venv venv`
+
 `source venv/bin/activate`  # For Windows: venv\Scripts\activate`
 
 3，Install dependencies:
