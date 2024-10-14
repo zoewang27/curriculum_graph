@@ -361,12 +361,15 @@ $(document).ready(function() {
 function applyNodeColors() {
     nodes.forEach(function(node) {
         var cogLevel = node.cog_level ? node.cog_level.toLowerCase() : "";
+        var updatedNode = { id: node.id }; // Create an object with only the updated fields
+        
         if (color_mapping.hasOwnProperty(cogLevel)) {
-            node.color = { background: color_mapping[cogLevel], border: color_mapping[cogLevel] };
+            updatedNode.color = { background: color_mapping[cogLevel], border: color_mapping[cogLevel] };
         } else if (cogLevel === "") {
-            node.color = { background: "#D3D3D3", border: "#7D7C7C" }; // Gray for empty cog_level
+            updatedNode.color = { background: "#D3D3D3", border: "#7D7C7C" }; // Gray for empty cog_level
         }
-        nodes.update(node); // Update the node with the new color
+        
+        nodes.update(updatedNode); // Update only the color, not the other properties like node_type
     });
 }
 
@@ -411,7 +414,7 @@ function draw() {
         document.getElementById("operation").innerText = "Add Node";
         document.getElementById("node-id").value = data.id || '';
         document.getElementById("node-label").value = data.label || '';
-        document.getElementById("node-type").value = data.shape || '';
+        document.getElementById("node-type").value = data.node_type || '';
         document.getElementById("cog-level").value = data.cog_level || '';
         document.getElementById("node-description").value = data.description || '';
         document.getElementById("saveButton").onclick = saveData.bind(
@@ -427,7 +430,7 @@ function draw() {
         document.getElementById("operation").innerText = "Edit Node";
         document.getElementById("node-id").value = data.id;
         document.getElementById("node-label").value = data.label;
-        document.getElementById("node-type").value = data.shape || '';
+        document.getElementById("node-type").value = data.node_type || '';
         document.getElementById("cog-level").value = data.cog_level || '';
         document.getElementById("node-description").value = data.description || '';
         document.getElementById("saveButton").onclick = saveData.bind(
@@ -484,7 +487,7 @@ function saveData(data, callback) {
         "course": "circle"
     };
     let nodeType = document.getElementById("node-type").value;
-    let shape = shapeMapping[nodeType] || "knowledge point";
+    let shape = shapeMapping[nodeType] || "box";
 
     let cleanedData = {
         id: document.getElementById("node-id").value,
@@ -499,8 +502,9 @@ function saveData(data, callback) {
 
     clearPopUp();
     callback(cleanedData);  
-    applyNodeColors();    
 
+    nodes.update(cleanedData);  // Make sure the node data is updated with the new values
+    applyNodeColors();  // Apply colors after updating the node
 }
 
 
