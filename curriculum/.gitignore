@@ -1,0 +1,5 @@
+# Ignore media folder
+media/
+
+# Ignore Python cache
+__pycache__/
